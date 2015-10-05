@@ -31,6 +31,16 @@ h1, h2, h3, h4, h5, h6 {
   color: $sensebox-green;
 }
 
+.sponsor {
+  img {
+    width: 100%;
+    height: auto;
+    &:hover {
+      background-color: $sensebox-green;
+    }
+  }
+}
+
 hr {
   border-top: 3px solid #eeeeee;
 }
