@@ -1,0 +1,225 @@
+.BrixSlab-Bold {
+  font-family: BrixSlab-Bold;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.BrixSlab-Regular {
+  font-family: BrixSlab-Regular;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**
+ * Basic styling
+ */
+body {
+    font-family: BrixSlab-Regular, Helvetica, sans-serif;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-default {
+  border-style: none;
+  background-color: #FFFFFF;
+  min-height: 70px;
+  padding-top: 15px;
+
+  > .row {
+    min-height: 70px;
+  }
+}
+
+.navbar-brand {
+  margin-left: 15px;
+  padding: 5px 0px;
+  width: auto;
+}
+
+.navbar-default .navbar-toggle {
+  border-style: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $sensebox-green;
+}
+
+.navbar-collapse {
+  padding-left: 0;
+}
+
+.navbar-control {
+  padding-left: 0;
+  min-height: 0;
+}
+
+.navbar-control {
+  background-color: $sensebox-green;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #A6D7A3;
+    font-size: 22px;
+    font-family: BrixSlab-Bold;
+}
+
+.navbar-default .navbar-nav > li[class="navbar-item"] > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #FFFFFF;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #A6D7A3;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #FFFFFF;
+  font-weight: bold;
+  background-color: $sensebox-green;
+}
+
+.row {
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.nav > li > a {
+  padding-right: 0;
+}
+
+.separator {
+  font-weight: bold;
+}
+
+.footer {
+  color: $sensebox-green;
+  font-size: 16px;
+}
+
+.footer-header {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.footer-content {
+  text-align: left;
+  font-family: BrixSlab-Regular;
+}
+
+.footer-content > ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.footer-content > ul > li {
+  margin-bottom: 5px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
+}
+
+.content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.sidebar {
+  padding-left: 0;
+}
+
+.posts {
+  padding-left: 0;
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+  padding-left: 0;
+
+  > li {
+      margin-bottom: $spacing-unit;
+
+      > h2 {
+
+        > a:hover {
+          color: $sensebox-green;
+          text-decoration: underline;
+        }
+      }
+  }
+}
+
+.post-link {
+  display: block;
+  font-size: 24px;
+  color: $sensebox-green;
+}
+
+.link {
+  color: $sensebox-green;
+}
+
+.link:hover{
+  color: $sensebox-green;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.panel {
+  border: 0px solid transparent;
+  -webkit-box-shadow: 0 0px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.05);
+}
+
+.panel-title {
+  color: $sensebox-green;
+  font-size: $base-font-size;
+}
+
+.panel-default {
+  border-color: transparent;
+
+  > .panel-heading {
+    background-color: transparent;
+  }
+}
+
+.panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
+    border-top: 0px solid transparent;
+}
+
+@media (min-width: $screen-sm-min) {
+  .navbar-logo {
+    padding-top: 15px;
+  }
+
+  .navbar-control {
+    padding-top: 15px;
+  }
+
+  .navbar-default {
+    padding-top: 0px;
+  }
+
+  .info-panel {
+    padding-top: 175px;
+
+    .panel-group .panel + .panel {
+      margin-top: 50px;
+    }
+  }
+}

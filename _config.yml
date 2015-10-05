@@ -1,0 +1,28 @@
+# Site settings
+title: senseBox | Die Kiste mit Sinn
+email: info@sensebox.de
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:4000" # the base hostname & protocol for your site
+twitter_username: sensebox_de
+github_username: sensebox
+facebook_username: sensebox.de
+
+# Build settings
+markdown: kramdown
+
+# Extra styling
+# sass:
+#   # loading path from site root
+#   # default to _sass
+#   sass_dir: bower_components/bootstrap-sass/assets/stylesheets
+
+#   # style : nested (default), compact, compressed, expanded
+#   #         :nested, :compact, :compressed, :expanded also works
+#   # see http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+#   # on a typical twitter bootstrap stats are :
+#   # nested 138,7kB, compact 129,1kB, expanded 135,9 kB, compressed 122,4 kB
+#   style: compressed
