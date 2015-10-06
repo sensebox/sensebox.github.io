@@ -23,6 +23,10 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
+p {
+  font-size: $base-font-size;
+}
+
 /**
  * Headings
  */
@@ -53,12 +57,6 @@ hr {
 .navbar-default {
   border-style: none;
   background-color: #FFFFFF;
-  min-height: 70px;
-  padding-top: 15px;
-
-  > .row {
-    min-height: 70px;
-  }
 }
 
 .navbar-brand {
@@ -81,33 +79,54 @@ hr {
 
 .navbar-control {
   padding-left: 0;
-  min-height: 0;
-}
-
-.navbar-control {
+  padding-bottom: 5px;
   background-color: $sensebox-green;
+  border-bottom-left-radius: 5px;
 }
 
-.navbar-default .navbar-nav > li > a {
-    color: #A6D7A3;
-    font-size: 22px;
-    font-family: BrixSlab-Bold;
-}
+.navbar-default {
+  .navbar-nav {
+    > li {
 
-.navbar-default .navbar-nav > li[class="navbar-item"] > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #FFFFFF;
-  background-color: transparent;
-}
+      > a {
+        color: lighten($sensebox-green, 40%);
+        font-size: 22px;
+        font-family: BrixSlab-Bold;
+        background-color: transparent;
+      }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #A6D7A3;
-    background-color: transparent;
-}
+      > a:hover, 
+      > a:focus {
+        color: lighten($sensebox-green, 50%);
+      }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #FFFFFF;
-  font-weight: bold;
-  background-color: $sensebox-green;
+      &.active {
+        > a,
+        > a:hover,
+        > a:focus {
+          color: white;
+          background-color: transparent;
+        }
+      }
+      
+      /* navbar item dividers */
+      &:after {
+        content: ':';
+        font-size: 22px;
+        text-decoration: none;
+        color: lighten($sensebox-green, 40%);
+        position: absolute;
+        right: -2px;
+        top: 9px;
+        user-select: none;
+        cursor: default;
+      }
+      &:last-of-type:after {
+        content: '';
+      }
+
+    }
+  }
 }
 
 .row {
@@ -116,17 +135,19 @@ hr {
   margin-right: 0;
 }
 
-.nav > li > a {
-  padding-right: 0;
-}
-
 .separator {
   font-weight: bold;
 }
 
 .footer {
   color: $sensebox-green;
-  font-size: 16px;
+  font-size: $small-font-size;
+
+  .copyright {
+    text-align: center;
+    font-size: $small-font-size*0.85;
+    color: $grey-color;
+  }
 }
 
 .footer-header {
@@ -147,11 +168,6 @@ hr {
 
 .footer-content > ul > li {
   margin-bottom: 5px;
-}
-
-.copyright {
-  text-align: center;
-  font-size: 12px;
 }
 
 .content {
@@ -203,8 +219,8 @@ hr {
 
 .panel {
   border: 0px solid transparent;
-  -webkit-box-shadow: 0 0px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .panel-title {
@@ -224,6 +240,7 @@ hr {
     border-top: 0px solid transparent;
 }
 
+/*
 @media (min-width: $screen-sm-min) {
   .navbar-logo {
     padding-top: 15px;
@@ -242,6 +259,20 @@ hr {
 
     .panel-group .panel + .panel {
       margin-top: 50px;
+    }
+  }
+}
+*/
+
+.sensebox-presentation {
+  .panel-body {
+    padding:0;
+    padding-left:15px;
+    ul {
+      list-style: none;
+      font-size: $small-font-size;
+      color: $grey-color;
+      padding-left: 0;
     }
   }
 }

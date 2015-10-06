@@ -26,3 +26,6 @@ markdown: kramdown
 #   # on a typical twitter bootstrap stats are :
 #   # nested 138,7kB, compact 129,1kB, expanded 135,9 kB, compressed 122,4 kB
 #   style: compressed
+
+exclude:
+  - bower_components

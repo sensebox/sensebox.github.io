@@ -18,11 +18,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            {% assign pages = site.pages | sort:"weight"  %}
-              {% for page in pages %}
-                {% if page.title %}
-                  <li class="navbar-item"><a href="{{ page.url | prepend: site.baseurl}}">{{ page.title}}</a></li>
-                  <li><a class="separator">:</a></li>
+            {% assign menupages = site.pages | sort:"weight"  %}
+              {% for menupage in menupages %}
+                {% if menupage.title %}
+                  <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
+                    <a href="{{ menupage.url | prepend: site.baseurl }}">{{ menupage.title }}</a>
+                  </li>
                 {% endif %}
               {% endfor %}
           </ul>
