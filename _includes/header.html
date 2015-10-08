@@ -20,10 +20,13 @@
           <ul class="nav navbar-nav">
             {% assign menupages = site.pages | sort:"weight"  %}
               {% for menupage in menupages %}
-                {% if menupage.title %}
-                  <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
-                    <a href="{{ menupage.url | prepend: site.baseurl }}">{{ menupage.title }}</a>
-                  </li>
+                {% if menupage.url contains 'page' %}
+                  {% else %}
+                    {% if menupage.title %}
+                      <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
+                        <a href="{{ menupage.url | prepend: site.baseurl }}">{{ menupage.title }}</a>
+                      </li>
+                  {% endif %}
                 {% endif %}
               {% endfor %}
           </ul>
