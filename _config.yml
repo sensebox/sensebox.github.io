@@ -14,6 +14,10 @@ facebook_username: sensebox.de
 # Build settings
 markdown: kramdown
 
+# Blog pagination
+paginate: 5
+paginate_path: "/news/:num"
+
 # Extra styling
 # sass:
 #   # loading path from site root
@@ -27,5 +31,5 @@ markdown: kramdown
 #   # nested 138,7kB, compact 129,1kB, expanded 135,9 kB, compressed 122,4 kB
 #   style: compressed
 
-exclude:
-  - bower_components
+#exclude:
+#  - bower_components
