@@ -23,6 +23,8 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
+
+
 p {
   font-size: $base-font-size;
 }
@@ -57,6 +59,7 @@ hr {
 .navbar-default {
   border-style: none;
   background-color: #FFFFFF;
+  margin-bottom: 25px;
 }
 
 .navbar-brand {
@@ -192,6 +195,17 @@ hr {
   > .content {
     color: #828282;
     padding-left: 0px;
+  }
+}
+
+.readmore {
+  a {
+    color: $sensebox-green;
+
+    &:hover {
+      color: $sensebox-green;
+      text-decoration: underline;
+    }
   }
 }
 
