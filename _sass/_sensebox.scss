@@ -95,7 +95,7 @@ hr {
         background-color: transparent;
       }
 
-      > a:hover, 
+      > a:hover,
       > a:focus {
         color: lighten($sensebox-green, 50%);
       }
@@ -108,7 +108,7 @@ hr {
           background-color: transparent;
         }
       }
-      
+
       /* navbar item dividers */
       &:after {
         content: ':';
@@ -275,4 +275,21 @@ hr {
       padding-left: 0;
     }
   }
+}
+
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+  background-color: $sensebox-green;
+  border-color: $sensebox-green;
+}
+
+.pagination > li > a, .pagination > li > span {
+    color: $sensebox-green;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.pagination > li > a:hover, .pagination > li > a:focus, .pagination > li > span:hover, .pagination > li > span:focus {
+    color: $sensebox-green;
+    background-color: #eeeeee;
+    border-color: #ddd;
 }
