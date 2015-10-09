@@ -24,6 +24,10 @@ body {
 }
 
 
+.fixx {
+  position: fixed;
+}
+
 
 p {
   font-size: $base-font-size;
@@ -342,4 +346,9 @@ hr {
 
 .nav > li > a {
   color: $sensebox-green;
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: $sensebox-green;
+  color: #fff;
 }
