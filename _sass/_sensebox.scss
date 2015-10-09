@@ -181,6 +181,18 @@ hr {
 
 .posts {
   padding-left: 0;
+  padding-bottom: 80px;
+
+  > h1 {
+    > a{
+      color: $sensebox-green;
+    }
+  }
+
+  > .content {
+    color: #828282;
+    padding-left: 0px;
+  }
 }
 
 .post-list {
