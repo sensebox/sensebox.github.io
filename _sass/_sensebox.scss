@@ -305,3 +305,18 @@ hr {
     background-color: #eeeeee;
     border-color: #ddd;
 }
+
+.carousel-control {
+  color: $sensebox-green;
+}
+
+.carousel-indicators {
+
+  > li {
+    border: 1px solid $sensebox-green;
+  }
+
+  > .active {
+    background-color: $sensebox-green;
+  }
+}
