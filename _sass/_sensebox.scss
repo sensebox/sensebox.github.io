@@ -352,3 +352,22 @@ hr {
   background-color: $sensebox-green;
   color: #fff;
 }
+
+.smallcaps {
+  font-variant: small-caps;
+}
+
+em {
+  color: darken($sensebox-green, 10%);
+  font-weight: bold;
+  font-style: normal;
+}
+
+.team-pic {
+  float: left;
+  margin: 10px;
+}
+
+.team-text {
+  overflow: hidden;
+}
