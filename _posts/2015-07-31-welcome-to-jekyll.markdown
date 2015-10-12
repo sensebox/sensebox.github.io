@@ -6,8 +6,8 @@ author: Thomas
 thumbnail: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 categories: jekyll update
 
-image: Imagepfad
-imagecaption: Bildunterschrift Header 1
+image: http://sensebox.github.io/images/logo_transparent.png
+imagecaption: senseBox Logo
 imageparagraph: vielleicht mehr Infos
 ---
 
