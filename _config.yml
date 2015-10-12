@@ -33,3 +33,6 @@ paginate_path: "/news/page/:num"
 
 #exclude:
 #  - bower_components
+
+collections:
+  - team
