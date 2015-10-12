@@ -3,7 +3,7 @@ layout: post
 title:  "senseBox and openSenseMap at EOScience 2.0"
 date:   2015-10-12 13:01  :55
 author: Thomas
-thumbnail: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+thumbnail: senseBox and openSenseMap will be featured at the Earth Observation Science 2.0 Conference at ESA's European Space Research Instititute (ESRIN) in Frascati, Italy. We will present our state-of-the art...
 categories: jekyll update
 ---
 
