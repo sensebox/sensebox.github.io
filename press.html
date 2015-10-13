@@ -14,14 +14,25 @@ weight: 6
     <!-- News Bereich / Blogeinträge -->
     <div class="col-lg-6 col-md-6 col-sm-6 posts">
       <div class="page-header">
-        <a name="about-us"></a>
-        <h1>Sensebox in Medien und Presse</h1>
+        <h1>senseBox in Medien und Presse</h1>
       </div>
 
-      <p>
-      <a href="http://www.heise.de/make/inhalt/2015/4/106/" target="_blank">Make 4/2015, Seite 106</a><br/>
-      <a href="http://www.heise.de/newsticker/meldung/Make-Light-Wettbewerb-Sieger-auf-der-Hannover-Messe-2602167.html" target="_blank">Make Light Wettbewerb, April 2015</a>
-      </p>
+      {% assign pressnews = site.press | sort: 'date' | reverse %}
+      {% for post in pressnews %}
+      <div class="posts">
+        <h2 style="clear:both">{{ post.title }}</h2>
+        {% if post.thumbnail %}
+        <img class="team-pic" src="{{ site.baseurl | append: post.thumbnail }}" />
+        {% endif %}
+        <div class="content">
+        {{ post.content }}
+        </div>
+        <hr style="clear:both">
+        <div class="author">
+          <span class="date">{{ post.date | date: '%d. %B %Y' }}</span> von <span class="author"> {{ post.author }} </span>
+        </div>
+      </div>
+      {% endfor %}
     </div>
   </div>
 </div>
