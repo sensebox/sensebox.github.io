@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Make Magazin 4/2015"
+title:  "Arduinos erklimmen Zugspitze"
 date:   2015-08-20 12:00:00
 author: Thomas
 thumbnail: /images/press/make42015.jpg
