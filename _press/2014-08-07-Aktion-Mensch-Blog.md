@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bürger Schaffen Wissen"
-date:   2013-08-07 12:00:00
+date:   2014-08-07 12:00:00
 author: Thomas
 thumbnail: https://www.aktion-mensch.de/dam/jcr:30982c5b-80b7-42e7-aee6-293db5e398f7/logo_aktionmensch.jpg
 categories: press
