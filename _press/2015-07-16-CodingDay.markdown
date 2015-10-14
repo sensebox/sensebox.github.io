@@ -1,6 +1,3 @@
-
-
-Coding-Day auf der IdeenExpo mit Ranga Yogeshwar-Einlage
 ---
 layout: post
 title:  "Coding-Day auf der IdeenExpo mit Ranga Yogeshwar-Einlage"
