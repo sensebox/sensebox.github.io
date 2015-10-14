@@ -1,7 +1,3 @@
-
-http://www.smart-magazine.com/content/themes/smartmagazine/assets/img/smart_logo.png
-
-
 ---
 layout: post
 title:  "5 inspiring ideas for future cities from re:publica 2015"
