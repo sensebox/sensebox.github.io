@@ -41,12 +41,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .sponsor {
   ul {
-    display: table;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 100%;
     list-style: none;
 
     li {
-      display: table-cell;
+      /*display: table-cell;*/
     }
   }
   text-align: center;
@@ -378,11 +380,13 @@ em {
   font-style: normal;
 }
 
-.team-pic {
+.team-pic,
+.press-pic {
   float: left;
   margin: 10px;
 }
 
-.team-text {
+.team-text,
+.press-text {
   overflow: hidden;
 }

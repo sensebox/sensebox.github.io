@@ -22,9 +22,9 @@ weight: 6
       <div class="posts">
         <h2 style="clear:both">{{ post.title }}</h2>
         {% if post.thumbnail %}
-        <img class="team-pic" src="{{ site.baseurl | append: post.thumbnail }}" />
+        <img class="press-pic" src="{{ site.baseurl | append: post.thumbnail }}" />
         {% endif %}
-        <div class="content">
+        <div class="content press-text">
         {{ post.content }}
         </div>
         <hr style="clear:both">
