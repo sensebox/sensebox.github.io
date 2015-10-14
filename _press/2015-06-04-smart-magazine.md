@@ -7,5 +7,5 @@ thumbnail: http://www.smart-magazine.com/content/themes/smartmagazine/assets/img
 categories: press
 ---
 "Across the Atlantic, in Germany, other projects pave the way. Sensebox – a project by Munster University – is a simple interlocking system of an Arduino Uno minicomputer and several sensors..."
-<a href="http://www.smart-magazine.com/en/republica-2015-future-cities/" target="_blank">Smart Magazine, June 4, 2015</a>
+<a href="http://www.smart-magazine.com/en/republica-2015-future-cities/" target="_blank">Smart Magazine, 04.06.2015</a>
 
