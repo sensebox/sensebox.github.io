@@ -6,5 +6,5 @@ author: Thomas
 thumbnail: /images/press/make42015.jpg
 categories: press
 ---
-Was macht ein Makerprojekt unter extremen klimatischen Bedingungen in 2666 Metern Höhe? Begleiten wir die Arduino-Messstation SenseBox auf ihrer abenteuerlichen Reise in die Umweltforschungsstation Schneefernerhaus.
+2Was macht ein Makerprojekt unter extremen klimatischen Bedingungen in 2666 Metern Höhe? Begleiten wir die Arduino-Messstation SenseBox auf ihrer abenteuerlichen Reise in die Umweltforschungsstation Schneefernerhaus."
 <a href="http://www.heise.de/make/inhalt/2015/4/106/" target="_blank">Make 4/2015, Seite 106</a>
