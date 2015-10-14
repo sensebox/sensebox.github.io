@@ -3,7 +3,7 @@ layout: post
 title:  "senseBox im Smart City Exponat auf der MS Wissenschaft"
 date:   2015-06-04 12:00:00
 author: Thomas
-thumbnail: https://pbs.twimg.com/profile_images/454236824987127809/zU-6n863.jpeg
+thumbnail: http://www.prmaximus.de/logo/westdeutscher-rundfunk-wdr-9960.jpg
 categories: press
 ---
 Für die MS Wissenschaft hat das Institut für Geoinformatik ein Smart City Exponat entwickelt, in dem die senseBox eine Kernrolle spielte und Umweltinformationen vom Umfeld des Exponats sammelte und visualisierte.
