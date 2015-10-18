@@ -270,9 +270,31 @@ hr {
   box-shadow: none;
 }
 
-.panel-title {
-  color: $sensebox-green;
-  font-size: $base-font-size;
+h3.panel-title {
+  a {
+    color: $sensebox-green;
+    font-size: 24px;
+    
+    &:before {
+      position: absolute;
+      left: -8px;
+      background-image: url('../images/raute-gruen.png');
+      background-repeat: no-repeat;
+      width: 34px;
+      height: 34px;
+      content: '-';
+      color: white;
+      user-select: none;
+      text-decoration: none;
+      text-align: center;
+      font-size: 28px;
+    }
+
+    &.collapsed:before {
+      content: '+'
+    }
+  }
+
 }
 
 .panel-default {
@@ -390,3 +412,4 @@ em {
 .press-text {
   overflow: hidden;
 }
+
