@@ -20,7 +20,7 @@ Add the biography as a markdown file in the format `2015-01-01-topic.md` in the 
 
 Add the biography as a markdown file in the format `name.md` in the `_team` folder. Follow the same schema as existing files.
 
-## Running and the page locally with Jekyll
+## Running the page locally with Jekyll
 
 Clone repository, `cd` into it and run:
 
