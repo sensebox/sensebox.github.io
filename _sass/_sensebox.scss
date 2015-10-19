@@ -405,7 +405,8 @@ em {
 .team-pic,
 .press-pic {
   float: left;
-  margin: 10px;
+  margin: 2px;
+  margin-right: 15px;
 }
 
 .team-text,
@@ -415,4 +416,28 @@ em {
 
 .responsive-img {
   max-width: 100%;
+}
+
+.product-name {
+  background-color: $sensebox-green;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+  h3 {
+    color: white;
+    margin: 0;
+  }
+}
+
+.date,
+.author {
+  color: #888;
+}
+
+.clear {
+  clear: both;
+}
+
+.nomargin {
+  margin-bottom: 2px;
 }
