@@ -8,11 +8,11 @@ weight: 1
 
     <!-- Sidebar -->
     <div class="col-lg-4 col-md-4 col-sm-4 sidebar">
-      <div class="fixx affix-top">
-        <div class="fixx">
+      <div class="">
+        <div class="" style="float:right">
           
           <div class="footer-header">
-            Follow us
+            Follow us on
           </div>
           <div class="footer-content">
             <ul>
@@ -27,7 +27,7 @@ weight: 1
     </div>
 
     <!-- News Bereich / Blogeinträge -->
-    <div class="col-lg-7 col-md-7 col-sm-7 posts">
+    <div class="col-lg-7 col-md-7 col-sm-7">
       <!-- This loops through the paginated posts -->
       {% for post in paginator.posts %}
       <div class="posts">
@@ -81,9 +81,9 @@ weight: 1
             </a>
           </div>
 
-          <hr>
+          <hr class="clear nomargin">
           <div class="author">
-            <span class="date">{{ post.date }}</span> von <span class="author"> {{ post.author }} </span>
+            <span class="date">{{ post.date | date: '%d. %B %Y' }}</span> von <span class="author"> {{ post.author }} </span>
           </div>
         </div>
       </div>

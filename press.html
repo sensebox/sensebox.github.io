@@ -12,7 +12,7 @@ weight: 6
     <div class="col-lg-4 col-md-4 col-sm-4 sidebar"></div>
 
     <!-- News Bereich / Blogeinträge -->
-    <div class="col-lg-6 col-md-6 col-sm-6 posts">
+    <div class="col-lg-6 col-md-6 col-sm-6">
       <div class="page-header">
         <h1>senseBox in Medien und Presse</h1>
       </div>
@@ -22,12 +22,12 @@ weight: 6
       <div class="posts">
         <h2 style="clear:both">{{ post.title }}</h2>
         {% if post.thumbnail %}
-        <img class="team-pic" src="{{ site.baseurl | append: post.thumbnail }}" />
+        <img class="press-pic" src="{{ site.baseurl | append: post.thumbnail }}" />
         {% endif %}
-        <div class="content">
+        <div class="content press-text">
         {{ post.content }}
         </div>
-        <hr style="clear:both">
+        <hr class="clear nomargin">
         <div class="author">
           <span class="date">{{ post.date | date: '%d. %B %Y' }}</span> von <span class="author"> {{ post.author }} </span>
         </div>

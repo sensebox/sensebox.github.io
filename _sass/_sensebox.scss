@@ -41,12 +41,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .sponsor {
   ul {
-    display: table;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 100%;
     list-style: none;
 
     li {
-      display: table-cell;
+      /*display: table-cell;*/
     }
   }
   text-align: center;
@@ -268,9 +270,31 @@ hr {
   box-shadow: none;
 }
 
-.panel-title {
-  color: $sensebox-green;
-  font-size: $base-font-size;
+h3.panel-title {
+  a {
+    color: $sensebox-green;
+    font-size: 24px;
+    
+    &:before {
+      position: absolute;
+      left: -8px;
+      background-image: url('../images/raute-gruen.png');
+      background-repeat: no-repeat;
+      width: 34px;
+      height: 34px;
+      content: '×';
+      color: white;
+      user-select: none;
+      text-decoration: none;
+      text-align: center;
+      font-size: 28px;
+    }
+
+    &.collapsed:before {
+      content: '+'
+    }
+  }
+
 }
 
 .panel-default {
@@ -378,11 +402,42 @@ em {
   font-style: normal;
 }
 
-.team-pic {
+.team-pic,
+.press-pic {
   float: left;
-  margin: 10px;
+  margin: 2px;
+  margin-right: 15px;
 }
 
-.team-text {
+.team-text,
+.press-text {
   overflow: hidden;
+}
+
+.responsive-img {
+  max-width: 100%;
+}
+
+.product-name {
+  background-color: $sensebox-green;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+  h3 {
+    color: white;
+    margin: 0;
+  }
+}
+
+.date,
+.author {
+  color: #888;
+}
+
+.clear {
+  clear: both;
+}
+
+.nomargin {
+  margin-bottom: 2px;
 }

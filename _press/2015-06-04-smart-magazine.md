@@ -3,7 +3,7 @@ layout: post
 title:  "5 inspiring ideas for future cities from re:publica 2015"
 date:   2015-06-04 12:00:00
 author: Thomas
-thumbnail: http://www.smart-magazine.com/content/themes/smartmagazine/assets/img/smart_logo.png
+thumbnail: /images/press/smart_logo.jpg
 categories: press
 ---
 "Across the Atlantic, in Germany, other projects pave the way. Sensebox – a project by Munster University – is a simple interlocking system of an Arduino Uno minicomputer and several sensors..."
