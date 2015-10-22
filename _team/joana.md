@@ -1,5 +1,5 @@
 ---
-name: Thomas Bartoschek
+name: Joana Gockel
 image: /images/team/raute.png
 position: 8
 ---
