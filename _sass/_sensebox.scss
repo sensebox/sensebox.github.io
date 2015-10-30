@@ -409,9 +409,12 @@ em {
   margin-right: 15px;
 }
 
-.team-text,
 .press-text {
   overflow: hidden;
+}
+.team-text
+  overflow: hidden;
+  min-height: 240px;
 }
 
 .responsive-img {
