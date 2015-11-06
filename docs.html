@@ -72,7 +72,6 @@ weight: 4
           </div>
           <div role="tabpanel" class="tab-pane" id="photos">
             <br><br>
-            <table class="table table-hover">
 {% for posting in site.posts %}
 {% assign images = posting.content | split:"<img " %}
   {% for image in images %}
@@ -80,26 +79,15 @@ weight: 4
       {% assign imageMarkup = image | split:'/>' | first %}
       {% assign imageURL = imageMarkup | split:'"' %}
       {% assign imageFiletype = imageURL[1] | split:'.' | last | split:'?' | first %}
-      <tr>
+      <!--<tr>
         <td colspan="" rowspan="" headers=""><a href="{{ imageURL[1] }}">{{ imageURL[1] }}</a></td>
         <td colspan="" rowspan="" headers="">{{ imageFiletype | upcase }}</td>
         <td colspan="" rowspan="" headers="">{{ posting.date | date: '%d.%m.%Y' }}</td>
-      </tr>
+      </tr>-->
+      <a href="{{ imageURL[1] }}"><img src="{{ imageURL[1] }}" title="{{ posting.date | date: '%d.%m.%Y' }}" class="docs-photo-gallery"/></a>
     {% endif %}
   {% endfor %}
 {% endfor %}
-              
-              <tr>
-                <td colspan="" rowspan="" headers="">Lorem ipsum</td>
-                <td colspan="" rowspan="" headers="">JPG</td>
-                <td colspan="" rowspan="" headers="">08.10.2015</td>
-              </tr>
-              <tr>
-                <td colspan="" rowspan="" headers="">Lorem ipsum</td>
-                <td colspan="" rowspan="" headers="">PDF</td>
-                <td colspan="" rowspan="" headers="">07.10.2015</td>
-              </tr>
-            </table>
           </div>
         </div>
       </div>
