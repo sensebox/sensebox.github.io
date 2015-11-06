@@ -14,6 +14,7 @@ weight: 4
       <div class="page-header">
         <h1>Docs</h1>
       </div>
+
       <p>
         Hier finden sie die gesamte Dokumentation rund um die senseBox. Alle hier befindlichen Anleitungen sind Open Educational Resources (OER) unter der Creative Commons Lizenz <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="link" target="_blank">CC BY SA 4.0</a>. Bestehende Texte können so nach und nach von der kreativen Gemeinschaft weiterentwickelt, sowie durch neue Experimente oder Projekte erweitert werden.
       </p>
@@ -22,14 +23,14 @@ weight: 4
 
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Anleitungen</a></li>
-          <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Texte</a></li>
-          <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Fotos</a></li>
+          <li role="presentation" class="active"><a href="#instructions" aria-controls="instructions" role="tab" data-toggle="tab">Anleitungen</a></li>
+          <li role="presentation"><a href="#texts" aria-controls="texts" role="tab" data-toggle="tab">Texte</a></li>
+          <li role="presentation"><a href="#photos" aria-controls="photos" role="tab" data-toggle="tab">Fotos</a></li>
         </ul>
 
         <!-- Tab panes -->
         <div class="tab-content">
-          <div role="tabpanel" class="tab-pane active" id="home">
+          <div role="tabpanel" class="tab-pane active" id="instructions">
             <br><br>
             <table class="table table-hover">
               <tr>
@@ -49,7 +50,7 @@ weight: 4
               </tr>
             </table>
           </div>
-          <div role="tabpanel" class="tab-pane" id="profile">
+          <div role="tabpanel" class="tab-pane" id="texts">
             <br><br>
             <table class="table table-hover">
               <tr>
@@ -69,14 +70,25 @@ weight: 4
               </tr>
             </table>
           </div>
-          <div role="tabpanel" class="tab-pane" id="messages">
+          <div role="tabpanel" class="tab-pane" id="photos">
             <br><br>
             <table class="table table-hover">
-              <tr>
-                <td colspan="" rowspan="" headers="">Lorem ipsum</td>
-                <td colspan="" rowspan="" headers="">PNG</td>
-                <td colspan="" rowspan="" headers="">09.10.2015</td>
-              </tr>
+{% for posting in site.posts %}
+{% assign images = posting.content | split:"<img " %}
+  {% for image in images %}
+    {% if image contains 'src="' and image contains "sensebox.org" %}
+      {% assign imageMarkup = image | split:'/>' | first %}
+      {% assign imageURL = imageMarkup | split:'"' %}
+      {% assign imageFiletype = imageURL[1] | split:'.' | last | split:'?' | first %}
+      <tr>
+        <td colspan="" rowspan="" headers=""><a href="{{ imageURL[1] }}">{{ imageURL[1] }}</a></td>
+        <td colspan="" rowspan="" headers="">{{ imageFiletype | upcase }}</td>
+        <td colspan="" rowspan="" headers="">{{ posting.date | date: '%d.%m.%Y' }}</td>
+      </tr>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+              
               <tr>
                 <td colspan="" rowspan="" headers="">Lorem ipsum</td>
                 <td colspan="" rowspan="" headers="">JPG</td>

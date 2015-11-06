@@ -390,6 +390,10 @@ h3.panel-title {
 .table-hover > tbody > tr:hover {
   background-color: $sensebox-green;
   color: #fff;
+
+  a {
+    color: #fff;
+  }
 }
 
 .smallcaps {
