@@ -450,6 +450,40 @@ em {
 }
 
 .docs-photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.docs-photo-container {
+  width: 320px;
+  height: 240px;
+  border: 1px solid #ccc;
+  padding: 1px;
+  margin: 2px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.docs-photo-img {
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+article.post-content img {
   max-width: 33%;
-  padding: 2px;
+  max-height: 250px;
+}
+*/
+@media (max-width: $screen-md-min) {
+
+  .docs-photo-img {
+  }
+
+  article.post-content img {
+  }
+
 }

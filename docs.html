@@ -24,32 +24,17 @@ weight: 4
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
           <li role="presentation" class="active"><a href="#instructions" aria-controls="instructions" role="tab" data-toggle="tab">Anleitungen</a></li>
-          <li role="presentation"><a href="#texts" aria-controls="texts" role="tab" data-toggle="tab">Texte</a></li>
+          <!--<li role="presentation"><a href="#texts" aria-controls="texts" role="tab" data-toggle="tab">Texte</a></li>-->
           <li role="presentation"><a href="#photos" aria-controls="photos" role="tab" data-toggle="tab">Fotos</a></li>
         </ul>
 
         <!-- Tab panes -->
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="instructions">
-            <br><br>
-            <table class="table table-hover">
-              <tr>
-                <td colspan="" rowspan="" headers="">Lorem ipsum</td>
-                <td colspan="" rowspan="" headers="">PDF</td>
-                <td colspan="" rowspan="" headers="">09.10.2015</td>
-              </tr>
-              <tr>
-                <td colspan="" rowspan="" headers="">Lorem ipsum</td>
-                <td colspan="" rowspan="" headers="">PDF</td>
-                <td colspan="" rowspan="" headers="">08.10.2015</td>
-              </tr>
-              <tr>
-                <td colspan="" rowspan="" headers="">Lorem ipsum</td>
-                <td colspan="" rowspan="" headers="">PDF</td>
-                <td colspan="" rowspan="" headers="">07.10.2015</td>
-              </tr>
-            </table>
+            <br>
+            <p>In unserem <a href="https://github.com/sensebox/OER" target="_blank" class="link"><img src="{{ site.baseurl | append: '/images/iconmonstr-github-icon.png'}}"> Github Repository</a> finden Sie Anleitungen zur <a href="https://github.com/sensebox/OER/tree/master/senseBox_home" target="_blank" class="link">senseBox:home</a>, <a href="https://github.com/sensebox/OER/tree/master/senseBox_edu" target="_blank" class="link">senseBox:edu</a> und <a href="https://github.com/sensebox/OER/tree/master/OSeM%20Tutorials" target="_blank" class="link">openSenseMap</a>.</p>
           </div>
+          <!--
           <div role="tabpanel" class="tab-pane" id="texts">
             <br><br>
             <table class="table table-hover">
@@ -70,8 +55,10 @@ weight: 4
               </tr>
             </table>
           </div>
+          -->
           <div role="tabpanel" class="tab-pane" id="photos">
-            <br><br>
+            <br>
+            <div class="docs-photo-gallery">
 {% for posting in site.posts %}
 {% assign images = posting.content | split:"<img " %}
   {% for image in images %}
@@ -79,15 +66,11 @@ weight: 4
       {% assign imageMarkup = image | split:'/>' | first %}
       {% assign imageURL = imageMarkup | split:'"' %}
       {% assign imageFiletype = imageURL[1] | split:'.' | last | split:'?' | first %}
-      <!--<tr>
-        <td colspan="" rowspan="" headers=""><a href="{{ imageURL[1] }}">{{ imageURL[1] }}</a></td>
-        <td colspan="" rowspan="" headers="">{{ imageFiletype | upcase }}</td>
-        <td colspan="" rowspan="" headers="">{{ posting.date | date: '%d.%m.%Y' }}</td>
-      </tr>-->
-      <a href="{{ imageURL[1] }}"><img src="{{ imageURL[1] }}" title="{{ posting.date | date: '%d.%m.%Y' }}" class="docs-photo-gallery"/></a>
+      <div class="docs-photo-container"><a href="{{ imageURL[1] }}"><img src="{{ imageURL[1] }}" title="{{ posting.date | date: '%d.%m.%Y' }}" class="docs-photo-img"/></a></div>
     {% endif %}
   {% endfor %}
 {% endfor %}
+            </div>
           </div>
         </div>
       </div>
