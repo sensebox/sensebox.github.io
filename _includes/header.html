@@ -21,8 +21,9 @@
             {% assign menupages = site.pages | sort:"weight"  %}
               {% for menupage in menupages %}
                 {% if menupage.url contains 'page' %}
-                  {% else %}
-                    {% if menupage.title %}
+                {% elsif menupage.url contains 'news' %}
+                {% else %}
+                  {% if menupage.title %}
                       <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
                         <a href="{{ menupage.url | prepend: site.baseurl }}">{{ menupage.title }}</a>
                       </li>

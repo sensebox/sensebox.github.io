@@ -390,6 +390,10 @@ h3.panel-title {
 .table-hover > tbody > tr:hover {
   background-color: $sensebox-green;
   color: #fff;
+
+  a {
+    color: #fff;
+  }
 }
 
 .smallcaps {
@@ -409,9 +413,12 @@ em {
   margin-right: 15px;
 }
 
-.team-text,
 .press-text {
   overflow: hidden;
+}
+.team-text {
+  overflow: hidden;
+  min-height: 240px;
 }
 
 .responsive-img {
@@ -440,4 +447,43 @@ em {
 
 .nomargin {
   margin-bottom: 2px;
+}
+
+.docs-photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.docs-photo-container {
+  width: 320px;
+  height: 240px;
+  border: 1px solid #ccc;
+  padding: 1px;
+  margin: 2px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.docs-photo-img {
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+article.post-content img {
+  max-width: 33%;
+  max-height: 250px;
+}
+*/
+@media (max-width: $screen-md-min) {
+
+  .docs-photo-img {
+  }
+
+  article.post-content img {
+  }
+
 }
