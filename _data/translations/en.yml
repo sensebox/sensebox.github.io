@@ -1,0 +1,27 @@
+header:
+  blog: "News"
+  products: "senseBox"
+  osem: "openSenseMap"
+  docs: "Docs"
+  background: "Background"
+  press: "Press"
+
+footer:
+  news:
+    header: "News"
+    blog: "Blog"
+  background:
+    header: "Background"
+    aboutus: "About us"
+    philosophy: "Philosophy"
+    team: "Team"
+    awards: "Awards"
+    contact: "Contact"
+  press:
+    header: "Press"
+    articles: "Articles"
+    material: "Material"
+    contact: "Contact"
+  publications:
+    docs: "Docs"
+    thesis: "Bachelorthesis"

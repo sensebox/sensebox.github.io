@@ -1,0 +1,57 @@
+---
+layout: page
+id: background
+lang: en
+weight: 5
+---
+
+<div class="row">
+	<div class="col-lg-12 col-md-12 col-sm-12 posts">
+
+		<!-- Sidebar -->
+		<div class="col-lg-4 col-md-4 col-sm-4 sidebar"></div>
+
+		<!-- News Bereich / Blogeinträge -->
+		<div class="col-lg-6 col-md-6 col-sm-8 posts">
+			<div class="page-header">
+				<a name="about-us"></a>
+				<h1>Über uns</h1>
+			</div>
+			<p>Unser Team sammelt seit mehreren Jahren praktische Erfahrung in Workshops mit Schülern und Lehrern. Dabei hat sich herausgestellt, dass die Datenerhebung mit selbstgebauten Sensorstationen einen besonders zugänglichen Weg bei der Arbeit mit Geoinformation und Umweltdaten. Ganz nebenbei werden Kompetenzen in der Programmierung auf eine sehr anschauliche Art und Weise vermittelt. Diese Erfahrung führte zur Entwicklung der senseBox:edu basierend auf Arduino Mikrokontrollern, Sensoren und Zubehör zur Gruppenarbeit im Klassen-/Kurskontext.</p>
+
+			<div class="page-header">
+				<a name="philosophie"></a>
+				<h2>Philosophie</h2>
+			</div>
+
+			<h3 class="smallcaps">Citizen Science</h3>
+			<p>Die <em>senseBox:home</em> versteht sich als ein Citizen Science Toolkit. Mit der SenseBox können Messungen zu den unterschiedlichsten Fragestellungen vorgenommen werden und Citizen Science Projekte vom lokalen bis zum globalen Maßstab umgesetzt werden. Die von der senseBox erfassten Daten erhöhen die Messdichte von verschiedenen Umweltfaktoren und können zu genaueren Aussagen in Bezug auf Klima, Umweltbelastungen oder Verkehr beitragen.</p>
+
+			<h3 class="smallcaps">Education</h3>
+			<p>Die <em>senseBox:edu</em> ist als fächerverbindendes Werkzeug für die Schule gedacht, wobei in fächerübergreifenden Projekten Informatik/Technik/Physik-Kurse die SenseBoxen bauen und programmieren und diese dann entsprechend der Forschungsfrage zur Datenerhebung, z.B. im Geographie-, Biologie- oder Chemieunterricht genutzt werden. Datenanalysen, wie Zeitreihen, Interpolationen u.ä   können z.B. im Mathematikunterricht vorgenommen werden.</p>
+			<p>Die senseBox:edu ist ein Baukasten, mit dem 1-3 Schüler arbeiten können. Sie beinhaltet einen Arduino Uno Microcontroller, verschiedene Sensoren, Bauteile für Schaltungen (u.A. LEDs, Widerstände, Kabel und Breadboard) und zur Datenspeicherung. Mehrere SenseBox Edu können in einer Klassenkiste zusammengepackt werden. Der Arduino Mikrokontroller ist das Herzstück dieser Sammlung und wird zur Steuerung der angeschlossenen Komponenten an digitalen und analogen Ein- und Ausgängen verwendet.</p>
+
+			<h3 class="smallcaps">Open Science</h3>
+			<p>Die <em>senseBox</em> wird ausschließlich nach den Prinzipien der <a href="https://de.wikipedia.org/wiki/Offene_Wissenschaft" class="link">Open Science</a> entwickelt.
+			Die Zusammenstellung der senseBox-Komponenten ist unter der <a href="http://www.ohwr.org/attachments/2388/cern_ohl_v_1_2.txt" class="link">CERN Open Hardware Lizenz 1.2</a> offen.
+			Der Source Code der senseBox:home ist Open Source unter der <a href="http://opensource.org/licenses/LGPL-3.0" class="link">LGPL 3.0 Lizenz</a> verfügbar.
+			Der Source Code der OpenSenseMap ist Open Source unter der <a href="http://opensource.org/licenses/MIT" class="link">MIT Lizenz</a> verfügbar.
+			Die mit den SenseBoxen erfassten und auf der OpenSenseMap veröffentlichten Daten sind Open Data unter der <a href="http://opendatacommons.org/licenses/pddl/" class="link">Public Domain Dedication and Licesce 1.0</a>
+			Die Anleitungen, Materialien und didaktischen Konzepte sind Open Educational Resources (OER) unter der <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="link">Creative Commons Lizenz CC BY SA 4.0</a></p>
+
+			<div class="page-header">
+				<a name="team"></a>
+				<h2>Team</h2>
+			</div>
+			{% assign teammembers = site.team | sort: 'position' %}
+			{% for teammember in teammembers %}
+				<h3 style="clear:both">{{ teammember.name }}</h3>
+				<img class="team-pic" src="{{ site.baseurl | append: teammember.image }}" />
+				<div class="team-text">
+				{{ teammember.content }}
+				</div>
+			{% endfor %}
+
+		</div>
+	</div>
+</div>

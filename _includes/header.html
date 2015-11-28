@@ -18,15 +18,21 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
+          	{% assign t = site.data.translations.[page.lang].header %}
             {% assign menupages = site.pages | sort:"weight"  %}
               {% for menupage in menupages %}
                 {% if menupage.url contains 'page' %}
                 {% elsif menupage.url contains 'news' %}
                 {% else %}
                   {% if menupage.title %}
-                      <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
-                        <a href="{{ menupage.url | prepend: site.baseurl }}">{{ menupage.title }}</a>
-                      </li>
+                  	{% else %}
+                  	{% if menupage.lang == page.lang and menupage.id != 'main' %}
+                  	 {% if menupage.id != 'contact' %}
+	                      <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
+	                        <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
+	                      </li>
+                      {% endif %}
+                    {% endif %}
                   {% endif %}
                 {% endif %}
               {% endfor %}
