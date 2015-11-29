@@ -37,6 +37,15 @@
                 {% endif %}
               {% endfor %}
           </ul>
+          <ul class="nav navbar-nav pull-right">
+						<li class="navbar-item">
+							{% if page.lang == 'de' %}
+								<a href="{{ site.url | append: 'en/' }}">EN</a>
+								{% else %}
+								<a href="{{ site.url | append: 'de/' }}">DE</a>
+							{% endif %}
+						</li>
+          </ul>
         </div>
       </div>
   </div>

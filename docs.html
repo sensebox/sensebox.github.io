@@ -1,10 +1,11 @@
 ---
 layout: page
-permalink: /docs/
+permalink: /de/docs/
 weight: 4
 lang: de
 id: docs
 ---
+{% assign t = site.data.translations.[page.lang].docs %}
 <div class="row">
   <div class="col-lg-12 col-md-12 col-sm-12 posts">
 
@@ -17,23 +18,23 @@ id: docs
       </div>
 
       <p>
-        Hier finden sie die gesamte Dokumentation rund um die senseBox. Alle hier befindlichen Anleitungen sind Open Educational Resources (OER) unter der Creative Commons Lizenz <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="link" target="_blank">CC BY SA 4.0</a>. Bestehende Texte können so nach und nach von der kreativen Gemeinschaft weiterentwickelt, sowie durch neue Experimente oder Projekte erweitert werden.
+        {{ t.description }}
       </p>
       <br><br>
       <div>
 
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#instructions" aria-controls="instructions" role="tab" data-toggle="tab">Anleitungen</a></li>
+          <li role="presentation" class="active"><a href="#instructions" aria-controls="instructions" role="tab" data-toggle="tab">{{ t.instructions.header }}</a></li>
           <!--<li role="presentation"><a href="#texts" aria-controls="texts" role="tab" data-toggle="tab">Texte</a></li>-->
-          <li role="presentation"><a href="#photos" aria-controls="photos" role="tab" data-toggle="tab">Fotos</a></li>
+          <li role="presentation"><a href="#photos" aria-controls="photos" role="tab" data-toggle="tab">{{ t.pictures.header }}</a></li>
         </ul>
 
         <!-- Tab panes -->
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="instructions">
             <br>
-            <p>In unserem <a href="https://github.com/sensebox/OER" target="_blank" class="link"><img src="{{ site.baseurl | append: '/images/iconmonstr-github-icon.png'}}"> Github Repository</a> finden Sie Anleitungen zur <a href="https://github.com/sensebox/OER/tree/master/senseBox_home" target="_blank" class="link">senseBox:home</a>, <a href="https://github.com/sensebox/OER/tree/master/senseBox_edu" target="_blank" class="link">senseBox:edu</a> und <a href="https://github.com/sensebox/OER/tree/master/OSeM%20Tutorials" target="_blank" class="link">openSenseMap</a>.</p>
+            <p>{{ t.instructions.content }}</p>
           </div>
           <!--
           <div role="tabpanel" class="tab-pane" id="texts">

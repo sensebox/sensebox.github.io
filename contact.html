@@ -1,8 +1,10 @@
 ---
 layout: page
 id: contact
+permalink: /de/contact/
 lang: de
 ---
+{% assign t = site.data.translations.[page.lang].contact %}
 <div class="row">
   <div class="col-lg-12 col-md-12 col-sm-12 posts">
 
@@ -12,7 +14,7 @@ lang: de
     <!-- News Bereich / Blogeinträge -->
     <div class="col-lg-8 col-md-8 col-sm-8 posts">
       <div class="page-header">
-        <h1>Impressum</h1>
+        <h1>{{ t.legalnotice }}</h1>
       </div>
 
 			<address>
@@ -21,7 +23,7 @@ lang: de
 			  Heisenbergstraße 2<br>
 			  D-48149 Münster<br>
 			  <abbr title="Phone">Telefon:</abbr> +49 (251) 83-33 083<br><br>
-			  Verantwortlich für den Inhalt<br><br>
+			  {{ t.responsible }}<br><br>
 				Geschäftsführender Direktor<br>
 				Prof. Dr. Christian Kray<br>
 				Heisenbergstraße 2<br>
@@ -30,7 +32,7 @@ lang: de
 			</address>
 
 			<div class="page-header">
-				<h2>Haftungshinweis</h2>
+				<h2>{{ t.liabilitynote }}</h2>
 			</div>
 
 			<p>Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für
@@ -38,13 +40,13 @@ lang: de
 			ausschließlich deren Betreiber verantwortlich.</p>
 
       <div class="page-header">
-        <h2>Kontakt</h2>
+        <h2>{{ t.mail }}</h2>
       </div>
 
       <p><a href="mailto:info@sensebox.de">info@sensebox.de</a></p>
 
       <div class="page-header">
-        <h2>Copyrighthinweise</h2>
+        <h2>{{ t.copyright }}</h2>
       </div>
 
       <p>Social Media Icons: Iconmonstr</p>

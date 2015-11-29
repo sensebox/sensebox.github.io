@@ -23,5 +23,124 @@ footer:
     material: "Material"
     contact: "Contact"
   publications:
+    header: "Publications"
     docs: "Docs"
     thesis: "Bachelorthesis"
+
+main:
+  text: "<p>Die <em>senseBox</em> ist ein Do-it-yourself-Bausatz für stationäre und mobile Sensorstationen - ein <em>Citizen Science</em> Toolkit für jedermann.</p>
+
+      <p>Mit der <em>senseBox</em> können Bürger und Schulen <i>Umweltdaten</i> über Klima, Luftqualität, Verkehrsaufkommen, Lärmbelästigung und vieles mehr <i>messen</i> und so zu genaueren Aussagen über lokale Umweltphänomene beitragen.</p>
+
+      <p>Die Daten können im Internet als Open Data bereitgestellt und auf einer <a href=\"{{ site.url | append: '/osem/' }}\" class=\"link\">Karte</a> sichtbar gemacht werden.</p>
+
+      <p>Die Bürger können mit der <a href=\"{{ site.url | append: '/products/' }}\" class=\"link\">senseBox:home</a> ihre eigenen lokalen Forschungsfragen stellen und die nötigen Daten selbst sammeln und sammeln lassen.</p>
+
+      <p>Für Schulen und Nachwuchsforscher gibt es die <a href=\"{{ site.url | append: '/products/' }}\" class=\"link\">senseBox:edu</a> als Experementierkasten mit didaktischen Konzepten, Anleitungen und Projektideen.</p>
+
+      <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span><a> </a><a href=\"{{ site.url }}\" class=\"link\">mehr Informationen und bestellen</a></span></a></p>"
+  info:
+    temperature:
+      header: "Temperatur"
+      fact1: "Einheit: Grad Celsius"
+      fact2: "Sensor: <a href=\"http://www.ti.com/lit/ds/symlink/hdc1008.pdf\" target=\"_blank\">HDC1008</a>"
+    humiditiy:
+      header: "Luftfeuchtigkeit"
+      fact1: "Einheit: Relative Luftfeuchtigkeit, %"
+      fact2: "Sensor: <a href=\"http://www.ti.com/lit/ds/symlink/hdc1008.pdf\" target=\"_blank\">HDC1008</a>"
+    airpressure:
+      header: "Luftdruck"
+      fact1: "Einheit: hPa"
+      fact2: "Sensor: <a href=\"https://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp280/bmp280\" target=\"_blank\">BMP280</a>"
+    light:
+      header: "Beleuchtungsstärke"
+      fact1: "Einheit: Lux (lx)"
+      fact2: "Sensor: <a href=\"http://ams.com/eng/Products/Sensor-Driven-Lighting/SDL-Ambient-Light-Sensors/TSL45315\" target=\"_blank\">TSL45315</a>"
+    uav:
+      header: "UV(A)-Intensität"
+      fact1: "Einheit: μW/cm<sup>2</sup> (UV-Index)"
+      fact2: "Sensor: <a href=\"http://www.vishay.com/docs/84277/veml6070.pdf\" target=\"_blank\">VEML6070</a>"
+    more:
+      header: "weitere Phänomene"
+      fact1: "Lautstärke"
+      fact2: "Distanz (Infrarot, Ultraschall)"
+      fact3: "<a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a><a class=\"link\" href=\"{{ site.url | append: '/products/' }}\"> und vieles mehr</a>"
+
+news:
+
+products:
+  introduction: "<p>Von der senseBox gibt es zwei Varianten: <br>
+      die <em>senseBox:home</em> und die <em>senseBox:edu</em>.</p>
+
+      <p>Die <em>senseBox:home</em> beinhaltet weniger Bauteile und wird mit einer einfachen Bauanleitung zu einer Messstation für zu Hause einmalig aufgebaut und mit dem WLAN oder LAN-Anschluss verbunden. Den individuellen Programmcode erhalten die Bürger nach der Registrierung auf der <em>openSenseMap</em>. Danach liefert sie kontinuierlich ortsbezogene Messungen zu Temperatur, Luftfreuchte, Luftdruck, Helligkeit, UV-Licht und Schall.</p>
+
+      <p>Die <em>senseBox:edu</em> wurde speziell für den Einsatz im Schulunterricht entwickelt. Bei ihr liegt der Fokus auf dem Erlernen von Grundlagen der Programmierung, Elektronik und Aufnahme von Umweltdaten.</p>
+
+      <p>Die Zusammenstellung der senseBox-Komponenten ist unter der <a href=\"http://www.ohwr.org/attachments/2388/cern_ohl_v_1_2.txt\" class=\"link\" target=\"_blank\">CERN Open Hardware Lizenz 1.2</a> offen. Der Source Code der senseBox:home ist Open Source unter der <a href=\"http://opensource.org/licenses/LGPL-3.0\" class=\"link\" target=\"_blank\">LGPL 3.0 Lizenz</a> verfügbar. Die <a href=\"{{ site.url | append: '/docs/' }}\" class=\"link\">Anleitungen</a> sind Open Educational Resources (OER) unter der Creative Commons Lizenz <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">CC BY SA 4.0</a>.</p>
+
+      <p>&nbsp;</p>"
+
+  home:
+    description: "<p>Einsteigerset unserer Citizen Science Kampagne. Die senseBox:home wird einmalig zusammengebaut und auf der openSenseMap registriert. Danach werden aktuelle Messungen der Station an einem festen Standort live auf der <a href=\"{{ site.url | append: '/osem/' }}\" class=\"link\">openSenseMap</a> dargestellt und veröffentlicht.</p>
+      <p><b>Features</b></p>
+      <ul>
+      <li>Sensoren für Temperatur, Luftfeuchtigkeit und mehr</li>
+      <li>Kein Löten beim Zusammenbau nötig</li>
+      <li>Beispiele und Aufbauanleitungen</li>
+      <li>Erweiterbar mit weiteren Sensoren und Arduino-kompatibler Hardware</li>
+      </ul>
+      <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/de/Sensoren/senseBox\" target=\"_blank\" class=\"link\">Bestellen</a></p>"
+  edu:
+    description: "<p>Mit der senseBox:edu bieten wir Schülern und Nachwuchsforschern ab der 7. Klasse die Möglichkeit, das Programmieren auf eine spielerische Art und Weise zu erlernen, sich als Citizen Scientist zu betätigen und die Welt der Geoinformatik kennen zu lernen. In höheren Klassenstufen lassen sich Projekte zum Thema Umweltsensorik in Kursen oder AGs umsetzen, in dem Umweltmessstationen zusammengebaut, programmiert und aufgestellt werden. Weiterhin können diese Stationen mit dem Internet verbunden und ihre Messungen auf der <a href=\"{{ site.url | append: '/osem/' }}\" class=\"link\">openSenseMap</a> publiziert werden. So lassen sich Daten offen mit anderen Schulen, Bürgerinnen und Bürgern oder Wissenschaftlern teilen.</p>
+      <p><b>Features</b></p>
+      <ul>
+      <li>Sensoren für Temperatur, Luftfeuchtigkeit, Luftdruck, Beleuchtungsstärke und UV(A)-Intensität</li>
+      <li>Kein Löten beim Zusammenbau nötig</li>
+      <li>Beispiele und Aufbauanleitungen für den Unterricht, mit Unterlagen für Schüler und Lehrer</li>
+      </ul>
+      <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/de/Sensoren/senseBox\" target=\"_blank\" class=\"link\">Bestellen</a></p>"
+
+osem:
+  description: "<p>Die <em>openSenseMap</em> ist unsere Web-Plattform für die offenen Daten der senseBox. Jede <em>senseBox:home</em> übeträgt ihre Messdaten direkt auf diese Karte, wo sie betrachtet, analysiert und heruntergeladen werden können. Auch mit der <em>senseBox:edu</em> erfasste Daten können auf der openSenseMap angezeigt werden.</p>
+      <p>Alle auf der openSenseMap veröffentlichten Daten sind Open Data unter der <a href=\"http://opendatacommons.org/licenses/pddl/summary/\" class=\"link\" target=\"_blank\">Public Domain Dedication and License 1.0</a>.</p>"
+  link: "openSenseMap öffnen"
+
+docs:
+  description: "Hier finden sie die gesamte Dokumentation rund um die senseBox. Alle hier befindlichen Anleitungen sind Open Educational Resources (OER) unter der Creative Commons Lizenz <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">CC BY SA 4.0</a>. Bestehende Texte können so nach und nach von der kreativen Gemeinschaft weiterentwickelt, sowie durch neue Experimente oder Projekte erweitert werden."
+  instructions:
+    header: "Anleitungen"
+    content: "In unserem <a href=\"https://github.com/sensebox/OER\" target=\"_blank\" class=\"link\"><img src=\"{{ site.baseurl | append: '/images/iconmonstr-github-icon.png'}}\"> Github Repository</a> finden Sie Anleitungen zur <a href=\"https://github.com/sensebox/OER/tree/master/senseBox_home\" target=\"_blank\" class=\"link\">senseBox:home</a>, <a href=\"https://github.com/sensebox/OER/tree/master/senseBox_edu\" target=\"_blank\" class=\"link\">senseBox:edu</a> und <a href=\"https://github.com/sensebox/OER/tree/master/OSeM%20Tutorials\" target=\"_blank\" class=\"link\">openSenseMap</a>."
+  pictures:
+    header: "Fotos"
+
+background:
+  aboutus:
+    header: "Über uns"
+    description: "Unser Team des Schüler- und Forschugnslabors <a class=\"link\" href=\"http://gi-at-school.de\" target=\"_blank\">GI@School</a> am <a class=\"link\" href=\"http://ifgi.de\" target=\"_blank\">Institut für Geoinformatik</a> sammelt seit mehreren Jahren praktische Erfahrung in Workshops mit Schülern und Lehrern. Dabei hat sich herausgestellt, dass die Datenerhebung mit selbstgebauten Sensorstationen einen besonders zugänglichen Weg bei der Arbeit mit Geoinformation und Umweltdaten bietet. Ganz nebenbei werden Kompetenzen in der Programmierung auf eine sehr anschauliche Art und Weise vermittelt. Diese Erfahrung führte zur Entwicklung der senseBox:edu basierend auf Arduino Mikrokontrollern, Sensoren und Zubehör zur Gruppenarbeit im Klassen-/Kurskontext. Die senseBox:home ergänzt diesen Ansatz und komplettiert das Citizen Science Toolkit."
+  philosophy:
+    header: "Philosophie"
+    citizenscience:
+      header: "Citizen Science"
+      description: "Die <em>senseBox:home</em> versteht sich als ein Citizen Science Toolkit. Mit der senseBox können Messungen zu den unterschiedlichsten Fragestellungen vorgenommen werden und Citizen Science Projekte vom lokalen bis zum globalen Maßstab umgesetzt werden. Die von der senseBox erfassten Daten erhöhen die Messdichte von verschiedenen Umweltfaktoren und können zu genaueren Aussagen in Bezug auf Klima, Umweltbelastungen oder Verkehr beitragen."
+    education:
+      header: "Education"
+      description: "Die <em>senseBox:edu</em> ist als fächerverbindendes Werkzeug für die Schule gedacht, wobei in fächerübergreifenden Projekten Informatik/Technik/Physik-Kurse die SenseBoxen bauen und programmieren und diese dann entsprechend der Forschungsfrage zur Datenerhebung, z.B. im Geographie-, Biologie- oder Chemieunterricht genutzt werden. Datenanalysen, wie Zeitreihen, Interpolationen u.ä können z.B. im Mathematikunterricht vorgenommen werden.</p>
+      <p>Die senseBox:edu ist ein Baukasten, mit dem 1-3 Schüler arbeiten können. Sie beinhaltet einen Arduino Uno Microcontroller, verschiedene Sensoren, Bauteile für Schaltungen (u.A. LEDs, Widerstände, Kabel und Breadboard) und zur Datenspeicherung. Mehrere SenseBox Edu können in einer Klassenkiste zusammengepackt werden. Der Arduino Mikrokontroller ist das Herzstück dieser Sammlung und wird zur Steuerung der angeschlossenen Komponenten an digitalen und analogen Ein- und Ausgängen verwendet."
+    openscience:
+      header: "Open Science"
+      description: "Die <em>senseBox</em> wird ausschließlich nach den Prinzipien der <a href=\"https://de.wikipedia.org/wiki/Offene_Wissenschaft\" class=\"link\" target=\"_blank\">Open Science</a> entwickelt.
+      Die Zusammenstellung der senseBox-Komponenten ist unter der <a href=\"http://www.ohwr.org/attachments/2388/cern_ohl_v_1_2.txt\" class=\"link\" target=\"_blank\">CERN Open Hardware Lizenz 1.2</a> offen.
+      Der Source Code der senseBox:home ist Open Source unter der <a href=\"http://opensource.org/licenses/LGPL-3.0\" class=\"link\" target=\"_blank\">LGPL 3.0 Lizenz</a> verfügbar.
+      Der Source Code der openSenseMap ist Open Source unter der <a href=\"http://opensource.org/licenses/MIT\" class=\"link\" target=\"_blank\">MIT Lizenz</a> verfügbar.
+      Die mit den SenseBoxen erfassten und auf der openSenseMap veröffentlichten Daten sind Open Data unter der <a href=\"http://opendatacommons.org/licenses/pddl/\" class=\"link\" target=\"_blank\">Public Domain Dedication and Licesce 1.0</a>.
+      Die Anleitungen, Materialien und didaktischen Konzepte sind Open Educational Resources (OER) unter der <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">Creative Commons Lizenz CC BY SA 4.0</a>."
+
+press:
+  header: "senseBox in Medien und Presse"
+
+contact:
+  legalnotice: "Impressum"
+  responsible: "Verantwortlich für den Inhalt"
+  liabilitynote: "Haftungshinweis"
+  mail: "Kontakt"
+  copyright: "Copyrighthinweise"

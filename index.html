@@ -3,6 +3,7 @@ layout: default
 lang: de
 id: main
 ---
+{% assign t = site.data.translations.[page.lang].main %}
 <div class="row sensebox-presentation">
   <div class="col-lg-12 col-md-12 col-sm-12">
     <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1">
@@ -15,15 +16,15 @@ id: main
             <div class="panel-heading" role="tab" id="headingOne">
               <h3 class="panel-title">
                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseTemperature" aria-expanded="false" aria-controls="collapseTemperature" title="Temperatur aufklappen">
-                  Temperatur
+                  {{ t.info.temperature.header}}
                 </a>
               </h3>
             </div>
             <div id="collapseTemperature" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
               <div class="panel-body">
                 <ul>
-                  <li>Einheit: Grad Celsius</li>
-                  <li>Sensor: <a href="http://www.ti.com/lit/ds/symlink/hdc1008.pdf" target="_blank">HDC1008</a></li>
+                  <li>{{ t.info.temperature.fact1 }}</li>
+                  <li>{{ t.info.temperature.fact2 }}</li>
                 </ul>
               </div>
             </div>
@@ -32,15 +33,15 @@ id: main
             <div class="panel-heading" role="tab" id="headingTwo">
               <h3 class="panel-title">
                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseHumidity" aria-expanded="false" aria-controls="collapseHumidity" title="Luftfeuchtigkeit aufklappen">
-                  Luftfeuchtigkeit
+                  {{ t.info.humiditiy.header }}
                 </a>
               </h3>
             </div>
             <div id="collapseHumidity" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
               <div class="panel-body">
                 <ul>
-                  <li>Einheit: Relative Luftfeuchtigkeit, %</li>
-                  <li>Sensor: <a href="http://www.ti.com/lit/ds/symlink/hdc1008.pdf" target="_blank">HDC1008</a></li>
+                  <li>{{ t.info.humiditiy.fact1 }}</li>
+                  <li>{{ t.info.humiditiy.fact2 }}</li>
                 </ul>
               </div>
             </div>
@@ -49,15 +50,15 @@ id: main
             <div class="panel-heading" role="tab" id="headingThree">
               <h3 class="panel-title">
                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapsePressure" aria-expanded="false" aria-controls="collapsePressure" title="Luftdruck aufklappen">
-                  Luftdruck
+                  {{ t.info.airpressure.header }}
                 </a>
               </h3>
             </div>
             <div id="collapsePressure" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
               <div class="panel-body">
                 <ul>
-                  <li>Einheit: hPa</li>
-                  <li>Sensor: <a href="https://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp280/bmp280" target="_blank">BMP280</a></li>
+                  <li>{{ t.info.airpressure.fact1 }}</li>
+                  <li>{{ t.info.airpressure.fact2 }}</li>
                 </ul>
               </div>
             </div>
@@ -70,15 +71,15 @@ id: main
             <div class="panel-heading" role="tab" id="headingFour">
               <h3 class="panel-title">
                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseLight" aria-expanded="false" aria-controls="collapseLight" title="Beleuchtungsstärke aufklappen">
-                  Beleuchtungsstärke
+                  {{ t.info.light.header }}
                 </a>
               </h3>
             </div>
             <div id="collapseLight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
               <div class="panel-body">
                 <ul>
-                  <li>Einheit: Lux (lx)</li>
-                  <li>Sensor: <a href="http://ams.com/eng/Products/Sensor-Driven-Lighting/SDL-Ambient-Light-Sensors/TSL45315" target="_blank">TSL45315</a></li>
+                  <li>{{ t.info.light.fact1 }}</li>
+                  <li>{{ t.info.light.fact2 }}</li>
                 </ul>
               </div>
             </div>
@@ -87,15 +88,15 @@ id: main
             <div class="panel-heading" role="tab" id="headingFive">
               <h3 class="panel-title">
                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseUV" aria-expanded="false" aria-controls="collapseUV" title="UV(A)-Intensität aufklappen">
-                  UV(A)-Intensität
+                  {{ t.info.uav.header }}
                 </a>
               </h3>
             </div>
             <div id="collapseUV" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
               <div class="panel-body">
                 <ul>
-                  <li>Einheit: μW/cm<sup>2</sup> (UV-Index)</li>
-                  <li>Sensor: <a href="http://www.vishay.com/docs/84277/veml6070.pdf" target="_blank">VEML6070</a></li>
+                  <li>{{ t.info.uav.fact1 }}</li>
+                  <li>{{ t.info.uav.fact2 }}</li>
                 </ul>
               </div>
             </div>
@@ -104,16 +105,16 @@ id: main
             <div class="panel-heading" role="tab" id="headingSix">
               <h3 class="panel-title">
                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseMore" aria-expanded="false" aria-controls="collapseMore" title="weitere Phänomene aufklappen">
-                  weitere Phänomene
+                  {{ t.info.more.header }}
                 </a>
               </h3>
             </div>
             <div id="collapseMore" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
               <div class="panel-body">
                 <ul>
-                  <li>Lautstärke</li>
-                  <li>Distanz (Infrarot, Ultraschall)</li>
-                  <li><a class="link"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a><a class="link" href="{{ site.url | append: '/products/' }}"> und vieles mehr</a></li>
+                  <li>{{ t.info.more.fact1 }}</li>
+                  <li>{{ t.info.more.fact2 }}</li>
+                  <li>{{ t.info.more.fact3 }}</li>
                 </ul>
               </div>
             </div>
@@ -136,17 +137,7 @@ id: main
 
     <!-- Content -->
     <div class="col-lg-8 col-md-8 col-sm-8">
-			<p>Die <em>senseBox</em> ist ein Do-it-yourself-Bausatz für stationäre und mobile Sensorstationen - ein <em>Citizen Science</em> Toolkit für jedermann.</p>
-
-      <p>Mit der <em>senseBox</em> können Bürger und Schulen <i>Umweltdaten</i> über Klima, Luftqualität, Verkehrsaufkommen, Lärmbelästigung und vieles mehr <i>messen</i> und so zu genaueren Aussagen über lokale Umweltphänomene beitragen.</p>
-
-      <p>Die Daten können im Internet als Open Data bereitgestellt und auf einer <a href="{{ site.url | append: '/osem/' }}" class="link">Karte</a> sichtbar gemacht werden.</p>
-
-      <p>Die Bürger können mit der <a href="{{ site.url | append: '/products/' }}" class="link">senseBox:home</a> ihre eigenen lokalen Forschungsfragen stellen und die nötigen Daten selbst sammeln und sammeln lassen.</p>
-
-      <p>Für Schulen und Nachwuchsforscher gibt es die <a href="{{ site.url | append: '/products/' }}" class="link">senseBox:edu</a> als Experementierkasten mit didaktischen Konzepten, Anleitungen und Projektideen.</p>
-
-      <p><a class="link"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span><a> </a><a href="{{ site.url }}" class="link">mehr Informationen und bestellen</a></span></a></p>
+			{{ t.text }}
     </div>
   </div>
 </div>

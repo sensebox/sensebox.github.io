@@ -1,3 +1,4 @@
+{% assign t = site.data.translations.[page.lang].footer %}
 <div class="footer">
   <hr>
   <div class="row">
@@ -39,7 +40,7 @@
       <div class="row">
         <div class="col-lg-3">
           <div class="footer-header">
-            Neuigkeiten
+            {{ t.news.header }}
           </div>
           <div class="footer-content">
             <ul>
@@ -49,38 +50,38 @@
         </div>
         <div class="col-lg-3">
           <div class="footer-header">
-            Hintergrund
+            {{ t.background.header }}
           </div>
           <div class="footer-content">
             <ul>
-              <li><a href="{{ site.baseurl | append: '/background/'}}">Über uns</a></li>
-              <li><a href="{{ site.baseurl | append: '/background/#philosophie'}}">Philosophie</a></li>
-              <li><a href="{{ site.baseurl | append: '/background/#team'}}">Team</a></li>
-              <li>Auszeichnungen</li>
-              <li><a href="{{ site.baseurl | append: '/contact/'}}">Impressum und Kontakt</a></li>
+          		<li><a href="{{ site.url | append: page.lang | append: '/background/'}}">{{ t.background.aboutus }}</a></li>
+          		<li><a href="{{ site.url | append: page.lang | append: '/background/#philosophie'}}">{{ t.background.philosophy }}</a></li>
+          		<li><a href="{{ site.url | append: page.lang | append: '/background/#team'}}">{{ t.background.team }}</a></li>
+          		<li>{{ t.background.awards }}</li>
+          		<li><a href="{{ site.url | append: page.lang | append: '/contact/'}}">{{ t.background.contact }}</a></li>
             </ul>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="footer-header">
-            Presse
+            {{ t.press.header }}
           </div>
           <div class="footer-content">
             <ul>
-              <li><a href="{{ site.baseurl | append: '/press/'}}">Berichte</a></li>
-              <li>Material</li>
-              <li><a href="{{ site.baseurl | append: '/contact/'}}">Kontakt</a></li>
+              <li><a href="{{ site.baseurl | append: page.lang | append: '/press/'}}">{{ t.press.articles }}</a></li>
+              <li>{{ t.press.material }}</li>
+              <li><a href="{{ site.baseurl | append: page.lang | append: '/contact/'}}">{{ t.press.contact }}</a></li>
             </ul>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="footer-header">
-            Publikationen
+            {{ t.publications.header }}
           </div>
           <div class="footer-content">
             <ul>
-              <li>Docs</li>
-              <li>Bachelor-Arbeiten</li>
+              <li>{{ t.publications.docs }}</li>
+              <li>{{ t.publications.thesis }}</li>
             </ul>
           </div>
         </div>
