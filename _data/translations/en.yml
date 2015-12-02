@@ -81,7 +81,7 @@ products:
       <p>&nbsp;</p>"
 
   home:
-    description: "<p>Citizen Science Kit for Beginners. Once the senseBox:home is assembled and registered to openSenseMap, measurements from each sensor station will be published and displayed on the  <a href=\"{{ site.url | append: '/osem/' }}\" class=\"link\">openSenseMap</a> in real-time and made available as Open Data.</p>
+    description: "<p>The <em>Citizen Science</em>  kit for beginners. Once the senseBox:home is assembled and registered to openSenseMap, measurements from each sensor station will be published and displayed on the  <a href=\"{{ site.url | append: '/osem/' }}\" class=\"link\">openSenseMap</a> in real-time and made available as Open Data.</p>
       <p><b>Features</b></p>
       <ul>
       <li>Sensors for temperature, humidity and more</li>
