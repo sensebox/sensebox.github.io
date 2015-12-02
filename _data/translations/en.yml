@@ -28,15 +28,15 @@ footer:
     thesis: "Bachelorthesis"
 
 main:
-  text: "<p>Die <em>senseBox</em> ist ein Do-it-yourself-Bausatz für stationäre und mobile Sensorstationen - ein <em>Citizen Science</em> Toolkit für jedermann.</p>
+  text: "<p>The <em>senseBox</em> is a do-it-yourself kit for stationary and mobile sensor stations –  the <em>Citizen Science</em> Toolkit.</p>
 
-      <p>Mit der <em>senseBox</em> können Bürger und Schulen <i>Umweltdaten</i> über Klima, Luftqualität, Verkehrsaufkommen, Lärmbelästigung und vieles mehr <i>messen</i> und so zu genaueren Aussagen über lokale Umweltphänomene beitragen.</p>
+      <p>With <em>senseBox</em> , citizens and schools are able to collect environmental data using sensors for climate (weather, air quality), transport (traffic desity or noise pollution) and many more phenomena to find out more about the environment.</p>
 
-      <p>Die Daten können im Internet als Open Data bereitgestellt und auf einer <a href=\"{{ site.url | append: '/osem/' }}\" class=\"link\">Karte</a> sichtbar gemacht werden.</p>
+      <p>The data collected is being published as open data on the  <a href=\"{{ site.url | append: '/osem/' }}\" class=\"link\">openSenseMap</a>.</p>
+ 
+      <p>Citizens with <a href=\"{{ site.url | append: '/products/' }}\" class=\"link\">senseBox:home</a> can use the technology for their own local research, to collect data by themselves or to allow the senseBox to collect data for them.</p>
 
-      <p>Die Bürger können mit der <a href=\"{{ site.url | append: '/products/' }}\" class=\"link\">senseBox:home</a> ihre eigenen lokalen Forschungsfragen stellen und die nötigen Daten selbst sammeln und sammeln lassen.</p>
-
-      <p>Für Schulen und Nachwuchsforscher gibt es die <a href=\"{{ site.url | append: '/products/' }}\" class=\"link\">senseBox:edu</a> als Experementierkasten mit didaktischen Konzepten, Anleitungen und Projektideen.</p>
+      <p>Additionally, there is <a href=\"{{ site.url | append: '/products/' }}\" class=\"link\">senseBox:edu</a> created for schools and junior scientists, which is an experimental box with didactical concepts, instructions and project ideas included. </p>
 
       <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span><a> </a><a href=\"{{ site.url }}\" class=\"link\">mehr Informationen und bestellen</a></span></a></p>"
   info:
