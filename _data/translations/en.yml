@@ -101,9 +101,9 @@ products:
       <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/de/Sensoren/senseBox\" target=\"_blank\" class=\"link\">Bestellen</a></p>"
 
 osem:
-  description: "<p>Die <em>openSenseMap</em> ist unsere Web-Plattform für die offenen Daten der senseBox. Jede <em>senseBox:home</em> übeträgt ihre Messdaten direkt auf diese Karte, wo sie betrachtet, analysiert und heruntergeladen werden können. Auch mit der <em>senseBox:edu</em> erfasste Daten können auf der openSenseMap angezeigt werden.</p>
-      <p>Alle auf der openSenseMap veröffentlichten Daten sind Open Data unter der <a href=\"http://opendatacommons.org/licenses/pddl/summary/\" class=\"link\" target=\"_blank\">Public Domain Dedication and License 1.0</a>.</p>"
-  link: "openSenseMap öffnen"
+  description: "<p><em>openSenseMap</em> is our platform for the publishing of senseBox and other open sensor data. Each <em>senseBox:home</em> transmits its measurements directly to the map, where anyone can observe, analyze and download the data. Measurements obtained with the <em>senseBox:edu</em>can also be displayed on openSenseMap.</p>
+      <p>All data published on openSenseMap is available as Open Data under the <a href=\"http://opendatacommons.org/licenses/pddl/summary/\" class=\"link\" target=\"_blank\">Public Domain Dedication and License 1.0</a>.</p>"
+  link: "start openSenseMap"
 
 docs:
   description: "Hier finden sie die gesamte Dokumentation rund um die senseBox. Alle hier befindlichen Anleitungen sind Open Educational Resources (OER) unter der Creative Commons Lizenz <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">CC BY SA 4.0</a>. Bestehende Texte können so nach und nach von der kreativen Gemeinschaft weiterentwickelt, sowie durch neue Experimente oder Projekte erweitert werden."
