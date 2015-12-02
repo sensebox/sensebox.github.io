@@ -76,27 +76,30 @@ products:
 
       <p>The <em>senseBox:edu</em> was specifically developed to be applied in school classrooms or by junior scientists at home. The project focus is on learning the basics of programming and electronics, and is related to the collection of environmental data. </p>
 
-      <p>The senseBox setup of components is open under the  <a href=\"http://www.ohwr.org/attachments/2388/cern_ohl_v_1_2.txt\" class=\"link\" target=\"_blank\">CERN Open Hardware Lizenz 1.2</a>. The source code of senseBox:home is open under the  <a href=\"http://opensource.org/licenses/LGPL-3.0\" class=\"link\" target=\"_blank\">LGPL 3.0 Lizenz</a>. The <a href=\"{{ site.url | append: '/docs/' }}\" class=\"link\">instructions and documentation</a> are Open Educational Ressources (OER) under the  Creative Commons License <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">CC BY SA 4.0</a>.</p>
+      <p>The senseBox setup of components is open under the  <a href=\"http://www.ohwr.org/attachments/2388/cern_ohl_v_1_2.txt\" class=\"link\" target=\"_blank\">CERN Open Hardware License 1.2</a>. The source code of senseBox:home is open under the  <a href=\"http://opensource.org/licenses/LGPL-3.0\" class=\"link\" target=\"_blank\">LGPL 3.0 License</a>. The <a href=\"{{ site.url | append: '/docs/' }}\" class=\"link\">instructions and documentation</a> are Open Educational Ressources (OER) under the  Creative Commons License <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">CC BY SA 4.0</a>.</p>
 
       <p>&nbsp;</p>"
 
   home:
-    description: "<p>Einsteigerset unserer Citizen Science Kampagne. Die senseBox:home wird einmalig zusammengebaut und auf der openSenseMap registriert. Danach werden aktuelle Messungen der Station an einem festen Standort live auf der <a href=\"{{ site.url | append: '/osem/' }}\" class=\"link\">openSenseMap</a> dargestellt und veröffentlicht.</p>
+    description: "<p>Citizen Science Kit for Beginners. Once the senseBox:home is assembled and registered to openSenseMap, measurements from each sensor station will be published and displayed on the  <a href=\"{{ site.url | append: '/osem/' }}\" class=\"link\">openSenseMap</a> in real-time and made available as Open Data.</p>
       <p><b>Features</b></p>
       <ul>
-      <li>Sensoren für Temperatur, Luftfeuchtigkeit und mehr</li>
-      <li>Kein Löten beim Zusammenbau nötig</li>
-      <li>Beispiele und Aufbauanleitungen</li>
-      <li>Erweiterbar mit weiteren Sensoren und Arduino-kompatibler Hardware</li>
+      <li>Sensors for temperature, humidity and more</li>
+      <li>No soldering necessary</li>
+      <li>Instructions and examples</li>
+      <li>Extendable with other sensors and arduino-compatible hardware</li>
       </ul>
-      <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/de/Sensoren/senseBox\" target=\"_blank\" class=\"link\">Bestellen</a></p>"
+      <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/de/Sensoren/senseBox\" target=\"_blank\" class=\"link\">place your order here</a></p>"
   edu:
-    description: "<p>Mit der senseBox:edu bieten wir Schülern und Nachwuchsforschern ab der 7. Klasse die Möglichkeit, das Programmieren auf eine spielerische Art und Weise zu erlernen, sich als Citizen Scientist zu betätigen und die Welt der Geoinformatik kennen zu lernen. In höheren Klassenstufen lassen sich Projekte zum Thema Umweltsensorik in Kursen oder AGs umsetzen, in dem Umweltmessstationen zusammengebaut, programmiert und aufgestellt werden. Weiterhin können diese Stationen mit dem Internet verbunden und ihre Messungen auf der <a href=\"{{ site.url | append: '/osem/' }}\" class=\"link\">openSenseMap</a> publiziert werden. So lassen sich Daten offen mit anderen Schulen, Bürgerinnen und Bürgern oder Wissenschaftlern teilen.</p>
+    description: "<p>senseBox:edu offers schools, starting from the 7th grade, the possibility to learn programming in a fun and playful environment, to be a real citizen scientist and to get to know the world of geoinformatics. 
+In the upper grades it can be used for projects on environmental phenomena, where sensor stations are built, programmed and positioned by the students. 
+Furthermore the sensor stations are connected to the Internet, where the measurements are updated and published on <a href=\"{{ site.url | append: '/osem/' }}\" class=\"link\">openSenseMap</a>. In this way, data can be shared with other schools, citizens and scientists.</p>
       <p><b>Features</b></p>
       <ul>
-      <li>Sensoren für Temperatur, Luftfeuchtigkeit, Luftdruck, Beleuchtungsstärke und UV(A)-Intensität</li>
-      <li>Kein Löten beim Zusammenbau nötig</li>
-      <li>Beispiele und Aufbauanleitungen für den Unterricht, mit Unterlagen für Schüler und Lehrer</li>
+      <li>Sensors for temperature, humidity, air pressure, UV(A)-intensity, distance and more</li>
+      <li>No soldering necessary</li>
+      <li>Examples and instructions</li>
+      <li>Learning units organized in a wiki</li>
       </ul>
       <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/de/Sensoren/senseBox\" target=\"_blank\" class=\"link\">Bestellen</a></p>"
 
