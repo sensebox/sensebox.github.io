@@ -38,33 +38,33 @@ main:
 
       <p>Additionally, there is <a href=\"{{ site.url | append: '/products/' }}\" class=\"link\">senseBox:edu</a> created for schools and junior scientists, which is an experimental box with didactical concepts, instructions and project ideas included. </p>
 
-      <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span><a> </a><a href=\"{{ site.url }}\" class=\"link\">mehr Informationen und bestellen</a></span></a></p>"
+      <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span><a> </a><a href=\"{{ site.url }}\" class=\"link\">find out more</a></span></a></p>"
   info:
     temperature:
-      header: "Temperatur"
-      fact1: "Einheit: Grad Celsius"
+      header: "Temperature"
+      fact1: "Unit: degrees Celsius"
       fact2: "Sensor: <a href=\"http://www.ti.com/lit/ds/symlink/hdc1008.pdf\" target=\"_blank\">HDC1008</a>"
     humiditiy:
-      header: "Luftfeuchtigkeit"
-      fact1: "Einheit: Relative Luftfeuchtigkeit, %"
+      header: "Humidity"
+      fact1: "Unit: relative humidity, %"
       fact2: "Sensor: <a href=\"http://www.ti.com/lit/ds/symlink/hdc1008.pdf\" target=\"_blank\">HDC1008</a>"
     airpressure:
-      header: "Luftdruck"
-      fact1: "Einheit: hPa"
+      header: "Air pressure"
+      fact1: "Unit: hPa"
       fact2: "Sensor: <a href=\"https://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp280/bmp280\" target=\"_blank\">BMP280</a>"
     light:
-      header: "Beleuchtungsstärke"
-      fact1: "Einheit: Lux (lx)"
+      header: "Illuminance"
+      fact1: "Unit: Lux (lx)"
       fact2: "Sensor: <a href=\"http://ams.com/eng/Products/Sensor-Driven-Lighting/SDL-Ambient-Light-Sensors/TSL45315\" target=\"_blank\">TSL45315</a>"
     uav:
-      header: "UV(A)-Intensität"
-      fact1: "Einheit: μW/cm<sup>2</sup> (UV-Index)"
+      header: "UV(A)-Intensity"
+      fact1: "Unit: μW/cm<sup>2</sup> (UV-Index)"
       fact2: "Sensor: <a href=\"http://www.vishay.com/docs/84277/veml6070.pdf\" target=\"_blank\">VEML6070</a>"
     more:
-      header: "weitere Phänomene"
-      fact1: "Lautstärke"
-      fact2: "Distanz (Infrarot, Ultraschall)"
-      fact3: "<a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a><a class=\"link\" href=\"{{ site.url | append: '/products/' }}\"> und vieles mehr</a>"
+      header: "more phenomena"
+      fact1: "loudness"
+      fact2: "distance (infrared , ultrasonic)"
+      fact3: "<a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a><a class=\"link\" href=\"{{ site.url | append: '/products/' }}\"> and many more</a>"
 
 news:
 
