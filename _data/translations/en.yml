@@ -118,32 +118,33 @@ docs:
 
 background:
   aboutus:
-    header: "Über uns"
-    description: "Unser Team des Schüler- und Forschugnslabors <a class=\"link\" href=\"http://gi-at-school.de\" target=\"_blank\">GI@School</a> am <a class=\"link\" href=\"http://ifgi.de\" target=\"_blank\">Institut für Geoinformatik</a> sammelt seit mehreren Jahren praktische Erfahrung in Workshops mit Schülern und Lehrern. Dabei hat sich herausgestellt, dass die Datenerhebung mit selbstgebauten Sensorstationen einen besonders zugänglichen Weg bei der Arbeit mit Geoinformation und Umweltdaten bietet. Ganz nebenbei werden Kompetenzen in der Programmierung auf eine sehr anschauliche Art und Weise vermittelt. Diese Erfahrung führte zur Entwicklung der senseBox:edu basierend auf Arduino Mikrokontrollern, Sensoren und Zubehör zur Gruppenarbeit im Klassen-/Kurskontext. Die senseBox:home ergänzt diesen Ansatz und komplettiert das Citizen Science Toolkit."
+    header: "About us"
+    description: "For a number of years, our team from  the <a class=\"link\" href=\"http://gi-at-school.de\" target=\"_blank\">GI@School</a> Lab at the <a class=\"link\" href=\"http://ifgi.de\" target=\"_blank\">Institute for Geoinformatics</a> has been gathering experience through the organization of  workshops with students and teachers. The collection of data with do-it-yourself sensor stations has provided an especially accessible way to work with geographic information and environmental data in this context. Moreover programming skills are taught in a very illustrative and tangible way. This experiences led us to develop the senseBox:edu based on a combination  of Arduino micro-controller, sensors, and accessories for teams to work in a classroom context. The senseBox:home simplifies this approach as a general Citizen Science Toolkit."
   philosophy:
-    header: "Philosophie"
+    header: "Philosophy"
     citizenscience:
       header: "Citizen Science"
-      description: "Die <em>senseBox:home</em> versteht sich als ein Citizen Science Toolkit. Mit der senseBox können Messungen zu den unterschiedlichsten Fragestellungen vorgenommen werden und Citizen Science Projekte vom lokalen bis zum globalen Maßstab umgesetzt werden. Die von der senseBox erfassten Daten erhöhen die Messdichte von verschiedenen Umweltfaktoren und können zu genaueren Aussagen in Bezug auf Klima, Umweltbelastungen oder Verkehr beitragen."
+      description: "The  <em>senseBox:home</em> is a Citizen Science toolkit. With senseBox you can make measuraments to helping to answer a variety of scientific questions and to support Citizen Science Projects from the local to global scale. Data collected by senseBox can increase the measured density of various enviromental factors and can contribute to more precise statements regarding climate, pollution or traffic."
     education:
       header: "Education"
-      description: "Die <em>senseBox:edu</em> ist als fächerverbindendes Werkzeug für die Schule gedacht, wobei in fächerübergreifenden Projekten Informatik/Technik/Physik-Kurse die SenseBoxen bauen und programmieren und diese dann entsprechend der Forschungsfrage zur Datenerhebung, z.B. im Geographie-, Biologie- oder Chemieunterricht genutzt werden. Datenanalysen, wie Zeitreihen, Interpolationen u.ä können z.B. im Mathematikunterricht vorgenommen werden.</p>
-      <p>Die senseBox:edu ist ein Baukasten, mit dem 1-3 Schüler arbeiten können. Sie beinhaltet einen Arduino Uno Microcontroller, verschiedene Sensoren, Bauteile für Schaltungen (u.A. LEDs, Widerstände, Kabel und Breadboard) und zur Datenspeicherung. Mehrere SenseBox Edu können in einer Klassenkiste zusammengepackt werden. Der Arduino Mikrokontroller ist das Herzstück dieser Sammlung und wird zur Steuerung der angeschlossenen Komponenten an digitalen und analogen Ein- und Ausgängen verwendet."
+      description: "The <em>senseBox:edu</em> is designed to be a tool for schools in a combination of subjects, whereas interdisciplinary projects in informatics/technics/physics are build and programmed. The data collected then can be used to applicable research questions, in areas such as geography, biology or chemistry. One application example, could be the analysis of time-series data, and it's interpolation, which can also be found in the mathematic classrooms. </p>
+      <p>The senseBox:edu is a kit suitable one to three students. The box contains an Arduino Micro-controller Uno (or Genuino Uno), a variety of sensors, resistors, devices for circuits (among others: LEDs, cables and breadboard) and possibilities to save and transmit the data. Multiple senseBox:edu (up to 11) can be packed in a single class box. The Arduino micro-controller is the heart of the collection and is used to control the connected components on digital or analogue inputs and outputs."
     openscience:
       header: "Open Science"
-      description: "Die <em>senseBox</em> wird ausschließlich nach den Prinzipien der <a href=\"https://de.wikipedia.org/wiki/Offene_Wissenschaft\" class=\"link\" target=\"_blank\">Open Science</a> entwickelt.
-      Die Zusammenstellung der senseBox-Komponenten ist unter der <a href=\"http://www.ohwr.org/attachments/2388/cern_ohl_v_1_2.txt\" class=\"link\" target=\"_blank\">CERN Open Hardware Lizenz 1.2</a> offen.
-      Der Source Code der senseBox:home ist Open Source unter der <a href=\"http://opensource.org/licenses/LGPL-3.0\" class=\"link\" target=\"_blank\">LGPL 3.0 Lizenz</a> verfügbar.
-      Der Source Code der openSenseMap ist Open Source unter der <a href=\"http://opensource.org/licenses/MIT\" class=\"link\" target=\"_blank\">MIT Lizenz</a> verfügbar.
-      Die mit den SenseBoxen erfassten und auf der openSenseMap veröffentlichten Daten sind Open Data unter der <a href=\"http://opendatacommons.org/licenses/pddl/\" class=\"link\" target=\"_blank\">Public Domain Dedication and Licesce 1.0</a>.
-      Die Anleitungen, Materialien und didaktischen Konzepte sind Open Educational Resources (OER) unter der <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">Creative Commons Lizenz CC BY SA 4.0</a>."
+      description: "The senseBox is developed exclusively following <a href=\"https://en.wikipedia.org/wiki/Open_science\" class=\"link\" target=\"_blank\">Open Science</a> principles.
+      
+      The Setup of the senseBox components is open under the <a href=\"http://www.ohwr.org/attachments/2388/cern_ohl_v_1_2.txt\" class=\"link\" target=\"_blank\">ERN Open Hardware License 1.2</a>
+      The Source Code of senseBox:home is Open Source under <a href=\"http://opensource.org/licenses/LGPL-3.0\" class=\"link\" target=\"_blank\">LGPL 3.0 License</a>.
+      The Source Code of openSenseMap is Open Source under the <a href=\"http://opensource.org/licenses/MIT\" class=\"link\" target=\"_blank\">MIT License</a>.
+     	The data collected by the senseBoxes and published on openSenseMap is Open Data under the <a href=\"http://opendatacommons.org/licenses/pddl/\" class=\"link\" target=\"_blank\">Public Domain Dedication and License 1.0</a>.
+      The instructions, materials and didactic concepts are Open Educational Resources (OER) under the <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">Creative Commons License CC BY SA 4.0</a>."
 
 press:
-  header: "senseBox in Medien und Presse"
+  header: "senseBox in Media and Press"
 
 contact:
-  legalnotice: "Impressum"
-  responsible: "Verantwortlich für den Inhalt"
-  liabilitynote: "Haftungshinweis"
-  mail: "Kontakt"
-  copyright: "Copyrighthinweise"
+  legalnotice: "Legal notice"
+  responsible: "Responsible for the content"
+  liabilitynote: "Liability note"
+  mail: "Contact"
+  copyright: "Copyrights"
