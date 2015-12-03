@@ -13,7 +13,7 @@ main:
 
       <p>Die Daten können im Internet als Open Data bereitgestellt und auf einer <a href=\"{{ site.url | append: '/osem/' }}\" class=\"link\">Karte</a> sichtbar gemacht werden.</p>
 
-      <p>Die Bürger können mit der <a href=\"{{ www.sensebox.de/de | append: '/products/' }}\" class=\"link\">senseBox:home</a> ihre eigenen lokalen Forschungsfragen stellen und die nötigen Daten selbst sammeln und sammeln lassen.</p>
+      <p>Die Bürger können mit der <a href=\"http://www.sensebox.de/de/products\" class=\"link\">senseBox:home</a> ihre eigenen lokalen Forschungsfragen stellen und die nötigen Daten selbst sammeln und sammeln lassen.</p>
 
       <p>Für Schulen und Nachwuchsforscher gibt es die <a href=\"{{ site.url | append: '/products/' }}\" class=\"link\">senseBox:edu</a> als Experementierkasten mit didaktischen Konzepten, Anleitungen und Projektideen.</p>
 
