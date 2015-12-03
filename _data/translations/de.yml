@@ -11,13 +11,13 @@ main:
 
       <p>Mit der <em>senseBox</em> können Bürger und Schulen <i>Umweltdaten</i> über Klima, Luftqualität, Verkehrsaufkommen, Lärmbelästigung und vieles mehr <i>messen</i> und so zu genaueren Aussagen über lokale Umweltphänomene beitragen.</p>
 
-      <p>Die Daten können im Internet als Open Data bereitgestellt und auf einer <a href=\"{{ site.url | append: '/osem/' }}\" class=\"link\">Karte</a> sichtbar gemacht werden.</p>
+      <p>Die Daten können im Internet als Open Data bereitgestellt und auf einer <a href=\"http://www.sensebox.de/de/osem\" class=\"link\">Karte</a> sichtbar gemacht werden.</p>
 
       <p>Die Bürger können mit der <a href=\"http://www.sensebox.de/de/products\" class=\"link\">senseBox:home</a> ihre eigenen lokalen Forschungsfragen stellen und die nötigen Daten selbst sammeln und sammeln lassen.</p>
 
-      <p>Für Schulen und Nachwuchsforscher gibt es die <a href=\"{{ site.url | append: '/products/' }}\" class=\"link\">senseBox:edu</a> als Experementierkasten mit didaktischen Konzepten, Anleitungen und Projektideen.</p>
+      <p>Für Schulen und Nachwuchsforscher gibt es die <a href=\"http://www.sensebox.de/de/products\" class=\"link\">senseBox:edu</a> als Experementierkasten mit didaktischen Konzepten, Anleitungen und Projektideen.</p>
 
-      <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span><a> </a><a href=\"{{ site.url }}\" class=\"link\">mehr Informationen und bestellen</a></span></a></p>"
+      <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span><a> </a><a href=\"http://www.sensebox.de/de/products\" class=\"link\">mehr Informationen und bestellen</a></span></a></p>"
   info:
     temperature:
       header: "Temperatur"
@@ -55,12 +55,12 @@ products:
 
       <p>Die <em>senseBox:edu</em> wurde speziell für den Einsatz im Schulunterricht entwickelt. Bei ihr liegt der Fokus auf dem Erlernen von Grundlagen der Programmierung, Elektronik und Aufnahme von Umweltdaten.</p>
 
-      <p>Die Zusammenstellung der senseBox-Komponenten ist unter der <a href=\"http://www.ohwr.org/attachments/2388/cern_ohl_v_1_2.txt\" class=\"link\" target=\"_blank\">CERN Open Hardware Lizenz 1.2</a> offen. Der Source Code der senseBox:home ist Open Source unter der <a href=\"http://opensource.org/licenses/LGPL-3.0\" class=\"link\" target=\"_blank\">LGPL 3.0 Lizenz</a> verfügbar. Die <a href=\"{{ site.url | append: '/docs/' }}\" class=\"link\">Anleitungen</a> sind Open Educational Resources (OER) unter der Creative Commons Lizenz <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">CC BY SA 4.0</a>.</p>
+      <p>Die Zusammenstellung der senseBox-Komponenten ist unter der <a href=\"http://www.ohwr.org/attachments/2388/cern_ohl_v_1_2.txt\" class=\"link\" target=\"_blank\">CERN Open Hardware Lizenz 1.2</a> offen. Der Source Code der senseBox:home ist Open Source unter der <a href=\"http://opensource.org/licenses/LGPL-3.0\" class=\"link\" target=\"_blank\">LGPL 3.0 Lizenz</a> verfügbar. Die <a href=\"http://www.sensebox.de/de/docd\" class=\"link\">Anleitungen</a> sind Open Educational Resources (OER) unter der Creative Commons Lizenz <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">CC BY SA 4.0</a>.</p>
 
       <p>&nbsp;</p>"
 
   home:
-    description: "<p>Einsteigerset unserer Citizen Science Kampagne. Die senseBox:home wird einmalig zusammengebaut und auf der openSenseMap registriert. Danach werden aktuelle Messungen der Station an einem festen Standort live auf der <a href=\"{{ site.url | append: '/osem/' }}\" class=\"link\">openSenseMap</a> dargestellt und veröffentlicht.</p>
+    description: "<p>Einsteigerset unserer Citizen Science Kampagne. Die senseBox:home wird einmalig zusammengebaut und auf der openSenseMap registriert. Danach werden aktuelle Messungen der Station an einem festen Standort live auf der <a href=\"http://www.sensebox.de/de/osem\" class=\"link\">openSenseMap</a> dargestellt und veröffentlicht.</p>
       <p><b>Features</b></p>
       <ul>
       <li>Sensoren für Temperatur, Luftfeuchtigkeit und mehr</li>
@@ -70,7 +70,7 @@ products:
       </ul>
       <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/de/Sensoren/senseBox\" target=\"_blank\" class=\"link\">Bestellen</a></p>"
   edu:
-    description: "<p>Mit der senseBox:edu bieten wir Schülern und Nachwuchsforschern ab der 7. Klasse die Möglichkeit, das Programmieren auf eine spielerische Art und Weise zu erlernen, sich als Citizen Scientist zu betätigen und die Welt der Geoinformatik kennen zu lernen. In höheren Klassenstufen lassen sich Projekte zum Thema Umweltsensorik in Kursen oder AGs umsetzen, in dem Umweltmessstationen zusammengebaut, programmiert und aufgestellt werden. Weiterhin können diese Stationen mit dem Internet verbunden und ihre Messungen auf der <a href=\"{{ site.url | append: '/osem/' }}\" class=\"link\">openSenseMap</a> publiziert werden. So lassen sich Daten offen mit anderen Schulen, Bürgerinnen und Bürgern oder Wissenschaftlern teilen.</p>
+    description: "<p>Mit der senseBox:edu bieten wir Schülern und Nachwuchsforschern ab der 7. Klasse die Möglichkeit, das Programmieren auf eine spielerische Art und Weise zu erlernen, sich als Citizen Scientist zu betätigen und die Welt der Geoinformatik kennen zu lernen. In höheren Klassenstufen lassen sich Projekte zum Thema Umweltsensorik in Kursen oder AGs umsetzen, in dem Umweltmessstationen zusammengebaut, programmiert und aufgestellt werden. Weiterhin können diese Stationen mit dem Internet verbunden und ihre Messungen auf der <a href=\"http://www.sensebox.de/de/osem\" class=\"link\">openSenseMap</a> publiziert werden. So lassen sich Daten offen mit anderen Schulen, Bürgerinnen und Bürgern oder Wissenschaftlern teilen.</p>
       <p><b>Features</b></p>
       <ul>
       <li>Sensoren für Temperatur, Luftfeuchtigkeit, Luftdruck, Beleuchtungsstärke und UV(A)-Intensität</li>
