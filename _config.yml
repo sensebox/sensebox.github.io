@@ -34,3 +34,6 @@ paginate_path: "/news/page/:num"
 collections:
   - team
   - press
+
+gems:
+  - jekyll-redirect-from
