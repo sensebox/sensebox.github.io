@@ -1,7 +1,8 @@
 - name: Thomas Bartoschek
   image: /images/team/thomas.jpg
   position: 1
-  description: Thomas is Doktorand und Wissenschaftlicher Mitarbeiter am Institut für Geoinformatik der Westfälischen Wilhelms-Universität Münster. Er ist Gründer und Leiter des Forschungs- und Schülerlabors <a href="http://www.gi-at-school.de/" target="_blank">GI@School</a> und Leiter des senseBox Projektes. Er forscht in den Bereichen „Lernen mit Geotechnologien“, Human-Computer-Interaction und Citizen Science und entwickelt Produkte für Bildung und Kommunikation seiner Wissenschaft.
+  description: Thomas is a Research Associate at the Institute for Geoinformatics at the University of Muenster. He is founder and leader of the <a href="http://www.gi-at-school.de/" target="_blank">GI@School Lab</a> and of senseBox. His research focus is on learning with geotechnologies, human computer interaction and citizen science. He develops products for education and communication of his science.
+
 
 - name: Sergey Mukhametov
   image: /images/team/sergey.jpg
@@ -11,7 +12,7 @@
 - name: Jan Wirwahn
   image: /images/team/jan.jpg
   position: 3
-  description: Jan arbeitet als studentische Hilfskraft bei GI@School. Er hat die WeatherSenseBox im Rahmen seiner Bachelorarbeit entwickelt und für den Einsatz im Schulunterricht dokumentiert. Bei Projekttagen am Institut für Geoinformatik oder vor Ort an den Schulen, gibt er Schülern und Lehrern eine praktische Einführung im Umgang mit Mikrokontrollern und Sensorik.
+  description: Jan is a student assistant at the GI@School Lab. He is the developer of the weatherSenseBox, one of the first use cases for the senseBox in education. He is teaching and instructing students and teachers in the use of senseBox at the Institute for Geoinformatics an in secondary schools. His interests are in the hardware business, in particular Arduino microcontrollers and all kinds of sensors.
 
 - name: Björn Guntermann
   image: /images/team/bjoern.jpg
