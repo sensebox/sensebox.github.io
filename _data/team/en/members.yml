@@ -21,7 +21,8 @@
 - name: Mario Pesch
   image: /images/team/mario.jpg
   position: 5
-  description: Mario studiert Chemie und Geographie an der Universität Münster und arbeitet als studentische Hilfskraft bei <a href="http://www.gi-at-school.de/" target="_blank">GI@School</a>. Im Rahmen seiner Bachelorarbeit hat er einen Prototypen zur Erfassung der Luftqualität entwickelt. Mario unterstützt das Team bei Projekttagen an Schulen und tüftelt an neuen Einsatzmöglichkeiten für die senseBox.
+  description: Mario studies chemistry and geography at the university of muenster and works as a student assistant at <a href="http://www.gi-at-school.de/" target="_blank">GI@School</a>. In his bachelor thesis Mario developed a prototype for measuring air quality with the senseBox. Mario supports the team with workshops in schools and is looking for new use cases for the senseBox.
+
 
 - name: Matthias Pfeil
   image: /images/team/matthias.jpg
@@ -41,4 +42,4 @@
 - name: Aleksandr Shirokov
   image: /images/team/aleks.jpg
   position: 9
-  description: Aleksandr Shirokov ist Geoinformatik-Student und arbeitet als studentische Hilfskraft beim Spatial Intelligence Lab an der WWU. Er hat einen Bachelor of Science in Information Technology in GIS und arbeitet jetzt neben seinem Studium an vielen Projekten am ifgi mit. Im senseBox-Tea ist er für die Weiterentwicklung und die Pflege der openSenseMap zuständig.
+  description: Aleksandr Shirokov  is a Master Student at the Institute for Geoinformatics working as a student assistant  in the Spatial Intelligence Lab at WWU. He holds a bachelor degree in Information Technology in GIS and currently actively participate in various projects at the IfGI.  As part of a SenseBox Team Aleksandr is mainly responsible for the development and maintenance of OpenSenseMap. 
