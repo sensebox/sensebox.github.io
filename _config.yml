@@ -31,7 +31,6 @@ paginate_path: "/news/page/:num"
 #  - bower_components
 
 collections:
-  - team
   - press
 
 gems:

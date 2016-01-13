@@ -38,12 +38,12 @@ id: background
         <a name="team"></a>
         <h2>Team</h2>
       </div>
-      {% assign teammembers = site.team | sort: 'position' %}
+      {% assign teammembers = site.data.team.de.members | sort: 'position' %}
       {% for teammember in teammembers %}
         <h3 style="clear:both">{{ teammember.name }}</h3>
         <img class="team-pic" src="{{ site.baseurl | append: teammember.image }}" />
         <div class="team-text">
-        {{ teammember.content }}
+        {{ teammember.description }}
         </div>
       {% endfor %}
 
