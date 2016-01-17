@@ -43,7 +43,9 @@ id: background
         <h3 style="clear:both">{{ teammember.name }}</h3>
         <img class="team-pic" src="{{ site.baseurl | append: teammember.image }}" />
         <div class="team-text">
-        {{ teammember.description }}
+        	<p>
+        		{{ teammember.description }}
+      		</p>
         </div>
       {% endfor %}
 

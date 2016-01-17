@@ -33,7 +33,7 @@
 - name: Christoph Kisfeld
   image: /images/team/raute.png
   position: 7
-  description: Christoph ist Geoinformatik-Student am Institut für Geoinformatik. Er unterstützt GI@School bei der Weiterentwicklung der OpenSenseMap und hat die senseBox bei [Hack Your City](http://www.hackyourcity.de/dortmund/) und [Jugend hackt Ost](http://jugendhackt.de/events/ost/) vorgestellt.
+  description: Christoph ist Geoinformatik-Student am Institut für Geoinformatik. Er unterstützt GI@School bei der Weiterentwicklung der openSenseMap und hat die senseBox bei <a href="http://www.hackyourcity.de/dortmund/" target="_blank">Hack Your City</a> und <a href="http://jugendhackt.de/events/ost/" target="_blank">Jugend hackt Ost</a> vorgestellt.
 
 - name: Joana Gockel
   image: /images/team/joana.jpg
@@ -43,4 +43,4 @@
 - name: Aleksandr Shirokov
   image: /images/team/aleks.jpg
   position: 9
-  description: Aleksandr Shirokov  is a Master Student at the Institute for Geoinformatics working as a student assistant  in the Spatial Intelligence Lab at WWU. He holds a bachelor degree in Information Technology in GIS and currently actively participate in various projects at the IfGI.  As part of a SenseBox Team Aleksandr is mainly responsible for the development and maintenance of OpenSenseMap. 
+  description: Aleksandr Shirokov  is a Master Student at the Institute for Geoinformatics working as a student assistant  in the Spatial Intelligence Lab at WWU. He holds a bachelor degree in Information Technology in GIS and currently actively participate in various projects at the IfGI.  As part of a SenseBox Team Aleksandr is mainly responsible for the development and maintenance of OpenSenseMap.
