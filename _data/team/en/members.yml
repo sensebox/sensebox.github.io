@@ -33,13 +33,13 @@
 - name: Christoph Kisfeld
   image: /images/team/raute.png
   position: 7
-  description: Christoph ist Geoinformatik-Student am Institut für Geoinformatik. Er unterstützt GI@School bei der Weiterentwicklung der openSenseMap und hat die senseBox bei <a href="http://www.hackyourcity.de/dortmund/" target="_blank">Hack Your City</a> und <a href="http://jugendhackt.de/events/ost/" target="_blank">Jugend hackt Ost</a> vorgestellt.
+  description: Christoph is geoinformatics student at the Institute for Geoinformatics in Münster. He supports GI@School at further developing openSenseMap and has presented senseBox at <a href="http://www.hackyourcity.de/dortmund/" target="_blank">Hack Your City</a> and <a href="http://jugendhackt.de/events/ost/" target="_blank">Jugend hackt Ost</a> events.
 
 - name: Joana Gockel
   image: /images/team/joana.jpg
   position: 8
-  description: Joana hat den Bachelor of Science in Geoinformatik an der Uni Münster studiert. Als Master Studentin am Institut für Geoinformatik wird sie weiterhin die Arbeitsgruppe GI@School unterstützen. Zusammen mit dem senseBox Team stellt sie interessierten Bürgern die senseBox:home und die openSenseMap vor. Das Programmieren und Aufbauen der senseBox:edu legt sie Schülern verschiedener Altersklassen nahe. In ihrer Bachelorarbeit werden Methoden zum Bereinigen von Daten gemessen mit der senseBox erprobt und herausgestellt, zusätzlich werden Vorteile von low-cost Sensoren vorgestellt.
-
+  description: oana studied the Bachelor of Science in Geoinformatics. As upcoming Master student  she is going on with supporting the working group GI@School. Together with the senseBox Team she is presenting the senseBox:home and the openSenseMap to interested citizen on fairs. She is helping teaching students of different age groups how to program and assemble the senseBox:edu. Within her bachelor thesis she tried and proved methods for cleaning data measured by the openSenseBox. Advantages and disadvantages of low-cost sensors are presented as well.
+  
 - name: Aleksandr Shirokov
   image: /images/team/aleks.jpg
   position: 9
