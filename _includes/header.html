@@ -22,6 +22,7 @@
             {% assign menupages = site.pages | sort:"weight"  %}
               {% for menupage in menupages %}
                 {% if menupage.url contains 'page' %}
+                {% elsif menupage.url contains 'news' %}
                 {% else %}
                   {% if menupage.title %}
                   	{% else %}
