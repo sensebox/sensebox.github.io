@@ -7,48 +7,37 @@ id: background
 ---
 {% assign t = site.data.translations.[page.lang].background %}
 <div class="row">
-  <div class="col-lg-12 col-md-12 col-sm-12 posts">
-
-    <!-- Sidebar -->
-    <div class="col-lg-4 col-md-4 col-sm-4 sidebar"></div>
-
-    <!-- News Bereich / Blogeinträge -->
-    <div class="col-lg-8 col-md-8 col-sm-8 posts">
-      <div class="page-header">
-        <a name="about-us"></a>
-        <h1>{{ t.aboutus.header }}</h1>
-      </div>
-      <p>{{ t.aboutus.description }}</p>
-
-      <div class="page-header">
-        <a name="philosophie"></a>
-        <h2>{{ t.philosophy.header}}</h2>
-      </div>
-
-      <h3 class="smallcaps">{{ t.philosophy.citizenscience.header }}</h3>
-      <p>{{ t.philosophy.citizenscience.description}}</p>
-
-      <h3 class="smallcaps">{{ t.philosophy.education.header }}</h3>
-      <p>{{ t.philosophy.education.description}}</p>
-
-      <h3 class="smallcaps">{{ t.philosophy.openscience.header }}</h3>
-      <p>{{ t.philosophy.openscience.description}}</p>
-
-      <div class="page-header">
-        <a name="team"></a>
-        <h2>Team</h2>
-      </div>
-      {% assign teammembers = site.data.team.en.members %}
-      {% for teammember in teammembers %}
-        <h3 style="clear:both">{{ teammember.name }}</h3>
-        <img class="team-pic" src="{{ site.baseurl | append: teammember.image }}" />
-        <div class="team-text">
-        	<p>
-        		{{ teammember.description }}
-      		</p>
-        </div>
-      {% endfor %}
-
-    </div>
-  </div>
+<div class="page-header">
+  <a name="about-us"></a>
+  <h1>{{ t.aboutus.header }}</h1>
 </div>
+<p>{{ t.aboutus.description }}</p>
+
+<div class="page-header">
+  <a name="philosophie"></a>
+  <h2>{{ t.philosophy.header}}</h2>
+</div>
+
+<h3 class="smallcaps">{{ t.philosophy.citizenscience.header }}</h3>
+<p>{{ t.philosophy.citizenscience.description}}</p>
+
+<h3 class="smallcaps">{{ t.philosophy.education.header }}</h3>
+<p>{{ t.philosophy.education.description}}</p>
+
+<h3 class="smallcaps">{{ t.philosophy.openscience.header }}</h3>
+<p>{{ t.philosophy.openscience.description}}</p>
+
+<div class="page-header">
+  <a name="team"></a>
+  <h2>Team</h2>
+</div>
+{% assign teammembers = site.data.team.en.members %}
+{% for teammember in teammembers %}
+  <h3 style="clear:both">{{ teammember.name }}</h3>
+  <img class="team-pic" src="{{ site.baseurl | append: teammember.image }}" />
+  <div class="team-text">
+  	<p>
+  		{{ teammember.description }}
+		</p>
+  </div>
+{% endfor %}
