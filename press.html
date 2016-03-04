@@ -6,34 +6,23 @@ lang: de
 id: press
 ---
 {% assign t = site.data.translations.[page.lang].press %}
-<div class="row">
-  <div class="col-lg-12 col-md-12 col-sm-12 posts">
+<div class="page-header">
+  <h1>{{ t.header }}</h1>
+</div>
 
-    <!-- Sidebar -->
-    <div class="col-lg-4 col-md-4 col-sm-4 sidebar"></div>
-
-    <!-- News Bereich / Blogeinträge -->
-    <div class="col-lg-8 col-md-8 col-sm-8">
-      <div class="page-header">
-        <h1>{{ t.header }}</h1>
-      </div>
-
-      {% assign pressnews = site.press | sort: 'date' | reverse %}
-      {% for post in pressnews %}
-      <div class="posts">
-        <h2 style="clear:both">{{ post.title }}</h2>
-        {% if post.thumbnail %}
-        <img class="press-pic" src="{{ site.baseurl | append: post.thumbnail }}" />
-        {% endif %}
-        <div class="content press-text">
-        {{ post.content }}
-        </div>
-        <hr class="clear nomargin">
-        <div class="author">
-          <span class="date">{{ post.date | date: '%d. %B %Y' }}</span> von <span class="author"> {{ post.author }} </span>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
+{% assign pressnews = site.press | sort: 'date' | reverse %}
+{% for post in pressnews %}
+<div class="posts">
+  <h2 style="clear:both">{{ post.title }}</h2>
+  {% if post.thumbnail %}
+  <img class="press-pic" src="{{ site.baseurl | append: post.thumbnail }}" />
+  {% endif %}
+  <div class="content press-text">
+  {{ post.content }}
+  </div>
+  <hr class="clear nomargin">
+  <div class="author">
+    <span class="date">{{ post.date | date: '%d. %B %Y' }}</span> von <span class="author"> {{ post.author }} </span>
   </div>
 </div>
+{% endfor %}

@@ -6,28 +6,16 @@ lang: de
 id: osem
 ---
 {% assign t = site.data.translations.[page.lang].osem %}
-<div class="row">
-  <div class="col-lg-12 col-md-12 col-sm-12 posts">
-
-    <!-- Sidebar -->
-    <div class="col-lg-4 col-md-4 col-sm-4 sidebar"></div>
-
-    <!-- News Bereich / Blogeinträge -->
-    <div class="col-lg-8 col-md-8 col-sm-8">
-      <div class="page-header">
-        <a name="about-us"></a>
-        <h1>openSenseMap</h1>
-      </div>
-      {{ t.description }}
-
-      <p>&nbsp;</p>
-
-      <p style="text-align:center"><a class="link"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></span> <a class="link" href="http://opensensemap.org/" target="_blank"><b>{{ t.link }}</b></a></p>
-
-      <p>&nbsp;</p>
-
-      <p style="text-align:center"><a href="http://opensensemap.org" target="_blank"><img class="responsive-img" src="{{ site.baseurl | append: '/images/sensemap-screenshot.jpg'}}" alt="openSenseMap Screenshot"></a></p>
-
-    </div>
-  </div>
+<div class="page-header">
+  <a name="about-us"></a>
+  <h1>openSenseMap</h1>
 </div>
+{{ t.description }}
+
+<p>&nbsp;</p>
+
+<p style="text-align:center"><a class="link"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></span> <a class="link" href="http://opensensemap.org/" target="_blank"><b>{{ t.link }}</b></a></p>
+
+<p>&nbsp;</p>
+
+<p style="text-align:center"><a href="http://opensensemap.org" target="_blank"><img class="responsive-img" src="{{ site.baseurl | append: '/images/sensemap-screenshot.jpg'}}" alt="openSenseMap Screenshot"></a></p>

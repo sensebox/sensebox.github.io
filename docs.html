@@ -6,76 +6,65 @@ lang: de
 id: docs
 ---
 {% assign t = site.data.translations.[page.lang].docs %}
-<div class="row">
-  <div class="col-lg-12 col-md-12 col-sm-12 posts">
+<div class="page-header">
+  <h1>Docs</h1>
+</div>
 
-    <!-- Sidebar -->
-    <div class="col-lg-4 col-md-4 col-sm-4 sidebar"></div>
+<p>
+  {{ t.description }}
+</p>
+<br><br>
+<div>
 
-    <div class="col-lg-8 col-md-8 col-sm-8">
-      <div class="page-header">
-        <h1>Docs</h1>
-      </div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#instructions" aria-controls="instructions" role="tab" data-toggle="tab">{{ t.instructions.header }}</a></li>
+    <!--<li role="presentation"><a href="#texts" aria-controls="texts" role="tab" data-toggle="tab">Texte</a></li>-->
+    <li role="presentation"><a href="#photos" aria-controls="photos" role="tab" data-toggle="tab">{{ t.pictures.header }}</a></li>
+  </ul>
 
-      <p>
-        {{ t.description }}
-      </p>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="instructions">
+      <br>
+      <p>{{ t.instructions.content }}</p>
+    </div>
+    <!--
+    <div role="tabpanel" class="tab-pane" id="texts">
       <br><br>
-      <div>
-
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#instructions" aria-controls="instructions" role="tab" data-toggle="tab">{{ t.instructions.header }}</a></li>
-          <!--<li role="presentation"><a href="#texts" aria-controls="texts" role="tab" data-toggle="tab">Texte</a></li>-->
-          <li role="presentation"><a href="#photos" aria-controls="photos" role="tab" data-toggle="tab">{{ t.pictures.header }}</a></li>
-        </ul>
-
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <div role="tabpanel" class="tab-pane active" id="instructions">
-            <br>
-            <p>{{ t.instructions.content }}</p>
-          </div>
-          <!--
-          <div role="tabpanel" class="tab-pane" id="texts">
-            <br><br>
-            <table class="table table-hover">
-              <tr>
-                <td colspan="" rowspan="" headers="">Lorem ipsum</td>
-                <td colspan="" rowspan="" headers="">PDF</td>
-                <td colspan="" rowspan="" headers="">09.10.2015</td>
-              </tr>
-              <tr>
-                <td colspan="" rowspan="" headers="">Lorem ipsum</td>
-                <td colspan="" rowspan="" headers="">DOC</td>
-                <td colspan="" rowspan="" headers="">08.10.2015</td>
-              </tr>
-              <tr>
-                <td colspan="" rowspan="" headers="">Lorem ipsum</td>
-                <td colspan="" rowspan="" headers="">PDF</td>
-                <td colspan="" rowspan="" headers="">07.10.2015</td>
-              </tr>
-            </table>
-          </div>
-          -->
-          <div role="tabpanel" class="tab-pane" id="photos">
-            <br>
-            <div class="docs-photo-gallery">
+      <table class="table table-hover">
+        <tr>
+          <td colspan="" rowspan="" headers="">Lorem ipsum</td>
+          <td colspan="" rowspan="" headers="">PDF</td>
+          <td colspan="" rowspan="" headers="">09.10.2015</td>
+        </tr>
+        <tr>
+          <td colspan="" rowspan="" headers="">Lorem ipsum</td>
+          <td colspan="" rowspan="" headers="">DOC</td>
+          <td colspan="" rowspan="" headers="">08.10.2015</td>
+        </tr>
+        <tr>
+          <td colspan="" rowspan="" headers="">Lorem ipsum</td>
+          <td colspan="" rowspan="" headers="">PDF</td>
+          <td colspan="" rowspan="" headers="">07.10.2015</td>
+        </tr>
+      </table>
+    </div>
+    -->
+    <div role="tabpanel" class="tab-pane" id="photos">
+      <br>
+      <div class="docs-photo-gallery">
 {% for posting in site.posts %}
 {% assign images = posting.content | split:"<img " %}
-  {% for image in images %}
-    {% if image contains 'src="' and image contains "sensebox.org" %}
-      {% assign imageMarkup = image | split:'/>' | first %}
-      {% assign imageURL = imageMarkup | split:'"' %}
-      {% assign imageFiletype = imageURL[1] | split:'.' | last | split:'?' | first %}
-      <div class="docs-photo-container"><a href="{{ imageURL[1] }}"><img src="{{ imageURL[1] }}" title="{{ posting.date | date: '%d.%m.%Y' }}" class="docs-photo-img"/></a></div>
-    {% endif %}
-  {% endfor %}
+{% for image in images %}
+{% if image contains 'src="' and image contains "sensebox.org" %}
+{% assign imageMarkup = image | split:'/>' | first %}
+{% assign imageURL = imageMarkup | split:'"' %}
+{% assign imageFiletype = imageURL[1] | split:'.' | last | split:'?' | first %}
+<div class="docs-photo-container"><a href="{{ imageURL[1] }}"><img src="{{ imageURL[1] }}" title="{{ posting.date | date: '%d.%m.%Y' }}" class="docs-photo-img"/></a></div>
+{% endif %}
 {% endfor %}
-            </div>
-          </div>
-        </div>
+{% endfor %}
       </div>
     </div>
   </div>
-</div>
