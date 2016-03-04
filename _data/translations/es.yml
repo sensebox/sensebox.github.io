@@ -1,0 +1,151 @@
+
+header:
+  blog: "News"
+  products: "senseBox"
+  osem: "openSenseMap"
+  docs: "Docs"
+  background: "Background"
+  press: "Press"
+
+footer:
+  news:
+    header: "News"
+    blog: "Blog"
+  background:
+    header: "Background"
+    aboutus: "About us"
+    philosophy: "Philosophy"
+    team: "Team"
+    awards: "Awards"
+    contact: "Contact"
+  press:
+    header: "Press"
+    articles: "Articles"
+    material: "Material"
+    contact: "Contact"
+  publications:
+    header: "Publications"
+    docs: "Docs"
+    thesis: "Bachelorthesis"
+
+main:
+  text: "<p>The <em>senseBox</em> is a do-it-yourself kit for stationary and mobile sensor stations –  the <em>Citizen Science</em> Toolkit.</p>
+
+      <p>With <em>senseBox</em> , citizens and schools are able to collect environmental data using sensors for climate (weather, air quality), transport (traffic desity or noise pollution) and many more phenomena to find out more about the environment.</p>
+
+      <p>The data collected is being published as open data on the  <a href=\"http://www.sensebox.de/en/products\" class=\"link\">openSenseMap</a>.</p>
+ 
+      <p>Citizens with <a href=\"http://www.sensebox.de/en/products\" class=\"link\">senseBox:home</a> can use the technology for their own local research, to collect data by themselves or to allow the senseBox to collect data for them.</p>
+
+      <p>Additionally, there is <a href=\"http://www.sensebox.de/en/products\" class=\"link\">senseBox:edu</a> created for schools and junior scientists, which is an experimental box with didactical concepts, instructions and project ideas included. </p>
+
+      <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span><a> </a><a href=\"http://www.sensebox.de/en/products\" class=\"link\">find out more</a></span></a></p>"
+  info:
+    temperature:
+      header: "Temperature"
+      fact1: "Unit: degrees Celsius"
+      fact2: "Sensor: <a href=\"http://www.ti.com/lit/ds/symlink/hdc1008.pdf\" target=\"_blank\">HDC1008</a>"
+    humiditiy:
+      header: "Humidity"
+      fact1: "Unit: relative humidity, %"
+      fact2: "Sensor: <a href=\"http://www.ti.com/lit/ds/symlink/hdc1008.pdf\" target=\"_blank\">HDC1008</a>"
+    airpressure:
+      header: "Air pressure"
+      fact1: "Unit: hPa"
+      fact2: "Sensor: <a href=\"https://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp280/bmp280\" target=\"_blank\">BMP280</a>"
+    light:
+      header: "Illuminance"
+      fact1: "Unit: Lux (lx)"
+      fact2: "Sensor: <a href=\"http://ams.com/eng/Products/Sensor-Driven-Lighting/SDL-Ambient-Light-Sensors/TSL45315\" target=\"_blank\">TSL45315</a>"
+    uav:
+      header: "UV(A)-Intensity"
+      fact1: "Unit: μW/cm<sup>2</sup> (UV-Index)"
+      fact2: "Sensor: <a href=\"http://www.vishay.com/docs/84277/veml6070.pdf\" target=\"_blank\">VEML6070</a>"
+    more:
+      header: "more phenomena"
+      fact1: "loudness"
+      fact2: "distance (infrared , ultrasonic)"
+      fact3: "<a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a><a class=\"link\" href=\"http://www.sensebox.de/en/products\"> and many more</a>"
+
+news:
+
+products:
+  introduction: "<p>There are two variations of senseBox <br>
+      <em>senseBox:home</em> and <em>senseBox:edu</em>.</p>
+
+      <p><em>senseBox:home</em> contains less devices, therefore it is easier to build manually and set up in your home,  in order to measure unique environmental phenomena. It can also be connected to your WiFi or LAN port. The user obtains the individual source code after their registration to <em>openSenseMap</em>. Following registration, users can view continuous, location based measurements collected from sensors, such as temperature, humidity, air pressure, brightness, UV-light and noise.</p>
+
+      <p>The <em>senseBox:edu</em> was specifically developed to be applied in school classrooms or by junior scientists at home. The project focus is on learning the basics of programming and electronics, and is related to the collection of environmental data. </p>
+
+      <p>The senseBox setup of components is open under the  <a href=\"http://www.ohwr.org/attachments/2388/cern_ohl_v_1_2.txt\" class=\"link\" target=\"_blank\">CERN Open Hardware License 1.2</a>. The source code of senseBox:home is open under the  <a href=\"http://opensource.org/licenses/LGPL-3.0\" class=\"link\" target=\"_blank\">LGPL 3.0 License</a>. The <a href=\"http://www.sensebox.de/en/docs\" class=\"link\">instructions and documentation</a> are Open Educational Ressources (OER) under the  Creative Commons License <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">CC BY SA 4.0</a>.</p>
+
+      <p>&nbsp;</p>"
+
+  home:
+    description: "<p>The <em>Citizen Science</em>  kit for beginners. Once the senseBox:home is assembled and registered to openSenseMap, measurements from each sensor station will be published and displayed on the  <a href=\"http://www.sensebox.de/en/osem\" class=\"link\">openSenseMap</a> in real-time and made available as Open Data.</p>
+      <p><b>Features</b></p>
+      <ul>
+      <li>Sensors for temperature, humidity and more</li>
+      <li>No soldering necessary</li>
+      <li>Instructions and examples</li>
+      <li>Extendable with other sensors and arduino-compatible hardware</li>
+      </ul>
+      <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/de/Sensoren/senseBox\" target=\"_blank\" class=\"link\">place your order here</a></p>"
+  edu:
+    description: "<p>senseBox:edu offers schools, starting from the 7th grade, the possibility to learn programming in a fun and playful environment, to be a real citizen scientist and to get to know the world of geoinformatics. 
+In the upper grades it can be used for projects on environmental phenomena, where sensor stations are built, programmed and positioned by the students. 
+Furthermore the sensor stations are connected to the Internet, where the measurements are updated and published on <a href=\"http://www.sensebox.de/en/osem\" class=\"link\">openSenseMap</a>. In this way, data can be shared with other schools, citizens and scientists.</p>
+      <p><b>Features</b></p>
+      <ul>
+      <li>Sensors for temperature, humidity, air pressure, UV(A)-intensity, distance and more</li>
+      <li>No soldering necessary</li>
+      <li>Examples and instructions</li>
+      <li>Learning units organized in a wiki</li>
+      </ul>
+      <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/de/Sensoren/senseBox\" target=\"_blank\" class=\"link\">place your order here</a></p>"
+
+osem:
+  description: "<p><em>openSenseMap</em> is our platform for the publishing of senseBox and other open sensor data. Each <em>senseBox:home</em> transmits its measurements directly to the map, where anyone can observe, analyze and download the data. Measurements obtained with the <em>senseBox:edu</em>can also be displayed on openSenseMap.</p>
+      <p>All data published on openSenseMap is available as Open Data under the <a href=\"http://opendatacommons.org/licenses/pddl/summary/\" class=\"link\" target=\"_blank\">Public Domain Dedication and License 1.0</a>.</p>"
+  link: "start openSenseMap"
+
+docs:
+  description: "Here you can find all documentation regarding senseBox and openSenseMap. All documents listed here are considered to be Open Educational Resources (OER) under Creative Commons License <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">CC BY SA 4.0</a>. Existing content can be further developed and enhanced by new experiments or projects thorugh the creative community."
+  instructions:
+    header: "Instructions"
+    content: "In the <a href=\"https://github.com/sensebox/OER/wiki\" target=\"_blank\" class=\"link\"> wiki</a>  of our <a href=\"https://github.com/sensebox/OER\" target=\"_blank\" class=\"link\"><img src=\"{{ site.baseurl | append: '/images/iconmonstr-github-icon.png'}}\"> Github Repository</a>  you can find instructions for the senseBox:home, senseBox:edu and openSenseMap."
+  pictures:
+    header: "Photos"
+
+background:
+  aboutus:
+    header: "About us"
+    description: "For a number of years, our team from  the <a class=\"link\" href=\"http://gi-at-school.de\" target=\"_blank\">GI@School</a> Lab at the <a class=\"link\" href=\"http://ifgi.de\" target=\"_blank\">Institute for Geoinformatics</a> has been gathering experience through the organization of  workshops with students and teachers. The collection of data with do-it-yourself sensor stations has provided an especially accessible way to work with geographic information and environmental data in this context. Moreover programming skills are taught in a very illustrative and tangible way. This experiences led us to develop the senseBox:edu based on a combination  of Arduino micro-controller, sensors, and accessories for teams to work in a classroom context. The senseBox:home simplifies this approach as a general Citizen Science Toolkit."
+  philosophy:
+    header: "Philosophy"
+    citizenscience:
+      header: "Citizen Science"
+      description: "The  <em>senseBox:home</em> is a Citizen Science toolkit. With senseBox you can make measuraments to helping to answer a variety of scientific questions and to support Citizen Science Projects from the local to global scale. Data collected by senseBox can increase the measured density of various enviromental factors and can contribute to more precise statements regarding climate, pollution or traffic."
+    education:
+      header: "Education"
+      description: "The <em>senseBox:edu</em> is designed to be a tool for schools in a combination of subjects, whereas interdisciplinary projects in informatics/technics/physics are build and programmed. The data collected then can be used to applicable research questions, in areas such as geography, biology or chemistry. One application example, could be the analysis of time-series data, and it's interpolation, which can also be found in the mathematic classrooms. </p>
+      <p>The senseBox:edu is a kit suitable one to three students. The box contains an Arduino Micro-controller Uno (or Genuino Uno), a variety of sensors, resistors, devices for circuits (among others: LEDs, cables and breadboard) and possibilities to save and transmit the data. Multiple senseBox:edu (up to 11) can be packed in a single class box. The Arduino micro-controller is the heart of the collection and is used to control the connected components on digital or analogue inputs and outputs."
+    openscience:
+      header: "Open Science"
+      description: "The senseBox is developed exclusively following <a href=\"https://en.wikipedia.org/wiki/Open_science\" class=\"link\" target=\"_blank\">Open Science</a> principles.
+      
+      The Setup of the senseBox components is open under the <a href=\"http://www.ohwr.org/attachments/2388/cern_ohl_v_1_2.txt\" class=\"link\" target=\"_blank\">ERN Open Hardware License 1.2</a>
+      The Source Code of senseBox:home is Open Source under <a href=\"http://opensource.org/licenses/LGPL-3.0\" class=\"link\" target=\"_blank\">LGPL 3.0 License</a>.
+      The Source Code of openSenseMap is Open Source under the <a href=\"http://opensource.org/licenses/MIT\" class=\"link\" target=\"_blank\">MIT License</a>.
+     	The data collected by the senseBoxes and published on openSenseMap is Open Data under the <a href=\"http://opendatacommons.org/licenses/pddl/\" class=\"link\" target=\"_blank\">Public Domain Dedication and License 1.0</a>.
+      The instructions, materials and didactic concepts are Open Educational Resources (OER) under the <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">Creative Commons License CC BY SA 4.0</a>."
+
+press:
+  header: "senseBox in Media and Press"
+
+contact:
+  legalnotice: "Legal notice"
+  responsible: "Responsible for the content"
+  liabilitynote: "Liability note"
+  mail: "Contact"
+  copyright: "Copyrights"
