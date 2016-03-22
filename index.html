@@ -9,118 +9,134 @@ id: main
     <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1">
       <img src="{{ site.baseurl | append: '/images/bild_startseite.jpg'}}" alt="senseBox Logo">
     </div>
-    <div class="info-panel">
-      <div class="col-lg-3 col-lg-offset-3 col-md-3 col-md-offset3">
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingOne">
-              <h3 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseTemperature" aria-expanded="false" aria-controls="collapseTemperature" title="Temperatur aufklappen">
-                  {{ t.info.temperature.header}}
-                </a>
-              </h3>
-            </div>
-            <div id="collapseTemperature" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-              <div class="panel-body">
-                <ul>
-                  <li>{{ t.info.temperature.fact1 }}</li>
-                  <li>{{ t.info.temperature.fact2 }}</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingTwo">
-              <h3 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseHumidity" aria-expanded="false" aria-controls="collapseHumidity" title="Luftfeuchtigkeit aufklappen">
-                  {{ t.info.humiditiy.header }}
-                </a>
-              </h3>
-            </div>
-            <div id="collapseHumidity" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-              <div class="panel-body">
-                <ul>
-                  <li>{{ t.info.humiditiy.fact1 }}</li>
-                  <li>{{ t.info.humiditiy.fact2 }}</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingThree">
-              <h3 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapsePressure" aria-expanded="false" aria-controls="collapsePressure" title="Luftdruck aufklappen">
-                  {{ t.info.airpressure.header }}
-                </a>
-              </h3>
-            </div>
-            <div id="collapsePressure" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-              <div class="panel-body">
-                <ul>
-                  <li>{{ t.info.airpressure.fact1 }}</li>
-                  <li>{{ t.info.airpressure.fact2 }}</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="false">
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingFour">
-              <h3 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseLight" aria-expanded="false" aria-controls="collapseLight" title="Beleuchtungsstärke aufklappen">
-                  {{ t.info.light.header }}
-                </a>
-              </h3>
-            </div>
-            <div id="collapseLight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-              <div class="panel-body">
-                <ul>
-                  <li>{{ t.info.light.fact1 }}</li>
-                  <li>{{ t.info.light.fact2 }}</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingFive">
-              <h3 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseUV" aria-expanded="false" aria-controls="collapseUV" title="UV(A)-Intensität aufklappen">
-                  {{ t.info.uav.header }}
-                </a>
-              </h3>
-            </div>
-            <div id="collapseUV" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-              <div class="panel-body">
-                <ul>
-                  <li>{{ t.info.uav.fact1 }}</li>
-                  <li>{{ t.info.uav.fact2 }}</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingSix">
-              <h3 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseMore" aria-expanded="false" aria-controls="collapseMore" title="weitere Phänomene aufklappen">
-                  {{ t.info.more.header }}
-                </a>
-              </h3>
-            </div>
-            <div id="collapseMore" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-              <div class="panel-body">
-                <ul>
-                  <li>{{ t.info.more.fact1 }}</li>
-                  <li>{{ t.info.more.fact2 }}</li>
-                  <li>{{ t.info.more.fact3 }}</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="row">
+    	<div class="col-lg-6 col-lg-offset-3">
+				<div class="row">
+					<div class="media">
+					  <div class="media-body media-bottom" style="font-size: 1.25em;">
+					    {{ t.header }}
+					  </div>
+					  <div class="media-right">
+					    <a href="{{ site.baseurl | append: '/hackathon'}}" target="_self">
+					      <img class="media-object" style="width:200px;height:200px;" src="{{ site.baseurl | append: '/images/codeweekwinner.svg'}}" alt="Code Week Winner Logo">
+					    </a>
+					  </div>
+					</div>
+				</div>
+    		<div class="row info-panel">
+    			<div class="col-lg-6">
+    				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+    				  <div class="panel panel-default">
+    				    <div class="panel-heading" role="tab" id="headingOne">
+    				      <h3 class="panel-title">
+    				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseTemperature" aria-expanded="false" aria-controls="collapseTemperature" title="Temperatur aufklappen">
+    				          {{ t.info.temperature.header}}
+    				        </a>
+    				      </h3>
+    				    </div>
+    				    <div id="collapseTemperature" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    				      <div class="panel-body">
+    				        <ul>
+    				          <li>{{ t.info.temperature.fact1 }}</li>
+    				          <li>{{ t.info.temperature.fact2 }}</li>
+    				        </ul>
+    				      </div>
+    				    </div>
+    				  </div>
+    				  <div class="panel panel-default">
+    				    <div class="panel-heading" role="tab" id="headingTwo">
+    				      <h3 class="panel-title">
+    				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseHumidity" aria-expanded="false" aria-controls="collapseHumidity" title="Luftfeuchtigkeit aufklappen">
+    				          {{ t.info.humiditiy.header }}
+    				        </a>
+    				      </h3>
+    				    </div>
+    				    <div id="collapseHumidity" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+    				      <div class="panel-body">
+    				        <ul>
+    				          <li>{{ t.info.humiditiy.fact1 }}</li>
+    				          <li>{{ t.info.humiditiy.fact2 }}</li>
+    				        </ul>
+    				      </div>
+    				    </div>
+    				  </div>
+    				  <div class="panel panel-default">
+    				    <div class="panel-heading" role="tab" id="headingThree">
+    				      <h3 class="panel-title">
+    				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapsePressure" aria-expanded="false" aria-controls="collapsePressure" title="Luftdruck aufklappen">
+    				          {{ t.info.airpressure.header }}
+    				        </a>
+    				      </h3>
+    				    </div>
+    				    <div id="collapsePressure" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+    				      <div class="panel-body">
+    				        <ul>
+    				          <li>{{ t.info.airpressure.fact1 }}</li>
+    				          <li>{{ t.info.airpressure.fact2 }}</li>
+    				        </ul>
+    				      </div>
+    				    </div>
+    				  </div>
+    				</div>
+    			</div>
+    			<div class="col-lg-6">
+    				<div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="false">
+    				  <div class="panel panel-default">
+    				    <div class="panel-heading" role="tab" id="headingFour">
+    				      <h3 class="panel-title">
+    				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseLight" aria-expanded="false" aria-controls="collapseLight" title="Beleuchtungsstärke aufklappen">
+    				          {{ t.info.light.header }}
+    				        </a>
+    				      </h3>
+    				    </div>
+    				    <div id="collapseLight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+    				      <div class="panel-body">
+    				        <ul>
+    				          <li>{{ t.info.light.fact1 }}</li>
+    				          <li>{{ t.info.light.fact2 }}</li>
+    				        </ul>
+    				      </div>
+    				    </div>
+    				  </div>
+    				  <div class="panel panel-default">
+    				    <div class="panel-heading" role="tab" id="headingFive">
+    				      <h3 class="panel-title">
+    				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseUV" aria-expanded="false" aria-controls="collapseUV" title="UV(A)-Intensität aufklappen">
+    				          {{ t.info.uav.header }}
+    				        </a>
+    				      </h3>
+    				    </div>
+    				    <div id="collapseUV" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+    				      <div class="panel-body">
+    				        <ul>
+    				          <li>{{ t.info.uav.fact1 }}</li>
+    				          <li>{{ t.info.uav.fact2 }}</li>
+    				        </ul>
+    				      </div>
+    				    </div>
+    				  </div>
+    				  <div class="panel panel-default">
+    				    <div class="panel-heading" role="tab" id="headingSix">
+    				      <h3 class="panel-title">
+    				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseMore" aria-expanded="false" aria-controls="collapseMore" title="weitere Phänomene aufklappen">
+    				          {{ t.info.more.header }}
+    				        </a>
+    				      </h3>
+    				    </div>
+    				    <div id="collapseMore" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+    				      <div class="panel-body">
+    				        <ul>
+    				          <li>{{ t.info.more.fact1 }}</li>
+    				          <li>{{ t.info.more.fact2 }}</li>
+    				          <li>{{ t.info.more.fact3 }}</li>
+    				        </ul>
+    				      </div>
+    				    </div>
+    				  </div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
     </div>
   </div>
 </div>

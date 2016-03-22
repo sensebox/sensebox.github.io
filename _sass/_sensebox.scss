@@ -27,6 +27,11 @@ body {
   position: fixed;
 }
 
+.news {
+	margin-left: 0px;
+	font-size: 14px;
+}
+
 p {
   font-size: $base-font-size;
 }
@@ -274,7 +279,7 @@ h3.panel-title {
   a {
     color: $sensebox-green;
     font-size: 24px;
-    
+
     &:before {
       position: absolute;
       left: -8px;
@@ -324,12 +329,17 @@ h3.panel-title {
   }
 
   .info-panel {
-    padding-top: 125px;
+    padding-top: 50px;
 
     .panel-group .panel + .panel {
       margin-top: 50px;
     }
   }
+
+  .news {
+  	margin-left: -160px;
+		font-size: 16px;
+	}
 }
 
 
