@@ -39,8 +39,13 @@
   image: /images/team/joana.jpg
   position: 8
   description: Joana studied the Bachelor of Science in Geoinformatics. As upcoming Master student  she is going on with supporting the working group GI@School. Together with the senseBox Team she is presenting the senseBox:home and the openSenseMap to interested citizen on fairs. She is helping teaching students of different age groups how to program and assemble the senseBox:edu. Within her bachelor thesis she tried and proved methods for cleaning data measured by the openSenseBox. Advantages and disadvantages of low-cost sensors are presented as well.
-  
+
 - name: Aleksandr Shirokov
   image: /images/team/aleks.jpg
   position: 9
   description: Aleksandr Shirokov  is a Master Student at the Institute for Geoinformatics working as a student assistant  in the Spatial Intelligence Lab at WWU. He holds a bachelor degree in Information Technology in GIS and currently actively participate in various projects at the IfGI.  As part of a SenseBox Team Aleksandr is mainly responsible for the development and maintenance of OpenSenseMap.
+
+- name: Felix Erdmann
+  image: /images/team/raute.jpg
+  position: 10
+  description: "Felix is geoinformatics student at the Institute for Geoinformatics. In 2011 he worked in a pupil internship with an early version of the senseBox. He joined the team in spring 2016. #backtotheroots"
