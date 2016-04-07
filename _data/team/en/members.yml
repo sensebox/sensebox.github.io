@@ -49,3 +49,8 @@
   image: /images/team/raute.jpg
   position: 10
   description: "Felix is geoinformatics student at the Institute for Geoinformatics. In 2011 he worked in a pupil internship with an early version of the senseBox. He joined the team in spring 2016. #backtotheroots"
+  
+  - name: Bernd van Rennings
+    image: /images/team/raute.png
+    position: 11
+    description:  Bernd works as a student assistant for the project senseBox. He holds a bachelor degree in mathematics and computer since. Currently he is Master Student at the WWU.
