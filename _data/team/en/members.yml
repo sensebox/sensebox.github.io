@@ -46,11 +46,11 @@
   description: Aleksandr Shirokov  is a Master Student at the Institute for Geoinformatics working as a student assistant  in the Spatial Intelligence Lab at WWU. He holds a bachelor degree in Information Technology in GIS and currently actively participate in various projects at the IfGI.  As part of a SenseBox Team Aleksandr is mainly responsible for the development and maintenance of OpenSenseMap.
 
 - name: Felix Erdmann
-  image: /images/team/raute.jpg
+  image: /images/team/raute.png
   position: 10
   description: "Felix is geoinformatics student at the Institute for Geoinformatics. In 2011 he worked in a pupil internship with an early version of the senseBox. He joined the team in spring 2016. #backtotheroots"
   
-  - name: Bernd van Rennings
-    image: /images/team/raute.png
-    position: 11
-    description:  Bernd works as a student assistant for the project senseBox. He holds a bachelor degree in mathematics and computer since. Currently he is Master Student at the WWU.
+- name: Bernd van Rennings
+  image: /images/team/raute.png
+  position: 11
+  description:  Bernd works as a student assistant for the project senseBox. He holds a bachelor degree in mathematics and computer since. Currently he is Master Student at the WWU.
