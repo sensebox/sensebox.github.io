@@ -28,13 +28,11 @@
                   	{% else %}
                   	{% if menupage.lang == page.lang and menupage.id != 'main' %}
                   	 {% if menupage.id != 'contact' %}
-                  	 		{% if menupage.id != 'awards' %}
-                  	 			{% if menupage.id != 'hackathon' %}
-			                      <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
-			                        <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
-			                      </li>
-		                      {% endif %}
-	                      {% endif %}
+                  	 		{% if menupage.id != 'hackathon' %}
+			                    <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
+			                      <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
+			                    </li>
+		                    {% endif %}
                       {% endif %}
                     {% endif %}
                   {% endif %}

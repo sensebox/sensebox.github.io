@@ -5,6 +5,7 @@ header:
   docs: "Docs"
   background: "Hintergrund"
   press: "Presse"
+  awards: "Förderungen & Preise"
 
 main:
   header: "<p>Die <em>senseBox</em> ist ein Do-it-yourself-Bausatz für stationäre und mobile Sensorstationen - ein <em>Citizen Science</em> Toolkit für jedermann.</p>"
@@ -115,6 +116,9 @@ background:
 
 press:
   header: "senseBox in Medien und Presse"
+
+awards:
+  header: "Förderungen & Preise"
 
 contact:
   legalnotice: "Impressum"

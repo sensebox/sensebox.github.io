@@ -1,8 +1,41 @@
 ---
 layout: page
 id: awards
+weight: 6
 permalink: /de/awards/
 lang: de
 ---
-{% assign t = site.data.translations.[page.lang].awards %}
-<h1>Yeah</h1>
+
+<h1>Förderungen</h1>
+{% assign awardslist = site.awards | sort: 'weight' %}
+{% for award in awardslist %}
+  {% if award.type == 'grant' %}
+  <div class="posts">
+    <h2 style="clear:both">{{ award.title }}</h2>
+    {% if award.thumbnail %}
+    <img class="press-pic" src="{{ site.baseurl | append: award.thumbnail }}" />
+    {% endif %}
+    <div class="content press-text">
+    {{ award.content }}
+    </div>
+    <hr class="clear nomargin">
+  </div>
+  {% endif %}
+{% endfor %}
+
+<h1>Preise</h1>
+{% assign awardslist = site.awards | sort: 'weight' %}
+{% for award in awardslist %}
+  {% if award.type == 'award' %}
+  <div class="posts">
+    <h2 style="clear:both">{{ award.title }}</h2>
+    {% if award.thumbnail %}
+    <img class="press-pic" src="{{ site.baseurl | append: award.thumbnail }}" />
+    {% endif %}
+    <div class="content press-text">
+    {{ award.content }}
+    </div>
+    <hr class="clear nomargin">
+  </div>
+  {% endif %}
+{% endfor %}
