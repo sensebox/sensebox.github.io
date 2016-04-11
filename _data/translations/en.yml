@@ -5,6 +5,7 @@ header:
   docs: "Docs"
   background: "Background"
   press: "Press"
+  awards: "Grants & Awards"
 
 footer:
   news:
@@ -141,6 +142,9 @@ background:
 press:
   header: "senseBox in Media and Press"
 
+awards:
+  header: "Grants & Awards"
+  
 contact:
   legalnotice: "Legal notice"
   responsible: "Responsible for the content"
