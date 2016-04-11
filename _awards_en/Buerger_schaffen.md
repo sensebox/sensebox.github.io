@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Competition in the science year 2015 „citizens create the city of tomorrow“"
+weight:   6
+thumbnail: https://www.zbw-mediatalk.eu/wp-content/uploads/2016/03/buergerschaffenwissen-2.jpg
+type: award
+categories: awards
+---
+"As part of the science year 2015 citizen science projects were invited to look for solutions and pursue issues of urban planning and the usage of urban areas."
