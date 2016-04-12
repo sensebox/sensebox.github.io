@@ -2,7 +2,7 @@
 layout: post
 title:  "Sparkasse Münsterland Ost"
 weight:   4
-thumbnail: http://mittendrin.ms/wp-content/uploads/2015/06/sparkasse_msland-ost.png
+thumbnail: http://www.gievenbeckerleben.de/wp-content/uploads/sparkasse_logo.gif
 type: grant
 categories: awards
 ---
