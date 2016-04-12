@@ -91,6 +91,9 @@ docs:
     content: "Im <a href=\"https://github.com/sensebox/OER/wiki\" target=\"_blank\" class=\"link\">Wiki</a> auf unserem Github Repository finden Sie stets aktuelle Anleitungen zur <em>senseBox:home</em>, <em>senseBox:edu</em> und <em>openSenseMap</em>."
   pictures:
     header: "Fotos"
+  flyer:
+    header: "Flyer"
+    content: "<a href=\"/docs/flyer/senseBox_home_Anleitung_deutsch.pdf\" target=\"_blank\" class=\"link\">senseBox:home Flyer</a><br><a href=\"/docs/flyer/senseBox_edu_Anleitung_deutsch.pdf\" target=\"_blank\" class=\"link\">senseBox:edu Flyer</a>"
 
 background:
   aboutus:

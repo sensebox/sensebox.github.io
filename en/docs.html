@@ -22,7 +22,8 @@ id: docs
     <li role="presentation" class="active"><a href="#instructions" aria-controls="instructions" role="tab" data-toggle="tab">{{ t.instructions.header }}</a></li>
     <!--<li role="presentation"><a href="#texts" aria-controls="texts" role="tab" data-toggle="tab">Texte</a></li>-->
     <li role="presentation"><a href="#photos" aria-controls="photos" role="tab" data-toggle="tab">{{ t.pictures.header }}</a></li>
-  </ul>
+    <li role="presentation"><a href="#flyer" aria-controls="flyer" role="tab" data-toggle="tab">{{ t.flyer.header }}</a></li>
+</ul>
 
   <!-- Tab panes -->
   <div class="tab-content">
@@ -67,6 +68,10 @@ id: docs
 {% endfor %}
 {% endfor %}
       </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="flyer">
+      <br>
+      <p>{{ t.flyer.content }}</p>
     </div>
   </div>
 </div>

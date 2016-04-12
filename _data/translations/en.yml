@@ -112,9 +112,13 @@ docs:
   description: "Here you can find all documentation regarding senseBox and openSenseMap. All documents listed here are considered to be Open Educational Resources (OER) under Creative Commons License <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">CC BY SA 4.0</a>. Existing content can be further developed and enhanced by new experiments or projects thorugh the creative community."
   instructions:
     header: "Instructions"
-    content: "In the <a href=\"https://github.com/sensebox/OER/wiki\" target=\"_blank\" class=\"link\"> wiki</a>  of our <a href=\"https://github.com/sensebox/OER\" target=\"_blank\" class=\"link\"><img src=\"{{ site.baseurl | append: '/images/iconmonstr-github-icon.png'}}\"> Github Repository</a>  you can find instructions for the senseBox:home, senseBox:edu and openSenseMap."
+    content: "In the <a href=\"https://github.com/sensebox/OER/wiki\" target=\"_blank\" class=\"link\"> wiki</a>  of our <a href=\"https://github.com/sensebox/OER\" target=\"_blank\" class=\"link\"><img src=\"/images/iconmonstr-github-icon.png\"> Github Repository</a>  you can find instructions for the senseBox:home, senseBox:edu and openSenseMap."
   pictures:
     header: "Photos"
+  flyer:
+    header: "Flyer"
+    content: "<a href=\"/docs/flyer/senseBox_home_Anleitung_deutsch.pdf\" target=\"_blank\" class=\"link\">senseBox:home Flyer (in german)</a><br><a href=\"/docs/flyer/senseBox_edu_Anleitung_deutsch.pdf\" target=\"_blank\" class=\"link\">senseBox:edu Flyer (in german)</a>"
+
 
 background:
   aboutus:
