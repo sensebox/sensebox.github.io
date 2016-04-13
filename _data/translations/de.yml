@@ -5,7 +5,7 @@ header:
   docs: "Docs"
   background: "Hintergrund"
   press: "Presse"
-  awards: "Förderungen"
+  awards: "Förderung"
 
 main:
   header: "<p>Die <em>senseBox</em> ist ein Do-it-yourself-Bausatz für stationäre und mobile Sensorstationen - ein <em>Citizen Science</em> Toolkit für jedermann.</p>"
