@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bürger-Projekt „SenseBox“ wird ausgebaut"
-date:   2016-04-05 12:00:00
+date:   2016-04-13 12:00:00
 author: Felix
 thumbnail: http://www.planeterde.de/planeterde.gif
 categories: press
