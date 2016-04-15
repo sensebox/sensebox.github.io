@@ -53,4 +53,8 @@
   position: 11
   description:  Bernd arbeitet als studentische Hilfskraft für das Projekt senseBox. Er hat im zwei-Fach-Bachelor Mathematik und Informatik an der Uni Münster studiert. Zurzeit studiert er im Master of Education.
 
- 
+- name: Gerald Pape
+  image: /images/team/raute.png
+  position: 12
+  description: Gerald kümmert sich zusammen mit Matthias um alles was mit der <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a> und der <a href="http://sensebox.github.io/OpenSenseMap-API/" target="_blank">API</a> zu tun hat. Er hat seinen Master Geoinformatik an der Uni Münster gemacht.
+

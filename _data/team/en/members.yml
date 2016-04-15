@@ -49,8 +49,14 @@
   image: /images/team/raute.png
   position: 10
   description: "Felix is geoinformatics student at the Institute for Geoinformatics. In 2011 he worked in a pupil internship with an early version of the senseBox. He joined the team in spring 2016. #backtotheroots"
-  
+
 - name: Bernd van Rennings
   image: /images/team/raute.png
   position: 11
   description:  Bernd works as a student assistant for the project senseBox. He holds a bachelor degree in mathematics and computer since. Currently he is Master Student at the WWU.
+
+- name: Gerald Pape
+  image: /images/team/raute.png
+  position: 12
+  description: Together with Matthias, Gerald will look after everything related to the <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a> and the <a href="http://sensebox.github.io/OpenSenseMap-API/" target="_blank">API</a>. He studied Master Geoinformatics at the University of Münster.
+
