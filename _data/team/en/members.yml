@@ -63,4 +63,4 @@
 - name: Marc Dragunski
   image: /images/team/raute.png
   position: 13
-  description: Marc wrote his BA thesis: "Geostatistical Methods for the OpenSenseMap-Platform" in 2016 at the Institute for Geoinformatics in Münster. His work had the goal to implement interpolation methods into <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a>. 
+  description: Marc wrote his BA thesis "Geostatistical Methods for the OpenSenseMap-Platform" in 2016 at the Institute for Geoinformatics in Münster. His work had the goal to implement interpolation methods into <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a>. 
