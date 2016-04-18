@@ -417,18 +417,23 @@ em {
 }
 
 .team-pic,
-.press-pic {
-  float: left;
+.press-pic,
+.award-pic {
+  //float: left;
   margin: 2px;
   margin-right: 15px;
-  max-width: 25%;
+  max-width: 100%;
 }
 
-.award-pic {
-  float: left;
-  margin: 2px;
-  margin-right: 15px;
-  max-width: 25%;
+@media (max-width: 767px) {
+  .team-pic,
+  .press-pic,
+  .award-pic {
+    //float: left;
+    margin: 2px;
+    margin-right: 15px;
+    max-width: 50%;
+  }
 }
 
 .press-text {

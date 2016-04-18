@@ -12,14 +12,25 @@ lang: de
   {% if award.type == 'grant' %}
   <div class="posts">
     <h2 style="clear:both">{{ award.title }}</h2>
-    {% if award.thumbnail %}
-    <img class="award-pic" src="{{ site.baseurl | append: award.thumbnail }}" />
-    {% endif %}
-    <div class="content press-text">
-    {{ award.content }}
+    <div class="row">
+      {% if award.thumbnail %}
+      <div class="col-sm-4">
+        <img class="award-pic" src="{{ site.baseurl | append: award.thumbnail }}" />
+      </div>
+
+      <div class="col-sm-8">
+        <div class="content press-text">
+          {{ award.content }}
+        </div>
+      </div>
+      {% else %}
+        <div class="content press-text">
+          {{ award.content }}
+        </div>
+      {% endif %}
+      </div>
+      <hr class="clear nomargin">
     </div>
-    <hr class="clear nomargin">
-  </div>
   {% endif %}
 {% endfor %}
 
@@ -29,12 +40,23 @@ lang: de
   {% if award.type == 'award' %}
   <div class="posts">
     <h2 style="clear:both">{{ award.title }}</h2>
-    {% if award.thumbnail %}
-    <img class="award-pic" src="{{ site.baseurl | append: award.thumbnail }}" />
-    {% endif %}
-    <div class="content press-text">
-    {{ award.content }}
-    </div>
+    <div class="row">
+      {% if award.thumbnail %}
+      <div class="col-sm-4">
+        <img class="award-pic" src="{{ site.baseurl | append: award.thumbnail }}" />
+      </div>
+
+      <div class="col-sm-8">
+        <div class="content press-text">
+          {{ award.content }}
+        </div>
+      </div>
+      {% else %}
+        <div class="content press-text">
+          {{ award.content }}
+        </div>
+      {% endif %}
+      </div>
     <hr class="clear nomargin">
   </div>
   {% endif %}

@@ -14,12 +14,24 @@ id: press
 {% for post in pressnews %}
 <div class="posts">
   <h2 style="clear:both">{{ post.title }}</h2>
-  {% if post.thumbnail %}
-  <img class="press-pic" src="{{ site.baseurl | append: post.thumbnail }}" />
+    <div class="row">
+      {% if post.thumbnail %}
+      <div class="col-sm-4">
+        <img class="press-pic" src="{{ site.baseurl | append: post.thumbnail }}" />
+      </div>
+
+      <div class="col-sm-8">
+        <div class="content press-text">
+          {{ post.content }}
+        </div>
+      </div>
+  {% else %}
+      <div class="content press-text">
+      {{ post.content }}
+      </div>
   {% endif %}
-  <div class="content press-text">
-  {{ post.content }}
   </div>
+
   <hr class="clear nomargin">
   <div class="author">
     <span class="date">{{ post.date | date: '%d. %B %Y' }}</span> von <span class="author"> {{ post.author }} </span>
