@@ -58,3 +58,7 @@
   position: 12
   description: Gerald kümmert sich zusammen mit Matthias um alles was mit der <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a> und der <a href="http://sensebox.github.io/OpenSenseMap-API/" target="_blank">API</a> zu tun hat. Er hat seinen Master Geoinformatik an der Uni Münster gemacht.
 
+- name: Marc Dragunski
+  image: /images/team/raute.png
+  position: 13
+  description: Marc hat 2016 seine BA Thesis mit dem Thema: "Geostatistical Methods for the OpenSenseMap-Platform" am Institut für Geoinformatik abgeschlossen. Während dieser Arbeit entwickelte er Interpolations funktionalitäten für die <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a>. 
