@@ -62,3 +62,8 @@
   image: /images/team/raute.png
   position: 13
   description: Marc hat 2016 seine BA Thesis mit dem Thema "Geostatistical Methods for the OpenSenseMap-Platform" am Institut für Geoinformatik abgeschlossen. Während dieser Arbeit entwickelte er Interpolations funktionalitäten für die <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a>. 
+
+- name: Norwin Roosen
+  image: /images/team/raute.png
+  position: 14
+  description: Norwin studiert am <a href="https://www.uni-muenster.de/Geoinformatics/" target="_blank"i>ifgi</a> BSc Geoinformatik. Er unterstützt das Projekt senseBox als studentische Hilfskraft.
