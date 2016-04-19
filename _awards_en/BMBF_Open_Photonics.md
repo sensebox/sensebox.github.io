@@ -2,7 +2,7 @@
 layout: post
 title:  "Federal Ministry of Education and Research - Open Photonics"
 weight:   1
-thumbnail: https://www.bmbf.de/site/img/logo.png
+thumbnail: /images/sponsors/BMBF_CMYK_Gef_L.png
 type: grant
 categories: awards
 ---

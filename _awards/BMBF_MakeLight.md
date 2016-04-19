@@ -2,7 +2,7 @@
 layout: post
 title:  "BMBF MakeLight"
 weight:   2
-thumbnail: https://www.bmbf.de/site/img/logo.png
+thumbnail: /images/sponsors/BMBF_CMYK_Gef_L.png
 type: grant
 categories: awards
 ---
