@@ -150,3 +150,5 @@ footer:
     header: "Publikationen"
     docs: "Docs"
     thesis: "Bachelor-Arbeiten"
+  partner:
+    header: "Partner"

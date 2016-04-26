@@ -27,6 +27,8 @@ footer:
     header: "Publications"
     docs: "Docs"
     thesis: "Bachelorthesis"
+  partner:
+    header: "Partner"
 
 main:
   header: "<p>The <em>senseBox</em> is a do-it-yourself kit for stationary and mobile sensor stations –  the <em>Citizen Science</em> Toolkit.</p>"

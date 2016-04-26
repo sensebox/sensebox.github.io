@@ -58,12 +58,17 @@ h1, h2, h3, h4, h5, h6 {
   }
   text-align: center;
   img {
-    width: 270px;
-    height: 119px;
+    padding: 5px;
+    max-width: 270px;
+    max-height: 119px;
     transition: box-shadow 0.1s;
     border-radius: 5px;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
     &:hover {
       box-shadow: 0px 0px 15px lighten($sensebox-green, 40%);
+      -webkit-filter: none; /* Chrome, Safari, Opera */
+      filter: none;
     }
   }
 }
