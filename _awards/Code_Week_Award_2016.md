@@ -2,7 +2,7 @@
 layout: post
 title:  "Code Week Award 2016"
 weight:   5
-thumbnail: http://award.codeweek.de/2016/wp-content/themes/cwa16/library/images/logo.svg
+thumbnail: /images/CWA Logo 2016 _M_White.svg
 type: award
 categories: awards
 ---
