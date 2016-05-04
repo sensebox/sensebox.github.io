@@ -1,0 +1,23 @@
+- name: Prof. Dr. Christian Kray
+  image: http://christian-kray.de/img/portraitChrisSmall.jpg
+  position: 1
+  organisation: Institut für Geoinformatik, Universität Münster
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+- name: Grischa Gundelsweiler
+  image: https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAINAAAAJDdlYzk5NWNiLWUzOGItNDUwOC1hY2VkLThhZmViZjQ1NWZjMA.jpg
+  position: 2
+  organisation: Amazon Web Services
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+- name: Gerrit Grundwald
+  image: https://www.xing.com/image/5_2_4_e5a4d6967_6025750_3/gerrit-grunwald-foto.1024x1024.jpg
+  position: 3
+  organisation: ORACLE
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+- name: Oliver Paczkowski
+  image: https://www.xing.com/image/0_e_a_9a20262c9_6347389_10/oliver-paczkowski-foto.1024x1024.jpg
+  position: 4
+  organisation: OVSoftware GmbH
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
