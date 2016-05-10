@@ -128,6 +128,19 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
       <div id="desc_{{ jurymember.position }}" class="collapse">
         {{ jurymember.description }}
       </div>
+      {% if jurymember.twitter %}
+        <a href="{{ jurymember.twitter }}" target="_blank"><img src="{{ site.baseurl | append: '/images/iconmonstr-twitter-4-icon.png'}}"></a>
+      {% endif %}
+      {% if jurymember.linkedin %}
+        <a href="{{ jurymember.linkedin }}" target="_blank"><img src="{{ site.baseurl | append: '/images/iconmonstr-linkedin-4-240.png'}}"></a>
+      {% endif %}
+      {% if jurymember.github %}
+        <a href="{{ jurymember.github }}" target="_blank"><img src="{{ site.baseurl | append: '/images/iconmonstr-github-icon.png'}}"></a>
+      {% endif %}
+      {% if jurymember.homepage %}
+        <a href="{{ jurymember.homepage }}" target="_blank"><img src="{{ site.baseurl | append: '/images/iconmonstr-homepage.png'}}"></a>
+      {% endif %}
+      <p></p>
     </div>
 
   {% if jurymember.position == 2 or jurymember.position == 4 or jurymember.position == 6 %}
