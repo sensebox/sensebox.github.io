@@ -122,25 +122,32 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
 
 
     <div class="col-md-6" style="cursor: pointer;" data-toggle="collapse" data-target="#desc_{{ jurymember.position }}">
-      <img style="max-width:150px; max-height:150px" src="{{ site.baseurl | append: jurymember.image }}" />
-      <h4 style="clear:both">{{ jurymember.name }}</h4>
-      <h5 style="clear:both">{{ jurymember.organisation }}</h5>
-      <div id="desc_{{ jurymember.position }}" class="collapse">
-        {{ jurymember.description }}
+
+      <div class="card">
+          <canvas class="header-bg" width="250" id="header-blur" style="background-image: url({{ jurymember.bgImage }});"></canvas>
+          <div class="avatar">
+              <img src="{{ site.baseurl | append: jurymember.image }}" />
+          </div>
+          <div class="content">
+            <h4 style="clear:both">{{ jurymember.name }}</h4>
+            <h5 style="clear:both"><a href="{{ jurymember.organisation-link }}" target="_blank">{{ jurymember.organisation }}</a></h5>
+            <div id="desc_{{ jurymember.position }}" class="collapse">
+              {{ jurymember.description }}
+            </div>
+            {% if jurymember.twitter %}
+              <a href="{{ jurymember.twitter }}" target="_blank" class="social-media"><img src="{{ site.baseurl | append: '/images/iconmonstr-twitter-4-icon.png'}}"></a>
+            {% endif %}
+            {% if jurymember.linkedin %}
+              <a href="{{ jurymember.linkedin }}" target="_blank" class="social-media"><img src="{{ site.baseurl | append: '/images/iconmonstr-linkedin-4-240.png'}}"></a>
+            {% endif %}
+            {% if jurymember.github %}
+              <a href="{{ jurymember.github }}" target="_blank" class="social-media"><img src="{{ site.baseurl | append: '/images/iconmonstr-github-icon.png'}}"></a>
+            {% endif %}
+            {% if jurymember.homepage %}
+              <a href="{{ jurymember.homepage }}" target="_blank" class="social-media"><img src="{{ site.baseurl | append: '/images/iconmonstr-homepage.png'}}"></a>
+            {% endif %}
+          </div>
       </div>
-      {% if jurymember.twitter %}
-        <a href="{{ jurymember.twitter }}" target="_blank"><img src="{{ site.baseurl | append: '/images/iconmonstr-twitter-4-icon.png'}}"></a>
-      {% endif %}
-      {% if jurymember.linkedin %}
-        <a href="{{ jurymember.linkedin }}" target="_blank"><img src="{{ site.baseurl | append: '/images/iconmonstr-linkedin-4-240.png'}}"></a>
-      {% endif %}
-      {% if jurymember.github %}
-        <a href="{{ jurymember.github }}" target="_blank"><img src="{{ site.baseurl | append: '/images/iconmonstr-github-icon.png'}}"></a>
-      {% endif %}
-      {% if jurymember.homepage %}
-        <a href="{{ jurymember.homepage }}" target="_blank"><img src="{{ site.baseurl | append: '/images/iconmonstr-homepage.png'}}"></a>
-      {% endif %}
-      <p></p>
     </div>
 
   {% if jurymember.position == 2 or jurymember.position == 4 or jurymember.position == 6 %}

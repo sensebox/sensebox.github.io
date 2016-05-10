@@ -1,32 +1,40 @@
 - name: Prof. Dr. Christian Kray
-  image: http://christian-kray.de/img/portraitChrisSmall.jpg
+  image: /images/team/hackathon-jury/portraitChris.jpg
   position: 1
   organisation: Institut für Geoinformatik, Universität Münster
+  organisation-link: http://www.uni-muenster.de/Geoinformatics/
   description: His main research interests are in the areas of mobile and ubiquitous computing, human-computer interaction, artificial intelligence, and geoinformatics. He is particularly interested in interaction with and through spatial concepts (e.g. using proximity regions around devices to trigger certain actions), in accessible interfaces (e.g. that can be used by users with different abilities and backgrounds) and in evaluation methods for mobile and ubiquitous systems. Christian joined ifgi in April 2011, after having worked at Newcastle University (at the School of Computing Science, the Digital Institute and at Culture Lab) from 2005 to 2011. Prior to coming to Newcastle, he spent some time in Hans Gellersen's group at Lancaster University. Before that, he worked at the German Research Center for AI, and got his PhD and MSc from Saarland University back in Germany.
   homepage: http://www.christian-kray.de/
+  bgImage: https://www.blb.nrw.de/Bilder/Bilder_BLB/Geowissenschaften_Muenster_Bilder/GEO-I.jpg
 
 - name: Grischa Gundelsweiler
   image: https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAINAAAAJDdlYzk5NWNiLWUzOGItNDUwOC1hY2VkLThhZmViZjQ1NWZjMA.jpg
   position: 2
   organisation: Amazon Web Services
+  organisation-link: https://aws.amazon.com/de/
   description: Grisha is passionate about helping individuals from education, research and public sector develop digital strategies and makes the best business aligned technology decisions. Over the past 8+ years he built up and led teams, managed large accounts, implemented and grew customer centered programs and provided software, saas, volume licenses, training, support and consulting services to hundreds of organizations and thousands of users. His expertise includes sales management, business development, marketing strategy, team leadership, key account management and driving growth within a defined vertical. He earned a Diploma in Geography and GIS from University of Münster, attended leadership, IT & business courses and participated in a variety of international technology and research events.
   twitter: https://twitter.com/gri_gun
   linkedin: https://de.linkedin.com/in/grischa-gundelsweiler-37b79aba
+  bgImage: http://www.chip.de/ii/1/8/3/4/6/1/4/7/Amazon-Datacenter-0758b15e0dc56afd.jpg
 
 - name: Gerrit Grunwald
   image: https://www.xing.com/image/5_2_4_e5a4d6967_6025750_3/gerrit-grunwald-foto.1024x1024.jpg
   position: 3
   organisation: ORACLE
+  organisation-link: https://www.oracle.com/de/index.html
   description: Gerrit Grunwald is a software engineer with more than ten years of experience in software development. He has been involved in Java desktop application and controls development. Gerrit is interested in Java on desktop, Java-driven embedded technologies based on JavaSE embedded and IoT in general. He is a true believer in open source and has participated in popular projects like JFXtras.org as well as his own projects (Medusa, Enzo, SteelSeries Swing, SteelSeries Canvas). Gerrit blogs regularly on subjects related to the Internet of Things and Java(FX) related topics, he is an active member of the Java community, where he founded and leads the Java User Group Münster (Germany), is a JavaOne rockstar and Java Champion. He is a speaker at conferences and user groups internationally and writes for several magazines.
   twitter: https://twitter.com/hansolo_?lang=de
   github: https://github.com/HanSolo
   homepage: http://harmoniccode.blogspot.de/
   linkedin: https://de.linkedin.com/in/harmoniccode
+  bgImage: http://allthingsd.com/files/2011/06/teamoracle.jpg
 
 - name: Oliver Paczkowski
   image: https://www.xing.com/image/0_e_a_9a20262c9_6347389_10/oliver-paczkowski-foto.1024x1024.jpg
   position: 4
   organisation: OVSoftware GmbH
+  organisation-link: http://www.ovsoftware.de/
   description:
   linkedin: https://de.linkedin.com/in/oliver-paczkowski-275a7521
   homepage: http://paczkowski.weebly.com/
+  bgImage: http://muenster.ms/wp-content/uploads/2014/02/hafen121020082433.jpg
