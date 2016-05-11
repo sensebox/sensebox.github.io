@@ -21,16 +21,19 @@ lang: de
 </ul>
 <hr>
 
-<div class="media">
-  <div class="media-left">
+<div class="row">
+  <div class="col-md-3">
     <a href="http://award.codeweek.de/" target="_blank">
-      <img class="media-object" width="300px" src="{{ site.baseurl | append: '/images/CWA Logo 2016 _M_White.svg'}}" alt="Code Week Award Logo">
+      <img style="max-width: 100%;" src="{{ site.baseurl | append: '/images/CWA Logo 2016 _M_White.svg'}}" alt="Code Week Award Logo">
     </a>
   </div>
-  <div class="media-body">
+  <div class="col-md-7">
     <p>
       Dieses Jahr haben wir beim <a class="link" href="http://award.codeweek.de/projects/sensebox-hackathon/" target="_blank"><em>CodeWeek Award</em></a> gewonnen! Deswegen können wir im Sommer den <em>senseBox Hackathon</em> veranstalten, bei dem Teams aus Jugendlichen mit der <em>senseBox</em> und anderen Technologien in nur zwei Tagen clevere Projekte für unsere Umwelt entwickeln und tolle Preise gewinnen können! Also nehmt teil, rettet die Welt und sahnt ab!
     </p>
+  </div>
+  <div class="col-md-2">
+    <img style="max-width: 100%;" src="{{ site.baseurl | append: '/images/codeweekwinner.png' }}" alt="Code Week Award Logo">
   </div>
 </div>
 
@@ -81,7 +84,7 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
 	<li>Raspberry Pi</li>
 	<li>verschiedene 3D-Drucker</li>
 	<li>Microsoft Kinects</li>
-  <li>Garmin Smart Watches</li>
+  <li>Smart Watches</li>
 	<li>Kameras</li>
 	<li>Wetterballon</li>
 	<li>Laptops, Tablets, Smartphones...</li>
@@ -95,22 +98,29 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
   Wenn Du noch keine 18 bist, musst Du für die Bewerbung zwei Einverständniserklärungen von einer erziehungsberechtigten Person unterschreiben lassen.
 </p>
 <p>
-  <a href="#">Einverständniserklärung (Uni Münster)</a>
+  <a href="https://github.com/sensebox/sensebox.github.io/files/259637/Einverstandniserklarung_senseBox_Hackathon.pdf">Einverständniserklärung (Uni Münster)</a>
 </p>
 <p>
-  <a href="#">Einverständniserklrung 16-18 (CodeWeek Award)</a>
+  <a href="https://github.com/sensebox/sensebox.github.io/files/259638/Einverstandniserklarung.U16_18.pdf">Einverständniserklärung (CodeWeek Award)</a>
 </p>
-<p>
-  <a href="#">Einverständniserklrung unter 16 (CodeWeek Award)</a>
-</p>
+<div style="text-align:center; padding: 50px;">
+  <h1 class="smallcaps"><a href="{{ site.baseurl | append: '/hackathon_registration/' }}">HIER BEWERBEN</a></h1>
+</div>
 
 <h3 class="smallcaps" id="unterkunft">Unterkunft</h3>
-<p>Vor dem Institut für Geoinformatik wird im <a href='https://geourbanum.wordpress.com/'>GEOURBANUM</a> ein Zeltcamp eingerichtet. Alles weitere ist im Institut vorhanden.
-</p>
-<img src="{{ site.baseurl | append: '/images/hackathon_campingarea.JPG' }}" style="width:75%" alt="Campingarea">
+<div class="row">
+  <div class="col-md-8">
+    <p>Vor dem Institut für Geoinformatik wird im <a href='https://geourbanum.wordpress.com/'>GEOURBANUM</a> ein Zeltcamp eingerichtet. Alles weitere ist im Institut vorhanden.
+    </p>
+  </div>
+  <div class="col-md-4">
+    <a href="{{ site.baseurl | append: '/images/hackathon_campingarea.JPG'}}" target="_blank">
+      <img src="{{ site.baseurl | append: '/images/hackathon_campingarea.JPG' }}" style="width:100%;" alt="Campingarea"  class="thumbnail">
+    </a>
+  </div>
+</div>
 
 <br>
-<h3 class="smallcaps"><a href="#">HIER BEWERBEN</a></h3>
 
 <h3 class="smallcaps" id="jury">Jury</h3>
 {% assign jurymembers = site.data.team.de.jury | sort: 'position' %}
@@ -121,9 +131,9 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
   {% endif %}
 
 
-    <div class="col-md-6" style="cursor: pointer;" data-toggle="collapse" data-target="#desc_{{ jurymember.position }}">
+    <div class="col-md-6">
 
-      <div class="card">
+      <div class="card" style="cursor: pointer;" data-toggle="collapse" data-target="#desc_{{ jurymember.position }}">
           <canvas class="header-bg" width="250" id="header-blur" style="background-image: url({{ jurymember.bgImage }});"></canvas>
           <div class="avatar">
               <img src="{{ site.baseurl | append: jurymember.image }}" />
@@ -159,19 +169,51 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
 
 <h3 class="smallcaps" id="preise">Preise</h3>
 <p>Zu gewinnen gibt es:</p>
-<ul>
-  <li><a href="http://www.sensebox.de/de/products/"<em>senseBox:edu</em> sets</a></li>
-  <li>German RepRap NEO - 3D-Drucker</li>
-  <li>Garmin Smartwatches</li>
-  <li>viele andere tolle Technikpreise!</li>
-</ul>
-
+<div class="row">
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card">
+      <canvas class="price-header-bg" style="background-image: url(http://www.uni-muenster.de/news/data/img/2015/12/8066-DCCi2Z27-newsML.jpg);"></canvas>
+      <div class="price-text">
+        <h3><a href="http://www.sensebox.de/de/products/">senseBox:edu Sets</a></h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card">
+      <canvas class="price-header-bg" style="background-image: url(https://3druck.com/wp-content/uploads/2013/12/NEO-GermanRepRap-3D-Drucker.jpg);"></canvas>
+      <div class="price-text">
+        <h3><a href="https://www.germanreprap.com/">German RepRap NEO - 3D-Drucker</a></h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card">
+      <canvas class="price-header-bg" style="background-image: url(http://techliveinfo.com/wp-content/uploads/2015/01/Gramin-Smartwatches-unveiled-at-CES-2015.jpg);"></canvas>
+      <div class="price-text">
+        <h3><a href="http://www.garmin.com/de-DE/">Garmin Smartwatches</a></h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card">
+      <canvas class="price-header-bg" style="background-image: url(http://www1-lw.xda-cdn.com/files/2015/01/Ultimate-Material-Lollipop-Collection-28.jpg);"></canvas>
+      <div class="price-text">
+        <h3>und vieles mehr...</h3>
+      </div>
+    </div>
+  </div>
+</div>
 
 <h3 class="smallcaps">Sponsoren</h3>
 <div class="row">
   <div class="col-lg-12">
     <div class="row sponsor">
     <ul>
+      <li>
+        <a href="http://award.codeweek.de/" target="_blank">
+          <img src="{{ site.baseurl | append: '/images/CWA Logo 2016 _M_White.svg'}}" alt="Make Light Logo">
+        </a>
+      </li>
       <li>
         <a href="http://www.photonik-campus.de/make-light/" target="_blank">
           <img src="{{ site.baseurl | append: '/images/sponsors/make-light.png'}}" alt="Make Light Logo">

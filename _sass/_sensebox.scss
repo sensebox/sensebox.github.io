@@ -570,3 +570,34 @@ article.post-content img {
 .card .toggle-info {
   padding: 5px;
 }
+
+.card .price-header-bg {
+  /* This stretches the canvas across the entire hero unit */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  border-bottom: 1px #FFF solid;
+  /* This positions the canvas under the text */
+  z-index: 1;
+}
+
+.price-text {
+  position: relative;
+  margin-top: 120px;
+  z-index: 100;
+  background-color: #ffffff;
+}
+
+.price-text h3 {
+  margin: 0px;
+  padding: 5px;
+  color: #141414;
+}
+
+ul li {
+  font-size: 1.2em;
+}
