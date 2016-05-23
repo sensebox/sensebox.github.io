@@ -1,6 +1,6 @@
 - name: Prof. Dr. Christian Kray
   image: /images/team/hackathon-jury/portraitChris.jpg
-  position: 1
+  position: 4
   organisation: Institut für Geoinformatik, Universität Münster
   organisation-link: http://www.uni-muenster.de/Geoinformatics/
   description: His main research interests are in the areas of mobile and ubiquitous computing, human-computer interaction, artificial intelligence, and geoinformatics. He is particularly interested in interaction with and through spatial concepts (e.g. using proximity regions around devices to trigger certain actions), in accessible interfaces (e.g. that can be used by users with different abilities and backgrounds) and in evaluation methods for mobile and ubiquitous systems. Christian joined ifgi in April 2011, after having worked at Newcastle University (at the School of Computing Science, the Digital Institute and at Culture Lab) from 2005 to 2011. Prior to coming to Newcastle, he spent some time in Hans Gellersen's group at Lancaster University. Before that, he worked at the German Research Center for AI, and got his PhD and MSc from Saarland University back in Germany.
@@ -10,7 +10,7 @@
 
 - name: Grischa Gundelsweiler
   image: https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAINAAAAJDdlYzk5NWNiLWUzOGItNDUwOC1hY2VkLThhZmViZjQ1NWZjMA.jpg
-  position: 2
+  position: 3
   organisation: Amazon Web Services
   organisation-link: https://aws.amazon.com/de/
   description: Grischa is passionate about helping individuals from education, research and public sector develop digital strategies and makes the best business aligned technology decisions. Over the past 8+ years he built up and led teams, managed large accounts, implemented and grew customer centered programs and provided software, saas, volume licenses, training, support and consulting services to hundreds of organizations and thousands of users. His expertise includes sales management, business development, marketing strategy, team leadership, key account management and driving growth within a defined vertical. He earned a Diploma in Geography and GIS from University of Münster, attended leadership, IT & business courses and participated in a variety of international technology and research events.
@@ -20,7 +20,7 @@
 
 - name: Gerrit Grunwald
   image: https://www.xing.com/image/5_2_4_e5a4d6967_6025750_3/gerrit-grunwald-foto.1024x1024.jpg
-  position: 3
+  position: 2
   organisation: ORACLE
   organisation-link: https://www.oracle.com/de/index.html
   description: Gerrit Grunwald is a software engineer with more than ten years of experience in software development. He has been involved in Java desktop application and controls development. Gerrit is interested in Java on desktop, Java-driven embedded technologies based on JavaSE embedded and IoT in general. He is a true believer in open source and has participated in popular projects like JFXtras.org as well as his own projects (Medusa, Enzo, SteelSeries Swing, SteelSeries Canvas). Gerrit blogs regularly on subjects related to the Internet of Things and Java(FX) related topics, he is an active member of the Java community, where he founded and leads the Java User Group Münster (Germany), is a JavaOne rockstar and Java Champion. He is a speaker at conferences and user groups internationally and writes for several magazines.
@@ -32,7 +32,7 @@
 
 - name: Oliver Kurscheidt
   image: https://www.xing.com/image/0_e_a_9a20262c9_6347389_10/oliver-paczkowski-foto.1024x1024.jpg
-  position: 4
+  position: 5
   organisation: OVSoftware GmbH
   organisation-link: http://www.ovsoftware.de/
   description: Oliver is a software developer and project manager at OVSoftware GmbH in Münster since 2012. There he worked in several projects about web development, especially with Java based technologies. He is passionate about agile software development and clean code. Oliver received a diploma in geoinformatics at the Institute for Geoinformatics in Münster in 2007 and worked there for another two years as a research assistant in the ubiquitous computing working group. He founded the company melezo for distributing software for public information displays. Oliver is co-founder and organisator of the local software craftsmanship group socramob - www.socramob.org
@@ -43,7 +43,7 @@
   
 - name: Elisa Lindinger
   image: https://okfn.de/static/images/team/elisalindinger.jpg
-  position: 5
+  position: 1
   organisation: Open Knowledge Foundation Deutschland
   organisation-link: https://okfn.de/
   description: Elisa arbeitet seit Jahren an der Schnittstelle von Kultur und Informatik. Zuletzt koordinierte sie das Innovationsforum „Interactive Technologies“ an der HTW Berlin, betreute die Datenerhebung für ein Projekt des Deutschen Archäologischen Instituts im Sudan und arbeitet nun im Projekt „Digital Refugee Labs“ für die Open Knowledge Foundation Deutschland.
