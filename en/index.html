@@ -7,18 +7,19 @@ id: main
 <div class="row sensebox-presentation">
   <div class="col-lg-12 col-md-12 col-sm-12">
     <div class="col-lg-4 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1">
-      <img src="{{ site.baseurl | append: '/images/bild_startseite.jpg'}}" alt="senseBox Logo" style="max-width:100%">
+      <img class="opacity-animation" src="{{ site.baseurl | append: '/images/bild_startseite.jpg'}}" alt="senseBox Logo" style="max-width:100%">
     </div>
     <div class="row">
     	<div class="col-lg-6 col-lg-offset-1">
 				<div class="row">
-					<div class="media">
-					  <div class="media-body media-bottom" style="font-size: 1.25em;">
+					<div class="media" >
+					  <div class="col-md-7" style="font-size: 1.25em;">
 					    {{ t.header }}
 					  </div>
-					  <div class="media-right">
+					  <div class="col-md-5" style="text-align: center;">
 					    <a href="{{ site.baseurl | append: '/hackathon'}}" target="_self">
-					      <img class="media-object" style="width:200px;height:200px;" src="{{ site.baseurl | append: '/images/codeweekwinner.png'}}" alt="Code Week Winner Logo">
+                <h3>Hackathon 2016</h3>
+					      <img class="media-object opacity-animation" style="width:200px;height:200px;display: block;margin: 0 auto;" src="{{ site.baseurl | append: '/images/codeweekwinner.png'}}" alt="Code Week Winner Logo">
 					    </a>
 					  </div>
 					</div>
