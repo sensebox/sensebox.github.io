@@ -130,16 +130,16 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
 <div hidden>
 {% for jurymember in jurymembers %}
 {% increment jurymember_count %}
-{% capture oddOrEven %}{% cycle 'odd', 'even' %}{% endcapture %}
+{% capture oddOrEvenJurymemberCount %}{% cycle 'odd', 'even' %}{% endcapture %}
 {% endfor %}
 </div>
 
 {% for jurymember in jurymembers %}
+  {% capture firstLastInRow %}{% cycle 'first', 'last' %}{% endcapture %}
 
-  {% if jurymember.position == 1 or jurymember.position == 3 or jurymember.position == 5 %}
+  {% if firstLastInRow == 'first' %}
     <div class="row">
   {% endif %}
-
 
     <div class="col-md-6">
 
@@ -170,12 +170,12 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
       </div>
     </div>
 
-  {% if jurymember.position == 2 or jurymember.position == 4 or jurymember.position == 6 %}
+  {% if firstLastInRow == 'last' %}
     </div>
   {% endif %}
 
   <!-- if this is the last element and the count is even, add blank col -->
-  {% if jurymember.position == jurymember_count and oddOrEven == 'odd' %}
+  {% if jurymember.position == jurymember_count and oddOrEvenJurymemberCount == 'odd' %}
   <div class="col-md-6">
    </div>
     </div>
