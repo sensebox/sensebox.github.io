@@ -611,18 +611,18 @@ ul li {
 }
 
 @-webkit-keyframes show {
-  0%   { opacity: 0;top:-20px }
-  100% { opacity: 1;top:0px }
+  0%   { opacity: 0; top:-20px }
+  100% { opacity: 1; top:0px }
 }
 @-moz-keyframes show {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  0%   { opacity: 0; top:-20px }
+  100% { opacity: 1; top:0px }
 }
 @-o-keyframes show {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  0%   { opacity: 0; top:-20px }
+  100% { opacity: 1; top:0px }
 }
 @keyframes show {
-  0%   { opacity: 0;top:-20px }
-  100% { opacity: 1;top:0px }
+  0%   { opacity: 0; top:-20px }
+  100% { opacity: 1; top:0px }
 }
