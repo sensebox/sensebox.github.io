@@ -601,3 +601,28 @@ article.post-content img {
 ul li {
   font-size: 1.2em;
 }
+
+.opacity-animation {
+  position: relative;
+  -webkit-animation: show 1s ease-in-out; /* Safari 4+ */
+  -moz-animation:    show 1s ease-in-out; /* Fx 5+ */
+  -o-animation:      show 1s ease-in-out; /* Opera 12+ */
+  animation:         show 1s ease-in-out;
+}
+
+@-webkit-keyframes show {
+  0%   { opacity: 0;top:-20px }
+  100% { opacity: 1;top:0px }
+}
+@-moz-keyframes show {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes show {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes show {
+  0%   { opacity: 0;top:-20px }
+  100% { opacity: 1;top:0px }
+}
