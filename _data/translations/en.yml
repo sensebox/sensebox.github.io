@@ -151,6 +151,11 @@ press:
 awards:
   header: "Awards"
 
+materials:
+  header: "Materials"
+  logos: "Logos"
+  flyer: "Flyer"
+
 contact:
   legalnotice: "Legal notice"
   responsible: "Responsible for the content"

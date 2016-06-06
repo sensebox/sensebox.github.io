@@ -123,6 +123,11 @@ press:
 awards:
   header: "Förderungen"
 
+materials:
+  header: "Materialien"
+  logos: "Logos"
+  flyer: "Flyer"
+
 contact:
   legalnotice: "Impressum"
   responsible: "Verantwortlich für den Inhalt"
