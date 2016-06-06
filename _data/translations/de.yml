@@ -22,23 +22,23 @@ main:
     temperature:
       header: "Temperatur"
       fact1: "Einheit: Grad Celsius"
-      fact2: "Sensor: <a href=\"http://www.ti.com/lit/ds/symlink/hdc1008.pdf\" target=\"_blank\">HDC1008</a>"
+      fact2: "Sensor: <a href=\"https://github.com/sensebox/resources/raw/master/datasheets/datasheet_hdc1008.pdf\" target=\"_blank\">HDC1008</a>"
     humiditiy:
       header: "Luftfeuchtigkeit"
       fact1: "Einheit: Relative Luftfeuchtigkeit, %"
-      fact2: "Sensor: <a href=\"http://www.ti.com/lit/ds/symlink/hdc1008.pdf\" target=\"_blank\">HDC1008</a>"
+      fact2: "Sensor: <a href=\"https://github.com/sensebox/resources/raw/master/datasheets/datasheet_hdc1008.pdf\" target=\"_blank\">HDC1008</a>"
     airpressure:
       header: "Luftdruck"
       fact1: "Einheit: hPa"
-      fact2: "Sensor: <a href=\"https://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp280/bmp280\" target=\"_blank\">BMP280</a>"
+      fact2: "Sensor: <a href=\"https://github.com/sensebox/resources/raw/master/datasheets/datasheet_BMP280-pressure-sensor.pdf\" target=\"_blank\">BMP280</a>"
     light:
       header: "Beleuchtungsstärke"
       fact1: "Einheit: Lux (lx)"
-      fact2: "Sensor: <a href=\"http://ams.com/eng/Products/Sensor-Driven-Lighting/SDL-Ambient-Light-Sensors/TSL45315\" target=\"_blank\">TSL45315</a>"
+      fact2: "Sensor: <a href=\"https://github.com/sensebox/resources/raw/master/datasheets/datasheet_TSL4531_lux-sensor.pdf\" target=\"_blank\">TSL45315</a>"
     uav:
       header: "UV(A)-Intensität"
       fact1: "Einheit: μW/cm<sup>2</sup> (UV-Index)"
-      fact2: "Sensor: <a href=\"http://www.vishay.com/docs/84277/veml6070.pdf\" target=\"_blank\">VEML6070</a>"
+      fact2: "Sensor: <a href=\"https://github.com/sensebox/resources/raw/master/datasheets/datasheet_veml6070-UV-A-Light-Sensor.pdf\" target=\"_blank\">VEML6070</a>"
     more:
       header: "weitere Phänomene"
       fact1: "Lautstärke"

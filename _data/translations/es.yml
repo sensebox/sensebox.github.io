@@ -34,7 +34,7 @@ main:
       <p>With <em>senseBox</em> , citizens and schools are able to collect environmental data using sensors for climate (weather, air quality), transport (traffic desity or noise pollution) and many more phenomena to find out more about the environment.</p>
 
       <p>The data collected is being published as open data on the  <a href=\"http://www.sensebox.de/en/products\" class=\"link\">openSenseMap</a>.</p>
- 
+
       <p>Citizens with <a href=\"http://www.sensebox.de/en/products\" class=\"link\">senseBox:home</a> can use the technology for their own local research, to collect data by themselves or to allow the senseBox to collect data for them.</p>
 
       <p>Additionally, there is <a href=\"http://www.sensebox.de/en/products\" class=\"link\">senseBox:edu</a> created for schools and junior scientists, which is an experimental box with didactical concepts, instructions and project ideas included. </p>
@@ -44,23 +44,23 @@ main:
     temperature:
       header: "Temperature"
       fact1: "Unit: degrees Celsius"
-      fact2: "Sensor: <a href=\"http://www.ti.com/lit/ds/symlink/hdc1008.pdf\" target=\"_blank\">HDC1008</a>"
+      fact2: "Sensor: <a href=\"https://github.com/sensebox/resources/raw/master/datasheets/datasheet_hdc1008.pdf\" target=\"_blank\">HDC1008</a>"
     humiditiy:
       header: "Humidity"
       fact1: "Unit: relative humidity, %"
-      fact2: "Sensor: <a href=\"http://www.ti.com/lit/ds/symlink/hdc1008.pdf\" target=\"_blank\">HDC1008</a>"
+      fact2: "Sensor: <a href=\"https://github.com/sensebox/resources/raw/master/datasheets/datasheet_hdc1008.pdf\" target=\"_blank\">HDC1008</a>"
     airpressure:
       header: "Air pressure"
       fact1: "Unit: hPa"
-      fact2: "Sensor: <a href=\"https://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp280/bmp280\" target=\"_blank\">BMP280</a>"
+      fact2: "Sensor: <a href=\"https://github.com/sensebox/resources/raw/master/datasheets/datasheet_BMP280-pressure-sensor.pdf\" target=\"_blank\">BMP280</a>"
     light:
       header: "Illuminance"
       fact1: "Unit: Lux (lx)"
-      fact2: "Sensor: <a href=\"http://ams.com/eng/Products/Sensor-Driven-Lighting/SDL-Ambient-Light-Sensors/TSL45315\" target=\"_blank\">TSL45315</a>"
+      fact2: "Sensor: <a href=\"https://github.com/sensebox/resources/raw/master/datasheets/datasheet_TSL4531_lux-sensor.pdf\" target=\"_blank\">TSL45315</a>"
     uav:
       header: "UV(A)-Intensity"
       fact1: "Unit: μW/cm<sup>2</sup> (UV-Index)"
-      fact2: "Sensor: <a href=\"http://www.vishay.com/docs/84277/veml6070.pdf\" target=\"_blank\">VEML6070</a>"
+      fact2: "Sensor: <a href=\"https://github.com/sensebox/resources/raw/master/datasheets/datasheet_veml6070-UV-A-Light-Sensor.pdf\" target=\"_blank\">VEML6070</a>"
     more:
       header: "more phenomena"
       fact1: "loudness"
@@ -92,8 +92,8 @@ products:
       </ul>
       <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/de/Sensoren/senseBox\" target=\"_blank\" class=\"link\">place your order here</a></p>"
   edu:
-    description: "<p>senseBox:edu offers schools, starting from the 7th grade, the possibility to learn programming in a fun and playful environment, to be a real citizen scientist and to get to know the world of geoinformatics. 
-In the upper grades it can be used for projects on environmental phenomena, where sensor stations are built, programmed and positioned by the students. 
+    description: "<p>senseBox:edu offers schools, starting from the 7th grade, the possibility to learn programming in a fun and playful environment, to be a real citizen scientist and to get to know the world of geoinformatics.
+In the upper grades it can be used for projects on environmental phenomena, where sensor stations are built, programmed and positioned by the students.
 Furthermore the sensor stations are connected to the Internet, where the measurements are updated and published on <a href=\"http://www.sensebox.de/en/osem\" class=\"link\">openSenseMap</a>. In this way, data can be shared with other schools, citizens and scientists.</p>
       <p><b>Features</b></p>
       <ul>
@@ -133,7 +133,7 @@ background:
     openscience:
       header: "Open Science"
       description: "The senseBox is developed exclusively following <a href=\"https://en.wikipedia.org/wiki/Open_science\" class=\"link\" target=\"_blank\">Open Science</a> principles.
-      
+
       The Setup of the senseBox components is open under the <a href=\"http://www.ohwr.org/attachments/2388/cern_ohl_v_1_2.txt\" class=\"link\" target=\"_blank\">ERN Open Hardware License 1.2</a>
       The Source Code of senseBox:home is Open Source under <a href=\"http://opensource.org/licenses/LGPL-3.0\" class=\"link\" target=\"_blank\">LGPL 3.0 License</a>.
       The Source Code of openSenseMap is Open Source under the <a href=\"http://opensource.org/licenses/MIT\" class=\"link\" target=\"_blank\">MIT License</a>.
