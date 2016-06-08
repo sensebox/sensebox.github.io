@@ -31,9 +31,11 @@
                   	 		{% if menupage.id != 'hackathon' %}
                           {% if menupage.id != 'hackathon_registration' %}
                             {% if menupage.id != 'materials' %}
-    			                    <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
-    			                      <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
-    			                    </li>
+                              {% if menupage.id != 'books' %}
+      			                    <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
+      			                      <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
+      			                    </li>
+                              {% endif %}
                             {% endif %}
                           {% endif %}
 		                    {% endif %}
