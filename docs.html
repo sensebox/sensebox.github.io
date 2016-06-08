@@ -26,12 +26,44 @@ id: docs
 
   <!-- Tab panes -->
   <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="instructions">
+    <div role="tabpanel row" class="tab-pane active" id="instructions">
+      <div class="col-md-4">
+        <div class="card">
+            <a href="https://github.com/sensebox/oer/wiki/00a_Die_senseBox_edu" style="text-decoration: none;">
+            <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_edu_bg.jpg'}});"></canvas>
+            <div class="price-text" style="padding:20px;">
+              <h3>senseBox:edu</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+            <a href="https://github.com/sensebox/oer/wiki/sensebox_home" style="text-decoration: none;">
+            <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_home_bg.jpg'}});"></canvas>
+            <div class="price-text" style="padding:20px;">
+              <h3>senseBox:home</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+            <a href="http://www.sensebox.de/OpenSenseMap-API/" style="text-decoration: none;">
+            <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_OSeM_bg.png'}});"></canvas>
+            <div class="price-text" style="padding:20px;">
+              <h3>OpenSenseMap API</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+
+<!--
       <a href="http://www.sensebox.de/books/edu/de/index.html" target="_blank" class="hvr-underline-from-left"><h4>senseBox:edu</h4></a>
       <a href="http://www.sensebox.de/books/home/de/index.html" target="_blank" class="hvr-underline-from-left"><h4>senseBox:home</h4></a>
       <br>
       <a href="http://www.sensebox.de/OpenSenseMap-API/" target="_blank" class="hvr-underline-from-left"><h4>openSenseMap-API</h4></a>
-      <!--
+
       <br>
       <p>{{ t.instructions.content }}</p>
     -->
