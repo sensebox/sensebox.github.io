@@ -3,7 +3,7 @@ layout: post
 title:  "Die Zukunft der Stadt"
 date:   2015-10-01 12:00:00
 author: Thomas
-thumbnail: http://www.aulis.de/img/img/medium/GAS_2015_217_S_U1.gif
+thumbnail: https://www.aulis.de/img/img/medium/GAS_2015_217_S_U1.gif
 categories: press
 ---
 "Ambitionierte Bürger, die sich an Citizen Sciece beteiligen wollen, nutzen die senseBox:home, um Uweltdaten zu sammeln und auf der openSenseMap darzustellen. Die openSenseMap wird die Anlaufstelle für offene Sensordaten..."

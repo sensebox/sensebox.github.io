@@ -3,7 +3,7 @@ layout: post
 title:  "Geoinformatiker erhalten knapp eine Million Euro für Bürger-Projekt „SenseBox“"
 date:   2016-04-05 12:00:00
 author: Felix
-thumbnail: http://www.geobranchen.de/images/yootheme/logo_lightblue.png
+thumbnail: https://www.service-drone.com/images/press-clippings/previews/GEObranchen-de.jpg
 categories: press
 ---
 "Die "SenseBox", ein von münsterschen Geoinformatikern entwickelter Bausatz für stationäre und mobile Sensoren, wird vielerorts von Laien genutzt, um Klimadaten zu messen – und es sollen bald noch deutlich mehr Messstationen werden..."

@@ -3,7 +3,7 @@ layout: post
 title:  "Bürger messen ihre Umwelt"
 date:   2015-12-10 12:00:00
 author: Thomas
-thumbnail: http://www.presseportal.de/bild/77614-logo-westfaelische-nachrichten.jpg
+thumbnail: /images/press/wn.jpeg
 categories: press
 ---
 "Nun wurde das Projekt zum Gewinner des Wettbewerbs "Bürger schaffen die Zukunftsstadt" gekürt. Damit verbunden ist ein Preisgeld in Höhe von 2000 Euro zur Weiterentwicklung der "Sense-Box"...."
