@@ -2,7 +2,7 @@
 layout: post
 title:  "Wettbewerb im Wissenschaftsjahr 2015 “Bürger schaffen die Zukunftsstadt”"
 weight:   6
-thumbnail: http://www.buergerschaffenwissen.de/sites/all/themes/custom/wid/logo.png
+thumbnail: /images/buergerschaffenwissen_logo.png
 type: award
 categories: awards
 ---

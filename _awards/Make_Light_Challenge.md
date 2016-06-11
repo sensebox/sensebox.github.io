@@ -2,7 +2,7 @@
 layout: post
 title:  "Make Light Challenge 2014 – 3. Platz"
 weight:   7
-thumbnail: http://fritzing.org/media/uploads/events/LogoPhotonic_campus.png
+thumbnail: /images/LogoPhotonic_campus.png
 type: award
 categories: awards
 ---

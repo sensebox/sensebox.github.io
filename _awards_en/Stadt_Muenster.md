@@ -2,7 +2,7 @@
 layout: post
 title:  "City of Münster, Office of Education and Training"
 weight:   3
-thumbnail: http://www.muenster.de/stadt/pics/mslogo36.gif
+thumbnail: https://www.muenster.de/stadt/pics/mslogo36.gif
 type: grant
 categories: awards
 ---
