@@ -108,15 +108,19 @@ hr {
 
 .navbar-control {
   padding-left: 0;
-  padding-bottom: 5px;
   background-color: $sensebox-green;
-  border-bottom-left-radius: 5px;
+  @media (min-width: $grid-float-breakpoint) {
+    padding-bottom: 5px;
+    border-bottom-left-radius: 5px;
+  }
 }
 
 .navbar-default {
   .navbar-nav {
     > li {
-
+      @media (max-width: $grid-float-breakpoint) {
+        padding-left: 10px;
+      }
       > a {
         transition: color 0.1s;
         color: lighten($sensebox-green, 40%);
@@ -140,21 +144,22 @@ hr {
       }
 
       /* navbar item dividers */
-      &:after {
-        content: ':';
-        font-size: 22px;
-        text-decoration: none;
-        color: lighten($sensebox-green, 40%);
-        position: absolute;
-        right: -2px;
-        top: 9px;
-        user-select: none;
-        cursor: default;
+      @media (min-width: $grid-float-breakpoint) {
+        &:after {
+          content: ':';
+          font-size: 22px;
+          text-decoration: none;
+          color: lighten($sensebox-green, 40%);
+          position: absolute;
+          right: -2px;
+          top: 9px;
+          user-select: none;
+          cursor: default;
+        }
+        &:last-of-type:after {
+          content: '';
+        }
       }
-      &:last-of-type:after {
-        content: '';
-      }
-
     }
   }
 }
