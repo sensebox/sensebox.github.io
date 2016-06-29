@@ -27,8 +27,9 @@ paginate_path: "/news/page/:num"
 #   # nested 138,7kB, compact 129,1kB, expanded 135,9 kB, compressed 122,4 kB
 #   style: compressed
 
-#exclude:
+exclude:
 #  - bower_components
+  - vendor
 
 collections:
   - press
