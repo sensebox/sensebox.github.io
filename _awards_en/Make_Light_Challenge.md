@@ -2,7 +2,7 @@
 layout: post
 title:  "Make Light Challenge 2014 – 3. place"
 weight:   7
-thumbnail: /images/LogoPhotonic_campus.png
+thumbnail: /images/awards/LogoPhotonic_campus.png
 type: award
 categories: awards
 ---

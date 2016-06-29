@@ -2,7 +2,7 @@
 layout: post
 title:  "Competition in the science year 2015 „citizens create the city of tomorrow“"
 weight:   6
-thumbnail: /images/buergerschaffenwissen_logo.png
+thumbnail: /images/awards/buergerschaffenwissen_logo.png
 type: award
 categories: awards
 ---
