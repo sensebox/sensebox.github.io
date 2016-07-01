@@ -41,22 +41,22 @@ translationAvailable: false
 <div class="row">
   <div class="col-xs-6 col-md-3">
     <a href="{{ site.baseurl | append: '/images/hackathon1.jpg'}}" target="_blank" class="thumbnail">
-      <img src="{{ site.baseurl | append: '/images/hackathon1.jpg'}}" alt="">
+      <img src="{{ site.baseurl | append: '/images/hackathon1.jpg'}}" alt="Hackathon Foto">
     </a>
   </div>
   <div class="col-xs-6 col-md-3">
     <a href="{{ site.baseurl | append: '/images/hackathon2.jpg'}}" target="_blank" class="thumbnail">
-      <img src="{{ site.baseurl | append: '/images/hackathon2.jpg'}}" alt="">
+      <img src="{{ site.baseurl | append: '/images/hackathon2.jpg'}}" alt="Hackathon Foto">
     </a>
   </div>
   <div class="col-xs-6 col-md-3">
     <a href="{{ site.baseurl | append: '/images/hackathon3.jpg'}}" target="_blank" class="thumbnail">
-      <img src="{{ site.baseurl | append: '/images/hackathon3.jpg'}}" alt="">
+      <img src="{{ site.baseurl | append: '/images/hackathon3.jpg'}}" alt="Hackathon Foto">
     </a>
   </div>
   <div class="col-xs-6 col-md-3">
     <a href="{{ site.baseurl | append: '/images/hackathon4.jpg'}}" target="_blank" class="thumbnail">
-      <img src="{{ site.baseurl | append: '/images/hackathon4.jpg'}}" alt="">
+      <img src="{{ site.baseurl | append: '/images/hackathon4.jpg'}}" alt="Hackathon Foto">
     </a>
   </div>
 </div>
@@ -98,7 +98,7 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
 
 <h3 class="smallcaps" id="teilnehmen">Wie teilnehmen?</h3>
 <p>
-  Du hast Interesse beim senseBox Hackathon anzutreten? Wenn du min. 12 Jahre alt bist, dann bewirb dich allein oder mit Freunden/Mitschülern als Team! Dazu musst du mit einem maximal 140 Zeichen langem Text (einen Tweet/Facebook-Post) erklären, warum du, bzw. ihr teilnehmen wollt. Nutzt dafür den hashtag #CWAward und richtet den Post direkt an uns:  kontaktier uns dazu in den sozialen Medien <a href="https://twitter.com/intent/tweet?screen_name=sensebox_de" target="_blank"><img src="{{ site.baseurl | append: '/images/iconmonstr-twitter-4-icon.png'}}"></a> oder <a href="https://www.facebook.com/sensebox.de" target="_blank"><img src="{{ site.baseurl | append: '/images/iconmonstr-facebook-4-icon.png'}}"></a> und trag den Link zu deinem Beitrag in dein Bewerbungsformular ein. Nutzt Du kein Facebook oder Twitter, dann trag deinen Text dazu direkt in das Bewerbungsformular ein.
+  Du hast Interesse beim senseBox Hackathon anzutreten? Wenn du min. 12 Jahre alt bist, dann bewirb dich allein oder mit Freunden/Mitschülern als Team! Dazu musst du mit einem maximal 140 Zeichen langem Text (einen Tweet/Facebook-Post) erklären, warum du, bzw. ihr teilnehmen wollt. Nutzt dafür den hashtag #CWAward und richtet den Post direkt an uns:  kontaktier uns dazu in den sozialen Medien <a href="https://twitter.com/intent/tweet?screen_name=sensebox_de" target="_blank"><img src="{{ site.baseurl | append: '/images/iconmonstr-twitter-4-icon.png'}}" alt="twitter icon"></a> oder <a href="https://www.facebook.com/sensebox.de" target="_blank"><img src="{{ site.baseurl | append: '/images/iconmonstr-facebook-4-icon.png'}}" alt="Facebook icon"></a> und trag den Link zu deinem Beitrag in dein Bewerbungsformular ein. Nutzt Du kein Facebook oder Twitter, dann trag deinen Text dazu direkt in das Bewerbungsformular ein.
 </p>
 <p>
   Wenn Du noch keine 18 bist, musst Du für die Bewerbung zwei Einverständniserklärungen von einer erziehungsberechtigten Person unterschreiben lassen.
@@ -151,7 +151,7 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
       <div class="card" style="cursor: pointer;" data-toggle="collapse" data-target="#desc_{{ jurymember.position }}">
           <canvas class="header-bg" width="250" id="header-blur" style="background-image: url({{ jurymember.bgImage }});"></canvas>
           <div class="avatar">
-              <img src="{{ site.baseurl | append: jurymember.image }}" />
+              <img src="{{ site.baseurl | append: jurymember.image }}" alt="{{ jurymember.name }} - Foto"/>
           </div>
           <div class="content">
             <h4 style="clear:both">{{ jurymember.name }}</h4>
@@ -160,16 +160,16 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
               {{ jurymember.description }}
             </div>
             {% if jurymember.twitter %}
-              <a href="{{ jurymember.twitter }}" target="_blank" class="social-media"><img src="{{ site.baseurl | append: '/images/iconmonstr-twitter-4-icon.png'}}"></a>
+              <a href="{{ jurymember.twitter }}" target="_blank" class="social-media"><img src="{{ site.baseurl | append: '/images/iconmonstr-twitter-4-icon.png'}}" alt="Twitter icon"></a>
             {% endif %}
             {% if jurymember.linkedin %}
-              <a href="{{ jurymember.linkedin }}" target="_blank" class="social-media"><img src="{{ site.baseurl | append: '/images/iconmonstr-linkedin-4-240.png'}}"></a>
+              <a href="{{ jurymember.linkedin }}" target="_blank" class="social-media"><img src="{{ site.baseurl | append: '/images/iconmonstr-linkedin-4-240.png'}}" alt="linkedIn icon"></a>
             {% endif %}
             {% if jurymember.github %}
-              <a href="{{ jurymember.github }}" target="_blank" class="social-media"><img src="{{ site.baseurl | append: '/images/iconmonstr-github-icon.png'}}"></a>
+              <a href="{{ jurymember.github }}" target="_blank" class="social-media"><img src="{{ site.baseurl | append: '/images/iconmonstr-github-icon.png'}}" alt="GitHub icon"></a>
             {% endif %}
             {% if jurymember.homepage %}
-              <a href="{{ jurymember.homepage }}" target="_blank" class="social-media"><img src="{{ site.baseurl | append: '/images/iconmonstr-homepage.png'}}"></a>
+              <a href="{{ jurymember.homepage }}" target="_blank" class="social-media"><img src="{{ site.baseurl | append: '/images/iconmonstr-homepage.png'}}" alt="homepage icon"></a>
             {% endif %}
           </div>
       </div>
@@ -258,7 +258,7 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
       </li>
       <li>
         <a href="http://www.garmin.com/de-DE" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Garmin_logo.svg/2000px-Garmin_logo.svg.png" alt="Watterott Logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Garmin_logo.svg/2000px-Garmin_logo.svg.png" alt="Garmin Logo">
         </a>
       </li>
       <li>

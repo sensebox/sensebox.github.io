@@ -100,7 +100,7 @@ id: docs
 {% assign imageMarkup = image | split:'/>' | first %}
 {% assign imageURL = imageMarkup | split:'"' %}
 {% assign imageFiletype = imageURL[1] | split:'.' | last | split:'?' | first %}
-<div class="docs-photo-container"><a href="{{ imageURL[1] }}"><img src="{{ imageURL[1] }}" title="{{ posting.date | date: '%d.%m.%Y' }}" class="docs-photo-img"/></a></div>
+<div class="docs-photo-container"><a href="{{ imageURL[1] }}"><img src="{{ imageURL[1] }}" title="{{ posting.date | date: '%d.%m.%Y' }}" alt="{{ posting.date | date: '%d.%m.%Y' }} - Foto" class="docs-photo-img"/></a></div>
 {% endif %}
 {% endfor %}
 {% endfor %}
