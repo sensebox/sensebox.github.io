@@ -7,4 +7,4 @@ thumbnail: /images/press/Intel-logo.png
 categories: press
 ---
 "Das SenseBox-Projekt des Instituts für Geoinformatik an der Westfälischen Wilhelms-Universität Münster ist gerade erst an den Start gegangen – sieht aber bereits jetzt mehr als vielversprechend aus!"
-<a href="http://magazin.intel.de/citizen-science-funf-projekttipps-fur-hobby-forscher/">Intel Magazine, 08.05.2014</a>
+<a href="http://iq.intel.de/">Intel Magazine, 08.05.2014</a>

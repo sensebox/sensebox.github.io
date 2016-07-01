@@ -6,7 +6,7 @@
 - name: Angela Schwering
   image: /images/team/raute.png
   position: 2
-  description: Angela ist a full professor at the Institute for Geoinformatics at the University of Muenster. In her research on spatial cognition she investigates how to support people in solving spatio-temporal problems through adequate information systems. She is also interested in how geotechnologies and sensors can be integrated into education, to foster the development of spatial competencies and their enthusiasm for information technologies. 
+  description: Angela ist a full professor at the Institute for Geoinformatics at the University of Muenster. In her research on spatial cognition she investigates how to support people in solving spatio-temporal problems through adequate information systems. She is also interested in how geotechnologies and sensors can be integrated into education, to foster the development of spatial competencies and their enthusiasm for information technologies.
 
 - name: Sergey Mukhametov
   image: /images/team/sergey.jpg
@@ -32,7 +32,7 @@
 - name: Matthias Pfeil
   image: /images/team/matthias.jpg
   position: 7
-  description: Matthias hat Bachelor of Science Geoinformatik an der Universität Münster studiert. Er ist zuständig für alle technischen Fragen bezüglich der eingesetzten Technologien und betreut die <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a> und <a href="http://sensebox.github.io/OpenSenseMap-API/" target="_blank">API</a>.
+  description: Matthias hat Bachelor of Science Geoinformatik an der Universität Münster studiert. Er ist zuständig für alle technischen Fragen bezüglich der eingesetzten Technologien und betreut die <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a> und <a href="https://github.com/sensebox/OpenSenseMap-API/wiki/API-Dokumentation" target="_blank">API</a>.
 
 - name: Christoph Kisfeld
   image: /images/team/raute.png
@@ -62,12 +62,12 @@
 - name: Gerald Pape
   image: /images/team/raute.png
   position: 13
-  description: Together with Matthias, Gerald will look after everything related to the <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a> and the <a href="http://sensebox.github.io/OpenSenseMap-API/" target="_blank">API</a>. He studied Master Geoinformatics at the University of Münster.
+  description: Together with Matthias, Gerald will look after everything related to the <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a> and the <a href="https://github.com/sensebox/OpenSenseMap-API/wiki/API-Dokumentation" target="_blank">API</a>. He studied Master Geoinformatics at the University of Münster.
 
 - name: Marc Dragunski
   image: /images/team/raute.png
   position: 14
-  description: Marc wrote his BA thesis "Geostatistical Methods for the OpenSenseMap-Platform" in 2016 at the Institute for Geoinformatics in Münster. His work had the goal to implement interpolation methods into <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a>. 
+  description: Marc wrote his BA thesis "Geostatistical Methods for the OpenSenseMap-Platform" in 2016 at the Institute for Geoinformatics in Münster. His work had the goal to implement interpolation methods into <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a>.
 
 - name: Norwin Roosen
   image: /images/team/raute.png
