@@ -16,20 +16,22 @@ id: docs
 <br><br>
 <div>
 
-  <!-- Nav tabs -->
+  <!-- Nav tabs --
   <ul class="nav nav-tabs" role="tablist">
     <li role="presentation" class="active"><a href="#instructions" aria-controls="instructions" role="tab" data-toggle="tab">{{ t.instructions.header }}</a></li>
-    <!--<li role="presentation"><a href="#texts" aria-controls="texts" role="tab" data-toggle="tab">Texte</a></li>-->
     <li role="presentation"><a href="#photos" aria-controls="photos" role="tab" data-toggle="tab">{{ t.pictures.header }}</a></li>
     <li role="presentation"><a href="#flyer" aria-controls="flyer" role="tab" data-toggle="tab">{{ t.flyer.header }}</a></li>
   </ul>
 
-  <!-- Tab panes -->
+  <!-- Tab panes --
   <div class="tab-content">
-    <div role="tabpanel row" class="tab-pane active" id="instructions">
+    <div role="tabpanel row" class="tab-pane active" id="instructions"-->
       <div class="col-md-4">
         <div class="card">
-            <a href="https://sensebox.de/books/edu/{{ page.lang }}/index.html" style="text-decoration: none;">
+          <a href="//sensebox.de/books/senseBox:edu_{{ page.lang }}.pdf" class="overlay opacity-animation-fast" target="_blank">
+           <em style="font-size: 1.4em;">PDF</em>
+          </a>
+          <a href="//sensebox.de/books/edu/{{ page.lang }}" style="text-decoration: none;" target="_blank">
             <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_edu_bg.jpg'}});"></canvas>
             <div class="price-text" style="padding:20px;">
               <h3>senseBox:edu</h3>
@@ -39,7 +41,10 @@ id: docs
       </div>
       <div class="col-md-4">
         <div class="card">
-            <a href="https://sensebox.de/books/home/{{ page.lang }}/index.html" style="text-decoration: none;">
+            <a href="//sensebox.de/books/senseBox:home_{{ page.lang }}.pdf" class="overlay opacity-animation-fast" target="_blank">
+             <em style="font-size: 1.4em;">PDF</em>
+            </a>
+            <a href="//sensebox.de/books/home/{{ page.lang }}" style="text-decoration: none;" target="_blank">
             <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_home_bg.jpg'}});"></canvas>
             <div class="price-text" style="padding:20px;">
               <h3>senseBox:home</h3>
@@ -49,47 +54,22 @@ id: docs
       </div>
       <div class="col-md-4">
         <div class="card">
-            <a href="https://github.com/sensebox/OpenSenseMap-API/wiki/API-Dokumentation" style="text-decoration: none;">
+            <a href="//sensebox.de/books/senseBox:osem_{{ page.lang }}.pdf" class="overlay opacity-animation-fast" target="_blank">
+             <em style="font-size: 1.4em;">PDF</em>
+            </a>
+            <a href="//sensebox.de/books/osem/{{ page.lang }}" style="text-decoration: none;" target="_blank">
             <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_OSeM_bg.png'}});"></canvas>
             <div class="price-text" style="padding:20px;">
-              <h3>OpenSenseMap API</h3>
+              <h3>openSenseMap</h3>
             </div>
           </a>
         </div>
       </div>
 
-<!--
-      <a href="http://www.sensebox.de/books/edu/de/index.html" target="_blank" class="hvr-underline-from-left"><h4>senseBox:edu</h4></a>
-      <a href="http://www.sensebox.de/books/home/de/index.html" target="_blank" class="hvr-underline-from-left"><h4>senseBox:home</h4></a>
-      <br>
-      <a href="http://www.sensebox.de/OpenSenseMap-API/" target="_blank" class="hvr-underline-from-left"><h4>openSenseMap-API</h4></a>
-
       <br>
       <p>{{ t.instructions.content }}</p>
-    -->
-    </div>
-    <!--
-    <div role="tabpanel" class="tab-pane" id="texts">
-      <br><br>
-      <table class="table table-hover">
-        <tr>
-          <td colspan="" rowspan="" headers="">Lorem ipsum</td>
-          <td colspan="" rowspan="" headers="">PDF</td>
-          <td colspan="" rowspan="" headers="">09.10.2015</td>
-        </tr>
-        <tr>
-          <td colspan="" rowspan="" headers="">Lorem ipsum</td>
-          <td colspan="" rowspan="" headers="">DOC</td>
-          <td colspan="" rowspan="" headers="">08.10.2015</td>
-        </tr>
-        <tr>
-          <td colspan="" rowspan="" headers="">Lorem ipsum</td>
-          <td colspan="" rowspan="" headers="">PDF</td>
-          <td colspan="" rowspan="" headers="">07.10.2015</td>
-        </tr>
-      </table>
-    </div>
-    -->
+    <!--/div>
+
     <div role="tabpanel" class="tab-pane" id="photos">
       <br>
       <div class="docs-photo-gallery">
@@ -109,5 +89,5 @@ id: docs
     <div role="tabpanel" class="tab-pane" id="flyer">
       <a href="/docs/flyer/senseBox_edu_Anleitung_deutsch.pdf" target="_blank" class="hvr-underline-from-left"><h4>senseBox:edu Flyer</h4></a>
       <a href="/docs/flyer/senseBox_home_Anleitung_deutsch.pdf" target="_blank" class="hvr-underline-from-left"><h4>senseBox:home Flyer</h4></a>
-    </div>
+    </div-->
   </div>

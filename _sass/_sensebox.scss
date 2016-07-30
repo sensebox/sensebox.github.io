@@ -605,8 +605,32 @@ article.post-content img {
   color: #141414;
 }
 
+.card .overlay {
+  display: none;
+}
+
+.card:hover .overlay {
+  display: inline;
+  position:absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: rgba(255,255,255,0.7);
+}
+
 ul li {
   font-size: 1.2em;
+}
+
+.opacity-animation-fast {
+  position: relative;
+  -webkit-animation: show 0.33s ease-in-out; /* Safari 4+ */
+  -moz-animation:    show 0.33s ease-in-out; /* Fx 5+ */
+  -o-animation:      show 0.33s ease-in-out; /* Opera 0.42+ */
+  animation:         show 0.33s ease-in-out;
 }
 
 .opacity-animation {
