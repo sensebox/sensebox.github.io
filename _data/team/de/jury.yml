@@ -9,7 +9,7 @@
 
 - name: Grischa Gundelsweiler
   image: https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAINAAAAJDdlYzk5NWNiLWUzOGItNDUwOC1hY2VkLThhZmViZjQ1NWZjMA.jpg
-  position: 3
+  position: 4
   organisation: Amazon Web Services
   organisation-link: https://aws.amazon.com/de/
   description: Grischa Gundelsweiler leitet den Bereich Bildung und Forschung für AWS in D-A-CH und ist Ansprechpartner für Bildungseinrichtungen, EdTech Unternehmen, Bildungs- und Wissenschaftsverlage und Forschungseinrichtungen. Er berät Lehrer, Dozenten, Forscher, IT-Verantwortliche und die Leitungsebene zu digitalen Technologien und Strategien. Mit diversen Programmen unterstützt AWS zudem die nächste Generation an IT und Cloud Experten.
@@ -19,7 +19,7 @@
 
 - name: Gerrit Grunwald
   image: https://www.xing.com/image/5_2_4_e5a4d6967_6025750_3/gerrit-grunwald-foto.1024x1024.jpg
-  position: 4
+  position: 5
   organisation: ORACLE
   organisation-link: https://www.oracle.com/de/index.html
   description: Gerrit Grunwald is a software engineer with more than ten years of experience in software development. He has been involved in Java desktop application and controls development. Gerrit is interested in Java on desktop, Java-driven embedded technologies based on JavaSE embedded and IoT in general. He is a true believer in open source and has participated in popular projects like JFXtras.org as well as his own projects (Medusa, Enzo, SteelSeries Swing, SteelSeries Canvas). Gerrit blogs regularly on subjects related to the Internet of Things and Java(FX) related topics, he is an active member of the Java community, where he founded and leads the Java User Group Münster (Germany), is a JavaOne rockstar and Java Champion. He is a speaker at conferences and user groups internationally and writes for several magazines.
@@ -31,7 +31,7 @@
 
 - name: Oliver Kurscheidt
   image: https://www.xing.com/image/0_e_a_9a20262c9_6347389_10/oliver-paczkowski-foto.1024x1024.jpg
-  position: 5
+  position: 6
   organisation: OVSoftware GmbH
   organisation-link: http://www.ovsoftware.de/
   description: Oliver is a software developer and project manager at OVSoftware GmbH in Münster since 2012. There he worked in several projects about web development, especially with Java based technologies. He is passionate about agile software development and clean code. Oliver received a diploma in geoinformatics at the Institute for Geoinformatics in Münster in 2007 and worked there for another two years as a research assistant in the ubiquitous computing working group. He founded the company melezo for distributing software for public information displays. Oliver is co-founder and organisator of the local software craftsmanship group socramob - www.socramob.org
@@ -49,11 +49,11 @@
   github: https://github.com/elisalindinger
   bgImage: https://assets.okfn.org/p/okfn/img/okfn-logo-portrait-l.png
 
-- name: Steffen Ganders
-  image: /images/team/hackathon-jury/Steffen_Ganders.jpg
-  position: 6
-  organisation: Samsung Electronics
-  organisation-link: https://www.samsung.com/de/home/
-  description: Steffen Ganders ist Director Corporate Affairs bei der Samsung Electronics GmbH. Er verantwortet den Bereich politische Kommunikation und engagiert sich für die Stärkung der digitalen Bildung in verschiedenen Projekten. Im Rahmen dieses Engagements konzentriert sich Samsung auf das Schlüsselthema digitale Bildung und setzt sich dafür ein, heranwachsende Generationen auf die Anforderungen der zunehmend digitalen Welt vorzubereiten. Die Stärkung der digitalen Kompetenz im Bereich der schulischen, beruflichen und kreativen Bildung steht dabei im Mittelpunkt. Samsung engagiert sich mit der eigenen Initiative DIGITALE BILDUNG NEU DENKEN für innovative Unterrichts- und Lehrkonzepte, führt Kinder und Jugendliche mit dem Code Week Award spielerisch an die Welt der digitalen Codes heran und setzt sich gemeinsam mit WorldSkills Germany für die zukunftsorientierte Ausrichtung von Ausbildungsberufen ein. Ganders begleitet das Engagement inhaltlich und steht im regelmäßigen Kontakt mit Vertretern aus Politik, Wirtschaft und relevanten Stakeholdern aus dem Bildungsbereich.
-  linkedin: https://de.linkedin.com/in/steffenganders
-  bgImage: https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/01/07/102319470-461097002.530x298.jpg
+- name: Nora Perseke
+  image: /images/team/hackathon-jury/Nora DRL.png
+  position: 3
+  organisation: Code Week
+  organisation-link: http://award.codeweek.de/
+  twitter: https://twitter.com/CodeWeekGermany
+  description: Nora ist Teil des Code-Week-Teams, das die EU Code Week vom 15. Bis 23. Oktober koordiniert und mit dem Code Week Award inspirierende digitale Bildungsprojekte fördert. Sie ist in ganz Deutschland unterwegs, um Initiativen für Digital Literacy zu vernetzen. Für die Technologiestiftung Berlin und das Design Research Lab der Universität der Künste beschäftigt sie sich mit Open Educational Resources.
+  bgImage: https://www.technologiestiftung-berlin.de/typo3conf/sites/tsb/img/tsb_logo_animation.gif
