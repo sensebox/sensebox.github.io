@@ -12,15 +12,90 @@ translationAvailable: false
 </div>
 
 <ul class="nav nav-pills">
-<li role="presentation"><a href="#was_wann_wo"><h4 class="smallcaps">Was Wann Wo?</h4></a></li>
-<li role="presentation"><a href="#womit_wird_gearbeitet"><h4 class="smallcaps">Womit wird gearbeitet?</h4></a></li>
-<li role="presentation"><a href="#teilnehmen"><h4 class="smallcaps">Teilnehmen</h4></a></li>
-<li role="presentation"><a href="#unterkunft"><h4 class="smallcaps">Unterkunft</h4></a></li>
-<li role="presentation"><a href="#jury"><h4 class="smallcaps">Jury</h4></a></li>
-<li role="presentation"><a href="#preise"><h4 class="smallcaps">Preise</h4></a></li>
-<li role="presentation"><a href="#kontakt"><h4 class="smallcaps">Kontakt</h4></a></li>
+  <li role="presentation"><a href="#impressionen"><h4 class="smallcaps">Impressionen</h4></a></li>
+  <li role="presentation"><a href="#gruppen"><h4 class="smallcaps">Gruppen</h4></a></li>
+  <li role="presentation"><a href="#was_wann_wo"><h4 class="smallcaps">Was Wann Wo?</h4></a></li>
+  <li role="presentation"><a href="#womit_wird_gearbeitet"><h4 class="smallcaps">Womit wird gearbeitet?</h4></a></li>
+  <li role="presentation"><a href="#teilnehmen"><h4 class="smallcaps">Teilnehmen</h4></a></li>
+  <li role="presentation"><a href="#unterkunft"><h4 class="smallcaps">Unterkunft</h4></a></li>
+  <li role="presentation"><a href="#jury"><h4 class="smallcaps">Jury</h4></a></li>
+  <li role="presentation"><a href="#preise"><h4 class="smallcaps">Preise</h4></a></li>
+  <li role="presentation"><a href="#kontakt"><h4 class="smallcaps">Kontakt</h4></a></li>
 </ul>
 <hr>
+
+
+<h2 clas="smallcaps" id="impressionen">Impressionen</h2>
+<div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="{{ site.baseurl | append: 'images/hackathon-impressions/hack_imp_1.jpg'}}" target="_blank" class="thumbnail" data-lightbox="hackathon-gallery">
+      <img src="{{ site.baseurl | append: '/images/hackathon-impressions/hack_imp_1.jpg'}}" alt="Hackathon Foto">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="{{ site.baseurl | append: '/images/hackathon-impressions/hack_imp_2.jpg'}}" target="_blank" class="thumbnail" data-lightbox="hackathon-gallery">
+      <img src="{{ site.baseurl | append: '/images/hackathon-impressions/hack_imp_2.jpg'}}" alt="Hackathon Foto">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="{{ site.baseurl | append: '/images/hackathon-impressions/hack_imp_3.jpg'}}" target="_blank" class="thumbnail" data-lightbox="hackathon-gallery">
+      <img src="{{ site.baseurl | append: '/images/hackathon-impressions/hack_imp_3.jpg'}}" alt="Hackathon Foto">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="{{ site.baseurl | append: '/images/hackathon-impressions/hack_imp_4.jpg'}}" target="_blank" class="thumbnail" data-lightbox="hackathon-gallery">
+      <img src="{{ site.baseurl | append: '/images/hackathon-impressions/hack_imp_4.jpg'}}" alt="Hackathon Foto">
+    </a>
+  </div>
+</div>
+
+
+<div hidden>
+{% assign teams = site.data.hackathon_teams | sort: 'position' %}
+{% for team in teams %}
+{% increment team_count %}
+{% capture oddOrEvenTeamCount %}{% cycle 'oddTeam', 'evenTeam' %}{% endcapture %}
+{% endfor %}
+</div>
+
+
+<h2 clas="smallcaps">Gruppen</h2>
+{% for team in teams %}
+
+{% capture firstLastInRowTeam %}{% cycle 'firstTeam', 'lastTeam' %}{% endcapture %}
+
+  {% if firstLastInRowTeam == 'firstTeam' %}
+    <div class="row">
+  {% endif %}
+  <div class="col-md-6">
+
+    <div class="card" style="cursor: pointer;">
+        <canvas class="header-bg" width="250" id="header-blur" style='background-image: url({{ site.baseurl | append: team.bgImage }});'></canvas>
+        <div class="avatar">
+            <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/sensebox_logo_raute.png" alt="{{ team.name }} - Foto"/>
+        </div>
+        <div class="content">
+          <h4 style="clear:both">{{ team.teamname }}</h4>
+          <h5 style="clear:both"></h5>
+          <div id="desc_{{ team.position }}">
+            {{ team.description }}
+          </div>
+        </div>
+    </div>
+  </div>
+
+  {% if firstLastInRowTeam == 'lastTeam' %}
+    </div>
+  {% endif %}
+
+  <!-- if this is the last element and the count is even, add blank col -->
+  {% if team.position == team_count and oddOrEvenTeamCount == 'oddTeam' %}
+  <div class="col-md-6">
+   </div>
+    </div>
+  {% endif %}
+{% endfor %}
+
 
 <div class="row">
   <div class="col-md-3">
