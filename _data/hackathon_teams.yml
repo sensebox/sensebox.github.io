@@ -6,27 +6,27 @@
 - teamname: Free Energy
   position: 2
   description: Bike Box
-  bgImage: http://fcdn.mtbr.com/attachments/singlespeed/250157d1176072875-anybody-like-titanium-old-school-merlin-fixies-townsend.jpg
+  bgImage: /images/hackathon-impressions/free-energy.jpg
 
 - teamname: Technik Freaks
   position: 3
   description: Wetterstation
-  bgImage: /images/hackathon-impressions/hack_imp_3.jpg
+  bgImage: /images/hackathon-impressions/technik-freaks.jpg
 
 - teamname: Öko Hacker
   position: 4
   description: Smart Home
-  bgImage: http://intercax.com/wp-content/uploads/2015/09/Smarthome_Illustration-1024x939.jpg
+  bgImage: /images/hackathon-impressions/oeko.jpg
 
 - teamname: Uns geht ein Licht aus
   position: 5
-  description: Intelligente Straßenlaternen
+  description: Smarte Straßenlaternen
   bgImage: /images/hackathon-impressions/uns-geht-ein-licht-aus.jpg
 
 - teamname: Mit Alexa sind wir zu dritt
   position: 6
   description: Alexa Wetterstation
-  bgImage: https://images-na.ssl-images-amazon.com/images/I/51XeN2UYoyL._SL1000_.jpg
+  bgImage: /images/hackathon-impressions/hack_imp_3.jpg
 
 - teamname: TTTJ
   position: 7
@@ -36,9 +36,9 @@
 - teamname: "#TeamElon"
   position: 8
   description: Wellenenergie
-  bgImage: http://www.energieverbraucher.de/files_db/1427124458_0097__12.jpg
+  bgImage: /images/hackathon-impressions/team-elon.jpg
 
 - teamname: Himbeere
   position: 9
   description: Raspberry Pi Überwachungskamera
-  bgImage: https://image.freepik.com/freie-ikonen/uberwachungskamera_318-47342.jpg
+  bgImage: /images/hackathon-impressions/himbeere.jpg

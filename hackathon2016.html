@@ -28,22 +28,22 @@ translationAvailable: false
 <h2 clas="smallcaps" id="impressionen">Impressionen</h2>
 <div class="row">
   <div class="col-xs-6 col-md-3">
-    <a href="{{ site.baseurl | append: '/images/hackathon-impressions/hack_imp_1.jpg'}}" target="_blank" class="thumbnail" data-lightbox="hackathon-gallery">
+    <a href="{{ site.baseurl | append: '/images/hackathon-impressions/hack_imp_1.jpg'}}" target="_blank" class="thumbnail" data-lightbox="hackathon-impressions-gallery">
       <img src="{{ site.baseurl | append: '/images/hackathon-impressions/hack_imp_1.jpg'}}" alt="Hackathon Foto">
     </a>
   </div>
   <div class="col-xs-6 col-md-3">
-    <a href="{{ site.baseurl | append: '/images/hackathon-impressions/hack_imp_2.jpg'}}" target="_blank" class="thumbnail" data-lightbox="hackathon-gallery">
+    <a href="{{ site.baseurl | append: '/images/hackathon-impressions/hack_imp_2.jpg'}}" target="_blank" class="thumbnail" data-lightbox="hackathon-impressions-gallery">
       <img src="{{ site.baseurl | append: '/images/hackathon-impressions/hack_imp_2.jpg'}}" alt="Hackathon Foto">
     </a>
   </div>
   <div class="col-xs-6 col-md-3">
-    <a href="{{ site.baseurl | append: '/images/hackathon-impressions/hack_imp_3.jpg'}}" target="_blank" class="thumbnail" data-lightbox="hackathon-gallery">
+    <a href="{{ site.baseurl | append: '/images/hackathon-impressions/hack_imp_3.jpg'}}" target="_blank" class="thumbnail" data-lightbox="hackathon-impressions-gallery">
       <img src="{{ site.baseurl | append: '/images/hackathon-impressions/hack_imp_3.jpg'}}" alt="Hackathon Foto">
     </a>
   </div>
   <div class="col-xs-6 col-md-3">
-    <a href="{{ site.baseurl | append: '/images/hackathon-impressions/hack_imp_4.jpg'}}" target="_blank" class="thumbnail" data-lightbox="hackathon-gallery">
+    <a href="{{ site.baseurl | append: '/images/hackathon-impressions/hack_imp_4.jpg'}}" target="_blank" class="thumbnail" data-lightbox="hackathon-impressions-gallery">
       <img src="{{ site.baseurl | append: '/images/hackathon-impressions/hack_imp_4.jpg'}}" alt="Hackathon Foto">
     </a>
   </div>
@@ -61,13 +61,16 @@ translationAvailable: false
 
 <h2 clas="smallcaps" id="gruppen">Gruppen</h2>
 {% for team in teams %}
+<div class="row">
 
+<!--
 {% capture firstLastInRowTeam %}{% cycle 'firstTeam', 'lastTeam' %}{% endcapture %}
 
   {% if firstLastInRowTeam == 'firstTeam' %}
     <div class="row">
   {% endif %}
-  <div class="col-md-6">
+-->
+  <div class="col-lg-4 col-sm-6">
 
     <div class="card" style="cursor: pointer;">
         <canvas class="header-bg" width="250" id="header-blur" style='background-image: url({{ site.baseurl | append: team.bgImage }});'></canvas>
@@ -77,24 +80,18 @@ translationAvailable: false
         <div class="content">
           <h4 style="clear:both">{{ team.teamname }}</h4>
           <h5 style="clear:both"></h5>
-          <div id="desc_{{ team.position }}">
+          <div id="teamdesc_{{ team.position }}">
             {{ team.description }}
           </div>
         </div>
     </div>
   </div>
 
-  {% if firstLastInRowTeam == 'lastTeam' %}
-    </div>
-  {% endif %}
 
-  <!-- if this is the last element and the count is even, add blank col -->
-  {% if team.position == team_count and oddOrEvenTeamCount == 'oddTeam' %}
-  <div class="col-md-6">
-   </div>
-    </div>
-  {% endif %}
 {% endfor %}
+</div>
+
+<hr>
 
 
 <div class="row">
