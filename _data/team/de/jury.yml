@@ -20,14 +20,14 @@
 - name: Gerrit Grunwald
   image: https://www.xing.com/image/5_2_4_e5a4d6967_6025750_3/gerrit-grunwald-foto.1024x1024.jpg
   position: 5
-  organisation: ORACLE
+  organisation: Canoo Engineering AG
   organisation-link: https://www.oracle.com/de/index.html
   description: Gerrit Grunwald is a software engineer with more than ten years of experience in software development. He has been involved in Java desktop application and controls development. Gerrit is interested in Java on desktop, Java-driven embedded technologies based on JavaSE embedded and IoT in general. He is a true believer in open source and has participated in popular projects like JFXtras.org as well as his own projects (Medusa, Enzo, SteelSeries Swing, SteelSeries Canvas). Gerrit blogs regularly on subjects related to the Internet of Things and Java(FX) related topics, he is an active member of the Java community, where he founded and leads the Java User Group Münster (Germany), is a JavaOne rockstar and Java Champion. He is a speaker at conferences and user groups internationally and writes for several magazines.
   twitter: https://twitter.com/hansolo_?lang=de
   github: https://github.com/HanSolo
   homepage: http://harmoniccode.blogspot.de/
   linkedin: https://de.linkedin.com/in/harmoniccode
-  bgImage: https://allthingsd.com/files/2011/06/teamoracle.jpg
+  bgImage: http://www.canoo.com/wp-content/uploads/2015/12/UXDesign_1.jpg
 
 - name: Oliver Kurscheidt
   image: https://www.xing.com/image/0_e_a_9a20262c9_6347389_10/oliver-paczkowski-foto.1024x1024.jpg
