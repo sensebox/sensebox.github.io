@@ -1,7 +1,7 @@
 - teamname: Gnu-Boot
   position: 1
   description: CO2 Fußabdruck-App
-  bgImage: http://www.lyoness-gff.org/getattachment/projekte/lyoness-fussabdruck/gff-lyoness-footprint.jpg.aspx
+  bgImage: /images/hackathon-impressions/gnuboot.jpg
 
 - teamname: Free Energy
   position: 2
@@ -31,7 +31,7 @@
 - teamname: TTTJ
   position: 7
   description: Wasserqualitätsboje
-  bgImage: https://image.freepik.com/freie-ikonen/boje_318-48552.png
+  bgImage: /images/hackathon-impressions/tttj.jpg
 
 - teamname: "#TeamElon"
   position: 8
