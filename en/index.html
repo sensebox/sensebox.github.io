@@ -156,7 +156,17 @@ id: main
     <div class="col-lg-8 col-md-8 col-sm-8">
 			{{ t.text }}
       <br />
-      <h1>News</h1>
+      <hr />
+      <h1>{{ t.upcoming_events }}</h1>
+      {% assign events = site.events | sort: 'ending-date' %}
+      {% for event in events %}
+        {% include event_template.html event=event %}
+      {% endfor %}
+      <!-- TODO: list past, currently running and upcomung events    -->
+
+      <hr />
+
+      <h1>{{ t.news }}</h1>
       <div class="row">
         <div class="col-md-6">
           <a class="twitter-timeline" data-lang="en" data-height="650" data-theme="light" data-link-color="#4EAF47" href="https://twitter.com/SenseBox_De">Tweets by SenseBox_De</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

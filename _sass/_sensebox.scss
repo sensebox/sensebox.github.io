@@ -145,7 +145,7 @@ hr {
         }
       }
 
-      /* navbar item dividers */
+      // navbar item dividers
       @media (min-width: $grid-float-breakpoint) {
         &:after {
           content: ':';
@@ -703,4 +703,7 @@ ul li {
 #instructions, #flyer {
   text-align:center;
   padding:30px;
+}
+.event-icon {
+  margin-right: 5px;
 }

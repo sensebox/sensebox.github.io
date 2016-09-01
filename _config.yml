@@ -35,6 +35,7 @@ collections:
   - press
   - awards
   - awards_en
+  - events
 
 gems:
   - jekyll-redirect-from

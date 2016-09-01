@@ -45,7 +45,11 @@ main:
       fact2: "Distanz (Infrarot, Ultraschall)"
       fact3: "<a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a><a class=\"link\" href=\"http://www.sensebox.de/de/products\"> und vieles mehr</a>"
 
-news:
+  news: "Neuigkeiten"
+  events: "Events"
+  past_events: "Vergangene Events"
+  running_events: "Laufende Events"
+  upcoming_events: "Anstehende Events"
 
 products:
   introduction: "<p>Von der senseBox gibt es zwei Varianten: <br>
