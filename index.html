@@ -13,14 +13,8 @@ id: main
     	<div class="col-lg-6 col-lg-offset-1">
 				<div class="row">
 					<div class="media" >
-					  <div class="col-md-7" style="font-size: 1.25em;">
+					  <div class="col-md-12" style="font-size: 1.25em;">
 					    {{ t.header }}
-					  </div>
-					  <div class="col-md-5" style="text-align: center;">
-					    <a href="{{ site.baseurl | append: '/hackathon'}}" target="_self">
-                <h3>Hackathon 2016</h3>
-					      <img class="media-object opacity-animation" style="width:200px;height:200px;display: block;margin: 0 auto;" src="{{ site.baseurl | append: '/images/codeweekwinner.jpg'}}" alt="Code Week Winner Logo">
-					    </a>
 					  </div>
 					</div>
 				</div>
@@ -156,6 +150,22 @@ id: main
     <div class="col-lg-8 col-md-8 col-sm-8">
 			{{ t.text }}
       <br />
+      <hr />
+      <div class="row">
+        <div class="col-md-6" style="text-align: center;">
+          <a href="{{ site.baseurl | append: '/hackathon'}}" target="_self">
+            <h3>Hackathon 2016</h3>
+            <img class="media-object" style="width:200px;height:200px;display: block;margin: 0 auto;" src="{{ site.baseurl | append: '/images/codeweekwinner.jpg'}}" alt="Code Week Winner Logo">
+          </a>
+        </div>
+        <div class="col-md-6" style="text-align: center;">
+          <a href="http://www.buergerschaffenwissen.de/mitmachen/forscherteam2016" target="_self">
+            <h3>Wir sind das Forscherteam des Jahres 2016!</h3>
+            <img class="media-object" style="width:200px;height:200px;display: block;margin: 0 auto;" src="{{ site.baseurl | append: '/images/16_BsW_Forscherteam_Einklinker.png'}}" alt="Forscherteam des Jahres 2016">
+          </a>
+        </div>
+      </div>
+
       <hr />
       <h1>{{ t.upcoming_events }}</h1>
       {% assign events = site.events | sort: 'ending-date' %}
