@@ -704,6 +704,13 @@ ul li {
   text-align:center;
   padding:30px;
 }
-.event-icon {
+.event .icon {
   margin-right: 5px;
+}
+.event {
+  margin-top: 2px;
+  font-size: 1.2em;
+}
+.event .date {
+  color: #111;
 }

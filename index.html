@@ -165,8 +165,9 @@ id: main
           </a>
         </div>
       </div>
-
       <hr />
+
+      <!-- Events -->
       <h1>{{ t.upcoming_events }}</h1>
       {% assign events = site.events | sort: 'ending-date' %}
       {% for event in events %}
