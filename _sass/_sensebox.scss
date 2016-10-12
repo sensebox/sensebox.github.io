@@ -714,3 +714,219 @@ ul li {
 .event .date {
   color: #111;
 }
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+
+/* Flip around the padding for proper display in narrow viewports */
+
+.navbar-wrapper>.container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+
+.navbar-toggle .collapsed {
+    z-index: 99;
+}
+
+.icon-bar {
+    background-color: white;
+}
+
+.navbar-nav>li>a {
+    color: #ffffff;
+    font-size: 1.5em;
+    text-shadow: none;
+}
+
+.navbar-nav>li>a:hover {
+    color: green;
+    background: none;
+}
+
+.navbar-nav>li>a:focus {
+    background: none;
+}
+
+.active {
+    background: none;
+}
+
+.navbar-brand {
+    padding: 5px;
+}
+
+.logo {
+    content: url("/./images/main/logo.png");
+}
+
+.logo:hover {
+    content: url("/./images/main/logo_bunt.png");
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+
+/* Carousel base class */
+
+.carousel {
+    height: 500px;
+    margin-bottom: 60px;
+}
+
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+    z-index: 10;
+    text-align: center;
+    max-width: 100%;
+    /*top: auto;*/
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+
+
+/* Declare heights because of positioning of img element */
+
+.carousel .item {
+    height: 500px;
+    background-color: #777;
+}
+
+.carousel-inner>.item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+
+.carousel-control {
+    background-image: none !important;
+}
+
+.background-gradient-2 {
+    width: 100%;
+    height: 100%;
+    background: #7db9e8;
+    background: -moz-linear-gradient(45deg, #7db9e8 0%, #1e5799 100%);
+    background: -webkit-linear-gradient(45deg, #7db9e8 0%, #1e5799 100%);
+    background: linear-gradient(45deg, #7db9e8 0%, #1e5799 100%);
+    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799', GradientType=1);
+}
+
+.background-gradient {
+    width: 100%;
+    height: 100%;
+    background: #97ad95;
+background: -moz-linear-gradient(45deg,  #97ad95 0%, #4eaf47 100%);
+background: -webkit-linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
+background: linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97ad95', endColorstr='#4eaf47',GradientType=1 );
+
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.carousel-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 75px;
+    padding-bottom: 100px;
+    position: absolute;
+    color: white;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+
+/* Center align the text within the three columns below the carousel */
+
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: normal;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.badges {
+    text-align: center;
+    margin-top: 5em;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        padding-top: 10px;
+        margin-bottom: 25px;
+    }
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}
