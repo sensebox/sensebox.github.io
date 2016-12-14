@@ -1,122 +1,104 @@
 <div class="navbar-wrapper">
-        <div class="container">
-            <nav class="navbar navbar-static-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <div class="container">
+        <nav class="navbar navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                           <span class="sr-only">Toggle navigation</span>
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="/index.html">
+                    <a class="navbar-brand" href="/index.html">
 
-                            <img class="logo" style="max-height:100%;" />
-                        </a>
-                    </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                          {% assign t = site.data.translations.[page.lang].header %}
-                          {% assign menupages = site.pages | sort:"weight"  %}
-                            {% for menupage in menupages %}
-                              {% if menupage.url contains 'page' %}
-                              {% elsif menupage.url contains 'news' %}
-                              {% else %}
-                                {% if menupage.title %}
-                                  {% else %}
-                                  {% if menupage.lang == page.lang and menupage.id != 'main' %}
-                                   {% if menupage.id != 'contact' %}
-                                      {% if menupage.id != 'hackathon' %}
-                                        {% if menupage.id != 'hackathon_registration' %}
-                                          {% if menupage.id != 'materials' %}
-                                            {% if menupage.id != 'books' %}
-                                              {% if menupage.id != '404' %}
-                                                {% if menupage.id != 'codeweek' %}
-                                                  <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
-                                                    <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
-                                                  </li>
-                                                {% endif %}
-                                              {% endif %}
-                                            {% endif %}
-                                          {% endif %}
-                                        {% endif %}
-                                      {% endif %}
-                                    {% endif %}
-                                  {% endif %}
-                                {% endif %}
-                              {% endif %}
-                            {% endfor %}
-                        </ul>
-                    </div>
+                        <img class="logo" style="max-height:100%;" />
+                    </a>
                 </div>
-            </nav>
-        </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        {% assign t = site.data.translations.[page.lang].header %} {% assign menupages = site.pages | sort:"weight" %} {% for menupage in menupages %} {% if menupage.url contains 'page' %} {% elsif menupage.url contains 'news' %} {% else %} {% if menupage.title
+                        %} {% else %} {% if menupage.lang == page.lang and menupage.id != 'main' %} {% if menupage.id != 'contact' %} {% if menupage.id != 'hackathon' %} {% if menupage.id != 'hackathon_registration' %} {% if menupage.id != 'materials'
+                        %} {% if menupage.id != 'books' %} {% if menupage.id != '404' %} {% if menupage.id != 'codeweek' %}
+                        <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
+                            <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
+                        </li>
+                        {% endif %} {% endif %} {% endif %} {% endif %} {% endif %} {% endif %} {% endif %} {% endif %} {% endif %} {% endif %} {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
+</div>
 
 
-    <!-- Carousel
+<!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <div class="background-gradient">
-                    <div class="carousel-container">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h1>senseBox</h1>
-                                    <p>Die senseBox ist ein Do-it-yourself-Bausatz für stationäre und mobile Sensorstationen - ein Citizen Science Toolkit für jedermann.</p>
-                                    <br>
-                                </div>
-                                <div class="col-md-6">
-                                    <img src="images/main/arduino.png" style="max-width:100%" />
-                                </div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <!-- <canvas id="particles-js"></canvas> -->
+            <div id="particles-js" class="background-gradient-2">
+                <div class="carousel-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1>openSenseMap</h1>
+                                <p>Die openSenseMap ist unsere Web-Plattform für die offenen Daten der senseBox. Bla bla. Datenanalyse. Bla bla. </p>
+                                <br>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="images/main/Microsoft Surface Book.png" style="max-width:100%" />
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="item">
-                <!-- <canvas id="particles-js"></canvas> -->
-                <div id="particles-js" class="background-gradient-2">
-                    <div class="carousel-container">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h1>openSenseMap</h1>
-                                    <p>Die openSenseMap ist unsere Web-Plattform für die offenen Daten der senseBox. Bla bla. Datenanalyse. Bla bla. </p>
-                                    <br>
-                                </div>
-                                <div class="col-md-6">
-                                    <img src="images/main/Microsoft Surface Book.png" style="max-width:100%" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <!-- /.carousel -->
+        <div class="item">
+            <div class="background-gradient">
+                <div class="carousel-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1>senseBox</h1>
+                                <p>Die senseBox ist ein Do-it-yourself-Bausatz für stationäre und mobile Sensorstationen - ein Citizen Science Toolkit für jedermann.</p>
+                                <br>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="images/main/arduino.png" style="max-width:100%" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <script src="assets/particles.js"></script>
-    <script>
-      /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-      particlesJS.load('particles-js', 'assets/particlesjs-config.json', function() {
-        console.log('callback - particles.js config loaded');
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!-- /.carousel -->
+
+<script src="assets/particles.js"></script>
+
+<script>
+    $(document).ready(function() {
+      $('#myCarousel').carousel({
+          interval: 10000
       });
-    </script>
+      particlesJS.load('particles-js', 'assets/particlesjs-config.json', function() {
+          console.log('callback - particles.js config loaded');
+      });
+    });
+</script>

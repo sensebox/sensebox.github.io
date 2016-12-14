@@ -1,0 +1,45 @@
+---
+layout: default
+permalink: /de/products/
+weight: 2
+lang: de
+id: products
+---
+{% assign t = site.data.translations.[page.lang].products %}
+<div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-12">
+
+    <!-- Sidebar -->
+    <div class="col-lg-4 col-md-4 col-sm-4 sidebar"></div>
+
+    <!-- News Bereich / Blogeinträge -->
+    <div class="col-lg-8 col-md-8 col-sm-8">
+      <div class="page-header">
+        <a name="about-us"></a>
+        <h1>senseBox</h1>
+      </div>
+      {{ t.introduction }}
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6 col-md-12 col-sm-12">
+  	<div class="col-md-1 hidden-sm">&nbsp;</div>
+  	<div class="col-md-4 col-sm-4 product-img"><img class="responsive-img" src="/images/product-sensebox-home.jpg" alt="senseBox Home Foto"/></div>
+  	<div class="col-md-6 col-sm-4 product-text">
+  		<div class="product-name"><h3><b>senseBox:</b>home</h3></div>
+
+  		{{ t.home.description }}
+  	</div>
+  </div>
+  <div class="col-lg-6 col-md-12 col-sm-12">
+  	<div class="col-md-1 hidden-sm">&nbsp;</div>
+  	<div class="col-md-4 col-sm-4 product-img"><img class="responsive-img" src="/images/product-sensebox-edu.jpg" alt="senseBox Home Foto"/></div>
+  	<div class="col-md-6 col-sm-4 product-text">
+  		<div class="product-name"><h3><b>senseBox:</b>edu</h3></div>
+
+  		{{ t.edu.description }}
+  	</div>
+  </div>
+</div>

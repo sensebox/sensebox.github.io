@@ -3,196 +3,210 @@ layout: main
 lang: de
 id: main
 ---
-{% assign t = site.data.translations.[page.lang].main %}
-<div class="row sensebox-presentation">
-  <div class="col-lg-12 col-md-12 col-sm-12">
-    <div class="col-lg-4 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1">
-      <img class="opacity-animation" src="{{ site.baseurl | append: '/images/bild_startseite.jpg'}}" alt="senseBox Logo" style="max-width:100%">
-    </div>
-    <div class="row">
-    	<div class="col-lg-6 col-lg-offset-1">
-				<div class="row">
-					<div class="media" >
-					  <div class="col-md-12" style="font-size: 1.25em;">
-					    {{ t.header }}
-					  </div>
-					</div>
-				</div>
-    		<div class="row info-panel">
-    			<div class="col-lg-6 col-md-6 col-sm-6">
-    				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
-    				  <div class="panel panel-default">
-    				    <div class="panel-heading" role="tab" id="headingOne">
-    				      <h3 class="panel-title">
-    				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseTemperature" aria-expanded="false" aria-controls="collapseTemperature" title="Temperatur aufklappen">
-    				          {{ t.info.temperature.header}}
-    				        </a>
-    				      </h3>
-    				    </div>
-    				    <div id="collapseTemperature" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-    				      <div class="panel-body">
-    				        <ul>
-    				          <li>{{ t.info.temperature.fact1 }}</li>
-    				          <li>{{ t.info.temperature.fact2 }}</li>
-    				        </ul>
-    				      </div>
-    				    </div>
-    				  </div>
-    				  <div class="panel panel-default">
-    				    <div class="panel-heading" role="tab" id="headingTwo">
-    				      <h3 class="panel-title">
-    				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseHumidity" aria-expanded="false" aria-controls="collapseHumidity" title="Luftfeuchtigkeit aufklappen">
-    				          {{ t.info.humiditiy.header }}
-    				        </a>
-    				      </h3>
-    				    </div>
-    				    <div id="collapseHumidity" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-    				      <div class="panel-body">
-    				        <ul>
-    				          <li>{{ t.info.humiditiy.fact1 }}</li>
-    				          <li>{{ t.info.humiditiy.fact2 }}</li>
-    				        </ul>
-    				      </div>
-    				    </div>
-    				  </div>
-    				  <div class="panel panel-default">
-    				    <div class="panel-heading" role="tab" id="headingThree">
-    				      <h3 class="panel-title">
-    				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapsePressure" aria-expanded="false" aria-controls="collapsePressure" title="Luftdruck aufklappen">
-    				          {{ t.info.airpressure.header }}
-    				        </a>
-    				      </h3>
-    				    </div>
-    				    <div id="collapsePressure" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-    				      <div class="panel-body">
-    				        <ul>
-    				          <li>{{ t.info.airpressure.fact1 }}</li>
-    				          <li>{{ t.info.airpressure.fact2 }}</li>
-    				        </ul>
-    				      </div>
-    				    </div>
-    				  </div>
-    				</div>
-    			</div>
-    			<div class="col-lg-6 col-md-6 col-sm-6">
-    				<div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="false">
-    				  <div class="panel panel-default">
-    				    <div class="panel-heading" role="tab" id="headingFour">
-    				      <h3 class="panel-title">
-    				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseLight" aria-expanded="false" aria-controls="collapseLight" title="Beleuchtungsstärke aufklappen">
-    				          {{ t.info.light.header }}
-    				        </a>
-    				      </h3>
-    				    </div>
-    				    <div id="collapseLight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-    				      <div class="panel-body">
-    				        <ul>
-    				          <li>{{ t.info.light.fact1 }}</li>
-    				          <li>{{ t.info.light.fact2 }}</li>
-    				        </ul>
-    				      </div>
-    				    </div>
-    				  </div>
-    				  <div class="panel panel-default">
-    				    <div class="panel-heading" role="tab" id="headingFive">
-    				      <h3 class="panel-title">
-    				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseUV" aria-expanded="false" aria-controls="collapseUV" title="UV(A)-Intensität aufklappen">
-    				          {{ t.info.uav.header }}
-    				        </a>
-    				      </h3>
-    				    </div>
-    				    <div id="collapseUV" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-    				      <div class="panel-body">
-    				        <ul>
-    				          <li>{{ t.info.uav.fact1 }}</li>
-    				          <li>{{ t.info.uav.fact2 }}</li>
-    				        </ul>
-    				      </div>
-    				    </div>
-    				  </div>
-    				  <div class="panel panel-default">
-    				    <div class="panel-heading" role="tab" id="headingSix">
-    				      <h3 class="panel-title">
-    				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseMore" aria-expanded="false" aria-controls="collapseMore" title="weitere Phänomene aufklappen">
-    				          {{ t.info.more.header }}
-    				        </a>
-    				      </h3>
-    				    </div>
-    				    <div id="collapseMore" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-    				      <div class="panel-body">
-    				        <ul>
-    				          <li>{{ t.info.more.fact1 }}</li>
-    				          <li>{{ t.info.more.fact2 }}</li>
-    				          <li>{{ t.info.more.fact3 }}</li>
-    				        </ul>
-    				      </div>
-    				    </div>
-    				  </div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </div>
-  </div>
-</div>
+<html>
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Text -->
-<div class="row">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+</head>
 
-    <!-- Sidebar -->
-    <div class="col-lg-4 col-md-4 col-sm-4 sidebar">
+<body>
 
+    <!--
+    <div class="navbar-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/index.html">
+
+                            <img class="logo" style="max-height:100%;" />
+                        </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="/products.html">Produkte</a></li>
+                            <li><a href="#contact">Docs</a></li>
+                            <li><a href="#contact">Hintergrund</a></li>
+                            <li><a href="#contact">Presse</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </div>
 
-    <!-- Content -->
-    <div class="col-lg-8 col-md-8 col-sm-8">
-			{{ t.text }}
-      <br />
-      <hr />
-      <div class="row">
-        <div class="col-md-6" style="text-align: center;">
-          <a href="{{ site.baseurl | append: '/hackathon'}}" target="_self">
-            <h3>Hackathon 2016</h3>
-            <img class="media-object" style="width:200px;height:200px;display: block;margin: 0 auto;" src="{{ site.baseurl | append: '/images/codeweekwinner.jpg'}}" alt="Code Week Winner Logo">
-          </a>
-        </div>
-        <div class="col-md-6" style="text-align: center;">
-          <a href="http://www.buergerschaffenwissen.de/mitmachen/forscherteam2016" target="_self">
-            <h3>Wir sind das Forscherteam des Jahres 2016!</h3>
-            <img class="media-object" style="width:200px;height:200px;display: block;margin: 0 auto;" src="{{ site.baseurl | append: '/images/16_BsW_Forscherteam_Einklinker.png'}}" alt="Forscherteam des Jahres 2016">
-          </a>
-        </div>
-      </div>
-      <hr />
+  -->
 
-      <!-- Events -->
-      <h1>{{ t.upcoming_events }}</h1>
-      {% assign events = site.events | sort: 'ending-date' %}
-      {% for event in events %}
-        {% include event_template.html event=event %}
-      {% endfor %}
-      <!-- TODO: list past, currently running and upcomung events    -->
+<!--
+    <!- - Carousel ================================================== - ->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!- - Indicators - ->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="background-gradient">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h1>senseBox</h1>
+                                    <p>Die senseBox ist ein Do-it-yourself-Bausatz für stationäre und mobile Sensorstationen - ein Citizen Science Toolkit für jedermann.</p>
+                                    <br>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="images/arduino.png" style="max-width:100%" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+              <!- - <canvas id="particles-js"></canvas> - ->
+                  <div id="particles-js" class="background-gradient-2">
+                      <div class="carousel-container">
+                          <div class="container">
+                              <div class="row">
+                                  <div class="col-md-6">
+                                      <h1>openSenseMap</h1>
+                                      <p>Die openSenseMap ist unsere Web-Plattform für die offenen Daten der senseBox. Die Stationen können gefiltert und durch statistische Methoden analysiert werdem.</p>
+                                      <br>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <img src="images/Microsoft Surface Book.png" style="max-width:100%" />
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
 
-      <hr />
-      <h1>{{ t.news }}</h1>
-      <div class="row">
-        <div class="col-md-6">
-          <a class="twitter-timeline" data-lang="de" data-height="650" data-theme="light" data-link-color="#4EAF47" href="https://twitter.com/SenseBox_De">Tweets by SenseBox_De</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  </div>
+            </div>
         </div>
-        <div class="col-md-6">
-          <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.6";
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-            <div class="fb-page" data-href="https://www.facebook.com/sensebox.de" data-tabs="timeline" data-height="650" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/sensebox.de" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/sensebox.de">senseBox</a></blockquote></div>
-        </div>
-      </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
     </div>
-  </div>
-</div>
+    </div>
+    <!- - /.carousel - ->
+  -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+
+    <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="images/flaticon/svg/brain.svg" alt="Generic placeholder image" width="140" height="140">
+                <h2>senseBox:home</h2>
+                <p>Die Bürger können mit der senseBox:home ihre eigenen lokalen Forschungsfragen stellen und die nötigen Daten selbst sammeln und sammeln lassen.</p>
+                <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="images/flaticon/svg/desktop.svg" alt="Generic placeholder image" width="140" height="140">
+                <h2>senseBox:edu</h2>
+                <p>Für Schulen und Nachwuchsforscher gibt es die senseBox:edu als Experementierkasten mit didaktischen Konzepten, Anleitungen und Projektideen.</p>
+                <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="images/flaticon/svg/location.svg" alt="Generic placeholder image" width="140" height="140">
+                <h2>openSenseMap</h2>
+                <p>Die openSenseMap ist unsere Web-Plattform für die offenen Daten der senseBox.</p>
+                <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+            </div>
+            <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row badges">
+            <div class="col-lg-6">
+                <img src="images/badges/forscherteam.png" alt="Generic placeholder image" width="140" height="140">
+            </div>
+            <div class="col-lg-6">
+                <img src="images/badges/codeweekwinner.jpg" alt="Generic placeholder image" width="140" height="140">
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- START THE TIMELINE -->
+        <!-- https://codyhouse.co/demo/vertical-timeline/index.html -->
+
+        <section id="cd-timeline">
+
+          {% assign events = site.events | sort: 'ending-date' %}
+          {% for event in events %}
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img">
+                    <img src="images/flaticon/svg/location.svg" alt="Picture">
+                </div>
+                <!-- cd-timeline-img -->
+
+                <div class="cd-timeline-content">
+                    <h2>{{ event.title }}</h2>
+                    <p>{{ event.place }}</p>
+                    <a href="{{ event.link }}" class="cd-read-more">Read more</a>
+                    <span class="cd-date">{{ event.starting-date }} - {{ event.ending-date }}</span>
+                </div>
+                <!-- cd-timeline-content -->
+            </div>
+            <!-- cd-timeline-block -->
+
+          {% endfor %}
+
+
+        </section>
+
+        <!-- /END THE TIMELINE -->
+
+        <a class="twitter-timeline" data-lang="de" data-height="650" data-theme="light" data-link-color="#4EAF47" href="https://twitter.com/SenseBox_De">Tweets by SenseBox_De</a>
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+
+    </div>
+    <!-- /.container -->
+
+
+
+
+    <!-- <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script> -->
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+    
+
+</body>
+
+</html>
