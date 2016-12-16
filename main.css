@@ -118,12 +118,23 @@
     width: 100%;
     height: 100%;
     background: #97ad95;
-background: -moz-linear-gradient(45deg,  #97ad95 0%, #4eaf47 100%);
-background: -webkit-linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
-background: linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97ad95', endColorstr='#4eaf47',GradientType=1 );
-
+    background: -moz-linear-gradient(45deg,  #97ad95 0%, #4eaf47 100%);
+    background: -webkit-linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
+    background: linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97ad95', endColorstr='#4eaf47',GradientType=1 );
 }
+
+.background-gradient-3 {
+    width: 100%;
+    height: 100%;
+    /*background-image: url(images/weather.png);*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#70b0e0+0,181c28+100 */
+background: #70b0e0; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #70b0e0 0%, #181c28 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #70b0e0 0%,#181c28 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #70b0e0 0%,#181c28 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70b0e0', endColorstr='#181c28',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  }
 
 .vcenter {
     display: inline-block;
@@ -134,7 +145,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97ad95', end
 .carousel-container {
     width: 100%;
     height: 100%;
-    padding-top: 75px;
+    padding-top: 100px;
     padding-bottom: 100px;
     position: absolute;
     color: white;
@@ -203,6 +214,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97ad95', end
     .featurette-heading {
         margin-top: 120px;
     }
+}
+
+/* FOOTER
+-------------------------------- */
+.footer-copyright {
+  text-align: center;
 }
 
 
