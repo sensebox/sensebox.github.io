@@ -1,137 +1,41 @@
-<html>
+---
+layout: default
+permalink: /de/products/
+weight: 2
+lang: de
+id: products
+---
+{% assign t = site.data.translations.[page.lang].products %}
+<div class="row">
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="products.css">
-
-
-</head>
-
-<body>
-
-    <div class="navbar-wrapper">
-        <div class="container">
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                          <span class="sr-only">Toggle navigation</span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="/index.html">
-
-                            <img class="logo" style="max-height:100%;" />
-                        </a>
-                    </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="/products.html">Produkte</a></li>
-                            <li><a href="#about">openSenseMap</a></li>
-                            <li><a href="#contact">Docs</a></li>
-                            <li><a href="#contact">Hintergrund</a></li>
-                            <li><a href="#contact">Presse</a></li>
-
-
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+    <!-- News Bereich / Blogeinträge -->
+    <div class="col-lg-8 col-md-8 col-sm-8">
+      <div class="page-header">
+        <a name="about-us"></a>
+        <h1>senseBox</h1>
+      </div>
+      {{ t.introduction }}
     </div>
+  </div>
+</div>
 
+<div class="row">
+  <div class="col-lg-6 col-md-12 col-sm-12">
+  	<div class="col-md-1 hidden-sm">&nbsp;</div>
+  	<div class="col-md-4 col-sm-4 product-img"><img class="responsive-img" src="/images/product-sensebox-home.jpg" alt="senseBox Home Foto"/></div>
+  	<div class="col-md-6 col-sm-4 product-text">
+  		<div class="product-name"><h3><b>senseBox:</b>home</h3></div>
 
+  		{{ t.home.description }}
+  	</div>
+  </div>
+  <div class="col-lg-6 col-md-12 col-sm-12">
+  	<div class="col-md-1 hidden-sm">&nbsp;</div>
+  	<div class="col-md-4 col-sm-4 product-img"><img class="responsive-img" src="/images/product-sensebox-edu.jpg" alt="senseBox Home Foto"/></div>
+  	<div class="col-md-6 col-sm-4 product-text">
+  		<div class="product-name"><h3><b>senseBox:</b>edu</h3></div>
 
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-
-
-    <div class="container marketing">
-
-      <h1>senseBox</h1>
-
-      <table class="table">
-        <thead>
-          <tr>
-            <td></td>
-            <td>senseBox:home<br>LAN</td>
-            <td>senseBox:home<br>WLAN</td>
-            <td>senseBox:edu<br>LAN</td>
-            <td>senseBox:edu<br>WLAN</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Komponenten</td>
-            <td>Arduino, senseBox Shield, Ethernet Shield</td>
-            <td>Arduino, senseBox Shield, Wifi Shield</td>
-            <td>Arduino, senseBox Shield, Ethernet Shield</td>
-            <td>Arduino, senseBox Shield, Ethernet Shield</td>
-          </tr>
-          <tr>
-            <td>Sensoren</td>
-            <td>Temperatur, Luftfeuchte, Luftdruck, Helligkeit, UV-Strahlung</td>
-            <td>Temperatur, Luftfeuchte, Luftdruck, Helligkeit, UV-Strahlung</td>
-            <td>Temperatur, Luftfeuchte, Luftdruck, Helligkeit, UV-Strahlung und viele mehr...</td>
-            <td>Temperatur, Luftfeuchte, Luftdruck, Helligkeit, UV-Strahlung und viele mehr...</td>
-          </tr>
-          <tr>
-            <td>Preis</td>
-            <td>
-              99,95 €
-              <a href="http://www.watterott.com/de/senseBox-Home-LAN">Jetzt bestellen</a>
-            </td>
-            <td>
-              105,95 €
-              <a href="http://www.watterott.com/de/senseBox-Home-WLAN">Jetzt bestellen</a>
-            </td>
-            <td>154,70 €</td>
-            <td>160,65 €</td>
-          </tr>
-        </tbody>
-      </table>
-
-        <!-- FOOTER -->
-        <footer>
-            <p class="pull-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        </footer>
-
-    </div>
-    <!-- /.container -->
-
-
-
-
-    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <script src="assets/particles.js"></script>
-
-    <script>
-        $('.carousel').carousel({
-            interval: 1000000
-        })
-
-
-        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-        particlesJS.load('particles-js', 'assets/particlesjs-config.json', function() {
-            console.log('callback - particles.js config loaded');
-        });
-    </script>
-
-</body>
-
-</html>
+  		{{ t.edu.description }}
+  	</div>
+  </div>
+</div>
