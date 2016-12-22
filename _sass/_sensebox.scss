@@ -118,7 +118,7 @@ hr {
   }
 }
 
-.navbar-default {
+#navbar {
   .navbar-nav {
     > li {
       @media (max-width: $grid-float-breakpoint) {
@@ -126,43 +126,43 @@ hr {
       }
       > a {
         transition: color 0.1s;
-        color: lighten($sensebox-green, 40%);
-        font-size: 22px;
+        color: #ffffff;
+        font-size: 1.5em;
         font-family: BrixSlab-Bold;
         background-color: transparent;
       }
 
       > a:hover,
       > a:focus {
-        color: lighten($sensebox-green, 50%);
+        color: lighten($sensebox-green, 25%);
       }
 
       &.active {
         > a,
         > a:hover,
         > a:focus {
-          color: white;
+          color: lighten($sensebox-green, 30%);
           background-color: transparent;
         }
       }
 
       // navbar item dividers
-      @media (min-width: $grid-float-breakpoint) {
-        &:after {
-          content: ':';
-          font-size: 22px;
-          text-decoration: none;
-          color: lighten($sensebox-green, 40%);
-          position: absolute;
-          right: -2px;
-          top: 9px;
-          user-select: none;
-          cursor: default;
-        }
-        &:last-of-type:after {
-          content: '';
-        }
-      }
+      // @media (min-width: $grid-float-breakpoint) {
+      //   &:after {
+      //     content: ':';
+      //     font-size: 22px;
+      //     text-decoration: none;
+      //     color: lighten($sensebox-green, 40%);
+      //     position: absolute;
+      //     right: -2px;
+      //     top: 9px;
+      //     user-select: none;
+      //     cursor: default;
+      //   }
+      //   &:last-of-type:after {
+      //     content: '';
+      //   }
+      // }
     }
   }
 }
@@ -759,35 +759,39 @@ ul li {
     background-color: white;
 }
 
-.navbar-nav>li>a {
-    color: #ffffff;
-    font-size: 1.5em;
-    text-shadow: none;
-}
+// .navbar-nav>li>a {
+//     color: #ffffff;
+//     font-size: 1.5em;
+//     text-shadow: none;
+// }
+//
+// .navbar-nav>li>a:hover {
+//     color: green;
+//     background: none;
+// }
+//
+// .navbar-nav>li>a:focus {
+//     background: none;
+// }
+//
+// .active {
+//     background: none;
+// }
+//
+// .navbar-brand {
+//     padding: 5px;
+// }
 
-.navbar-nav>li>a:hover {
-    color: green;
-    background: none;
-}
-
-.navbar-nav>li>a:focus {
-    background: none;
-}
-
-.active {
-    background: none;
-}
-
-.navbar-brand {
-    padding: 5px;
-}
 
 .logo {
-    content: url("/./images/main/logo.png");
+    content: url("/images/sensebox_logo.svg");
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
 }
 
 .logo:hover {
-    content: url("/./images/main/logo_bunt.png");
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 

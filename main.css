@@ -37,38 +37,26 @@
     background-color: white;
 }
 
-.navbar-nav>li>a {
-    color: #ffffff;
-    font-size: 1.5em;
-    text-shadow: none;
-}
-
-.navbar-nav>li>a:hover {
+/*.navbar-nav>li>a:hover {
     color: lightgreen;
     background: none;
 }
 
-.navbar-nav>li>a:focus {
+.navbar-nav>li>a .active {
+    color: lightgreen;
     background: none;
-}
+}*/
 
+/*.navbar-nav>li>a:focus {
+    background: none;
+}*/
+/*
 .active {
     background: none;
-}
+}*/
 
 .navbar-brand {
     padding: 5px !important;
-}
-
-.logo {
-    content: url("images/logo_bunt.png");
-    -webkit-filter: brightness(0) invert(1);
-    filter: brightness(0) invert(1);
-}
-
-.logo:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
 }
 
 .collapse.in, .collapsing{
