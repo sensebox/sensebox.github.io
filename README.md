@@ -11,13 +11,13 @@ senseBox website
 
 Most of the articles and press releases are written with [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). HTML can be used if needed, e.g. for linking to external pages or for embedding images.
 
-### Adding blog entries
-
-Add the blog text as a markdown file in the format `2015-01-01-topic.md` in the `_news` folder. Follow the same schema as existing files.
-
 ### Adding press reports
 
-Add the biography as a markdown file in the format `2015-01-01-topic.md` in the `_press` folder. Follow the same schema as existing files.
+Add the press report as a markdown file in the `_awards` and `_awards_en` folder. Follow the same schema as existing files.
+
+### Adding awards
+
+Add the award as a markdown file in the format `2015-01-01-topic.md` in the `_press` folder. Follow the same schema as existing files.
 
 ### Adding team members biographies
 
