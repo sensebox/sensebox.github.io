@@ -24,6 +24,21 @@
                         </li>
                         {% endif %} {% endif %} {% endif %} {% endif %} {% endif %} {% endif %} {% endif %} {% endif %} {% endif %} {% endif %} {% endfor %}
                     </ul>
+                    {% if page.translationAvailable != false %}
+                    <ul class="nav navbar-nav pull-right">
+          						<li class="navbar-item">
+          							{% if page.lang == 'de' %}
+          								<a href="{{ page.url | remove:'de/' | remove:'index.html' | prepend:'/en' | prepend: site.url }}">EN</a>
+          					 {% else %}
+                          {% if page.id == 'main' %}
+                            <a href="{{ page.url | remove:'en/' | remove:'index.html'| prepend: site.url }}">DE</a>
+                          {% else %}
+          								  <a href="{{ page.url | remove:'en/' | remove:'index.html' | prepend:'/de' | prepend: site.url }}">DE</a>
+                          {% endif %}
+          							{% endif %}
+          						</li>
+                    </ul>
+                    {% endif %}
                 </div>
             </div>
         </nav>
