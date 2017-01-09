@@ -67,19 +67,58 @@ products:
     description: "<p>Einsteigerset unserer Citizen Science Kampagne. Die senseBox:home wird einmalig zusammengebaut und auf der openSenseMap registriert. Danach werden aktuelle Messungen der Station an einem festen Standort live auf der <a href=\"http://www.sensebox.de/de/osem\" class=\"link\">openSenseMap</a> dargestellt und veröffentlicht.</p>
       <p><b>Features</b></p>
       <ul>
-      <li>Sensoren für Temperatur, Luftfeuchtigkeit und mehr</li>
-      <li>Kein Löten beim Zusammenbau nötig</li>
-      <li>Beispiele und Aufbauanleitungen</li>
-      <li>Erweiterbar mit weiteren Sensoren und Arduino-kompatibler Hardware</li>
+        <li>Sensoren für Temperatur, Luftfeuchtigkeit und mehr</li>
+        <li>Kein Löten beim Zusammenbau nötig</li>
+        <li>Beispiele und Aufbauanleitungen</li>
+        <li>Erweiterbar mit weiteren Sensoren und Arduino-kompatibler Hardware</li>
+      </ul>
+      <p><b>Komponenten</b></p>
+      <ul>
+        <li>Genuino UNO</li>
+        <li>Ethernet Shield (WIZnet W5500 Chipsatz) <b>oder</b> WLAN/WiFi Shield (Atmel ATWINC1500B Chipsatz)</li>
+        <li>SenseBox Shield</li>
+        <li>Steckernetzteil</li>
+        <li>senseBox Kabel (3x100mm, 1x200mm)</li>
+      <li>USB Kabel</li>
+      </ul>
+      <p><b>Sensoren</b></p>
+      <ul>
+        <li>VEML6070 UV Lichtsensor</li>
+        <li>TSL45315 Lichtsensor</li>
+        <li>BMP280 Luftdruck- und Temperatursensor</li>
+        <li>HDC1008 Luftfeuchtigkeitssensor- und Temperatursensor</li>
+      <li>USB Kabel</li>
       </ul>
       <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/de/Sensoren/senseBox\" target=\"_blank\" class=\"link\">Bestellen</a></p>"
   edu:
     description: "<p>Mit der senseBox:edu bieten wir Schülern und Nachwuchsforschern ab der 7. Klasse die Möglichkeit, das Programmieren auf eine spielerische Art und Weise zu erlernen, sich als Citizen Scientist zu betätigen und die Welt der Geoinformatik kennen zu lernen. In höheren Klassenstufen lassen sich Projekte zum Thema Umweltsensorik in Kursen oder AGs umsetzen, in dem Umweltmessstationen zusammengebaut, programmiert und aufgestellt werden. Weiterhin können diese Stationen mit dem Internet verbunden und ihre Messungen auf der <a href=\"http://www.sensebox.de/de/osem\" class=\"link\">openSenseMap</a> publiziert werden. So lassen sich Daten offen mit anderen Schulen, Bürgerinnen und Bürgern oder Wissenschaftlern teilen.</p>
       <p><b>Features</b></p>
       <ul>
-      <li>Sensoren für Temperatur, Luftfeuchtigkeit, Luftdruck, Beleuchtungsstärke und UV(A)-Intensität</li>
-      <li>Kein Löten beim Zusammenbau nötig</li>
-      <li>Beispiele und Aufbauanleitungen für den Unterricht, mit Unterlagen für Schüler und Lehrer</li>
+        <li>Sensoren für Temperatur, Luftfeuchtigkeit, Luftdruck, Beleuchtungsstärke und UV(A)-Intensität</li>
+        <li>Kein Löten beim Zusammenbau nötig</li>
+        <li>Beispiele und Aufbauanleitungen für den Unterricht, mit Unterlagen für Schüler und Lehrer</li>
+      </ul>
+      <p><b>Komponenten</b></p>
+      <ul>
+        <li>Genuino UNO</li>
+        <li>Ethernet Shield (WIZnet W5500 Chipsatz) <b>oder</b> WLAN/WiFi Shield (Atmel ATWINC1500B Chipsatz)</li>
+        <li>SenseBox Shield</li>
+        <li>2GB micro SD Karte</li>
+        <li>Steckernetzteil</li>
+        <li>Batteriehalter</li>
+        <li>Halterung mit Breadboard</li>
+        <li>Set Jumper Wires</li>
+        <li>USB Kabel</li>
+      </ul>
+      <p><b>Sensoren</b></p>
+      <ul>
+        <li>VEML6070 UV Lichtsensor</li>
+        <li>TSL45315 Lichtsensor</li>
+        <li>BMP280 Luftdruck- und Temperatursensor</li>
+        <li>HDC1008 Luftfeuchtigkeitssensor- und Temperatursensor</li>
+        <li>Mikrofon mit Verstärker</li>
+        <li>Ultraschall Entfernungssensor</li>
+        <li>IR Entfernungssensor</li>
       </ul>
       <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/de/Sensoren/senseBox\" target=\"_blank\" class=\"link\">Bestellen</a></p>"
 

@@ -47,7 +47,7 @@
                   <div class="container">
                       <div class="row">
                           <div class="col-md-6">
-                              <h1>senseBox</h1>
+                              <h1 class="carousel-heading">senseBox</h1>
                               <p>Die senseBox ist ein Do-it-yourself-Bausatz für stationäre und mobile Sensorstationen - ein Citizen Science Toolkit für jedermann.</p>
                               <br>
                           </div>
@@ -73,6 +73,12 @@
         });
       })
       </script>
+      {% elsif page.id == 'products' %}
+          <div class="item active">
+              <div class="background-gradient-products">
+                  
+              </div>
+          </div>
     {% elsif page.id == 'osem' %}
         <div class="item active">
             <div id="particles-js" class="background-gradient-2">
@@ -80,7 +86,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">
-                                <h1>openSenseMap</h1>
+                                <h1 class="carousel-heading">openSenseMap</h1>
                                 <p>Die openSenseMap ist unsere Web-Plattform für die offenen Daten der senseBox. Jede senseBox:home übeträgt ihre Messdaten direkt auf diese Karte, wo sie betrachtet, analysiert und heruntergeladen werden können. Auch mit der senseBox:edu erfasste Daten können auf der openSenseMap angezeigt werden.
                                 <br>
                             </div>
@@ -108,20 +114,6 @@
             <div class="item active">
                 <div class="background-gradient">
                   <img src="{{ site.baseurl | append: '/images/IMG_7128.jpg' }}" style="min-height:100%; min-width:100%" />
-                    <!-- <div class="carousel-container">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h1>openSenseMap</h1>
-                                    <p>Die openSenseMap ist unsere Web-Plattform für die offenen Daten der senseBox. Jede senseBox:home übeträgt ihre Messdaten direkt auf diese Karte, wo sie betrachtet, analysiert und heruntergeladen werden können. Auch mit der senseBox:edu erfasste Daten können auf der openSenseMap angezeigt werden.
-                                    <br>
-                                </div>
-                                <div class="col-md-6">
-                                    <img src="{{ site.baseurl | append: '/images/IMG_7128.jpg' }}" style="max-width:100%" />
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
       {% else %}
@@ -131,7 +123,7 @@
                   <div class="container">
                       <div class="row">
                           <div class="col-md-6">
-                              <h1>senseBox</h1>
+                              <h1 class="carousel-heading">senseBox</h1>
                               <p>Die senseBox ist ein Do-it-yourself-Bausatz für stationäre und mobile Sensorstationen - ein Citizen Science Toolkit für jedermann.</p>
                               <br>
                           </div>

@@ -1,66 +1,5 @@
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-
-.navbar-wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 20;
-}
-
-
-/* Flip around the padding for proper display in narrow viewports */
-
-.navbar-wrapper>.container {
-    padding-right: 0;
-    padding-left: 0;
-}
-
-.navbar-wrapper .navbar {
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.navbar-wrapper .navbar .container {
-    width: auto;
-}
-
-.navbar-toggle .collapsed {
-    z-index: 99;
-}
-
-.icon-bar {
-    background-color: white;
-}
-
-/*.navbar-nav>li>a:hover {
-    color: lightgreen;
-    background: none;
-}
-
-.navbar-nav>li>a .active {
-    color: lightgreen;
-    background: none;
-}*/
-
-/*.navbar-nav>li>a:focus {
-    background: none;
-}*/
-/*
-.active {
-    background: none;
-}*/
-
-.navbar-brand {
-    padding: 5px !important;
-}
-
-.collapse.in, .collapsing{
-  background-color: rgba(0, 0, 0, 0.7);
+.collapse.in, .collapsing {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -122,10 +61,10 @@
     width: 100%;
     height: 100%;
     background: #97ad95;
-    background: -moz-linear-gradient(45deg,  #97ad95 0%, #4eaf47 100%);
-    background: -webkit-linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
-    background: linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97ad95', endColorstr='#4eaf47',GradientType=1 );
+    background: -moz-linear-gradient(45deg, #97ad95 0%, #4eaf47 100%);
+    background: -webkit-linear-gradient(45deg, #97ad95 0%, #4eaf47 100%);
+    background: linear-gradient(45deg, #97ad95 0%, #4eaf47 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97ad95', endColorstr='#4eaf47', GradientType=1);
 }
 
 .background-gradient-3 {
@@ -133,18 +72,29 @@
     height: 100%;
     /*background-image: url(images/weather.png);*/
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#70b0e0+0,181c28+100 */
-    background: #70b0e0; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #70b0e0 0%, #181c28 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #70b0e0 0%,#181c28 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #70b0e0 0%,#181c28 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70b0e0', endColorstr='#181c28',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  }
+    background: #70b0e0;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #70b0e0 0%, #181c28 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #70b0e0 0%, #181c28 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #70b0e0 0%, #181c28 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70b0e0', endColorstr='#181c28', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.background-gradient-products {
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/weather_black.png');
+}
 
 .background-gradient-docs {
     width: 100%;
     height: 100%;
     background-image: url('/images/IMG_7128.jpg');
-  }
+}
 
 .vcenter {
     display: inline-block;
@@ -226,8 +176,10 @@
     }
 }
 
+
 /* FOOTER
 -------------------------------- */
+
 .footer-copyright {
-  text-align: center;
+    text-align: center;
 }
