@@ -54,7 +54,7 @@
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol> -->
-    
+
     <div class="carousel-inner" role="listbox">
     {% if page.id == 'main' %}
       {% include _carousel_content/main_carousel.html %}
@@ -64,6 +64,8 @@
       {% include _carousel_content/osem_carousel.html %}
     {% elsif page.id == 'docs' %}
       {% include _carousel_content/docs_carousel.html %}
+    {% elsif page.id == 'background' %}
+      {% include _carousel_content/background_carousel.html %}
     {% else %}
       {% include _carousel_content/default_carousel.html %}
     {% endif %}

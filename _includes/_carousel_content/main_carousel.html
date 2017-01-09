@@ -1,3 +1,4 @@
+{% assign t = site.data.translations.[page.lang].main %}
 <div class="item active">
     <div class="background-gradient-main">
         <div class="carousel-container">
@@ -5,7 +6,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <h1 class="carousel-heading">senseBox</h1>
-                        <p>Die senseBox ist ein Do-it-yourself-Bausatz für stationäre und mobile Sensorstationen - ein Citizen Science Toolkit für jedermann.</p>
+                        {{ t.header }}
                         <br>
                     </div>
                     <div class="col-md-6">
