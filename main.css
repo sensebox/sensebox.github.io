@@ -67,10 +67,9 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97ad95', endColorstr='#4eaf47', GradientType=1);
 }
 
-.background-gradient-3 {
+.background-gradient-main {
     width: 100%;
     height: 100%;
-    /*background-image: url(images/weather.png);*/
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#70b0e0+0,181c28+100 */
     background: #70b0e0;
     /* Old browsers */
