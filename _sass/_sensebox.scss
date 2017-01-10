@@ -845,9 +845,12 @@ ul li {
     background-image: none !important;
 }
 
+.carousel-background {
+  width: 100%;
+  height: 100%;
+}
+
 .background-gradient-2 {
-    width: 100%;
-    height: 100%;
     background: #7db9e8;
     background: -moz-linear-gradient(90deg, #7db9e8 0%, #1e5799 100%);
     background: -webkit-linear-gradient(90deg, #7db9e8 0%, #1e5799 100%);
@@ -856,8 +859,6 @@ ul li {
 }
 
 .background-gradient {
-    width: 100%;
-    height: 100%;
     background: #97ad95;
 background: -moz-linear-gradient(45deg,  #97ad95 0%, #4eaf47 100%);
 background: -webkit-linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
@@ -867,8 +868,6 @@ background: linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
 }
 
 .background-gradient-main {
-    width: 100%;
-    height: 100%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#70b0e0+0,181c28+100 */
     background: #70b0e0;
     /* Old browsers */
@@ -883,14 +882,11 @@ background: linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
 }
 
 .background-gradient-products {
-    width: 100%;
-    height: 100%;
-    background-image: url('/images/weather_black.png');
+    //background-image: url('/images/instructions_home_bg_500px.jpg');
+    //background-repeat: no-repeat;
 }
 
 .background-gradient-docs {
-    width: 100%;
-    height: 100%;
     background-image: url('/images/IMG_7128.jpg');
 }
 
