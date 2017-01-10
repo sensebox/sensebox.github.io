@@ -18,6 +18,10 @@ main:
       <p>Für Schulen und Nachwuchsforscher gibt es die <a href=\"http://www.sensebox.de/de/products\" class=\"link\">senseBox:edu</a> als Experementierkasten mit didaktischen Konzepten, Anleitungen und Projektideen.</p>
 
       <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span><a> </a><a href=\"http://www.sensebox.de/de/products\" class=\"link\">mehr Informationen und bestellen</a></span></a></p>"
+  home_info: "Die Bürger können mit der senseBox:home ihre eigenen lokalen Forschungsfragen stellen und die nötigen Daten selbst sammeln und sammeln lassen."
+  edu_info: "Für Schulen und Nachwuchsforscher gibt es die senseBox:edu als Experementierkasten mit didaktischen Konzepten, Anleitungen und Projektideen."
+  osem_info: "Die openSenseMap ist unsere Web-Plattform für die offenen Daten der senseBox."
+
   info:
     temperature:
       header: "Temperatur"

@@ -3,34 +3,35 @@ layout: main
 lang: de
 id: main
 ---
+{% assign t = site.data.translations.[page.lang].main %}
 
     <div class="marketing">
 
-        <!-- Three columns of text below the carousel -->
-        <div class="row">
-            <div class="col-lg-4">
-                <img src="images/flaticon/svg/brain.svg" alt="Generic placeholder image" width="140" height="140">
-                <h2>senseBox:home</h2>
-                <p>Die Bürger können mit der senseBox:home ihre eigenen lokalen Forschungsfragen stellen und die nötigen Daten selbst sammeln und sammeln lassen.</p>
-                <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
-            </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <img src="images/flaticon/svg/desktop.svg" alt="Generic placeholder image" width="140" height="140">
-                <h2>senseBox:edu</h2>
-                <p>Für Schulen und Nachwuchsforscher gibt es die senseBox:edu als Experementierkasten mit didaktischen Konzepten, Anleitungen und Projektideen.</p>
-                <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
-            </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <img src="images/flaticon/svg/location.svg" alt="Generic placeholder image" width="140" height="140">
-                <h2>openSenseMap</h2>
-                <p>Die openSenseMap ist unsere Web-Plattform für die offenen Daten der senseBox.</p>
-                <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
-            </div>
-            <!-- /.col-lg-4 -->
-        </div>
-        <!-- /.row -->
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+          <div class="col-lg-4">
+              <img src="/images/flaticon/svg/brain.svg" alt="Generic placeholder image" width="140" height="140">
+              <h2>senseBox:home</h2>
+              <p>{{ t.home_info }}</p>
+              <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+              <img src="/images/flaticon/svg/desktop.svg" alt="Generic placeholder image" width="140" height="140">
+              <h2>senseBox:edu</h2>
+              <p>{{ t.edu_info }}</p>
+              <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+              <img src="/images/flaticon/svg/location.svg" alt="Generic placeholder image" width="140" height="140">
+              <h2>openSenseMap</h2>
+              <p>{{ t.edu_info }}</p>
+              <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+          </div>
+          <!-- /.col-lg-4 -->
+      </div>
+      <!-- /.row -->
 
         <h1 style="text-align: center;">Partner</h1>
         <div class="row">

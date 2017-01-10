@@ -41,6 +41,11 @@ main:
       <p>Additionally, we created <a href=\"http://www.sensebox.de/en/products\" class=\"link\">senseBox:edu</a> for schools and junior scientists, which is an experimental box with didactical concepts, instructions and project ideas included. </p>
 
       <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span><a> </a><a href=\"http://www.sensebox.de/en/products\" class=\"link\">find out more</a></span></a></p>"
+  home_info: Citizens with senseBox:home can use the technology for their own local research, to collect data by themselves or to contribute to the openSenseMap sensor network.
+  edu_info: Additionally, we created senseBox:edu for schools and junior scientists, which is an experimental box with didactical concepts, instructions and project ideas included.
+  osem_info: openSenseMap is our platform for the publishing of senseBox and other open sensor data.
+
+
   info:
     temperature:
       header: "Temperature"
