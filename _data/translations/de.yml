@@ -1,8 +1,8 @@
 header:
   blog: "News"
-  products: "senseBox"
+  products: "Produkte"
   osem: "openSenseMap"
-  docs: "Docs"
+  docs: "Dokumentation"
   background: "Hintergrund"
   press: "Presse"
   awards: "Förderung"
@@ -94,6 +94,9 @@ products:
       <li>USB Kabel</li>
       </ul>
       <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/de/Sensoren/senseBox\" target=\"_blank\" class=\"link\">Bestellen</a></p>"
+
+      #<p><a class=\"btn btn-default\" href=\"http://www.watterott.com/de/Sensoren/senseBox\" role=\"button\">Bestellen<span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a></p>"
+
   edu:
     description: "<p>Mit der senseBox:edu bieten wir Schülern und Nachwuchsforschern ab der 7. Klasse die Möglichkeit, das Programmieren auf eine spielerische Art und Weise zu erlernen, sich als Citizen Scientist zu betätigen und die Welt der Geoinformatik kennen zu lernen. In höheren Klassenstufen lassen sich Projekte zum Thema Umweltsensorik in Kursen oder AGs umsetzen, in dem Umweltmessstationen zusammengebaut, programmiert und aufgestellt werden. Weiterhin können diese Stationen mit dem Internet verbunden und ihre Messungen auf der <a href=\"http://www.sensebox.de/de/osem\" class=\"link\">openSenseMap</a> publiziert werden. So lassen sich Daten offen mit anderen Schulen, Bürgerinnen und Bürgern oder Wissenschaftlern teilen.</p>
       <p><b>Features</b></p>
