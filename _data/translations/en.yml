@@ -31,7 +31,7 @@ footer:
     header: "Partner"
 
 main:
-  header: "<p>The <em>senseBox</em> is a do-it-yourself kit for stationary and mobile sensor stations –  the <em>Citizen Science</em> Toolkit.</p>"
+  header: "<p>The <b>senseBox</b> is a do-it-yourself kit for stationary and mobile sensor stations –  the <b>Citizen Science</b> Toolkit.</p>"
   text: "<p>With <em>senseBox</em> , citizens and schools are able to collect environmental data using sensors for climate (weather, air quality), transport (traffic density or noise pollution) and many more phenomena to find out more about the environment.</p>
 
       <p>The data collected may be published as open data on the <a href=\"http://www.sensebox.de/en/osem\" class=\"link\">openSenseMap</a>.</p>

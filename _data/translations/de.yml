@@ -8,7 +8,7 @@ header:
   awards: "Förderung"
 
 main:
-  header: "<p>Die <em>senseBox</em> ist ein Do-it-yourself-Bausatz für stationäre und mobile Sensorstationen - ein <em>Citizen Science</em> Toolkit für jedermann.</p>"
+  header: "<p>Die <b>senseBox</b> ist ein Do-it-yourself-Bausatz für stationäre und mobile Sensorstationen - ein <b>Citizen Science</b> Toolkit für jedermann.</p>"
   text: "<p>Mit der <em>senseBox</em> können Bürger und Schulen <i>Umweltdaten</i> über Klima, Luftqualität, Verkehrsaufkommen, Lärmbelästigung und vieles mehr <i>messen</i> und so zu genaueren Aussagen über lokale Umweltphänomene beitragen.</p>
 
       <p>Die Daten können im Internet als Open Data bereitgestellt und auf einer <a href=\"http://www.sensebox.de/de/osem\" class=\"link\">Karte</a> sichtbar gemacht werden.</p>

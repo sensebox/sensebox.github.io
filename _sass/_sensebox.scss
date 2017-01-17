@@ -867,16 +867,15 @@ background: linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
 }
 
 .background-gradient-main {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#70b0e0+0,181c28+100 */
-    background: #70b0e0;
+    background: #4b6cb7;
     /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #70b0e0 0%, #181c28 100%);
+    background: -moz-linear-gradient(-45deg, #4b6cb7 0%, #182848 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #70b0e0 0%, #181c28 100%);
+    background: -webkit-linear-gradient(-45deg, #4b6cb7 0%, #182848 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #70b0e0 0%, #181c28 100%);
+    background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70b0e0', endColorstr='#181c28', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b6cb7', endColorstr='#182848', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
 }
 
@@ -970,6 +969,9 @@ background: linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
 @media (min-width: 1200px) {
     .featurette-heading {
         margin-top: 120px;
+    }
+    .navbar-nav {
+      margin-left: 10px;
     }
 }
 
