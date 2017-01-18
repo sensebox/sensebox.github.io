@@ -1,9 +1,6 @@
-# ON THIS BRANCH WE ARE DEVELOPING A NEW LOOK AND FEEL FOR OUR WEBSITE
-## WE ARE CURRENTLY IN AN EARLY DEVELOPMENT STAGE
-
 # sensebox.github.io
 
-![senseBox Logo](https://raw.githubusercontent.com/sensebox/sensebox.github.io/master/images/logo.png "senseBox Logo")
+![senseBox Logo](https://raw.githubusercontent.com/sensebox/sensebox.github.io/master/images/sensebox_wort_und_logo.svg "senseBox Logo")
 
 senseBox website
 
