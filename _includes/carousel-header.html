@@ -1,0 +1,88 @@
+<div class="navbar-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                    <a class="navbar-brand" href="/index.html">
+                        <img class="logo" style="max-height:100%;" src="{{ site.baseurl | append: "/images/sensebox_logo.svg"}}"/>
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        {% assign t = site.data.translations.[page.lang].header %} {% assign menupages = site.pages | sort:"weight" %} {% for menupage in menupages %} {% if menupage.url contains 'page' %} {% elsif menupage.url contains 'news' %} {% else %} {% if menupage.title
+                        %} {% else %} {% if menupage.lang == page.lang and menupage.id != 'main' %} {% if menupage.id != 'contact' %} {% if menupage.id != 'hackathon' %} {% if menupage.id != 'hackathon_registration' %} {% if menupage.id != 'materials'
+                        %} {% if menupage.id != 'books' %} {% if menupage.id != '404' %} {% if menupage.id != 'codeweek' %}
+                        <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
+                            <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
+                        </li>
+                        {% endif %} {% endif %} {% endif %} {% endif %} {% endif %} {% endif %} {% endif %} {% endif %} {% endif %} {% endif %} {% endfor %}
+                    </ul>
+                    {% if page.translationAvailable != false %}
+                    <ul class="nav navbar-nav pull-right">
+          						<li class="navbar-item">
+          							{% if page.lang == 'de' %}
+          								<a href="{{ page.url | remove:'de/' | remove:'index.html' | prepend:'/en' | prepend: site.url }}">EN</a>
+          					 {% else %}
+                          {% if page.id == 'main' %}
+                            <a href="{{ page.url | remove:'en/' | remove:'index.html'| prepend: site.url }}">DE</a>
+                          {% else %}
+          								  <a href="{{ page.url | remove:'en/' | remove:'index.html' | prepend:'/de' | prepend: site.url }}">DE</a>
+                          {% endif %}
+          							{% endif %}
+          						</li>
+                    </ul>
+                    {% endif %}
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!-- Carousel
+    ================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <!-- <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol> -->
+
+    <div class="carousel-inner" role="listbox">
+    {% if page.id == 'main' %}
+      {% include _carousel_content/main_carousel.html %}
+    {% elsif page.id == 'products' %}
+      {% include _carousel_content/products_carousel.html %}
+    {% elsif page.id == 'osem' %}
+      {% include _carousel_content/osem_carousel.html %}
+    {% elsif page.id == 'docs' %}
+      {% include _carousel_content/docs_carousel.html %}
+    {% elsif page.id == 'background' %}
+      {% include _carousel_content/background_carousel.html %}
+    {% elsif page.id == 'press' %}
+      {% include _carousel_content/press_carousel.html %}
+    {% elsif page.id == 'awards' %}
+      {% include _carousel_content/awards_carousel.html %}
+    {% else %}
+      {% include _carousel_content/default_carousel.html %}
+    {% endif %}
+    </div>
+
+
+    <!-- </div> -->
+    <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a> -->
+</div>
+<!-- /.carousel -->

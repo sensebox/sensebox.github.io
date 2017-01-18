@@ -1,14 +1,14 @@
 header:
   blog: "News"
-  products: "senseBox"
+  products: "Produkte"
   osem: "openSenseMap"
-  docs: "Docs"
+  docs: "Dokumentation"
   background: "Hintergrund"
   press: "Presse"
   awards: "Förderung"
 
 main:
-  header: "<p>Die <em>senseBox</em> ist ein Do-it-yourself-Bausatz für stationäre und mobile Sensorstationen - ein <em>Citizen Science</em> Toolkit für jedermann.</p>"
+  header: "<p>Die <b>senseBox</b> ist ein Do-it-yourself-Bausatz für stationäre und mobile Sensorstationen - ein <b>Citizen Science</b> Toolkit für jedermann.</p>"
   text: "<p>Mit der <em>senseBox</em> können Bürger und Schulen <i>Umweltdaten</i> über Klima, Luftqualität, Verkehrsaufkommen, Lärmbelästigung und vieles mehr <i>messen</i> und so zu genaueren Aussagen über lokale Umweltphänomene beitragen.</p>
 
       <p>Die Daten können im Internet als Open Data bereitgestellt und auf einer <a href=\"http://www.sensebox.de/de/osem\" class=\"link\">Karte</a> sichtbar gemacht werden.</p>
@@ -18,6 +18,10 @@ main:
       <p>Für Schulen und Nachwuchsforscher gibt es die <a href=\"http://www.sensebox.de/de/products\" class=\"link\">senseBox:edu</a> als Experementierkasten mit didaktischen Konzepten, Anleitungen und Projektideen.</p>
 
       <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span><a> </a><a href=\"http://www.sensebox.de/de/products\" class=\"link\">mehr Informationen und bestellen</a></span></a></p>"
+  home_info: "Die Bürger können mit der senseBox:home ihre eigenen lokalen Forschungsfragen stellen und die nötigen Daten selbst sammeln und sammeln lassen."
+  edu_info: "Für Schulen und Nachwuchsforscher gibt es die senseBox:edu als Experementierkasten mit didaktischen Konzepten, Anleitungen und Projektideen."
+  osem_info: "Die openSenseMap ist unsere Web-Plattform für die offenen Daten der senseBox."
+
   info:
     temperature:
       header: "Temperatur"
@@ -67,25 +71,68 @@ products:
     description: "<p>Einsteigerset unserer Citizen Science Kampagne. Die senseBox:home wird einmalig zusammengebaut und auf der openSenseMap registriert. Danach werden aktuelle Messungen der Station an einem festen Standort live auf der <a href=\"http://www.sensebox.de/de/osem\" class=\"link\">openSenseMap</a> dargestellt und veröffentlicht.</p>
       <p><b>Features</b></p>
       <ul>
-      <li>Sensoren für Temperatur, Luftfeuchtigkeit und mehr</li>
-      <li>Kein Löten beim Zusammenbau nötig</li>
-      <li>Beispiele und Aufbauanleitungen</li>
-      <li>Erweiterbar mit weiteren Sensoren und Arduino-kompatibler Hardware</li>
+        <li>Sensoren für Temperatur, Luftfeuchtigkeit und mehr</li>
+        <li>Kein Löten beim Zusammenbau nötig</li>
+        <li>Beispiele und Aufbauanleitungen</li>
+        <li>Erweiterbar mit weiteren Sensoren und Arduino-kompatibler Hardware</li>
+      </ul>
+      <p><b>Komponenten</b></p>
+      <ul>
+        <li>Genuino UNO</li>
+        <li>Ethernet Shield (WIZnet W5500 Chipsatz) <b>oder</b> WLAN/WiFi Shield (Atmel ATWINC1500B Chipsatz)</li>
+        <li>SenseBox Shield</li>
+        <li>Steckernetzteil</li>
+        <li>senseBox Kabel (3x100mm, 1x200mm)</li>
+      <li>USB Kabel</li>
+      </ul>
+      <p><b>Sensoren</b></p>
+      <ul>
+        <li>VEML6070 UV Lichtsensor</li>
+        <li>TSL45315 Lichtsensor</li>
+        <li>BMP280 Luftdruck- und Temperatursensor</li>
+        <li>HDC1008 Luftfeuchtigkeitssensor- und Temperatursensor</li>
+      <li>USB Kabel</li>
       </ul>
       <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/de/Sensoren/senseBox\" target=\"_blank\" class=\"link\">Bestellen</a></p>"
+
+      #<p><a class=\"btn btn-default\" href=\"http://www.watterott.com/de/Sensoren/senseBox\" role=\"button\">Bestellen<span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a></p>"
+
   edu:
     description: "<p>Mit der senseBox:edu bieten wir Schülern und Nachwuchsforschern ab der 7. Klasse die Möglichkeit, das Programmieren auf eine spielerische Art und Weise zu erlernen, sich als Citizen Scientist zu betätigen und die Welt der Geoinformatik kennen zu lernen. In höheren Klassenstufen lassen sich Projekte zum Thema Umweltsensorik in Kursen oder AGs umsetzen, in dem Umweltmessstationen zusammengebaut, programmiert und aufgestellt werden. Weiterhin können diese Stationen mit dem Internet verbunden und ihre Messungen auf der <a href=\"http://www.sensebox.de/de/osem\" class=\"link\">openSenseMap</a> publiziert werden. So lassen sich Daten offen mit anderen Schulen, Bürgerinnen und Bürgern oder Wissenschaftlern teilen.</p>
       <p><b>Features</b></p>
       <ul>
-      <li>Sensoren für Temperatur, Luftfeuchtigkeit, Luftdruck, Beleuchtungsstärke und UV(A)-Intensität</li>
-      <li>Kein Löten beim Zusammenbau nötig</li>
-      <li>Beispiele und Aufbauanleitungen für den Unterricht, mit Unterlagen für Schüler und Lehrer</li>
+        <li>Sensoren für Temperatur, Luftfeuchtigkeit, Luftdruck, Beleuchtungsstärke und UV(A)-Intensität</li>
+        <li>Kein Löten beim Zusammenbau nötig</li>
+        <li>Beispiele und Aufbauanleitungen für den Unterricht, mit Unterlagen für Schüler und Lehrer</li>
+      </ul>
+      <p><b>Komponenten</b></p>
+      <ul>
+        <li>Genuino UNO</li>
+        <li>Ethernet Shield (WIZnet W5500 Chipsatz) <b>oder</b> WLAN/WiFi Shield (Atmel ATWINC1500B Chipsatz)</li>
+        <li>SenseBox Shield</li>
+        <li>2GB micro SD Karte</li>
+        <li>Steckernetzteil</li>
+        <li>Batteriehalter</li>
+        <li>Halterung mit Breadboard</li>
+        <li>Set Jumper Wires</li>
+        <li>USB Kabel</li>
+      </ul>
+      <p><b>Sensoren</b></p>
+      <ul>
+        <li>VEML6070 UV Lichtsensor</li>
+        <li>TSL45315 Lichtsensor</li>
+        <li>BMP280 Luftdruck- und Temperatursensor</li>
+        <li>HDC1008 Luftfeuchtigkeitssensor- und Temperatursensor</li>
+        <li>Mikrofon mit Verstärker</li>
+        <li>Ultraschall Entfernungssensor</li>
+        <li>IR Entfernungssensor</li>
       </ul>
       <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/de/Sensoren/senseBox\" target=\"_blank\" class=\"link\">Bestellen</a></p>"
 
 osem:
   description: "<p>Die <em>openSenseMap</em> ist unsere Web-Plattform für die offenen Daten der senseBox. Jede <em>senseBox:home</em> übeträgt ihre Messdaten direkt auf diese Karte, wo sie betrachtet, analysiert und heruntergeladen werden können. Auch mit der <em>senseBox:edu</em> erfasste Daten können auf der openSenseMap angezeigt werden.</p>
       <p>Alle auf der openSenseMap veröffentlichten Daten sind Open Data unter der <a href=\"http://opendatacommons.org/licenses/pddl/summary/\" class=\"link\" target=\"_blank\">Public Domain Dedication and License 1.0</a>.</p>"
+  description_short: "<p>Die openSenseMap ist unsere Web-Plattform für die offenen Daten der senseBox. Jede senseBox:home übeträgt ihre Messdaten direkt auf diese Karte, wo sie betrachtet, analysiert und heruntergeladen werden können. Auch mit der senseBox:edu erfasste Daten können auf der openSenseMap angezeigt werden.</p>"
   link: "openSenseMap öffnen"
 
 docs:
@@ -160,7 +207,7 @@ footer:
     contact: "Kontakt"
   publications:
     header: "Publikationen"
-    docs: "Docs"
+    docs: "Dokumentation"
     thesis: "Bachelor-Arbeiten"
   partner:
     header: "Partner"

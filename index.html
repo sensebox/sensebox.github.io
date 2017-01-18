@@ -1,198 +1,87 @@
 ---
-layout: default
+layout: main
 lang: de
 id: main
 ---
 {% assign t = site.data.translations.[page.lang].main %}
-<div class="row sensebox-presentation">
-  <div class="col-lg-12 col-md-12 col-sm-12">
-    <div class="col-lg-4 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1">
-      <img class="opacity-animation" src="{{ site.baseurl | append: '/images/bild_startseite.jpg'}}" alt="senseBox Logo" style="max-width:100%">
-    </div>
-    <div class="row">
-    	<div class="col-lg-6 col-lg-offset-1">
-				<div class="row">
-					<div class="media" >
-					  <div class="col-md-12" style="font-size: 1.25em;">
-					    {{ t.header }}
-					  </div>
-					</div>
-				</div>
-    		<div class="row info-panel">
-    			<div class="col-lg-6 col-md-6 col-sm-6">
-    				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
-    				  <div class="panel panel-default">
-    				    <div class="panel-heading" role="tab" id="headingOne">
-    				      <h3 class="panel-title">
-    				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseTemperature" aria-expanded="false" aria-controls="collapseTemperature" title="Temperatur aufklappen">
-    				          {{ t.info.temperature.header}}
-    				        </a>
-    				      </h3>
-    				    </div>
-    				    <div id="collapseTemperature" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-    				      <div class="panel-body">
-    				        <ul>
-    				          <li>{{ t.info.temperature.fact1 }}</li>
-    				          <li>{{ t.info.temperature.fact2 }}</li>
-    				        </ul>
-    				      </div>
-    				    </div>
-    				  </div>
-    				  <div class="panel panel-default">
-    				    <div class="panel-heading" role="tab" id="headingTwo">
-    				      <h3 class="panel-title">
-    				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseHumidity" aria-expanded="false" aria-controls="collapseHumidity" title="Luftfeuchtigkeit aufklappen">
-    				          {{ t.info.humiditiy.header }}
-    				        </a>
-    				      </h3>
-    				    </div>
-    				    <div id="collapseHumidity" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-    				      <div class="panel-body">
-    				        <ul>
-    				          <li>{{ t.info.humiditiy.fact1 }}</li>
-    				          <li>{{ t.info.humiditiy.fact2 }}</li>
-    				        </ul>
-    				      </div>
-    				    </div>
-    				  </div>
-    				  <div class="panel panel-default">
-    				    <div class="panel-heading" role="tab" id="headingThree">
-    				      <h3 class="panel-title">
-    				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapsePressure" aria-expanded="false" aria-controls="collapsePressure" title="Luftdruck aufklappen">
-    				          {{ t.info.airpressure.header }}
-    				        </a>
-    				      </h3>
-    				    </div>
-    				    <div id="collapsePressure" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-    				      <div class="panel-body">
-    				        <ul>
-    				          <li>{{ t.info.airpressure.fact1 }}</li>
-    				          <li>{{ t.info.airpressure.fact2 }}</li>
-    				        </ul>
-    				      </div>
-    				    </div>
-    				  </div>
-    				</div>
-    			</div>
-    			<div class="col-lg-6 col-md-6 col-sm-6">
-    				<div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="false">
-    				  <div class="panel panel-default">
-    				    <div class="panel-heading" role="tab" id="headingFour">
-    				      <h3 class="panel-title">
-    				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseLight" aria-expanded="false" aria-controls="collapseLight" title="Beleuchtungsstärke aufklappen">
-    				          {{ t.info.light.header }}
-    				        </a>
-    				      </h3>
-    				    </div>
-    				    <div id="collapseLight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-    				      <div class="panel-body">
-    				        <ul>
-    				          <li>{{ t.info.light.fact1 }}</li>
-    				          <li>{{ t.info.light.fact2 }}</li>
-    				        </ul>
-    				      </div>
-    				    </div>
-    				  </div>
-    				  <div class="panel panel-default">
-    				    <div class="panel-heading" role="tab" id="headingFive">
-    				      <h3 class="panel-title">
-    				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseUV" aria-expanded="false" aria-controls="collapseUV" title="UV(A)-Intensität aufklappen">
-    				          {{ t.info.uav.header }}
-    				        </a>
-    				      </h3>
-    				    </div>
-    				    <div id="collapseUV" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-    				      <div class="panel-body">
-    				        <ul>
-    				          <li>{{ t.info.uav.fact1 }}</li>
-    				          <li>{{ t.info.uav.fact2 }}</li>
-    				        </ul>
-    				      </div>
-    				    </div>
-    				  </div>
-    				  <div class="panel panel-default">
-    				    <div class="panel-heading" role="tab" id="headingSix">
-    				      <h3 class="panel-title">
-    				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion,#accordion1" href="#collapseMore" aria-expanded="false" aria-controls="collapseMore" title="weitere Phänomene aufklappen">
-    				          {{ t.info.more.header }}
-    				        </a>
-    				      </h3>
-    				    </div>
-    				    <div id="collapseMore" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-    				      <div class="panel-body">
-    				        <ul>
-    				          <li>{{ t.info.more.fact1 }}</li>
-    				          <li>{{ t.info.more.fact2 }}</li>
-    				          <li>{{ t.info.more.fact3 }}</li>
-    				        </ul>
-    				      </div>
-    				    </div>
-    				  </div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </div>
-  </div>
-</div>
 
+    <div class="marketing">
 
-<!-- Text -->
-<div class="row">
-
-
-    <!-- Sidebar -->
-    <div class="col-lg-4 col-md-4 col-sm-4 sidebar">
-
-    </div>
-
-    <!-- Content -->
-    <div class="col-lg-8 col-md-8 col-sm-8">
-			{{ t.text }}
-      <br />
-      <hr />
+      <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-md-6" style="text-align: center;">
-          <a href="{{ site.baseurl | append: '/hackathon'}}" target="_self">
-            <h3>Hackathon 2016</h3>
-            <img class="media-object" style="width:200px;height:200px;display: block;margin: 0 auto;" src="{{ site.baseurl | append: '/images/codeweekwinner.jpg'}}" alt="Code Week Winner Logo">
-          </a>
-        </div>
-        <div class="col-md-6" style="text-align: center;">
-          <a href="http://www.buergerschaffenwissen.de/mitmachen/forscherteam2016" target="_self">
-            <h3>Wir sind das Forscherteam des Jahres 2016!</h3>
-            <img class="media-object" style="width:200px;height:200px;display: block;margin: 0 auto;" src="{{ site.baseurl | append: '/images/16_BsW_Forscherteam_Einklinker.png'}}" alt="Forscherteam des Jahres 2016">
-          </a>
-        </div>
+          <div class="col-lg-4">
+              <img src="{{ site.baseurl | append: "/images/flaticon/svg/brain.svg" }}" alt="Generic placeholder image" width="140" height="140">
+              <h2>senseBox:home</h2>
+              <p>{{ t.home_info }}</p>
+              <p><a class="btn btn-default" href="{{ site.baseurl | append: "/" | append: page.lang | append: "/products" }}" role="button">Mehr Infos &raquo;</a></p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+              <img src="{{ site.baseurl | append: "/images/flaticon/svg/desktop.svg" }}" alt="Generic placeholder image" width="140" height="140">
+              <h2>senseBox:edu</h2>
+              <p>{{ t.edu_info }}</p>
+              <p><a class="btn btn-default" href="{{ site.baseurl | append: "/" | append: page.lang | append: "/products" }}" role="button">Mehr Infos &raquo;</a></p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+              <img src="{{ site.baseurl | append: "/images/flaticon/svg/location.svg" }}" alt="Generic placeholder image" width="140" height="140">
+              <h2>openSenseMap</h2>
+              <p>{{ t.edu_info }}</p>
+              <p><a class="btn btn-default" href="{{ site.baseurl | append: "/" | append: page.lang | append: "/osem" }}" role="button">Mehr Infos &raquo;</a></p>
+          </div>
+          <!-- /.col-lg-4 -->
       </div>
-      <hr />
+      <!-- /.row -->
 
-      <!-- Events -->
-      <h1>{{ t.upcoming_events }}</h1>
-      {% assign events = site.events | sort: 'ending-date' %}
-      {% for event in events %}
-        {% include event_template.html event=event %}
-      {% endfor %}
-      <!-- TODO: list past, currently running and upcomung events    -->
+        <h1 style="text-align: center;">Partner</h1>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row sponsor">
+            <ul>
+              <li>
+                <a href="http://www.gi-at-school.de" target="_blank">
+                  <img src="{{ site.baseurl | append: "/images/sponsors/giatschool.png" }}" alt="giatschool Logo">
+                </a>
+              </li>
+              <li>
+                <a href="https://ifgi.uni-muenster.de" target="_blank">
+                  <img src="{{ site.baseurl | append: "/images/sponsors/ifgi.png" }}" alt="ifgi Logo">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.uni-muenster.de/" target="_blank">
+                  <img src="{{ site.baseurl | append: "/images/sponsors/wwu.png" }}" alt="wwu Logo">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.wissenschaftsjahr-zukunftsstadt.de/" target="_blank">
+                  <img src="{{ site.baseurl | append: "/images/sponsors/zukunftsstadt.png" }}" alt="zukunftsstadt Logo">
+                </a>
+              </li>
+              <li>
+                <a href="http://www.photonik-campus.de/make-light/" target="_blank">
+                  <img src="{{ site.baseurl | append: "/images/sponsors/make-light.png" }}" alt="make light Logo">
+                </a>
+              </li>
+            </ul>
+            </div>
+          </div>
+        </div>
 
-      <hr />
-      <h1>{{ t.news }}</h1>
-      <div class="row">
-        <div class="col-md-6">
-          <a class="twitter-timeline" data-lang="de" data-height="650" data-theme="light" data-link-color="#4EAF47" href="https://twitter.com/SenseBox_De">Tweets by SenseBox_De</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="row badges">
+            <div class="col-lg-6">
+                <img src="{{ site.baseurl | append: "/images/badges/forscherteam.png" }}" alt="Generic placeholder image" width="140" height="140">
+            </div>
+            <div class="col-lg-6">
+                <img src="{{ site.baseurl | append: "/images/badges/codeweekwinner.jpg" }}" alt="Generic placeholder image" width="140" height="140">
+            </div>
         </div>
-        <div class="col-md-6">
-          <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.6";
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-            <div class="fb-page" data-href="https://www.facebook.com/sensebox.de" data-tabs="timeline" data-height="650" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/sensebox.de" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/sensebox.de">senseBox</a></blockquote></div>
-        </div>
-      </div>
+        <!-- /.row -->
+
+        <a class="twitter-timeline" data-lang="de" data-height="650" data-theme="light" data-link-color="#4EAF47" href="https://twitter.com/SenseBox_De">Tweets by SenseBox_De</a>
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+
     </div>
-  </div>
-</div>
