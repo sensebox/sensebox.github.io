@@ -178,6 +178,8 @@ materials:
   header: "Materialien"
   logos: "Logos"
   flyer: "Flyer"
+  spellingNotice: "Der Name der senseBox fängt bewusst mit einem kleinen s an."
+
 
 contact:
   legalnotice: "Impressum"

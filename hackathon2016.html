@@ -119,7 +119,7 @@ translationAvailable: false
 -->
   <div class="col-lg-4 col-sm-6">
 
-    <div class="card" style="cursor: pointer;">
+    <div class="card" style="cursor: pointer;" data-toggle="collapse" data-target="#teamVideo_{{ team.position }}">
         <canvas class="header-bg" width="250" id="header-blur" style='background-image: url({{ site.baseurl | append: team.bgImage }});'></canvas>
         <div class="avatar">
             <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/sensebox_logo_raute.png" alt="{{ team.name }} - Foto"/>
@@ -129,6 +129,9 @@ translationAvailable: false
           <h5 style="clear:both"></h5>
           <div id="teamdesc_{{ team.position }}">
             {{ team.description }}
+          </div>
+          <div id="teamVideo_{{ team.position }}" class="collapse">
+            <iframe width="100%" height="200px" src="{{ team.video }}" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
     </div>

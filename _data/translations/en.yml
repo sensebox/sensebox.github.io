@@ -165,6 +165,7 @@ materials:
   header: "Materials"
   logos: "Logos"
   flyer: "Flyer"
+  spellingNotice: "Please note the name of the senseBox is spelt with a leading lowercase s. This is intentional."
 
 contact:
   legalnotice: "Legal notice"
