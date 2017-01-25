@@ -549,11 +549,11 @@ article.post-content img {
 
 .card .header-bg {
   /* This stretches the canvas across the entire hero unit */
-  position: absolute;
+  //position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 180px;
+  height: 300px;
   background-size: 100% auto;
   background-repeat: no-repeat;
   border-bottom: 1px #FFF solid;
@@ -867,15 +867,15 @@ background: linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
 }
 
 .background-gradient-main {
-    background: #4b6cb7;
+    background: #3851b8;
     /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #4b6cb7 0%, #182848 100%);
+    background: -moz-linear-gradient(-45deg, #b8d0a0 0%, #3851b8 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #4b6cb7 0%, #182848 100%);
+    background: -webkit-linear-gradient(-45deg, #b8d0a0 0%, #3851b8 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
+    background: linear-gradient(135deg, #b8d0a0 0%, #3851b8 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b6cb7', endColorstr='#182848', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8d0a0', endColorstr='#3851b8', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
 }
 
