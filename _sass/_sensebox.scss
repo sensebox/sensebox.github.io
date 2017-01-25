@@ -807,7 +807,7 @@ ul li {
 /* Carousel base class */
 
 .carousel {
-    height: 500px;
+    height: 450px;
     margin-bottom: 60px;
 }
 
@@ -828,7 +828,7 @@ ul li {
 /* Declare heights because of positioning of img element */
 
 .carousel .item {
-    height: 500px;
+    height: 450px;
     background-color: #777;
 }
 
@@ -1043,4 +1043,10 @@ background: linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .inside-carousel-container {
+    width: initial;
+  }
 }
