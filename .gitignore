@@ -5,3 +5,5 @@ _posts
 news
 
 .DS_Store
+Gemfile.lock
+
