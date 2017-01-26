@@ -4,6 +4,5 @@ _site
 _posts
 news
 
-.DS_Store
+**/.DS_Store
 Gemfile.lock
-
