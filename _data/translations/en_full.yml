@@ -31,8 +31,8 @@ footer:
     header: "Partner"
 
 main:
-  header: "<p>The <b>senseBox</b> is a do-it-yourself kit for stationary and mobile sensor stations –  the <b>Citizen Science</b> Toolkit.</p>"
-  text: "<p>With <em>senseBox</em> , citizens and schools are able to collect environmental data using sensors for climate (weather, air quality), transport (traffic density or noise pollution) and many more phenomena to find out more about the environment.</p>
+  header: "<p>The <em>senseBox</em> is a do-it-yourself kit for stationary and mobile sensor stations –  the <em>Citizen Science</em> Toolkit.</p>"
+  text: "<p>With <em>senseBox</em>, citizens and schools are able to collect environmental data using sensors for climate (weather, air quality), transport (traffic density or noise pollution) and many more phenomena to find out more about the environment.</p>
 
       <p>The data collected may be published as open data on the <a href=\"http://www.sensebox.de/en/osem\" class=\"link\">openSenseMap</a>.</p>
 
@@ -115,7 +115,7 @@ Furthermore the sensor stations are connected to the Internet, where the measure
       <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/en/Sensors/senseBox\" target=\"_blank\" class=\"link\">place your order here</a></p>"
 
 osem:
-  description: "<p><em>openSenseMap</em> is our platform for the publishing of senseBox and other open sensor data. Each <em>senseBox:home</em> transmits its measurements directly to the map, where anyone can observe, analyze and download the data. Measurements obtained with the <em>senseBox:edu</em>can also be displayed on openSenseMap.</p>
+  description: "<p><em>openSenseMap</em> is our platform for publication of senseBox and other sensor data. Each <em>senseBox:home</em> transmits its measurements directly to the map, where anyone can observe, analyze and download the data. Measurements obtained with the <em>senseBox:edu</em> can be displayed on openSenseMap as well.</p>
       <p>All data published on openSenseMap is available as Open Data under the <a href=\"http://opendatacommons.org/licenses/pddl/summary/\" class=\"link\" target=\"_blank\">Public Domain Dedication and License 1.0</a>.</p>"
   description_short: "<p>openSenseMap is our platform for the publishing of senseBox and other open sensor data. Each senseBox:home transmits its measurements directly to the map, where anyone can observe, analyze and download the data. Measurements obtained with the senseBox:educan also be displayed on openSenseMap.</p>"
   link: "open openSenseMap »"
@@ -125,6 +125,7 @@ docs:
   instructions:
     header: "Instructions & Documentation"
     content: "The sourcecode of these documentational resources is available in our <a href=\"https://github.com/sensebox/books\" target=\"_blank\" class=\"link\"><img src=\"/images/iconmonstr-github-icon.png\"> Github Repository</a>."
+    commenthint: "If you find errors or improvements in the documentation, please leave a comment by clicking the <code style=\"box-sizing: border-box\">+</code>-button on the right-hand side of the respective paragraph!"
   pictures:
     header: "Photos"
   flyer:
