@@ -5,3 +5,5 @@ news
 
 **/.DS_Store
 Gemfile.lock
+
+s3_website.yml
