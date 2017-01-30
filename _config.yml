@@ -36,7 +36,7 @@ collections:
   - awards
   - awards_en
   - events
-  - blog_entries
+  - posts
 
 gems:
   - jekyll-redirect-from

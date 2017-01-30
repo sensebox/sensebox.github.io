@@ -2,14 +2,9 @@
 layout: default
 ---
 <div class="row">
-  <div class="col-lg-12 col-md-12 col-sm-12 posts">
-
-    <!-- Sidebar -->
-    <div class="col-lg-4 col-md-4 col-sm-4 sidebar">
-    </div>
 
     <!-- News Bereich / Blogeinträge -->
-    <div class="col-lg-7 col-md-7 col-sm-7 posts">
+    <div class="col-lg-12 col-md-12 col-sm-12 posts">
       <div class="page-header">
         <h1>{{ page.title }} <small> - {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</small></h1>
       </div>
@@ -63,4 +58,3 @@ layout: default
       </article>
     </div>
   </div>
-</div>

@@ -1,7 +1,6 @@
 _site
 .sass-cache
 
-_posts
 news
 
 **/.DS_Store
