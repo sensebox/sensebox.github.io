@@ -14,7 +14,7 @@ id: products
 {{ t.introduction }}
 
 
-<div class="row">
+<!-- <div class="row">
     <div class="col-lg-6">
         <div class="product-img">
           <img class="responsive-img" src="{{ site.baseurl | append: "/images/instructions_home_bg.jpg" }}" alt="senseBox Home Foto" />
@@ -36,4 +36,102 @@ id: products
             {{ t.edu.description }}
         </div>
     </div>
-</div>
+</div> -->
+<div class="table-responsive">
+  <table class="table table-striped product-table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>
+          <div class="product-img">
+            <img class="responsive-img" src="{{ site.baseurl | append: "/images/instructions_home_bg.jpg" }}" alt="senseBox Home Foto" />
+          </div>
+          <!-- <div class="product-text">
+              <div class="product-name">
+                <h3><b>senseBox:</b>home</h3></div>
+          </div> -->
+        </th>
+        <th>
+          <div class="product-img">
+            <img class="responsive-img" src="{{ site.baseurl | append: "/images/instructions_edu_bg.jpg" }}" alt="senseBox Home Foto" />
+          </div>
+          <!-- <div class="product-text">
+              <div class="product-name">
+                <h3><b>senseBox:</b>edu</h3></div>
+          </div> -->
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+
+        </td>
+        <td>
+          <h3><b>senseBox:</b>home</h3>
+        </td>
+        <td>
+          <h3><b>senseBox:</b>edu</h3>
+        </td>
+      </tr>
+      <!-- <tr>
+        <td>Beschreibung</td>
+        <td>Einsteigerset unserer Citizen Science Kampagne. Die senseBox:home wird einmalig zusammengebaut und auf der openSenseMap registriert. Danach werden aktuelle Messungen der Station an einem festen Standort live auf der <a href="http://www.sensebox.de/de/osem" class="link">openSenseMap</a> dargestellt und veröffentlicht.</td>
+        <td>Mit der senseBox:edu bieten wir Schülern und Nachwuchsforschern ab der 7. Klasse die Möglichkeit, das Programmieren auf eine spielerische Art und Weise zu erlernen, sich als Citizen Scientist zu betätigen und die Welt der Geoinformatik kennen zu lernen. In höheren Klassenstufen lassen sich Projekte zum Thema Umweltsensorik in Kursen oder AGs umsetzen, in dem Umweltmessstationen zusammengebaut, programmiert und aufgestellt werden. Weiterhin können diese Stationen mit dem Internet verbunden und ihre Messungen auf der <a href="http://www.sensebox.de/de/osem" class="link">openSenseMap</a> publiziert werden. So lassen sich Daten offen mit anderen Schulen, Bürgerinnen und Bürgern oder Wissenschaftlern teilen.</td>
+      </tr> -->
+      <tr>
+        <td>Sensoren</td>
+        <td>
+          <ul>
+            <li>VEML6070 UV Lichtsensor</li>
+            <li>TSL45315 Lichtsensor</li>
+            <li>BMP280 Luftdruck- und Temperatursensor</li>
+            <li>HDC1008 Luftfeuchtigkeitssensor- und Temperatursensor</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>VEML6070 UV Lichtsensor</li>
+            <li>TSL45315 Lichtsensor</li>
+            <li>BMP280 Luftdruck- und Temperatursensor</li>
+            <li>HDC1008 Luftfeuchtigkeitssensor- und Temperatursensor</li>
+            <li>Mikrofon mit Verstärker</li>
+            <li>Ultraschall Entfernungssensor</li>
+            <li>IR Entfernungssensor</li>
+          <ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Komponenten</td>
+        <td>
+          <ul>
+            <li>Genuino UNO</li>
+            <li>Ethernet Shield (WIZnet W5500 Chipsatz) <b>oder</b> WLAN/WiFi Shield (Atmel ATWINC1500B Chipsatz)</li>
+            <li>senseBox Shield</li>
+            <li>Steckernetzteil</li>
+            <li>senseBox Kabel (3x100mm, 1x200mm)</li>
+            <li>USB Kabel</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Genuino UNO</li>
+            <li>Ethernet Shield (WIZnet W5500 Chipsatz) <b>oder</b> WLAN/WiFi Shield (Atmel ATWINC1500B Chipsatz)</li>
+            <li>senseBox Shield</li>
+            <li>2GB micro SD Karte</li>
+            <li>Steckernetzteil</li>
+            <li>Batteriehalter</li>
+            <li>Halterung mit Breadboard</li>
+            <li>Set Jumper Wires</li>
+            <li>USB Kabel</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Bestellen</td>
+        <td><a class="link"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a> <a href="http://www.watterott.com/de/Sensoren/senseBox" target="_blank" class="link">Bestellen</a></td>
+        <td><a class="link"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a> <a href="http://www.watterott.com/de/Sensoren/senseBox" target="_blank" class="link">Bestellen</a></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>

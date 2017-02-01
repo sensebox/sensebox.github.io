@@ -127,7 +127,7 @@ hr {
       > a {
         transition: color 0.1s;
         color: #ffffff;
-        font-size: 1.25em;
+        font-size: 1.3em;
         font-family: BrixSlab-Bold;
         background-color: transparent;
       }
@@ -627,9 +627,9 @@ article.post-content img {
   background: rgba(255,255,255,0.7);
 }
 
-ul li {
-  font-size: 1.2em;
-}
+// ul li {
+//   font-size: 1.2em;
+// }
 
 .opacity-animation-fast {
   position: relative;
@@ -1050,3 +1050,26 @@ background: linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
     width: initial;
   }
 }
+
+.navbar {
+  font-size: 1.2em;
+}
+
+.product-table {
+  font-size: 1.2em;
+}
+
+.product-table tr > td:first-child {
+  text-align: right;
+  background-color: #ededed;
+  font-weight: bold;
+  font-size: 1.1em;
+} /* first column */
+
+.product-table tr:first-child {
+  text-align: center;
+} /* first row */
+
+.product-table tr:last-child {
+  text-align: center;
+} /* last row */
