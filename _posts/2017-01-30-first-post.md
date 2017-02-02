@@ -6,6 +6,7 @@ author: Felix
 thumbnail: http://www.textfiles.com/underconstruction/CaCapeCanaveralHangar2256construction.gif
 abstract: "Humblebrag polaroid keffiyeh tbh, hot chicken jianbing af venmo cornhole sustainable four loko chia pok pok. Enamel pin raclette chia, slow-carb pork belly humblebrag DIY franzen scenester health goth copper mug knausgaard stumptown brooklyn unicorn. Man braid lo-fi tattooed, tbh truffaut hoodie ethical bitters humblebrag af unicorn."
 permalink: /2017/01/30
+lang: de
 ---
 Humblebrag polaroid keffiyeh tbh, hot chicken jianbing af venmo cornhole sustainable four loko chia pok pok. Enamel pin raclette chia, slow-carb pork belly humblebrag DIY franzen scenester health goth copper mug knausgaard stumptown brooklyn unicorn. Man braid lo-fi tattooed, tbh truffaut hoodie ethical bitters humblebrag af unicorn. 8-bit thundercats irony jean shorts four loko, ethical bicycle rights copper mug. Disrupt pickled before they sold out church-key, hoodie hell of whatever coloring book succulents lo-fi plaid. Small batch yuccie literally synth, hoodie pinterest ethical bitters health goth. Franzen mumblecore street art blue bottle, mlkshk tumblr pug tilde sriracha photo booth salvia vinyl cornhole la croix listicle.
 
