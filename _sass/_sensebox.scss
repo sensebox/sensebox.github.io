@@ -709,16 +709,6 @@ article.post-content img {
   text-align:center;
   padding:30px;
 }
-.event .icon {
-  margin-right: 5px;
-}
-.event {
-  margin-top: 2px;
-  font-size: 1.2em;
-}
-.event .date {
-  color: #111;
-}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -1073,3 +1063,26 @@ background: linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
 .product-table tr:last-child {
   text-align: center;
 } /* last row */
+
+.event {
+  margin-bottom: 30px;
+}
+.event-time {
+  margin-right: 55px;
+}
+
+.event-time > hr {
+  margin: 0;
+}
+
+.event-time > .start {
+  margin-bottom: 10px;
+}
+
+.event-time > .end {
+  margin-top: 10px;
+}
+
+.event-title {
+  margin: 0;
+}

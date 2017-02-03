@@ -33,6 +33,36 @@ id: main
       </div>
       <!-- /.row -->
 
+      <hr />
+
+      <h1 style="text-align: center;">Anstehende Events</h1>
+        {% assign events = site.events | sort: 'ending-date' %}
+        {% for event in events %}
+          <div class="row event">
+            <div class="col-md-3 col-sm-3">
+              <div class="event-time">
+                <p class="start">{{ event.starting-date | date: '%d.%m.%Y' }}</p>
+                <hr />
+                {% if include.event.starting-date == include.event.ending-date %}
+                  <p class="end">ALL DAY</p>
+                {% else %}
+                  <p class="end">{{ event.ending-date | date: '%d.%m.%Y' }}</p>
+                {% endif %}
+              </div>
+            </div>
+
+            <div class="col-md-9 col-sm-9">
+              <h3 class="event-title"> {{ event.title }}</h2>
+              <p class="desc"><img src='{{ include.site.baseurl | append: "/images/iconmonstr-location-1.svg" }}' class="event-icon" />
+                {{ event.place }}</p>
+            </div>
+          </div>
+        {% endfor %}
+
+      <br />
+      <hr />
+
+
         <h1 style="text-align: center;">Partner</h1>
         <div class="row">
           <div class="col-lg-12">
