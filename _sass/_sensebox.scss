@@ -1086,3 +1086,20 @@ background: linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
 .event-title {
   margin: 0;
 }
+
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #4eaf47;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  border: solid #4eaf47 2px;
+  text-decoration: none;
+  background: none;
+}
+
+.btn:hover {
+  background: rgba(#cadecb, 0.44);
+  text-decoration: none;
+}
