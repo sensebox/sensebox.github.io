@@ -1103,3 +1103,16 @@ background: linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
   background: rgba(#cadecb, 0.44);
   text-decoration: none;
 }
+
+.header-btn {
+  color: #ffffff;
+  border: solid #ffffff 2px;
+}
+
+.header-btn:hover {
+  background: rgba(#ffffff, 0.2);
+}
+
+.header-info {
+  text-align: center;
+}
