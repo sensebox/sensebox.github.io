@@ -133,7 +133,7 @@ osem:
   description: "<p>Die <em>openSenseMap</em> ist unsere Web-Plattform für die offenen Daten der senseBox. Jede <em>senseBox:home</em> übeträgt ihre Messdaten direkt auf diese Karte, wo sie betrachtet, analysiert und heruntergeladen werden können. Auch mit der <em>senseBox:edu</em> erfasste Daten können auf der openSenseMap angezeigt werden.</p>
       <p>Alle auf der openSenseMap veröffentlichten Daten sind Open Data unter der <a href=\"http://opendatacommons.org/licenses/pddl/summary/\" class=\"link\" target=\"_blank\">Public Domain Dedication and License 1.0</a>.</p>"
   description_short: "<p>Die <b>openSenseMap</b> ist unsere Web-Plattform für die offenen Daten der senseBox.</p>"
-  link: "openSenseMap öffnen"
+  link: "zur openSenseMap »"
 
 docs:
   description: "Hier finden sie die gesamte Dokumentation rund um die senseBox. Alle hier befindlichen Anleitungen sind Open Educational Resources (OER) unter der Creative Commons Lizenz <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">CC BY SA 4.0</a>. Bestehende Texte können so nach und nach von der kreativen Gemeinschaft weiterentwickelt, sowie durch neue Experimente oder Projekte erweitert werden."
