@@ -6,12 +6,11 @@ lang: de
 ---
 {% assign t = site.data.translations.[page.lang].materials %}
 <div class="page-header">
-  <h1>{{ t.header }}</h1>
+  <h1>{{ t.header }} & Leitfäden</h1>
 </div>
-<h2>{{ t.spellingNotice }}</h2>
-<hr>
 <h2>{{ t.logos }}</h2>
 <div class="row">
+  <h3>PNG</h3>
   <div class="col-md-5">
     <h4>senseBox Logo (1694 × 492)</h4>
   </div>
@@ -33,6 +32,7 @@ lang: de
   </div>
 </div>
 <div class="row">
+    <h3>SVG</h3>
   <div class="col-md-5">
     <h4>senseBox Wort und Logo SVG</h4>
   </div>
@@ -52,6 +52,61 @@ lang: de
     </a>
   </div>
 </div>
+<h2>Name</h2>
+<p>{{ t.spellingNotice }}</p>
+<div class="row" style="text-align: center;">
+  <div class="col-md-4">
+    <p>
+      <img src='{{ site.baseurl | append: "/images/success.svg" }}' alt="senseBox Logo" style="height:30px;">
+      <span>senseBox</span>
+    </p>
+  </div>
+  <div class="col-md-4">
+    <p>
+      <img src='{{ site.baseurl | append: "/images/error.svg" }}' alt="senseBox Logo" style="height:30px;">
+      <span>sensebox</span>
+    </p>
+  </div>
+  <div class="col-md-4">
+    <p>
+      <img src='{{ site.baseurl | append: "/images/error.svg" }}' alt="senseBox Logo" style="height:30px;">
+      <span>Sense box</span>
+    </p>
+  </div>
+</div>
+<div class="row" style="text-align: center;">
+  <div class="col-md-4">
+    <p>
+      <img src='{{ site.baseurl | append: "/images/error.svg" }}' alt="senseBox Logo" style="height:30px;">
+      <span>SenseBox</span>
+    </p>
+  </div>
+  <div class="col-md-4">
+    <p>
+      <img src='{{ site.baseurl | append: "/images/error.svg" }}' alt="senseBox Logo" style="height:30px;">
+      <span>Sensebox</span>
+    </p>
+  </div>
+  <div class="col-md-4">
+    <p>
+      <img src='{{ site.baseurl | append: "/images/error.svg" }}' alt="senseBox Logo" style="height:30px;">
+      <span>Sense Box</span>
+    </p>
+  </div>
+</div>
+<h2>Farben</h2>
+<p>Das senseBox Grün hat folgende Farbwerte</p>
+<ul>
+  <li>
+    HEX <code>#4EAF47</code>
+  </li>
+  <li>
+    RGB <code>rgb(78, 175, 71)</code>
+  </li>
+  <li>
+    CMYK <code>cmyk(55%, 0%, 59%, 31%)</code>
+  </li>
+</ul>
 <h2>{{ t.flyer }}</h2>
 <a href="/docs/flyer/senseBox_edu_Anleitung_deutsch.pdf" target="_blank" class="hvr-underline-from-left"><h4>senseBox:edu Flyer</h4></a>
 <br>
