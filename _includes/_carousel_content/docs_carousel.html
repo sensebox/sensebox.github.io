@@ -1,5 +1,18 @@
+{% assign t = site.data.translations.[page.lang].main %}
 <div class="item active">
-    <div class="carousel-background background-gradient">
-      <img src="{{ site.baseurl | append: '/images/IMG_7128.jpg' }}" style="min-height:100%; min-width:100%" />
-    </div>
+  <div class="carousel-container background-gradient-products">
+      <div class="container inside-carousel-container">
+          <div class="row header-info">
+              <div class="col-md-4">
+                <a class="btn header-btn" href="//sensebox.de/books/edu/{{ page.lang }}" role="button">senseBox:edu Book &raquo;</a>
+              </div>
+              <div class="col-md-4">
+                <a class="btn header-btn" href="//sensebox.de/books/home/{{ page.lang }}" role="button">senseBox:home Book &raquo;</a>
+              </div>
+              <div class="col-md-4">
+                <a class="btn header-btn" href="//sensebox.de/books/osem/{{ page.lang }}" role="button">opensensemap API &raquo;</a>
+              </div>
+          </div>
+      </div>
+  </div>
 </div>
