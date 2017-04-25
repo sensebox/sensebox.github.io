@@ -887,9 +887,15 @@ background: linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e6629', endColorstr='#6aa6d1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-.background-gradient-docs {
-    background-image: url('/images/IMG_7128.jpg');
+.background-gradient-books {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2b7700+0,b59f26+100 */
+  background: #2b7700; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #2b7700 0%, #DBD52E 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #2b7700 0%,#DBD52E 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #2b7700 0%,#DBD52E 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b7700', endColorstr='#DBD52E',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
 
 .vcenter {
     display: inline-block;
