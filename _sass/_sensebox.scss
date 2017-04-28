@@ -913,6 +913,15 @@ background: linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#321770', endColorstr='#009e79',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+.background-gradient-awards {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#820202+0,19ffe0+100 */
+  background: #820202; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #820202 0%, #19ffe0 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #820202 0%,#19ffe0 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #820202 0%,#19ffe0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#820202', endColorstr='#19ffe0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
 .vcenter {
     display: inline-block;
     vertical-align: middle;

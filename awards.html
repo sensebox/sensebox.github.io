@@ -6,7 +6,7 @@ permalink: /de/awards/
 lang: de
 ---
 
-<h1>Förderungen</h1>
+<h1 id="grants">Förderungen</h1>
 {% assign awardslist = site.awards | sort: 'weight' %}
 {% for award in awardslist %}
   {% if award.type == 'grant' %}
@@ -34,7 +34,7 @@ lang: de
   {% endif %}
 {% endfor %}
 
-<h1>Preise</h1>
+<h1 id="awards">Preise</h1>
 {% assign awardslist = site.awards | sort: 'weight' %}
 {% for award in awardslist %}
   {% if award.type == 'award' %}
