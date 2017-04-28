@@ -464,9 +464,17 @@ em {
   min-height: 240px;
 }
 
-.responsive-img {
-  max-width: 100%;
+@media (min-width: 768px) {
+  .responsive-img {
+    max-width: 100%;
+  }
 }
+@media (max-width: 767px) {
+  .responsive-img {
+    max-width: 300px;
+  }
+}
+
 
 .product-name {
   background-color: $sensebox-green;
