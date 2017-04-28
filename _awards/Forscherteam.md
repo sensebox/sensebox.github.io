@@ -5,6 +5,7 @@ weight:   1
 thumbnail: /images/awards/buergerschaffenwissen_logo.png
 type: award
 categories: award
+year: 2016
 ---
 "Wie ist das Entsorgungsverhalten in der Stadt und auf dem Land? Welche Mülltonnen werden wie stark genutzt? Und wie lange dauert es bis Müll über die Flüsse ins offene Meer transportiert wird?
 

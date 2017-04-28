@@ -35,7 +35,7 @@ lang: de
 {% endfor %}
 
 <h1 id="awards">Preise</h1>
-{% assign awardslist = site.awards | sort: 'weight' %}
+{% assign awardslist = site.awards | sort: 'year' | reverse %}
 {% for award in awardslist %}
   {% if award.type == 'award' %}
   <div class="posts">
