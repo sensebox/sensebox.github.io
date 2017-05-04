@@ -1,11 +1,11 @@
-{% assign t = site.data.translations.[page.lang].main %}
+{% assign t = site.data.translations.[page.lang].docs %}
 <div class="item active">
   <div class="carousel-container background-gradient-books">
       <div class="container inside-carousel-container">
         <div class="header-info">
           <h1 style="color:white">Books</h1>
           <p>
-            Hier finden sie die gesamte Dokumentation rund um die senseBox
+            {{ t.description-short }}
           </p>
           <div class="row">
               <div class="col-md-4">

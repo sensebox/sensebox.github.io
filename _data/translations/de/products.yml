@@ -1,3 +1,10 @@
+products: "Produkte"
+
+header-introduction: "Von der senseBox gibt es zwei Varianten: die <b>senseBox:home</b> und die <b>senseBox:edu</b>. Die <b>senseBox:home</b> ist ein Plug and Play Bausatz und kann ohne Vorkentnisse betrieben werden. Die <b>senseBox:edu</b> wurde speziell für den Einsatz
+  im Schulunterricht entwickelt"
+
+to-senseBox-overwiew: "zur senseBox Übersicht &raquo;"
+
 introduction: "<p>Von der senseBox gibt es zwei Varianten: <br>
     die <em>senseBox:home</em> und die <em>senseBox:edu</em>.</p>
 
@@ -64,9 +71,36 @@ edu:
       <li>VEML6070 UV Lichtsensor</li>
       <li>TSL45315 Lichtsensor</li>
       <li>BMP280 Luftdruck- und Temperatursensor</li>
-      <li>HDC1008 Luftfeuchtigkeitssensor- und Temperatursensor</li>
+      <li>HDC1008 Luftfeuchtigkeits- und Temperatursensor</li>
       <li>Mikrofon mit Verstärker</li>
       <li>Ultraschall Entfernungssensor</li>
       <li>IR Entfernungssensor</li>
     </ul>
     <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/de/Sensoren/senseBox\" target=\"_blank\" class=\"link\">Bestellen</a></p>"
+
+sensors:
+  header: "Sensoren"
+  uv-light: "VEML6070 UV Lichtsensor"
+  light: "TSL45315 Lichtsensor"
+  barometric-pressure: "BMP280 Luftdruck- und Temperatursensor"
+  temperature: "HDC1008 Luftfeuchtigkeits- und Temperatursensor"
+  microphone: "Mikrofon mit Verstärker"
+  ultrasonic: "Ultraschall Entfernungssensor"
+  ir: "IR Entfernungssensor"
+components:
+  header: "Komponenten"
+  arduino: "Genuino UNO"
+  internet: "Ethernet Shield (WIZnet W5500 Chipsatz) <b>oder</b> WLAN/WiFi Shield (Atmel ATWINC1500B Chipsatz)"
+  senseBox-shield: "senseBox Shield"
+  power-plug: "9V Steckernetzteil"
+  cables: "senseBox Kabel (3x100mm, 1x200mm)"
+  usb: "USB Kabel"
+  microSD: "2GB microSD Karte"
+  battery: "Batteriehalter"
+  breadboard: "Breadboard"
+  wires: "Jumper Wires"
+
+order:
+  header: "Bestellen"
+  home: "senseBox:home bestellen"
+  edu: "senseBox:edu bestellen"

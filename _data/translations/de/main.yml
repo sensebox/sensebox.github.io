@@ -10,7 +10,7 @@ text:      "<p>Mit der <em>senseBox</em> können Bürger und Schulen <i>Umweltda
     <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span><a> </a><a href=\"http://www.sensebox.de/de/products\" class=\"link\">mehr Informationen und bestellen</a></span></a></p>"
 home_info: "Die Bürger können mit der senseBox:home ihre eigenen lokalen Forschungsfragen stellen und die nötigen Daten selbst sammeln und sammeln lassen."
 edu_info:  "Für Schulen und Nachwuchsforscher gibt es die senseBox:edu als Experementierkasten mit didaktischen Konzepten, Anleitungen und Projektideen."
-osem_info: "Die openSenseMap ist unsere Web-Plattform für die offenen Daten der senseBox."
+osem_info: "Die openSenseMap ist unsere Web-Plattform für die offenen Daten der senseBox. Hier werden die Daten visualisiert und jeder kann Analysen durchführen."
 
 info:
   temperature:
@@ -44,3 +44,5 @@ events: "Events"
 past_events: "Vergangene Events"
 running_events: "Laufende Events"
 upcoming_events: "Anstehende Events"
+
+further-infos: "Mehr Infos"

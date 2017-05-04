@@ -1,3 +1,9 @@
+products: "Products"
+
+header-introduction: "There are two versions of senseBox: <b>senseBox:home</b> and <b>senseBox:edu</b>. The <b>senseBox:home</b> is a plug and play toolkit and can be openrated without prior knowledge. The <b>senseBox:edu</b> was developed especially for school education."
+
+to-senseBox-overwiew: "senseBox overview &raquo;"
+
 introduction: "<p>There are two variations of senseBox <br>
     <em>senseBox:home</em> and <em>senseBox:edu</em>.</p>
 
@@ -10,7 +16,7 @@ introduction: "<p>There are two variations of senseBox <br>
     <p>&nbsp;</p>"
 
 home:
-  description: "<p>The <em>Citizen Science</em> kit for beginners. Once the senseBox:home is assembled and registered to openSenseMap, measurements from each sensor station will be published and displayed on the  <a href=\"http://www.sensebox.de/en/osem\" class=\"link\">openSenseMap</a> in real-time and made available as Open Data.</p>
+ description: "<p>The <em>Citizen Science</em> kit for beginners. Once the senseBox:home is assembled and registered to openSenseMap, measurements from each sensor station will be published and displayed on the  <a href=\"http://www.sensebox.de/en/osem\" class=\"link\">openSenseMap</a> in real-time and made available as Open Data.</p>
     <p><b>Features</b></p>
     <ul>
     <li>Sensors for temperature, humidity and more</li>
@@ -19,6 +25,7 @@ home:
     <li>Extendable with other sensors and arduino-compatible hardware</li>
     </ul>
     <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/en/Sensors/senseBox\" target=\"_blank\" class=\"link\">place your order here</a></p>"
+
 edu:
   description: "<p>senseBox:edu offers schools, starting from the 7th grade, the possibility to learn programming in a fun and playful environment, to be a real citizen scientist and to get to know the world of geoinformatics.
 In the upper grades it can be used for projects on environmental phenomena, where sensor stations are built, programmed and positioned by the students.
@@ -31,3 +38,30 @@ Furthermore the sensor stations are connected to the Internet, where the measure
     <li>Learning units organized in a wiki</li>
     </ul>
     <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/en/Sensors/senseBox\" target=\"_blank\" class=\"link\">place your order here</a></p>"
+
+sensors:
+  header: "Sensors"
+  uv-light: "VEML6070 UV Sensor"
+  light: "TSL45315 Ambient Light Sensor"
+  barometric-pressure: "BMP280 Barometric Pressure + Temperature"
+  temperature: "HDC1008 Temperature + Humidity Sensor"
+  microphone: "Microphone with amplifier"
+  ultrasonic: "Ultrasonic Distance Sensor"
+  ir: "Infrared Distance Sensor"
+components:
+  header: "Components"
+  arduino: "Genuino UNO"
+  internet: "Ethernet Shield (WIZnet W5500 Chipset) <b>or</b> WLAN/WiFi Shield (Atmel ATWINC1500B Chipset)"
+  senseBox-shield: "senseBox Shield"
+  power-plug: "9V power plug"
+  cables: "senseBox cables (3x100mm, 1x200mm)"
+  usb: "USB cable"
+  microSD: "2GB microSD card"
+  battery: "Battery Holder"
+  breadboard: "Breadboard"
+  wires: "Jumper Wires"
+
+order:
+  header: "Order"
+  home: "Order senseBox:home"
+  edu: "Order senseBox:edu"

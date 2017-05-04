@@ -1,5 +1,10 @@
-<h1 id="grants">Förderungen</h1>
-{% assign awardslist = site.awards | sort: 'weight' %}
+{% assign t = site.data.translations.[page.lang].awards %}
+<h1 id="grants">{{ t.grants }}</h1>
+{% if page.lang == 'de' %}
+  {% assign awardslist = site.awards_de | sort: 'weight' %}
+{% else %}
+  {% assign awardslist = site.awards_en | sort: 'weight' %}
+{% endif %}
 {% for award in awardslist %}
   {% if award.type == 'grant' %}
   <div class="posts">
@@ -26,8 +31,13 @@
   {% endif %}
 {% endfor %}
 
-<h1 id="awards">Preise</h1>
-{% assign awardslist = site.awards | sort: 'year' | reverse %}
+<h1 id="awards">{{ t.awards }}</h1>
+{% if page.lang == 'de' %}
+  {% assign awardslist = site.awards_de | sort: 'year' | reverse %}
+{% else %}
+  {% assign awardslist = site.awards_en | sort: 'year' | reverse %}
+{% endif %}
+
 {% for award in awardslist %}
   {% if award.type == 'award' %}
   <div class="posts">

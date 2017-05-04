@@ -7,3 +7,5 @@ pictures:
 flyer:
   header: "Flyer"
   content: "<a href=\"/docs/flyer/senseBox_home_Anleitung_deutsch.pdf\" target=\"_blank\" class=\"link\">senseBox:home Flyer</a><br><a href=\"/docs/flyer/senseBox_edu_Anleitung_deutsch.pdf\" target=\"_blank\" class=\"link\">senseBox:edu Flyer</a>"
+
+description-short: "Hier finden sie die gesamte Dokumentation rund um die senseBox und openSenseMap."

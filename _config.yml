@@ -10,9 +10,6 @@ facebook_username: sensebox.de
 # Build settings
 markdown: kramdown
 
-# Blog pagination
-paginate: 5
-paginate_path: "/news/page/:num"
 
 # Extra styling
 # sass:
@@ -33,10 +30,10 @@ exclude:
 
 collections:
   - press
-  - awards
-  - awards_en
   - events
   - posts
+  - awards_de
+  - awards_en
 
 gems:
   - jekyll-redirect-from

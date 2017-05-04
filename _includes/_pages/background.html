@@ -24,7 +24,7 @@
   <a name="team"></a>
   <h2 id="team">Team</h2>
 </div>
-{% assign teammembers = site.data.team.de.members | sort: 'position' %}
+{% assign teammembers = site.data.team.[page.lang].members | sort: 'position' %}
 {% for teammember in teammembers %}
   <h3 style="clear:both">{{ teammember.name }}</h3>
   <div class="row">
