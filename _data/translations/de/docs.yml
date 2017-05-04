@@ -1,0 +1,9 @@
+description: "Hier finden sie die gesamte Dokumentation rund um die senseBox. Alle hier befindlichen Anleitungen sind Open Educational Resources (OER) unter der Creative Commons Lizenz <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">CC BY SA 4.0</a>. Bestehende Texte können so nach und nach von der kreativen Gemeinschaft weiterentwickelt, sowie durch neue Experimente oder Projekte erweitert werden."
+instructions:
+  header: "Anleitungen & Dokumentation"
+  content: "Der Quellcode dieser Dokumentationen befindet sich in unserem <a href=\"https://github.com/sensebox/books\" target=\"_blank\" class=\"link\"><img src=\"/images/iconmonstr-github-icon.png\"> Github Repository</a>."
+pictures:
+  header: "Fotos"
+flyer:
+  header: "Flyer"
+  content: "<a href=\"/docs/flyer/senseBox_home_Anleitung_deutsch.pdf\" target=\"_blank\" class=\"link\">senseBox:home Flyer</a><br><a href=\"/docs/flyer/senseBox_edu_Anleitung_deutsch.pdf\" target=\"_blank\" class=\"link\">senseBox:edu Flyer</a>"
