@@ -1,0 +1,4 @@
+description: "<p><em>openSenseMap</em> is our platform for the publishing of senseBox and other open sensor data. Each <em>senseBox:home</em> transmits its measurements directly to the map, where anyone can observe, analyze and download the data. Measurements obtained with the <em>senseBox:edu</em>can also be displayed on openSenseMap.</p>
+    <p>All data published on openSenseMap is available as Open Data under the <a href=\"http://opendatacommons.org/licenses/pddl/summary/\" class=\"link\" target=\"_blank\">Public Domain Dedication and License 1.0</a>.</p>"
+description_short: "<p>openSenseMap is our platform for the publishing of senseBox and other open sensor data. Each senseBox:home transmits its measurements directly to the map, where anyone can observe, analyze and download the data. Measurements obtained with the senseBox:educan also be displayed on openSenseMap.</p>"
+link: "open openSenseMap »"

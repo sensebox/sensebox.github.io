@@ -1,0 +1,21 @@
+aboutus:
+  header: "About us"
+  description: "For a number of years, our team from  the <a class=\"link\" href=\"http://gi-at-school.de\" target=\"_blank\">GI@School</a> Lab at the <a class=\"link\" href=\"http://ifgi.de\" target=\"_blank\">Institute for Geoinformatics</a> has been gathering experience through the organization of workshops with students and teachers. The collection of data with do-it-yourself sensor stations has provided an especially accessible way to work with geographic information and environmental data in this context. Moreover programming skills are taught in a very illustrative and tangible way. This experience led us to develop the senseBox:edu based on a combination of Arduino micro-controller, sensors, and accessories for teams to work in a classroom context. The senseBox:home simplifies this approach as a general Citizen Science Toolkit."
+philosophy:
+  header: "Philosophy"
+  citizenscience:
+    header: "Citizen Science"
+    description: "The  <em>senseBox:home</em> is a Citizen Science toolkit. With senseBox you can make measurements, helping to answer a variety of scientific questions and to support Citizen Science Projects from the local to global scale. Data collected by senseBox can increase the measured density of various enviromental factors and can contribute to more precise statements regarding climate, pollution or traffic."
+  education:
+    header: "Education"
+    description: "The <em>senseBox:edu</em> is designed to be a tool for schools in a combination of subjects, whereas interdisciplinary projects in informatics/electronics/physics are build and programmed. The data collected then can be used to applicable research questions, in areas such as geography, biology or chemistry. For example, one application could be the analysis and interpolation of time-series data, which provides also interdisciplinary links to mathematics.</p>
+    <p>The senseBox:edu kit is suitable for one to three students. The box contains an Arduino Uno (or Genuino Uno) micro-controller, a variety of sensors, resistors, devices for circuits (among others: LEDs, cables and breadboard) and possibilities to save and transmit collected data. Multiple senseBox:edu (up to 11) can be packed in a single class box. The Arduino micro-controller is the heart of the collection and is used to control the connected components on digital or analogue inputs and outputs."
+  openscience:
+    header: "Open Science"
+    description: "The senseBox is developed exclusively following <a href=\"https://en.wikipedia.org/wiki/Open_science\" class=\"link\" target=\"_blank\">Open Science</a> principles.
+
+    The Setup of the senseBox components is open under the <a href=\"http://www.ohwr.org/attachments/2388/cern_ohl_v_1_2.txt\" class=\"link\" target=\"_blank\">ERN Open Hardware License 1.2</a>
+    The Source Code of senseBox:home is Open Source under <a href=\"http://opensource.org/licenses/LGPL-3.0\" class=\"link\" target=\"_blank\">LGPL 3.0 License</a>.
+    The Source Code of openSenseMap is Open Source under the <a href=\"http://opensource.org/licenses/MIT\" class=\"link\" target=\"_blank\">MIT License</a>.
+    The data published on openSenseMap is Open Data under the <a href=\"http://opendatacommons.org/licenses/pddl/\" class=\"link\" target=\"_blank\">Public Domain Dedication and License 1.0</a>.
+    The instructions, materials and didactic concepts are Open Educational Resources (OER) under the <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">Creative Commons License CC BY SA 4.0</a>."
