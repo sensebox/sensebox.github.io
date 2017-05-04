@@ -5,34 +5,4 @@ weight: 2
 lang: en
 id: products
 ---
-{% assign t = site.data.translations.[page.lang].products %}
-
-<div class="page-header">
-  <a name="about-us"></a>
-  <h1>senseBox</h1>
-</div>
-{{ t.introduction }}
-
-
-<div class="row">
-    <div class="col-lg-6">
-        <div class="product-img">
-          <img class="responsive-img" src="{{ site.baseurl | append: "/images/instructions_home_bg.jpg" }}" alt="senseBox Home Foto" />
-        </div>
-        <div class="product-text">
-            <div class="product-name">
-                <h3><b>senseBox:</b>home</h3></div>
-            {{ t.home.description }}
-        </div>
-    </div>
-    <div class="col-lg-6">
-        <div class="product-img">
-          <img class="responsive-img" src="{{ site.baseurl | append: "/images/instructions_edu_bg.jpg" }}" alt="senseBox Home Foto" />
-        </div>
-        <div class="product-text">
-            <div class="product-name">
-                <h3><b>senseBox:</b>edu</h3></div>
-            {{ t.edu.description }}
-        </div>
-    </div>
-</div>
+{% include _pages/products.html %}

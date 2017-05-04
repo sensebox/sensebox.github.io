@@ -5,17 +5,4 @@ weight: 3
 lang: de
 id: osem
 ---
-{% assign t = site.data.translations.[page.lang].osem %}
-<div class="page-header">
-  <a name="about-us"></a>
-  <h1>openSenseMap</h1>
-</div>
-{{ t.description }}
-
-<p>&nbsp;</p>
-
-<p style="text-align:center"><a class="btn" href="http://opensensemap.org/" target="_blank">{{ t.link }}</a></p>
-
-<p>&nbsp;</p>
-
-<p style="text-align:center"><a href="http://opensensemap.org" target="_blank"><img class="responsive-img" src="{{ site.baseurl | append: '/images/sensemap-screenshot.jpg'}}" alt="openSenseMap Screenshot"></a></p>
+{% include _pages/osem.html %}

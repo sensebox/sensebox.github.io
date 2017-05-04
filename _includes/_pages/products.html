@@ -1,0 +1,95 @@
+{% assign t = site.data.translations.[page.lang].products %}
+
+<div class="page-header">
+    <a name="about-us"></a>
+    <h1>senseBox</h1>
+</div>
+{{ t.introduction }}
+
+
+<div class="table-responsive">
+  <table class="table table-striped product-table" id="product-table">
+    <thead>
+      <tr>
+        <th></th>
+        <th style="white-space:normal; text-align:center;">
+          <div class="product-img">
+            <img class="responsive-img" src="{{ site.baseurl | append: "/images/instructions_home_bg.jpg" }}" alt="senseBox Home Foto" />
+          </div>
+
+        </th>
+        <th style="white-space:normal; text-align:center;">
+          <div class="product-img">
+            <img class="responsive-img" src="{{ site.baseurl | append: "/images/instructions_edu_bg.jpg" }}" alt="senseBox Home Foto" />
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+
+        </td>
+        <td>
+          <h3><b>senseBox:</b>home</h3>
+        </td>
+        <td>
+          <h3><b>senseBox:</b>edu</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>Sensoren</td>
+        <td>
+          <ul>
+            <li>VEML6070 UV Lichtsensor</li>
+            <li>TSL45315 Lichtsensor</li>
+            <li>BMP280 Luftdruck- und Temperatursensor</li>
+            <li>HDC1008 Luftfeuchtigkeitssensor- und Temperatursensor</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>VEML6070 UV Lichtsensor</li>
+            <li>TSL45315 Lichtsensor</li>
+            <li>BMP280 Luftdruck- und Temperatursensor</li>
+            <li>HDC1008 Luftfeuchtigkeitssensor- und Temperatursensor</li>
+            <li>Mikrofon mit Verstärker</li>
+            <li>Ultraschall Entfernungssensor</li>
+            <li>IR Entfernungssensor</li>
+          <ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Komponenten</td>
+        <td>
+          <ul>
+            <li>Genuino UNO</li>
+            <li>Ethernet Shield (WIZnet W5500 Chipsatz) <b>oder</b> WLAN/WiFi Shield (Atmel ATWINC1500B Chipsatz)</li>
+            <li>senseBox Shield</li>
+            <li>Steckernetzteil</li>
+            <li>senseBox Kabel (3x100mm, 1x200mm)</li>
+            <li>USB Kabel</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Genuino UNO</li>
+            <li>Ethernet Shield (WIZnet W5500 Chipsatz) <b>oder</b> WLAN/WiFi Shield (Atmel ATWINC1500B Chipsatz)</li>
+            <li>senseBox Shield</li>
+            <li>2GB micro SD Karte</li>
+            <li>Steckernetzteil</li>
+            <li>Batteriehalter</li>
+            <li>Halterung mit Breadboard</li>
+            <li>Set Jumper Wires</li>
+            <li>USB Kabel</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Bestellen</td>
+        <td><a href="http://www.watterott.com/de/Sensoren/senseBox" target="_blank" class="link"><button class="btn">senseBox:home bestellen</button></a></td>
+        <td><a href="http://www.watterott.com/de/Sensoren/senseBox" target="_blank" class="link"><button class="btn">senseBox:edu bestellen</button></a></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
