@@ -55,7 +55,7 @@ products:
   introduction: "<p>Von der senseBox gibt es zwei Varianten: <br>
       die <em>senseBox:home</em> und die <em>senseBox:edu</em>.</p>
 
-      <p>Die <em>senseBox:home</em> beinhaltet weniger Bauteile und wird mit einer einfachen Bauanleitung zu einer Messstation für zu Hause einmalig aufgebaut und mit dem WLAN oder LAN-Anschluss verbunden. Den individuellen Programmcode erhalten die Bürger nach der Registrierung auf der <em>openSenseMap</em>. Danach liefert sie kontinuierlich ortsbezogene Messungen zu Temperatur, Luftfreuchte, Luftdruck, Helligkeit, UV-Licht und Schall.</p>
+      <p>Die <em>senseBox:home</em> beinhaltet weniger Bauteile und wird mit einer einfachen Bauanleitung zu einer Messstation für zu Hause einmalig aufgebaut und mit dem WLAN oder LAN-Anschluss verbunden. Den individuellen Programmcode erhalten die Bürger nach der Registrierung auf der <em>openSenseMap</em>. Danach liefert sie kontinuierlich ortsbezogene Messungen zu Temperatur, Luftfeuchte, Luftdruck, Helligkeit, UV-Licht und Schall.</p>
 
       <p>Die <em>senseBox:edu</em> wurde speziell für den Einsatz im Schulunterricht entwickelt. Bei ihr liegt der Fokus auf dem Erlernen von Grundlagen der Programmierung, Elektronik und Aufnahme von Umweltdaten.</p>
 
