@@ -5,6 +5,7 @@ date: 2017-05-11
 author: Felix
 abstract: "Unsere Internetseite hat einen neuen Anstrich bekommen! Es gibt einen neuen Style, einen Blog, und viele kleine Änderungen"
 permalink: /2017/05/11
+thumbnail: /images/blog_images/screenshot_osem.png
 lang: de
 ---
 Neuer Style
