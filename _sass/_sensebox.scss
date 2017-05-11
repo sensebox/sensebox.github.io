@@ -1184,3 +1184,16 @@ $carousel-height: 410px;
 .header-info {
   text-align: center;
 }
+
+.product-img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.product-edu-img {
+  content:url("./../images/senseBox_edu_500.png");
+}
+
+.product-edu-img:hover {
+  content:url("./../images/senseBox_edu_500_open.png");
+}
