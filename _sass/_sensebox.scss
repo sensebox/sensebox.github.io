@@ -1053,7 +1053,9 @@ background: linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
 }
 
 .collapse.in, .collapsing {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #272727;
+    box-shadow: 0 0 30px 6px rgba(34, 34, 34, 0.25)!important
+
 }
 
 .carousel-caption {
