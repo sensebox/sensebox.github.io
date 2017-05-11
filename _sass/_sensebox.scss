@@ -800,12 +800,12 @@ article.post-content img {
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
-
+$carousel-height: 410px;
 
 /* Carousel base class */
 
 .carousel {
-    height: 450px;
+    height: $carousel-height;
     margin-bottom: 60px;
 }
 
@@ -826,7 +826,7 @@ article.post-content img {
 /* Declare heights because of positioning of img element */
 
 .carousel .item {
-    height: 450px;
+    height: $carousel-height;
     background-color: #777;
 }
 
@@ -939,6 +939,12 @@ background: linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
 
 .carousel-heading {
   color: white;
+}
+
+@media (max-width: 991px) {
+  .not-on-small {
+    display: none;
+  }
 }
 
 
