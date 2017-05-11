@@ -942,8 +942,23 @@ $carousel-height: 410px;
 
 @media (max-width: 991px) {
   .not-on-small {
-    display: none;
+    display: none !important;
   }
+
+  .only-on-small {
+    display: block !important;
+  }
+}
+
+.display-table{
+    display: table;
+    table-layout: fixed;
+}
+
+.display-cell{
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
 }
 
 
