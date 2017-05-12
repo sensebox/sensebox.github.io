@@ -10,7 +10,7 @@ lang: de
 ---
 Neuer Style
 ============
-Der Style der Internetseite wurde aufgefrischt. Nun wird die volle Breite des Bildschirms genutzt um unsere Produkte sowie Anleitungen, Presseberichte und unsere Förderungen zu präsentieren. Die neuen Header geben einen frischen Überblick vom Inhalt der Seite sowie hilfreiche links um direkt zu den gewollten Stellen zu springen.
+Der Style der Internetseite wurde aufgefrischt. Nun wird die volle Breite des Bildschirms genutzt und die Übersichtlichkeit erhöht damit alle Informationen mit einem Klick erreicht werden können. Die neuen Header geben einen frischen Überblick vom Inhalt der Seite sowie hilfreiche links um direkt zu den gewollten Stellen zu springen.
 
 Introducing: Blog
 ============
