@@ -1,0 +1,95 @@
+{% assign t = site.data.translations.[page.lang].products %}
+
+<div class="page-header">
+    <a name="about-us"></a>
+    <h1>senseBox</h1>
+</div>
+{{ t.introduction }}
+
+
+<div class="table-responsive">
+  <table class="table table-striped product-table" id="product-table">
+    <thead>
+      <tr>
+        <th></th>
+        <th style="white-space:normal; text-align:center;">
+          <div class="product-img">
+            <img class="responsive-img" src="{{ site.baseurl | append: "/images/instructions_home_bg.jpg" }}" alt="senseBox Home Foto" />
+          </div>
+
+        </th>
+        <th style="white-space:normal; text-align:center;">
+          <div class="product-img">
+            <img class="product-img product-edu-img" alt="senseBox Edu Foto" />
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+
+        </td>
+        <td>
+          <h3><b>senseBox:</b>home</h3>
+        </td>
+        <td>
+          <h3><b>senseBox:</b>edu</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>{{ t.sensors.header }}</td>
+        <td>
+          <ul>
+            <li>{{ t.sensors.uv-light }}</li>
+            <li>{{ t.sensors.light }}</li>
+            <li>{{ t.sensors.barometric-pressure }}</li>
+            <li>{{ t.sensors.temperature }}</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>{{ t.sensors.uv-light }}</li>
+            <li>{{ t.sensors.light }}</li>
+            <li>{{ t.sensors.barometric-pressure }}</li>
+            <li>{{ t.sensors.temperature }}</li>
+            <li>{{ t.sensors.microphone }}</li>
+            <li>{{ t.sensors.ultrasonic }}</li>
+            <li>{{ t.sensors.ir }}</li>
+          <ul>
+        </td>
+      </tr>
+      <tr>
+        <td>{{ t.components.header }}</td>
+        <td>
+          <ul>
+            <li>{{ t.components.arduino }}</li>
+            <li>{{ t.components.internet }}</li>
+            <li>{{ t.components.senseBox-shield }}</li>
+            <li>{{ t.components.power-plug }}</li>
+            <li>{{ t.components.cables }}</li>
+            <li>{{ t.components.usb }}</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>{{ t.components.arduino }}</li>
+            <li>{{ t.components.internet }}</li>
+            <li>{{ t.components.senseBox-shield }}</li>
+            <li>{{ t.components.breadboard }}</li>
+            <li>{{ t.components.microSD }}</li>
+            <li>{{ t.components.power-plug }}</li>
+            <li>{{ t.components.battery }}</li>
+            <li>{{ t.components.wires }}</li>
+            <li>{{ t.components.usb }}</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>{{ t.order.header }}</td>
+        <td><a href="http://www.watterott.com/de/Sensoren/senseBox" target="_blank" class="link"><button class="btn">{{ t.order.home }}</button></a></td>
+        <td><a href="http://www.watterott.com/de/Sensoren/senseBox" target="_blank" class="link"><button class="btn">{{ t.order.edu }}</button></a></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>

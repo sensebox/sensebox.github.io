@@ -21,6 +21,7 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+    padding-bottom: 0;
 }
 
 .fixx {
@@ -59,17 +60,17 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   img {
     padding: 5px;
-    max-width: 270px;
-    max-height: 119px;
+    max-width: 200px;
+    max-height: 100px;
     transition: box-shadow 0.1s;
     border-radius: 5px;
     -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
     filter: grayscale(100%);
-    &:hover {
-      box-shadow: 0px 0px 15px lighten($sensebox-green, 40%);
-      -webkit-filter: none; /* Chrome, Safari, Opera */
-      filter: none;
-    }
+    // &:hover {
+    //   box-shadow: 0px 0px 15px lighten($sensebox-green, 40%);
+    //   -webkit-filter: none; /* Chrome, Safari, Opera */
+    //   filter: none;
+    // }
   }
 }
 
@@ -117,7 +118,7 @@ hr {
   }
 }
 
-.navbar-default {
+#navbar {
   .navbar-nav {
     > li {
       @media (max-width: $grid-float-breakpoint) {
@@ -125,43 +126,43 @@ hr {
       }
       > a {
         transition: color 0.1s;
-        color: lighten($sensebox-green, 40%);
-        font-size: 22px;
+        color: #ffffff;
+        font-size: 1.3em;
         font-family: BrixSlab-Bold;
         background-color: transparent;
       }
 
       > a:hover,
       > a:focus {
-        color: lighten($sensebox-green, 50%);
+        text-decoration: underline;
       }
 
       &.active {
         > a,
         > a:hover,
         > a:focus {
-          color: white;
+          text-decoration: underline;
           background-color: transparent;
         }
       }
 
       // navbar item dividers
-      @media (min-width: $grid-float-breakpoint) {
-        &:after {
-          content: ':';
-          font-size: 22px;
-          text-decoration: none;
-          color: lighten($sensebox-green, 40%);
-          position: absolute;
-          right: -2px;
-          top: 9px;
-          user-select: none;
-          cursor: default;
-        }
-        &:last-of-type:after {
-          content: '';
-        }
-      }
+      // @media (min-width: $grid-float-breakpoint) {
+      //   &:after {
+      //     content: ':';
+      //     font-size: 22px;
+      //     text-decoration: none;
+      //     color: lighten($sensebox-green, 40%);
+      //     position: absolute;
+      //     right: -2px;
+      //     top: 9px;
+      //     user-select: none;
+      //     cursor: default;
+      //   }
+      //   &:last-of-type:after {
+      //     content: '';
+      //   }
+      // }
     }
   }
 }
@@ -440,6 +441,10 @@ em {
   max-width: 100%;
 }
 
+.team-pic {
+  max-width: 146px;
+}
+
 @media (max-width: 767px) {
   .team-pic,
   .press-pic,
@@ -451,10 +456,6 @@ em {
   }
 }
 
-.team-pic {
-  max-width: 150px;
-}
-
 .press-text {
   overflow: hidden;
 }
@@ -463,9 +464,17 @@ em {
   min-height: 240px;
 }
 
-.responsive-img {
-  max-width: 100%;
+@media (min-width: 768px) {
+  .responsive-img {
+    max-width: 100%;
+  }
 }
+@media (max-width: 767px) {
+  .responsive-img {
+    max-width: 300px;
+  }
+}
+
 
 .product-name {
   background-color: $sensebox-green;
@@ -548,11 +557,11 @@ article.post-content img {
 
 .card .header-bg {
   /* This stretches the canvas across the entire hero unit */
-  position: absolute;
+  //position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 180px;
+  height: 300px;
   background-size: 100% auto;
   background-repeat: no-repeat;
   border-bottom: 1px #FFF solid;
@@ -626,9 +635,9 @@ article.post-content img {
   background: rgba(255,255,255,0.7);
 }
 
-ul li {
-  font-size: 1.2em;
-}
+// ul li {
+//   font-size: 1.2em;
+// }
 
 .opacity-animation-fast {
   position: relative;
@@ -708,13 +717,483 @@ ul li {
   text-align:center;
   padding:30px;
 }
-.event .icon {
-  margin-right: 5px;
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    padding-top: 10px;
+
+    background: rgba(#000000, 0.3);
+    background: -moz-linear-gradient(180deg, rgba(#000000, 0.3), rgba(#000000, 0.0));
+    background: -webkit-linear-gradient(180deg, rgba(#000000, 0.3), rgba(#000000, 0.0));
+    background: linear-gradient(180deg, rgba(#000000, 0.3), rgba(#000000, 0.0));
 }
-.event {
-  margin-top: 2px;
+
+
+/* Flip around the padding for proper display in narrow viewports */
+
+.navbar-wrapper>.container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+
+.navbar-toggle .collapsed {
+    z-index: 99;
+}
+
+.icon-bar {
+    background-color: white;
+}
+
+// .navbar-nav>li>a {
+//     color: #ffffff;
+//     font-size: 1.5em;
+//     text-shadow: none;
+// }
+//
+// .navbar-nav>li>a:hover {
+//     color: green;
+//     background: none;
+// }
+//
+// .navbar-nav>li>a:focus {
+//     background: none;
+// }
+//
+// .active {
+//     background: none;
+// }
+//
+// .navbar-brand {
+//     padding: 5px;
+// }
+
+
+.logo {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+.logo:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+$carousel-height: 450px;
+
+/* Carousel base class */
+
+.carousel {
+    height: $carousel-height;
+    margin-bottom: 60px;
+}
+
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+    z-index: 10;
+    text-align: center;
+    max-width: 100%;
+    /*top: auto;*/
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+
+
+/* Declare heights because of positioning of img element */
+
+.carousel .item {
+    height: $carousel-height;
+    background-color: #777;
+}
+
+.carousel-inner>.item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+
+.carousel-control {
+    background-image: none !important;
+}
+
+.carousel-background {
+  width: 100%;
+  height: 100%;
+}
+
+.background-gradient-2 {
+    background: #7db9e8;
+    background: -moz-linear-gradient(90deg, #7db9e8 0%, #1e5799 100%);
+    background: -webkit-linear-gradient(90deg, #7db9e8 0%, #1e5799 100%);
+    background: linear-gradient(90deg, #7db9e8 0%, #1e5799 100%);
+    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799', GradientType=1);
+}
+
+.background-gradient {
+    background: #97ad95;
+    background: -moz-linear-gradient(45deg,  #97ad95 0%, #4eaf47 100%);
+    background: -webkit-linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
+    background: linear-gradient(45deg,  #97ad95 0%,#4eaf47 100%);
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97ad95', endColorstr='#4eaf47',GradientType=1 );
+}
+
+.background-gradient-main {
+    background: #3851b8;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #3851b8 0%, #4eaf47 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #3851b8 0%, #4eaf47 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #3851b8 0%, #4eaf47 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3851b8', endColorstr='#4eaf47', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.background-gradient-press {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#600868+0,85b2d3+100 */
+  background: #600868; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #600868 0%, #85b2d3 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #600868 0%,#85b2d3 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #600868 0%,#85b2d3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#600868', endColorstr='#85b2d3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.background-gradient-products {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2e6629+0,6aa6d1+100 */
+  background: #2e6629; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #2e6629 0%, #6aa6d1 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #2e6629 0%,#6aa6d1 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #2e6629 0%,#6aa6d1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e6629', endColorstr='#6aa6d1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.background-gradient-books {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2b7700+0,b59f26+100 */
+  background: #2b7700; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #2b7700 0%, #DBD52E 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #2b7700 0%,#DBD52E 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #2b7700 0%,#DBD52E 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b7700', endColorstr='#DBD52E',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.background-gradient-background {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#321770+0,009e79+100 */
+  background: #321770; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #321770 0%, #009e79 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #321770 0%,#009e79 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #321770 0%,#009e79 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#321770', endColorstr='#009e79',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.background-gradient-awards {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#820202+0,19ffe0+100 */
+  background: #820202; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #820202 0%, #19ffe0 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #820202 0%,#19ffe0 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #820202 0%,#19ffe0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#820202', endColorstr='#19ffe0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.carousel-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 75px;
+    padding-bottom: 100px;
+    position: absolute;
+    color: white;
+}
+
+.carousel-heading {
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .not-on-small {
+    display: none !important;
+  }
+
+  .only-on-small {
+    display: block !important;
+  }
+}
+
+.display-table{
+    display: table;
+    table-layout: fixed;
+}
+
+.display-cell{
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+
+/* Center align the text within the three columns below the carousel */
+
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: normal;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.badges {
+    text-align: center;
+    margin-top: 5em;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        padding-top: 10px;
+        margin-bottom: 25px;
+    }
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+    /* Bump up size of carousel content */
+    .carousel-caption p{
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+    .navbar-nav {
+      margin-left: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
+
+.collapse.in, .collapsing {
+    background-color: #272727;
+    box-shadow: 0 0 30px 6px rgba(34, 34, 34, 0.25)!important
+
+}
+
+.carousel-caption {
+    z-index: 10;
+    text-align: center;
+    max-width: 100%;
+    /*top: auto;*/
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+
+.carousel-inner>.item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+.inside-carousel-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .inside-carousel-container {
+    width: initial;
+  }
+}
+
+.navbar {
   font-size: 1.2em;
 }
-.event .date {
-  color: #111;
+
+.product-table {
+  font-size: 1.2em;
+}
+
+.product-table tr > td:first-child {
+  text-align: right;
+  background-color: #ededed;
+  font-weight: bold;
+  font-size: 1.1em;
+} /* first column */
+
+.product-table tr:first-child {
+  text-align: center;
+} /* first row */
+
+.product-table tr:last-child {
+  text-align: center;
+} /* last row */
+
+.event {
+  margin-bottom: 30px;
+}
+.event-time {
+  margin-right: 55px;
+}
+
+.event-time > hr {
+  margin: 0;
+}
+
+.event-time > .start {
+  margin-bottom: 10px;
+}
+
+.event-time > .end {
+  margin-top: 10px;
+}
+
+.event-title {
+  margin: 0;
+}
+
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #4eaf47;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  border: solid #4eaf47 2px;
+  text-decoration: none;
+  background: none;
+  margin: 5px;
+}
+
+.btn:hover {
+  background: #4eaf47;
+  text-decoration: none;
+  color: white;
+}
+
+.header-btn {
+  color: #ffffff;
+  border: solid #ffffff 2px;
+}
+
+.header-btn:hover {
+  background: rgba(#ffffff, 0.2);
+}
+
+.header-info {
+  text-align: center;
+}
+
+.product-img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.product-edu-img {
+  content:url("./../images/senseBox_edu_500.png");
+}
+
+.product-edu-img:hover {
+  content:url("./../images/senseBox_edu_500_open.png");
 }

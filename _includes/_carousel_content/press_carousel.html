@@ -1,0 +1,16 @@
+{% assign t = site.data.translations.[page.lang].press %}
+<div class="item active">
+  <div class="carousel-background background-gradient-press">
+    <div class="carousel-container">
+      <div class="container inside-carousel-container">
+        <div class="header-info">
+          <h1 style="color: white">{{ t.press-and-media}}</h1>
+          <p>
+            {{ t.presskit-desc }}
+          </p>
+          <a class="btn header-btn" href="{{ site.baseurl | append: '/' | append: page.lang | append: '/materials/'}}" role="button">{{ t.link-press-kit}} &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

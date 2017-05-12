@@ -1,10 +1,10 @@
 - name: Thomas Bartoschek
-  image: /images/team/thomas.jpg
+  image: /images/team/Bartoschek.jpg
   position: 1
   description: Thomas is a Research Associate at the Institute for Geoinformatics at the University of Muenster. He is founder and leader of the <a href="http://www.gi-at-school.de/" target="_blank">GI@School Lab</a> and of senseBox. His research focus is on learning with geotechnologies, human computer interaction and citizen science. He develops products for education and communication of his science.
 
 - name: Angela Schwering
-  image: /images/team/raute.png
+  image: /images/team/Schwering.jpg
   position: 2
   description: Angela ist a full professor at the Institute for Geoinformatics at the University of Muenster. In her research on spatial cognition she investigates how to support people in solving spatio-temporal problems through adequate information systems. She is also interested in how geotechnologies and sensors can be integrated into education, to foster the development of spatial competencies and their enthusiasm for information technologies.
 
@@ -14,23 +14,23 @@
   description: Sergey has developed the senseBox into the concept of a school class kit. He is also a specialist in cooperation with scientific and technical museums and helps to use senseBox inschool labs. He leads sensor workshops with school children, where he thrashes out the ideas for new senseBox projects. Apart from that, he supplies the project with his fantastic photographic skills.
 
 - name: Jan Wirwahn
-  image: /images/team/jan.jpg
+  image: /images/team/Wirwahn.jpg
   position: 4
   description: Jan is a student assistant at the GI@School Lab. He is the developer of the weatherSenseBox, one of the first use cases for the senseBox in education. He is teaching and instructing students and teachers in the use of senseBox at the Institute for Geoinformatics an in secondary schools. His interests are in the hardware business, in particular Arduino microcontrollers and all kinds of sensors.
 
 - name: Björn Guntermann
-  image: /images/team/bjoern.jpg
+  image: /images/team/Guntermann.jpg
   position: 5
   description: Björn ist Lehramtsstudent an der Universität Münster und arbeitet als studentische Hilfskraft bei <a href="http://www.gi-at-school.de/" target="_blank">GI@School</a>. Er hat für seine Bachelorarbeit den Prototypen der senseBox:WaterQuality entwickelt. Björn unterstützt das senseBox Team hauptsächlich bei der Durchführung von Workshops und bei der Entwicklung neuer Unterrichtskonzepte.
 
 - name: Mario Pesch
-  image: /images/team/mario.jpg
+  image: /images/team/Pesch.jpg
   position: 6
   description: Mario studies chemistry and geography at the university of muenster and works as a student assistant at <a href="http://www.gi-at-school.de/" target="_blank">GI@School</a>. In his bachelor thesis Mario developed a prototype for measuring air quality with the senseBox. Mario supports the team with workshops in schools and is looking for new use cases for the senseBox.
 
 
 - name: Matthias Pfeil
-  image: /images/team/matthias.jpg
+  image: /images/team/Pfeil.jpg
   position: 7
   description: Matthias hat Bachelor of Science Geoinformatik an der Universität Münster studiert. Er ist zuständig für alle technischen Fragen bezüglich der eingesetzten Technologien und betreut die <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a> und <a href="https://github.com/sensebox/OpenSenseMap-API/wiki/API-Dokumentation" target="_blank">API</a>.
 
@@ -50,17 +50,17 @@
   description: Aleksandr Shirokov  is a Master Student at the Institute for Geoinformatics working as a student assistant  in the Spatial Intelligence Lab at WWU. He holds a bachelor degree in Information Technology in GIS and currently actively participate in various projects at the IfGI.  As part of a SenseBox Team Aleksandr is mainly responsible for the development and maintenance of OpenSenseMap.
 
 - name: Felix Erdmann
-  image: /images/team/raute.png
+  image: /images/team/Erdmann.jpg
   position: 11
   description: "Felix is geoinformatics student at the Institute for Geoinformatics. In 2011 he worked in a pupil internship with an early version of the senseBox. He joined the team in spring 2016. #backtotheroots"
 
 - name: Bernd van Rennings
-  image: /images/team/raute.png
+  image: /images/team/vanRennings.jpg
   position: 12
   description:  Bernd works as a student assistant for the project senseBox. He holds a bachelor degree in mathematics and computer since. Currently he is Master Student at the WWU.
 
 - name: Gerald Pape
-  image: /images/team/raute.png
+  image: /images/team/Pape.jpg
   position: 13
   description: Together with Matthias, Gerald will look after everything related to the <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a> and the <a href="https://github.com/sensebox/OpenSenseMap-API/wiki/API-Dokumentation" target="_blank">API</a>. He studied Master Geoinformatics at the University of Münster.
 
@@ -70,6 +70,6 @@
   description: Marc wrote his BA thesis "Geostatistical Methods for the OpenSenseMap-Platform" in 2016 at the Institute for Geoinformatics in Münster. His work had the goal to implement interpolation methods into <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a>.
 
 - name: Norwin Roosen
-  image: /images/team/raute.png
+  image: /images/team/Roosen.jpg
   position: 15
   description: Norwin is studying BSc Geoinformatics at <a href="https://www.uni-muenster.de/Geoinformatic/en/" target="_blank"i>ifgi</a>. He works as a student assistant at the project senseBox.

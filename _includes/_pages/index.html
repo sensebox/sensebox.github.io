@@ -1,0 +1,110 @@
+{% assign t = site.data.translations.[page.lang].main %}
+
+    <div class="marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+          <div class="col-lg-4">
+              <img src="{{ site.baseurl | append: '/images/senseBox_home_circle_500.png' }}" alt="Generic placeholder image" width="250px" height="250px">
+              <h2>senseBox:home</h2>
+              <p>{{ t.home_info }}</p>
+              <p><a class="btn" href="{{ site.baseurl | append: "/" | append: page.lang | append: "/products" }}" role="button">{{ t.further-infos}} &raquo;</a></p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img src="{{ site.baseurl | append: '/images/senseBox_edu_500.png' }}" width=250px height=250px alt="Generic placeholder image" >
+              <h2>senseBox:edu</h2>
+              <p>{{ t.edu_info }}</p>
+              <p><a class="btn" href="{{ site.baseurl | append: "/" | append: page.lang | append: "/products" }}" role="button">{{ t.further-infos}} &raquo;</a></p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img src="{{ site.baseurl | append: '/images/osem_laptop_500.png' }}" width=250px height=250px alt="Generic placeholder image" />
+              <h2>openSenseMap</h2>
+              <p>{{ t.osem_info }}</p>
+              <p><a class="btn" href="{{ site.baseurl | append: "/" | append: page.lang | append: "/osem" }}" role="button">{{ t.further-infos}} &raquo;</a></p>
+          </div>
+          <!-- /.col-lg-4 -->
+      </div>
+      <!-- /.row -->
+
+      <hr />
+
+      <h1 style="text-align: center;">{{ t.news }}</h1>
+      {% assign posts = site.posts | sort: 'date' | reverse %}
+      {% for post in posts %}
+        {% if forloop.index0 == 2%}
+          {% break %}
+        {% else %}
+          <div class="posts">
+            <h2 style="clear:both"><a href="{{ site.baseurl | append: post.permalink }}">{{ post.title }}</a></h2>
+              <div class="row">
+                {% if post.thumbnail %}
+                <div class="col-sm-4">
+                  <img class="press-pic" src="{{ site.baseurl | append: post.thumbnail }}" alt="{{ post.title }} - Logo"/>
+                </div>
+
+                <div class="col-sm-8">
+                  <div class="press-text">
+                    <p>
+                      {{ post.abstract }}
+                    </p>
+                  </div>
+                </div>
+            {% else %}
+                <div class="press-text">
+                  <p>
+                    {{ post.abstract }}
+                  </p>
+                </div>
+            {% endif %}
+            </div>
+
+            <hr class="clear nomargin">
+            <div class="author">
+              <span class="date">{{ post.date | date: '%d. %B %Y' }}</span> von <span class="author"> {{ post.author }} </span>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+
+      <p><a class="btn" href="{{ site.url | append: "/blog" }}" role="button">{{ t.go-to-blog }} &raquo;</a></p>
+
+      <hr />
+
+
+        <h1 style="text-align: center;">Partner</h1>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row sponsor">
+            <ul>
+              <li>
+                <a href="http://www.gi-at-school.de" target="_blank">
+                  <img src="{{ site.baseurl | append: "/images/sponsors/giatschool.png" }}" alt="giatschool Logo">
+                </a>
+              </li>
+              <li>
+                <a href="https://ifgi.uni-muenster.de" target="_blank">
+                  <img src="{{ site.baseurl | append: "/images/sponsors/ifgi.png" }}" alt="ifgi Logo">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.uni-muenster.de/" target="_blank">
+                  <img src="{{ site.baseurl | append: "/images/sponsors/wwu.png" }}" alt="wwu Logo">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.wissenschaftsjahr-zukunftsstadt.de/" target="_blank">
+                  <img src="{{ site.baseurl | append: "/images/sponsors/zukunftsstadt.png" }}" alt="zukunftsstadt Logo">
+                </a>
+              </li>
+              <li>
+                <a href="http://www.photonik-campus.de/make-light/" target="_blank">
+                  <img src="{{ site.baseurl | append: "/images/sponsors/make-light.png" }}" alt="make light Logo">
+                </a>
+              </li>
+            </ul>
+            </div>
+          </div>
+        </div>
+    </div>

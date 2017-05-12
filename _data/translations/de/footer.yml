@@ -1,0 +1,21 @@
+news:
+  header: "Neuigkeiten"
+  blog: "Blog"
+background:
+  header: "Hintergrund"
+  aboutus: "Über uns"
+  philosophy: "Philosophie"
+  team: "Team"
+  awards: "Auszeichnungen"
+  contact: "Impressum und Kontakt"
+press:
+  header: "Presse"
+  articles: "Berichte"
+  material: "Material"
+  contact: "Kontakt"
+publications:
+  header: "Publikationen"
+  docs: "Dokumentation"
+  thesis: "Bachelor-Arbeiten"
+partner:
+  header: "Partner"

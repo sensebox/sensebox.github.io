@@ -1,0 +1,82 @@
+{% assign t = site.data.translations.[page.lang].materials %}
+<div class="page-header">
+  <h1>{{ t.header }}</h1>
+</div>
+<h2>{{ t.logos }}</h2>
+<h3>PNG</h3>
+<img style="max-height: 80px;" src="https://raw.githubusercontent.com/sensebox/resources/master/images/sensebox_logo_neu.png" alt="senseBox Logo neu"></img>
+<a href="https://raw.githubusercontent.com/sensebox/resources/master/images/sensebox_logo_neu.png" target="_blank"><button class="btn">Download senseBox Logo</button></a>
+<br>
+<img style="max-height: 80px;" src="https://raw.githubusercontent.com/sensebox/resources/master/images/sensebox_logo_raute.png" alt="senseBox Logo Raute"></img>
+<a href="https://raw.githubusercontent.com/sensebox/resources/master/images/sensebox_logo_raute.png" target="_blank">
+  <button class="btn">Download senseBox Raute</button>
+</a>
+<h3 style="margin-top: 50px;">SVG</h3>
+<img style="height: 80px; max-height: 80px;" src='{{ site.baseurl | append: "/images/sensebox_wort_und_logo.svg" }}' alt="senseBox Wort und Logo"></img>
+<a href='{{ site.baseurl | append: "/images/sensebox_wort_und_logo.svg" }}' target="_blank">
+  <button class="btn">Download senseBox Logo</button>
+</a>
+<br />
+<img style="max-height: 80px;" src='{{ site.baseurl | append: "/images/sensebox_logo.svg" }}' alt="senseBox Logo"></img>
+<a href='{{ site.baseurl | append: "/images/sensebox_logo.svg" }}' target="_blank">
+  <button class="btn">Download senseBox Raute</button>
+</a>
+<h2>Name</h2>
+<p>{{ t.spellingNotice }}</p>
+<div class="row" style="text-align: center;">
+  <div class="col-md-4 col-sm-4">
+    <p>
+      <img src='{{ site.baseurl | append: "/images/success.svg" }}' alt="senseBox Logo" style="height:30px;">
+      <span>senseBox</span>
+    </p>
+  </div>
+  <div class="col-md-4 col-sm-4">
+    <p>
+      <img src='{{ site.baseurl | append: "/images/error.svg" }}' alt="senseBox Logo" style="height:30px;">
+      <span>sensebox</span>
+    </p>
+  </div>
+  <div class="col-md-4 col-sm-4">
+    <p>
+      <img src='{{ site.baseurl | append: "/images/error.svg" }}' alt="senseBox Logo" style="height:30px;">
+      <span>Sense box</span>
+    </p>
+  </div>
+</div>
+<div class="row" style="text-align: center;">
+  <div class="col-md-4 col-sm-4">
+    <p>
+      <img src='{{ site.baseurl | append: "/images/error.svg" }}' alt="senseBox Logo" style="height:30px;">
+      <span>SenseBox</span>
+    </p>
+  </div>
+  <div class="col-md-4 col-sm-4">
+    <p>
+      <img src='{{ site.baseurl | append: "/images/error.svg" }}' alt="senseBox Logo" style="height:30px;">
+      <span>Sensebox</span>
+    </p>
+  </div>
+  <div class="col-md-4 col-sm-4">
+    <p>
+      <img src='{{ site.baseurl | append: "/images/error.svg" }}' alt="senseBox Logo" style="height:30px;">
+      <span>Sense Box</span>
+    </p>
+  </div>
+</div>
+<h2>{{ t.colors }}</h2>
+<p>{{ t.color-values-header }}</p>
+<ul>
+  <li>
+    HEX <code>#4EAF47</code>
+  </li>
+  <li>
+    RGB <code>rgb(78, 175, 71)</code>
+  </li>
+  <li>
+    CMYK <code>cmyk(55%, 0%, 59%, 31%)</code>
+  </li>
+</ul>
+<h2>{{ t.flyer }}</h2>
+<a href="/docs/flyer/senseBox_edu_Anleitung_deutsch.pdf" target="_blank" class="hvr-underline-from-left"><h4>senseBox:edu Flyer</h4></a>
+<br>
+<a href="/docs/flyer/senseBox_home_Anleitung_deutsch.pdf" target="_blank" class="hvr-underline-from-left"><h4>senseBox:home Flyer</h4></a>

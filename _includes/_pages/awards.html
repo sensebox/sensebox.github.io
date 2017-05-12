@@ -1,0 +1,65 @@
+{% assign t = site.data.translations.[page.lang].awards %}
+<h1 id="grants">{{ t.grants }}</h1>
+{% if page.lang == 'de' %}
+  {% assign awardslist = site.awards_de | sort: 'weight' %}
+{% else %}
+  {% assign awardslist = site.awards_en | sort: 'weight' %}
+{% endif %}
+{% for award in awardslist %}
+  {% if award.type == 'grant' %}
+  <div class="posts">
+    <h2 style="clear:both">{{ award.title }}</h2>
+    <div class="row">
+      {% if award.thumbnail %}
+      <div class="col-sm-4">
+        <img class="award-pic" src="{{ site.baseurl | append: award.thumbnail }}" alt="{{ award.title }} - Logo" />
+      </div>
+
+      <div class="col-sm-8">
+        <div class="content press-text">
+          {{ award.content }}
+        </div>
+      </div>
+      {% else %}
+        <div class="content press-text">
+          {{ award.content }}
+        </div>
+      {% endif %}
+      </div>
+      <hr class="clear nomargin">
+    </div>
+  {% endif %}
+{% endfor %}
+
+<h1 id="awards">{{ t.awards }}</h1>
+{% if page.lang == 'de' %}
+  {% assign awardslist = site.awards_de | sort: 'year' | reverse %}
+{% else %}
+  {% assign awardslist = site.awards_en | sort: 'year' | reverse %}
+{% endif %}
+
+{% for award in awardslist %}
+  {% if award.type == 'award' %}
+  <div class="posts">
+    <h2 style="clear:both">{{ award.title }}</h2>
+    <div class="row">
+      {% if award.thumbnail %}
+      <div class="col-sm-4">
+        <img class="award-pic" src="{{ site.baseurl | append: award.thumbnail }}" alt="{{ award.title }} - Logo"/>
+      </div>
+
+      <div class="col-sm-8">
+        <div class="content press-text">
+          {{ award.content }}
+        </div>
+      </div>
+      {% else %}
+        <div class="content press-text">
+          {{ award.content }}
+        </div>
+      {% endif %}
+      </div>
+    <hr class="clear nomargin">
+  </div>
+  {% endif %}
+{% endfor %}

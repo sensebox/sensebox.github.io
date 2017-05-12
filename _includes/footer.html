@@ -1,166 +1,80 @@
+<!-- FOOTER -->
 {% assign t = site.data.translations.[page.lang].footer %}
-<div class="footer">
-  <hr>
-  <h1 style="text-align: center;">{{ t.partner.header }}</h1>
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="row sponsor">
-      <ul>
-        <li>
-          <a href="http://www.gi-at-school.de" target="_blank">
-            <img src="{{ site.baseurl | append: '/images/sponsors/giatschool.png'}}" alt="giatschool Logo">
-          </a>
-        </li>
-        <li>
-          <a href="https://ifgi.uni-muenster.de" target="_blank">
-            <img src="{{ site.baseurl | append: '/images/sponsors/ifgi.png'}}" alt="ifgi Logo">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.uni-muenster.de/" target="_blank">
-            <img src="{{ site.baseurl | append: '/images/sponsors/wwu.png'}}" alt="wwu Logo">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.wissenschaftsjahr-zukunftsstadt.de/" target="_blank">
-            <img src="{{ site.baseurl | append: '/images/sponsors/zukunftsstadt.png'}}" alt="zukunftsstadt Logo">
-          </a>
-        </li>
-        <li>
-          <a href="http://www.photonik-campus.de/make-light/" target="_blank">
-            <img src="{{ site.baseurl | append: '/images/sponsors/make-light.png'}}" alt="make light Logo">
-          </a>
-        </li>
-      </ul>
+
+  <div class="footer">
+    <hr>
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+        <a href="/index.html">
+            <img src="{{ site.baseurl | append: '/images/sensebox_wort_und_logo.svg'}}" style="max-width:100%; max-height:100%" />
+        </a>
       </div>
-    </div>
-  </div>
-  <hr width="75%">
-  <h1 style="text-align: center;">{{ t.press.header }}</h1>
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="row sponsor">
-      <ul>
-        <li>
-          <a href="http://www.heise.de" target="_blank">
-            <img src="{{ site.baseurl | append: '/images/press/ctmagazin.jpg'}}" alt="c`t Logo">
-          </a>
-        </li>
-        <li>
-          <a href="http://iq.intel.de/" target="_blank">
-            <img src="{{ site.baseurl | append: '/images/press/Intel-logo.png'}}" alt="Intel Logo">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.wdr.de/" target="_blank">
-            <img src="{{ site.baseurl | append: '/images/press/westdeutscher-rundfunk.jpg'}}" alt="WDR Logo">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.rbb-online.de/" target="_blank">
-            <img src="{{ site.baseurl | append: '/images/press/rbb.jpg'}}" alt="rbb Logo">
-          </a>
-        </li>
-        <li>
-          <a href="http://www.deutschlandradio.de/" target="_blank">
-            <img src="{{ site.baseurl | append: '/images/press/logo-deutschlandfunk.preview.jpg'}}" alt="Deutschlandradio Logo">
-          </a>
-        </li>
-        <li>
-          <a href="http://makezine.com/" target="_blank">
-            <img src="{{ site.baseurl | append: '/images/press/make.jpg'}}" alt="Make Logo">
-          </a>
-        </li>
-        <li>
-          <a href="http://smart-magazine.com/en/" target="_blank">
-            <img src="{{ site.baseurl | append: '/images/press/smart_logo.jpg'}}" alt="smart Logo">
-          </a>
-        </li>
-        <li>
-          <a href="http://www.rp-online.de/" target="_blank">
-            <img src="{{ site.baseurl | append: '/images/press/rponline.png'}}" alt="RP Logo">
-          </a>
-        </li>
-        <li>
-          <a href="http://www.aktion-mensch.de/" target="_blank">
-            <img src="{{ site.baseurl | append: '/images/press/AM_Logo_RGB.png'}}" alt="Aktion Mesch Logo">
-          </a>
-        </li>
-      </ul>
+      <div class="col-sm-2">
+        <div class="footer-header">
+          {{ t.background.header }}
+        </div>
+        <div class="footer-content">
+          <ul>
+            <li><a href="{{ site.baseurl | append: '/' | append: page.lang | append: '/background/'}}">{{ t.background.aboutus }}</a></li>
+            <li><a href="{{ site.baseurl | append: '/' | append: page.lang | append: '/background/#philosophie'}}">{{ t.background.philosophy }}</a></li>
+            <li><a href="{{ site.baseurl | append: '/' | append: page.lang | append: '/background/#team'}}">{{ t.background.team }}</a></li>
+            <li><a href="{{ site.baseurl | append: '/' | append: page.lang | append: '/awards/' }}">{{ t.background.awards }}</li>
+            <li><a href="{{ site.baseurl | append: '/' | append: page.lang | append: '/contact/'}}">{{ t.background.contact }}</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </div>
-  <hr>
-  <div class="row">
-    <div class="col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-6 col-lg-offset-4">
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="footer-header">
-            {{ t.news.header }}
-          </div>
-          <div class="footer-content">
-            <ul>
-              <!--<li><a href="{{ site.baseurl | append: '/news/index.html'}}">Blog</a></li>-->
-              <li><a href="{{ site.baseurl | append: '/hackathon'}}">Hackathon</a></li>
-            </ul>
-          </div>
+      <div class="col-sm-2">
+        <div class="footer-header">
+          {{ t.press.header }}
         </div>
-        <div class="col-lg-3">
-          <div class="footer-header">
-            {{ t.background.header }}
-          </div>
-          <div class="footer-content">
-            <ul>
-          		<li><a href="{{ site.url | append: page.lang | append: '/background/'}}">{{ t.background.aboutus }}</a></li>
-          		<li><a href="{{ site.url | append: page.lang | append: '/background/#philosophie'}}">{{ t.background.philosophy }}</a></li>
-          		<li><a href="{{ site.url | append: page.lang | append: '/background/#team'}}">{{ t.background.team }}</a></li>
-          		<li><a href="{{ site.url | append: page.lang | append: '/awards/' }}">{{ t.background.awards }}</li>
-          		<li><a href="{{ site.url | append: page.lang | append: '/contact/'}}">{{ t.background.contact }}</a></li>
-            </ul>
-          </div>
+        <div class="footer-content">
+          <ul>
+            <li><a href="{{ site.baseurl | append: '/' | append: page.lang | append: '/press/'}}">{{ t.press.articles }}</a></li>
+            <li><a href="{{ site.baseurl | append: '/' | append: page.lang | append: '/materials/'}}">{{ t.press.material }}</li>
+            <li><a href="{{ site.baseurl | append: '/' | append: page.lang | append: '/contact/'}}">{{ t.press.contact }}</a></li>
+          </ul>
         </div>
-        <div class="col-lg-3">
-          <div class="footer-header">
-            {{ t.press.header }}
-          </div>
-          <div class="footer-content">
-            <ul>
-              <li><a href="{{ site.url | append: page.lang | append: '/press/'}}">{{ t.press.articles }}</a></li>
-              <li><a href="{{ site.url | append: page.lang | append: '/materials/'}}">{{ t.press.material }}</li>
-              <li><a href="{{ site.url | append: page.lang | append: '/contact/'}}">{{ t.press.contact }}</a></li>
-            </ul>
-          </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="footer-header">
+          {{ t.publications.header }}
         </div>
-        <div class="col-lg-3">
-          <div class="footer-header">
-            {{ t.publications.header }}
-          </div>
-          <div class="footer-content">
-            <ul>
-              <li><a href="{{ site.url | append: page.lang | append: '/docs/'}}">{{ t.publications.docs }}</a></li>
-              <li>{{ t.publications.thesis }}</li>
-            </ul>
-          </div>
+        <div class="footer-content">
+          <ul>
+            <li><a href="{{ site.baseurl | append: '/' | append: page.lang | append: '/docs/'}}">{{ t.publications.docs }}</a></li>
+          </ul>
         </div>
-        <div class="col-lg-3">
-          <div class="footer-header">
-            Follow us
-          </div>
-          <div class="footer-content">
-            <ul>
-              <li><a href="https://twitter.com/sensebox_de" target="_blank"><img src="{{ site.baseurl | append: '/images/iconmonstr-twitter-4-icon.png'}}" alt="Twitter icon"> Twitter</a></li>
-              <li><a href="https://www.facebook.com/sensebox.de" target="_blank"><img src="{{ site.baseurl | append: '/images/iconmonstr-facebook-4-icon.png'}}" alt="Facebook icon"> Facebook</a></li>
-              <li><a href="https://github.com/sensebox" target="_blank"><img src="{{ site.baseurl | append: '/images/iconmonstr-github-icon.png'}}" alt="GitHub icon"> Github</a></li>
-            </ul>
-          </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="footer-header">
+          Follow us
+        </div>
+        <div class="footer-content">
+          <ul>
+            <li><a href="https://twitter.com/sensebox_de" target="_blank"><img src="{{ site.baseurl | append: '/images/iconmonstr-twitter-4-icon.png'}}" alt="Twitter icon"> Twitter</a></li>
+            <li><a href="https://www.facebook.com/sensebox.de" target="_blank"><img src="{{ site.baseurl | append: '/images/iconmonstr-facebook-4-icon.png'}}" alt="Facebook icon"> Facebook</a></li>
+            <li><a href="https://github.com/sensebox" target="_blank"><img src="{{ site.baseurl | append: '/images/iconmonstr-github-icon.png'}}" alt="GitHub icon"> Github</a></li>
+          </ul>
         </div>
       </div>
     </div>
+    </div>
   </div>
-  <hr>
-  <div class="row">
-      <p class="copyright text-center">
-        &copy; senseBox, Institut für Geoinformatik, Universität Münster, <a href="http://www.uni-muenster.de/Geoinformatics/en/contact/legalnotice.html" target="_blank">Contact</a>
-      </p>
+  <div class="footer-copyright">
+    &copy; senseBox, Institut für Geoinformatik, Universität Münster &middot; <a href="http://www.uni-muenster.de/Geoinformatics/en/contact/legalnotice.html" target="_blank">Contact</a></p>
   </div>
-</div>
+
+  <!--Start of Tawk.to Script-->
+  		<script type="text/javascript">
+  		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  			(function(){
+  				var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  				s1.async=true;
+  				s1.src='https://embed.tawk.to/5825a447e808d60cd08111c0/default';
+  				s1.charset='UTF-8';
+  				s1.setAttribute('crossorigin','*');
+  				s0.parentNode.insertBefore(s1,s0);
+  			})();
+  		</script>
+  		<!--End of Tawk.to Script-->

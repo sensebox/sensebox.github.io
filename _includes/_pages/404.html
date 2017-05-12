@@ -1,0 +1,125 @@
+<style>
+
+  .error {
+    font-size: 8em;
+  }
+  .error-card {
+    /* Background pattern from subtlepatterns.com */
+    background-image: url('{{ site.baseurl | append: "/images/weather.png" }}');
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.04);
+    border-color: lightgrey;
+    border-width: thin;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  .button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button-red {
+    background-color: white;
+    color: black;
+    border: 2px solid #4EAF47;
+    border-radius: 2px;
+  }
+
+  .button-red:hover {
+      background-color: #4EAF47;
+      color: white;
+  }
+</style>
+<div class="container">
+  <div class="error-card">
+    <h1 class="error">404</h1>
+    <h1>😵 Oh no!</h1>
+    <hr style="width:75%;border: solid white;"/>
+    <h1>Die angeforderte Seite konnte nicht gefunden werden.</h1>
+    <h2>Das sollte nicht passieren. Erstelle ein Issue auf GitHub, damit wir diesen Fehler beheben können.</h2>
+    <!-- Place this tag where you want the button to render. -->
+    <a class="github-button" href="https://github.com/sensebox/sensebox.github.io/issues" data-style="mega" data-count-api="/repos/sensebox/sensebox.github.io#open_issues_count" data-count-aria-label="# issues on GitHub" aria-label="Issue sensebox/sensebox.github.io on GitHub">Issue</a>
+<br />
+    <button class="button button-red" type="button" data-toggle="collapse" data-target="#collapseExample">DO NOT PRESS THIS BUTTON!</button>
+
+    <div class="collapse" id="collapseExample">
+      <h3>
+        Ey yo, wir kommen auf den Berg, mit Pauken und Trompeten<br />
+        Für die Obernerds und die Citizen Science Fans<br />
+        Die Freifunker, Geeks, Maker, hackende Messdiener,<br />
+        Alle sind happy, denn die Berg-senseBox funkt wieder.<br />
+        Mess’n im Eis, heißer Scheiß,<br />
+        Jeder der ne senseBox hat, weiß wo ist heiß,<br />
+        UV-A, Temperatur, Beleuchtungsstärke<br />
+        Mit unseren Daten werden Paper innovative Werke<br />
+<br />
+        Schreibe Sketches, hol dir alle matches<br />
+        Arduino ist wie Tinder, nur ohne die bitches,<br />
+        Alter, ich kompilierte schon „Fortran“, „Basic“ und das hart,<br />
+        Als ihr noch irgendwo im Sack von euerm Vadder wart<br />
+        Der Hacker man, von der krassen Art,<br />
+        Hab Node und MongoDB mit Löffeln gefressen, Mann.<br />
+        Und HTTPS, es ist am start, baby.<br />
+        es ist der letzte Rest Privatsphäre.<br />
+<br />
+        [Pre-Hook](2x)<br />
+        Was los, senseBox ahnma'<br />
+        Wie wir messen, wie wir labern<br />
+        Jeder kennt senseBox heutzutage<br />
+        Wir pack’n neue Stationen auf die Karte<br />
+<br />
+        [Hook] (2x)<br />
+        Dem senseBox is out<br />
+        No matter what weather, no doubt<br />
+        Cit Science Toolkit for the crowd<br />
+        Dem put it just out<br />
+        If it’s silent or if it’s loud<br />
+        From Münster way down to the south<br />
+<br />
+        Ich komm mit openSense, Map und senseBox:home<br />
+        Bringe uns groß raus, BRAVO-TV und bei THE DOME<br />
+        Ihr kennt die Sendung nicht? Seid wohl nicht so alt.<br />
+        Egal denn einfach jeder, kennt die senseBox bald.<br />
+        senseBox, wir messen fein<br />
+        obs stürmt, pisst oder die Sonne scheint<br />
+        Was? Luft hat schlechte Qualität?<br />
+        Guckt wie wir’s messen - mit unser Gerät!<br />
+<br />
+        Ist n positiver Wert, den ich mess, Typ<br />
+        wenn ich die senseBox:edu checke und damit üb.<br />
+        Hier kommt der Bürger mit Geschmack<br />
+        Wenn jeder Jens-Peter einen auf Citizen Scientist macht<br />
+        Und irgendwo zwischen Gievenbeck und Teheran<br />
+        Kommt noch einer mit ner Messung relativer Feuchte an<br />
+        Is leider so, Geoinformatik hat den Flow<br />
+        ob GI@School, senseBox, Google Sheep View oder Pokemon Go.<br />
+<br />
+        [Pre-Hook](2x)<br />
+        Was los, senseBox ahnma'<br />
+        Wie wir messen, wie wir labern<br />
+        Jeder kennt senseBox heutzutage<br />
+        Wir pack’n neue Stationen auf die Karte<br />
+<br />
+        [Hook](2x)<br />
+        Dem senseBox is out<br />
+        No matter what weather, no doubt<br />
+        Cit Science Toolkit for the crowd<br />
+        Dem put it just out<br />
+        If it’s silent or if it’s loud<br />
+        From Münster way down to south<br />
+      </h3>
+    </div>
+  </div>
+</div>
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>

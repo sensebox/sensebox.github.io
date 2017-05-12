@@ -1,0 +1,24 @@
+{% assign t = site.data.translations.[page.lang].docs %}
+<div class="item active">
+  <div class="carousel-container background-gradient-books">
+      <div class="container inside-carousel-container">
+        <div class="header-info">
+          <h1 style="color:white">Books</h1>
+          <p>
+            {{ t.description-short }}
+          </p>
+          <div class="row">
+              <div class="col-md-4">
+                <a class="btn header-btn" href="//sensebox.de/books/edu/{{ page.lang }}" role="button">senseBox:edu Book &raquo;</a>
+              </div>
+              <div class="col-md-4">
+                <a class="btn header-btn" href="//sensebox.de/books/home/{{ page.lang }}" role="button">senseBox:home Book &raquo;</a>
+              </div>
+              <div class="col-md-4">
+                <a class="btn header-btn" href="//sensebox.de/books/osem/{{ page.lang }}" role="button">openSenseMap API &raquo;</a>
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

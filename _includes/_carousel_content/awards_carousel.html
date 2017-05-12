@@ -1,0 +1,24 @@
+{% assign t = site.data.translations.[page.lang].awards %}
+
+<div class="item active">
+  <div class="carousel-background background-gradient-awards">
+    <div class="carousel-container">
+      <div class="container inside-carousel-container">
+        <div class="header-info">
+          <h1 style="color: white">{{ t.grants-and-awards }}</h1>
+          <p>
+            {{ t.description }}
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <a class="btn header-btn" href="{{ page.url }}#grants" role="button">{{ t.link-grants }} &raquo;</a>
+            </div>
+            <div class="col-md-6">
+              <a class="btn header-btn" href="{{ page.url }}#awards" role="button">{{ t.link-awards }} &raquo;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,40 +1,8 @@
 ---
-layout: page
+layout: default
 permalink: /de/press/
 weight: 6
 lang: de
 id: press
 ---
-{% assign t = site.data.translations.[page.lang].press %}
-<div class="page-header">
-  <h1>{{ t.header }}</h1>
-</div>
-
-{% assign pressnews = site.press | sort: 'date' | reverse %}
-{% for post in pressnews %}
-<div class="posts">
-  <h2 style="clear:both">{{ post.title }}</h2>
-    <div class="row">
-      {% if post.thumbnail %}
-      <div class="col-sm-4">
-        <img class="press-pic" src="{{ site.baseurl | append: post.thumbnail }}" alt="{{ post.title }} - Logo"/>
-      </div>
-
-      <div class="col-sm-8">
-        <div class="content press-text">
-          {{ post.content }}
-        </div>
-      </div>
-  {% else %}
-      <div class="content press-text">
-      {{ post.content }}
-      </div>
-  {% endif %}
-  </div>
-
-  <hr class="clear nomargin">
-  <div class="author">
-    <span class="date">{{ post.date | date: '%d. %B %Y' }}</span> von <span class="author"> {{ post.author }} </span>
-  </div>
-</div>
-{% endfor %}
+{% include _pages/press.html %}

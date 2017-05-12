@@ -1,0 +1,51 @@
+header: "<p>The <b>senseBox</b> is a do-it-yourself kit for stationary and mobile sensor stations –  the <b>Citizen Science</b> Toolkit.</p>"
+text: "<p>With <em>senseBox</em> , citizens and schools are able to collect environmental data using sensors for climate (weather, air quality), transport (traffic density or noise pollution) and many more phenomena to find out more about the environment.</p>
+
+    <p>The data collected may be published as open data on the <a href=\"http://www.sensebox.de/en/osem\" class=\"link\">openSenseMap</a>.</p>
+
+    <p>Citizens with <a href=\"http://www.sensebox.de/en/products\" class=\"link\">senseBox:home</a> can use the technology for their own local research, to collect data by themselves or to contribute to the openSenseMap sensor network.</p>
+
+    <p>Additionally, we created <a href=\"http://www.sensebox.de/en/products\" class=\"link\">senseBox:edu</a> for schools and junior scientists, which is an experimental box with didactical concepts, instructions and project ideas included. </p>
+
+    <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span><a> </a><a href=\"http://www.sensebox.de/en/products\" class=\"link\">find out more</a></span></a></p>"
+home_info: Citizens with senseBox:home can use the technology for their own local research, to collect data by themselves or to contribute to the openSenseMap sensor network.
+edu_info: Additionally, we created senseBox:edu for schools and junior scientists, which is an experimental box with didactical concepts, instructions and project ideas included.
+osem_info: openSenseMap is our platform for open sensor data of senseBox. The data are visualized and everybody can do his own analysis.
+
+
+info:
+  temperature:
+    header: "Temperature"
+    fact1: "Unit: degrees Celsius"
+    fact2: "Sensor: <a href=\"https://github.com/sensebox/resources/raw/master/datasheets/datasheet_hdc1008.pdf\" target=\"_blank\">HDC1008</a>"
+  humiditiy:
+    header: "Humidity"
+    fact1: "Unit: relative humidity, %"
+    fact2: "Sensor: <a href=\"https://github.com/sensebox/resources/raw/master/datasheets/datasheet_hdc1008.pdf\" target=\"_blank\">HDC1008</a>"
+  airpressure:
+    header: "Air pressure"
+    fact1: "Unit: hPa"
+    fact2: "Sensor: <a href=\"https://github.com/sensebox/resources/raw/master/datasheets/datasheet_BMP280-pressure-sensor.pdf\" target=\"_blank\">BMP280</a>"
+  light:
+    header: "Illuminance"
+    fact1: "Unit: Lux (lx)"
+    fact2: "Sensor: <a href=\"https://github.com/sensebox/resources/raw/master/datasheets/datasheet_TSL4531_lux-sensor.pdf\" target=\"_blank\">TSL45315</a>"
+  uav:
+    header: "UV(A)-Intensity"
+    fact1: "Unit: μW/cm<sup>2</sup> (UV-Index)"
+    fact2: "Sensor: <a href=\"https://github.com/sensebox/resources/raw/master/datasheets/datasheet_veml6070-UV-A-Light-Sensor.pdf\" target=\"_blank\">VEML6070</a>"
+  more:
+    header: "more phenomena"
+    fact1: "loudness"
+    fact2: "distance (infrared , ultrasonic)"
+    fact3: "<a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a><a class=\"link\" href=\"http://www.sensebox.de/en/products\"> and many more</a>"
+
+news: "News"
+events: "Events"
+past_events: "Past Events"
+running_events: "Running Events"
+upcoming_events: "Upcoming Events"
+
+further-infos: "Further infos"
+
+go-to-blog: "further blog posts"

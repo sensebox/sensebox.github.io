@@ -1,0 +1,32 @@
+{% assign t = site.data.translations.[page.lang].main %}
+<div class="item active">
+    <div class="carousel-background background-gradient-main">
+        <div class="carousel-container">
+            <div class="container inside-carousel-container">
+                <div class="row header-info display-table">
+                    <div class="col-md-6 not-on-small display-cell">
+                      <div id="sensebox-vivus" style="max-height:300px;"></div>
+                    </div>
+                    <div class="col-md-6 display-cell">
+                        <h1 class="carousel-heading only-on-small" style="display:none">senseBox</h1>
+                        {{ t.header }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="//cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
+<script>
+$(window).ready(function() {
+  new Vivus('sensebox-vivus', {
+    duration: 120,
+    file: '{{ site.baseurl | append: "/images/sensebox_wort_und_logo_empty.svg" }}'
+  }, function() {
+    // Replacing line SVG with filled svg
+    $(this.el).hide().load('{{ site.baseurl | append: "/images/sensebox_wort_und_logo_no_bg.svg" }}', function() {
+      $(this).fadeIn();
+    });
+  });
+})
+</script>
