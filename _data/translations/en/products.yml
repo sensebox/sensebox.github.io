@@ -4,8 +4,7 @@ header-introduction: "There are two versions of senseBox: <b>senseBox:home</b> a
 
 to-senseBox-overwiew: "senseBox overview &raquo;"
 
-introduction: "<p>There are two variations of senseBox <br>
-    <em>senseBox:home</em> and <em>senseBox:edu</em>.</p>
+introduction: "<p>There are two variations of senseBox; <em>senseBox:home</em> and <em>senseBox:edu</em>.</p>
 
     <p><em>senseBox:home</em> contains less devices, therefore it is easier to build manually and set up in your home,  in order to measure unique environmental phenomena. It can also be connected to your WiFi or LAN port. The user obtains the individual source code after their registration to <em>openSenseMap</em>. Following registration, users can view continuous, location based measurements collected from sensors, such as temperature, humidity, air pressure, brightness, UV-light and noise on the openSenseMap.</p>
 
