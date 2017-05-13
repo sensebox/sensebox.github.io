@@ -60,9 +60,12 @@
     </div>
 </div>
 
+
+{% assign carouselpages = "main|products|osem|docs|background|press|awards|feinstaub-workshop" | split: "|" %}
+{% if carouselpages contains page.id %}
 <!-- Carousel
     ================================================== -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel" data-ride="carousel">
     {% if page.needsCarouselControl == true %}
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -70,29 +73,9 @@
           <li data-target="#myCarousel" data-slide-to="1"></li>
       </ol>
     {% endif %}
-
     <div class="carousel-inner" role="listbox">
-    {% if page.id == 'main' %}
-      {% include _carousel_content/main_carousel.html %}
-    {% elsif page.id == 'products' %}
-      {% include _carousel_content/products_carousel.html %}
-    {% elsif page.id == 'osem' %}
-      {% include _carousel_content/osem_carousel.html %}
-    {% elsif page.id == 'books' %}
-      {% include _carousel_content/books_carousel.html %}
-    {% elsif page.id == 'background' %}
-      {% include _carousel_content/background_carousel.html %}
-    {% elsif page.id == 'press' %}
-      {% include _carousel_content/press_carousel.html %}
-    {% elsif page.id == 'awards' %}
-      {% include _carousel_content/awards_carousel.html %}
-    {% elsif page.id == 'feinstaub-workshop' %}
-      {% include _carousel_content/feinstaub-workshop_carousel.html %}
-    {% else %}
-      {% include _carousel_content/default_carousel.html %}
-    {% endif %}
+    {% include _carousel_content/{{ page.id }}_carousel.html %}
     </div>
-
     {% if page.needsCarouselControl == true %}
       <a class="left carousel-control">
           <span class="glyphicon glyphicon-chevron-left"  href="#myCarousel" aria-hidden="true" role="button" data-slide="prev"></span>
@@ -105,3 +88,6 @@
     {% endif %}
 </div>
 <!-- /.carousel -->
+{% else %}
+<div id="emptyCarousel"></div>
+{% endif %}

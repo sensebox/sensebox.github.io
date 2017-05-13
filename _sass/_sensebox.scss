@@ -800,7 +800,7 @@ article.post-content img {
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
-$carousel-height: 450px;
+$carousel-height: 300px;
 
 /* Carousel base class */
 
@@ -940,7 +940,7 @@ $carousel-height: 450px;
     width: 100%;
     height: 100%;
     padding-top: 75px;
-    padding-bottom: 100px;
+    padding-bottom: 75px;
     position: absolute;
     color: white;
 }
@@ -1103,13 +1103,6 @@ $carousel-height: 450px;
     text-align: center;
 }
 
-.inside-carousel-container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
-
 @media (min-width: 768px) and (max-width: 992px) {
   .inside-carousel-container {
     width: initial;
@@ -1206,4 +1199,8 @@ $carousel-height: 450px;
 
 .product-edu-img:hover {
   content:url("./../images/senseBox_edu_500_open.png");
+}
+
+#emptyCarousel {
+  height: 75px;
 }
