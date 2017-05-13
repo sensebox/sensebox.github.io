@@ -2,7 +2,7 @@
 layout: post
 title:  "CeBIT Innovation Award 2017 - Sonderpreis für Digitales Lehren und Lernen"
 weight:   8
-thumbnail: http://donar.messe.de/exhibitor/cebit/2017/Z232313/gallery-868x0-490298.jpg
+thumbnail: /images/awards/cebit-innovation-award-2017.jpg
 type: award
 categories: awards
 year: 2017
