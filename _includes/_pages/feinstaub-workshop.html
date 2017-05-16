@@ -1,0 +1,58 @@
+<div class="page-header">
+  <h1>Feinstaub Workshop</h1>
+</div>
+<p>
+  Beim Feinstaub-Workshop in der <a href='https://www.warpzone.ms/'>Warpzone Münster</a> kommen Bürger zusammen, die an der Messung von Feinstaub und anderen Umweltphänomenen interessiert sind und die Daten als Open Data veröffentlichen möchten. Besteller des Feinstaub-Sensors von luftdaten.info können vor Ort ihre Sensoren zusammenbauen. Wir werden auch einige Bausätze der senseBox mit der neuen Feinstaub-Erweiterung dabei haben und vor Ort zum Verkauf anbieten. Unser Team betreut bei Bedarf auch beim Aufbau und der Registrierung der Stationen.
+</p>
+<h1>Details</h1>
+<p>
+  📆 10. Juni 2017
+  <br />
+  🕙 10:00 - 15:00 Uhr
+</p>
+<div id='map'></div>
+
+<h1>Veranstalter</h1>
+<div class="row">
+  <div class="col-md-4">
+    <a href="https://ifgi.uni-muenster.de" target="_blank">
+      <img src="{{ site.baseurl | append: "/images/sponsors/ifgi.png" }}" class="responsive-img" alt="ifgi Logo">
+    </a>
+  </div>
+  <div class="col-md-4">
+    <a href="https://www.warpzone.ms/" target="_blank">
+      <img src="{{ site.baseurl | append: "/images/warpzone-logo.png" }}" class="responsive-img" alt="warpzone Logo">
+    </a>
+  </div>
+  <div class="col-md-4">
+    <a href="https://ruhrmobil-e.de/" target="_blank">
+      <img src="{{ site.baseurl | append: "/images/ruhrmobil-e-logo.png" }}" class="responsive-img" alt="ruhmobil e Logo">
+    </a>
+  </div>
+</div>
+
+
+<style>
+  #map {
+    width:100%;
+    height: 400px;
+  }
+</style>
+<script src='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.css' rel='stylesheet' />
+<script>
+// Provide your access token
+L.mapbox.accessToken = 'pk.eyJ1IjoiZmVsaXhhZXRlbSIsImEiOiI2MmE4YmQ4YjIzOTI2YjY3ZWFmNzUwOTU5NzliOTAxOCJ9.nshlehFGmK_6YmZarM2SHA';
+// Create a map in the div #map
+locationMap = L.mapbox.map('map', 'mapbox.streets').setView([51.944531, 7.638758], 13);
+
+// Create a marker and add it to the map.
+var marker = L.marker([51.944531, 7.638758], {
+  icon: L.mapbox.marker.icon({
+    'marker-color': '#f86767'
+  })
+}).addTo(locationMap);
+
+marker.bindPopup("<b>warpzone e.V.</b><br />Am Hawerkamp 31<br />Haus G, 3. Obergeschoss<br />48163 Münster").openPopup()
+
+</script>

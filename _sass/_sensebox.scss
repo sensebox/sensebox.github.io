@@ -390,17 +390,17 @@ h3.panel-title {
 }
 
 .carousel-control {
-  color: $sensebox-green;
+  color: #ffffff;
 }
 
 .carousel-indicators {
 
   > li {
-    border: 1px solid $sensebox-green;
+    border: 1px solid #ffffff;
   }
 
   > .active {
-    background-color: $sensebox-green;
+    background-color: #ffffff;
   }
 }
 
@@ -919,6 +919,15 @@ $carousel-height: 450px;
   background: -webkit-linear-gradient(-45deg,  #820202 0%,#19ffe0 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg,  #820202 0%,#19ffe0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#820202', endColorstr='#19ffe0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.background-gradient-feinstaub-workshop {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa84c+0,ff7b0d+100;Orange+3D */
+  background: #ff7b0d; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #ff7b0d 0%, #ffa84c 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #ff7b0d 0%,#ffa84c 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #ff7b0d 0%,#ffa84c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7b0d', endColorstr='#ff7b0d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .vcenter {
