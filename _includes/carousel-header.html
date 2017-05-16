@@ -1,6 +1,10 @@
-<div class="navbar-wrapper">
+{% assign carouselpages = "main|products|osem|docs|background|press|awards" | split: "|" %}{%
+  assign navpages = "blog|products|osem|docs|background|press|awards" | split: "|" %}{%
+  assign t = site.data.translations.[page.lang].header %}
+<div class="navbar-wrapper{% unless carouselpages contains page.id %} navbar-no-carousel{% endunless %}">
     <div class="container">
         <nav class="navbar navbar-static-top">
+
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -15,25 +19,14 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        {% assign t = site.data.translations.[page.lang].header %}
-                          {% assign menupages = site.pages | sort:"weight" %}
-                            {% for menupage in menupages %}
-                              {% if menupage.lang == page.lang %}
-                                {% if menupage.id != 'main' %}
-                                  {% if menupage.id != 'contact' %}
-                                    {% if menupage.id != 'materials'%}
-                                      {% if menupage.id != 'books' %}
-                                        {% if menupage.id != '404' %}
-                                          <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
-                                              <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
-                                          </li>
-                                        {% endif %}
-                                      {% endif %}
-                                    {% endif %}
-                                  {% endif %}
-                                {% endif %}
-                              {% endif %}
-                            {% endfor %}
+                    {% assign menupages = site.pages | sort:"weight" %}
+                    {% for menupage in menupages %}
+                      {% if menupage.lang == page.lang and navpages contains menupage.id %}
+                      <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
+                        <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
+                      </li>
+                      {% endif %}
+                    {% endfor %}
                     </ul>
                     {% if page.translationAvailable != false %}
                     <ul class="nav navbar-nav pull-right">
@@ -57,7 +50,6 @@
 </div>
 
 
-{% assign carouselpages = "main|products|osem|docs|background|press|awards" | split: "|" %}
 {% if carouselpages contains page.id %}
 <!-- Carousel
     ================================================== -->
