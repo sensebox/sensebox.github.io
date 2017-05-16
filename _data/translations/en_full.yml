@@ -2,7 +2,7 @@ header:
   blog: "Blog"
   products: "Products"
   osem: "openSenseMap"
-  docs: "Books"
+  books: "Books"
   background: "Background"
   press: "Press"
   awards: "Awards"
@@ -25,7 +25,7 @@ footer:
     contact: "Contact"
   publications:
     header: "Publications"
-    docs: "Documentation"
+    books: "Books"
     thesis: "Bachelorthesis"
   partner:
     header: "Partner"
@@ -87,7 +87,7 @@ products:
 
       <p>The <em>senseBox:edu</em> was specifically developed to be applied in school classrooms or by junior scientists at home. The project focus is on learning the basics of programming and electronics, and is related to the collection of environmental data.</p>
 
-      <p>The senseBox setup of components is open under the <a href=\"http://www.ohwr.org/attachments/2388/cern_ohl_v_1_2.txt\" class=\"link\" target=\"_blank\">CERN Open Hardware License 1.2</a>. The source code of senseBox:home is open under the <a href=\"http://opensource.org/licenses/LGPL-3.0\" class=\"link\" target=\"_blank\">LGPL 3.0 License</a>. The <a href=\"http://www.sensebox.de/en/docs\" class=\"link\">instructions and documentation</a> are Open Educational Resources (OER) under the  Creative Commons License <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">CC BY SA 4.0</a>.</p>
+      <p>The senseBox setup of components is open under the <a href=\"http://www.ohwr.org/attachments/2388/cern_ohl_v_1_2.txt\" class=\"link\" target=\"_blank\">CERN Open Hardware License 1.2</a>. The source code of senseBox:home is open under the <a href=\"http://opensource.org/licenses/LGPL-3.0\" class=\"link\" target=\"_blank\">LGPL 3.0 License</a>. The <a href=\"http://www.sensebox.de/en/books\" class=\"link\">instructions and documentation</a> are Open Educational Resources (OER) under the  Creative Commons License <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">CC BY SA 4.0</a>.</p>
 
       <p>&nbsp;</p>"
 

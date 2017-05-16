@@ -22,13 +22,11 @@
                                 {% if menupage.id != 'main' %}
                                   {% if menupage.id != 'contact' %}
                                     {% if menupage.id != 'materials'%}
-                                      {% if menupage.id != 'books' %}
-                                        {% if menupage.id != '404' %}
-                                          {% if menupage.id != 'feinstaub-workshop' %}
-                                            <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
-                                                <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
-                                            </li>
-                                          {% endif %}
+                                      {% if menupage.id != '404' %}
+                                        {% if menupage.id != 'feinstaub-workshop' %}
+                                          <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
+                                              <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
+                                          </li>
                                         {% endif %}
                                       {% endif %}
                                     {% endif %}
@@ -76,8 +74,8 @@
       {% include _carousel_content/products_carousel.html %}
     {% elsif page.id == 'osem' %}
       {% include _carousel_content/osem_carousel.html %}
-    {% elsif page.id == 'docs' %}
-      {% include _carousel_content/docs_carousel.html %}
+    {% elsif page.id == 'books' %}
+      {% include _carousel_content/books_carousel.html %}
     {% elsif page.id == 'background' %}
       {% include _carousel_content/background_carousel.html %}
     {% elsif page.id == 'press' %}

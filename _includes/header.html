@@ -31,13 +31,11 @@
                   	 		{% if menupage.id != 'hackathon' %}
                           {% if menupage.id != 'hackathon_registration' %}
                             {% if menupage.id != 'materials' %}
-                              {% if menupage.id != 'books' %}
-                                {% if menupage.id != '404' %}
-                                  {% if menupage.id != 'codeweek' %}
-          			                    <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
-          			                      <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
-          			                    </li>
-                                  {% endif %}
+                              {% if menupage.id != '404' %}
+                                {% if menupage.id != 'codeweek' %}
+        			                    <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
+        			                      <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
+        			                    </li>
                                 {% endif %}
                               {% endif %}
                             {% endif %}
