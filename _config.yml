@@ -2,7 +2,7 @@
 title: senseBox | Die Kiste mit Sinn
 email: info@sensebox.de
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://sensebox.de/" # the base hostname & protocol for your site
+url: "https://sensebox.de" # the base hostname & protocol for your site
 twitter_username: sensebox_de
 github_username: sensebox
 facebook_username: sensebox.de
