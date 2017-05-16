@@ -9,7 +9,11 @@
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
                         </button>
-                    <a class="navbar-brand" href="/index.html">
+                    {% if page.lang == 'en' %}
+                      <a class="navbar-brand" href="{{ site.url }}/en">
+                    {% else %}
+                      <a class="navbar-brand" href="{{ site.url }}">
+                    {% endif %}
                         <img class="logo" style="max-height:100%;" src="{{ site.baseurl | append: "/images/sensebox_logo.svg"}}"/>
                     </a>
                 </div>
