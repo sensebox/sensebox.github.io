@@ -738,6 +738,10 @@ article.post-content img {
     background: linear-gradient(180deg, rgba(#000000, 0.3), rgba(#000000, 0.0));
 }
 
+.navbar-no-carousel {
+  background: $sensebox-green;
+}
+
 
 /* Flip around the padding for proper display in narrow viewports */
 
