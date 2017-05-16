@@ -37,7 +37,7 @@
           {% break %}
         {% else %}
           <div class="posts">
-            <h2 style="clear:both"><a href="{{ site.baseurl | append: post.permalink }}">{{ post.title }}</a></h2>
+            <h2 style="clear:both"><a href="{{ site.url | append: post.url }}">{{ post.title }}</a></h2>
               <div class="row">
                 {% if post.thumbnail %}
                 <div class="col-sm-4">
