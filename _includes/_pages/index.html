@@ -36,7 +36,7 @@
 
       <hr />
 
-      <h1 style="text-align: center;">{{ t.news }}</h1>
+      <a href="{{ site.url | append: "/blog" }}"><h1 style="text-align: center;">{{ t.news }} &raquo;</h1></a>
       {% assign posts = site.posts | sort: 'date' | reverse %}
       {% for post in posts %}
         {% if forloop.index0 == 2%}
