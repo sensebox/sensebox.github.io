@@ -35,8 +35,10 @@ $(window).ready(function() {
     file: '{{ site.baseurl | append: "/images/sensebox_wort_und_logo_empty.svg" }}'
   }, function() {
     // Replacing line SVG with filled svg
-    $(this.el).hide().load('{{ site.baseurl | append: "/images/sensebox_wort_und_logo_no_bg.svg" }}', function() {
-      $(this).fadeIn();
+    $(this.el)
+      .fadeOut(50)
+      .load('{{ site.baseurl | append: "/images/sensebox_wort_und_logo_no_bg.svg" }}', function() {
+      $(this).fadeIn(100);
     });
   });
 })
