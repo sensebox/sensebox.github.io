@@ -4,6 +4,14 @@
 <p>
   Beim Feinstaub-Workshop in der <a href='https://www.warpzone.ms/'>Warpzone Münster</a> kommen Bürger zusammen, die an der Messung von Feinstaub und anderen Umweltphänomenen interessiert sind und die Daten als Open Data veröffentlichen möchten. Besteller des Feinstaub-Sensors von luftdaten.info können vor Ort ihre Sensoren zusammenbauen. Wir werden auch einige Bausätze der senseBox mit der neuen Feinstaub-Erweiterung dabei haben und vor Ort zum Verkauf anbieten. Unser Team betreut bei Bedarf auch beim Aufbau und der Registrierung der Stationen.
 </p>
+<div class="row">
+  <div class="col-md-6">
+    <img src="{{ site.baseurl | append: '/images/feinstaub-workshop/feinstaub-1.jpg' }}" class="product-img" data-action="zoom" />
+  </div>
+  <div class="col-md-6">
+    <img src="{{ site.baseurl | append: '/images/feinstaub-workshop/feinstaub-2.jpg' }}" class="product-img" data-action="zoom" />
+  </div>
+</div>
 <h1>Details</h1>
 <p>
   📆 10. Juni 2017
@@ -11,7 +19,6 @@
   🕙 10:00 - 15:00 Uhr
 </p>
 <div id='map'></div>
-
 <h1>Veranstalter</h1>
 <div class="row">
   <div class="col-md-4">
@@ -31,7 +38,7 @@
   </div>
 </div>
 
-
+<!-- START LEAFLET SCRIPTS AND CSS -->
 <style>
   #map {
     width:100%;
@@ -56,3 +63,11 @@ var marker = L.marker([51.944531, 7.638758], {
 marker.bindPopup("<b>warpzone e.V.</b><br />Am Hawerkamp 31<br />Haus G, 3. Obergeschoss<br />48163 Münster").openPopup()
 
 </script>
+
+<!-- END LEAFLET SCRIPTS AND CSS -->
+
+<!-- START ZOOM SCRIPTS AND CSS -->
+<link href="css/zoom.css" rel="stylesheet">
+<script src="assets/zoom.js"></script>
+
+<!-- END ZOOM SCRIPTS AND CSS -->
