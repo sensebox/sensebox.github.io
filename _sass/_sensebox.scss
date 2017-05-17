@@ -226,6 +226,30 @@ hr {
   padding-left: 0;
   padding-bottom: 80px;
 
+  a:hover {
+    text-decoration: none;
+  }
+
+  .clearfix {
+    color: #888
+  }
+
+  .post-title {
+    font-family: BrixSlab-Bold;
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .post-abstract {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+
+    > p {
+      color: #adadad;
+    }
+  }
+
   > h1 {
     > a{
       color: $sensebox-green;
@@ -490,6 +514,8 @@ em {
 .date,
 .author {
   color: #888;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .clear {
