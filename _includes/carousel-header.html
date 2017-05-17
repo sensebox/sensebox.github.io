@@ -1,5 +1,5 @@
 {% assign carouselpages = "main|products|osem|docs|background|press|awards|feinstaub-workshop" | split: "|" %}{%
-  assign navpages = "blog|products|osem|docs|background|press|awards|feinstaub-workshop" | split: "|" %}{%
+  assign navpages = "blog|products|osem|docs|background|press|awards" | split: "|" %}{%
   assign t = site.data.translations.[page.lang].header %}
 <div class="navbar-wrapper{% unless carouselpages contains page.id %} navbar-no-carousel{% endunless %}">
     <div class="container">
