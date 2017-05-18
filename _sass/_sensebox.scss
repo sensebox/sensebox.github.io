@@ -262,6 +262,21 @@ hr {
     }
   }
 
+  .post-content {
+
+    .post-image {
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      > img {
+        margin: 2px;
+        max-width: 100%;
+      }
+    }
+
+  }
+
   > h1 {
     > a{
       color: $sensebox-green;

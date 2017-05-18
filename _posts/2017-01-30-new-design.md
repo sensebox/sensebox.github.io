@@ -5,6 +5,8 @@ date: 2017-05-11
 author: Felix
 abstract: "Unsere Internetseite hat einen neuen Anstrich bekommen! Es gibt einen neuen Style, einen Blog, und viele kleine Änderungen"
 thumbnail: /images/blog_images/screenshot_osem.png
+image1: /images/blog_images/screenshot_osem.png
+image2: http://localhost:4000/images/instructions_edu_bg.jpg
 lang: de
 ---
 Neuer Style
@@ -15,6 +17,8 @@ Introducing: Blog
 ============
 Ab sofort werden wir Neuigkeiten, Ankündigungen oder kleinere Anleitungen sowie FAQs in unserem Blog veröffentlichen.
 
+{% include image.html image=page.image2 %}
+
 Produktpräsentation
 ============
 Unsere senseBoxen werden nun tabellarisch dargestellt. Dabei wird genau aufgelistet welche Shields, Sensoren und andere Komponenten sich in der entsprechenden Box befinden.
@@ -22,3 +26,5 @@ Unsere senseBoxen werden nun tabellarisch dargestellt. Dabei wird genau aufgelis
 Pressekit
 ============
 Ebenfalls rundum erneuert wurde das Pressekit. Dieses ist nun offensichtlicher auf der Presse Seite präsentiert. Es können nicht nur die Logos und Flyer heruntergeladen werden, sondern es finden sich dort auch Informationen zur Schreibweise der senseBox sowie die Farbcodes des senseBox Grüns.
+
+{% include image.html image=page.image1 %}
