@@ -740,7 +740,9 @@ article.post-content img {
 
 .navbar-no-carousel {
   background: $sensebox-green;
-  padding-bottom: 10px;
+  .navbar {
+    margin-bottom: 10px;
+  }
 }
 
 
@@ -1042,6 +1044,10 @@ $carousel-height: 300px;
 
     .carousel {
       margin-bottom: 0;
+    }
+
+    .navbar-no-carousel {
+      padding-bottom: 10px;
     }
 
     .marketing {
