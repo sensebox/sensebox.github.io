@@ -28,26 +28,10 @@
   position: 6
   description: Mario studies chemistry and geography at the university of muenster and works as a student assistant at <a href="http://www.gi-at-school.de/" target="_blank">GI@School</a>. In his bachelor thesis Mario developed a prototype for measuring air quality with the senseBox. Mario supports the team with workshops in schools and is looking for new use cases for the senseBox.
 
-
 - name: Matthias Pfeil
   image: /images/team/Pfeil.jpg
   position: 7
   description: Matthias hat Bachelor of Science Geoinformatik an der Universität Münster studiert. Er ist zuständig für alle technischen Fragen bezüglich der eingesetzten Technologien und betreut die <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a> und <a href="https://github.com/sensebox/OpenSenseMap-API/wiki/API-Dokumentation" target="_blank">API</a>.
-
-- name: Christoph Kisfeld
-  image: /images/team/raute.png
-  position: 8
-  description: Christoph is geoinformatics student at the Institute for Geoinformatics in Münster. He supports GI@School at further developing openSenseMap and has presented senseBox at <a href="http://www.hackyourcity.de/dortmund/" target="_blank">Hack Your City</a> and <a href="http://jugendhackt.de/events/ost/" target="_blank">Jugend hackt Ost</a> events.
-
-- name: Joana Gockel
-  image: /images/team/joana.jpg
-  position: 9
-  description: Joana studied the Bachelor of Science in Geoinformatics. As upcoming Master student  she is going on with supporting the working group GI@School. Together with the senseBox Team she is presenting the senseBox:home and the openSenseMap to interested citizen on fairs. She is helping teaching students of different age groups how to program and assemble the senseBox:edu. Within her bachelor thesis she tried and proved methods for cleaning data measured by the openSenseBox. Advantages and disadvantages of low-cost sensors are presented as well.
-
-- name: Aleksandr Shirokov
-  image: /images/team/aleks.jpg
-  position: 10
-  description: Aleksandr Shirokov  is a Master Student at the Institute for Geoinformatics working as a student assistant  in the Spatial Intelligence Lab at WWU. He holds a bachelor degree in Information Technology in GIS and currently actively participate in various projects at the IfGI.  As part of a SenseBox Team Aleksandr is mainly responsible for the development and maintenance of OpenSenseMap.
 
 - name: Felix Erdmann
   image: /images/team/Erdmann.jpg
@@ -63,11 +47,6 @@
   image: /images/team/Pape.jpg
   position: 13
   description: Together with Matthias, Gerald will look after everything related to the <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a> and the <a href="https://github.com/sensebox/OpenSenseMap-API/wiki/API-Dokumentation" target="_blank">API</a>. He studied Master Geoinformatics at the University of Münster.
-
-- name: Marc Dragunski
-  image: /images/team/raute.png
-  position: 14
-  description: Marc wrote his BA thesis "Geostatistical Methods for the OpenSenseMap-Platform" in 2016 at the Institute for Geoinformatics in Münster. His work had the goal to implement interpolation methods into <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a>.
 
 - name: Norwin Roosen
   image: /images/team/Roosen.jpg
