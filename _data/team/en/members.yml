@@ -16,7 +16,7 @@
 - name: Jan Wirwahn
   image: /images/team/Wirwahn.jpg
   position: 4
-  description: Jan is a student assistant at the GI@School Lab. He is the developer of the weatherSenseBox, one of the first use cases for the senseBox in education. He is teaching and instructing students and teachers in the use of senseBox at the Institute for Geoinformatics an in secondary schools. His interests are in the hardware business, in particular Arduino microcontrollers and all kinds of sensors.
+  description: Jan is a research associate at senseBox. He is the developer of the weatherSenseBox, one of the first use cases for the senseBox in education. He is teaching and instructing students and teachers in the use of senseBox at the Institute for Geoinformatics an in secondary schools. His interests are in the hardware business, in particular Arduino microcontrollers and all kinds of sensors.
 
 - name: Björn Guntermann
   image: /images/team/Guntermann.jpg
@@ -41,7 +41,7 @@
 - name: Bernd van Rennings
   image: /images/team/vanRennings.jpg
   position: 12
-  description:  Bernd works as a student assistant for the project senseBox. He holds a bachelor degree in mathematics and computer since. Currently he is Master Student at the WWU.
+  description: Bernd works as a student assistant for the project senseBox. He holds a bachelor degree in mathematics and computer since. Currently he is Master Student at the WWU.
 
 - name: Gerald Pape
   image: /images/team/Pape.jpg
