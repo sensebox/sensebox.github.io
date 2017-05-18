@@ -4,9 +4,20 @@ layout: default
 
 <!-- News Bereich / Blogeinträge -->
 <div class="posts">
-    <div class="page-header">
-        <h1>{{ page.title }} <small> - {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</small></h1>
-    </div>
+	<div class="row">
+		<div class="col-lg-12 post-header">
+			<div style="text-align: center;">
+				<h2>
+					<a href="{{ site.url | append: '/blog' }}" style="color: rgba(0,0,0,0.5);">Blog</a>
+				</h2>
+				<h1 class="post-title">{{ page.title }}</h1>
+				<div class="clearfix">
+				  <span class="author">Von {{ page.author }} am {{ page.date | date: "%d/%m/%Y" }}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
     <article class="post-content">
         {{ content }}
     </article>
