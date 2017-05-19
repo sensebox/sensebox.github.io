@@ -56,6 +56,14 @@
         <p><a class="btn" href="{{ site.url | append: "/blog" }}" role="button">{{ t.go-to-blog }} &raquo;</a></p>
       </div>
       <hr />
+      <h1>{{ t.upcoming_events }}</h1>
+      <div class="container">
+        {% assign events = site.events | sort: 'ending-date' %}
+        {% for event in events %}
+          {% include event_template.html event=event %}
+        {% endfor %}
+      </div>
+     <hr />
       <h1 style="text-align: center;">Partner</h1>
       <div class="row">
         <div class="col-lg-12">

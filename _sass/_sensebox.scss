@@ -1193,26 +1193,17 @@ $carousel-height: 450px;
 } /* last row */
 
 .event {
-  margin-bottom: 30px;
-}
-.event-time {
-  margin-right: 55px;
+  padding: 20px;
+  vertical-align: middle;
+  display: flex;
+
+  .details {
+    margin-left: 20px;
+  }
 }
 
-.event-time > hr {
-  margin: 0;
-}
-
-.event-time > .start {
-  margin-bottom: 10px;
-}
-
-.event-time > .end {
-  margin-top: 10px;
-}
-
-.event-title {
-  margin: 0;
+.no-margin {
+  margin: 0px !important;
 }
 
 .btn {

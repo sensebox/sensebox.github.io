@@ -1,35 +1,17 @@
-<div class="event row">
-  <div class="col-md-4">
-    <h3 class="event title">
-      {{ include.event.title }}
+<div class="event thumbnail">
+  <div>
+    <h3 class="no-margin">
+      {{ include.event.starting-date | date: '%d.%m.' }}
+      <br />
+      {{ include.event.starting-date | date: '%Y' }}
     </h3>
   </div>
-
-  <div class="col-md-4">
-    <p class="event date">
-      <img src='{{ site.baseurl | append: "/images/iconmonstr-calendar-4.svg" }}' class="event-icon"/>
-      {% if include.event.starting-date == include.event.ending-date %}
-        {{ include.event.starting-date | date: '%d.%m.%Y' }}
-      {% else %}
-        {{ include.event.starting-date | date: '%d.%m.%Y' }} - {{ include.event.ending-date | date: '%d.%m.%Y' }}
-      {% endif %}
+  <div class="details">
+    <p class="no-margin">
+      <b>{{ include.event.title }}</b>
     </p>
-  </div>
-
-  <div class="col-md-4">
-    <p class="event place">
-      <img src='{{ include.site.baseurl | append: "/images/iconmonstr-location-1.svg" }}' class="event-icon" />
+    <p class="no-margin">
       {{ include.event.place }}
     </p>
-    <!--
-    {% if include.event.link %}
-      <a href="{{ include.event.link }}" class="event-info">
-        <img src='{{ site.baseurl | append: "/images/iconmonstr-info-6.svg" }}' class="event-icon" />
-        {{ include.event.link }}
-      </a>
-    {% endif %}
-  -->
   </div>
-
 </div>
-<hr style="width:75%;"/>
