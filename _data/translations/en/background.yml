@@ -7,7 +7,7 @@ philosophy:
     header: "Citizen Science"
     description: "The  <em>senseBox:home</em> is a Citizen Science toolkit. With senseBox you can make measurements, helping to answer a variety of scientific questions and to support Citizen Science Projects from the local to global scale. Data collected by senseBox can increase the measured density of various enviromental factors and can contribute to more precise statements regarding climate, pollution or traffic."
   education:
-    header: "Education"
+    header: "Digital Education"
     description: "The <em>senseBox:edu</em> is designed to be a tool for schools in a combination of subjects, whereas interdisciplinary projects in informatics/electronics/physics are build and programmed. The data collected then can be used to applicable research questions, in areas such as geography, biology or chemistry. For example, one application could be the analysis and interpolation of time-series data, which provides also interdisciplinary links to mathematics.</p>
     <p>The senseBox:edu kit is suitable for one to three students. The box contains an Arduino Uno (or Genuino Uno) micro-controller, a variety of sensors, resistors, devices for circuits (among others: LEDs, cables and breadboard) and possibilities to save and transmit collected data. Multiple senseBox:edu (up to 11) can be packed in a single class box. The Arduino micro-controller is the heart of the collection and is used to control the connected components on digital or analogue inputs and outputs."
   openscience:
