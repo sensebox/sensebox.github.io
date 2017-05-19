@@ -1,4 +1,6 @@
-description: "<p>Die <em>openSenseMap</em> ist unsere Web-Plattform für die offenen Daten der senseBox. Jede <em>senseBox:home</em> übeträgt ihre Messdaten direkt auf diese Karte, wo sie betrachtet, analysiert und heruntergeladen werden können. Auch mit der <em>senseBox:edu</em> erfasste Daten können auf der openSenseMap angezeigt werden.</p>
+description: "<p>Die <em>openSenseMap</em> ist unsere Web-Plattform für die offenen Daten der senseBox und anderer Geräte. Jede <em>senseBox:home</em> übeträgt ihre Messdaten direkt auf diese Karte, wo sie betrachtet, analysiert und heruntergeladen werden können. Auch mit der <em>senseBox:edu</em> erfasste Daten können auf der openSenseMap angezeigt werden.</p>
     <p>Alle auf der openSenseMap veröffentlichten Daten sind Open Data unter der <a href=\"http://opendatacommons.org/licenses/pddl/summary/\" class=\"link\" target=\"_blank\">Public Domain Dedication and License 1.0</a>.</p>"
-description_short: "<p>Die <b>openSenseMap</b> ist unsere Web-Plattform für die offenen Daten der senseBox.</p>"
+description_api: "<p>Mit unserer <a href=\"https://docs.opensensemap.org/\" class=\"link\" target=\"_blank\">offenen API</a> lassen sich sämtliche Sensordaten für andere Anwedungen weiterverwenden. Außerdem können Sensordaten von alternativen Quellen in die openSenseMap eingebunden werden.</p>"
+description_short: "<p>Die <b>openSenseMap</b> ist unsere Web-Plattform für offene Sensordaten der senseBox und anderer Geräte.</p>"
 link: "zur openSenseMap »"
+api_link: "zu den API Docs »"
