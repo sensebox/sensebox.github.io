@@ -1,0 +1,9 @@
+<div class="row">
+	<div class="post-image">
+		{% if include.image | slice 0,3 == "http://" or include.image | slice 0,4 == "https://" include.image | slice 0,2 == "www" %}
+			<img src="{{ include.image }}" alt="{{ include.image }} - Logo"/>
+		{% else %}
+			<img src="{{ site.baseurl | append: include.image }}" alt="{{ page.title }} - Logo"/>
+		{% endif %}
+	</div>
+</div>

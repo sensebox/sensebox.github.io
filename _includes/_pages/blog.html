@@ -1,32 +1,38 @@
 {% assign posts = site.posts | sort: 'date' | reverse %}
 {% for post in posts %}
 <div class="posts">
-  <h2 style="clear:both"><a href="{{ site.baseurl | append: post.url }}">{{ post.title }}</a></h2>
-    <div class="row">
+  <div class="row">
+    <a href="{{ site.baseurl | append: post.url }}">
       {% if post.thumbnail %}
-      <div class="col-sm-4">
-        <img class="press-pic" src="{{ site.baseurl | append: post.thumbnail }}" alt="{{ post.title }} - Logo"/>
-      </div>
-
-      <div class="col-sm-8">
-        <div class="press-text">
-          <p>
-            {{ post.abstract }}
-          </p>
+        <div class="col-lg-6 col-sm-6">
+          <h2 class="post-title">{{ post.title }}</h2>
+          <div class="clearfix">
+            <strong>{{ post.date | date: "%d/%m/%Y" }}</strong><span class="author">von {{ post.author }} </span>
+          </div>
+          <div class="post-abstract">
+            <p>
+              {{ post.abstract }}
+            </p>
+          </div>
         </div>
-      </div>
-  {% else %}
-      <div class="press-text">
-        <p>
-          {{ post.abstract }}
-        </p>
-      </div>
-  {% endif %}
+        <div class="col-lg-6 col-sm-6 hidden-xs">
+          <img class="press-pic" src="{{ site.baseurl | append: post.thumbnail }}" alt="{{ post.title }} - Logo"/>
+        </div>
+      {% else %}
+        <div class="col-lg-12">
+          <h2 class="post-title">{{ post.title }}</h2>
+          <div class="clearfix">
+            <strong>{{ post.date | date: "%d/%m/%Y" }}</strong><span class="author">von {{ post.author }} </span>
+          </div>
+          <div class="post-abstract">
+            <p>
+              {{ post.abstract }}
+            </p>
+          </div>
+        </div>
+      {% endif %}
+    </a>
   </div>
-
   <hr class="clear nomargin">
-  <div class="author">
-    <span class="date">{{ post.date | date: '%d. %B %Y' }}</span> von <span class="author"> {{ post.author }} </span>
-  </div>
 </div>
 {% endfor %}

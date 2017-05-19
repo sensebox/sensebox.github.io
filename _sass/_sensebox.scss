@@ -226,6 +226,57 @@ hr {
   padding-left: 0;
   padding-bottom: 80px;
 
+  a:hover {
+    text-decoration: none;
+  }
+
+  .clearfix {
+    color: #888
+  }
+
+  .post-header {
+    font-family: BrixSlab-Bold, Helvetica, sans-serif;
+
+    h2 {
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  .post-title {
+    font-family: BrixSlab-Bold, Helvetica, sans-serif;
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .post-abstract {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+
+    > p {
+      color: #adadad;
+    }
+  }
+
+  .post-content {
+
+    .post-image {
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      > img {
+        margin: 2px;
+        max-width: 100%;
+      }
+    }
+
+  }
+
   > h1 {
     > a{
       color: $sensebox-green;
@@ -490,6 +541,8 @@ em {
 .date,
 .author {
   color: #888;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .clear {
