@@ -1044,6 +1044,22 @@ $carousel-height: 450px;
     margin-left: 10px;
 }
 
+.marketing .col-lg-4 {
+  .hero-product {
+    color: $text-color;
+    &:hover {
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+  .hero-product-img {
+    max-width: 230px;
+    max-height: 230px;
+    margin-bottom: 10px;
+  }
+}
+
+
 .badges {
     text-align: center;
     margin-top: 5em;
