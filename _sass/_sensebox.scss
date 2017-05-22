@@ -442,6 +442,11 @@ h3.panel-title {
 
 .carousel-control {
   color: #ffffff;
+  pointer-events: none;
+
+  span {
+    pointer-events: auto;
+  }
 }
 
 .carousel-indicators {
@@ -1266,4 +1271,8 @@ $carousel-height: 450px;
 
 .product-edu-img:hover {
   content:url("./../images/senseBox_edu_500_open.png");
+}
+
+.carousel-control {
+
 }
