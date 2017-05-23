@@ -4,3 +4,31 @@ flyer: "Flyer"
 spellingNotice: "senseBox fängt bewusst mit einem kleinen <code>s</code> an und wird immer als ein Wort geschrieben."
 colors: "Farben"
 color-values-header: "Das senseBox Grün hat folgende Farbwerte"
+about: "senseBox und openSenseMap 
+Die senseBox ist ein Citizen Science Projekt, welches im Schüler- und Forschungslabor
+GI@School am Institut für Geoinformatik der Universität Münster entwickelt wurde. Bei
+diesem Projekt werden Do-It-Yourself Bausätze für Sensorstationen zusammen mit
+detaillierten Anleitungen interessierten Bürgerinnen und Bürgern bereitgestellt, um ihnen
+die Möglichkeit zu geben, sich an einer wissenschaftlichen Messkampagne für
+Umweltdaten mit Hilfe von Photonik-Technologien zu beteiligen.
+
+Hierfür wurde in dem Projekt die senseBox:home entwickelt: eine low-cost Wetterstation
+mit optischen Sensoren zur Messung von Helligkeit und UV-Licht, sowie Sensoren für
+Temperatur, Luftfeuchtigkeit und Luftdruck. Aktuell wird an mehreren Sensorerweiterungen
+gearbeitet, bei denen z.B. durch einen photonischen Feinstaubsensor
+Luftqualitätsmessungen möglich sind, oder mit einer Kamera der Wolkendeckungsgrad am
+Himmel bestimmt werden kann.
+
+Des Weiteren kommt die senseBox:edu in Schulen zum Einsatz, um Schülerinnen und
+Schülern ab der 7. Klassen die Grundlagen des Programmierens anhand von
+Microkontrollern und Umweltsensorik praktisch beizubringen.
+
+Um Schulen die Möglichkeit zu kooperativen Projekten zu geben und die Messungen mit
+der Öffentlichkeit zu teilen, wurde die openSenseMap entwickelt. Auf dieser webbasierten
+Plattform werden alle Messungen als Download oder Schnittstelle für
+Softwareanwendungen im Internet bereitgestellt.
+
+Die Forscher am Institut für Geoinformatik erhoffen sich durch die Kampagne großflächige
+und hochaufgelöste Messungen zu erhalten, mit denen in Zukunft gesellschaftlich
+relevante Fragestellungen zu lokalen Wetterphänomenen, Luft- und Gewässerqualität
+oder Verkehrsaufkommen beantwortet werden können."
