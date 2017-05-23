@@ -4,3 +4,13 @@ flyer: "Flyer"
 spellingNotice: "Please note the name of the senseBox is spelt with a leading lowercase <code>s</code> and as one word. This is intentional."
 colors: "Colors"
 color-values-header: "The senseBox green has the following values"
+about: <b>senseBox and openSenseMap</b>
+<p>The senseBox is a citizen science project, which was developed in the student lab and research laboratory GI@School at the Institute for Geoinformatics at the University of Münster. This project provides do-it-yourself construction kits for sensor stations with detailed instructions for interested citizens. This enables them to take part in a scientific measuring campaign on environmental data with the help of photonic technology.</p>
+
+<p>This is why we developed <b>senseBox:home</b>: it is a low-cost weather station with optical sensors to measure not only the light intensity and ultraviolet light, but also the temperature, air moisture, and air-pressure. Currently we are working on several sensor extensions. Through their help it will be possible to measure the air quality with a photonic fine dust sensor or the degree of the cloud cover at the sky can be gauged by a camera.</p>
+
+<p>Moreover, the <b>senseBox:edu</b> is used at schools to teach students grade seven and older the basics coding through mirco controllers and environmental sensor technology.</p> 
+
+<p>In order to give schools the possibility for cooperating projects and to share their measurements with the public, we created the <b>openSenseMap</b>. On this web-based platform all measurements are available to download or offered on an interface for software applications online.</p>
+
+<p>With this campaign, the researchers at the Institute for Geoinformatics expect to get large-scale and high-resolution measurements, with whom socially relevant questions about local weather phenomena, air quality, water quality or traffic volume can be answered in the future.</p>
