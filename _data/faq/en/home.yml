@@ -1,0 +1,4 @@
+- q: Is it possible to add additional sensors to my senseBox:home?
+  a: >
+    Definitely! The senseBox:home is based on the Arduino platform, so every Arduino-compatible sensor can be added to your senseBox:home.
+    You just need to modify your sketch and then [add the new sensor](https://osem.books.sensebox.de/en/osem_edit.html) to your senseBox on the openSenseMap.

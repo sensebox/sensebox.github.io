@@ -1,3 +1,8 @@
 - q: Is it possible to register other devices than senseBoxes on openSenseMap?
-  a: Of course! The only requirement is that the device speaks HTTP to submit its sensor data to openSenseMap.
+  a: Of course! The only requirement is that the device speaks HTTP to submit its sensor data to openSenseMap. You can find everything you need in our [API-Docs](https://docs.opensensemap.org/).
 
+
+- q: How is the data stored in the openSenseMap licensed?
+  a: >
+    The data of the openSenseMap is licensed under the [Public Domain Dedication and License 1.0](https://opendatacommons.org/licenses/pddl/summary/) which allows you to do anything with the data.
+    We wouldn't mind hearing from you and your data use case though.

@@ -1,0 +1,4 @@
+- q: Kann ich noch weitere Sensoren an die senseBox:home anschließen?
+  a: >
+    Ja! Die senseBox:home basiert auf der Arduino Plattform und kann somit alle Arduino kompatiblen Sensoren abfragen.
+    Dazu musst du deinen Sketch anpassen und danach deiner senseBox auf der openSenseMap den [neuen Sensor](https://osem.books.sensebox.de/de/osem_bearbeiten.html) hinzufügen.
