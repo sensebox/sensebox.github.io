@@ -1,0 +1,3 @@
+- q: Is it possible to register other devices than senseBoxes on openSenseMap?
+  a: Of course! The only requirement is that the device speaks HTTP to submit its sensor data to openSenseMap.
+

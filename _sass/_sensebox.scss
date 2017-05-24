@@ -1273,3 +1273,10 @@ $carousel-height: 450px;
 .carousel-control {
 
 }
+
+.sensebox-faq-listgroup, .sensebox-faq-definitionlist {
+  font-size: 16px;
+}
+.sensebox-faq-listgroup .list-group-item:after {
+  content: ' »'
+}
