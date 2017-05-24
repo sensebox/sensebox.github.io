@@ -1,7 +1,7 @@
 {% assign carouselpages = "main|products|osem|docs|background|press|awards|feinstaub-workshop" | split: "|" %}{%
   assign navpages = "blog|products|osem|docs|background|press|awards" | split: "|" %}{%
   assign t = site.data.translations.[page.lang].header %}
-<div class="navbar-wrapper{% unless carouselpages contains page.id %} navbar-no-carousel{% endunless %}">
+<div class="navbar-wrapper">
     <div class="container">
         <nav class="navbar navbar-static-top">
 
@@ -54,7 +54,6 @@
 </div>
 
 
-{% if carouselpages contains page.id %}
 <!-- Carousel
     ================================================== -->
 <div id="myCarousel" class="carousel" data-ride="carousel">
@@ -66,7 +65,11 @@
       </ol>
     {% endif %}
     <div class="carousel-inner" role="listbox">
+    {% if carouselpages contains page.id %}
     {% include _carousel_content/{{ page.id }}_carousel.html %}
+    {% else %}
+    {% include _carousel_content/default_carousel.html %}
+    {% endif %}
     </div>
     {% if page.needsCarouselControl == true %}
       <a class="left carousel-control">
@@ -80,6 +83,3 @@
     {% endif %}
 </div>
 <!-- /.carousel -->
-{% else %}
-<div id="emptyCarousel"></div>
-{% endif %}
