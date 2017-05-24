@@ -43,7 +43,7 @@
     {% for qa in edu %}
       <a name="{{ qa.q | slugify }}"></a>
       <dt>{{ qa.q }}</dt>
-      <dl>{{ qa.a }}</dl>
+      <dl>{{ qa.a | markdownify | remove: '<p>' | remove: '</p>' }}</dl>
     {% endfor %}
     </dl>
   </div>
@@ -56,7 +56,7 @@
     {% for qa in home %}
       <a name="{{ qa.q | slugify }}"></a>
       <dt>{{ qa.q }}</dt>
-      <dl>{{ qa.a }}</dl>
+      <dl>{{ qa.a | markdownify | remove: '<p>' | remove: '</p>' }}</dl>
     {% endfor %}
     </dl>
   </div>
@@ -69,7 +69,7 @@
     {% for qa in osem %}
       <a name="{{ qa.q | slugify }}"></a>
       <dt>{{ qa.q }}</dt>
-      <dl>{{ qa.a }}</dl>
+      <dl>{{ qa.a | markdownify | remove: '<p>' | remove: '</p>' }}</dl>
     {% endfor %}
     </dl>
   </div>

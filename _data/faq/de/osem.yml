@@ -1,5 +1,5 @@
 - q: Kann ich auch andere Geräte als eine senseBox auf der openSenseMap registrieren?
-  a: Ja sicher! Jedes Gerät welches HTTP spricht, kann seine Sensordaten zur openSenseMap übertragen.
+  a: Ja sicher! Jedes Gerät welches HTTP spricht, kann seine Sensordaten zur openSenseMap übertragen. Die Dokumentation wie die Sensordaten übertragen werden müssen, findest du in unseren [API-Docs](https://docs.opensensemap.org)
 
 - q: Unter welcher Datenlizenz stehen die Daten der openSenseMap?
   a: Ja sicher! Jedes Gerät welches HTTP spricht, kann seine Sensordaten zur openSenseMap übertragen.
