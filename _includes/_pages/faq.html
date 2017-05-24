@@ -1,18 +1,18 @@
 {% assign t = site.data.translations.[page.lang].faq %}
+{% assign osem = site.data.faq.[page.lang].osem %}
+{% assign home = site.data.faq.[page.lang].home %}
+{% assign edu = site.data.faq.[page.lang].edu %}
 <div class="page-header">
   <h1>FAQ</h1>
   <p>{{ t.smalltalk }}</p>
 </div>
-{% assign osem = site.data.faq.[page.lang].osem %}
-{% assign home = site.data.faq.[page.lang].home %}
-{% assign edu = site.data.faq.[page.lang].edu %}
 <div class="row">
 
   <div class="col-md-4">
     <h2>senseBox:edu</h2>
     <div class="list-group sensebox-faq-listgroup">
     {% for qa in edu %}
-      <a class="list-group-item" href="#{{ qa.q | slugify }}">{{ qa.q }}</a>
+      <a class="list-group-item" href="#{{ qa.q | truncatewords: 5, "" | slugify }}">{{ qa.q }}</a>
     {% endfor %}
     </div>
   </div>
@@ -21,7 +21,7 @@
     <h2>senseBox:home</h2>
     <div class="list-group sensebox-faq-listgroup">
     {% for qa in home %}
-      <a class="list-group-item" href="#{{ qa.q | slugify }}">{{ qa.q }}</a>
+      <a class="list-group-item" href="#{{ qa.q | truncatewords: 5, "" | slugify }}">{{ qa.q }}</a>
     {% endfor %}
     </div>
   </div>
@@ -30,7 +30,7 @@
     <h2>openSenseMap</h2>
     <div class="list-group sensebox-faq-listgroup">
     {% for qa in osem %}
-      <a class="list-group-item" href="#{{ qa.q | slugify }}">{{ qa.q }}</a>
+      <a class="list-group-item" href="#{{ qa.q | truncatewords: 5, "" | slugify }}">{{ qa.q }}</a>
     {% endfor %}
     </div>
   </div>
@@ -41,7 +41,7 @@
     <h2>senseBox:edu</h2>
     <dl class="sensebox-faq-definitionlist">
     {% for qa in edu %}
-      <a name="{{ qa.q | slugify }}"></a>
+      <a name="{{ qa.q | truncatewords: 5, "" | slugify }}"></a>
       <dt>{{ qa.q }}</dt>
       <dl>{{ qa.a | markdownify | remove: '<p>' | remove: '</p>' }}</dl>
     {% endfor %}
@@ -54,7 +54,7 @@
     <h2>senseBox:home</h2>
     <dl class="sensebox-faq-definitionlist">
     {% for qa in home %}
-      <a name="{{ qa.q | slugify }}"></a>
+      <a name="{{ qa.q | truncatewords: 5, "" | slugify }}"></a>
       <dt>{{ qa.q }}</dt>
       <dl>{{ qa.a | markdownify | remove: '<p>' | remove: '</p>' }}</dl>
     {% endfor %}
@@ -67,7 +67,7 @@
     <h2>openSenseMap</h2>
     <dl class="sensebox-faq-definitionlist">
     {% for qa in osem %}
-      <a name="{{ qa.q | slugify }}"></a>
+      <a name="{{ qa.q | truncatewords: 5, "" | slugify }}"></a>
       <dt>{{ qa.q }}</dt>
       <dl>{{ qa.a | markdownify | remove: '<p>' | remove: '</p>' }}</dl>
     {% endfor %}
