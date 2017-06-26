@@ -39,7 +39,7 @@ Für das Messgerät wurde ein neues kostengünstiges Gehäuse benötigt, welches
 
 Ausbringen der Messgeräte:
 ============
-Die Messgeräte wurden mit den folgenden Kooridnaten jeweils bei Niedrigwasser ausgebracht:
+Die Messgeräte wurden mit den folgenden Kooridnaten jeweils bei Niedrigwasser ausgebracht:<br>
 Büsum 1 09:55 Uhr 54°08'03'' N 08°49'46'' O<br>
 Büsum 2 10:30 Uhr 54°08'09'' N 08°50'01'' O<br>
 Husum 1 12:40 Uhr. 54°30'18'' N 08°59'25'' O<br>
