@@ -35,10 +35,10 @@ Für das Messgerät wurde ein neues kostengünstiges Gehäuse benötigt, welches
 Ausbringen der Messgeräte:
 ============
 Die Messgeräte wurden mit den folgenden Kooridnaten jeweils bei Niedrigwasser ausgebracht:
-Büsum tief 09:55 Uhr 54 08 03 N.  8 49 46 O</br)
-Büsum hoch 10:30 Uhr 54 08 09 N 8 50 01 O</br)
-Husum draußen 12:40 Uhr. 54 30 18 N 08 59 25 O</br)
-Husum innen 12:55 Uhr. 54 30 26 N. 08 59 28 O</br)
+Büsum tief 09:55 Uhr 54 08 03 N.  8 49 46 O<br>
+Büsum hoch 10:30 Uhr 54 08 09 N 8 50 01 O<br>
+Husum draußen 12:40 Uhr. 54 30 18 N 08 59 25 O<br>
+Husum innen 12:55 Uhr. 54 30 26 N. 08 59 28 O<br>
 Das Ausbringen der Messgeräte war unproblematisch und konnte sehr schnell abgeschlossen werden.
 
 Auswertung und Einholen der Messgeräte:
