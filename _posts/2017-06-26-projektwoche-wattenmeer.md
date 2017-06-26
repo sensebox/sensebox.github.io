@@ -54,7 +54,6 @@ Am nächsten Tag war es soweit, dass zusammen mit der ersten Schülergruppe des 
 Die erste Sorge, dass die Verankerung einer hohen Tiefe nicht standhalten würde, trat zum Glück nicht ein, sodass die Messgeräte auch am nächsten Tag noch an gleicher Stelle zu finden waren. Leider zeigt sich beim Öffnen der Gehäuse, dass diese nicht 100 Prozent dicht waren und Wasser eingetreten ist. Es folgte ein Kurzschluss und das Messgerät war nicht mehr in der Lage weiter zu messen. Ein Überprüfen der SD-Karte zeigte aber, dass eines der Messgeräte in Büsum Daten über einen Zeitraum von ca. 16h aufgezeichnet hatte. Das Gehäuse war immerhin in der Lage, über eine Hochwasserphase hinweg dicht zu halten. Die Daten auf der SD-Karte zeigen, dass beim zweiten Hochwasser Wasser eingetreten war.
 Analog zum ersten Standort war auch am zweiten Standort in Husum Wasser in die Messgeräte eingetreten. Eins der beiden Messgeräte hatte ebenfalls Daten über einen Zeitraum von ca. 18 Stunden aufgezeichnet. Allerdings setzte hier der Trübungssensor bereits zu Beginn der Messung aus (den Grund dafür wissen wir zurzeit noch nicht, evtl. ist auch hier Wasser zu Beginn eingelaufen oder der Sensor ist bereits nach dem ersten Test defekt gewesen).
 
-{% include image.html image=page.image3 %}
 {% include image.html image=page.image4 %}
 
 ToDo’s und erste Ideen zur Verbesserung
