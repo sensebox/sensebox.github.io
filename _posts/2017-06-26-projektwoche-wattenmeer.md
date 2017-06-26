@@ -3,7 +3,7 @@ layout: post
 title: "Projektwoche von openSea im Wattenmeer"
 date: 2017-06-26
 author: Manuela
-abstract: "Im Nationalpark Wattenmeer wurde mithilfe der senseBox Temperatur, Trübung und Fließgeschwindigkeit gemessen - und entdeckte somit neues Terrain.
+abstract: "Im Nationalpark Wattenmeer wurde mithilfe der senseBox Temperatur, Trübung und Fließgeschwindigkeit gemessen - und entdeckte somit neues Terrain."
 thumbnail: /images/blog_images/opensea_wattenmeer.jpg
 lang: de
 ---
