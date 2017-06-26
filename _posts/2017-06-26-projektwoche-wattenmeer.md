@@ -26,13 +26,11 @@ Mithilfe des Analog Turbidity Sensor von <a href="https://www.dfrobot.com/produc
 
 Fließgeschwindigkeit
 ============
-Bei der <a href="http://www.exp-tech.de/adafruit-9-dof-accel-mag-gyro-temp-breakout-board-lsm9ds1/">Fließgeschwindigkeit</a> ging es vor allem um die Frage, ob unterschiedliche Standorte im Wattenmeer unterschiedliche Fließgeschwindigkeiten aufweisen und ob sich die Fließgeschwindigkeit bei Ebbe und Flut unterscheiden.
+Bei der <a href="http://www.exp-tech.de/adafruit-9-dof-accel-mag-gyro-temp-breakout-board-lsm9ds1/">Fließgeschwindigkeit</a> ging es vor allem um die Frage, ob unterschiedliche Standorte im Wattenmeer unterschiedliche Fließgeschwindigkeiten aufweisen und ob sich die Fließgeschwindigkeit bei Ebbe und Flut unterscheiden. Die Fließgeschwindigkeit wurde mithilfe eines Beschleunigungssensors gemessen. Die Stärke der Neigung des Messgerätes sollte Aufschluss auf unterschiedliche Fließgeschwindigkeiten geben. 
 
 {% include image.html image=page.image1 %}
 {% include image.html image=page.image2 %}
 
-Insgesamt wurden vier Messgeräte gebaut und angebracht, indem jeweils 2 Messgeräte im Watt bei Husum und Büsum im Boden verankert wurden. 
-Die Befestigung im Boden erfolge mittels eines einfachen Eimers aus dem Baumarkt. Dieser wurde im Boden vergraben und mithilfe eines Karabiners konnte das Messgerät am Henkel befestigt werden. Die Befestigung im Boden war mit einem Preis von einem Euro sehr günstig und zeigte keine Probleme. 
 
 Das Messgerät
 ============
@@ -42,11 +40,13 @@ Für das Messgerät wurde ein neues kostengünstiges Gehäuse benötigt, welches
 Ausbringen der Messgeräte:
 ============
 Die Messgeräte wurden mit den folgenden Kooridnaten jeweils bei Niedrigwasser ausgebracht:
-Büsum tief 09:55 Uhr 54 08 03 N.  8 49 46 O<br>
-Büsum hoch 10:30 Uhr 54 08 09 N 8 50 01 O<br>
-Husum draußen 12:40 Uhr. 54 30 18 N 08 59 25 O<br>
-Husum innen 12:55 Uhr. 54 30 26 N. 08 59 28 O<br>
+Büsum 1 09:55 Uhr 54°08'03'' N 08°49'46'' O<br>
+Büsum 2 10:30 Uhr 54°08'09'' N 08°50'01'' O<br>
+Husum 1 12:40 Uhr. 54°30'18'' N 08°59'25'' O<br>
+Husum 2 12:55 Uhr. 54°30'26'' N 08°59'28'' O<br>
 Das Ausbringen der Messgeräte war unproblematisch und konnte sehr schnell abgeschlossen werden.
+Insgesamt wurden vier Messgeräte gebaut und angebracht, indem jeweils 2 Messgeräte im Watt bei Husum und Büsum im Boden verankert wurden. 
+Die Befestigung im Boden erfolge mittels eines einfachen Eimers aus dem Baumarkt. Dieser wurde im Boden vergraben und mithilfe eines Karabiners konnte das Messgerät am Henkel befestigt werden. Die Befestigung im Boden war mit einem Preis von einem Euro sehr günstig und zeigte keine Probleme. 
 
 Auswertung und Einholen der Messgeräte:
 ============
