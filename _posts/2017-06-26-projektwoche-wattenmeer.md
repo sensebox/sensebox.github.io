@@ -5,6 +5,10 @@ date: 2017-06-26
 author: Manuela
 abstract: "Im Nationalpark Wattenmeer wurde mithilfe der senseBox Temperatur, Trübung und Fließgeschwindigkeit gemessen - und entdeckte somit neues Terrain."
 thumbnail: /images/blog_images/opensea_wattenmeer.jpg
+image1: /images/blog_images/watt1.jpg
+image2: /images/blog_images/watt2.jpg
+image3: /images/blog_images/watt3.jpg
+image4: /images/blog_images/watt4.jpg
 lang: de
 ---
 Eine DIY Unterwassermessstation
@@ -23,6 +27,9 @@ Mithilfe des Analog Turbidity Sensor von <a href="https://www.dfrobot.com/produc
 Fließgeschwindigkeit
 ============
 Bei der <a href="http://www.exp-tech.de/adafruit-9-dof-accel-mag-gyro-temp-breakout-board-lsm9ds1/">Fließgeschwindigkeit</a> ging es vor allem um die Frage, ob unterschiedliche Standorte im Wattenmeer unterschiedliche Fließgeschwindigkeiten aufweisen und ob sich die Fließgeschwindigkeit bei Ebbe und Flut unterscheiden.
+
+{% include image.html image=page.image1 %}
+{% include image.html image=page.image2 %}
 
 Insgesamt wurden vier Messgeräte gebaut und angebracht, indem jeweils 2 Messgeräte im Watt bei Husum und Büsum im Boden verankert wurden. 
 Die Befestigung im Boden erfolge mittels eines einfachen Eimers aus dem Baumarkt. Dieser wurde im Boden vergraben und mithilfe eines Karabiners konnte das Messgerät am Henkel befestigt werden. Die Befestigung im Boden war mit einem Preis von einem Euro sehr günstig und zeigte keine Probleme. 
@@ -46,6 +53,9 @@ Auswertung und Einholen der Messgeräte:
 Am nächsten Tag war es soweit, dass zusammen mit der ersten Schülergruppe des <a href="http://www.gymnasium-buesum.de//">Gymnasiums in Büsum</a> eine Wattkartierung und abholen der Messwerte der Messgeräte durchgeführt wurde. Bei der Wattkartierung wurden von den SuS verschiedenen biotische Faktoren im Watt bestimmt. Die Messstation sollte dann die abiotischen Faktoren dazu liefern, sodass eine Verknüpfung der Daten stattfinden konnte. 
 Die erste Sorge, dass die Verankerung einer hohen Tiefe nicht standhalten würde, trat zum Glück nicht ein, sodass die Messgeräte auch am nächsten Tag noch an gleicher Stelle zu finden waren. Leider zeigt sich beim Öffnen der Gehäuse, dass diese nicht 100 Prozent dicht waren und Wasser eingetreten ist. Es folgte ein Kurzschluss und das Messgerät war nicht mehr in der Lage weiter zu messen. Ein Überprüfen der SD-Karte zeigte aber, dass eines der Messgeräte in Büsum Daten über einen Zeitraum von ca. 16h aufgezeichnet hatte. Das Gehäuse war immerhin in der Lage, über eine Hochwasserphase hinweg dicht zu halten. Die Daten auf der SD-Karte zeigen, dass beim zweiten Hochwasser Wasser eingetreten war.
 Analog zum ersten Standort war auch am zweiten Standort in Husum Wasser in die Messgeräte eingetreten. Eins der beiden Messgeräte hatte ebenfalls Daten über einen Zeitraum von ca. 18 Stunden aufgezeichnet. Allerdings setzte hier der Trübungssensor bereits zu Beginn der Messung aus (den Grund dafür wissen wir zurzeit noch nicht, evtl. ist auch hier Wasser zu Beginn eingelaufen oder der Sensor ist bereits nach dem ersten Test defekt gewesen).
+
+{% include image.html image=page.image3 %}
+{% include image.html image=page.image4 %}
 
 ToDo’s und erste Ideen zur Verbesserung
 ============
