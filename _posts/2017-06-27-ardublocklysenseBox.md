@@ -26,7 +26,7 @@ Grundvorraussetzung für die Verwendung von Ardublockly ist, dass die [Arduino I
 
 Unter [Arbublockly](senseBox.de/blockly) befindet sich eine online Version der Oberfläche die ohne Installation auf dem gängigen Browsern läuft. Hierbei muss allerdings der genierte Code mittels Copy and Paste in die Arduino IDE kopiert werden.
 
-Die offline Varianten der Ardublockly Oberfläche befinden sich im [Github Repository](github.com/senseBox/ardublockly) in den Releases. Hier gibt es für die gängigen Betriebssysteme (Windows, MacOS, Linux) eine jeweilige Version.
+Die offline Varianten der Ardublockly Oberfläche befinden sich im [Github Repository](github.com/senseBox/ardublockly) in den Releases (die Releases werden in unregelmäßigen Abständen neu veröffentlicht). Hier gibt es für die gängigen Betriebssysteme (Windows, MacOS, Linux) eine jeweilige Version.
 Für die Offline Variante muss Python (mind. Version 2.7) installiert sein. Weitere Informationen und der Download der Software befinden sich auf der [Python Homepgage](https://www.python.org/). Unter MacOS ist Python bereits vorinstalliert. Hierbei muss nur die ardublock.app in den Programmordner kopiert werden.
 
 Damit die Sensoren ausgelesen werden können wird eine Software Bibliothek benötigt, die [senseBox-Library](https://github.com/sensebox/senseBox_library) beeinhaltet die Software für alle Sensoren, die in der senseBox:edu enthalten sind. Die Software Library muss heruntergeladen werden und in die Arduino IDE integriert werden (mehr Informationen dazu [hier](https://edu.books.sensebox.de/de/getting_started/installation_der_software.html))  
