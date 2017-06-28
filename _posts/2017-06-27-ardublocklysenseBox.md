@@ -49,7 +49,7 @@ Im rechten Fenster wird der generierte Code angezeigt. Mithilfe dieser Ansicht l
 
 Ausblick
 ============
-Wir arbeiten zurzeit an einem Buch (ähnlich unserer Anleitungs zur [senseBox:edu](https://edu.books.sensebox.de/de/)) speziell für die Ardublockly Oberfläche. Durch die starke Vereinfachung können nun die ersten Projekte in kürzerer Zeit durchgeführt werden und es bleibt mehr Zeit im Unterricht oder in Projekttagen um die Messgeräte zu verwenden oder das Projekt noch komplexer auszubauen.
+Wir arbeiten zurzeit an einem Buch (ähnlich unserer Anleitung zur [senseBox:edu](https://edu.books.sensebox.de/de/)) speziell für die Ardublockly Oberfläche. Durch die starke Vereinfachung können nun die ersten Projekte in kürzerer Zeit durchgeführt werden und es bleibt mehr Zeit im Unterricht oder in Projekttagen um die Messgeräte zu verwenden oder das Projekt noch komplexer auszubauen.
 
 Die Oberfläche und vorallem die Übersetzung ins Deutsche sind noch nicht 100% fertiggestellt und beeinhalten noch kleinere Fehler. Solltet ihr Fehler feststellen melden sie uns doch bitte über [Github](https://github.com/sensebox/ardublockly/issues).
 
