@@ -32,7 +32,7 @@ Installation
 ============
 Grundvoraussetzung für die Verwendung von Ardublockly ist, dass die [Arduino IDE](https://www.arduino.cc/en/Main/Software) installiert ist. (weitere Information auch [hier](https://edu.books.sensebox.de/de/getting_started/installation_der_software.html))
 
-Unter [Arbublockly](https://sensebox.de/blockly) befindet sich eine online Version der Oberfläche die ohne Installation auf dem gängigen Browsern läuft. Hierbei muss allerdings der generierte Code mittels Copy and Paste in die Arduino IDE kopiert werden.
+Unter [Arbublockly](https://sensebox.de/blockly) befindet sich eine online Version der Oberfläche die ohne Installation auf den gängigen Browsern läuft. Hierbei muss allerdings der generierte Code mittels Copy and Paste in die Arduino IDE kopiert werden.
 
 Die offline Varianten der Ardublockly Oberfläche befinden sich im [Github Repository](github.com/senseBox/ardublockly) in den [Releases](https://github.com/sensebox/ardublockly/releases)  (die Releases werden in unregelmäßigen Abständen neu veröffentlicht). Hier gibt es für die gängigen Betriebssysteme (Windows, MacOS, Linux) eine jeweilige Version.
 Für die Offline Variante muss Python (mind. Version 2.7) installiert sein. Weitere Informationen und der Download der Software befinden sich auf der [Python Homepgage](https://www.python.org/). Unter MacOS ist Python bereits vorinstalliert. Hierbei muss nur die Ardublock.app in den Programmordner kopiert werden.
@@ -42,7 +42,9 @@ Damit die Sensoren ausgelesen werden können wird eine Software Bibliothek benö
 
 Verwendung der Oberfläche
 ============
-Der Screenshot zeigt den Grundaufbau der Ardublockly Oberläche. Im Auswahlmenü rechts können die Programmierblöcke herausgezogen und in der Programmieroberfläche zusammengesetzt werden. Es empfiehlt sich mit dem Block "Arduino Führe zuerst aus und Arduino Endlosschleife" aus dem Bereich Funktionen zu starten. Im rechten Fenster wird der generierte Code angezeigt. Hier lässt sich als nachvollziehen welche Programmierbefehle hinter den Blöcken stehen. Neben den senseBox Blöcken gibt es eine Vielzahl von verschiedenen Blöcken die es ermöglichen komplexe Proramme zu schreiben ohne die Syntax der Programmiersprache mühsam erlernen zu müssen. Mithilfe der Ardublockly Oberfläche können auch schon jüngere Nachwuchswissenschaftler mit der senseBox:edu arbeiten. Durch das Parallele Anzeigen des Programmcodes wird der Schritt zu den ersten Textbasierten Programmen deutlich erleichtert.
+Der Screenshot zeigt den Grundaufbau der Ardublockly Oberläche. Im Auswahlmenü rechts können die Programmierblöcke herausgezogen und in der Programmieroberfläche zusammengesetzt werden. Es empfiehlt sich mit dem Block "Arduino Führe zuerst aus/Arduino Endlosschleife" aus dem Bereich Funktionen zu starten.
+
+Im rechten Fenster wird der generierte Code angezeigt. Mithilfe dieser Ansicht lässt sich nachvollziehen welche Programmierbefehle hinter den Blöcken stehen. Neben den senseBox Blöcken gibt es eine Vielzahl von verschiedenen Blöcken die es ermöglichen komplexe Proramme zu schreiben ohne die Syntax der Programmiersprache mühsam erlernen zu müssen. Mithilfe der Ardublockly Oberfläche können auch schon jüngere Nachwuchswissenschaftler mit der senseBox:edu arbeiten. Durch das Parallele Anzeigen des Programmcodes wird der Schritt zu den ersten Textbasierten Programmen deutlich erleichtert.
 {% include image.html image=page.image2 %}
 
 Ausblick
