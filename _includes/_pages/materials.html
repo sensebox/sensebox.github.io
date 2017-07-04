@@ -4,27 +4,44 @@
 </div>
 <p>{{ t.about }}</p>
 <h2>{{ t.logos }}</h2>
-<h3>PNG</h3>
-<img style="max-height: 80px;" src="https://raw.githubusercontent.com/sensebox/resources/master/images/sensebox_logo_neu.png" alt="senseBox Logo neu"></img>
-<br />
-<a href="https://raw.githubusercontent.com/sensebox/resources/master/images/sensebox_logo_neu.png" target="_blank"><button class="btn">Download senseBox Logo</button></a>
+<h3><b>PNG</b></h3>
+<div class="row footer-copyright">
+  <div class="col-md-6">
+    <img class="margin-20" style="max-height: 80px;" src="https://raw.githubusercontent.com/sensebox/resources/master/images/sensebox_logo_neu.png" alt="senseBox Logo neu"></img>
+    <br />
+    <a href="https://raw.githubusercontent.com/sensebox/resources/master/images/sensebox_logo_neu.png" target="_blank"><button class="btn">Download senseBox Logo</button></a>
+  </div>
+  <div class="col-md-6">
+    <img class="margin-20" style="max-height: 80px;" src="https://raw.githubusercontent.com/sensebox/resources/master/images/sensebox_logo_raute.png" alt="senseBox Logo Raute"></img>
+    <br />
+    <a href="https://raw.githubusercontent.com/sensebox/resources/master/images/sensebox_logo_raute.png" target="_blank">
+      <button class="btn">Download senseBox Raute</button>
+    </a>
+  </div>
+</div>
+
 <br>
-<img style="max-height: 80px;" src="https://raw.githubusercontent.com/sensebox/resources/master/images/sensebox_logo_raute.png" alt="senseBox Logo Raute"></img>
+
+<h3 style="margin-top: 50px;"><b>SVG</b></h3>
+<div class="row footer-copyright">
+  <div class="col-md-6">
+    <img class="margin-20" style="height: 80px; max-height: 80px;" src='{{ site.baseurl | append: "/images/sensebox_wort_und_logo.svg" }}' alt="senseBox Wort und Logo"></img>
+    <br />
+    <a href='{{ site.baseurl | append: "/images/sensebox_wort_und_logo.svg" }}' target="_blank">
+      <button class="btn">Download senseBox Logo</button>
+    </a>
+  </div>
+  <div class="col-md-6">
+    <img class="margin-20" style="max-height: 80px;" src='{{ site.baseurl | append: "/images/sensebox_logo.svg" }}' alt="senseBox Logo"></img>
+    <br />
+    <a href='{{ site.baseurl | append: "/images/sensebox_logo.svg" }}' target="_blank">
+      <button class="btn">Download senseBox Raute</button>
+    </a>
+  </div>
+</div>
+
 <br />
-<a href="https://raw.githubusercontent.com/sensebox/resources/master/images/sensebox_logo_raute.png" target="_blank">
-  <button class="btn">Download senseBox Raute</button>
-</a>
-<h3 style="margin-top: 50px;">SVG</h3>
-<img style="height: 80px; max-height: 80px;" src='{{ site.baseurl | append: "/images/sensebox_wort_und_logo.svg" }}' alt="senseBox Wort und Logo"></img>
-<br />
-<a href='{{ site.baseurl | append: "/images/sensebox_wort_und_logo.svg" }}' target="_blank">
-  <button class="btn">Download senseBox Logo</button>
-</a>
-<br />
-<img style="max-height: 80px;" src='{{ site.baseurl | append: "/images/sensebox_logo.svg" }}' alt="senseBox Logo"></img>
-<a href='{{ site.baseurl | append: "/images/sensebox_logo.svg" }}' target="_blank">
-  <button class="btn">Download senseBox Raute</button>
-</a>
+
 <h2>Name</h2>
 <p>{{ t.spellingNotice }}</p>
 <div class="row" style="text-align: center;">
