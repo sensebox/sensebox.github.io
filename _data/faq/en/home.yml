@@ -5,3 +5,6 @@
 - q: Where can I get the casing for the temperature sensor?
   a: >
     You can download the files for the temperature sensor casing [here](https://www.thingiverse.com/thing:1523429). It can be printed on every off-the-shelf 3D printer available.
+- q: Can I operate the senseBox:home with a 9V battery?
+  a: >
+    It's possible to power the senseBox:home with a 9V battery, but we advise against it. The capacity of such batteries are too low to keep the senseBox:home running over a reasonable time.
