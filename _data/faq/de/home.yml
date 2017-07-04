@@ -1,4 +1,18 @@
+- q: Wie und wo kann man die senseBox:home ordern bzw. kaufen? Und was würde so etwas kosten?
+  a: >
+    Bestellen kannst du die senseBox:home über [Watterott](http://www.watterott.com/index.php?page=search&page_action=query&desc=on&sdesc=on&keywords=sensebox&x=0&y=0). Dort findest du auch die Preise.
 - q: Kann ich noch weitere Sensoren an die senseBox:home anschließen?
   a: >
     Ja! Die senseBox:home basiert auf der Arduino Plattform und kann somit alle Arduino kompatiblen Sensoren abfragen.
     Dazu musst du deinen Sketch anpassen und danach deiner senseBox auf der openSenseMap den [neuen Sensor](https://osem.books.sensebox.de/de/osem_bearbeiten.html) hinzufügen.
+- q: Wäre ein schattiger Ort besser oder beeinflusst der die Daten zu stark?
+  a: >
+    Dort kommt es auf den Sensor an. Temperatur -und Luftfeuchtigkeit dürfen nicht mit in die eigentliche Station gelegt werden, sondern müssen außerhalb des Gehäuses im Schatten angebracht werden.
+    Der Rest der Sensoren, darf gerne auch in der Sonne stehen.
+- q: Wie können wir von hier die Daten in Euer Netzwerk einspeisen?
+  a: >
+    Wenn ihr eine Box erwerbt, könnt ihr die Station auf der openSenseMap (https://opensensemap.org) registrieren und bekommt schon den Programmcode vorgefertigt zugeschickt.
+    Wenn der Programmcode dann auf die Station gespielt wird und mit dem Internet verbunden ist, werden die Daten automatisch übertragen.
+- q: Gibt es Erfahrungen hinsichtlich Überhitzung der Box? Hier kann es gerne mal extrem warm werden und ich befürchte Kondenswasser oder Ausfall von Bauteilen.
+  a: >
+    Wir haben ein paar Boxen in Gebieten stehen, die sehr heiß und kalt werden (Zugspitze und Sao Paulo). Was hilft einfach etwas Silikagel mit in die Station packen.
