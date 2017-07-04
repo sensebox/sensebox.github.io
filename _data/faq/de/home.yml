@@ -16,3 +16,6 @@
 - q: Gibt es Erfahrungen hinsichtlich Überhitzung der Box? Hier kann es gerne mal extrem warm werden und ich befürchte Kondenswasser oder Ausfall von Bauteilen.
   a: >
     Wir haben ein paar Boxen in Gebieten stehen, die sehr heiß und kalt werden (Zugspitze und Sao Paulo). Was hilft einfach etwas Silikagel mit in die Station packen.
+- q: Wo kriege ich dieses Temperaturgehäuse her?
+  a: >
+    Das in den Bildern gezeigte Temperaturgehäuse ist ein im 3D-Druck hergestelltes Gehäuse. Dieses lässt sich auf jeden handelsüblichen 3D-Drucker ausdrucken. Die benötigten Dateien kannst du [hier](https://www.thingiverse.com/thing:1523429) herunterladen.
