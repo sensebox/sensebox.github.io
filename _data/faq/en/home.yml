@@ -8,3 +8,6 @@
 - q: Can I operate the senseBox:home with a 9V battery?
   a: >
     It's possible to power the senseBox:home with a 9V battery, but we advise against it. The capacity of such batteries are too low to keep the senseBox:home running over a reasonable time.
+- q: The sensor test is not working. What can I do?
+  a: >
+    Please remove all sensors from your arduino and reconnect them piece by piece between restarts. By using this approach, you can determine which sensor is causing the problems.
