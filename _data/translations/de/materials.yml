@@ -1,10 +1,10 @@
 header: "Materialien & Leitfäden"
 logos: "Logos"
 flyer: "Flyer"
-spellingNotice: "senseBox fängt bewusst mit einem kleinen <code>s</code> an und wird immer als ein Wort geschrieben."
+spellingNotice: 'senseBox fängt bewusst mit einem kleinen <code>s</code> an und wird immer als ein Wort geschrieben.<br>Bei der Schreibweise haben wir uns durch unseren Background in der Informatik an der <a href="https://en.wikipedia.org/wiki/Naming_convention_(programming)">Namenskonvention</a> von C orientiert, nach der Methoden im <a href="https://en.wikipedia.org/wiki/Camel_case">"lowerCamelCase"</a> benannt werden sollten. Ein zusammegesetztes Wort sollte mit einem kleingeschriebenen Verb beginnen ("sense") und das folgenen Wort sollte groß geschrieben werden ("Box"), zusammen "senseBox".'
 colors: "Farben"
 color-values-header: "Das senseBox Grün hat folgende Farbwerte"
-about: "<b>senseBox und openSenseMap</b> 
+about: "<b>senseBox und openSenseMap</b>
 <p>Die senseBox ist ein Citizen Science Projekt, welches im Schüler- und Forschungslabor
 GI@School am Institut für Geoinformatik der Universität Münster entwickelt wurde. Bei
 diesem Projekt werden Do-It-Yourself Bausätze für Sensorstationen zusammen mit
