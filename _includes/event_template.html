@@ -1,17 +1,9 @@
-<div class="event thumbnail">
-  <div>
-    <h3 class="no-margin">
-      {{ include.event.starting-date | date: '%d.%m.' }}
-      <br />
-      {{ include.event.starting-date | date: '%Y' }}
-    </h3>
-  </div>
-  <div class="details">
-    <p class="no-margin">
-      <b>{{ include.event.title }}</b>
-    </p>
-    <p class="no-margin">
-      {{ include.event.place }}
-    </p>
+<div class="col-sm-4 col-md-4 col-lg-4">
+  <div class="thumbnail">
+    <div class="caption">
+      <p>{{ include.event.starting-date | date: '%d.%m.%Y' }}</p>
+      <h3>{{ include.event.title }}</h3>
+      <p>{{ include.event.place }}</p>
+    </div>
   </div>
 </div>
