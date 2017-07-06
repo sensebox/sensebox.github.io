@@ -62,8 +62,8 @@
         <p><a class="btn" href="{{ site.url | append: "/blog" }}" role="button">{{ t.go-to-blog }} &raquo;</a></p>
       </div>
       <hr />
-      <h1>{{ t.upcoming_events }}</h1>
-      <div class="container">
+      <h1 style="text-align: center;">{{ t.upcoming_events }}</h1>
+      <div class="row">
         {% assign events = site.events | sort: 'ending-date' %}
         {% for event in events %}
           {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
