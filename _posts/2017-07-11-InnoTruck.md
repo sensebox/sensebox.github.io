@@ -30,7 +30,7 @@ Mit dem InnoTruck touren nun 10 Klassensätze der senseBox:edu weiter durch Deut
 {% include image.html image=page.image3 %}
 {% include image.html image=page.image4 %}
 
-Der InnoTruck - eine coole Initivative
+Der InnoTruck - eine coole Initiative
 ============
 Der Truck ist eine coole Möglichkeit, sich näher mit dem Thema Innovation, Zukunft und Digitalisierung zu beschäftigen. 
 Daher sind wir auch schon gespannt, was es nächstes Jahr auf der CeBIT gibt und freuen uns darauf!
