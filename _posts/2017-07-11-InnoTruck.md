@@ -25,7 +25,7 @@ Wie ihr alle wisst, haben wir im März auf der CeBIT in Hannover den CeBIT Innov
 
 Der InnoTruck zu Besuch in Münster
 ============
-Durch den Gewinn des Awards machte der InnoTruck auf seiner einjährigen Tour auch in Münster Stopp. Am 6. Juli stand der coole Truck vor dem Institut für Geoinformatik (Ifgi) und lockte viele neugierige Besucher, Schüler und Forscher/innen an. Auf dem Programm stand der Besuch von Schülern des Kardinal-van-Galen Gymnasiums Hiltrup und Anne-Frank-Gesamtschule aus Havixbeck sowie am Nachmittag die Offene Tür für alle Interessenten.</br>
+Durch den Gewinn des Awards machte der InnoTruck auf seiner einjährigen Tour auch in Münster Stopp. Am 6. Juli stand der coole Truck vor dem Institut für Geoinformatik (Ifgi) und lockte viele neugierige Besucher, Schüler und Forscher/innen an. Auf dem Programm stand der Besuch von Schülern des Kardinal-van-Galen Gymnasiums Hiltrup und Anne-Frank-Gesamtschule aus Havixbeck sowie am Nachmittag die Offene Tür für alle Interessenten.<br>
 Mit dem InnoTruck touren nun 10 Klassensätze der senseBox:edu weiter durch Deutschland, die an verschiedenen Orten verteilt werden - die erste wurde heute schon vom Annette-Gymnasium Münster in Empfang genommen. Daher wurden die interessierten Mitarbeiter des Innotruck in einem eigenen Workshop für die senseBox geschult. 
 {% include image.html image=page.image3 %}
 {% include image.html image=page.image4 %}
