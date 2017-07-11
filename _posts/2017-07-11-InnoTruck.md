@@ -13,7 +13,7 @@ lang: de
 ---
 Eine mobile Initiative
 ============
-Der InnoTruck - eine mobile Initiative des Bundesministerium für Bildung und Forschung – macht eine bundesweite Tour durch Deutschland. Der Startschuss fiel am 24. April mit einem großen Kick-Off auf der Hannover Messe. Auf zwei Stockwerken mit rund 100 m² Ausstellungsfläche läd der InnoTruck als interaktive Erlebniswelt die Bürgerinnen und Bürger dazu ein, das Thema „Innovation“ zu entdecken. 80 verschieden Exponate können dabei angeschaut, angefasst und ausprobiert werden – auf jeden Fall eine coole Sache!
+Der InnoTruck - eine mobile Initiative des Bundesministeriums für Bildung und Forschung – macht eine bundesweite Tour durch Deutschland. Der Startschuss fiel am 24. April mit einem großen Kick-Off auf der Hannover Messe. Auf zwei Stockwerken mit rund 100 m² Ausstellungsfläche läd der InnoTruck als interaktive Erlebniswelt die Bürgerinnen und Bürger dazu ein, das Thema „Innovation“ zu entdecken. 80 verschieden Exponate können dabei angeschaut, angefasst und ausprobiert werden – auf jeden Fall eine coole Sache!
 {% include image.html image=page.image1 %}
 
 
@@ -25,7 +25,7 @@ Wie ihr alle wisst, haben wir im März auf der CeBIT in Hannover den CeBIT Innov
 
 Der InnoTruck zu Besuch in Münster
 ============
-Durch den Gewinn des Awards machte der InnoTruck auf seiner einjährigen Tour auch in Münster Stopp. Am 6. Juli stand der coole Truck vor dem Institut für Geoinformatik (Ifgi) und lockte viele neugierige Besucher, Schüler und Forscher/innen an. Auf dem Programm stand der Besuch von Schülern des Kardinal-van-Galen Gymnasiums Hiltrup und Anne-Frank-Gesamtschule aus Havixbeck sowie am Nachmittag die Offene Tür für alle Interessenten.
+Durch den Gewinn des Awards machte der InnoTruck auf seiner einjährigen Tour auch in Münster Stopp. Am 6. Juli stand der coole Truck vor dem Institut für Geoinformatik (Ifgi) und lockte viele neugierige Besucher, Schüler und Forscher/innen an. Auf dem Programm stand der Besuch von Schülern des Kardinal-van-Galen Gymnasiums Hiltrup und Anne-Frank-Gesamtschule aus Havixbeck sowie am Nachmittag die Offene Tür für alle Interessenten.</br>
 Mit dem InnoTruck touren nun 10 Klassensätze der senseBox:edu weiter durch Deutschland, die an verschiedenen Orten verteilt werden - die erste wurde heute schon vom Annette-Gymnasium Münster in Empfang genommen. Daher wurden die interessierten Mitarbeiter des Innotruck in einem eigenen Workshop für die senseBox geschult. 
 {% include image.html image=page.image3 %}
 {% include image.html image=page.image4 %}
