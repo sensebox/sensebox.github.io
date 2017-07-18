@@ -1,0 +1,33 @@
+---
+layout: post
+title: "Wetter.Wasser.Waterkant.2017 – Im Oktober ist es soweit!"
+date: 2017-07-18
+author: Manuela
+abstract: "Vom 9. bis 13. Oktober 2017 findet die Bildungswoche Wetter.Wasser.Waterlant 2017 erneut in der HafenCity in Hamburg statt – die senseBox ist mit Workshops zum Thema Umweltsensoren vor Ort."
+thumbnail: /images/blog_images/Vorderseite_www.pdf
+image1: /images/blog_images/Programmseite_www.pdf
+lang: de
+---
+Klima, Ökologie und Nachhaltigkeit
+============
+Im Oktober ist es in Hamburg wieder soweit – wie bereits vergangenes Jahr findet  vom 9. bis 13. Oktober in der HafenCity das Wetter.Wasser.Waterlant2017 (kurz w.w.w.17) statt. Hier dreht sich alles um Klima Ökologie und Nachhaltigkeit im Rahmen einer kostenfreien Bildungswoche für Hamburger Schulen. Und das Programm hat viel zu bieten: Wie schon 2016 stehen auch dieses Jahr Experten im Klima-Speed-Dating den Schülern Rede und Antwort. Außerdem wird eine Vielzahl an verschiedenen Workshops, Exkursionen, Vorträge und Lehrervorbildungen angeboten. 
+Im <a href="http://www2017.de/programmheft/">Programmheft</a> findest du weitere Informationen zum Bildungsangebot.
+
+
+Umweltsensoren programmieren mit der senseBox
+============
+Besonders interessant sind die Workshops, welche u.a. auch von unserem senseBox-Team angeboten werden. Diese finden vom Mittwoch bis Freitag von jeweils von 9:00 – 14:30 Uhr statt. Dabei lernen die Teilnehmer, mit der senseBox Microkontroller zu programmieren und mit Sensoren zu bestücken. Damit soll die Feinstaubbelastung, Lärmbelästigung und Wasserqualität in der HafenCity gemessen werden. Es versprechen also spannende Tage zu werden!
+Die <a href="http://www2017.de/anmeldung/">Anmeldung</a> erfolgt Online.
+{% include image.html image=page.image1 %}
+
+
+Kann man den Klimawandel noch stoppen?
+============
+Diese Frage war wohl die am meisten gestellte Frage im letzten Jahr. Um das Bewusstsein für dieses Problem zu stärken, muss möglichst viel Wissen über Wetter, Klima und Nachhaltigkeit in die Öffentlichkeit und in die nächste Generation getragen werden. Denn dieses Problem ist laut Jürgen Becker (Vizepräsident, Deutscher Wetterdienst) eines der größten Probleme ist, die die Menschheit letztendlich hat.
+Dafür was das Wetter.Wasser.Waterkant 2016 im letzten Jahr ein voller Erfolg. So wurden über 2.700 Plätze in Workshops, Vorträgen und Exkursionen gebucht.
+
+Daher freuen wir uns jetzt schon auf die Bildungswoche im Oktober in Hamburg.
+Weitere Informationen findest du auf der offiziellen <a href="http://www2017.de/">Webseite</a>
+
+
+
