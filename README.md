@@ -7,7 +7,7 @@ senseBox website
 Most of the articles and press releases are written with [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). HTML can be used if needed, e.g. for linking to external pages or for embedding images.
 
 ### Adding blog posts
-[Here you can see how to add a new blog post](how-to-add-blog-posts.md)
+[Here you can see how to add a new blog post](how-to-add-blog-post.md)
 
 ### Adding events
 
