@@ -35,5 +35,5 @@ collections:
   - awards_de
   - awards_en
 
-gems:
+plugins:
   - jekyll-redirect-from
