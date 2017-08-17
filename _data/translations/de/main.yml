@@ -49,3 +49,7 @@ upcoming_events: "Anstehende Events"
 further-infos: "Mehr Infos"
 
 go-to-blog: "weitere Blogeinträge"
+
+blockly:
+  description: "Eine einfache Programmieroberfläche für die senseBox:edu"
+  viewPost: "Zum Blog Post"

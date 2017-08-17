@@ -50,3 +50,7 @@ upcoming_events: "Upcoming Events"
 further-infos: "Further infos"
 
 go-to-blog: "further blog posts"
+
+blockly:
+  description: "A visual IDE for senseBox:edu"
+  viewPost: "View blog post"

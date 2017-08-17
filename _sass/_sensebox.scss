@@ -988,6 +988,13 @@ $carousel-height: 450px;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7b0d', endColorstr='#ff7b0d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+.background-ardublockly {
+  background-image: url('../images/blockly.png');
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;     
+}
+
 .vcenter {
     display: inline-block;
     vertical-align: middle;
