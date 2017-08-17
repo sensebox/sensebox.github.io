@@ -26,6 +26,10 @@ Add the press report as a markdown file in the `_awards` and `_awards_en` folder
 
 Add the biography as a markdown file in the format `name.md` in the `_team` folder. Follow the same schema as existing files.
 
+
+### Adding a new page
+[Here you can see how to add a new page](how-to-create-new-page.md)
+
 ### File structure
 - `_awards_de`: Awards won by senseBox written in german
 - `_awards_en`: Awards won by senseBox written in english
@@ -55,35 +59,6 @@ Add the biography as a markdown file in the format `name.md` in the `_team` fold
 - favicon
 - readme
 - ...
-
-### Adding a new page
-1. Create new .html file in root directory as well in `en`
-   ```
-   ---
-   layout: default
-   lang: <de or en>
-   id: <choose an id of your page>
-   ---
-   {% include _pages/<html file located in _includes/_pages> %}
-   ```
-2. Create new .html file in `_includes/_pages`
-  - include translations in your file like this:
-  ```
-  {% assign t = site.data.translations.[page.lang].yourNewPageID %}
-  ```
-3. Create translation yourNewPageID.yml files in `_data/translations/de` and `_data/translations/en`
-
-4. Modify your .html file in `_includes/_pages` and use translations like this:
-  - yourNewPageID.yml:
-  ```
-    helloWorld: "Hallo Welt"
-  ```
-  - yourNewPageID.html:
-  ```
-    bla bla {{ t.helloWorld }} bla bla
-  ```
-
-5. Your page should now be rendered and shown in the navbar (you may need to add your page name to `_data/translations/de_full.yml` and the en equivalent into the `header`)
 
 
 ## Running the page locally with Jekyll
