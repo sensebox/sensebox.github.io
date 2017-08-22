@@ -2,7 +2,11 @@
   <div class="thumbnail">
     <div class="caption">
       <p>{{ include.event.starting-date | date: '%d.%m.%Y' }}</p>
-      <h3>{{ include.event.title }}</h3>
+		{% if include.event.link %}
+			<h3>{{ include.event.title }} <small><a href="{{ include.event.link }}" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></small></h3>
+		{% else %}
+			<h3>{{ include.event.title }}</h3>
+		{% endif %}
       <p>{{ include.event.place }}</p>
     </div>
   </div>
