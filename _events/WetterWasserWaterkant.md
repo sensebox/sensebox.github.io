@@ -1,6 +1,7 @@
 ---
 place: "Hamburg"
 title: "Wetter&shy;Wasser&shy;Waterkant"
-starting-date: 2017-10-09
+link: "http://www2017.de/programmheft/"
+starting-date: 2017-10-11
 ending-date: 2017-10-13
 ---
