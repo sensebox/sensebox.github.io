@@ -20,7 +20,7 @@ image11: /images/blog_images/aussicht2.JPG
 
 lang: de
 ---
-Spannende Expedition auf die Zugspitze
+Spannende Forschungstage auf der Zugspitze
 ============
 2000 Höhenmeter, neun Stunden Wanderzeit, drei Forschungstage und 20 Geowissenschaftler: Die Tage auf der Zugspitze versprachen anstrengend aber auch spannend und lustig zu werden – und so war es auch!
 
