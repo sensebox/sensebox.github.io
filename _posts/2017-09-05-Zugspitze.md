@@ -50,7 +50,7 @@ Nachdem wir am ersten Tag bei strahlendem Sonnenschein zur Zugspitze gewandert s
 
 Leider konnten wir wegen des schlechten Wetters nicht zum Schneefernkopf weiter wandern, um die dortige senseBox durch ein neues Modell mit professionellem Gehäuse zu ersetzen. Allerdings wird das Science-Team vom Schneefernhaus in den nächsten Tagen zu diesem Gipfel im Zugspitzmassiv wandern, um das in den nächsten Tagen nachholen. Daten dieser senseBox findest du <a href="https://opensensemap.org/explore/561ce8acb3de1fe005d3d7bf/">hier</a>.
 
-Immer wieder gerne
+Wir kommen gerne wieder
 ============
 Es waren tolle und lustige drei Tage auf der Zugspitze, und ein paar weitere Bilder wollen wir euch deswegen nicht vorenthalten! Wir kommen die Zugspitze und das Schneefernhaus in den nächsten Jahren gerne mal wieder besuchen.
 {% include image.html image=page.image9 %}
