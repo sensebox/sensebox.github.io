@@ -3,7 +3,7 @@ layout: post
 title: "Expedition auf die Zugspitze"
 date: 2017-09-05
 author: Manuela
-abstract: "Sonne, Nebel, Schnee - auf unserer dreitägigen Expedition auf die Zugspitze war einfach alles dabei Und der Spaß kam dabei nicht zu kurz."
+abstract: "Sonne, Nebel, Schnee - auf unserer dreitägigen Expedition auf die Zugspitze war einfach alles dabei. Und der Spaß kam dabei nicht zu kurz."
 thumbnail: /images/blog_images/Gipfel.jpg
 image1: /images/blog_images/team.jpg
 image2: /images/blog_images/kuh.jpg
