@@ -35,7 +35,7 @@ Mittwoch morgen um 4:30 Uhr ging es  mit Traumwetter und 20 Grad Sonne los. Mit 
 {% include image.html image=page.image2 %}
 {% include image.html image=page.image3 %}
 
-Unser Ziel war das <a href="http://www.schneefernerhaus.de/startseite.html">Schneefernhaus</a>, eine Umweltforschungsstation kurz unter dem Gipfel der Zugspitze. Dort betreiben wir seit zwei Jahren mehrere senseBoxen, die wir bei widrigen Bedingungen testen und verschiedenen Sensoren evaluieren. Bei den beiden senseBoxen beim Schneefernhaus wurden defekte Sensoren ausgetauscht und die Gehäuse abgedichtet, was bei den wechselnden Bedingungen auf der Zugspitze enorm wichtig ist.  Was diese beiden senseBoxen auf dem Messbalkon in genau diesem Moment messen, kannst du auf unserer <a href="https://opensensemap.org/explore/55a3a864a807ade00fc7d5ce/">openSenseMap</a> nachschauen.  
+Unser Ziel war das <a href="http://www.schneefernerhaus.de/startseite.html">Schneefernhaus</a>, eine Umweltforschungsstation kurz unter dem Gipfel der Zugspitze. Dort betreiben wir seit zwei Jahren mehrere senseBoxen, die wir bei widrigen Bedingungen testen und verschiedenen Sensoren evaluieren. Bei den beiden senseBoxen beim Schneefernhaus wurden defekte Sensoren ausgetauscht und die Gehäuse abgedichtet, was bei den wechselnden Bedingungen auf der Zugspitze enorm wichtig ist.  Was diese beiden senseBoxen auf dem Messbalkon in genau diesem Moment messen, kannst du auf unserer <a href="https://opensensemap.org/explore/55a3a864a807ade00fc7d5ce">openSenseMap</a> nachschauen.  
 {% include image.html image=page.image5 %}
 {% include image.html image=page.image6 %}
 
@@ -48,7 +48,7 @@ Sonne, Nebel Schnee – alles war dabei!
 Nachdem wir am ersten Tag bei strahlendem Sonnenschein zur Zugspitze gewandert sind, war der Donnerstag sehr vernebelt. Während zu Hause in Münster die Leute bei 25 Grad am Aasee in der Sonne saßen, hat es am Freitag bei uns auf der Zugspitze ziemlich geschneit – doch das gab der Laune keinen Abbruch. Daher war der Abstieg mit der Zahnradbahn umso entspannter.
 {% include image.html image=page.image8 %}
 
-Leider konnten wir wegen des schlechten Wetters nicht zum Schneefernkopf weiter wandern, um die dortige senseBox durch ein neues Modell mit professionellem Gehäuse zu ersetzen. Allerdings wird das Science-Team vom Schneefernhaus in den nächsten Tagen zu diesem Gipfel im Zugspitzmassiv wandern, um das in den nächsten Tagen nachholen. Daten dieser senseBox findest du <a href="https://opensensemap.org/explore/561ce8acb3de1fe005d3d7bf/">hier</a>.
+Leider konnten wir wegen des schlechten Wetters nicht zum Schneefernkopf weiter wandern, um die dortige senseBox durch ein neues Modell mit professionellem Gehäuse zu ersetzen. Allerdings wird das Science-Team vom Schneefernhaus in den nächsten Tagen zu diesem Gipfel im Zugspitzmassiv wandern, um das in den nächsten Tagen nachholen. Daten dieser senseBox findest du <a href="https://opensensemap.org/explore/561ce8acb3de1fe005d3d7bf">hier</a>.
 
 Wir kommen gerne wieder
 ============
