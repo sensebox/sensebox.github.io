@@ -68,6 +68,7 @@
       <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
     {% endif %}
 
@@ -86,8 +87,8 @@
       {% include _carousel_content/press_carousel.html %}
     {% elsif page.id == 'awards' %}
       {% include _carousel_content/awards_carousel.html %}
-    {% elsif page.id == 'feinstaub-workshop' %}
-      {% include _carousel_content/feinstaub-workshop_carousel.html %}
+    {% elsif page.id == 'lab' %}
+      {% include _carousel_content/lab_carousel.html %}
     {% elsif page.id == 'blog' %}
       {% include _carousel_content/blog_carousel.html %}
     {% else %}

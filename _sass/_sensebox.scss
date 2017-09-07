@@ -979,7 +979,7 @@ $carousel-height: 450px;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#820202', endColorstr='#19ffe0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-.background-gradient-feinstaub-workshop {
+.background-gradient-orange {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa84c+0,ff7b0d+100;Orange+3D */
   background: #ff7b0d; /* Old browsers */
   background: -moz-linear-gradient(-45deg, #ff7b0d 0%, #ffa84c 100%); /* FF3.6-15 */
@@ -988,11 +988,18 @@ $carousel-height: 450px;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7b0d', endColorstr='#ff7b0d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+.background-lab {
+  background-image: url('../images/header_sensebox_lab.jpg');
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+
 .background-ardublockly {
   background-image: url('../images/blockly.png');
   background-size:     cover;                      /* <------ */
   background-repeat:   no-repeat;
-  background-position: center center;     
+  background-position: center center;
 }
 
 .vcenter {

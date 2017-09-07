@@ -1,0 +1,52 @@
+---
+layout: default
+permalink: /lab
+weight: 8
+lang: de
+id: lab
+translationAvailable: false
+---
+<!-- As we do not need a tranlation, we write the contents here -->
+<p>
+  Tüfteln, ausprobieren, verstehen sind deine Leidenschaft? Wir wollen zusammen mit dir die Welt der Mikrocontroller, Sensoren und Programmierung begreif- und anfassbar machen. Bei uns hast du Möglichkeit mit unterschiedlichen Technologien deine eigenen Ideen und Projekte umzusetzen.
+</p>
+<hr />
+<div class="marketing">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-4">
+      <h2>Was ist <br>geplant?</h2>
+      <p>Wir wollen uns mit Euch zusammen setzen um Eure Ideen und Projekten umzusetzen. Wir stehen Euch die ganze Zeit als Ansprechpartner zur verfügung.</p>
+    </div>
+    <div class="col-lg-4">
+      <h2>Was ist <br>vorhanden?</h2>
+      <!-- <img src="{{ site.baseurl | append: '/images/senseBox_home_circle_500.png' }}" alt="senseBox:home" class="hero-product-img"> -->
+      <p>Arduino, andere Mikrocontroller, Sensoren, Messgeräte, Lötstation, Laptop, 3D Drucker, kalte Getränke</p>
+    </div>
+    <div class="col-lg-4">
+      <h2>Was darfst Du mitbringen?</h2>
+      <!-- <img src="{{ site.baseurl | append: '/images/senseBox_home_circle_500.png' }}" alt="senseBox:home" class="hero-product-img"> -->
+      <p>Alles. Eigene Geräte, Spaß, und kreative Projektideen</p>
+    </div>
+  </div>
+  <h2>Wo?</h2>
+  <div id="map" style="width: 100%; height: 300px;"></div>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+	<script>
+		var map = L.map('map').setView([51.9691555, 7.5957698], 17);
+    var OpenStreetMap_HOT = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+    	maxZoom: 19,
+    	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>'
+    }).addTo(map);
+    map.scrollWheelZoom.disable()
+		L.marker([51.9691555, 7.5957698]).addTo(map);
+	</script>
+  <br />
+  <p style="text-align: center;">Institut für Geoinformatik, Heisenbergstraße 2, 48149 Münster</p>
+  <p style="text-align: center;"><a class="btn" href="https://www.google.de/maps/dir//Institut+f%C3%BCr+Geoinformatik,+Heisenbergstra%C3%9Fe+2,+48149+Muenster/" role="button" type="button">Navigation mit GoogleMaps &raquo;</a></p>
+
+  <h2>Anmelden</h2>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdrWsJFTqFYjTIzYMlzE9ixU5TwWZi_6pZ_-MoL0eRKSuOXng/viewform?embedded=true" width="100%" height="1500px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+</div>
