@@ -1,0 +1,17 @@
+---
+permalink: /redirect
+---
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <div class="redirect-background">
+      <kbd class="redirect-from">{{ page.redirect.from }}</kbd>
+      <kbd class="redirect-to">{{ page.redirect.to }}</kbd>
+      <img class="redirect-logo-animated" src='{{ site.baseurl | append: "images/sensebox_logo.svg"}}' alt="senseBox logo animated"/>
+    </div>
+  </body>
+
+</html>
