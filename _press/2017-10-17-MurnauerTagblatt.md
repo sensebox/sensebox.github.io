@@ -10,4 +10,4 @@ categories: press
 
 <a href='{{ site.baseurl | append: "/docs/Murnauer-Tagblatt.pdf" }}' target="_blank">
     <button class="btn">Printausgabe vom 17.10.2017</button></a>
----
+
