@@ -3,7 +3,7 @@ layout: post
 title:  "WWU vergibt Sybille-Hahne-Gründerpreis"
 date:   2017-10-19
 author: Manuela
-thumbnail: /images/press/wwu.jpeg
+thumbnail: /images/press/wwu.jpg
 categories: press
 ---
 "32.000 Euro für Biotechnologie-Unternehmen "EVORION" und Unterstützer an der WWU / Nachwuchs-Preis für Geoinformatik-Projekt."
