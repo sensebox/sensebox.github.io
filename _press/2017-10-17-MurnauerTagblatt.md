@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Forschen für die Allgemeinheit"
-date:   2017-10-19
+date:   2017-10-17
 author: Manuela
 thumbnail: /images/press/murnauer_tagblatt.jpg
 categories: press
