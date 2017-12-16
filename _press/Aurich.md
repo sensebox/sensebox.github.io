@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Schüler erforschen die Umwelt"
+date:   2017-11-21
+author: Manuela
+thumbnail: /images/press/ON.jpg
+categories: press
+---
+"Aurich. Fachübergreifender Unterricht bietet Schülern die Möglichkeit, unterschiedlichste Fähigkeiten gleichzeitig in einem Projekt auszuprobieren. Umgesetzt wurde dies kürzlich beispielsweise in einem Workshop an der Auricher Realschule."
+
+<a href='{{ site.baseurl | append: "/docs/Artikel_Aurich.pdf" }}' target="_blank">
+    <button class="btn">Ausgabe vom 21.11.2017</button></a>
+
