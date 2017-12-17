@@ -21,7 +21,7 @@ Neues Jahr, neue Webseite! So ging im Mai unsere neue Webseite online - mit neue
 2017 gab es einige Auszeichnungen 
 ============
 Bereits im März waren wir Gewinner des Cebit Innovation Awards 2017, eine Auszeichnung für Nachwuchsforscher und Nachwuchsentwickler. Dabei waren wir eines von vier ausgezeichneten Projekte, was uns nach wie vor sehr stolz macht. Auch beim NRWHack vor kurzem waren wir erfolgreich und räumten mit <a href="www.webgis.nrw/">WebGIS</a> den 1.Platz ab. 
-Doch nicht nur mit unserer senseBox konnten wir in diesem Jahr punkten, sondern auch unser Startup eduSense wurde beim Sybille-Hahne-Nachwuchs-Gründerpreis und mit dem Sonderpreis Paypal-Startup-Unterstützung beim ERCIS Launch Pad ausgezeichnet. Bei eduSense dreht sich alles rund um das Thema Citizen Science und digitale Bildung – seid gespannt, wie es mit eduSense weitergeht!
+Doch nicht nur mit unserer senseBox konnten wir in diesem Jahr punkten, sondern auch unser Startup eduSense wurde mit dem Sybille-Hahne-Nachwuchs-Gründerpreis und mit dem Sonderpreis Paypal-Startup-Unterstützung beim ERCIS Launch Pad ausgezeichnet. Bei eduSense dreht sich alles rund um das Thema Citizen Science und digitale Bildung – seid gespannt, wie es mit eduSense weitergeht!
 
 Doch die wohl größte Auszeichnung für uns ist, dass mittlerweile über 1000 senseBoxen mit mehr als 480 Millionen Messungen auf der openSenseMap registriert sind. Dabei werden nicht nur Daten in Deutschland erhoben, sondern auf der ganzen Welt wie in Brasilien, Argentinien, Amerika, Portugal, Frankreich Kambodscha oder Kuala Lumpur. Einfach unglaublich!
 
