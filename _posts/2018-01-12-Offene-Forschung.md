@@ -3,8 +3,8 @@ layout: post
 title: "Offene Analyse von Umweltdaten"
 date: 2018-01-12
 author: "Daniel Nüst"
-abstract: "Unsere Internetseite hat einen neuen Anstrich bekommen! Es gibt einen neuen Style, einen Blog, und viele kleine Änderungen"
-thumbnail: /images/blog_images/screenshot_osem.png
+abstract: "Die offenen Daten der openSenseMap werden inzwischen in vielen weiteren Projekten genutzt"
+thumbnail: /images/blog_images/2018-01_sensebox-binder-rstudio-screenshot.png
 image1: /images/blog_images/2018-01_sensebox-binder-rstudio-screenshot.png
 image2: https://media.giphy.com/media/l49JRjO65S0WQ1Kyk/giphy.gif
 image3: https://raw.githubusercontent.com/JohannesFriedrich/JohannesFriedrich.github.io/master/_posts/img/PM_Silvester/PM_10_silvester2017.png
@@ -15,7 +15,7 @@ _Dieser Artikel ist auf Englisch auf der [o2r website](http://o2r.info/2018/01/1
 
 Der Beginn des neuen Jahres ist die Zeit der guten Vorsätze.
 Für den Wissenschaftler [Daniel Nüst](http://nordholmen.net/) vom Forschungsprojekt "Offene Reproduzierbare Forschung" ([o2r](http://o2r.info)) bedeutete dies sich endlich mit seiner brandneuen _senseBox:home_ zu beschäftigen und eine kleine [reproduzierbare](https://de.wikipedia.org/wiki/Reproduzierbarkeit#Wissenschaft) Datenanalyse zu erstellen.
-Danke der offenen Hardware von _senseBox_, den offenen Daten von der _openSenseMap_, und Freier Open Source Software ([FOSS](https://de.wikipedia.org/wiki/Free/Libre_Open_Source_Software)) konnte er eine transparente und nachvollziehbare Untersuchung über Feinstaubwerte zum Jahreswechsel in Münster erstellen.
+Dank der offenen Hardware von _senseBox_, den offenen Daten von der _openSenseMap_, und Freier Open Source Software ([FOSS](https://de.wikipedia.org/wiki/Free/Libre_Open_Source_Software)) konnte er eine transparente und nachvollziehbare Untersuchung über Feinstaubwerte zum Jahreswechsel in Münster erstellen.
 
 Auf Basis von _[BinderHub](https://binderhub.readthedocs.io)_ kann jeder mit nur wenigen Klicks das gleiche virtuelle Labor in seinem Browser öffnen, welches für die ursprüngliche Untersuchung genutzt wurde.
 Und alles ohne irgendwelche Software zu installieren.
