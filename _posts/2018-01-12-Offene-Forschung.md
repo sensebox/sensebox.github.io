@@ -35,6 +35,6 @@ Der folgende Screenshots zeigt die das Analyseskript und das erzeugte Dokument i
 Wenn Du es nicht erwarten kannst, dann schau Dir unter [diesem Link](https://nuest.github.io/sensebox-binder/sensebox-analysis.html) die lesbare (aber nicht editierbare) fertige Version der Analyse an.
 
 Und Daniel ist nicht alleine mit seinem Interesse an Feinstaubmessungen in der Neujahrsnacht.
-[Johannes Friedrich](https://johannesfriedrich.github.io/), Wissenschaftler an der [Universität Bayreuth](http://www.lumi.uni-bayreuth.de/), hat mit seiner Software [senseBox](https://opensensemap.org/explore/5904772f5ba9e500110fb52e) die Daten von _über 400 senseBoxen_ heruntergeladen, visualisiert, und in [diesem Blogpost](https://johannesfriedrich.github.io/2018-01-11-particular-matter-new-year/) veröffentlicht.
+[Johannes Friedrich](https://johannesfriedrich.github.io/), Wissenschaftler an der [Universität Bayreuth](http://www.lumi.uni-bayreuth.de/), hat mit seiner Software [senseBox](https://github.com/JohannesFriedrich/senseBox) die Daten von _über 400 senseBoxen_ heruntergeladen, visualisiert, und in [diesem Blogpost](https://johannesfriedrich.github.io/2018-01-11-particular-matter-new-year/) veröffentlicht.
 
 {% include image.html image=page.image3 %}
