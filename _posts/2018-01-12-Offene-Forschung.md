@@ -11,7 +11,7 @@ image3: https://raw.githubusercontent.com/JohannesFriedrich/JohannesFriedrich.gi
 lang: de
 ---
 
-_Dieser Artikel ist auf Englisch auf der [o2r website](https://o2r.info) veröffentlicht._
+_Dieser Artikel ist auf Englisch auf der [o2r website](http://o2r.info/2018/01/12/sensebox-binder/) veröffentlicht._
 
 Der Beginn des neuen Jahres ist die Zeit der guten Vorsätze.
 Für den Wissenschaftler [Daniel Nüst](http://nordholmen.net/) vom Forschungsprojekt "Offene Reproduzierbare Forschung" ([o2r](http://o2r.info)) bedeutete dies sich endlich mit seiner brandneuen _senseBox:home_ zu beschäftigen und eine kleine [reproduzierbare](https://de.wikipedia.org/wiki/Reproduzierbarkeit#Wissenschaft) Datenanalyse zu erstellen.
