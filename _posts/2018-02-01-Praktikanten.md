@@ -14,7 +14,7 @@ lang: de
 ---
 Drei Praktikanten am ifgi
 ============
-Selten haben wir so viele Praktikanten zur gleichen Zeit. Doch Niklas, Jannik und Julian haben uns nicht nur fantastisch unterstützt, sondern auch öfters mal leckere Muffins mitgebracht. Die drei kommen vom Anne-Frank Gesamtschule aus Havixbeck und gehen gemeinsam in die 12. Klasse. Nach der Projektwoche im Sommer haben sich die drei dazu entschieden, ihr Schulpraktikum bei uns am ifgi zu absolvieren. Wir freuen uns natürlich über dieses Interesse und diesem positiven Feedback.
+Selten haben wir so viele Praktikanten zur gleichen Zeit. Doch Niklas, Jannik und Julian haben uns nicht nur fantastisch unterstützt, sondern auch öfters mal leckere Muffins mitgebracht. Die drei kommen von der Anne-Frank Gesamtschule aus Havixbeck und gehen gemeinsam in die 12. Klasse. Nach der Projektwoche im Sommer haben sich die drei dazu entschieden, ihr Schulpraktikum bei uns am ifgi zu absolvieren. Wir freuen uns natürlich über dieses Interesse und diesem positiven Feedback.
 
 
 Besucherzähler für die Kunstakademie Münster
