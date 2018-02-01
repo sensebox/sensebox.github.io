@@ -20,7 +20,7 @@ Selten haben wir so viele Praktikanten zur gleichen Zeit. Doch Niklas, Jannik un
 Besucherzähler für die Kunstakademie Münster
 ============
 Niklas und Jannik waren in den letzten zwei Wochen damit beschäftigt, sich in die Programmierung der senseBox einzuarbeiten. Besonders spannend ist ihre Aufgabe, einen Besucherzähler für die Kunstakademie Münster zu bauen. Auf Basis dessen möchte die Kunstakademie die Verkaufspreise für ihre Tshirts festlegen. Eine echt coole Sache! 
-Was die beiden nach der Schule machen wollen, wissen sie noch nicht hundert Prozent. Jedoch scheinen sie vom Unileben ganz angetan zu sein, besonders die Arbeitszeiten ab 9:30 Uhr finden sie sehr cool. Jannik schreibt gerade paralell zum Praktikum seine Facharbeit und aufgrund seines Interesse an der Chemie möchte er gerne dafür das Labor für ein Analyseverfahren für Stickstoff nutzen. Vielleicht klappt das ja noch!
+Was die beiden nach der Schule machen wollen, wissen sie noch nicht hundert Prozent. Jedoch scheinen sie vom Unileben ganz angetan zu sein, besonders die Arbeitszeiten ab 9:30 Uhr finden sie sehr cool. Jannik schreibt gerade parallel zum Praktikum seine Facharbeit und aufgrund seines Interesses an der Chemie möchte er gerne dafür das Labor für ein Analyseverfahren für Stickstoff nutzen. Vielleicht klappt das ja noch!
 
 {% include image.html image=page.image1 %}
 {% include image.html image=page.image3 %}
