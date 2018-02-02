@@ -38,20 +38,10 @@
   position: 11
   description: "Felix ist Geoinformatik-Student am Institut für Geoinformatik. Als Schülerpraktikant hat er bereits 2011 mit einer ersten Version der senseBox gearbeitet. Seit Frühjahr 2016 ist wieder im Team dabei. #backtotheroots"
 
-- name: Bernd van Rennings
-  image: /images/team/vanRennings.jpg
-  position: 12
-  description:  Bernd arbeitet als studentische Hilfskraft für das Projekt senseBox. Er hat im zwei-Fach-Bachelor Mathematik und Informatik an der Uni Münster studiert. Zurzeit studiert er im Master of Education.
-
 - name: Gerald Pape
   image: /images/team/Pape.jpg
   position: 13
   description: Gerald kümmert sich zusammen mit Matthias um alles was mit der <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a> und der <a href="https://github.com/sensebox/OpenSenseMap-API/wiki/API-Dokumentation" target="_blank">API</a> zu tun hat. Er hat seinen Master Geoinformatik an der Uni Münster gemacht.
-
-- name: Norwin Roosen
-  image: /images/team/Roosen.jpg
-  position: 15
-  description: Norwin studiert am <a href="https://www.uni-muenster.de/Geoinformatics/" target="_blank"i>ifgi</a> BSc Geoinformatik. Er unterstützt das Projekt senseBox als studentische Hilfskraft.
 
 - name: Gina Buchwald-Chassée
   image: /images/team/raute.png
