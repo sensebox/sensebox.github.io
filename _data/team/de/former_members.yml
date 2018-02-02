@@ -1,4 +1,4 @@
-name: Christoph Kisfeld
+- name: Christoph Kisfeld
   image: /images/team/raute.png
   position: 8
   description: Christoph ist Geoinformatik-Student am Institut für Geoinformatik. Er unterstützt GI@School bei der Weiterentwicklung der openSenseMap und hat die senseBox bei <a href="http://www.hackyourcity.de/dortmund/" target="_blank">Hack Your City</a> und <a href="http://jugendhackt.de/events/ost/" target="_blank">Jugend hackt Ost</a> vorgestellt.
@@ -18,7 +18,7 @@ name: Christoph Kisfeld
   position: 14
   description: Marc hat 2016 seine BA Thesis mit dem Thema "Geostatistical Methods for the OpenSenseMap-Platform" am Institut für Geoinformatik abgeschlossen. Während dieser Arbeit entwickelte er Interpolations funktionalitäten für die <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a>.
 
-name: Manuela Benz
+- name: Manuela Benz
   image: /images/team/raute.png
   position: 16
   description: Manuela studiert Kommunikationswissenschaft an der Uni Münster. Während ihres Masterstudiums arbeitet sie als studentische Hilfskraft am Institut für Geoinformatik und ist hier für die Betreuung der Social Media Kanäle für die senseBox zuständig. Dabei werden nicht nur Facebook und Twitter von ihr bespielt, sondern auch die Blogbeiträge oder andere Bereiche der Homepage werden auf dem aktuellen Stand gehalten.
