@@ -22,3 +22,13 @@
   image: /images/team/raute.png
   position: 16
   description: Manuela studiert Kommunikationswissenschaft an der Uni Münster. Während ihres Masterstudiums arbeitet sie als studentische Hilfskraft am Institut für Geoinformatik und ist hier für die Betreuung der Social Media Kanäle für die senseBox zuständig. Dabei werden nicht nur Facebook und Twitter von ihr bespielt, sondern auch die Blogbeiträge oder andere Bereiche der Homepage werden auf dem aktuellen Stand gehalten.
+
+- name: Bernd van Rennings
+  image: /images/team/vanRennings.jpg
+  position: 12
+  description: Bernd works as a student assistant for the project senseBox. He holds a bachelor degree in mathematics and computer since. Currently he is Master Student at the WWU.
+
+- name: Norwin Roosen
+  image: /images/team/Roosen.jpg
+  position: 15
+  description: Norwin is studying BSc Geoinformatics at <a href="https://www.uni-muenster.de/Geoinformatic/en/" target="_blank"i>ifgi</a>. He works as a student assistant at the project senseBox.
