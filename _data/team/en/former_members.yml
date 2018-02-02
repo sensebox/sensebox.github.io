@@ -17,3 +17,8 @@
   image: /images/team/raute.png
   position: 14
   description: Marc wrote his BA thesis "Geostatistical Methods for the OpenSenseMap-Platform" in 2016 at the Institute for Geoinformatics in Münster. His work had the goal to implement interpolation methods into <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a>.
+
+- name: Manuela Benz
+  image: /images/team/raute.png
+  position: 16
+  description: Manuela is currently doing her masters in communication science at the WWU. She looks after our social media channels and writes blog posts for our web site.
