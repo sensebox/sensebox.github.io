@@ -14,13 +14,13 @@ lang: de
 ---
 Drei Praktikanten am ifgi
 ============
-Selten haben wir so viele Praktikanten zur gleichen Zeit. Doch Niklas, Jannik und Julian haben uns nicht nur fantastisch unterstützt, sondern auch öfters mal leckere Muffins mitgebracht. Die drei kommen von der Anne-Frank Gesamtschule aus Havixbeck und gehen gemeinsam in die 12. Klasse. Nach der Projektwoche im Sommer haben sich die drei dazu entschieden, ihr Schulpraktikum bei uns am ifgi zu absolvieren. Wir freuen uns natürlich über dieses Interesse und diesem positiven Feedback.
+Selten haben wir so viele Praktikanten zur gleichen Zeit. Doch Niklas, Jannik und Julian haben uns nicht nur fantastisch unterstützt, sondern auch öfters mal leckere Muffins und Kuchen mitgebracht. Die drei kommen von der Anne-Frank Gesamtschule aus Havixbeck und gehen gemeinsam in die 12. Klasse. Nach der Projektwoche im Sommer haben sich die drei dazu entschieden, ihr Schulpraktikum bei uns am ifgi zu absolvieren. Wir freuen uns natürlich über dieses Interesse und diesem positiven Feedback.
 
 
 Besucherzähler für die Kunstakademie Münster
 ============
 Niklas und Jannik waren in den letzten zwei Wochen damit beschäftigt, sich in die Programmierung der senseBox einzuarbeiten. Besonders spannend ist ihre Aufgabe, einen Besucherzähler für die Kunstakademie Münster zu bauen. Auf Basis dessen möchte die Kunstakademie die Verkaufspreise für ihre Tshirts festlegen. Eine echt coole Sache! 
-Was die beiden nach der Schule machen wollen, wissen sie noch nicht hundert Prozent. Jedoch scheinen sie vom Unileben ganz angetan zu sein, besonders die Arbeitszeiten ab 9:30 Uhr finden sie sehr cool. Jannik schreibt gerade parallel zum Praktikum seine Facharbeit und aufgrund seines Interesses an der Chemie möchte er gerne dafür das Labor für ein Analyseverfahren für Stickstoff nutzen. Vielleicht klappt das ja noch!
+Was die beiden nach der Schule machen wollen, wissen sie noch nicht zu hundert Prozent. Jedoch scheinen sie vom Uni-Leben ganz angetan zu sein, besonders die Arbeitszeiten ab 9:30 Uhr finden sie sehr cool. Neben dem Praktikum müssen die drei Schüler noch eine Facharbeit schreiben. Aufgrund seines Interesses an der Chemie möchte Jannik gerne dafür das Labor für ein Analyseverfahren für Stickstoff nutzen. Vielleicht klappt das ja noch!
 
 {% include image.html image=page.image1 %}
 {% include image.html image=page.image3 %}
