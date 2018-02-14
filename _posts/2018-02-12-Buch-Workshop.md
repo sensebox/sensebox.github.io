@@ -5,7 +5,7 @@ date: 2018-02-12
 author: Gina
 abstract: "Im Buch-Workshop wurden neue Poster zur einfachen Erklärung der senseBox für SchülerInnen, Studierende und LehrerInnen entwickelt."
 thumbnail: /images/blog_images/Buch-Workshop.png
-image1: /images/blog_images/IMG_0257
+image1: /images/blog_images/IMG_0257.JPG
 lang: de
 ---
 Zwei Tage lang rauchten die Köpfe
