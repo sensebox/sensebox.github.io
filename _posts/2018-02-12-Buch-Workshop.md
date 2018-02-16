@@ -4,7 +4,7 @@ title: "Neue Poster für die senseBox – Coming Soon!"
 date: 2018-02-12
 author: Gina
 abstract: "Im Buch-Workshop wurden neue Poster zur einfachen Erklärung der senseBox für SchülerInnen, Studierende und LehrerInnen entwickelt."
-thumbnail: /images/blog_images/Buch-Workshop.jpg
+thumbnail: /images/blog_images/Buch_Workshop.jpg
 image1: /images/blog_images/IMG_0257.JPG
 lang: de
 ---
@@ -12,7 +12,7 @@ Zwei Tage lang rauchten die Köpfe
 ============
 In einem Workshop der senseBox, unterstützt von der Initiative Make Light des Bundesministeriums für Bildung und Forschung, im Institut für Geoinformatik der Uni Münster überlegten rund 20 Teilnehmende, wie Lehr- und Lernmaterialien rund um die senseBox weiterentwickelt werden könnten. Damit kein heilloses Chaos entstand, sorgte Volker Bombien vom Bombini-Verlag als Moderator für einen strukturierten Ablauf. Außerdem erhielt das senseBox-Team Unterstützung von den Jungen Tüftlern, einem gemeinnützigen Unternehmen, das Kindern Digitalisierung, Technologien und den Umgang mit Daten näher bringen möchte.
 
-{% include image.html image=page.image %}
+{% include image.html image=page.thumbnail %}
 
 Klärung der W-Fragen: Was und wen wollen wir wie erreichen?
 ============
