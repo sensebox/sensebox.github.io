@@ -6,7 +6,7 @@
     {
       "label": "start-server",
       "type": "shell",
-      "command": "docker run --rm -it -v /dev/null:/srv/jekyll/Gemfile -v $(pwd):/srv/jekyll -p 4000:4000 jekyll/jekyll:pages jekyll s",
+      "command": "docker rm -f jekyll; docker run --name jekyll -it -v /dev/null:/srv/jekyll/Gemfile -v $(pwd):/srv/jekyll -p 4000:4000 jekyll/jekyll:pages jekyll s",
       "group": {
         "kind": "build",
         "isDefault": true
