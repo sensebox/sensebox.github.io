@@ -1,0 +1,22 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "start-server",
+      "type": "shell",
+      "command": "docker run --rm -it -v /dev/null:/srv/jekyll/Gemfile -v $(pwd):/srv/jekyll -p 4000:4000 jekyll/jekyll:pages jekyll s",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    }
+  ]
+}
