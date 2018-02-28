@@ -32,9 +32,9 @@ Installation
 ============
 Grundvoraussetzung für die Verwendung von Ardublockly ist, dass die [Arduino IDE](https://www.arduino.cc/en/Main/Software) installiert ist. (weitere Information auch [hier](https://edu.books.sensebox.de/de/getting_started/installation_der_software.html))
 
-Unter [Arbublockly](https://sensebox.de/blockly) befindet sich eine online Version der Oberfläche, die ohne Installation auf den gängigen Browsern läuft. Hierbei muss allerdings der generierte Code mittels Copy and Paste in die Arduino IDE kopiert werden.
+Unter [Arbublockly](https://sensebox.de/blockly/) befindet sich eine online Version der Oberfläche, die ohne Installation auf den gängigen Browsern läuft. Hierbei muss allerdings der generierte Code mittels Copy and Paste in die Arduino IDE kopiert werden.
 
-Die Offline-Variante der Ardublockly Oberfläche befinden sich im [Github Repository](github.com/senseBox/ardublockly) in den [Releases](https://github.com/sensebox/ardublockly/releases)  (die Releases werden in unregelmäßigen Abständen neu veröffentlicht). Hier gibt es für die gängigen Betriebssysteme (Windows, MacOS, Linux) eine jeweilige Version.
+Die Offline-Variante der Ardublockly Oberfläche befinden sich im [Github Repository](https://github.com/senseBox/ardublockly) in den [Releases](https://github.com/sensebox/ardublockly/releases)  (die Releases werden in unregelmäßigen Abständen neu veröffentlicht). Hier gibt es für die gängigen Betriebssysteme (Windows, MacOS, Linux) eine jeweilige Version.
 Für die Offline Variante muss Python (mind. Version 2.7) installiert sein. Weitere Informationen und der Download der Software befinden sich auf der [Python Homepgage](https://www.python.org/). Unter MacOS ist Python bereits vorinstalliert. Hierbei muss nur die Ardublock.app in den Programmordner kopiert werden.
 Damit der direkte Upload oder das direkte Öffnen des Sketches in der Arduino IDE funktioniert, muss der Programmpfad in den Einstellungen gesetzt werden.
 

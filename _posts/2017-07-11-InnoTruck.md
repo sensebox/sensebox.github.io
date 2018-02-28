@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Der InnoTruck – eine mobilie Initiative des BMBF zu Besuch in Münster"
+title: "Der InnoTruck – eine mobile Initiative des BMBF zu Besuch in Münster"
 date: 2017-07-11
 author: Manuela
 abstract: "Der coole Truck machte am 6. Juli Stopp vor dem Ifgi in Münster, mit dem 10 senseBoxen nun weiter durch Deutschland touren."
@@ -26,11 +26,11 @@ Wie ihr alle wisst, haben wir im März auf der CeBIT in Hannover den CeBIT Innov
 Der InnoTruck zu Besuch in Münster
 ============
 Durch den Gewinn des Awards machte der InnoTruck auf seiner einjährigen Tour auch in Münster Stopp. Am 6. Juli stand der coole Truck vor dem Institut für Geoinformatik (Ifgi) und lockte viele neugierige Besucher/innen, Schüler/innen und Forscher/innen an. Auf dem Programm stand der Besuch von Schülern des Kardinal-van-Galen Gymnasiums Hiltrup und Anne-Frank-Gesamtschule aus Havixbeck sowie am Nachmittag die Offene Tür für alle Interessenten.<br>
-Mit dem InnoTruck touren nun 10 Klassensätze der senseBox:edu weiter durch Deutschland, die an verschiedenen Orten verteilt werden - die erste wurde bereits vom Annette-Gymnasium Münster in Empfang genommen. Dafür wurden die interessierten Mitarbeiter des InnoTrucks in einem eigenen Workshop für die senseBox geschult. 
+Mit dem InnoTruck touren nun 10 Klassensätze der senseBox:edu weiter durch Deutschland, die an verschiedenen Orten verteilt werden - die erste wurde bereits vom Annette-Gymnasium Münster in Empfang genommen. Dafür wurden die interessierten Mitarbeiter des InnoTrucks in einem eigenen Workshop für die senseBox geschult.
 {% include image.html image=page.image3 %}
 {% include image.html image=page.image4 %}
 
 Der InnoTruck - eine coole Initiative
 ============
-Der InnoTruck ist eine coole Möglichkeit, sich näher mit dem Thema Innovation, Zukunft und Digitalisierung zu beschäftigen. 
+Der InnoTruck ist eine coole Möglichkeit, sich näher mit dem Thema Innovation, Zukunft und Digitalisierung zu beschäftigen.
 Daher sind wir auch schon gespannt, was es nächstes Jahr auf der CeBIT gibt und freuen uns darauf!
