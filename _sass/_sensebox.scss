@@ -165,6 +165,15 @@ hr {
       // }
     }
   }
+  .navbar-nav.simple {
+    > li > a {
+      transition: color 0.1s;
+      color: #4eaf47;
+      font-size: 1.3em;
+      font-family: BrixSlab-Bold;
+      background-color: transparent;
+  }
+  }
 }
 
 .row {
@@ -782,7 +791,7 @@ article.post-content img {
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 
-.navbar-wrapper {
+.navbar-wrapper.inline {
     position: absolute;
     top: 0;
     right: 0;
@@ -844,10 +853,14 @@ article.post-content img {
 //     padding: 5px;
 // }
 
+.logo.simple {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
 
 .logo {
-    -webkit-filter: brightness(0) invert(1);
-    filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 .logo:hover {
