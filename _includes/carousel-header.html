@@ -1,6 +1,10 @@
 {% assign carouselpages = "main|products|osem|books|background|press|awards|lab|blog" | split: "|" %} 
 {% assign navpages = "blog|products|osem|books|background|lab" | split: "|" %}
-<div class="navbar-wrapper">
+{% if include.simple == true %}
+    <div class="navbar-wrapper">
+{% else %}
+    <div class="navbar-wrapper inline">
+{% endif %}
     <div class="container">
         <nav class="navbar navbar-static-top">
             <div class="container">
@@ -17,11 +21,20 @@
                         {% else %}
                         <a class="navbar-brand" href="{{ site.url }}">
                             {% endif %}
+                            {% if include.simple %}
+                            <img class="logo simple" style="max-height:100%;" src="{{ site.baseurl | append: " /images/sensebox_logo.svg "}}"/>
+                            {% else %}
                             <img class="logo" style="max-height:100%;" src="{{ site.baseurl | append: " /images/sensebox_logo.svg "}}"/>
+                            {% endif %}
                         </a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
+                        {% if include.simple %}
+                        <ul class="nav navbar-nav simple">
+                                {% else %}
+                        <ul class="nav navbar-nav">
+
+                        {% endif %}
                         {% assign t = site.data.translations.[page.lang].header %} {% assign menupages = site.pages | sort:"weight" %} {% for menupage
                         in menupages %} {% if menupage.lang == page.lang and navpages contains menupage.id %}
                         <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
@@ -49,6 +62,7 @@
     </div>
 </div>
 
+{% unless include.simple %}
 <!-- Carousel
     ================================================== -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -78,3 +92,4 @@
     {% endif %}
 </div>
 <!-- /.carousel -->
+{% endunless %}
