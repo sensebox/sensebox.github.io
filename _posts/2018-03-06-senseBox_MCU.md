@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Praktikum bei der senseBox"
+title: "MCU Sneak Preview"
 date: 2018-03-06
 author: Jan
 abstract: "Launch der neuen senseBox Hardware"
