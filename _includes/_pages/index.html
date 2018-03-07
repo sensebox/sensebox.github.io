@@ -43,7 +43,7 @@
         {% if forloop.index0 == 2%}
           {% break %}
         {% else %}
-          <a href="{{ site.url | append: post.url }}">
+          <a href="{{ site.baseurl | append: post.url }}">
             <div class="col-sm-6 col-md-6 col-lg-6">
               <div class="thumbnail">
                 <img src="{{ site.baseurl | append: post.thumbnail }}" alt="{{ post.title }} - Logo">
