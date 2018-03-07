@@ -6,10 +6,10 @@
         <h1 style="color:white">{{ t.aboutus.header }}</h1>
         <div class="row">
           <div class="col-md-6">
-            <a class="btn header-btn" href="{{ page.url }}#philosophie" role="button">{{ t.philosophy.header }} &raquo;</a>
+            <a class="btn header-btn" href="{{ site.baseurl | append: '/' | append: page.lang | append: '/awards'}}" role="button">{{ t.awards }} &raquo;</a>
           </div>
           <div class="col-md-6">
-            <a class="btn header-btn" href="{{ page.url }}#team" role="button">Team &raquo;</a>
+            <a class="btn header-btn" href="{{ site.baseurl | append: '/' | append: page.lang | append: '/press'}}" role="button">{{ t.press }} &raquo;</a>
           </div>
         </div>
       </div>
