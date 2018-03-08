@@ -13,7 +13,7 @@ image5: /images/blog_images/shop.png
 
 lang: de
 ---
-Vielleicht habt ihr schon bemerkt, dass es bei den senseBoxen momentan Lieferschwierigkeiten gibt. Der Grund dafür ist erfreulicher als ihr vielleicht denkt: wir bringen in Kürze komplett überarbeitete Bausätze heraus, in deren Herzen die neue senseBox MCU schlägt. Sie ist unsere eigene Lösung eines Open-Source Steuergeräts für Umweltsensortechnik und ist speziell an unseren Anwendungsfall im Open Science und Open Education Bereich angepasst. 
+Vielleicht habt ihr schon bemerkt, dass es bei den senseBoxen momentan Lieferschwierigkeiten gibt. Der Grund dafür ist erfreulicher als ihr vielleicht denkt: wir bringen in Kürze komplett überarbeitete Bausätze heraus, in deren Herzen die neue senseBox MCU schlägt. Sie ist unsere eigene Lösung eines Open-Source Steuergeräts für Umweltsensortechnik und ist speziell an unseren Anwendungsfall im Open Science und Open Education Bereich angepasst.
 
 
 Der neue senseBox Mikrocontroller
@@ -24,12 +24,12 @@ MCU steht hierbei für Microcontroller Unit. Die senseBox MCU ersetzt in der neu
 
 Neue Wege der Datenübertragung
 ============
-Die beiden XBee Sockel der senseBox MCU lassen sich mit passgenauen Modulen für das Datenhandling bestücken. Datenübertragung per WLAN und Ethernet ist weiterhin möglich, denn es werden ein WLAN- (Standard in der senseBox:edu) und ein Ethernet-Modul angeboten. Neu ist das LoRa WAN-XBee-Modul, mit dem eine stromsparende und kostenlose Möglichkeit der Datenübertragung ins Internet über den LoRa-Funk-Standard ermöglicht wird. Wir nutzen hierfür die Schnittstellen vom [TheThingsNetwork](http://www.thethingsnetwork.org/). Hierzu sollte die entsprechende Infrastruktur aus LoRa Gateways vorhanden sein, die [hier](http://www.ttnmapper.org/) überprüft werden kann. Ein XBee-Modul mit SD-Kartenslot ermöglicht die Entwicklung von Datenloggern und dient auch als Zwischenspeicher für OTA-Übertragung von BIN-Dateien.  
+Die beiden XBee Sockel der senseBox MCU lassen sich mit passgenauen Modulen für das Datenhandling bestücken. Datenübertragung per WLAN und Ethernet ist weiterhin möglich, denn es werden ein WLAN- (Standard in der senseBox:edu) und ein Ethernet-Modul angeboten. Neu ist das LoRa WAN-XBee-Modul, mit dem eine stromsparende und kostenlose Möglichkeit der Datenübertragung ins Internet über den LoRa-Funk-Standard ermöglicht wird. Wir nutzen hierfür die Schnittstellen vom [TheThingsNetwork](http://www.thethingsnetwork.org/). Hierzu sollte die entsprechende Infrastruktur aus LoRa Gateways vorhanden sein, die [hier](http://www.ttnmapper.org/) überprüft werden kann. Ein XBee-Modul mit SD-Kartenslot ermöglicht die Entwicklung von Datenloggern und dient auch als Zwischenspeicher für OTA-Übertragung von BIN-Dateien.
 
 
 Was ändert sich bei den Sensoren?
 ============
-Wir haben die Sensoren für UV-Strahlung und Beleuchtungsstärke nun auf einem Breakout zusammengelegt, da sie meist gemeinsam ausgerichtet genutzt werden. Der Feinstaubsensor SDS011 wird weiterhin ergänzend angeboten und lässt sich einfach über den UART-Anschluss verbinden. 
+Wir haben die Sensoren für UV-Strahlung und Beleuchtungsstärke nun auf einem Breakout zusammengelegt, da sie meist gemeinsam ausgerichtet genutzt werden. Der Feinstaubsensor SDS011 wird weiterhin ergänzend angeboten und lässt sich einfach über den UART-Anschluss verbinden.
 
 
 Wie wird sich die Programmierung ändern?
@@ -39,7 +39,7 @@ Ein neuer Bootloader sorgt dafür, dass das Board weiterhin kompatibel zu Arduin
 
 Einfache Messgeräte für die MINT-Fächer mit der senseBox:edu
 ============
-Die neue senseBox MCU wird auch in unserer senseBox:edu wie gewohnt mit einem Breadboard kombiniert angeboten, um Prototyping mit Sensoren und Aktoren zu ermöglichen. Bei der senseBox:edu setzen wir auf ein vereinfachtes Stecksystem und die Möglichkeit der einfachen Programmierung über die grafische Blockly-Programmieroberfläche [(https://sensebox.de/blockly/)](https://sensebox.de/blockly/). Das macht es wesentlich leichter Daten auch in kürzeren Unterrichtseinheiten auf die openSenseMap zu übertragen, ohne sich im Detail mit dem Aufbau des HTTP Protokolls auseinandersetzten zu müssen. Die Option einen Sketch weiterhin textbasiert über Arduino zu programmieren bleibt dabei natürlich weiterhin bestehen. Die Hardware der senseBox:edu haben wir zusätzlich mit einem OLED-Display erweitert. Auch der kombinierte BMX055-Sensor zur Bestimmung von Orientierung und des Erdmagenetfeldes bietet viele Möglichkeiten im Bildungsbereich. Um die Verkabelung der meteorologischen Sensoren zu vereinfachen werden sie mit JST-Stecksystemen ausgestattet. Mit dem neuen Design lassen sich, neben der Grundlagenvermittlung der Programmierung, kinderleicht Messgeräte aufbauen, die dann in anderen MINT-Fächern zum Einsatz kommen können. Auf den Abbildungen unterhalb kann man gut sehen, dass der Bausatz nun insgesamt aufgeräumter daherkommt.  
+Die neue senseBox MCU wird auch in unserer senseBox:edu wie gewohnt mit einem Breadboard kombiniert angeboten, um Prototyping mit Sensoren und Aktoren zu ermöglichen. Bei der senseBox:edu setzen wir auf ein vereinfachtes Stecksystem und die Möglichkeit der einfachen Programmierung über die grafische Blockly-Programmieroberfläche [(https://sensebox.de/blockly/)](https://sensebox.de/blockly/). Das macht es wesentlich leichter Daten auch in kürzeren Unterrichtseinheiten auf die openSenseMap zu übertragen, ohne sich im Detail mit dem Aufbau des HTTP Protokolls auseinandersetzten zu müssen. Die Option einen Sketch weiterhin textbasiert über Arduino zu programmieren bleibt dabei natürlich weiterhin bestehen. Die Hardware der senseBox:edu haben wir zusätzlich mit einem OLED-Display erweitert. Auch der kombinierte BMX055-Sensor zur Bestimmung von Orientierung und des Erdmagenetfeldes bietet viele Möglichkeiten im Bildungsbereich. Um die Verkabelung der meteorologischen Sensoren zu vereinfachen werden sie mit JST-Stecksystemen ausgestattet. Mit dem neuen Design lassen sich, neben der Grundlagenvermittlung der Programmierung, kinderleicht Messgeräte aufbauen, die dann in anderen MINT-Fächern zum Einsatz kommen können. Auf den Abbildungen unterhalb kann man gut sehen, dass der Bausatz nun insgesamt aufgeräumter daherkommt.
 {% include image.html image=page.image3 %}
 {% include image.html image=page.image4 %}
 
@@ -55,7 +55,7 @@ Die openSenseMap kann schon seit einiger Zeit mit mobilen Messdaten umgehen (Bei
 
 Und was ist nun mit Open-Source?
 ============
-Unsere Philosophie das Projekt transparent zu gestalten und eine Community aufzubauen mit der zusammen wir die Inhalte rundum die senseBox gemeinsam gestalten können, bleibt weiterhin bestehen. Das neue Board wurde von uns in enger Zusammenarbeit mit der Watterott electronic GmbH entwickelt, die sich auf Design und Produktion von Open-Source Hardware Projekten spezialisiert hat und hier in Deutschland produziert. 
+Unsere Philosophie das Projekt transparent zu gestalten und eine Community aufzubauen mit der zusammen wir die Inhalte rundum die senseBox gemeinsam gestalten können, bleibt weiterhin bestehen. Das neue Board wurde von uns in enger Zusammenarbeit mit der Watterott electronic GmbH entwickelt, die sich auf Design und Produktion von Open-Source Hardware Projekten spezialisiert hat und hier in Deutschland produziert.
 Dazu bekommt die openSenseMap in den nächsten Monaten weitere Features zu Filterfunktionen und Datenanalyse spendiert um den freien Zugang zu den Sensordaten weiter zu vereinfachen. Unsere aktuellen Entwicklungen werden also weiterhin offen bleiben, wobei wir uns nach wie vor auf eine rege Beteiligung von Seiten der Community freuen!
 
 
