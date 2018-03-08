@@ -808,6 +808,11 @@ article.post-content img {
 
 /* Flip around the padding for proper display in narrow viewports */
 
+.navbar-wrapper {
+  padding-top: 10px;
+  margin-bottom: 25px;
+}
+
 .navbar-wrapper>.container {
     padding-right: 0;
     padding-left: 0;
@@ -826,8 +831,12 @@ article.post-content img {
     z-index: 99;
 }
 
-.icon-bar {
+.navbar-toggle > .icon-bar{
     background-color: white;
+}
+
+.navbar-toggle.simple > .icon-bar{
+  background-color: #4eaf47;
 }
 
 // .navbar-nav>li>a {
