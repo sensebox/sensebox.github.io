@@ -24,7 +24,8 @@ MCU steht hierbei für Microcontroller Unit. Die senseBox MCU ersetzt in der neu
 
 Neue Wege der Datenübertragung
 ============
-Die beiden XBee Sockel der senseBox MCU lassen sich mit passgenauen Modulen für das Datenhandling bestücken. Datenübertragung per WLAN und Ethernet ist weiterhin möglich, denn es werden ein WLAN- (Standard in der senseBox:edu) und ein Ethernet-Modul angeboten. Neu ist das LoRa WAN-XBee-Modul, mit dem eine stromsparende und kostenlose Möglichkeit der Datenübertragung ins Internet über den LoRa-Funk-Standard ermöglicht wird. Wir nutzen hierfür die Schnittstellen vom [TheThingsNetwork](http://www.thethingsnetwork.org/). Hierzu sollte die entsprechende Infrastruktur aus LoRa Gateways vorhanden sein, die [hier](http://www.ttnmapper.org/) überprüft werden kann. Ein XBee-Modul mit SD-Kartenslot ermöglicht die Entwicklung von Datenloggern und dient auch als Zwischenspeicher für OTA-Übertragung von BIN-Dateien.
+Die beiden XBee Sockel der senseBox MCU lassen sich mit passgenauen Modulen für Datenübertragung und Speicherung auf MicroSD bestücken. Datenübertragung per WLAN und Ethernet ist weiterhin möglich, denn es werden ein WLAN- (Standard in der senseBox:edu) und ein Ethernet-Modul angeboten. Neu ist das LoRa WAN-XBee-Modul, mit dem eine stromsparende und kostenlose Möglichkeit der Datenübertragung ins Internet über den LoRa-Funk-Standard ermöglicht wird. Es wird damit Möglich sein, über bestehende LoRa-Netzwerke wie zum Beispiel [TheThingsNetwork](http://www.thethingsnetwork.org/) Daten zu übertragen. Die hierzu benötigte Infrastruktur wird bei TheThingsNetwork von der Community bereit gestellt, und ist in immer mehr [Regionen](https://www.thethingsnetwork.org/community#list-communities-map) verfügbar. Ein XBee-Modul mit SD-Kartenslot ermöglicht die Entwicklung von Datenloggern und dient auch als Zwischenspeicher für OTA-Übertragung von BIN-Dateien.
+
 
 
 Was ändert sich bei den Sensoren?
