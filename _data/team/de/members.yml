@@ -47,3 +47,13 @@
   image: /images/team/raute.png
   position: 16
   description: Gina studiert Kommunikationswissenschaft an der Uni Münster. Während ihres Masterstudiums arbeitet sie als studentische Hilfskraft am Institut für Geoinformatik und ist hier für die Betreuung der Social Media Kanäle für die senseBox zuständig. Dabei werden nicht nur Facebook und Twitter von ihr bespielt, sondern auch die Blogbeiträge oder andere Bereiche der Homepage werden auf dem aktuellen Stand gehalten.
+
+- name: David Fehrenbach
+  image: /images/team/david.jpeg
+  position: 17
+  description: David kümmert sich um alles was mit dem Vertrieb der senseBoxen zu tun hat. Er hat Marketing und Information Systems an der Universität Münster studiert. 
+
+- name: Umut Tas
+  image: /images/team/umut.jpg
+  position: 19
+  description: Umut hat nach seinem Masterstudium in der Geoinfomartik 5 Jahre als freiberuflicher Softwareentwickler, insbesondere im Bereich der Datenvisualisierung und Webentwicklung gearbeitet. Als Full-Stack Developer kümmert er sich um alles was gerade wichtig ist.

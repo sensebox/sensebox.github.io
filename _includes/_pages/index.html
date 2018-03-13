@@ -43,7 +43,7 @@
         {% if forloop.index0 == 2%}
           {% break %}
         {% else %}
-          <a href="{{ site.url | append: post.url }}">
+          <a href="{{ site.baseurl | append: post.url }}">
             <div class="col-sm-6 col-md-6 col-lg-6">
               <div class="thumbnail">
                 <img src="{{ site.baseurl | append: post.thumbnail }}" alt="{{ post.title }} - Logo">
@@ -59,7 +59,7 @@
       {% endfor %}
       </div>
       <div style="text-align: center;">
-        <p><a class="btn" href="{{ site.url | append: "/blog" }}" role="button">{{ t.go-to-blog }} &raquo;</a></p>
+        <p><a class="btn" href="{{ site.baseurl | append: "/blog" }}" role="button">{{ t.go-to-blog }} &raquo;</a></p>
       </div>
       <hr />
       <h1 style="text-align: center;">{{ t.upcoming_events }}</h1>

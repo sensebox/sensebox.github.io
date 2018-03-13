@@ -47,3 +47,13 @@
   image: /images/team/raute.png
   position: 16
   description: Gina is currently doing her masters in communication science at the WWU. She looks after our social media channels and writes blog posts for our web site.
+
+- name: David Fehrenbach
+  image: /images/team/david.jpeg
+  position: 17
+  description: David is responsible for the sales of the senseBoxes. He studied Marketing and Information Systems at the University of Muenster.
+
+- name: Umut Tas
+  image: /images/team/umut.jpg
+  position: 19
+  description: Umut rejoined the team after working as a freelance programmer for 5 years. He finished his Masters in Geoinformatics at the University of Muenster in 2013 and enjoys working on data visualizations and full-stack web development.
