@@ -3,7 +3,7 @@ layout: post
 title: "MCU Sneak Preview"
 date: 2018-03-06
 author: Jan und Thomas
-abstract: "Launch unserer neuen senseBox Hardware"
+abstract: "Der Launch unserer neuen senseBox Hardware steht kurz bevor! Die Änderungen im Überlick findet ihr hier."
 thumbnail: /images/blog_images/mcu_blog.jpg
 image1: /images/blog_images/mcu.jpg
 image2: /images/blog_images/blockly.jpg
@@ -13,7 +13,7 @@ image5: /images/blog_images/shop.png
 
 lang: de
 ---
-Vielleicht habt ihr schon bemerkt, dass es bei den senseBoxen momentan Lieferschwierigkeiten gibt. Der Grund dafür ist erfreulicher als ihr vielleicht denkt: wir bringen in Kürze komplett überarbeitete Bausätze heraus, in deren Herzen die neue senseBox MCU schlägt. Sie ist unsere eigene Lösung eines Open-Source Steuergeräts für Umweltsensortechnik und ist speziell an unseren Anwendungsfall im Open Science und Open Education Bereich angepasst.
+Vielleicht habt ihr schon bemerkt, dass es bei den senseBoxen momentan Lieferschwierigkeiten gibt. Der Grund dafür ist erfreulicher als ihr vielleicht denkt: wir bringen in Kürze komplett überarbeitete Bausätze heraus, in deren Herzen die neue senseBox MCU schlägt. Sie ist unsere eigene Lösung eines Open-Source Steuergeräts für Umweltsensortechnik und wurde speziell an unseren Anwendungsfall im Open Science und Open Education Bereich angepasst.
 
 
 Der neue senseBox Mikrocontroller
