@@ -51,13 +51,10 @@ Beim Relaunch der neuen senseBox Hardware bringen wir einen hauseigenen Konfigur
 
 Mobile Messungen
 ============
-Die openSenseMap kann schon seit einiger Zeit mit mobilen Messdaten umgehen (Beispiel-Link zur oSeM oder zum Tweet), was wir bereits öfters prototypisch umgesetzt haben. Zur neuen Hardware bieten wir nun ein passendes GNSS-Breakout an, das mit allen gängigen GNS Systemen (GPS, QZSS, GLONASS, BeiDou, Galileo) kompatibel ist: das u-blox CAM-M8Q Multi GNSS Modul. Das Breakout wird über den JST-Stecker per I2C an die senseBox MCU angeschlossen und ermöglicht einfache mobile Datenerfassung. Bei der Registrierung eines mobilen Gerätes auf der openSenseMap wird der entsprechende Sketch automatisch generiert.
+Die openSenseMap kann schon seit einiger Zeit mit mobilen Messdaten umgehen ([https://twitter.com/SenseBox_De/status/956517284549414913](https://twitter.com/SenseBox_De/status/956517284549414913)), was wir bereits öfters prototypisch umgesetzt haben. Zur neuen Hardware bieten wir nun ein passendes GNSS-Breakout an, das mit allen gängigen GNS Systemen (GPS, QZSS, GLONASS, BeiDou, Galileo) kompatibel ist: das u-blox CAM-M8Q Multi GNSS Modul. Das Breakout wird über den JST-Stecker per I2C an die senseBox MCU angeschlossen und ermöglicht einfache mobile Datenerfassung. Bei der Registrierung eines mobilen Gerätes auf der openSenseMap wird der entsprechende Sketch automatisch generiert.
 
 
 Und was ist nun mit Open-Source?
 ============
 Unsere Philosophie das Projekt transparent zu gestalten und eine Community aufzubauen mit der zusammen wir die Inhalte rundum die senseBox gemeinsam gestalten können, bleibt weiterhin bestehen. Das neue Board wurde von uns in enger Zusammenarbeit mit der Watterott electronic GmbH entwickelt, die sich auf Design und Produktion von Open-Source Hardware Projekten spezialisiert hat und hier in Deutschland produziert.
 Dazu bekommt die openSenseMap in den nächsten Monaten weitere Features zu Filterfunktionen und Datenanalyse spendiert um den freien Zugang zu den Sensordaten weiter zu vereinfachen. Unsere aktuellen Entwicklungen werden also weiterhin offen bleiben, wobei wir uns nach wie vor auf eine rege Beteiligung von Seiten der Community freuen!
-
-
-
