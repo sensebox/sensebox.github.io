@@ -51,7 +51,7 @@ Beim Relaunch der neuen senseBox Hardware bringen wir einen hauseigenen Konfigur
 
 Mobile Messungen
 ============
-Die openSenseMap kann schon seit einiger Zeit mit mobilen Messdaten umgehen ([https://twitter.com/SenseBox_De/status/956517284549414913](https://twitter.com/SenseBox_De/status/956517284549414913)), was wir bereits öfters prototypisch umgesetzt haben. Zur neuen Hardware bieten wir nun ein passendes GNSS-Breakout an, das mit allen gängigen GNS Systemen (GPS, QZSS, GLONASS, BeiDou, Galileo) kompatibel ist: das u-blox CAM-M8Q Multi GNSS Modul. Das Breakout wird über den JST-Stecker per I2C an die senseBox MCU angeschlossen und ermöglicht einfache mobile Datenerfassung. Bei der Registrierung eines mobilen Gerätes auf der openSenseMap wird der entsprechende Sketch automatisch generiert.
+Die openSenseMap kann schon seit einiger Zeit mit [mobilen Messdaten](https://twitter.com/SenseBox_De/status/956517284549414913) umgehen, was wir bereits öfters prototypisch umgesetzt haben. Zur neuen Hardware bieten wir nun ein passendes GNSS-Breakout an, das mit allen gängigen GNS Systemen (GPS, QZSS, GLONASS, BeiDou, Galileo) kompatibel ist: das u-blox CAM-M8Q Multi GNSS Modul. Das Breakout wird über den JST-Stecker per I2C an die senseBox MCU angeschlossen und ermöglicht einfache mobile Datenerfassung. Bei der Registrierung eines mobilen Gerätes auf der openSenseMap wird der entsprechende Sketch automatisch generiert.
 
 
 Und was ist nun mit Open-Source?

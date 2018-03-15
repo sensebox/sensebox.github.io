@@ -265,6 +265,7 @@ hr {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 25px;
+    text-align: justify;
 
     > p {
       color: #adadad;
@@ -272,6 +273,8 @@ hr {
   }
 
   .post-content {
+
+    text-align: justify;
 
     .post-image {
       text-align: center;
