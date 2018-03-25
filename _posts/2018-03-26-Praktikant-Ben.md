@@ -13,7 +13,7 @@ lang: de
 ---
 Geo Guessr mit neuer Ansicht
 ============
-Zwei Wochen lang während des Praktikums Computer spielen? Ganz so einfach war es nicht. Unser Schülerpraktikant Ben hat sich zwar intensiv mit dem Computerspiel GeoGuessr beschäftigt, allerdings weniger mit dem Spielen sondern hauptsächlich mit der Programmierung. Da der Neuntklässler Informatik als Schulfach hat und es ihm Spaß macht, ging ihm die Codierung jedoch leicht von der Hand. Er kann sich auch vorstellen, später beruflich in dem Bereich zu arbeiten. Das freut uns zu hören!
+Zwei Wochen lang während des Praktikums Computer spielen? Ganz so einfach war es nicht. Unser Schülerpraktikant Ben hat sich zwar intensiv mit dem Computerspiel GeoGuessr beschäftigt, allerdings weniger mit dem Spielen sondern hauptsächlich mit der Programmierung. Da der Neuntklässler Informatik als Schulfach hat und es ihm Spaß macht, ging ihm das Programmieren jedoch leicht von der Hand. Er kann sich auch vorstellen, später beruflich in dem Bereich zu arbeiten. Das freut uns zu hören!
 {% include image.html image=page.thumbnail %}
 
 Das Prinzip des Spiels
