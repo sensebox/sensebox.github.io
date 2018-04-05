@@ -38,11 +38,6 @@
   position: 11
   description: "Felix is geoinformatics student at the Institute for Geoinformatics. In 2011 he worked in a pupil internship with an early version of the senseBox. He joined the team in spring 2016. #backtotheroots"
 
-- name: Gerald Pape
-  image: /images/team/Pape.jpg
-  position: 13
-  description: Together with Matthias, Gerald will look after everything related to the <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a> and the <a href="https://github.com/sensebox/OpenSenseMap-API/wiki/API-Dokumentation" target="_blank">API</a>. He studied Master Geoinformatics at the University of Münster.
-
 - name: Gina Buchwald-Chassée
   image: /images/team/raute.png
   position: 16
