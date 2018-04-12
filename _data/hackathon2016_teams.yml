@@ -1,0 +1,53 @@
+- teamname: Gnu-Boot
+  position: 1
+  description: CO2 Fußabdruck-App
+  bgImage: /images/hackathon-impressions/gnuboot.jpg
+  video: https://www.youtube.com/embed/BLmWWe-LG54
+
+- teamname: Free Energy
+  position: 2
+  description: Bike Box
+  bgImage: /images/hackathon-impressions/free-energy.jpg
+  video: https://www.youtube.com/embed/-Smj7z07AbM
+
+- teamname: Technik Freaks
+  position: 3
+  description: Wetterstation
+  bgImage: /images/hackathon-impressions/technik-freaks.jpg
+  video: https://www.youtube.com/embed/QeUEW0-DfcI
+
+- teamname: Öko Hacker
+  position: 4
+  description: Smart Home
+  bgImage: /images/hackathon-impressions/oeko.jpg
+  video: https://www.youtube.com/embed/dAZCu4dlIXo
+
+- teamname: Uns geht ein Licht aus
+  position: 5
+  description: Smarte Straßenlaternen
+  bgImage: /images/hackathon-impressions/uns-geht-ein-licht-aus.jpg
+  video: https://www.youtube.com/embed/oQNSrfTv1U8
+
+- teamname: Mit Alexa sind wir zu dritt
+  position: 6
+  description: Alexa Wetterstation
+  bgImage: /images/hackathon-impressions/hack_imp_3.jpg
+  video: https://www.youtube.com/embed/r4go9hFoSkY
+
+- teamname: TTTJ
+  position: 7
+  description: Wasserqualitätsboje
+  bgImage: /images/hackathon-impressions/tttj.jpg
+  video: https://www.youtube.com/embed/P2Kc-3OyNGE
+
+- teamname: "#TeamElon"
+  position: 8
+  description: Wellenenergie
+  bgImage: /images/hackathon-impressions/team-elon.jpg
+  video: https://www.youtube.com/embed/-sBY3t9c3Dw
+
+- teamname: Himbeere
+  position: 9
+  description: Raspberry Pi Überwachungskamera
+  bgImage: /images/hackathon-impressions/himbeere.jpg
+  video: https://www.youtube.com/embed/NVNHFuQFWgs
