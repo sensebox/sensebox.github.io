@@ -97,7 +97,7 @@ translationAvailable: false
 
 
 <div hidden>
-{% assign teams = site.data.hackathon_teams | sort: 'position' %}
+{% assign teams = site.data.hackathon2016_teams | sort: 'position' %}
 {% for team in teams %}
 {% increment team_count %}
 {% capture oddOrEvenTeamCount %}{% cycle 'oddTeam', 'evenTeam' %}{% endcapture %}
