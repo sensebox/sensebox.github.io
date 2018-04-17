@@ -1,0 +1,59 @@
+- name: Prof. Dr. Angela Schwering
+  image: /images/team/hackathon-jury/schwering.jpg
+  position: 2
+  organisation: Institut für Geoinformatik, Universität Münster
+  organisation-link: http://www.uni-muenster.de/Geoinformatics/
+  description: Since April 2009, Angela is a professor at the Institute for Geoinformatics, University of Muenster, Germany. Her research deals with intelligent representation and reasoning on spatial information. She investigates human strategies to organize and process spatial knowledge about environments and aims to learn from these to enhance the usability of spatial information with cognitively inspired computational models. The research is carried out in the Spatial Intelligence Lab.
+  homepage: http://schwering.staff.ifgi.de/
+  bgImage: https://www.blb.nrw.de/Bilder/Bilder_BLB/Geowissenschaften_Muenster_Bilder/GEO-I.jpg
+
+- name: Grischa Gundelsweiler
+  image: https://gis-iq.esri.de/wp-content/uploads/2015/09/Grischa_Galerie.jpg
+  position: 4
+  organisation: Amazon Web Services
+  organisation-link: https://aws.amazon.com/de/
+  description: Grischa Gundelsweiler leitet den Bereich Bildung und Forschung für AWS in D-A-CH und ist Ansprechpartner für Bildungseinrichtungen, EdTech Unternehmen, Bildungs- und Wissenschaftsverlage und Forschungseinrichtungen. Er berät Lehrer, Dozenten, Forscher, IT-Verantwortliche und die Leitungsebene zu digitalen Technologien und Strategien. Mit diversen Programmen unterstützt AWS zudem die nächste Generation an IT und Cloud Experten.
+  twitter: https://twitter.com/gri_gun
+  linkedin: https://de.linkedin.com/in/grischa-gundelsweiler-37b79aba
+  bgImage: https://graphics8.nytimes.com/images/2013/11/15/business/15bits-aws/15bits-aws-tmagArticle.jpg
+
+- name: Gerrit Grunwald
+  image: https://www.xing.com/image/5_2_4_e5a4d6967_6025750_3/gerrit-grunwald-foto.1024x1024.jpg
+  position: 5
+  organisation: Canoo Engineering AG
+  organisation-link: https://www.oracle.com/de/index.html
+  description: Gerrit Grunwald is a software engineer with more than ten years of experience in software development. He has been involved in Java desktop application and controls development. Gerrit is interested in Java on desktop, Java-driven embedded technologies based on JavaSE embedded and IoT in general. He is a true believer in open source and has participated in popular projects like JFXtras.org as well as his own projects (Medusa, Enzo, SteelSeries Swing, SteelSeries Canvas). Gerrit blogs regularly on subjects related to the Internet of Things and Java(FX) related topics, he is an active member of the Java community, where he founded and leads the Java User Group Münster (Germany), is a JavaOne rockstar and Java Champion. He is a speaker at conferences and user groups internationally and writes for several magazines.
+  twitter: https://twitter.com/hansolo_?lang=de
+  github: https://github.com/HanSolo
+  homepage: http://harmoniccode.blogspot.de/
+  linkedin: https://de.linkedin.com/in/harmoniccode
+  bgImage: http://www.canoo.com/wp-content/uploads/2015/12/UXDesign_1.jpg
+
+- name: Oliver Kurscheidt
+  image: https://www.xing.com/image/0_e_a_9a20262c9_6347389_10/oliver-paczkowski-foto.1024x1024.jpg
+  position: 6
+  organisation: OVSoftware GmbH
+  organisation-link: http://www.ovsoftware.de/
+  description: Oliver is a software developer and project manager at OVSoftware GmbH in Münster since 2012. There he worked in several projects about web development, especially with Java based technologies. He is passionate about agile software development and clean code. Oliver received a diploma in geoinformatics at the Institute for Geoinformatics in Münster in 2007 and worked there for another two years as a research assistant in the ubiquitous computing working group. He founded the company melezo for distributing software for public information displays. Oliver is co-founder and organisator of the local software craftsmanship group socramob - www.socramob.org
+  twitter: https://twitter.com/GadeShot
+  linkedin: https://de.linkedin.com/in/oliver-paczkowski-275a7521
+  homepage: http://paczkowski.weebly.com/
+  bgImage: /images/team/hackathon-jury/OVSoftware_background.jpg
+
+- name: Elisa Lindinger
+  image: https://okfn.de/static/images/team/elisalindinger.jpg
+  position: 1
+  organisation: Open Knowledge Foundation Deutschland
+  organisation-link: https://okfn.de/
+  description: Elisa arbeitet seit Jahren an der Schnittstelle von Kultur und Informatik. Zuletzt koordinierte sie das Innovationsforum „Interactive Technologies“ an der HTW Berlin, betreute die Datenerhebung für ein Projekt des Deutschen Archäologischen Instituts im Sudan und arbeitet nun im Projekt „Digital Refugee Labs“ für die Open Knowledge Foundation Deutschland.
+  github: https://github.com/elisalindinger
+  bgImage: https://assets.okfn.org/p/okfn/img/okfn-logo-portrait-l.png
+
+- name: Nora Perseke
+  image: /images/team/hackathon-jury/Nora DRL.png
+  position: 3
+  organisation: Code Week
+  organisation-link: http://award.codeweek.de/
+  twitter: https://twitter.com/CodeWeekGermany
+  description: Nora ist Teil des Code-Week-Teams, das die EU Code Week vom 15. Bis 23. Oktober koordiniert und mit dem Code Week Award inspirierende digitale Bildungsprojekte fördert. Sie ist in ganz Deutschland unterwegs, um Initiativen für Digital Literacy zu vernetzen. Für die Technologiestiftung Berlin und das Design Research Lab der Universität der Künste beschäftigt sie sich mit Open Educational Resources.
+bgImage: https://www.technologiestiftung-berlin.de/typo3conf/sites/tsb/img/tsb_logo_animation.gif
