@@ -1,0 +1,5 @@
+description: "<p><em>Blockly für senseBox</em> ist unsere unsere Visuelle Programmieroberfläche...</p>"
+description_installieren: "<p>Mit unserer <a href=\"https://docs.opensensemap.org/\" class=\"link\" target=\"_blank\">offenen API</a> lassen sich sämtliche Sensordaten für andere Anwedungen weiterverwenden. Außerdem können Sensordaten von alternativen Quellen in die openSenseMap eingebunden werden.</p>"
+description_short: "<p>Die <b>openSenseMap</b> ist unsere Web-Plattform für offene Sensordaten der senseBox und anderer Geräte.</p>"
+link: "zu Blockly für senseBox »"
+api_link: "zu den API Docs »"

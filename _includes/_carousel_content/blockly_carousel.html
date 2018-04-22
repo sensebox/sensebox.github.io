@@ -1,0 +1,32 @@
+{% assign t = site.data.translations.[page.lang].blockly %}
+<div class="item active">
+    <div id="particles-js" class="carousel-background background-gradient-2">
+        <div class="carousel-container">
+            <div class="container inside-carousel-container">
+                <div class="row header-info display-table">
+                    <div class="col-md-6 display-cell">
+                        <h1 class="carousel-heading">blockly</h1>
+                          {{ t.description_short }}
+                          <a class="btn header-btn" href="https://sensebox.de/blockly" role="button">{{ t.link }}</a>
+                        <br>
+                    </div>
+                    <div class="col-md-6 not-on-small display-cell">
+                        <img src="{{ site.baseurl | append: '/images/main/Microsoft Surface Book.png' }}" style="max-width:100%" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{{ site.baseurl | append: "/assets/particles.js" }}"></script>
+
+<script>
+$(document).ready(function() {
+  $('#myCarousel').carousel({
+    interval: 1000000
+  });
+  particlesJS.load('particles-js', '{{ site.baseurl | append: "/assets/particlesjs-config.json" }}', function() {
+    console.log('callback - particles.js config loaded');
+  });
+});
+</script>
