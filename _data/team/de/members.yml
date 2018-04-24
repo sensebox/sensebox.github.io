@@ -2,7 +2,7 @@
   image: /images/team/Bartoschek_neu.jpg
   position: 1
   description: Thomas ist Wissenschaftlicher Mitarbeiter (Post-Doc) am Institut für Geoinformatik der Westfälischen Wilhelms-Universität Münster. Er ist Gründer und Leiter des Forschungs- und Schülerlabors <a href="http://www.gi-at-school.de/" target="_blank">GI@School</a> und Leiter des senseBox Projektes. Er forscht in den Bereichen „Lernen mit Geotechnologien“, Human-Computer-Interaction und Citizen Science und entwickelt Produkte für Bildung und Kommunikation seiner Wissenschaft.
-  
+
 - name: Angela Schwering
   image: /images/team/Schwering.jpg
   position: 2
@@ -38,11 +38,6 @@
   position: 11
   description: "Felix ist Geoinformatik-Student am Institut für Geoinformatik. Als Schülerpraktikant hat er bereits 2011 mit einer ersten Version der senseBox gearbeitet. Seit Frühjahr 2016 ist wieder im Team dabei. #backtotheroots"
 
-- name: Gerald Pape
-  image: /images/team/Pape.jpg
-  position: 13
-  description: Gerald kümmert sich zusammen mit Matthias um alles was mit der <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a> und der <a href="https://github.com/sensebox/OpenSenseMap-API/wiki/API-Dokumentation" target="_blank">API</a> zu tun hat. Er hat seinen Master Geoinformatik an der Uni Münster gemacht.
-
 - name: Gina Buchwald-Chassée
   image: /images/team/raute.png
   position: 16
@@ -51,7 +46,7 @@
 - name: David Fehrenbach
   image: /images/team/david.jpeg
   position: 17
-  description: David kümmert sich um alles was mit dem Vertrieb der senseBoxen zu tun hat. Er hat Marketing und Information Systems an der Universität Münster studiert. 
+  description: David kümmert sich um alles was mit dem Vertrieb der senseBoxen zu tun hat. Er hat Marketing und Information Systems an der Universität Münster studiert.
 
 - name: Umut Tas
   image: /images/team/umut.jpg
