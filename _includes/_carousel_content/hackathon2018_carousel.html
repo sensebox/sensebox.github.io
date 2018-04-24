@@ -1,0 +1,74 @@
+<style>
+.rockets {
+  overflow: hidden;
+  position: relative;
+  background-repeat: repeat;
+  background-color: #336699;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='50px'><text x='0' y='20' font-size='20' opacity='.6'>🚀</text></svg>");
+  animation: rockets 1s linear infinite;
+}
+
+@keyframes rockets {
+  0% {
+    background-position: 0px 50px;
+  }
+  100% {
+    background-position: 50px 0px;
+  }
+}
+
+.heading-container {
+  background: rgba(44,12,12,0.7);
+  border-radius: 10px;
+  padding: 10px;
+}
+</style>
+<div class="item active">
+    <div class="carousel-background background-gradient-2 rockets">
+        <div class="carousel-container">
+            <div class="container inside-carousel-container">
+                <div class="heading-container">
+                    <h1 class="carousel-heading text-center">senseBox Hackathon 2018 🚀</h1>
+                    <h2 class="text-center" id="hack-countdown"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+var hackStart = new Date("2018-08-26T14:00:00Z").getTime();
+
+var timeUntilStr = "";
+var timeUntilElem = document.getElementById("hack-countdown");
+
+var updateTimeUntilStr = function updateTimeUntilStr() {
+  var diff = hackStart - new Date().getTime(); // difference in ms
+  timeUntilStr = "Noch ";
+
+  var days = (diff / 86400000).toFixed(0);
+  timeUntilStr += days;
+  diff -= (diff / 86400000) * 86400000 - (diff % 86400000);
+  timeUntilStr += " Tag" + (days === "1" ? "" : "e") + ", ";
+
+  var hours = (diff / 3600000).toFixed(0);
+  timeUntilStr += hours;
+  diff -= (diff / 3600000) * 3600000 - (diff % 3600000);
+  timeUntilStr += " Stunde" + (hours === "1" ? "" : "n") + ", ";
+
+  var minutes = (diff / 60000).toFixed(0);
+  timeUntilStr += minutes;
+  diff -= (diff / 60000) * 60000 - (diff % 60000);
+  timeUntilStr += " Minute" + (minutes === "1" ? "" : "n") + " und ";
+
+  var seconds = (diff / 1000).toFixed(0);
+  timeUntilStr += seconds;
+  timeUntilStr += " Sekunde" + (seconds === "1" ? "" : "n") + "!";
+
+  timeUntilElem.textContent = timeUntilStr;
+}
+
+updateTimeUntilStr();
+
+setInterval(updateTimeUntilStr, 1000);
+</script>
