@@ -54,3 +54,8 @@ go-to-blog: "further blog posts"
 blockly:
   description: "A visual IDE for senseBox:edu"
   viewPost: "View blog post"
+
+newsletter:
+  header: "Subscribe to our newsletter"
+  button: "Subscribe"
+  placeholder: "email address"
