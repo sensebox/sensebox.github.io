@@ -23,5 +23,5 @@ Etwa ein Jahr nach der Projektwoche ist das Ziel nach wie vor eine senseBox für
 
 {% include image.html image=page.image3 %}
 
-Mehr zu dem open-Sea Projekt erfahrt ihr auch unter: https://opensea.ms/. 
+Mehr zu dem open-Sea Projekt erfahrt ihr auch unter: [openSea.ms](https://opensea.ms/) 
 
