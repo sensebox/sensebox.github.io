@@ -12,7 +12,7 @@ lang: de
 ---
 Das openSea-Projekt
 ============
-Im Sommer 2016 wurde im Rahmen des openSea-Projektes die senseBox in Zusammenarbeit mit dem Nationalpark Wattenmeer wassertauglich gemacht. Dazu haben wir in einer Projektwoche gemeinsam mit Schülergruppen des Gymnasiums "Schule am Meer“ (Büsum), dem Gymnasium Heide-Ost (Heide) und dem Gymnasium "Theodor-Storm-Schule“ (Husum) Wassersensoren entwickelt, die im Wattenmeer 48 Stunden lang Temperatur, Trübung und die Fließgeschwindigkeit messen sollten. 
+Im Sommer 2016 wurde im Rahmen des openSea-Projektes die senseBox in Zusammenarbeit mit dem Nationalpark Wattenmeer wassertauglich gemacht. Dazu haben wir in einer Projektwoche gemeinsam mit Schülergruppen des Gymnasiums "Schule am Meer“ (Büsum), dem Gymnasium Heide-Ost (Heide) und dem Gymnasium "Theodor-Storm-Schule“ (Husum) Wassersensoren entwickelt, die im Wattenmeer 48 Stunden lang Temperatur, Trübung und die Fließgeschwindigkeit messen sollten. Genaueres über die Projektwoche könnt ihr in unserem [Blogbeitrag](https://sensebox.de/blog/2017-06-26-projektwoche-wattenmeer) nachlesen.
 
 {% include image.html image=page.image1 %}
 {% include image.html image=page.image2 %}
@@ -23,6 +23,5 @@ Etwa ein Jahr nach der Projektwoche ist das Ziel nach wie vor eine senseBox für
 
 {% include image.html image=page.image3 %}
 
-Mehr zu dem open-Sea Projekt erfahrt ihr unter: https://opensea.ms/. Genaueres über die Projektwoche könnt ihr in unserem Blogbeitrag https://sensebox.de/blog/2017-06-26-projektwoche-wattenmeer nachlesen. 
-
+Mehr zu dem open-Sea Projekt erfahrt ihr auch unter: https://opensea.ms/. 
 
