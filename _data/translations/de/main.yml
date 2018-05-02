@@ -53,3 +53,8 @@ go-to-blog: "weitere Blogeinträge"
 blockly:
   description: "Eine einfache Programmieroberfläche für die senseBox:edu"
   viewPost: "Zum Blog Post"
+
+newsletter:
+  header: "Trage dich in unseren Newsletter ein"
+  button: "Anmelden"
+  placeholder: "E-Mail-Adresse"
