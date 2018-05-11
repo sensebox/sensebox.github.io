@@ -6,6 +6,7 @@ header:
   background: "Background"
   press: "Press"
   awards: "Awards"
+  blockly: "Blockly"
 
 footer:
   news:
