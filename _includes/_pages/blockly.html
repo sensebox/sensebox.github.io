@@ -1,0 +1,17 @@
+{% assign t = site.data.translations.[page.lang].blockly %}
+<div class="page-header">
+  <h1>{{ t.header }}</h1>
+</div>
+{{ t.description }}
+<div class="page-header">
+  <h1>Installation</h1>
+</div>
+{{ t.description_installieren }}
+
+<p>&nbsp;</p>
+
+<p style="text-align:center"><a class="btn" href="https://sensebox.de/blockly" target="_blank">{{ t.link }}</a></p>
+
+<p>&nbsp;</p>
+
+<p style="text-align:center"><a href="https://sensebox.de/blockly" target="_blank"><img class="responsive-img" src="{{ site.baseurl | append: '/images/senseBox_blockly.gif'}}" alt="Blockly"></a></p>
