@@ -1,4 +1,5 @@
 {% assign t = site.data.translations.[page.lang].books %}
+
 <div class="item active">
   <div class="carousel-container background-gradient-books">
       <div class="container inside-carousel-container">
@@ -7,18 +8,71 @@
           <p>
             {{ t.description-short }}
           </p>
-          <div class="row">
-              <div class="col-md-4">
-                <a class="btn header-btn" href="//edu.books.sensebox.de/{{ page.lang }}" role="button">senseBox:edu Book &raquo;</a>
+
+
+
+
+             <div class="row">
+             <div class="col-md-4">
+             <a class="btn header-btn" id = "v"  style = "text-indent:30px;" role="button">senseBox v1 &raquo;</a>
+                             <div >
+                <a class="btn header-btn"  id = "v1" href="//home.books.sensebox.de/{{ page.lang }}" role="button">senseBox:home v1 &raquo;</a>
+                <div>
+                <a class="btn header-btn"  id = "v2" href="//edu.books.sensebox.de/{{ page.lang }}" role="button">senseBox:edu v1  &raquo;</a>
+                </div>
+                </div> 
+              </div> 
+
+                <div class="col-md-4">
+                <a class="btn header-btn" id = "vv" role="button">senseBox v2 &raquo;</a>
+                <div>
+                <a class="btn header-btn" id = "v3"  href="//home.books.sensebox.de/{{ page.lang }}" role="button">senseBox:home v2 &raquo;</a>
+                <a class="btn header-btn" id = "v4"  href="//edu.books.sensebox.de/{{ page.lang }}" role="button">senseBox:edu v2  &raquo;</a>
+                </div>
+                </div> 
               </div>
-              <div class="col-md-4">
-                <a class="btn header-btn" href="//home.books.sensebox.de/{{ page.lang }}" role="button">senseBox:home Book &raquo;</a>
-              </div>
-              <div class="col-md-4">
-                <a class="btn header-btn" href="//osem.books.sensebox.de/{{ page.lang }}" role="button">openSenseMap API &raquo;</a>
+
+               </div>
               </div>
           </div>
         </div>
       </div>
-  </div>
-</div>
+<script> 
+
+
+window.onload = function(){
+
+document.getElementById('v').style.display = "block";
+document.getElementById('vv').style.display = "block";
+document.getElementById('v1').style.display = "none";
+document.getElementById('v2').style.display = "none";
+document.getElementById('v3').style.display = "none";
+document.getElementById('v4').style.display = "none";
+
+
+
+
+}
+
+$(document).ready(function(){
+    $("#v").click(function(){
+        $("#v1").toggle();
+        $("#v2").toggle();
+        $("#v3").hide();
+        $("#v4").hide();
+     
+    });
+        $("#vv").click(function(){
+        $("#v3").toggle();
+        $("#v4").toggle();
+        $("#v1").hide();
+        $("#v2").hide();
+        
+
+
+    });
+});
+
+
+
+</script>
