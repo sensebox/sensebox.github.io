@@ -1322,10 +1322,28 @@ $carousel-height: 450px;
   display: none;
 }
 
+#box-2{
+  display: none;
+}
+
+#v{
+  display: block; 
+
+}
+
+#vv {
+  display: block;
+}
+
 .book-nav-item {
   text-align: center;
 
   a {
     text-indent: 0 !important;
   }
+}
+
+#text-style{
+  
+  color: #ffffff;
 }
