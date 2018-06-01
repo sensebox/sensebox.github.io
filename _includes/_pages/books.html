@@ -58,3 +58,90 @@
 
 
 -->
+
+{% assign t = site.data.translations.[page.lang].books %}
+
+
+<link rel="stylesheet" href="/css/books.css">
+<div>
+          
+
+  <div class="row">
+    <div class="col-md-4 book-nav-item">
+      <a   id = "v"  style = "text-indent:30px;" role="button">  
+        <img src="{{ site.baseurl | append: '/images/Genuino.png' }}" style="max-width:70%" />
+       </a>
+
+      <div class = "middle">
+        <div class = "text">SenseBox v1</div>
+      </div>
+      <div id="box-1">
+        <a class="btn"  id = "v1" href="//home.books.sensebox.de/{{ page.lang }}" role="button">home v1 &raquo;</a>
+        <a class="btn"  id = "v2" href="//edu.books.sensebox.de/{{ page.lang }}" role="button">edu v1  &raquo;</a>
+      </div>
+    </div> 
+            
+                <div class="col-md-4">
+                <a  id = "vv" role="button"><img src="{{ site.baseurl | append: '/images/mcu_one_top.png' }}"  style="max-width:60%" /></a>
+                <div>
+                  <div class = "mid">
+                  <div class = "texts">SenseBox v2</div>
+                </div>
+                <a class="btn" id = "v3"  href="//sensebox.github.io/books-v2/home/" role="button">home v2 &raquo;</a>
+                <a class="btn" id = "v4"  href="//sensebox.github.io/books-v2/edu/" role="button">edu v2  &raquo;</a>
+                </div>
+                </div> 
+             
+                <div class="col-md-4">
+                <a  id = "vv" role="button" href="//sensebox.github.io/books-v2/osem/"><img src="{{ site.baseurl | append: '/images/main/Microsoft Surface Book.png' }}" style="max-width:70%" /></a>
+                <div>
+                  <div class = "mid">
+                  <div class = "texts">OpenSenseMap</div>
+                </div>
+
+                </div>
+                </div> 
+          
+               </div>
+       
+<script> 
+
+
+window.onload = function(){
+
+document.getElementById('v').style.display = "block";
+document.getElementById('vv').style.display = "block";
+// document.getElementById('v1').style.display = "none";
+// document.getElementById('v2').style.display = "none";
+document.getElementById('v3').style.display = "none";
+document.getElementById('v4').style.display = "none";
+
+
+
+
+}
+
+$(document).ready(function(){
+    $("#v").click(function(){
+        // $('#v1').style.display = 'block';
+        // $("#v1").toggle();
+        $("#box-1").toggle();
+        // $("#v2").toggle();
+        $("#v3").hide();
+        $("#v4").hide();
+     
+    });
+        $("#vv").click(function(){
+        $("#v3").toggle();
+        $("#v4").toggle();
+        $("#v1").hide();
+        $("#v2").hide();
+        
+
+
+    });
+});
+
+
+
+</script>

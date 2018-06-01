@@ -1294,6 +1294,11 @@ $carousel-height: 450px;
   text-align: center;
 }
 
+.header-text {
+  color: #ffffff;
+
+}
+
 .product-img {
   margin: auto;
   max-width: 300px;
@@ -1310,4 +1315,17 @@ $carousel-height: 450px;
 
 .margin-20 {
   margin: 20px;
+}
+
+//books
+#box-1 {
+  display: none;
+}
+
+.book-nav-item {
+  text-align: center;
+
+  a {
+    text-indent: 0 !important;
+  }
 }

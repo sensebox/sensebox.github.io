@@ -1,3 +1,64 @@
+<!--
+
+{% assign t = site.data.translations.[page.lang].books %}
+<div class="page-header">
+  <h1>Books</h1>
+</div>
+
+<p>
+  {{ t.description }}
+</p>
+<br><br>
+
+<div>
+  <div class="col-md-4">
+    <div class="card">
+      <a href="https://sensebox.github.io/books/senseBox:edu_{{ page.lang }}.pdf" class="overlay opacity-animation-fast" target="_blank">
+        <em style="font-size: 1.4em;">PDF</em>
+      </a>
+      <a href="//edu.books.sensebox.de/{{ page.lang }}" style="text-decoration: none;" target="_blank">
+        <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_edu_bg.jpg'}});"></canvas>
+        <div class="price-text" style="padding:20px;">
+          <h3>senseBox:edu</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <a href="https://sensebox.github.io/books/senseBox:home_{{ page.lang }}.pdf" class="overlay opacity-animation-fast" target="_blank">
+        <em style="font-size: 1.4em;">PDF</em>
+      </a>
+      <a href="//home.books.sensebox.de/{{ page.lang }}" style="text-decoration: none;" target="_blank">
+        <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_home_bg.jpg'}});"></canvas>
+        <div class="price-text" style="padding:20px;">
+          <h3>senseBox:home</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <a href="https://sensebox.github.io/books/senseBox:osem_{{ page.lang }}.pdf" class="overlay opacity-animation-fast" target="_blank">
+        <em style="font-size: 1.4em;">PDF</em>
+      </a>
+      <a href="//osem.books.sensebox.de/{{ page.lang }}" style="text-decoration: none;" target="_blank">
+        <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_OSeM_bg.png'}});"></canvas>
+        <div class="price-text" style="padding:20px;">
+          <h3>openSenseMap</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <br>
+  <p><b>{{ t.commenthint }}</b></p>
+  <p>{{ t.instructions.content }}</p>
+</div>
+
+
+-->
+
 {% assign t = site.data.translations.[page.lang].books %}
 
 
@@ -6,46 +67,11 @@
   <div class="carousel-container background-gradient-books">
       <div class="container inside-carousel-container">
         <div class="header-info">
-          <h1 style="color:white">Books</h1>
-          <p>
+          <h2 class="header-text">
             {{ t.description-short }}
-          </p>
+          </h2>
 
-             <div class="row">
-             <div class="col-md-4">
-             <a   id = "v"  style = "text-indent:30px;" role="button">  <img src="{{ site.baseurl | append: '/images/Genuino.png' }}" style="max-width:70%" /> </a>
-                             <div >
-
-                <div class = "middle">
-                  <div class = "text">SenseBox v1</div>
-                </div>
-              </div>
-                <a class="btn header-btn"  id = "v1" href="//home.books.sensebox.de/{{ page.lang }}" role="button">home v1 &raquo;</a>
-                <div>
-                <a class="btn header-btn"  id = "v2" href="//edu.books.sensebox.de/{{ page.lang }}" role="button">edu v1  &raquo;</a>
-                </div>
-                </div> 
-            
-                <div class="col-md-4">
-                <a  id = "vv" role="button"><img src="{{ site.baseurl | append: '/images/mcu_one_top.png' }}"  style="max-width:60%" /></a>
-                <div>
-                  <div class = "mid">
-                  <div class = "texts">SenseBox v2</div>
-                </div>
-                <a class="btn header-btn" id = "v3"  href="//sensebox.github.io/books-v2/home/" role="button">home v2 &raquo;</a>
-                <a class="btn header-btn" id = "v4"  href="//sensebox.github.io/books-v2/edu/" role="button">edu v2  &raquo;</a>
-                </div>
-                </div> 
-             
-                <div class="col-md-4">
-                <a  id = "vv" role="button" href="//sensebox.github.io/books-v2/osem/"><img src="{{ site.baseurl | append: '/images/main/Microsoft Surface Book.png' }}" style="max-width:70%" /></a>
-                <div>
-                  <div class = "mid">
-                  <div class = "texts">OpenSenseMap</div>
-                </div>
-
-                </div>
-                </div> 
+ 
           
                </div>
               </div>
@@ -53,41 +79,6 @@
         </div>
       
 <script> 
-
-
-window.onload = function(){
-
-document.getElementById('v').style.display = "block";
-document.getElementById('vv').style.display = "block";
-document.getElementById('v1').style.display = "none";
-document.getElementById('v2').style.display = "none";
-document.getElementById('v3').style.display = "none";
-document.getElementById('v4').style.display = "none";
-
-
-
-
-}
-
-$(document).ready(function(){
-    $("#v").click(function(){
-        $("#v1").toggle();
-        $("#v2").toggle();
-        $("#v3").hide();
-        $("#v4").hide();
-     
-    });
-        $("#vv").click(function(){
-        $("#v3").toggle();
-        $("#v4").toggle();
-        $("#v1").hide();
-        $("#v2").hide();
-        
-
-
-    });
-});
-
 
 
 </script>
