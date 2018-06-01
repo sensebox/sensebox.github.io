@@ -7,6 +7,7 @@ header:
   press: "Presse"
   awards: "Förderung"
   blockly: "Blockly"
+  go: "Go"
 
 main:
   header: "<p>Die <b>senseBox</b> ist ein Do-it-yourself-Bausatz für stationäre und mobile Sensorstationen - ein <b>Citizen Science</b> Toolkit für jedermann.</p>"
