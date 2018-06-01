@@ -1,5 +1,7 @@
 {% assign t = site.data.translations.[page.lang].books %}
 
+
+<link rel="stylesheet" href="/css/books.css">
 <div class="item active">
   <div class="carousel-container background-gradient-books">
       <div class="container inside-carousel-container">
@@ -9,34 +11,47 @@
             {{ t.description-short }}
           </p>
 
-
-
-
              <div class="row">
              <div class="col-md-4">
-             <a class="btn header-btn" id = "v"  style = "text-indent:30px;" role="button">senseBox v1 &raquo;</a>
+             <a   id = "v"  style = "text-indent:30px;" role="button">  <img src="{{ site.baseurl | append: '/images/Genuino.png' }}" style="max-width:70%" /> </a>
                              <div >
-                <a class="btn header-btn"  id = "v1" href="//home.books.sensebox.de/{{ page.lang }}" role="button">senseBox:home v1 &raquo;</a>
-                <div>
-                <a class="btn header-btn"  id = "v2" href="//edu.books.sensebox.de/{{ page.lang }}" role="button">senseBox:edu v1  &raquo;</a>
-                </div>
-                </div> 
-              </div> 
 
-                <div class="col-md-4">
-                <a class="btn header-btn" id = "vv" role="button">senseBox v2 &raquo;</a>
-                <div>
-                <a class="btn header-btn" id = "v3"  href="//home.books.sensebox.de/{{ page.lang }}" role="button">senseBox:home v2 &raquo;</a>
-                <a class="btn header-btn" id = "v4"  href="//edu.books.sensebox.de/{{ page.lang }}" role="button">senseBox:edu v2  &raquo;</a>
+                <div class = "middle">
+                  <div class = "text">SenseBox v1</div>
                 </div>
-                </div> 
               </div>
+                <a class="btn header-btn"  id = "v1" href="//home.books.sensebox.de/{{ page.lang }}" role="button">home v1 &raquo;</a>
+                <div>
+                <a class="btn header-btn"  id = "v2" href="//edu.books.sensebox.de/{{ page.lang }}" role="button">edu v1  &raquo;</a>
+                </div>
+                </div> 
+            
+                <div class="col-md-4">
+                <a  id = "vv" role="button"><img src="{{ site.baseurl | append: '/images/mcu_one_top.png' }}"  style="max-width:60%" /></a>
+                <div>
+                  <div class = "mid">
+                  <div class = "texts">SenseBox v2</div>
+                </div>
+                <a class="btn header-btn" id = "v3"  href="//sensebox.github.io/books-v2/home/" role="button">home v2 &raquo;</a>
+                <a class="btn header-btn" id = "v4"  href="//sensebox.github.io/books-v2/edu/" role="button">edu v2  &raquo;</a>
+                </div>
+                </div> 
+             
+                <div class="col-md-4">
+                <a  id = "vv" role="button" href="//sensebox.github.io/books-v2/osem/"><img src="{{ site.baseurl | append: '/images/main/Microsoft Surface Book.png' }}" style="max-width:70%" /></a>
+                <div>
+                  <div class = "mid">
+                  <div class = "texts">OpenSenseMap</div>
+                </div>
 
+                </div>
+                </div> 
+          
                </div>
               </div>
           </div>
         </div>
-      </div>
+      
 <script> 
 
 
