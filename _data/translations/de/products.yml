@@ -1,6 +1,6 @@
 products: "Produkte"
 
-header-introduction: "Von der senseBox gibt es zwei Varianten: die <b>senseBox:home</b> und die <b>senseBox:edu</b>"
+header-introduction: 'Von der senseBox gibt eadss zwei Varianten: die <span class="home">senseBox:home</span> und die <span class="edu">senseBox:edu</span>'
 
 to-senseBox-overwiew: "zur senseBox Übersicht &raquo;"
 
