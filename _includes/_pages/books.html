@@ -68,7 +68,7 @@
 
   <div class="row">
     <div class="col-md-4 book-nav-item">
-      <a   id = "v"  role="button">  
+      <a   id = "v"  role="button" title = "klicke um Version zu wählen" >  
         <img src="{{ site.baseurl | append: '/images/Genuino.png' }}" style="max-width:70%" />
        </a>
 
@@ -76,13 +76,13 @@
         <div class = "text">SenseBox v1</div>
       </div>
       <div id="box-1">
-        <a class="btn" href="//home.books.sensebox.de/{{ page.lang }}" role="button">home v1 &raquo;</a>
-        <a class="btn" href="//edu.books.sensebox.de/{{ page.lang }}" role="button">edu v1  &raquo;</a>
+        <a class="btn" href="//home.books.sensebox.de/{{ page.lang }}" target="_blank" role="button">home v1 &raquo;</a>
+        <a class="btn" href="//edu.books.sensebox.de/{{ page.lang }}" target="_blank" role="button">edu v1  &raquo;</a>
       </div>
     </div> 
             
      <div class="col-md-4 book-nav-item">
-      <a  id = "vv" role="button">
+      <a  id = "vv" role="button" title = "klicke um Version zu wählen">
         <img src="{{ site.baseurl | append: '/images/mcu_one_top.png' }}"  style="max-width:60%" />
        </a>
 
@@ -90,13 +90,13 @@
           <div class = "text">SenseBox v2</div>
           </div>
           <div id = "box-2">
-           <a class="btn"  href="//sensebox.github.io/books-v2/home/" role="button">home v2 &raquo;</a>
-           <a class="btn"  href="//sensebox.github.io/books-v2/edu/" role="button">edu v2  &raquo;</a>
+           <a class="btn"  href="//sensebox.github.io/books-v2/home/"  target="_blank" role="button">home v2 &raquo;</a>
+           <a class="btn"  href="//sensebox.github.io/books-v2/edu/"  target="_blank" role="button">edu v2  &raquo;</a>
         </div>
       </div> 
              
       <div class="col-md-4 book-nav-item">
-         <a  id = "vvv" role="button" href="//sensebox.github.io/books-v2/osem/">
+         <a  id = "vvv" role="button" href="//sensebox.github.io/books-v2/osem/" target="_blank">
           <img src="{{ site.baseurl | append: '/images/main/Microsoft Surface Book.png' }}" style="max-width:70%" /></a>
             <div>
              <div class = "mid">
@@ -112,7 +112,6 @@
 
 $(document).ready(function(){
     $("#v").click(function(){
-        console.log("hey hey ")
         $("#box-1").toggle();
         $("#box-2").hide();
 
