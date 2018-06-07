@@ -1369,6 +1369,7 @@ $carousel-height: 450px;
         width: calc(100% - 80px);
         // flex-grow: 1;
         font-size: 17px;
+        padding-left: 0.3em;
       }
     }
   }
@@ -1389,10 +1390,10 @@ $carousel-height: 450px;
     height: 560px;
   }
   .misc-list {
-    height: 1000px;
+    height: 1100px;
   }
   .addon-list {
-    height: 660px;
+    height: 520px;
   }
 
 }

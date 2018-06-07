@@ -1,37 +1,37 @@
 products: "Produkte"
 
-header-introduction: 'Von der senseBox gibt eadss zwei Varianten: die <span class="home-span">senseBox:home</span> und die <span class="edu-span">senseBox:edu</span>'
+header-introduction: 'Von der senseBox gibt es zwei Varianten: die <span class="home-span">senseBox:home</span> und die <span class="edu-span">senseBox:edu</span>'
 
 to-senseBox-overwiew: "zur senseBox Übersicht &raquo;"
 
 introduction: '<p>Von der senseBox gibt es zwei Varianten: die <span class="home-span">senseBox:home</span> und die <span class="edu-span">senseBox:edu</span>.</p>
 
-    <p>Die <span class="home-span">senseBox:home</span> ist eine modulare Umweltmessstation zum selber bauen. Je nach Interesse oder Forschungsfrage können sich Bürgerinnen eine Messstation mit verschiedenen Sensoren zusammenstellen und über LAN, WLAN oder LoRa mit dem Internet verbinden. Eine einfache Anleitung ermöglicht den Aufbau und die Registrierung auf der openSenseMap. Danach liefert sie kontinuierlich ortsbezogene (mobile oder stationäre) Messungen zu Temperatur, Luftfeuchte, Luftdruck, Beleuchtungsstärke, UV-Strahlung oder Feinstaubbelastung.</p>
+    <p>Die <span class="home-span">senseBox:home</span> ist eine modulare Umweltmessstation zum selber bauen. Je nach Interesse oder Forschungsfrage können sich BürgerInnen eine Messstation mit verschiedenen Sensoren zusammenstellen und über LAN, WLAN oder LoRa mit dem Internet verbinden. Eine einfache Anleitung ermöglicht den Aufbau und die Registrierung auf der openSenseMap. Danach liefert sie kontinuierlich ortsbezogene (mobile oder stationäre) Messungen zu Temperatur, Luftfeuchte, Luftdruck, Beleuchtungsstärke, UV-Strahlung oder Feinstaubbelastung.</p>
 
-    <p>Mit der <span class="edu-span">senseBox:edu</span> kann man Messwerkzeuge selber bauen und programmieren (lernen). An vielen Schulen und Bildungseinrichtungen ist die senseBox bereits im Einsatz. Dank der Vielzahl von möglichen Projekten und Experimenten eignet Sie sich hervorragend für den Einsatz im gesamten MINT-Bereich. So können anhand relevanter Themenstellungen die Grundlagen des Programmierens gelernt werden oder auch schnell und einfach Messkampagnen durchgeführt werden.</p>    
+    <p>Mit der <span class="edu-span">senseBox:edu</span> kann man Messwerkzeuge selber bauen und programmieren (lernen). An vielen Schulen und Bildungseinrichtungen ist die senseBox bereits im Einsatz. Dank der Vielzahl von möglichen Projekten und Experimenten eignet sie sich hervorragend für den Einsatz im gesamten MINT-Bereich. So können anhand relevanter Themenstellungen die Grundlagen des Programmierens erlernt oder schnell und einfach Messkampagnen durchgeführt werden.</p>    
 
-    <p>Bis Anfang 2018 basierte die senseBox auf einem Arduino/Genuino UNO Microcontroller, diese Version wird nicht mehr verkauft aber weiterhin unterstützt. Seit Mai 2018 basiert die senseBox auf der senseBox MCU und ist durch weitere Sensoren und Erweiterungen ausgestattet. Mehr dazu im <a href="https://sensebox.de/blog/2018-03-06-senseBox_MCU">Blog-Post</a></p>
+    <p>Bis Anfang 2018 basierte die senseBox auf einem Arduino/Genuino UNO Microcontroller, diese Version wird nicht mehr verkauft aber weiterhin unterstützt. Seit Mai 2018 basiert die senseBox auf der senseBox MCU und ist durch weitere Sensoren und Erweiterungen ausgestattet. Mehr dazu im <a href="https://sensebox.de/blog/2018-03-06-senseBox_MCU">Blog-Post</a>.</p>
     <p>&nbsp;</p>'
 
 sensors:
   header: "Sensoren"
-  uv-light: "TSL45315 VEML6070 - Beleuchtungsstärke & UV-Strahlung"
+  uv-light: "<b>TSL45315 & VEML6070</b> Beleuchtungsstärke & UV-Strahlung"
   uv-light-data-sheet: "https://www.vishay.com/docs/84277/veml6070.pdf"
-  light: "TSL45315 Lichtsensor"
+  light: "<b>TSL45315</b> Lichtsensor"
   light-data-sheet: "https://ams.com/eng/content/download/320004/1118282/file/TSL4531_DS000182_2-00.pdf"
-  barometric-pressure: "BMP280 Luftdruck- und Temperatursensor"
+  barometric-pressure: "<b>BMP280</b> Luftdruck- und Temperatursensor"
   barometric-pressure-data-sheet: "https://cdn-shop.adafruit.com/datasheets/BST-BMP280-DS001-11.pdf"
-  temperature: "HDC1008 Luftfeuchtigkeits- und Temperatursensor"
+  temperature: "<b>HDC1080</b> Temperatur- und Luftfeuchtigkeitssensor"
   temperature-data-sheet: "http://www.ti.com/lit/ds/symlink/hdc1008.pdf"
-  microphone: "Mikrofon mit Verstärker"
+  microphone: "Mikrofon"
   microphone-data-sheet: "https://github.com/watterott/Mic-Breakout"
-  ultrasonic: "Ultraschall Entfernungssensor"
+  ultrasonic: "<b>HC-SR04</b> Ultraschall Entfernungssensor"
   ultrasonic-data-sheet: "https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf"
   ir: "IR Entfernungssensor"
   ir-data-sheet: "https://www.sparkfun.com/datasheets/Components/GP2Y0A21YK.pdf"
-  pm: "SDS101 - Feinstaub (PM10 & PM2.5) "
-  mikro: "Mikrofon mit Verstärker"
-  bmx: "BMX055 Lage-/ Kompass-/ Beschleunigungssensor"
+  pm: "<b>SDS011</b> - Feinstaub (PM10 & PM2.5) "
+  mikro: "Mikrofon"
+  bmx: "<b>BMX055</b> Lage-/ Kompass-/ Beschleunigungssensor"
 
 components:
   header: "Komponenten"
@@ -66,23 +66,23 @@ misc:
   edu-usb: "USB-Kabel"
   box: "Outdoor Gehäuse"
   protection: "Strahlungsschutz"
-  lan-bee: "XBee LAN"
-  wifi-bee: "XBee WiFi"
-  sd-bee: "XBee SD-Card"
-  lora-bee: "XBee LoRa"
+  lan-bee: "LAN-Bee"
+  wifi-bee: "WiFi-Bee"
+  sd-bee: "microSD-Bee"
+  lora-bee: "LoRa-Bee"
   sd-card: "SD-Karte (2GB)"
   leds: "Verschiedene LEDs"
   button: "Knöpfe"
   potentio: "Potentiometer"
-  piezo: "Piezo"
+  piezo: "Piezo Element"
   ldr: "Fotowiderstand (LDR)"
   resistors: "Widerstände"
 
 addon:
   header: "Erweiterungen"
-  gps: "GPS-Empfänger CAM-M8Q"
+  gps: "<b>CAM-M8Q</b> GPS-Empfänger"
   oled: "OLED Display"
-  expander: JST-Anschluss Expander
+  expander: "JST-Anschluss Expander"
   
 
 license: "Die Zusammenstellung der senseBox-Komponenten ist unter der CERN Open Hardware Lizenz 1.2 offen. Der Source Code der senseBox:home ist Open Source unter der LGPL 3.0 Lizenz verfügbar. Die Anleitungen sind Open Educational Resources (OER) unter der Creative Commons Lizenz CC BY SA 4.0."
