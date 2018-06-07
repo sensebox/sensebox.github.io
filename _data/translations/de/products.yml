@@ -1,18 +1,17 @@
 products: "Produkte"
 
-header-introduction: 'Von der senseBox gibt eadss zwei Varianten: die <span class="home">senseBox:home</span> und die <span class="edu">senseBox:edu</span>'
+header-introduction: 'Von der senseBox gibt eadss zwei Varianten: die <span class="home-span">senseBox:home</span> und die <span class="edu-span">senseBox:edu</span>'
 
 to-senseBox-overwiew: "zur senseBox Übersicht &raquo;"
 
-introduction: "<p>Von der senseBox gibt es zwei Varianten: die <em>senseBox:home</em> und die <em>senseBox:edu</em>.</p>
+introduction: '<p>Von der senseBox gibt es zwei Varianten: die <span class="home-span">senseBox:home</span> und die <span class="edu-span">senseBox:edu</span>.</p>
 
-    <p>Die <em>senseBox:home</em> beinhaltet weniger Bauteile und wird mit einer einfachen Bauanleitung zu einer Messstation für zu Hause einmalig aufgebaut und mit dem WLAN oder LAN-Anschluss verbunden. Den individuellen Programmcode erhalten die Bürger nach der Registrierung auf der <em>openSenseMap</em>. Danach liefert sie kontinuierlich ortsbezogene Messungen zu Temperatur, Luftfeuchte, Luftdruck, Helligkeit, UV-Licht und Schall.</p>
+    <p>Die <span class="home-span">senseBox:home</span> ist eine modulare Umweltmessstation zum selber bauen. Je nach Interesse oder Forschungsfrage können sich Bürgerinnen eine Messstation mit verschiedenen Sensoren zusammenstellen und über LAN, WLAN oder LoRa mit dem Internet verbinden. Eine einfache Anleitung ermöglicht den Aufbau und die Registrierung auf der openSenseMap. Danach liefert sie kontinuierlich ortsbezogene (mobile oder stationäre) Messungen zu Temperatur, Luftfeuchte, Luftdruck, Beleuchtungsstärke, UV-Strahlung oder Feinstaubbelastung.</p>
 
-    <p>Die <em>senseBox:edu</em> wurde speziell für den Einsatz im Schulunterricht entwickelt. Bei ihr liegt der Fokus auf dem Erlernen von Grundlagen der Programmierung, Elektronik und Aufnahme von Umweltdaten.</p>
+    <p>Mit der <span class="edu-span">senseBox:edu</span> kann man Messwerkzeuge selber bauen und programmieren (lernen). An vielen Schulen und Bildungseinrichtungen ist die senseBox bereits im Einsatz. Dank der Vielzahl von möglichen Projekten und Experimenten eignet Sie sich hervorragend für den Einsatz im gesamten MINT-Bereich. So können anhand relevanter Themenstellungen die Grundlagen des Programmierens gelernt werden oder auch schnell und einfach Messkampagnen durchgeführt werden.</p>    
 
-    <p>Die Zusammenstellung der senseBox-Komponenten ist unter der <a href=\"http://www.ohwr.org/attachments/2388/cern_ohl_v_1_2.txt\" class=\"link\" target=\"_blank\">CERN Open Hardware Lizenz 1.2</a> offen. Der Source Code der senseBox:home ist Open Source unter der <a href=\"http://opensource.org/licenses/LGPL-3.0\" class=\"link\" target=\"_blank\">LGPL 3.0 Lizenz</a> verfügbar. Die <a href=\"http://www.sensebox.de/de/docs\" class=\"link\">Anleitungen</a> sind Open Educational Resources (OER) unter der Creative Commons Lizenz <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">CC BY SA 4.0</a>.</p>
-
-    <p>&nbsp;</p>"
+    <p>Bis Anfang 2018 basierte die senseBox auf einem Arduino/Genuino UNO Microcontroller, diese Version wird nicht mehr verkauft aber weiterhin unterstützt. Seit Mai 2018 basiert die senseBox auf der senseBox MCU und ist durch weitere Sensoren und Erweiterungen ausgestattet. Mehr dazu im <a href="">Blog-Post</a></p>
+    <p>&nbsp;</p>'
 
 home:
   description: "<p>Einsteigerset unserer Citizen Science Kampagne. Die senseBox:home wird einmalig zusammengebaut und auf der openSenseMap registriert. Danach werden aktuelle Messungen der Station an einem festen Standort live auf der <a href=\"http://www.sensebox.de/de/osem\" class=\"link\">openSenseMap</a> dargestellt und veröffentlicht.</p>
@@ -78,7 +77,7 @@ edu:
 
 sensors:
   header: "Sensoren"
-  uv-light: "VEML6070 UV Lichtsensor"
+  uv-light: "TSL45315 VEML6070 - Beleuchtungsstärke & UV-Strahlung"
   uv-light-data-sheet: "https://www.vishay.com/docs/84277/veml6070.pdf"
   light: "TSL45315 Lichtsensor"
   light-data-sheet: "https://ams.com/eng/content/download/320004/1118282/file/TSL4531_DS000182_2-00.pdf"
@@ -92,6 +91,10 @@ sensors:
   ultrasonic-data-sheet: "https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf"
   ir: "IR Entfernungssensor"
   ir-data-sheet: "https://www.sparkfun.com/datasheets/Components/GP2Y0A21YK.pdf"
+  pm: "SDS101 - Feinstaub (PM10 & PM2.5) "
+  mikro: "Mikrofon mit Verstärker"
+  bmx: "BMX055 Lage-/ Kompass-/ Beschleunigungssensor"
+
 components:
   header: "Komponenten"
   arduino: "Genuino UNO"
@@ -113,3 +116,35 @@ order:
   header: "Bestellen"
   home: "senseBox:home bestellen"
   edu: "senseBox:edu bestellen"
+
+optional: "(optional)"
+
+misc:
+  header: "Zubehör"
+  mcu: "senseBox MCU"
+  mcu-bread: "senseBox MCU mit Breadboard"
+  jst: "JST Kabel"
+  usb: "USB-Kabel (mit Netzteil)"
+  edu-usb: "USB-Kabel (mit Netzteil)"
+  box: "Outdoor Gehäuse"
+  protection: "Strahlungsschutz"
+  lan-bee: "XBee LAN"
+  wifi-bee: "XBee WiFi"
+  sd-bee: "XBee SD-Card"
+  lora-bee: "XBee LoRa"
+  sd-card: "SD-Karte (2GB)"
+  leds: "Verschiedene LEDs"
+  button: "Knöpfe"
+  potentio: "Potentiometer"
+  piezo: "Piezo"
+  ldr: "Fotowiderstand (LDR)"
+  resistors: "Widerstände"
+
+addon:
+  header: "Erweiterungen"
+  gps: "GPS-Empfänger CAM-M8Q"
+  oled: "OLED Display"
+  expander: JST-Anschluss Expander
+  
+
+license: "Die Zusammenstellung der senseBox-Komponenten ist unter der CERN Open Hardware Lizenz 1.2 offen. Der Source Code der senseBox:home ist Open Source unter der LGPL 3.0 Lizenz verfügbar. Die Anleitungen sind Open Educational Resources (OER) unter der Creative Commons Lizenz CC BY SA 4.0."
