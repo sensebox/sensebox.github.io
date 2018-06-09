@@ -4,56 +4,33 @@ header-introduction: "There are two versions of senseBox: <b>senseBox:home</b> a
 
 to-senseBox-overwiew: "senseBox overview &raquo;"
 
-introduction: "<p>There are two variations of senseBox; <em>senseBox:home</em> and <em>senseBox:edu</em>.</p>
+introduction: '<p>Von der senseBox gibt es zwei Varianten: die <span class="home-span">senseBox:home</span> und die <span class="edu-span">senseBox:edu</span>.</p>
 
-    <p><em>senseBox:home</em> contains less devices, therefore it is easier to build manually and set up in your home,  in order to measure unique environmental phenomena. It can also be connected to your WiFi or LAN port. The user obtains the individual source code after their registration to <em>openSenseMap</em>. Following registration, users can view continuous, location based measurements collected from sensors, such as temperature, humidity, air pressure, brightness, UV-light and noise on the openSenseMap.</p>
+    <p>Die <span class="home-span">senseBox:home</span> ist eine modulare Umweltmessstation zum selber bauen. Je nach Interesse oder Forschungsfrage können sich Bürgerinnen eine Messstation mit verschiedenen Sensoren zusammenstellen und über LAN, WLAN oder LoRa mit dem Internet verbinden. Eine einfache Anleitung ermöglicht den Aufbau und die Registrierung auf der openSenseMap. Danach liefert sie kontinuierlich ortsbezogene (mobile oder stationäre) Messungen zu Temperatur, Luftfeuchte, Luftdruck, Beleuchtungsstärke, UV-Strahlung oder Feinstaubbelastung.</p>
 
-    <p>The <em>senseBox:edu</em> was specifically developed to be applied in school classrooms or by junior scientists at home. The project focus is on learning the basics of programming and electronics, and is related to the collection of environmental data.</p>
+    <p>Mit der <span class="edu-span">senseBox:edu</span> kann man Messwerkzeuge selber bauen und programmieren (lernen). An vielen Schulen und Bildungseinrichtungen ist die senseBox bereits im Einsatz. Dank der Vielzahl von möglichen Projekten und Experimenten eignet Sie sich hervorragend für den Einsatz im gesamten MINT-Bereich. So können anhand relevanter Themenstellungen die Grundlagen des Programmierens gelernt werden oder auch schnell und einfach Messkampagnen durchgeführt werden.</p>    
 
-    <p>The senseBox setup of components is open under the <a href=\"http://www.ohwr.org/attachments/2388/cern_ohl_v_1_2.txt\" class=\"link\" target=\"_blank\">CERN Open Hardware License 1.2</a>. The source code of senseBox:home is open under the <a href=\"http://opensource.org/licenses/LGPL-3.0\" class=\"link\" target=\"_blank\">LGPL 3.0 License</a>. The <a href=\"http://www.sensebox.de/en/docs\" class=\"link\">instructions and documentation</a> are Open Educational Resources (OER) under the  Creative Commons License <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">CC BY SA 4.0</a>.</p>
-
-    <p>&nbsp;</p>"
-
-home:
- description: "<p>The <em>Citizen Science</em> kit for beginners. Once the senseBox:home is assembled and registered to openSenseMap, measurements from each sensor station will be published and displayed on the  <a href=\"http://www.sensebox.de/en/osem\" class=\"link\">openSenseMap</a> in real-time and made available as Open Data.</p>
-    <p><b>Features</b></p>
-    <ul>
-    <li>Sensors for temperature, humidity and more</li>
-    <li>No soldering necessary</li>
-    <li>Instructions and examples</li>
-    <li>Extendable with other sensors and arduino-compatible hardware</li>
-    </ul>
-    <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/en/Sensors/senseBox\" target=\"_blank\" class=\"link\">place your order here</a></p>"
-
-edu:
-  description: "<p>senseBox:edu offers schools, starting from the 7th grade, the possibility to learn programming in a fun and playful environment, to be a real citizen scientist and to get to know the world of geoinformatics.
-In the upper grades it can be used for projects on environmental phenomena, where sensor stations are built, programmed and positioned by the students.
-Furthermore the sensor stations are connected to the Internet, where the measurements are updated and published on <a href=\"http://www.sensebox.de/en/osem\" class=\"link\">openSenseMap</a>. In this way, data can be shared with other schools, citizens and scientists.</p>
-    <p><b>Features</b></p>
-    <ul>
-    <li>Sensors for temperature, humidity, air pressure, UV(A)-intensity, distance and more</li>
-    <li>No soldering necessary</li>
-    <li>Examples and instructions</li>
-    <li>Learning units organized in a wiki</li>
-    </ul>
-    <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a> <a href=\"http://www.watterott.com/en/Sensors/senseBox\" target=\"_blank\" class=\"link\">place your order here</a></p>"
+    <p>Bis Anfang 2018 basierte die senseBox auf einem Arduino/Genuino UNO Microcontroller, diese Version wird nicht mehr verkauft aber weiterhin unterstützt. Seit Mai 2018 basiert die senseBox auf der senseBox MCU und ist durch weitere Sensoren und Erweiterungen ausgestattet. Mehr dazu im <a href="">Blog-Post</a></p>
+    <p>&nbsp;</p>'
 
 sensors:
   header: "Sensors"
-  uv-light: "VEML6070 UV Sensor"
+  uv-light: "<b>TSL45315 & VEML6070</b> UV Sensor & Ambient Light Sensor"
   uv-light-data-sheet: "https://www.vishay.com/docs/84277/veml6070.pdf"
   light: "TSL45315 Ambient Light Sensor"
   light-data-sheet: "https://ams.com/eng/content/download/320004/1118282/file/TSL4531_DS000182_2-00.pdf"
   barometric-pressure: "BMP280 Barometric Pressure + Temperature"
   barometric-pressure-data-sheet: "https://cdn-shop.adafruit.com/datasheets/BST-BMP280-DS001-11.pdf"
-  temperature: "HDC1008 Temperature + Humidity Sensor"
+  temperature: "<b>HDC1080</b> Temperature + Humidity Sensor"
   temperature-data-sheet: "http://www.ti.com/lit/ds/symlink/hdc1008.pdf"
-  microphone: "Microphone with amplifier"
+  mikro: "Microphone with amplifier"
   microphone-data-sheet: "https://github.com/watterott/Mic-Breakout"
-  ultrasonic: "Ultrasonic Distance Sensor"
+  ultrasonic: "<b>HC-SR04</b> Ultrasonic Distance Sensor"
   ultrasonic-data-sheet: "https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf"
   ir: "Infrared Distance Sensor"
   ir-data-sheet: "https://www.sparkfun.com/datasheets/Components/GP2Y0A21YK.pdf"
+  bmx: "<b>BMX055</b> Lage-/ Kompass-/ Beschleunigungssensor"
+  pm: "<b>SDS011</b> Fine Particular Matter (PM10 & PM2.5) "
 
 components:
   header: "Components"
@@ -76,3 +53,35 @@ order:
   header: "Order"
   home: "Order senseBox:home"
   edu: "Order senseBox:edu"
+
+  optional: "(optional)"
+
+misc:
+  header: "Equipment"
+  mcu: "senseBox MCU"
+  mcu-bread: "senseBox MCU with Breadboard"
+  jst: "JST Cabel"
+  usb: "USB-Cabel (with Power-Adapter)"
+  edu-usb: "USB-Cabel"
+  box: "Outdoor case"
+  protection: "Radiation protection"
+  lan-bee: "LAN-Bee"
+  wifi-bee: "WiFi-Bee"
+  sd-bee: "microSD-Bee"
+  lora-bee: "LoRa-Bee"
+  sd-card: "SD-Card (2GB)"
+  leds: "Different LEDs"
+  button: "Buttons"
+  potentio: "Pots"
+  piezo: "Piezo unit"
+  ldr: "LDR"
+  resistors: "Resistors"
+
+addon:
+  header: "Addons"
+  gps: "<b>CAM-M8Q</b> GPS-Receiver"
+  oled: "OLED Display"
+  expander: JST Expander
+  
+
+license: "Die Zusammenstellung der senseBox-Komponenten ist unter der CERN Open Hardware Lizenz 1.2 offen. Der Source Code der senseBox:home ist Open Source unter der LGPL 3.0 Lizenz verfügbar. Die Anleitungen sind Open Educational Resources (OER) unter der Creative Commons Lizenz CC BY SA 4.0."
