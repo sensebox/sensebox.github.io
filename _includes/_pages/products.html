@@ -7,89 +7,408 @@
 {{ t.introduction }}
 
 
-<div class="table-responsive">
-  <table class="table table-striped product-table" id="product-table">
-    <thead>
-      <tr>
-        <th></th>
-        <th style="white-space:normal; text-align:center;">
-          <div class="product-img">
-            <img class="responsive-img" src="{{ site.baseurl | append: "/images/instructions_home_bg.jpg" }}" alt="senseBox Home Foto" />
-          </div>
+<div id="product-table" class="row">
+  <div class="col-sm-6">
+    <div class="product">
+      <h1 class="home-span">home</h1>
+      <div class="main-product-image">
+          <img src="{{ site.baseurl | append: '/images/products/home.jpg' }}">
+      </div>
+      <div class="sensor-list">
+        <h2>{{t.sensors.header}}</h2>
+        <ul class="prod-ul">
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1524084036833-hds%20top.png">
+            </div>
+            <div class="prod-label">
+              {{t.sensors.temperature}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1525169435866-v+uv%20bottom.png">
+            </div>
+            <div class="prod-label">
+              {{t.sensors.uv-light}} {{t.optional}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1524085326737-bmp%20v2%20top.png">
+            </div>
+            <div class="prod-label">
+              {{t.sensors.barometric-pressure}} {{t.optional}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1526395407429-nova_sensor_top.png">
+            </div>
+            <div class="prod-label">
+              {{t.sensors.pm}} {{t.optional}}
+            </div>
+          </li>
+        </ul>
+      </div>
 
-        </th>
-        <th style="white-space:normal; text-align:center;">
-          <div class="product-img">
-            <img class="product-img product-edu-img" src="{{ site.baseurl | append: '/images/senseBox_edu_500_open.png' }}" alt="senseBox Edu Foto" />
-          </div>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
+      <div class="misc-list">
+        <h2>{{t.misc.header}}</h2>
+        <ul class="prod-ul">
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1525013086964-mcu_one_top.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.mcu}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1526543875127-Cable.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.jst}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1526541342378-USB_cable.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.usb}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1526395057789-box%2002%20top.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.box}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1526395010959-meteo01.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.protection}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1524857324033-Lan%20bottom.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.lan-bee}} {{t.optional}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1524857614993-wifi_new%20bottom.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.wifi-bee}} {{t.optional}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1524084782643-msd%20bottom.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.sd-bee}} {{t.optional}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1525007991702-LoraBee%20top.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.lora-bee}} {{t.optional}}
+            </div>
+          </li>
+        </ul>
 
-        </td>
-        <td>
-          <h3><b>senseBox:</b>home</h3>
-        </td>
-        <td>
-          <h3><b>senseBox:</b>edu</h3>
-        </td>
-      </tr>
-      <tr>
-        <td>{{ t.sensors.header }}</td>
-        <td>
-          <ul>
-            <li>{{ t.sensors.uv-light }} <a href="{{ t.sensors.uv-light-data-sheet }}"><img src="{{ site.baseurl | append: '/images/data-sheet.svg' }}" style="height: 1em;"/></a></li>
-            <li>{{ t.sensors.light }} <a href="{{ t.sensors.light-data-sheet }}"><img src="{{ site.baseurl | append: '/images/data-sheet.svg' }}" style="height: 1em;"/></a></li>
-            <li>{{ t.sensors.barometric-pressure }} <a href="{{ t.sensors.barometric-pressure-data-sheet }}"><img src="{{ site.baseurl | append: '/images/data-sheet.svg' }}" style="height: 1em;"/></a></li>
-            <li>{{ t.sensors.temperature }} <a href="{{ t.sensors.temperature-data-sheet }}"><img src="{{ site.baseurl | append: '/images/data-sheet.svg' }}" style="height: 1em;"/></a></li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>{{ t.sensors.uv-light }} <a href="{{ t.sensors.uv-light-data-sheet }}"><img src="{{ site.baseurl | append: '/images/data-sheet.svg' }}" style="height: 1em;"/></a></li>
-            <li>{{ t.sensors.light }} <a href="{{ t.sensors.light-data-sheet }}"><img src="{{ site.baseurl | append: '/images/data-sheet.svg' }}" style="height: 1em;"/></a></li>
-            <li>{{ t.sensors.barometric-pressure }} <a href="{{ t.sensors.barometric-pressure-data-sheet }}"><img src="{{ site.baseurl | append: '/images/data-sheet.svg' }}" style="height: 1em;"/></a></li>
-            <li>{{ t.sensors.temperature }} <a href="{{ t.sensors.temperature-data-sheet }}"><img src="{{ site.baseurl | append: '/images/data-sheet.svg' }}" style="height: 1em;"/></a></li>
-            <li>{{ t.sensors.microphone }} <a href="{{ t.sensors.microphone-data-sheet }}"><img src="{{ site.baseurl | append: '/images/data-sheet.svg' }}" style="height: 1em;"/></a></li>
-            <li>{{ t.sensors.ultrasonic }} <a href="{{ t.sensors.ultrasonic-data-sheet }}"><img src="{{ site.baseurl | append: '/images/data-sheet.svg' }}" style="height: 1em;"/></a></li>
-            <li>{{ t.sensors.ir }} <a href="{{ t.sensors.ir-data-sheet }}"><img src="{{ site.baseurl | append: '/images/data-sheet.svg' }}" style="height: 1em;"/></a></li>
-          <ul>
-        </td>
-      </tr>
-      <tr>
-        <td>{{ t.components.header }}</td>
-        <td>
-          <ul>
-            <li>{{ t.components.arduino }} <a href="{{ t.components.arduino-data-sheet }}"><img src="{{ site.baseurl | append: '/images/data-sheet.svg' }}" style="height: 1em;"/></a></li>
-            <li>{{ t.components.internet }} <a href="{{ t.components.ethernet-data-sheet }}"><img src="{{ site.baseurl | append: '/images/data-sheet.svg' }}" style="height: 1em;"/></a> <a href="{{ t.components.wifi-data-sheet }}"><img src="{{ site.baseurl | append: '/images/data-sheet.svg' }}" style="height: 1em;"/></a></li>
-            <li>{{ t.components.senseBox-shield }} <a href="{{ t.components.senseBox-shield-data-sheet }}"><img src="{{ site.baseurl | append: '/images/data-sheet.svg' }}" style="height: 1em;"/></a></li>
-            <li>{{ t.components.power-plug }}</li>
-            <li>{{ t.components.cables }}</li>
-            <li>{{ t.components.usb }}</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>{{ t.components.arduino }} <a href="{{ t.components.arduino-data-sheet }}"><img src="{{ site.baseurl | append: '/images/data-sheet.svg' }}" style="height: 1em;"/></a></li>
-            <li>{{ t.components.internet }} <a href="{{ t.components.ethernet-data-sheet }}"><img src="{{ site.baseurl | append: '/images/data-sheet.svg' }}" style="height: 1em;"/></a> <a href="{{ t.components.wifi-data-sheet }}"><img src="{{ site.baseurl | append: '/images/data-sheet.svg' }}" style="height: 1em;"/></a></li>
-            <li>{{ t.components.senseBox-shield }} <a href="{{ t.components.senseBox-shield-data-sheet }}"><img src="{{ site.baseurl | append: '/images/data-sheet.svg' }}" style="height: 1em;"/></a></li>
-            <li>{{ t.components.breadboard }}</li>
-            <li>{{ t.components.microSD }}</li>
-            <li>{{ t.components.power-plug }}</li>
-            <li>{{ t.components.battery }}</li>
-            <li>{{ t.components.wires }}</li>
-            <li>{{ t.components.usb }}</li>
-          </ul>
-        </td>
-      </tr>
-      <tr>
-        <td style="background: white!important;"></td>
-        <td><a href="http://www.watterott.com/index.php?page=categorie&cat=267&sorting=price-desc" target="_blank" class="link"><button class="btn">{{ t.order.home }}</button></a></td>
-        <td><a href="http://www.watterott.com/index.php?page=categorie&cat=267&sorting=price-desc" target="_blank" class="link"><button class="btn">{{ t.order.edu }}</button></a></td>
-      </tr>
-    </tbody>
-  </table>
+      </div>
+      <div class="addon-list">
+        <h2>{{t.addon.header}} {{t.optional}}</h2>
+        <ul class="prod-ul">
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1524084595796-gps%20top.png">
+            </div>
+            <div class="prod-label">
+              {{t.addon.gps}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1524084885681-oled_top.png">
+            </div>
+            <div class="prod-label">
+              {{t.addon.oled}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1524085140816-hub_bottom.png">
+            </div>
+            <div class="prod-label">
+              {{t.addon.expander}}
+            </div>
+          </li>
+        </ul>
+      </div>
+      <a href="https://sensebox.kaufen/product/sensebox-home" target="_blank" class="link"><button class="btn">{{ t.order.home }}</button></a></td>
+
+    </div>
   </div>
+  <div class="col-sm-6">
+    <div class="product">
+      <h1 class="edu-span">edu</h1>
+      <div class="main-product-image">
+          <img src="{{ site.baseurl | append: '/images/products/edu.png' }}">
+      </div>
+      <div class="sensor-list">
+        <h2>{{t.sensors.header}}</h2>
+        <ul class="prod-ul">
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1524084036833-hds%20top.png">
+            </div>
+            <div class="prod-label">
+              {{t.sensors.temperature}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1525169435866-v+uv%20bottom.png">
+            </div>
+            <div class="prod-label">
+              {{t.sensors.uv-light}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1524085326737-bmp%20v2%20top.png">
+            </div>
+            <div class="prod-label">
+              {{t.sensors.barometric-pressure}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1526397840840-Sonar_03.png">
+            </div>
+            <div class="prod-label">
+              {{t.sensors.ultrasonic}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <!-- <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1526543847686-Mic_03.png"> -->
+            </div>
+            <div class="prod-label">
+              {{t.sensors.bmx}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1526543847686-Mic_03.png">
+            </div>
+            <div class="prod-label">
+              {{t.sensors.mikro}}
+            </div>
+          </li>
+          <!-- <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1526395407429-nova_sensor_top.png">
+            </div>
+            <div class="prod-label">
+              {{t.sensors.pm}} {{t.optional}}
+            </div>
+          </li> -->
+        </ul>
+      </div>
+
+      <div class="misc-list">
+        <h2>{{t.misc.header}}</h2>
+        <ul class="prod-ul">
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1524084284270-mcu%20top.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.mcu-bread}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1526543875127-Cable.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.jst}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1526541342378-USB_cable.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.edu-usb}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1524857614993-wifi_new%20bottom.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.wifi-bee}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1524084782643-msd%20bottom.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.sd-bee}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1526542542582-micro_sd_03.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.sd-card}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1524084885681-oled_top.png">
+            </div>
+            <div class="prod-label">
+              {{t.addon.oled}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1526331859198-leds.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.leds}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1526332115226-buttom.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.button}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1526332186630-reostat.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.potentio}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+            </div>
+            <div class="prod-label">
+              {{t.misc.piezo}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1526332700456-ldr.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.ldr}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1526331451566-widerstand.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.resistors}}
+            </div>
+          </li>
+          
+        </ul>
+
+      </div>
+      <div class="addon-list">
+        <h2>{{t.addon.header}} {{t.optional}}</h2>
+        <ul class="prod-ul">
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1524084595796-gps%20top.png">
+            </div>
+            <div class="prod-label">
+              {{t.addon.gps}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1526395407429-nova_sensor_top.png">
+            </div>
+            <div class="prod-label">
+              {{t.sensors.pm}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1524085140816-hub_bottom.png">
+            </div>
+            <div class="prod-label">
+              {{t.addon.expander}}
+            </div>
+          </li>
+          <!-- <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1526395057789-box%2002%20top.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.box}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1526395010959-meteo01.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.protection}}
+            </div>
+          </li> -->
+
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1525007991702-LoraBee%20top.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.lora-bee}}
+            </div>
+          </li>
+          <li class="prod-li-item">
+            <div class="prod-thumb">
+              <img src="https://sensebox.kaufen/api//public/uploads/thumbs/thumb--1524857324033-Lan%20bottom.png">
+            </div>
+            <div class="prod-label">
+              {{t.misc.lan-bee}}
+            </div>
+          </li>
+        </ul>
+      </div>
+      <a href="https://sensebox.kaufen/product/sensebox-edu" target="_blank" class="link"><button class="btn">{{ t.order.edu }}</button></a></td>
+    </div>
+  </div>
+</div>
+
+<div class="license">
+  {{t.license}}
+</div>
+
