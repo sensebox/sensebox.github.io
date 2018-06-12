@@ -1341,6 +1341,7 @@ $carousel-height: 450px;
 
 .book-nav-item {
   text-align: center;
+  padding: 2em 0;
 
   a {
     text-indent: 0 !important;
@@ -1432,4 +1433,15 @@ $carousel-height: 450px;
   .addon-list {
     height: 520px;
   }
+}
+
+
+
+/* Blockly page css
+-------------------------------------------------- */
+
+.blockly-links {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
 }
