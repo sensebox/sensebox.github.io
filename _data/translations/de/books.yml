@@ -11,3 +11,6 @@ flyer:
 description-short: "Hier finden sie die gesamte Dokumentation rund um die senseBox und openSenseMap."
 
 commenthint: "Falls Sie Verbesserungspotential oder Fehler in der Dokumentation finden, können Sie jeden Absatz mit dem <code style=\"box-sizing: border-box\">+</code>-Button am rechten Rand kommentieren."
+
+old-sensebox: "senseBox mit Arduino/Genuino Uno"
+new-sensebox: "senseBox mit senseBox MCU"
