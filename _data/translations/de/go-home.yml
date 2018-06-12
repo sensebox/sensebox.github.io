@@ -1,0 +1,26 @@
+title: "go:home"
+
+first-steps: "Erste Schritte"
+first-steps-text: "Alles zur Installation und zum Aufbau der senseBox"
+
+software-installation: "Software Installation"
+hardware-install: "Anschluss und Verkabelung"
+osem-reg: "Registrierung auf der openSenseMap"
+
+components: "Komponenten"
+components-text: "Hier findest Du genaue Informationen zu den verschiedenen Komponenten der senseBox"
+
+mcu: "senseBox MCU"
+bees: "Bees"
+sensors: "Sensoren"
+zubehoer: "Zubehör"
+
+help: "Wo finde ich Hilfe?"
+help-text: "Du benötigst Hilfe mit deiner senseBox, hier findest du die nötigen Informationen"
+
+forum: "Forum"
+mail: "Email"
+
+
+links: "Links"
+links-text: "Hier findest du Links rund um das senseBox Projekt"

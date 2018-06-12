@@ -1298,6 +1298,11 @@ $carousel-height: 450px;
   text-align: center;
 }
 
+.header-text {
+  color: #ffffff;
+
+}
+
 .product-img {
   margin: auto;
   max-width: 300px;
@@ -1316,6 +1321,35 @@ $carousel-height: 450px;
   margin: 20px;
 }
 
+//books
+#box-1 {
+  display: none;
+}
+
+#box-2{
+  display: none;
+}
+
+#v{
+  display: block; 
+
+}
+
+#vv {
+  display: block;
+}
+
+.book-nav-item {
+  text-align: center;
+
+  a {
+    text-indent: 0 !important;
+  }
+}
+
+#text-style{
+  color: #ffffff;
+}
 
 /* Product page CSS
 -------------------------------------------------- */
@@ -1398,5 +1432,4 @@ $carousel-height: 450px;
   .addon-list {
     height: 520px;
   }
-
 }
