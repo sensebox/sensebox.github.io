@@ -65,15 +65,18 @@
 <link rel="stylesheet" href="/css/books.css">
 <div>
           
-
-  <div class="row">
+  <p>
+    {{ t.description }}
+  </p>
+  <br>
+  <div class="row" style="padding-top: 2em;">
     <div class="col-md-4 book-nav-item">
       <a   id = "v"  role="button" title = "klicke um Version zu wählen" >  
-        <img src="{{ site.baseurl | append: '/images/Genuino.png' }}" style="max-width:70%" />
+        <img src="{{ site.baseurl | append: '/images/Genuino.png' }}" style="max-width:70%; height: 150px;" />
        </a>
 
       <div class = "middle">
-        <div class = "text">SenseBox v1</div>
+        <h3  style="padding-bottom: 0;" class = "text">{{t.old-sensebox}}</h3>
       </div>
       <div id="box-1">
         <a class="btn" href="//home.books.sensebox.de/{{ page.lang }}" target="_blank" role="button">home v1 &raquo;</a>
@@ -83,11 +86,11 @@
             
      <div class="col-md-4 book-nav-item">
       <a  id = "vv" role="button" title = "klicke um Version zu wählen">
-        <img src="{{ site.baseurl | append: '/images/mcu_one_top.png' }}"  style="max-width:60%" />
+        <img src="{{ site.baseurl | append: '/images/mcu_one_top.png' }}"  style="max-width:60%; height: 150px;" />
        </a>
 
             <div class = "middle">
-          <div class = "text">SenseBox v2</div>
+          <h3 style="padding-bottom: 0;" class = "text">{{t.new-sensebox}}</h3>
           </div>
           <div id = "box-2">
            <a class="btn"  href="//sensebox.github.io/books-v2/home/"  target="_blank" role="button">home v2 &raquo;</a>
@@ -97,10 +100,10 @@
              
       <div class="col-md-4 book-nav-item">
          <a  id = "vvv" role="button" href="//sensebox.github.io/books-v2/osem/" target="_blank">
-          <img src="{{ site.baseurl | append: '/images/main/Microsoft Surface Book.png' }}" style="max-width:70%" /></a>
+          <img src="{{ site.baseurl | append: '/images/main/Microsoft Surface Book.png' }}" style="max-width:70%; height: 150px;" /></a>
             <div>
              <div class = "mid">
-               <div class = "text">OpenSenseMap</div>
+               <h3 style="padding-bottom: 0;" class = "text">openSenseMap</h3>
            </div>
         </div>
       </div> 

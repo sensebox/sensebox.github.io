@@ -2,7 +2,7 @@ header: "Blockly für senseBox"
 description: "<p><em>Blockly für senseBox</em> ist unsere visuelle Programmieroberfläche, die eine einfache und schnelle Programmierung der senseBox ermöglicht. Blockly wurde von <a href=\"https://developers.google.com/blockly/\" target=\"_blank\" class=\"link\"> Google</a> entwickelt und findet sich in vielen verschiedenen visuellen Programmieroberflächen wieder. Dank der Arbeit von <a href=\"https://github.com/carlosperate\" target=\"_blank\" class=\"link\"> carlosperate</a> lässt sich auch der Arduino über eine visuelle Programmieroberfläche programmieren. Wir haben die Oberfläche für unsere senseBox Sensoren und Bauteile angepasst um den Einstieg noch einfacher zu gestalten.</p>"
 description_installieren: "<p><em>Blockly für senseBox</em> läuft online und ohne Installation im Browser. Für die Übertragung des Programmcodes an deinen Mikrokontroller benötigst du weiterhin die Arduino IDE und die senseBox Library. Hilfe zum installieren findest du in den <a href=\"https://edu.books.sensebox.de/de/getting_started/installation_der_software.html\" target=\"_blank\" class=\"link\"> Books</a>. Für alle die, die Blockly offline installieren und verwenden wollen stehen auf <a href=\"https://github.com/sensebox/ardublockly/releases\" target=\"_blank\" class=\"link\"><img src=\"/images/iconmonstr-github-icon.png\"> Github Releases</a> bereit. </p>"
 description_short: "<p>Blockly für senseBox ist unsere visuelle Programmieroberfläche, die eine einfache und schnelle Programmierung der senseBox ermöglicht</p>"
-link: "zu Blockly v.1 für SenseBox »"
-links: "zu Blockly v.2 für SenseBox »"
+link: "Blockly für senseBox mit Arduino/Genuino UNO »"
+links: "Blockly für senseBox mit senseBox MCU »"
  
 
