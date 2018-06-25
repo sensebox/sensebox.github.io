@@ -25,14 +25,15 @@ Highlights & Features der neuen senseBox
 Die senseBox wurde komplett überarbeitet. Sie ist unsere Lösung eines Open-Source Steuergeräts für Umweltsensortechnik und wurde speziell an unseren Anwendungsfall im Open Science und Open Education Bereich angepasst. Wie gewohnt gibt es wieder zwei Versionen der senseBox: Die senseBox:home als stationäre Lösung (mit Outdoor Gehäuse) und die senseBox:edu als Baukastensystem für den Bildungsbereich. Alle technischen Infos findet ihr in unserem Blog Beitrag!
 
 Highlights der :edu:
-1. Dank des Online-Compiler braucht man keine Softwareinstallation mehr vorzunehmen um Code von Blockly für senseBox auf das Board zu spielen. Die senseBox wird einfach wie ein USB-Stick bespielt.
 
-2. Mit dem Display können Messwerte direkt angezeigt und visualisiert werden. Auch Diagramme der Messwerte sind möglich.
+- Dank des Online-Compiler braucht man keine Softwareinstallation mehr vorzunehmen um Code von Blockly für senseBox auf das Board zu spielen. Die senseBox wird einfach wie ein USB-Stick bespielt.
+
+- Mit dem Display können Messwerte direkt angezeigt und visualisiert werden. Auch Diagramme der Messwerte sind möglich.
 
 Highlights der :home:
-1. Speicherplatz! Der neue Microcontroller hat das vierfache an Speicher und man kann damit noch mehr Sensoren anschließen als zuvor.
+- Speicherplatz! Der neue Microcontroller hat das vierfache an Speicher und man kann damit noch mehr Sensoren anschließen als zuvor.
 
-2. LoRa Datenübertragung! Es besteht die Möglichkeit der Datenübertragung mit dem Internet of Things Netzwerk "LoRa". Dadurch kann auch an Orten ohne WiFi-Empfang gemessen werden.
+- LoRa Datenübertragung! Es besteht die Möglichkeit der Datenübertragung mit dem Internet of Things Netzwerk "LoRa". Dadurch kann auch an Orten ohne WiFi-Empfang gemessen werden.
 
 Mehr information zur neuen senseBox MCU hier [hier](https://sensebox.de/blog/2018-03-06-senseBox_MCU)
 
