@@ -17,7 +17,7 @@ Endlich ist es soweit - ab sofort ist die senseBox in unserem Shop verfügbar!
 {% include image.html image=page.image1 %}
 
 Dort kann man jetzt noch einfacher seine senseBox individuell zusammenstellen und Zubehör bestellen. Los geht's! 
-"https://www.sensebox.kaufen/"
+(https://www.sensebox.kaufen/www.sensebox.kaufen/url)
 
 
 Highlights & Features der neuen senseBox
