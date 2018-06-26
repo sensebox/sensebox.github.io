@@ -17,7 +17,6 @@ Endlich ist es soweit - ab sofort ist die neue senseBox in unserem [Shop](https:
 
 {% include image.html image=page.image1 %}
 
-
 Highlights & Features der neuen senseBox
 ============
 Die senseBox wurde komplett überarbeitet. Sie ist unsere Lösung eines Open-Source Steuergeräts für Umweltsensortechnik und wurde speziell an unseren Anwendungsfall im Open Science und Open Education Bereich angepasst. Wie gewohnt gibt es wieder zwei Versionen der senseBox: Die senseBox:home als stationäre Lösung (mit Outdoor Gehäuse) und die senseBox:edu als Baukastensystem für den Bildungsbereich. Alle technischen Infos findet ihr in unserem [Blog Beitrag](https://sensebox.de/blog/2018-03-06-senseBox_MCU)!
@@ -39,17 +38,14 @@ Highlights der :home:
 Auch [Blockly für senseBox](https://blockly.sensebox.de/ardublockly/?lang=de&board=sensebox-mcu) wurde im Zuge der Entwicklung der neuen senseBox überarbeitet. Alle Komponenten zur neuen senseBox sind angelegt und können zum Experimentieren und Ausprobieren verwendet werden. So ist es ein Leichtes auch schwierige Komponenten und Sensoren über Blockly zu programmieren und beispielsweise wie im Bild unten einen GPS-Sensor anzuschließen und die Werte auf dem Display anzuzeigen!
 {% include image.html image=page.image2 %}
 
- 
 :home - ohne programmieren auf der openSenseMap registrieren!
 ============
 Wie immer gibt es eine einfache Registrierungs-Maske um die Daten der senseBox auf die [openSenseMap](https://opensensemap.org) zu übertragen. Der vorgefertigte Code wird nach der Registrierung per E-Mail zugeschickt. Gegebenenfalls muss noch das WiFi-Passwort eingeben  werden und dann den Code einfach auf das Board hochladen und fertig!   
 {% include image.html image=page.image3 %}
 
-
 Open Educational Resources und Community!
 ============
 In den letzten Wochen haben wir die senseBox [books](https://sensebox.de/de/books) mit Infos zur Funktion der senseBox, zum Aufbau und zu Experimenten gefüllt. Wie immer gibt es die Books "for free" als Open Educational Resources auf unserer Webseite. Wir glauben an "Open Knowledge" und freuen uns deshalb über euren Support und euer Feedback. Schickt uns also gerne eure Codes, Anleitungen, Experimente und unsere Fehler, damit das Book ständig wächst und alle davon profitieren.   
 {% include image.html image=page.image4 %}
-
 
 Wenn ihr den Newsletter regelmäßig per Mail erhalten wollt, tragt euch einfach [hier](https://sensebox.de/#newsletter) ein!
