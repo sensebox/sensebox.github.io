@@ -35,8 +35,7 @@ Highlights der :home:
 
 - LoRa Datenübertragung! Es besteht die Möglichkeit der Datenübertragung mit dem Internet of Things Netzwerk "LoRa". Dadurch kann auch an Orten ohne WiFi-Empfang gemessen werden.
 
-Mehr information zur neuen senseBox MCU hier [hier](https://sensebox.de/blog/2018-03-06-senseBox_MCU)
-
+Mehr information zur neuen senseBox MCU [hier](https://sensebox.de/blog/2018-03-06-senseBox_MCU)
 
 :edu - mit Drag&Drop einen GPS-Sensoren anschließen?
 ============
