@@ -42,7 +42,7 @@ Mehr information zur neuen senseBox MCU [hier](https://sensebox.de/blog/2018-03-
 Auch "Blockly für senseBox" wurde im Zuge der Entwicklung der neuen senseBox überarbeitet. Alle Komponenten zur neuen senseBox sind angelegt und können zum Experimentieren und Ausprobieren verwendet werden. So ist es ein Leichtes auch schwierige Komponenten und Sensoren über Blockly zu programmieren und beispielsweise wie im Bild unten einen GPS-Sensor anzuschließen und die Werte auf das Display zu übertragen!
 {% include image.html image=page.image2 %}
 
-Zu Blockly für senseBox für die neue MCU gelang ihr [hier](https://blockly.sensebox.de/ardublockly/?lang=de&board=sensebox-mcu)
+Zu Blockly für senseBox für die neue MCU gelangt ihr [hier](https://blockly.sensebox.de/ardublockly/?lang=de&board=sensebox-mcu)
 
 :home - ohne programmieren auf der openSenseMap registrieren!
 ============
@@ -59,4 +59,4 @@ Mit viel Liebe und Schweiß haben wir in den letzten Wochen die senseBox "Books"
 
 Zu den [books](https://sensebox.de/de/books)
 
-Wenn ihr den Newsletter regelmäßig per Mail erhalten wollt, tragt euch einfach unten auf der Startseite von sensebox.de ein!
+Wenn ihr den Newsletter regelmäßig per Mail erhalten wollt, tragt euch einfach [hier] (https://sensebox.de/#newsletter) ein!
