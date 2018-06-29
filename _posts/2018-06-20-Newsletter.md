@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Der senseBox-Newsletter ist raus"
+title: "Die neue senseBox ist da!"
 date: 2018-06-20
 author: Gina
 abstract: "Wir haben alle wichtigen Informationen über die senseBox für euch übersichtlich in unserem Newsletter zusammengefasst."
