@@ -8,11 +8,12 @@ background:
   team: "Team"
   awards: "Awards"
   contact: "Contact"
+  imprint: "Imprint"
+  privacy: "Privacy"
 press:
   header: "Press"
   articles: "Articles"
   material: "Material"
-  contact: "Imprint, privacy policy and contact"
 publications:
   header: "Publications"
   books: "Books"

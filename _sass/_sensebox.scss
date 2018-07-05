@@ -1,3 +1,7 @@
+
+$home: #b3a900;
+$edu: #2eb6eb;
+
 .BrixSlab-Bold {
   font-family: BrixSlab-Bold;
   font-weight: normal;
@@ -190,10 +194,17 @@ hr {
   color: $sensebox-green;
   font-size: $small-font-size;
 
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  a {
+    color: $sensebox-green;
+  }
+
   .copyright {
-    text-align: center;
-    font-size: $small-font-size*0.85;
+    margin-top: 42px;
     color: $grey-color;
+    font-size: $small-font-size*0.85;
   }
 }
 
@@ -213,10 +224,6 @@ hr {
     > li {
       margin-bottom: 5px;
     }
-  }
-
-  a {
-    color: $sensebox-green;
   }
 }
 
@@ -285,6 +292,10 @@ hr {
         margin: 2px;
         max-width: 100%;
       }
+    }
+
+    > ul {
+      font-size: inherit;
     }
 
   }
@@ -1212,10 +1223,6 @@ $carousel-height: 450px;
     height: 500px;
 }
 
-.footer-copyright {
-    text-align: center;
-}
-
 .inside-carousel-container {
   position: absolute;
   left: 50%;
@@ -1295,6 +1302,11 @@ $carousel-height: 450px;
   text-align: center;
 }
 
+.header-text {
+  color: #ffffff;
+
+}
+
 .product-img {
   margin: auto;
   max-width: 300px;
@@ -1311,4 +1323,129 @@ $carousel-height: 450px;
 
 .margin-20 {
   margin: 20px;
+}
+
+//books
+#box-1 {
+  display: none;
+}
+
+#box-2{
+  display: none;
+}
+
+#v{
+  display: block; 
+
+}
+
+#vv {
+  display: block;
+}
+
+.book-nav-item {
+  text-align: center;
+  padding: 2em 0;
+
+  a {
+    text-indent: 0 !important;
+  }
+}
+
+#text-style{
+  color: #ffffff;
+}
+
+/* Product page CSS
+-------------------------------------------------- */
+
+.home-span {
+  // font-weight: bold;
+  color: $home;
+
+  font-weight: bold;
+  letter-spacing: 1.2px;
+
+}
+
+.edu-span {
+  // font-weight: bold;
+  color: $edu;
+
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+
+.product-table {
+  overflow: auto;
+}
+.product {
+  border: 1px solid #eee;
+  padding: 0.5em 0.5em;
+  position: relative;
+
+  .main-product-image {
+    img {
+      width: 100%;
+    }
+  }
+  .sensor-list {
+    padding-top: 1em;
+  }
+  .prod-ul {
+    list-style: none;
+    padding: 0;
+  
+    .prod-li-item {
+      display: flex;
+      align-items: center;
+      .prod-thumb {
+        width: 80px;
+        img {
+          width: 100%;
+        }
+      }
+      
+      .prod-label {
+        width: calc(100% - 80px);
+        // flex-grow: 1;
+        font-size: 17px;
+        padding-left: 0.3em;
+      }
+    }
+  }
+}
+
+.product {
+  margin-bottom: 2em;
+}
+
+.license {
+  font-size: 15px;
+  opacity: 0.9;
+  padding: 1em 0;
+}
+
+@media screen and (min-width: 768px){
+  .sensor-list {
+    height: 560px;
+  }
+  .misc-list {
+    height: 1100px;
+  }
+  .addon-list {
+    height: 520px;
+  }
+}
+
+
+
+/* Blockly page css
+-------------------------------------------------- */
+
+.blockly-links {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
 }

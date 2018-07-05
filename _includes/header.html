@@ -1,68 +1,70 @@
 <nav class="navbar navbar-default">
-  <div class="row">
-      <div class="col-sm-4 col-md-4 col-lg-4 navbar-logo">
-        <!-- Brand and toggle get grouped for better mobile display -->
-       <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{{ site.url }}">
-            <img src="{{ site.baseurl | append: '/images/logo_transparent.png'}}" alt="senseBox Logo" style="width:auto; height=55px; max-width:180px; ">
-          </a>
+    <div class="row">
+        <div class="col-sm-4 col-md-4 col-lg-4 navbar-logo">
+          <!-- Brand and toggle get grouped for better mobile display -->
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ site.url }}">
+              <img src="{{ site.baseurl | append: '/images/logo_transparent.png'}}" alt="senseBox Logo" style="width:auto; height=55px; max-width:180px; ">
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="col-sm-8 col-md-8 col-lg-8 navbar-control">
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-          	{% assign t = site.data.translations.[page.lang].header %}
-            {% assign menupages = site.pages | sort:"weight"  %}
-              {% for menupage in menupages %}
-                {% if menupage.url contains 'page' %}
-                {% elsif menupage.url contains 'news' %}
-                {% else %}
-                  {% if menupage.title %}
-                  	{% else %}
-                  	{% if menupage.lang == page.lang and menupage.id != 'main' %}
-                  	 {% if menupage.id != 'contact' %}
-                  	 		{% if menupage.id != 'hackathon' %}
-                          {% if menupage.id != 'hackathon_registration' %}
-                            {% if menupage.id != 'materials' %}
-                              {% if menupage.id != '404' %}
-                                {% if menupage.id != 'codeweek' %}
-        			                    <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
-        			                      <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
-        			                    </li>
+        <div class="col-sm-8 col-md-8 col-lg-8 navbar-control">
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              {% assign t = site.data.translations.[page.lang].header %}
+              {% assign menupages = site.pages | sort:"weight"  %}
+                {% for menupage in menupages %}
+                  {% if menupage.url contains 'page' %}
+                  {% elsif menupage.url contains 'news' %}
+                  {% else %}
+                    {% if menupage.title %}
+                      {% else %}
+                      {% if menupage.lang == page.lang and menupage.id != 'main' %}
+                       {% if menupage.id != 'contact' %}
+                           {% if menupage.id != 'hackathon' %}
+                            {% if menupage.id != 'hackathon_registration' %}
+                              {% if menupage.id != 'materials' %}
+                                {% if menupage.id != '404' %}
+                                  {% if menupage.id != 'codeweek' %}
+                                    <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
+                                      <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
+                                    </li>
+                                    <li>noooo</li>
+                                  {% endif %}
                                 {% endif %}
                               {% endif %}
                             {% endif %}
-                          {% endif %}
-		                    {% endif %}
+                          {% endif %}   
+                        {% endif %}
                       {% endif %}
                     {% endif %}
                   {% endif %}
+                {% endfor %}
+            </ul>
+            {% if page.translationAvailable != false %}
+            <ul class="nav navbar-nav pull-right">
+              <li class="navbar-item">
+                {% if page.lang == 'de' %}
+                  <a href="{{ page.url | remove:'de/' | remove:'index.html' | prepend:'en' | prepend: site.url }}">EN</a>
+                  {% else %}
+                  {% if page.id == 'main' %}
+                    <a href="{{ page.url | remove:'en/' | remove:'index.html' }}">DE</a>
+                  {% else %}
+                    <a href="{{ page.url | remove:'en/' | remove:'index.html' | prepend:'de' | prepend: site.url }}">DE</a>
+                  {% endif %}
                 {% endif %}
-              {% endfor %}
-          </ul>
-          {% if page.translationAvailable != false %}
-          <ul class="nav navbar-nav pull-right">
-						<li class="navbar-item">
-							{% if page.lang == 'de' %}
-								<a href="{{ page.url | remove:'de/' | remove:'index.html' | prepend:'en' | prepend: site.url }}">EN</a>
-								{% else %}
-                {% if page.id == 'main' %}
-                  <a href="{{ page.url | remove:'en/' | remove:'index.html' }}">DE</a>
-                {% else %}
-								  <a href="{{ page.url | remove:'en/' | remove:'index.html' | prepend:'de' | prepend: site.url }}">DE</a>
-                {% endif %}
-							{% endif %}
-						</li>
-          </ul>
-          {% endif %}
+              </li>
+            </ul>
+            {% endif %}
+          </div>
         </div>
-      </div>
-  </div>
-</nav>
+    </div>
+  </nav>
+  

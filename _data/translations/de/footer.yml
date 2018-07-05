@@ -7,12 +7,13 @@ background:
   philosophy: "Philosophie"
   team: "Team"
   awards: "Auszeichnungen"
-  contact: "Impressum, Datenschutz und Kontakt"
+  contact: "Kontakt"
+  imprint: "Impressum"
+  privacy: "Datenschutz"
 press:
   header: "Presse"
   articles: "Berichte"
   material: "Material"
-  contact: "Kontakt"
 publications:
   header: "Publikationen"
   books: "Books"

@@ -1,24 +1,85 @@
+<!--
+
 {% assign t = site.data.translations.[page.lang].books %}
+<div class="page-header">
+  <h1>Books</h1>
+</div>
+
+<p>
+  {{ t.description }}
+</p>
+<br><br>
+
+<div>
+  <div class="col-md-4">
+    <div class="card">
+      <a href="https://sensebox.github.io/books/senseBox:edu_{{ page.lang }}.pdf" class="overlay opacity-animation-fast" target="_blank">
+        <em style="font-size: 1.4em;">PDF</em>
+      </a>
+      <a href="//edu.books.sensebox.de/{{ page.lang }}" style="text-decoration: none;" target="_blank">
+        <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_edu_bg.jpg'}});"></canvas>
+        <div class="price-text" style="padding:20px;">
+          <h3>senseBox:edu</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <a href="https://sensebox.github.io/books/senseBox:home_{{ page.lang }}.pdf" class="overlay opacity-animation-fast" target="_blank">
+        <em style="font-size: 1.4em;">PDF</em>
+      </a>
+      <a href="//home.books.sensebox.de/{{ page.lang }}" style="text-decoration: none;" target="_blank">
+        <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_home_bg.jpg'}});"></canvas>
+        <div class="price-text" style="padding:20px;">
+          <h3>senseBox:home</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <a href="https://sensebox.github.io/books/senseBox:osem_{{ page.lang }}.pdf" class="overlay opacity-animation-fast" target="_blank">
+        <em style="font-size: 1.4em;">PDF</em>
+      </a>
+      <a href="//osem.books.sensebox.de/{{ page.lang }}" style="text-decoration: none;" target="_blank">
+        <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_OSeM_bg.png'}});"></canvas>
+        <div class="price-text" style="padding:20px;">
+          <h3>openSenseMap</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <br>
+  <p><b>{{ t.commenthint }}</b></p>
+  <p>{{ t.instructions.content }}</p>
+</div>
+
+
+-->
+
+{% assign t = site.data.translations.[page.lang].books %}
+
+
+<link rel="stylesheet" href="/css/books.css">
 <div class="item active">
   <div class="carousel-container background-gradient-books">
       <div class="container inside-carousel-container">
         <div class="header-info">
-          <h1 style="color:white">Books</h1>
-          <p>
+          <h1 id = "text-style"> Books  </h1>
+          <h2 class="header-text">
             {{ t.description-short }}
-          </p>
-          <div class="row">
-              <div class="col-md-4">
-                <a class="btn header-btn" href="//edu.books.sensebox.de/{{ page.lang }}" role="button">senseBox:edu Book &raquo;</a>
-              </div>
-              <div class="col-md-4">
-                <a class="btn header-btn" href="//home.books.sensebox.de/{{ page.lang }}" role="button">senseBox:home Book &raquo;</a>
-              </div>
-              <div class="col-md-4">
-                <a class="btn header-btn" href="//osem.books.sensebox.de/{{ page.lang }}" role="button">openSenseMap API &raquo;</a>
+          </h2>
+
+ 
+          
+               </div>
               </div>
           </div>
         </div>
-      </div>
-  </div>
-</div>
+      
+<script> 
+
+
+</script>

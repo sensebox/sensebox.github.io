@@ -1,5 +1,5 @@
-{% assign carouselpages = "main|products|osem|books|background|press|awards|lab|blog|hackathon2018" | split: "|" %}
-{% assign navpages = "blog|products|osem|books|background|lab|hackathon2018" | split: "|" %}
+{% assign carouselpages = "main|products|osem|books|background|press|awards|lab|blog|blockly|hackathon2018" | split: "|" %} 
+{% assign navpages = "blog|products|osem|books|blockly|lab|go|hackathon2018" | split: "|" %}
 {% if include.simple == true %}
     <div class="navbar-wrapper">
 {% else %}
@@ -47,6 +47,10 @@
                         </li>
                         {% endif %} {% endfor %}
 
+                        <!-- ADD FORUM LINK BY HAND -->
+                        <li class="navbar-item">
+                            <a target="_blank" href="https://forum.sensebox.de/">Forum</a>
+                        </li>
                     </ul>
                     {% if page.translationAvailable != false %}
                     <ul class="nav navbar-nav pull-right">
