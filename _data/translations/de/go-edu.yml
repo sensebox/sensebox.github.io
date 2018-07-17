@@ -1,6 +1,6 @@
 title: "Quick Start Guide"
 quick-start-intro: "Der einfachste Weg die senseBox auszuprobieren ist es mit Blockly einen Programmcode zu generieren und diesen auf das Board zu spielen:"
-go-to: "Gehe auf: <a href='https://blockly.sensebox.de/ardublockly/?lang=de&board=sensebox-mcu'>https://blockly.sensebox.de/ardublockly/?lang=de&board=sensebox-mcu</a>" 
+go-to: "Gehe auf: <a target='_blank' href='https://blockly.sensebox.de/ardublockly/?lang=de&board=sensebox-mcu'>https://blockly.sensebox.de/ardublockly/?lang=de&board=sensebox-mcu</a>" 
 drag-drop: "Mit Drag & Drop kannst du dir einen kleinen Code zusammenziehen: z.B."
 compile: 'Klicke jetzt auf das rote Symbol mit dem Notizblock “Sketch kompilieren”, wodurch der Sketch gedownloadet wird.'
 connect: 'Schließe die senseBox mit dem beiliegenden Mikro USB Kabel an deine Computer an und führe einen “Doppelklick” mit der roten Taste auf der senseBox durch.'
@@ -14,10 +14,10 @@ arduino-install: "Die Arduino IDE downloaden und auf deinem PC installieren."
 arduino-packages: "Das Board Support Package für die senseBox einbinden und den COMPort mit der senseBox auswählen."
 arduino-tests: "Zum testen kannst du z.B. den Quellcode den du mit Blockly programmiert hast aus der Oberfläche kopieren und in die Arduino IDE Umgebung einfügen."
 arduino-copy: "Den Code mit der Pfeiltaste auf das Board laden."
-arduino-outro: "Wenn du noch nie mit Arduino gearbeitet hast findest du mehr Informationen und detaillierte Prozesse zur vorgehensweise im <a href='https://sensebox.github.io/books-v2/edu/'>Book</a>.: Dort findest du auch Anleitungen zur Registrierung auf der openSenseMap und zu verschiedenen Erweiterungen und einzelnen Komponenten."
+arduino-outro: "Wenn du noch nie mit Arduino gearbeitet hast findest du mehr Informationen und detaillierte Prozesse zur vorgehensweise im <a target='_blank' href='https://sensebox.github.io/books-v2/edu/'>Book</a>.: Dort findest du auch Anleitungen zur Registrierung auf der openSenseMap und zu verschiedenen Erweiterungen und einzelnen Komponenten."
 
 support-title: "Hilfe und Support"
-support: "Das Book ist die Datenbank unseres Wissens. Dort findest du alle Infos die du brauchst um die senseBox zu benutzen und einen FAQ Bereich mit häufig gefragten Fragen. Schwierigkeiten beim Programmieren mit Arduino lassen sich außerdem einfach mit dem Nachbau der Funktionen in Blockly lösen. Weiteres Wissen findest du auf unserem Forum, wo sich die Community über die senseBox austauscht und zusammenfindet. Wenn du dann immernoch nicht weiter weiß schreibe uns eine Support Mail."
+support: 'Das <a target="_blank" href="https://sensebox.github.io/books-v2/edu/">Book</a> ist die Datenbank unseres Wissens. Dort findest du alle Infos die du brauchst um die senseBox zu benutzen und einen <a target="_blank" href="https://sensebox.github.io/books-v2/home/hilfe.html">FAQ</a> Bereich mit häufig gefragten Fragen. Schwierigkeiten beim Programmieren mit Arduino lassen sich außerdem einfach mit dem Nachbau der Funktionen in Blockly lösen. Weiteres Wissen findest du auf unserem Forum, wo sich die Community über die senseBox austauscht und zusammenfindet. Wenn du dann immernoch nicht weiter weiß schreibe uns eine Support Mail.'
 
 experiment-title: "Experimente und Lernmaterial"
 experiment: "Hier findest du einige Dokumente mit Experimenten und Lehr- und Lernmaterial"
