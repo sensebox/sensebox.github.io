@@ -1,31 +1,54 @@
-title: "go:edu"
+title: "Quick Start Guide"
+quick-start-intro: "Der einfachste Weg die senseBox auszuprobieren, ist mit Blockly einen Programmcode zu generieren und diesen auf das Board zu spielen:"
+go-to: "Gehe auf: <a target='_blank' href='https://blockly.sensebox.de/ardublockly/?lang=de&board=sensebox-mcu'>https://blockly.sensebox.de/ardublockly/?lang=de&board=sensebox-mcu</a>" 
+drag-drop: "Per Drag & Drop kannst du dir einen kleinen Code zusammenziehen: z.B."
+compile: 'Klicke jetzt auf das rote Symbol mit dem Notizblock “Sketch kompilieren”, wodurch der Sketch heruntergeladen wird.'
+connect: 'Schließe die senseBox mit dem beiliegenden Mikro USB Kabel an deine Computer an und führe einen “Doppelklick” mit dem roten Knopf auf der senseBox durch.'
+copy: 'Ziehe die Sketch-Datei auf die senseBox als wäre diese ein USB-Stick'
 
-first-steps: "Erste Schritte"
-first-steps-text: "Alles zur Installation und zum Aufbau der senseBox"
-
-software-installation: "Software Installation"
-hardware-install: "Anschluss und Verkabelung"
-osem-reg: "Registrierung auf der openSenseMap"
-
-components: "Komponenten"
-components-text: "Hier findest Du genaue Informationen zu den verschiedenen Komponenten der senseBox."
-
-mcu: "senseBox MCU"
-bees: "Bees"
-sensors: "Sensoren"
-zubehoer: "Zubehör"
-
-help: "Wo finde ich Hilfe?"
-help-text: "Du benötigst Hilfe mit deiner senseBox? Hier findest du die nötigen Informationen."
-forum: "Forum"
-mail: "Email"
-
-experiments: "Experimente"
-experiments-text: "Hier findest du Anleitungen zu Experimenten die Du mit der senseBox durchführen kannst."
-
-weather-station: "DIY-Umweltstation"
-traffic-counter: "Verkehrszähler"
+quick-start-outro: "Wenn das funktioniert hat, hast du das Prinzip von Blockly schon verstanden und kannst loslegen. Wenn du mehr über Blockly und die Funktionen wissen willst schau dir dieses Book an:"
 
 
-links: "Links"
-links-text: "Hier findest du Links rund um das senseBox Projekt"
+arduino-title: "Arbeiten mit der Arduino IDE:"
+arduino-install: "Die Arduino IDE downloaden und auf deinem PC installieren."
+arduino-packages: 'Das <a target="_blank" href="https://sensebox.github.io/books-v2/edu/erste-schritte/board-support-packages-installieren.html">Board-Support-Package</a> für die senseBox einbinden und den COMPort mit der senseBox auswählen.'
+arduino-tests: "Zum Testen kannst du z.B. den Quellcode den du mit Blockly programmiert hast aus der Oberfläche kopieren und in die Arduino IDE Umgebung einfügen."
+arduino-copy: "Den Code mit der Pfeiltaste in der Arduino IDE auf das Board laden."
+arduino-outro: "Wenn du noch nie mit Arduino gearbeitet hast, findest du mehr Informationen und detaillierte Prozesse zur Vorgehensweise im <a target='_blank' href='https://sensebox.github.io/books-v2/edu/'>Book</a>. Dort findest du auch Anleitungen zur Registrierung auf der openSenseMap und zu verschiedenen Erweiterungen und einzelnen Komponenten."
+
+support-title: "Hilfe und Support"
+support: 'Das <a target="_blank" href="https://sensebox.github.io/books-v2/edu/">Book</a> ist die Datenbank unseres Wissens. Dort findest du alle Infos die du brauchst, um die senseBox zu benutzen und einen <a target="_blank" href="https://sensebox.github.io/books-v2/home/hilfe.html">FAQ</a> Bereich mit häufig gestellten Fragen. Schwierigkeiten beim Programmieren mit Arduino lassen sich außerdem einfach mit dem Nachbau der Funktionen in Blockly lösen. Weiteres Wissen findest du auf unserem Forum, wo sich die Community über die senseBox austauscht und zusammenfindet. Wenn du dann immernoch nicht weiter weißt schreibe uns eine Support Mail.'
+
+experiment-title: "Experimente und Lernmaterial"
+experiment: "Hier findest du einige Dokumente mit Experimenten und Lehr- und Lernmaterial"
+# title: "go:edu"
+
+# first-steps: "Erste Schritte"
+# first-steps-text: "Alles zur Installation und zum Aufbau der senseBox"
+
+# software-installation: "Software Installation"
+# hardware-install: "Anschluss und Verkabelung"
+# osem-reg: "Registrierung auf der openSenseMap"
+
+# components: "Komponenten"
+# components-text: "Hier findest Du genaue Informationen zu den verschiedenen Komponenten der senseBox."
+
+# mcu: "senseBox MCU"
+# bees: "Bees"
+# sensors: "Sensoren"
+# zubehoer: "Zubehör"
+
+# help: "Wo finde ich Hilfe?"
+# help-text: "Du benötigst Hilfe mit deiner senseBox? Hier findest du die nötigen Informationen."
+# forum: "Forum"
+# mail: "Email"
+
+# experiments: "Experimente"
+# experiments-text: "Hier findest du Anleitungen zu Experimenten die Du mit der senseBox durchführen kannst."
+
+# weather-station: "DIY-Umweltstation"
+# traffic-counter: "Verkehrszähler"
+
+
+# links: "Links"
+# links-text: "Hier findest du Links rund um das senseBox Projekt"

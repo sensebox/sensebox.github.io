@@ -1,6 +1,105 @@
 {% assign t = site.data.translations.[page.lang].go-edu %}
 
-<h1 class="title">{{t.title}}</h1>
+<div class="edu-go-page">
+    <div class="topic-block">
+        <h1 class="title">{{t.title}}</h1>
+        <div class="content-container">
+            <p class="quick-start-text">{{t.quick-start-intro}}</p>
+            <ol class="quick-start-list">
+                <li>{{t.go-to}}</li>
+                <li>
+                    <div class="text">
+                        {{t.drag-drop}}
+                    </div>
+                    <div class="image">
+                        <img src="/images/senseBox_blockly.gif">
+                    </div>
+                </li>
+                <li>
+                    <div class="text">
+                        {{t.compile}}
+                    </div>
+                    <div class="image">
+                        <img src="/images/go/edu/blockly.png">
+                    </div>
+                </li>
+                <li>
+                    <div class="text">
+                        {{t.connect}}
+                    </div>
+                    <!-- <div class="image">
+                        <img src="/images/go/edu/blockly.png">
+                    </div> -->
+                </li>
+                <li>{{t.copy}}</li>
+            </ol>
+        
+            <p>{{t.quick-start-outro}}</p>
+        </div>
+    </div>
+
+    <div class="topic-block">
+        <h1 class="title">{{t.arduino-title}}</h1>
+        <div class="content-container">
+            <p class="quick-start-text">{{t.arduino-intro}}</p>
+            <ol class="quick-start-list">
+                <li>{{t.arduino-install}}
+                    <div class="image">
+                        <a target="_blank" href="https://www.arduino.cc/en/Main/Software">https://www.arduino.cc/en/Main/Software</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="text">
+                        {{t.arduino-packages}}
+                    </div>
+                    <div class="image">
+                        <a target="_blank" href="https://sensebox.github.io/books-v2/edu/erste-schritte/board-support-packages-installieren.html">https://sensebox.github.io/books-v2/edu/erste-schritte/board-support-packages-installieren.html</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="text">
+                        {{t.arduino-tests}}
+                    </div>
+                    <div class="code">
+                        <textarea rows="6" cols="30" disabled="true">
+    void setup() {
+        pinMode(7, OUTPUT);
+        digitalWrite(7,HIGH);
+    }
+    void loop() {
+    }
+                        </textarea>
+                    </div>
+                </li>
+                <li>{{t.arduino-copy}}
+                    <div class="image">
+                        <img src="/images/go/edu/pfeil.png">
+                    </div>
+                </li>
+            </ol>
+        
+            <p>{{t.arduino-outro}}</p>
+        </div>
+    </div>
+    
+    <div class="topic-block">
+        <h1 class="title">{{t.support-title}}</h1>
+        <p>{{t.support}}</p>
+    </div>
+    
+    <div class="topic-block">
+        <h1 class="title">{{t.experiment-title}}</h1>
+        <p>{{t.experiment}}</p>
+        <div class="image">
+            <a class="exp-link" target="_blank" href="https://sensebox.github.io/books-v2/edu/projekte/Umweltstation/">https://sensebox.github.io/books-v2/edu/projekte/Umweltstation/</a>
+        </div>
+    </div>
+
+
+
+</div>
+
+<!-- <h1 class="title">{{t.title}}</h1>
 <div class="ut-container">
     <div class="ut-item">
         <div class="ut-item-head">
@@ -72,4 +171,4 @@
         </div>
     </div>
 
-</div>
+</div> -->
