@@ -4,7 +4,17 @@ $edu: #2eb6eb;
 
 
 .title {
-    // padding-bottom: 1.5em;
+    display: inline-block;
+    position: relative;
+    &:after {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 130%;
+        border-bottom: 3px solid #4EAF47;
+    }
+    margin-bottom: 20px;
 }
 h3 {
     color: #111;
@@ -63,6 +73,10 @@ h3 {
 
     .text-container {
         padding: 0.5em;
+
+        .desc-text {
+            height: 55px;
+        }
     }
 
     &:hover {
@@ -97,4 +111,68 @@ ol {
     li {
         padding-left: 0.2em;
     }
+}
+
+
+.edu-go-page {
+    overflow: hidden;
+
+    .topic-block {
+        padding-bottom: 40px;
+    }
+    .content-container {
+    }
+    ol {
+        margin: auto;
+        max-width: 800px;
+        padding-top: 40px;
+        li {
+            padding: 1em 0 1em 34px;
+            .image {
+                // height: 400px;
+                position: relative;
+                img {
+                    max-height: 100%;
+                    max-width: 100%;
+                }
+            }
+            textarea {
+                margin-top: 0.5em;
+                padding: 1em;
+                overflow: hidden;
+                font-size: 15px;
+            }
+        }
+    }
+
+
+    ol {
+        list-style: none;
+        counter-reset: item;
+        padding-left: 9px;
+      }
+      li {
+        counter-increment: item;
+        margin-bottom: 5px;
+        padding-left: 34px;
+        position: relative;
+      }
+      li:before {
+        margin-right: 10px;
+        content: counter(item)'.';
+        border-radius: 100%;
+        font-size: 35px;
+        font-weight: bold;
+        width: 1.2em;
+        text-align: center;
+        display: inline-block;
+        position: absolute;
+        left: -14px;
+        top: 8px;
+        color: #4EAF47;
+      }
+
+      .exp-link {
+          font-size: 18px;
+      }
 }
