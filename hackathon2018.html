@@ -127,12 +127,72 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
 </div>
 
 <br>
-<!-- 
+<!--
 <h3 class="smallcaps" id="jury">Jury</h3>
- <p>
-  To be announced
-</p>
+{% assign jurymembers = site.data.team.de.jury2018 | sort: 'position' %}
+
+<!-- count jurymembers -> if odd, there has to be a blank col in the end 
+<div hidden>
+{% for jurymember in jurymembers %}
+{% increment jurymember_count %}
+{% capture oddOrEvenJurymemberCount %}{% cycle 'odd', 'even' %}{% endcapture %}
+{% endfor %}
+</div>
+
+{% for jurymember in jurymembers %}
+  {% capture firstLastInRow %}{% cycle 'first', 'last' %}{% endcapture %}
+
+  {% if firstLastInRow == 'first' %}
+  <div class="container">  
+  <div class="row">
+  {% endif %}
+
+    <div class="col-md-6">
+
+      <div class="card" style="cursor: pointer;" data-toggle="collapse" data-target="#desc_{{ jurymember.position }}">
+          <canvas class="header-bg" width="250" id="header-blur" style="background-image: url({{ jurymember.bgImage }});"></canvas>
+          <div class="avatar">
+              <img src="{{ site.baseurl | append: jurymember.image }}" alt="{{ jurymember.name }} - Foto"/>
+          </div>
+          <div class="content">
+            <h4 style="clear:both">{{ jurymember.name }}</h4>
+            <h5 style="clear:both"><a href="{{ jurymember.organisation-link }}" target="_blank">{{ jurymember.organisation }}</a></h5>
+            <div id="desc_{{ jurymember.position }}" class="collapse">
+              {{ jurymember.description }}
+            </div>
+            {% if jurymember.twitter %}
+              <a href="{{ jurymember.twitter }}" target="_blank" class="social-media"><img src="{{ site.baseurl | append: '/images/iconmonstr-twitter-4-icon.png'}}" alt="Twitter icon"></a>
+            {% endif %}
+            {% if jurymember.linkedin %}
+              <a href="{{ jurymember.linkedin }}" target="_blank" class="social-media"><img src="{{ site.baseurl | append: '/images/iconmonstr-linkedin-4-240.png'}}" alt="linkedIn icon"></a>
+            {% endif %}
+            {% if jurymember.github %}
+              <a href="{{ jurymember.github }}" target="_blank" class="social-media"><img src="{{ site.baseurl | append: '/images/iconmonstr-github-icon.png'}}" alt="GitHub icon"></a>
+            {% endif %}
+            {% if jurymember.homepage %}
+              <a href="{{ jurymember.homepage }}" target="_blank" class="social-media"><img src="{{ site.baseurl | append: '/images/iconmonstr-homepage.png'}}" alt="homepage icon"></a>
+            {% endif %}
+          </div>
+      </div>
+    </div>
+
+  {% if firstLastInRow == 'last' %}
+    </div>
+  {% endif %}
+
+  <!-- if this is the last element and the count is even, add blank col 
+  {% if jurymember.position == jurymember_count and oddOrEvenJurymemberCount == 'odd' %}
+  <div class="col-md-6">
+   </div>
+    </div>
+  {% endif %}
+
+
+{% endfor %}
+
+  </div>
 -->
+
 <h3 class="smallcaps" id="preise">Preise</h3>
 <p>Zu gewinnen gibt es:</p>
 <div class="row">
@@ -144,32 +204,40 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
       </div>
     </div>
   </div>
-<!--
+
   <div class="col-lg-4 col-md-6 col-sm-6">
     <div class="card">
-      <canvas class="price-header-bg" style="background-image: url(https://3druck.com/wp-content/uploads/2013/12/NEO-GermanRepRap-3D-Drucker.jpg);"></canvas>
+      <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/hackathon-impressions/echo.jpg'}});"></canvas>
       <div class="price-text">
-        <h3><a href="https://www.germanreprap.com/">3D-Drucker</a></h3>
+        <h3><a href="https://www.amazon.de/dp/B06ZYW1XBT/ref=gw_AuCC_Rd_QH_TPR20_A_0818?pf_rd_p=e8021ef4-df2c-4691-8726-8a08e9187612&pf_rd_r=MK3AE0PMZ13756N9PTW7">Amazon Echo</a></h3>
       </div>
     </div>
   </div>
   <div class="col-lg-4 col-md-6 col-sm-6">
     <div class="card">
-      <canvas class="price-header-bg" style="background-image: url(https://www8.pcmag.com/media/images/419317-garmin-vivofit.png?thumb=y);"></canvas>
+      <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/hackathon-impressions/echo_dot.jpg'}});"></canvas>
       <div class="price-text">
-        <h3><a href="https://www.garmin.com/de-DE/">Fitness Tracker</a></h3>
+        <h3><a href="https://www.amazon.de/dp/B01DFKBG54/ref=gw_AuCC_Bi_QH_TPR20_A_0818?pf_rd_p=e8021ef4-df2c-4691-8726-8a08e9187612&pf_rd_r=MK3AE0PMZ13756N9PTW7">Amazon Echo Dot</a></h3>
       </div>
     </div>
   </div>
   <div class="col-lg-4 col-md-6 col-sm-6">
     <div class="card">
-      <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/amazon_fire.jpg'}});"></canvas>
+      <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/hackathon-impressions/echo_spot.jpg'}});"></canvas>
       <div class="price-text">
-        <h3><a href="https://www.amazon.de/Fire-Tablet-Zoll-Display-WLAN-Schwarz/dp/B00ZDWLEEG">Amazon Fire Tablet</a></h3>
+        <h3><a href="https://www.amazon.de/dp/B01J2BL01K/ref=gw_AuCC_Rk_QH_TPR20_A_0818?pf_rd_p=e8021ef4-df2c-4691-8726-8a08e9187612&pf_rd_r=MK3AE0PMZ13756N9PTW7">Amazon Echo Spot</a></h3>
       </div>
     </div>
   </div>
--->
+
+  <div class="col-lg-4 col-md-6 col-sm-6">
+    <div class="card">
+      <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/senseBox_edu_300.png'}});"></canvas>
+      <div class="price-text">
+        <h3><a href="https://sensebox.kaufen">senseBox</a></h3>
+      </div>
+    </div>
+  </div>
 
   <div class="col-lg-4 col-md-6 col-sm-6">
     <div class="card">
@@ -185,27 +253,28 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
 <p>
   Du hast noch Fragen? Schreib uns eine Mail <a href="mailto:info@sensebox.de">info@sensebox.de</a>, kontaktiere uns bei <a href="https://twitter.com/intent/tweet?screen_name=sensebox_de" target="_blank"><img src="{{ site.baseurl | append: '/images/iconmonstr-twitter-4-icon.png'}}" alt="Twitter icon"></a> oder <a href="https://www.facebook.com/sensebox.de" target="_blank"><img src="{{ site.baseurl | append: '/images/iconmonstr-facebook-4-icon.png'}}" alt="Facebook icon"></a> oder ruf uns an: +49 251 83 33083
 </p>
-<!-- 
+
 <h3 class="smallcaps">Sponsoren</h3>
 <div class="row">
   <div class="col-lg-12">
     <div class="row sponsor">
-<p>
-  To be announced
-</p>
--->
-
-   <!--
-    <ul>
-      <li>
-        <a href="http://award.codeweek.de/" target="_blank">
-          <img src="{{ site.baseurl | append: '/images/CWA Logo 2016 _M_White.svg'}}" alt="Make Light Logo">
-        </a>
-      </li>
-
-
-    </ul>
-   -->
+        <ul>
+            <li>
+              <a href="https://kimm-muenster.de" target="_blank">
+                <img src="{{ site.baseurl | append: '/images/sponsors/Kimm_Logo.png'}}" alt="KIMM Logo">
+              </a>
+            </li>
+            <li>
+              <a href="https://reedu.de" target="_blank">
+                <img src="{{ site.baseurl | append: '/images/sponsors/reedu.png'}}" alt="Reedu Logo">
+              </a>
+            </li>
+            <li>
+              <a href="https://aws.amazon.com/de/" target="_blank">
+                <img src="{{ site.baseurl | append: '/images/sponsors/AWS_Logo_PoweredBy.jpg'}}" alt="AWS">
+              </a>
+            </li>
+          </ul>
     </div>
   </div>
 </div>
