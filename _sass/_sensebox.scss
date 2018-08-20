@@ -78,6 +78,33 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.koop {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+
+    li {
+      /*display: table-cell;*/
+    }
+  }
+  text-align: center;
+  img {
+    padding: 5px;
+    //max-width: 300px;
+    max-height: 100px;
+    transition: box-shadow 0.1s;
+    border-radius: 5px;
+    // &:hover {
+    //   box-shadow: 0px 0px 15px lighten($sensebox-green, 40%);
+    //   -webkit-filter: none; /* Chrome, Safari, Opera */
+    //   filter: none;
+    // }
+  }
+}
+
 hr {
   border-top: 3px solid #eeeeee;
 }
