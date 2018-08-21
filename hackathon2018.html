@@ -108,7 +108,7 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
 </p>
 </p>
 <div style="text-align:center; padding: 50px;">
-<h1>Die Anmeldephase ist beendet! Vielen Dank für Eure Anmeldungen.</h1>
+<h2>Die Anmeldephase ist beendet! Vielen Dank für Eure Anmeldungen.</h2>
 <!--<h1 class="smallcaps"><a href="/hackathon_registration/">HIER ANMELDEN</a></h1>-->
 </div>
 
@@ -127,11 +127,11 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
 </div>
 
 <br>
-<!--
+
 <h3 class="smallcaps" id="jury">Jury</h3>
 {% assign jurymembers = site.data.team.de.jury2018 | sort: 'position' %}
 
-<!-- count jurymembers -> if odd, there has to be a blank col in the end 
+<!-- count jurymembers -> if odd, there has to be a blank col in the end -->
 <div hidden>
 {% for jurymember in jurymembers %}
 {% increment jurymember_count %}
@@ -180,7 +180,7 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
     </div>
   {% endif %}
 
-  <!-- if this is the last element and the count is even, add blank col 
+  <!-- if this is the last element and the count is even, add blank col -->
   {% if jurymember.position == jurymember_count and oddOrEvenJurymemberCount == 'odd' %}
   <div class="col-md-6">
    </div>
@@ -191,7 +191,7 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
 {% endfor %}
 
   </div>
--->
+
 
 <h3 class="smallcaps" id="preise">Preise</h3>
 <p>Zu gewinnen gibt es:</p>

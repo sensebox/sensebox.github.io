@@ -1,10 +1,18 @@
 - name: Prof. Dr. Angela Schwering
   image: /images/team/hackathon-jury/schwering.jpg
-  position: 2
+  position: 1
   organisation: Institut für Geoinformatik, Universität Münster
   organisation-link: http://www.uni-muenster.de/Geoinformatics/
   description: Since April 2009, Angela is a professor at the Institute for Geoinformatics, University of Muenster, Germany. Her research deals with intelligent representation and reasoning on spatial information. She investigates human strategies to organize and process spatial knowledge about environments and aims to learn from these to enhance the usability of spatial information with cognitively inspired computational models. The research is carried out in the Spatial Intelligence Lab.
   homepage: http://schwering.staff.ifgi.de/
   bgImage: https://www.blb.nrw.de/Bilder/Bilder_BLB/Geowissenschaften_Muenster_Bilder/GEO-I.jpg
 
+- name: Michael Scholz
+  image: /images/team/hackathon-jury/m_scholz.JPG
+  position: 2
+  organisation: Deutsches Zentrum für Luft- und Raumfahrt
+  organisation-link: https://www.dlr.de/
+  description: Michael Scholz currently works at the Department of Data Management and Knowledge Discovery, German Aerospace Center (DLR). Michael does research in Geoinformatics (GIS). Their current project is 'Virtuelle Welt'.
+  homepage: https://www.dlr.de/
+  bgImage: https://de.ubergizmo.com/wp-content/uploads/2014/04/screenshot_23.jpg
 
