@@ -16,3 +16,22 @@
   homepage: https://www.dlr.de/
   bgImage: https://de.ubergizmo.com/wp-content/uploads/2014/04/screenshot_23.jpg
 
+- name: Alexander Sommer
+  image: /images/team/hackathon-jury/alexander-sommer.jpg
+  position: 3
+  organisation: items GmbH
+  organisation-link: http://www.itemsnet.de/home/service/
+  description: 
+  homepage: http://www.itemsnet.de/home/service/
+  bgImage:  /images/sponsors/items_bg.png
+
+- name: Klaus Drerup
+  image: /images/team/hackathon-jury/klaus_drerup.JPG
+  position: 4
+  organisation: Hansa Luftbild
+  organisation-link: https://www.hansaluftbild.de/home.html
+  description: 
+  homepage: https://www.hansaluftbild.de/aktuelles/aktuelles/2014-03-03-spezialist-fuer-geodaten.html
+  bgImage:  /images/team/hackathon-jury/hansa_luftbild_bg.jpg
+  
+
