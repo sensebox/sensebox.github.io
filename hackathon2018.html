@@ -145,12 +145,14 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
   {% if firstLastInRow == 'first' %}
   <div class="container">  
   <div class="row">
+      <div class="centerjury">
   {% endif %}
+
 
     <div class="col-md-6">
 
       <div class="card" style="cursor: pointer;" data-toggle="collapse" data-target="#desc_{{ jurymember.position }}">
-          <canvas class="header-bg" width="250" id="header-blur" style="background-image: url({{ jurymember.bgImage }});"></canvas>
+          <canvas class="price-header-bg" width="250" id="header-blur" style="background-image: url({{ jurymember.bgImage }});"></canvas>
           <div class="avatar">
               <img src="{{ site.baseurl | append: jurymember.image }}" alt="{{ jurymember.name }} - Foto"/>
           </div>
@@ -297,6 +299,11 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
                   <img src="{{ site.baseurl | append: '/images/sponsors/items_LOGO.jpg'}}" alt="Items">
                 </a>
               </li>
+              <li>
+                  <a href="http://www.watterott.com/" target="_blank">
+                    <img src="{{ site.baseurl | append: '/images/sponsors/watterott.png'}}" alt="Watterott">
+                  </a>
+                </li>
           </ul>
     </div>
   </div>
