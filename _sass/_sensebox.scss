@@ -1232,9 +1232,8 @@ $carousel-height: 450px;
 }
 
 .collapse.in, .collapsing {
-    background-color: #ffffff;
-    //box-shadow: 0 0 30px 6px rgba(34, 34, 34, 0.25)!important
-
+  background-color: #272727;
+  box-shadow: 0 0 30px 6px rgba(34, 34, 34, 0.25); 
 }
 
 .carousel-caption {
@@ -1480,4 +1479,13 @@ $carousel-height: 450px;
   padding-top: 2em;
   padding-bottom: 2em;
   text-align: center;
+}
+
+
+
+/* HACKATHON */
+
+.card .collapse.in, .card .collapsing {
+  box-shadow: none;
+  background-color: #ffffff;
 }
