@@ -37,13 +37,13 @@
 </div>
 
 <script>
-var hackStart = new Date("2018-08-26T14:00:00Z").getTime();
+var hackEnd = new Date("2018-08-28T12:30:00Z").getTime();
 
 var timeUntilStr = "";
 var timeUntilElem = document.getElementById("hack-countdown");
 
 var updateTimeUntilStr = function updateTimeUntilStr() {
-  var diff = hackStart - new Date().getTime(); // difference in ms
+  var diff = hackEnd - new Date().getTime(); // difference in ms
   timeUntilStr = "Noch ";
 
   var days = (diff / 86400000).toFixed(0);
