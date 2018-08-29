@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ""Sensebox Hackathon" für Jugendliche - Lichtverschmutzung im Weltraum auf der Spur"
+title:  "Sensebox Hackathon für Jugendliche - Lichtverschmutzung im Weltraum auf der Spur"
 date:   2018-08-29 
 author: Gina
 thumbnail: /images/press/wn.jpeg
