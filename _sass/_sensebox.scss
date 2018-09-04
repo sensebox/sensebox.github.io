@@ -1526,3 +1526,17 @@ $carousel-height: 450px;
     display: none;
   }
 }
+
+.blog-preview {
+  display: flex;
+  flex-wrap: wrap;
+  .blog-preview-item {
+    flex-basis: 0;
+    flex-grow: 1;
+    min-width: 300px;
+    padding-bottom: 1.5em;
+    .thumbnail {
+      height: 100%;
+    }
+  }
+}
