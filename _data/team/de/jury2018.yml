@@ -1,8 +1,45 @@
 - name: Prof. Dr. Angela Schwering
   image: /images/team/hackathon-jury/schwering.jpg
-  position: 2
+  position: 1
   organisation: Institut für Geoinformatik, Universität Münster
   organisation-link: http://www.uni-muenster.de/Geoinformatics/
   description: Since April 2009, Angela is a professor at the Institute for Geoinformatics, University of Muenster, Germany. Her research deals with intelligent representation and reasoning on spatial information. She investigates human strategies to organize and process spatial knowledge about environments and aims to learn from these to enhance the usability of spatial information with cognitively inspired computational models. The research is carried out in the Spatial Intelligence Lab.
   homepage: http://schwering.staff.ifgi.de/
   bgImage: https://www.blb.nrw.de/Bilder/Bilder_BLB/Geowissenschaften_Muenster_Bilder/GEO-I.jpg
+
+- name: Michael Scholz
+  image: /images/team/hackathon-jury/m_scholz.JPG
+  position: 2
+  organisation: Deutsches Zentrum für Luft- und Raumfahrt
+  organisation-link: https://www.dlr.de/
+  description: Michael Scholz currently works at the Department of Data Management and Knowledge Discovery, German Aerospace Center (DLR). Michael does research in Geoinformatics (GIS). Their current project is 'Virtuelle Welt'.
+  homepage: https://www.dlr.de/
+  bgImage: https://de.ubergizmo.com/wp-content/uploads/2014/04/screenshot_23.jpg
+
+- name: Alexander Sommer
+  image: /images/team/hackathon-jury/alexander-sommer.jpg
+  position: 3
+  organisation: items GmbH
+  organisation-link: http://www.itemsnet.de/home/service/
+  description: 
+  homepage: http://www.itemsnet.de/home/service/
+  bgImage:  /images/sponsors/items_bg.png
+
+- name: Klaus Drerup
+  image: /images/team/hackathon-jury/klaus_drerup.jpg
+  position: 4
+  organisation: Hansa Luftbild
+  organisation-link: https://www.hansaluftbild.de/home.html
+  description: 
+  homepage: https://www.hansaluftbild.de/aktuelles/aktuelles/2014-03-03-spezialist-fuer-geodaten.html
+  bgImage:  /images/team/hackathon-jury/hansa_luftbild_bg.jpg
+  
+
+- name: Ina Thurn
+  image: /images/team/hackathon-jury/InaThurn.jpeg
+  position: 5
+  organisation: KiMM e.V.
+  organisation-link: http://www.kimm-muenster.de/
+  description: Dr. Ina Thurn ist Vorstandsmitglied bei KiMM e.V. Sie hat Biologie und Biochemie studiert und ist in der Umweltforschung für die Volkswagen AG tätig.
+  homepage: http://www.kimm-muenster.de/
+  bgImage:  /images/team/hackathon-jury/Kimm_Logo.png
