@@ -92,7 +92,7 @@
 
       <hr />
       <h1 style="text-align: center;">{{ t.upcoming_events }}</h1>
-      <div class="row">
+      <div class="row events-row">
         {% assign events = site.events | sort: 'ending-date' %}
         {% for event in events %}
           {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
