@@ -14,3 +14,5 @@ commenthint: "Falls Sie Verbesserungspotential oder Fehler in der Dokumentation 
 
 old-sensebox: "senseBox mit Arduino/Genuino Uno"
 new-sensebox: "senseBox mit senseBox MCU"
+osem: "openSenseMap"
+blockly: "Blockly"

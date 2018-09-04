@@ -13,21 +13,22 @@
     <div class="row" style="padding-top: 2em;">
  
                   <div class="col-md-4 book-nav-item">
-         <a   role="button" href="https://blockly.sensebox.de/ardublockly/?lang={{page.lang}}&board=sensebox-mcu" target="_blank">
+         <a   role="button" >
           <img src="{{ site.baseurl | append: '/images/mcu_one_top.png' }}" style="max-width:70%; height: 150px;" /></a>
             <div>
              <div class = "mid">
-               <h3 style="padding-bottom: 0;" class = "text">Blockly für senseBox MCU</h3>
+              <a class="btn" href="https://blockly.sensebox.de/ardublockly?lang={{page.lang}}&board=sensebox-mcu" target="_blank" role="button">{{t.links}}</a>
+
            </div>
         </div>
       </div> 
 
-                        <div class="col-md-4 book-nav-item">
-         <a   role="button" href="https://sensebox.de/blockly" target="_blank">
+              <div class="col-md-4 book-nav-item">
+         <a   role="button">
           <img src="{{ site.baseurl | append: '/images/Genuino.png' }}" style="max-width:70%; height: 150px;" /></a>
             <div>
              <div class = "mid">
-               <h3 style="padding-bottom: 0;" class = "text">Blockly für Arduino/Genuino UNO</h3>
+                <a class="btn" href="https://sensebox.de/blockly" target="_blank" role="button">{{t.link}}</a>
            </div>
         </div>
       </div> 
@@ -35,18 +36,18 @@
 
 
                         <div class="col-md-4 book-nav-item">
-         <a   role="button" href="//sensebox.github.io/books-v2/osem/" target="_blank">
-          <img src="{{ site.baseurl | append: '/images/block.png' }}" style="max-width:70%; height: 150px;" /></a>
+         <a   role="button" >
+            <img src="{{ site.baseurl | append: '/images/block.png' }}" style="max-width:70%; height: 150px;" /></a>
             <div>
              <div class = "mid">
-               <h3 style="padding-bottom: 0;" class = "text">Dokumentation für Blockly</h3>
+                <a class="btn" href="https://sensebox.github.io/books-v2/blockly/"target="_blank" role="button">{{t.linkd}}</a>
            </div>
         </div>
       </div> 
+      
   </div>
-
  <p>&nbsp;</p>    
    
 
-<p style="text-align:center"><a href="https://sensebox.de/blockly" target="_blank"><img class="responsive-img" src="{{ site.baseurl | append: '/images/senseBox_blockly.gif'}}" alt="Blockly"></a></p>
+<p style="text-align:center"><img class="responsive-img" src="{{ site.baseurl | append: '/images/senseBox_blockly.gif'}}" alt="Blockly"></a></p>
 
