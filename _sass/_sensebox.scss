@@ -1146,6 +1146,21 @@ $carousel-height: 450px;
   }
 }
 
+/* STARTPAGE EVENT */
+
+.events-row {
+  display: flex;
+  flex-wrap: wrap;
+
+  .event-item {
+    flex-grow: 1;
+  }
+
+  .thumbnail {
+    height: 100%;
+  }
+}
+
 
 .badges {
     text-align: center;
@@ -1356,23 +1371,23 @@ $carousel-height: 450px;
   margin: 20px;
 }
 
-//books
-#box-1 {
-  display: none;
-}
+// //books
+// #box-1 {
+//   display: none;
+// }
 
-#box-2{
-  display: none;
-}
+// #box-2{
+//   display: none;
+// }
 
-#v{
-  display: block; 
+// #v{
+//   display: block; 
 
-}
+// }
 
-#vv {
-  display: block;
-}
+// #vv {
+//   display: block;
+// }
 
 .book-nav-item {
   text-align: center;
@@ -1389,6 +1404,10 @@ $carousel-height: 450px;
 
 /* Product page CSS
 -------------------------------------------------- */
+
+// .buy-btn {
+//   background: #e39b00;
+// }
 
 .home-span {
   // font-weight: bold;
@@ -1488,4 +1507,36 @@ $carousel-height: 450px;
 .card .collapse.in, .card .collapsing {
   box-shadow: none;
   background-color: #ffffff;
+}
+
+.buy-btn-contain {
+  text-align: center;
+  padding-top: 1.5em;
+  .buy-btn {
+    background: #e39b00;
+  }
+}
+.buy-btn-start {
+  position: absolute;
+  bottom: 30px;
+  right: 10%;
+  background: #e39b00;
+
+  @media screen and(max-width: 500px){
+    display: none;
+  }
+}
+
+.blog-preview {
+  display: flex;
+  flex-wrap: wrap;
+  .blog-preview-item {
+    flex-basis: 0;
+    flex-grow: 1;
+    min-width: 300px;
+    padding-bottom: 1.5em;
+    .thumbnail {
+      height: 100%;
+    }
+  }
 }

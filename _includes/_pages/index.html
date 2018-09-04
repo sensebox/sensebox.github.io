@@ -37,21 +37,19 @@
       <hr />
 
       <h1 style="text-align: center;">{{ t.news }}</h1>
-      <div class="row">
+      <div class="row blog-preview">
       {% assign posts = site.posts | sort: 'date' | reverse %}
       {% for post in posts %}
         {% if forloop.index0 == 2%}
           {% break %}
         {% else %}
-          <a href="{{ site.baseurl | append: post.url }}">
-            <div class="col-sm-6 col-md-6 col-lg-6">
-              <div class="thumbnail">
-                <img src="{{ site.baseurl | append: post.thumbnail }}" alt="{{ post.title }} - Logo">
-                <div class="caption">
-                  <h3>{{ post.title }}</h3>
-                  <p>{{ post.abstract }}</p>
-                  <p><button href="#" class="btn" role="button">{{ t.read }}</button>
-                </div>
+          <a class="col-sm-6 col-md-6 col-lg-6 blog-preview-item" href="{{ site.baseurl | append: post.url }}">
+            <div class="thumbnail">
+              <img src="{{ site.baseurl | append: post.thumbnail }}" alt="{{ post.title }} - Logo">
+              <div class="caption">
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.abstract }}</p>
+                <p><button href="#" class="btn" role="button">{{ t.read }}</button>
               </div>
             </div>
           </a>
@@ -92,7 +90,7 @@
 
       <hr />
       <h1 style="text-align: center;">{{ t.upcoming_events }}</h1>
-      <div class="row">
+      <div class="row events-row">
         {% assign events = site.events | sort: 'ending-date' %}
         {% for event in events %}
           {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
