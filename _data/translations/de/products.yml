@@ -2,16 +2,16 @@ products: "Produkte"
 
 header-introduction: 'Von der senseBox gibt es zwei Varianten: die <span class="home-span">senseBox:home</span> und die <span class="edu-span">senseBox:edu</span>'
 
-to-senseBox-overwiew: "zur senseBox Übersicht &raquo;"
+to-senseBox-overwiew: "senseBox.kaufen"
 
 introduction: '<p>Von der senseBox gibt es zwei Varianten: die <span class="home-span">senseBox:home</span> und die <span class="edu-span">senseBox:edu</span>.</p>
 
     <p>Die <span class="home-span">senseBox:home</span> ist eine modulare Umweltmessstation zum selber bauen. Je nach Interesse oder Forschungsfrage können sich BürgerInnen eine Messstation mit verschiedenen Sensoren zusammenstellen und über LAN, WLAN oder LoRa mit dem Internet verbinden. Eine einfache Anleitung ermöglicht den Aufbau und die Registrierung auf der openSenseMap. Danach liefert sie kontinuierlich ortsbezogene (mobile oder stationäre) Messungen zu Temperatur, Luftfeuchte, Luftdruck, Beleuchtungsstärke, UV-Strahlung oder Feinstaubbelastung.</p>
 
-    <p>Mit der <span class="edu-span">senseBox:edu</span> kann man Messwerkzeuge selber bauen und programmieren (lernen). An vielen Schulen und Bildungseinrichtungen ist die senseBox bereits im Einsatz. Dank der Vielzahl von möglichen Projekten und Experimenten eignet sie sich hervorragend für den Einsatz im gesamten MINT-Bereich. So können anhand relevanter Themenstellungen die Grundlagen des Programmierens erlernt oder schnell und einfach Messkampagnen durchgeführt werden.</p>    
+    <p>Die <span class="edu-span">senseBox:edu</span> ist unser Elektronikbausatz für Schulen, Universitäten und Bildungseinrichtungen, bei dem das Experimentieren und Programmieren unter Einsatz von Sensoren im Vordergrund steht. Neben einer programmierbaren Open-Source Mikrocontrollereinheit (MCU), die auf der Arduino Plattform basiert, werden Sensoren, Bauteile zur Übertragung von Daten ins Internet und weiteres Zubehör mitgeliefert. Mit der senseBox:edu können Grundlagen der Informatik an realen Problemstellungen aus dem gesamten MINT-Bereich erlernt werden. Eigene Messgeräte für verschiedene Zwecke können mit wenig Aufwand gebaut und programmiert werden. Sensoren für die Messung von verschiedenen Umweltphänomenen wie Temperatur, Luftfeuchtigkeit, Luftdruck, Beleuchtungsstärke, UV-Strahlung, Lautstärke, Distanzen (per Ultraschall- und Lichtsensor) sowie Neigung und Ausrichtung ermöglichen ein kreatives Arbeiten an einer Vielzahl von Fragestellungen. Gemessene Werte können über ein WiFi-Modul auf unsere Webplattform für offene Sensordaten, die openSenseMap, übertragen werden.</p>    
 
     <p>Bis Anfang 2018 basierte die senseBox auf einem Arduino/Genuino UNO Microcontroller, diese Version wird nicht mehr verkauft aber weiterhin unterstützt. Seit Mai 2018 basiert die senseBox auf der senseBox MCU und ist durch weitere Sensoren und Erweiterungen ausgestattet. Mehr dazu im <a href="https://sensebox.de/blog/2018-03-06-senseBox_MCU">Blog-Post</a>.</p>
-    <p>&nbsp;</p>'
+<p>&nbsp;</p>'
 
 sensors:
   header: "Sensoren"

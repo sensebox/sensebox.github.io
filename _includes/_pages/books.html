@@ -62,7 +62,6 @@
 {% assign t = site.data.translations.[page.lang].books %}
 
 
-<link rel="stylesheet" href="/css/books.css">
 <div>
           
   <p>
@@ -71,9 +70,9 @@
   <br>
   <div class="row" style="padding-top: 2em;">
     <div class="col-md-4 book-nav-item">
-      <a   id = "v"  role="button" title = "klicke um Version zu wählen" >  
+      <div   id = "v"  role="button" title = "klicke um Version zu wählen" >  
         <img src="{{ site.baseurl | append: '/images/Genuino.png' }}" style="max-width:70%; height: 150px;" />
-       </a>
+      </div>
 
       <div class = "middle">
         <h3  style="padding-bottom: 0;" class = "text">{{t.old-sensebox}}</h3>
@@ -85,9 +84,9 @@
     </div> 
             
      <div class="col-md-4 book-nav-item">
-      <a  id = "vv" role="button" title = "klicke um Version zu wählen">
+      <div  id = "vv" role="button" title = "klicke um Version zu wählen">
         <img src="{{ site.baseurl | append: '/images/mcu_one_top.png' }}"  style="max-width:60%; height: 150px;" />
-       </a>
+      </div>
 
             <div class = "middle">
           <h3 style="padding-bottom: 0;" class = "text">{{t.new-sensebox}}</h3>
@@ -109,25 +108,3 @@
       </div> 
           
   </div>
-       
-<script> 
-
-
-$(document).ready(function(){
-    $("#v").click(function(){
-        $("#box-1").toggle();
-        $("#box-2").hide();
-
-     
-    });
-
-       $("#vv").click(function(){
-        $("#box-2").toggle();
-        $("#box-1").hide();
-
-    });
-
-
-  });      
-
-</script>
