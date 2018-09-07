@@ -38,7 +38,23 @@ Nachdem alle Zelte vor dem Ifgi-Gebäude aufgebaut waren, konnten die Teilnehmen
 
 Nach einer kleinen Begrüßung wurden die Teams gebildet. Dazu stellten einige Gruppen ihre vorab überlegten Projektideen vor, andere Kinder und Jugendliche konnten sich anschließend nach Interessen und Vorlieben selbst zuordnen. Es ergaben sich folgende neun Teams:
 
-Teams ergänzen!
+Team JDS: Die drei Brüder wollten mit der senseBox den Feinstaubgehalt in der Höhe messen.
+
+Dream4Green: Ihre Grundidee war es, eigene Umweltdaten ins Web in Echtzeit zu übertragen. Dazu erstellten sie ihre eigene Seite: Dream4Green.de
+
+KeinePanik42: Sie wollten wissen, welche Begebenheiten in der Stratosphäre herrschen und dazu möglichst viele Daten messen. Daher sollte die senseBox mit allen verfügbaren Sensoren ausgestattet und mit einer Kamera mit einem Raspberry Pi erweitert werden.
+
+Arcturus: Die gemischte Gruppe bestehend aus drei 17-Jährigen wollte selbstständig Programmierskills erlernen. Außerdem erstellten sie ein 3D-Modell ihres Messgerätes (Sketchup). Aus zeitlichen Gründen konnte es leider nicht gedruckt werden.
+
+Siata (Science is always the answer): Die fünfköpfige Jungsgruppe wollte ursprünglich eine Ozonmessung durchführen. Da wir keinen passenden Sensor zur Verfügung stellen konnten, änderten sie ihren Plan und wollten ein Universal-Messgerät bauen.
+
+openSpace: Ihr Interesse bestand darin, Daten für die Raumfahrt zu sammeln. Die Messwerte sollten direkt an einen eigenen Server gesendet werden. 
+
+DPI Dülmen: Sie wollten ein modulares Messgerät bauen, um einen einfachen Austausch von Sensoren möglichst energieeffizient zu ermöglichen.
+
+Team Robo: Ihnen ging es darum, den Feinstaubgehalt in der Stratosphäre zu erfassen und die Messwerte direkt an die openSenseMap zu senden.
+
+SET (Sonde zum Erforschen von Trockenheit): Ein Raspberry Pi mit einer zum Boden gerichteten schießt jede Minute Fotos von der Erdoberfläche, die vom System nach Farbe analysiert und klassifiziert werden. Brauntöne stehen für Trockenheit, Grüntöne für nicht-trocken. Als Ergänzung war ein Infrarot-Filter zu Erkennung von Pflanzen geplant, das konnte aus zeitlichen Gründen aber leider nicht realisiert werden.
 
 Nach einer kleinen Kennenlernphase starteten Kinder und Jugendlichen hochmotiviert damit, Technologien aus dem Bereich der Photonik wie die senseBox oder Raspberry Pi auszuprobieren. Abends war der Hunger dann groß! Zum Glück spielte das Wetter mit und wir konnten draußen grillen.
 
@@ -55,7 +71,7 @@ Trotz windiger Nacht im Zelt waren alle morgens gut gelaunt! Nach dem Frühstüc
 
 Das große Finale
 ============
-Am Finaltag gaben alle Teams nochmal richtig Gas! Nach einer letzten Hacking-Session schickten sie ihre Messgeräte nacheinander in die Luft, um zu schauen, ob ihre Geräte nicht zu schwer für den Ballon sind und auch in der Höhe zuverlässig Daten messen. Besonders cool: Das Fernsehteam von der WDR Lokalzeit Münsterland kam vorbei, um den Testflug zu filmen! Danach wurde es ernst: Jede Gruppe stellte ihr Projekt einer fünfköpfigen Jury vor. Alle Jurymitglieder waren sich einig: Das Gewinnerteam ist SET mit ihrer Sonde zum Erforschen von Trockenheit. Sie wird am 13.10. vor dem Schloss in Münster in die Stratosphäre fliegen!
+Am Finaltag gaben alle Teams nochmal richtig Gas! Nach einer letzten Hacking-Session schickten sie ihre Messgeräte nacheinander in die Luft, um zu schauen, ob ihre Geräte nicht zu schwer für den Ballon sind und auch in der Höhe zuverlässig Daten messen. Besonders cool: Das Fernsehteam von der WDR Lokalzeit Münsterland kam vorbei, um den Testflug zu filmen! Danach wurde es ernst: Jede Gruppe stellte ihr Projekt einer fünfköpfigen Jury vor. Alle Jurymitglieder waren sich einig: Das Gewinnerteam ist SET mit ihrer Sonde zum Erforschen von Trockenheit. Sie wird am 13.10. vor dem Schloss in Münster in die Stratosphäre fliegen! 
 
 {% include image.html image=page.image9 %} 
 {% include image.html image=page.image10 %} 
@@ -69,5 +85,5 @@ Wir möchten uns bei allen Teilnehmenden für ihr großes Engagement und ihre to
 
 Wir freuen uns schon auf den Stratosphärenflug! 
 
-Save the Date: 13.10., Uhrzeit ?, Schloss Münster
+Save the Date: Samstag, der 13.10., um 10 Uhr vor dem Schloss Münster
 
