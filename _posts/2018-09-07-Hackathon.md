@@ -5,20 +5,20 @@ date: 2018-09-07
 author: Gina
 abstract: "Vom 26. bis 28. August 2018 veranstalten wir eine Neuauflage des senseBox Hackathons. Dieses Jahr lautete das Thema Space."
 thumbnail: /images/blog_images/Banner.JPG
-image1: /images/blog_images/Hackshirt.JPG
-image2: /images/blog_images/Zelt.JPG
-image3: /images/blog_images/Sandkiste.jpg
-image4: /images/blog_images/Gruppenarbeit1.JPG
-image5: /images/blog_images/Grillen.JPG
-image6: /images/blog_images/Paas_Vortrag.jpg
-image7: /images/blog_images/Gruppenarbeit2.JPG
-image8: /images/blog_images/Pizza.JPG
-image9: /images/blog_images/Testflug.jpg
-image10: /images/blog_images/Ballon.JPG
-image11: /images/blog_images/WDR-Kamerateam.JPG
-image12: /images/blog_images/Jury.JPG
-image13: /images/blog_images/Gewinnerteam.JPG
-image14: /images/blog_images/Abschluss.JPG
+image1: /images/blog_images/hack_2018_blogpost/Hackshirt.JPG
+image2: /images/blog_images/hack_2018_blogpost/Zelt.JPG
+image3: /images/blog_images/hack_2018_blogpost/Sandkiste.jpg
+image4: /images/blog_images/hack_2018_blogpost/Gruppenarbeit1.JPG
+image5: /images/blog_images/hack_2018_blogpost/Grillen.JPG
+image6: /images/blog_images/hack_2018_blogpost/Paas_Vortrag.jpg
+image7: /images/blog_images/hack_2018_blogpost/Gruppenarbeit2.JPG
+image8: /images/blog_images/hack_2018_blogpost/Pizza.JPG
+image9: /images/blog_images/hack_2018_blogpost/Testflug.jpg
+image10: /images/blog_images/hack_2018_blogpost/Ballon.JPG
+image11: /images/blog_images/hack_2018_blogpost/WDR-Kamerateam.JPG
+image12: /images/blog_images/hack_2018_blogpost/Jury.JPG
+image13: /images/blog_images/hack_2018_blogpost/Gewinnerteam.JPG
+image14: /images/blog_images/hack_2018_blogpost/Abschluss.JPG
 
 lang: de
 ---
