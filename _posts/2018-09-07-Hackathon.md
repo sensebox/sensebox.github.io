@@ -46,7 +46,7 @@ Nach einer kleinen Begrüßung wurden die Teams gebildet. Dazu stellten einige G
 - **Arcturus** Die gemischte Gruppe bestehend aus drei 17-Jährigen wollte selbstständig Programmierskills erlernen. Außerdem erstellten sie ein 3D-Modell ihres Messgerätes (Sketchup). Aus zeitlichen Gründen konnte es leider nicht gedruckt werden.
 - **Siata** (Science is always the answer) Die fünfköpfige Jungsgruppe wollte ursprünglich eine Ozonmessung durchführen. Da wir keinen passenden Sensor zur Verfügung stellen konnten, änderten sie ihren Plan und wollten ein Universal-Messgerät bauen.
 - **openSpace** Ihr Interesse bestand darin, Daten für die Raumfahrt zu sammeln. Die Messwerte sollten direkt an einen eigenen Server gesendet werden. 
-- DPI Dülmen** Sie wollten ein modulares Messgerät bauen, um einen einfachen Austausch von Sensoren möglichst energieeffizient zu ermöglichen.
+- **DPI Dülmen** Sie wollten ein modulares Messgerät bauen, um einen einfachen Austausch von Sensoren möglichst energieeffizient zu ermöglichen.
 - **Team Robo** Ihnen ging es darum, den Feinstaubgehalt in der Stratosphäre zu erfassen und die Messwerte direkt an die openSenseMap zu senden.
 - **SET** (Sonde zum Erforschen von Trockenheit) Ein Raspberry Pi mit einer zum Boden gerichteten schießt jede Minute Fotos von der Erdoberfläche, die vom System nach Farbe analysiert und klassifiziert werden. Brauntöne stehen für Trockenheit, Grüntöne für nicht-trocken. Als Ergänzung war ein Infrarot-Filter zu Erkennung von Pflanzen geplant, das konnte aus zeitlichen Gründen aber leider nicht realisiert werden.
 
