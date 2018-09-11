@@ -38,23 +38,41 @@ Nachdem alle Zelte vor dem Ifgi-Gebäude aufgebaut waren, konnten die Teilnehmen
 
 Nach einer kleinen Begrüßung wurden die Teams gebildet. Dazu stellten einige Gruppen ihre vorab überlegten Projektideen vor, andere Kinder und Jugendliche konnten sich anschließend nach Interessen und Vorlieben selbst zuordnen. Es ergaben sich folgende neun Teams:
 
-Team JDS: Die drei Brüder wollten mit der senseBox den Feinstaubgehalt in der Höhe messen.
+### Team JDS
 
-Dream4Green: Ihre Grundidee war es, eigene Umweltdaten ins Web in Echtzeit zu übertragen. Dazu erstellten sie ihre eigene Seite: Dream4Green.de
+Die drei Brüder wollten mit der senseBox den Feinstaubgehalt in der Höhe messen.
 
-KeinePanik42: Sie wollten wissen, welche Begebenheiten in der Stratosphäre herrschen und dazu möglichst viele Daten messen. Daher sollte die senseBox mit allen verfügbaren Sensoren ausgestattet und mit einer Kamera mit einem Raspberry Pi erweitert werden.
+### Dream4Green
 
-Arcturus: Die gemischte Gruppe bestehend aus drei 17-Jährigen wollte selbstständig Programmierskills erlernen. Außerdem erstellten sie ein 3D-Modell ihres Messgerätes (Sketchup). Aus zeitlichen Gründen konnte es leider nicht gedruckt werden.
+Ihre Grundidee war es, eigene Umweltdaten ins Web in Echtzeit zu übertragen. Dazu erstellten sie ihre eigene Seite: [Dream4Green.de](https://nommis.uber.space)
 
-Siata (Science is always the answer): Die fünfköpfige Jungsgruppe wollte ursprünglich eine Ozonmessung durchführen. Da wir keinen passenden Sensor zur Verfügung stellen konnten, änderten sie ihren Plan und wollten ein Universal-Messgerät bauen.
+### KeinePanik42
 
-openSpace: Ihr Interesse bestand darin, Daten für die Raumfahrt zu sammeln. Die Messwerte sollten direkt an einen eigenen Server gesendet werden. 
+Sie wollten wissen, welche Begebenheiten in der Stratosphäre herrschen und dazu möglichst viele Daten messen. Daher sollte die senseBox mit allen verfügbaren Sensoren ausgestattet und mit einer Kamera mit einem Raspberry Pi erweitert werden.
 
-DPI Dülmen: Sie wollten ein modulares Messgerät bauen, um einen einfachen Austausch von Sensoren möglichst energieeffizient zu ermöglichen.
+### Arcturus
 
-Team Robo: Ihnen ging es darum, den Feinstaubgehalt in der Stratosphäre zu erfassen und die Messwerte direkt an die openSenseMap zu senden.
+Die gemischte Gruppe bestehend aus drei 17-Jährigen wollte selbstständig Programmierskills erlernen. Außerdem erstellten sie ein 3D-Modell ihres Messgerätes (Sketchup). Aus zeitlichen Gründen konnte es leider nicht gedruckt werden.
 
-SET (Sonde zum Erforschen von Trockenheit): Ein Raspberry Pi mit einer zum Boden gerichteten schießt jede Minute Fotos von der Erdoberfläche, die vom System nach Farbe analysiert und klassifiziert werden. Brauntöne stehen für Trockenheit, Grüntöne für nicht-trocken. Als Ergänzung war ein Infrarot-Filter zu Erkennung von Pflanzen geplant, das konnte aus zeitlichen Gründen aber leider nicht realisiert werden.
+### Siata
+
+(Science is always the answer) Die fünfköpfige Jungsgruppe wollte ursprünglich eine Ozonmessung durchführen. Da wir keinen passenden Sensor zur Verfügung stellen konnten, änderten sie ihren Plan und wollten ein Universal-Messgerät bauen.
+
+### openSpace
+
+Ihr Interesse bestand darin, Daten für die Raumfahrt zu sammeln. Die Messwerte sollten direkt an einen eigenen Server gesendet werden. 
+
+### DPI Dülmen
+
+Sie wollten ein modulares Messgerät bauen, um einen einfachen Austausch von Sensoren möglichst energieeffizient zu ermöglichen.
+
+### Team Robo
+
+Ihnen ging es darum, den Feinstaubgehalt in der Stratosphäre zu erfassen und die Messwerte direkt an die openSenseMap zu senden.
+
+### SET
+
+(Sonde zum Erforschen von Trockenheit) Ein Raspberry Pi mit einer zum Boden gerichteten schießt jede Minute Fotos von der Erdoberfläche, die vom System nach Farbe analysiert und klassifiziert werden. Brauntöne stehen für Trockenheit, Grüntöne für nicht-trocken. Als Ergänzung war ein Infrarot-Filter zu Erkennung von Pflanzen geplant, das konnte aus zeitlichen Gründen aber leider nicht realisiert werden.
 
 Nach einer kleinen Kennenlernphase starteten Kinder und Jugendlichen hochmotiviert damit, Technologien aus dem Bereich der Photonik wie die senseBox oder Raspberry Pi auszuprobieren. Abends war der Hunger dann groß! Zum Glück spielte das Wetter mit und wir konnten draußen grillen.
 
