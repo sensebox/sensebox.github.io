@@ -4,7 +4,7 @@ title: "Eindrücke vom senseBox-Hackathon 2018"
 date: 2018-09-07
 author: Gina
 abstract: "Vom 26. bis 28. August 2018 veranstalten wir eine Neuauflage des senseBox Hackathons. Dieses Jahr lautete das Thema Space."
-thumbnail: /images/blog_images/Banner.JPG
+thumbnail: /images/blog_images/hack_2018_blogpost/Banner.JPG
 image1: /images/blog_images/hack_2018_blogpost/Hackshirt.JPG
 image2: /images/blog_images/hack_2018_blogpost/Zelt.JPG
 image3: /images/blog_images/hack_2018_blogpost/Sandkiste.jpg
