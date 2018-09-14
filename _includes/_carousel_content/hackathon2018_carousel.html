@@ -37,10 +37,7 @@
 </div>
 
 <script>
-// original hackStart
-//var hackStart = new Date("2018-08-26T14:00:00Z").getTime();
-// start of ballon
-var hackStart = new Date("2018-10-13T08:00:00Z").getTime();
+var hackStart = new Date("2018-08-26T14:00:00Z").getTime();
 
 var timeUntilStr = "";
 var timeUntilElem = document.getElementById("hack-countdown");
@@ -66,7 +63,7 @@ var updateTimeUntilStr = function updateTimeUntilStr() {
 
   var seconds = (diff / 1000).toFixed(0);
   timeUntilStr += seconds;
-  timeUntilStr += " Sekunde" + (seconds === "1" ? "" : "n") + " bis zum Stratosphärenflug!";
+  timeUntilStr += " Sekunde" + (seconds === "1" ? "" : "n") + "!";
 
   timeUntilElem.textContent = timeUntilStr;
 }
