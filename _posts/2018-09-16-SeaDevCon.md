@@ -16,7 +16,7 @@ lang: de
 
 Der Maritime Hackathon 2018
 ============
-„Es wird Zeit umzudenken!“ lautete das Motto der SEADEVCON 2018, veranstaltet von der HSBA (Hamburg School of Business Administration) vom 06. bis 08. September. Zwei Tage lang wurde über die Themen Nachhaltigkeit, Verantwortung, Meeresschutz und Menschenrechte in der Schifffahrt diskutiert. Um das Thema Umweltschutz ging es auch beim zweiten Maritime Hackathon. Gemeinsam arbeiteten wir mit Hackern, Designern, Datenwissenschaftlern, NGO´s, Seeexperten und AIS (Association for Information Systems) Mitgliedern daran, Ideen zu entwickeln und zu programmieren. Eine Jury von Experten bewertete die besten Ideen und Umsetzungen. Weitere Infos zu der Veranstaltung findet Ihr hier: [seadevcon](http://seadevcon.com/maritime-hackathon/)
+„Es wird Zeit umzudenken!“ lautete das Motto der SEADEVCON 2018, veranstaltet von der HSBA (Hamburg School of Business Administration) vom 06. bis 08. September. Zwei Tage lang wurde über die Themen Nachhaltigkeit, Verantwortung, Meeresschutz und Menschenrechte in der Schifffahrt diskutiert. Um das Thema Umweltschutz ging es auch beim zweiten Maritime Hackathon. Gemeinsam arbeiteten wir mit Hackern, Designern, Datenwissenschaftlern, NGO´s und Seeexperten daran, Ideen zu entwickeln und zu programmieren. Eine Jury von Experten bewertete die besten Ideen und Umsetzungen. Weitere Infos zu der Veranstaltung findet Ihr hier: [seadevcon](http://seadevcon.com/maritime-hackathon/)
 
 {% include image.html image=page.image1 %}
 
