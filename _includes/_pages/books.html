@@ -69,34 +69,37 @@
     {{ t.description }}
   </p>
   <br>
-  <div class="row" style="padding-top: 2em;">
+  <div class="book-row row" style="padding-top: 2em;">
 
          <div class="col-md-3 book-nav-item">
       <a  id = "vv" role="button" title = "klicke um Version zu wählen">
-        <img src="{{ site.baseurl | append: '/images/mcu_one_top.png' }}"  style="max-width:60%; height: 150px;" />
+        <img class="ut-select-img" src="{{ site.baseurl | append: '/images/mcu_one_top.png' }}"/>
        </a>
-
+       <div>
             <div class = "middle">
           <h3 style="padding-bottom: 0;" class = "text">{{t.new-sensebox}}</h3>
           </div>
-           <a class="btn"  href="//sensebox.github.io/books-v2/home/"  target="_blank" role="button">home v2 &raquo;</a>
-           <a class="btn"  href="//sensebox.github.io/books-v2/edu/"  target="_blank" role="button">edu v2  &raquo;</a>
+           <a class="btn"  href="//sensebox.github.io/books-v2/home/"  target="_blank" role="button">home &raquo;</a>
+           <a class="btn"  href="//sensebox.github.io/books-v2/edu/"  target="_blank" role="button">edu &raquo;</a>
+        </div>    
       </div> 
 
     <div class="col-md-3 book-nav-item">
       <a   id = "v"  role="button" title = "klicke um Version zu wählen" >  
-        <img src="{{ site.baseurl | append: '/images/Genuino.png' }}" style="max-width:70%; height: 150px;" />
+        <img class="ut-select-img" src="{{ site.baseurl | append: '/images/Genuino.png' }}"/>
        </a>
-
-      <div class = "middle">
-        <h3  style="padding-bottom: 0;" class = "text">{{t.old-sensebox}}</h3>
-      </div>
-        <a class="btn" href="//home.books.sensebox.de/{{ page.lang }}" target="_blank" role="button">home v1 &raquo;</a>
-        <a class="btn" href="//edu.books.sensebox.de/{{ page.lang }}" target="_blank" role="button">edu v1  &raquo;</a>
+       <div>
+         <div class = "middle">
+           <h3  style="padding-bottom: 0;" class = "text">{{t.old-sensebox}}</h3>
+         </div>
+           <a class="btn" href="//home.books.sensebox.de/{{ page.lang }}" target="_blank" role="button">home &raquo;</a>
+           <a class="btn" href="//edu.books.sensebox.de/{{ page.lang }}" target="_blank" role="button">edu &raquo;</a>
+       </div>
     </div> 
-                  <div class="col-md-3 book-nav-item">
+    
+    <div class="col-md-3 book-nav-item">
          <a  id = "vvv" role="button" href="//sensebox.github.io/books-v2/osem/" target="_blank">
-          <img src="{{ site.baseurl | append: '/images/blockly_de.png' }}" style="max-width:70%; height: 150px;" /></a>
+          <img class="ut-select-img" src="{{ site.baseurl | append: '/images/blockly_de.png' }}" /></a>
             <div>
              <div class = "mid">
                <h3 style="padding-bottom: 0;" class = "text">{{t.blockly}}</h3>
@@ -110,14 +113,14 @@
              
       <div class="col-md-3 book-nav-item">
          <a  id = "vvv" >
-          <img src="{{ site.baseurl | append: '/images/main/Microsoft Surface Book.png' }}" style="max-width:70%; height: 150px;" /></a>
+          <img class="ut-select-img" src="{{ site.baseurl | append: '/images/main/Microsoft Surface Book.png' }}" /></a>
             <div>
              <div class = "mid">
                <h3 style="padding-bottom: 0;" class = "text">{{t.osem}}</h3>
                <br>
            </div>
-           <a class="btn" href="//osem.books.sensebox.de/{{ page.lang }}" target="_blank" role="button">osem v1 &raquo;</a>
-           <a class="btn" href="//sensebox.github.io/books-v2/osem/" target="_blank" role="button">osem v2  &raquo;</a>
+           <a class="btn" href="//osem.books.sensebox.de/{{ page.lang }}" target="_blank" role="button">v1 &raquo;</a>
+           <a class="btn" href="//sensebox.github.io/books-v2/osem/" target="_blank" role="button">v2  &raquo;</a>
 
         </div>
       </div> 
