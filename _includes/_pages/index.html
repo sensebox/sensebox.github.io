@@ -1,5 +1,10 @@
 {% assign t = site.data.translations.[page.lang].main %}
-
+{% assign taward = site.data.translations.[page.lang].awards %}
+{% if page.lang == 'de' %}
+  {% assign awardslist = site.awards_de | sort: 'weight' %}
+{% else %}
+  {% assign awardslist = site.awards_en | sort: 'weight' %}
+{% endif %}
     <div class="marketing">
 
       <!-- Three columns of text below the carousel -->
@@ -140,4 +145,32 @@
           </div>
         </div>
       </div>
+
+      <hr>
+      <h1 style="text-align: center">{{t.fundedBy}}</h1>
+      {% for award in awardslist %}
+      {% if award.title == 'BMBF Open Photonics' or award.title == 'Federal Ministry of Education and Research - Open Photonics' %}
+      <div class="posts">
+        <h2 style="clear:both">{{ award.title }}</h2>
+        <div class="row">
+          {% if award.thumbnail %}
+          <div class="col-sm-4">
+            <img class="award-pic" src="{{ site.baseurl | append: award.thumbnail }}" alt="{{ award.title }} - Logo" />
+          </div>
+
+          <div class="col-sm-8">
+            <div class="content press-text">
+              {{ award.content }}
+            </div>
+          </div>
+          {% else %}
+            <div class="content press-text">
+              {{ award.content }}
+            </div>
+          {% endif %}
+          </div>
+          <hr class="clear nomargin">
+        </div>
+      {% endif %}
+    {% endfor %}
     </div>
