@@ -108,8 +108,8 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
 </p>
 </p>
 <div style="text-align:center; padding: 50px;">
-<h2>Die Anmeldephase ist beendet! Vielen Dank für Eure Anmeldungen.</h2>
-<!--<h1 class="smallcaps"><a href="/hackathon_registration/">HIER ANMELDEN</a></h1>-->
+<!--<h2>Die Anmeldephase ist beendet! Vielen Dank für Eure Anmeldungen.</h2>-->
+<h1 class="smallcaps"><a href="/hackathon_registration/">HIER ANMELDEN</a></h1>
 </div>
 
 
@@ -145,14 +145,12 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
   {% if firstLastInRow == 'first' %}
   <div class="container">  
   <div class="row">
-      <div class="centerjury">
   {% endif %}
 
-
-    <div class="col-md-6">
+    <div class="col-md-3">
 
       <div class="card" style="cursor: pointer;" data-toggle="collapse" data-target="#desc_{{ jurymember.position }}">
-          <canvas class="price-header-bg" width="250" id="header-blur" style="background-image: url({{ jurymember.bgImage }});"></canvas>
+          <canvas class="header-bg" width="250" id="header-blur" style="background-image: url({{ jurymember.bgImage }});"></canvas>
           <div class="avatar">
               <img src="{{ site.baseurl | append: jurymember.image }}" alt="{{ jurymember.name }} - Foto"/>
           </div>
@@ -193,7 +191,7 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
 {% endfor %}
 
   </div>
-</div>
+
 
 <h3 class="smallcaps" id="preise">Preise</h3>
 <p>Zu gewinnen gibt es:</p>
@@ -249,14 +247,6 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
         </div>
       </div>
     </div>
-  <div class="col-lg-4 col-md-6 col-sm-6">
-      <div class="card">
-        <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/hackathon-impressions/Waterott_StarterKit.jpg'}});"></canvas>
-        <div class="price-text">
-          <h3><a href="https://www.watterott.com/de/Boards-Kits/Arduino/Sets">Wattuino Starter Kit</a></h3>
-        </div>
-      </div>
-    </div>
 
   <div class="col-lg-4 col-md-6 col-sm-6">
     <div class="card">
@@ -307,16 +297,6 @@ Neben den Coding-Sessions werden abends andere kleine Events wie zum Beispiel Ge
                   <img src="{{ site.baseurl | append: '/images/sponsors/items_LOGO.jpg'}}" alt="Items">
                 </a>
               </li>
-              <li>
-                  <a href="http://www.watterott.com/" target="_blank">
-                    <img src="{{ site.baseurl | append: '/images/sponsors/watterott.png'}}" alt="Watterott">
-                  </a>
-               </li>
-		   <a href="https://www.westfalen-ag.de/" target="_blank">
-                     <img src="{{ site.baseurl | append: '/images/sponsors/WestfalenLogo.png'}}" alt="Westfalen AG">
-                   </a>
-                 </li>
-                 <li>
           </ul>
     </div>
   </div>
