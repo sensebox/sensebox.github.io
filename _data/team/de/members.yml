@@ -33,11 +33,6 @@
   position: 7
   description: Matthias hat Bachelor of Science Geoinformatik an der Universität Münster studiert. Er ist zuständig für alle technischen Fragen bezüglich der eingesetzten Technologien und betreut die <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a> und <a href="https://github.com/sensebox/OpenSenseMap-API/wiki/API-Dokumentation" target="_blank">API</a>.
 
-- name: Felix Erdmann
-  image: /images/team/Erdmann.jpg
-  position: 11
-  description: "Felix ist Geoinformatik-Student am Institut für Geoinformatik. Als Schülerpraktikant hat er bereits 2011 mit einer ersten Version der senseBox gearbeitet. Seit Frühjahr 2016 ist wieder im Team dabei. #backtotheroots"
-
 - name: Gina Buchwald-Chassée
   image: /images/team/Buchwald.jpg
   position: 16

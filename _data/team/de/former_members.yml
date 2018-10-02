@@ -37,3 +37,8 @@
   image: /images/team/Pape.jpg
   position: 13
   description: Gerald kümmert sich zusammen mit Matthias um alles was mit der <a href="http://www.opensensemap.org" target="_blank">openSenseMap</a> und der <a href="https://github.com/sensebox/OpenSenseMap-API/wiki/API-Dokumentation" target="_blank">API</a> zu tun hat. Er hat seinen Master Geoinformatik an der Uni Münster gemacht.
+
+- name: Felix Erdmann
+  image: /images/team/Erdmann.jpg
+  position: 11
+  description: "Felix ist Geoinformatik-Student am Institut für Geoinformatik. Als Schülerpraktikant hat er bereits 2011 mit einer ersten Version der senseBox gearbeitet. Seit Frühjahr 2016 ist wieder im Team dabei. #backtotheroots"
