@@ -1,5 +1,6 @@
-{% assign carouselpages = "main|products|osem|books|background|press|awards|lab|blog|blockly" | split: "|" %} 
-{% assign navpages = "blog|products|osem|books|blockly|lab|go" | split: "|" %}
+{% assign carouselpages = "main|products|osem|books|background|press|awards|blog|blockly|hackathon2018|go-edu" | split: "|" %}
+{% assign navpages = "blog|products|osem|books|blockly|hackathon2018" | split: "|" %}
+{% assign navpagesright = "go" | split: "|" %}
 {% if include.simple == true %}
     <div class="navbar-wrapper">
 {% else %}
@@ -46,14 +47,24 @@
                             <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
                         </li>
                         {% endif %} {% endfor %}
+                    </ul>
+
+                    <ul class="nav navbar-nav pull-right">
+                        {% assign t = site.data.translations.[page.lang].header %}
+                        {% assign menupages = site.pages | sort:"weight" %}
+                        {% for menupage in menupages %}
+                        {% if menupage.lang == page.lang and navpagesright contains menupage.id %}
+                        <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
+                            <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
 
                         <!-- ADD FORUM LINK BY HAND -->
                         <li class="navbar-item">
                             <a target="_blank" href="https://forum.sensebox.de/">Forum</a>
                         </li>
-                    </ul>
-                    {% if page.translationAvailable != false %}
-                    <ul class="nav navbar-nav pull-right">
+                        {% if page.translationAvailable != false %}
                         <li class="navbar-item">
                             {% if page.lang == 'de' %}
                             <a href="{{ page.url | remove:'de/' | remove:'index.html' | prepend:'/en' | prepend: site.url }}">EN</a>
@@ -63,8 +74,8 @@
                             <a href="{{ page.url | remove:'en/' | remove:'index.html' | prepend:'/de' | prepend: site.url }}">DE</a>
                             {% endif %} {% endif %}
                         </li>
+                        {% endif %}
                     </ul>
-                    {% endif %}
                 </div>
             </div>
         </nav>

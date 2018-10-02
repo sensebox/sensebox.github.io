@@ -78,6 +78,33 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.koop {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+
+    li {
+      /*display: table-cell;*/
+    }
+  }
+  text-align: center;
+  img {
+    padding: 5px;
+    //max-width: 300px;
+    max-height: 100px;
+    transition: box-shadow 0.1s;
+    border-radius: 5px;
+    // &:hover {
+    //   box-shadow: 0px 0px 15px lighten($sensebox-green, 40%);
+    //   -webkit-filter: none; /* Chrome, Safari, Opera */
+    //   filter: none;
+    // }
+  }
+}
+
 hr {
   border-top: 3px solid #eeeeee;
 }
@@ -292,6 +319,10 @@ hr {
         margin: 2px;
         max-width: 100%;
       }
+    }
+
+    > ul {
+      font-size: inherit;
     }
 
   }
@@ -638,7 +669,7 @@ article.post-content img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 300px;
+  height: 200px;
   background-size: 100% auto;
   background-repeat: no-repeat;
   border-bottom: 1px #FFF solid;
@@ -652,8 +683,8 @@ article.post-content img {
 }
 
 .card .avatar img {
-  width: 125px;
-  height: 125px;
+  width: 100px;
+  height: 100px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -710,6 +741,11 @@ article.post-content img {
   padding-top: 8px;
   padding-bottom: 8px;
   background: rgba(255,255,255,0.7);
+}
+
+.centerjury {
+  margin: 0 auto;
+  width: 80%;
 }
 
 // ul li {
@@ -1110,6 +1146,21 @@ $carousel-height: 450px;
   }
 }
 
+/* STARTPAGE EVENT */
+
+.events-row {
+  display: flex;
+  flex-wrap: wrap;
+
+  .event-item {
+    flex-grow: 1;
+  }
+
+  .thumbnail {
+    height: 100%;
+  }
+}
+
 
 .badges {
     text-align: center;
@@ -1196,9 +1247,8 @@ $carousel-height: 450px;
 }
 
 .collapse.in, .collapsing {
-    background-color: #272727;
-    box-shadow: 0 0 30px 6px rgba(34, 34, 34, 0.25)!important
-
+  background-color: #272727;
+  box-shadow: 0 0 30px 6px rgba(34, 34, 34, 0.25); 
 }
 
 .carousel-caption {
@@ -1321,23 +1371,23 @@ $carousel-height: 450px;
   margin: 20px;
 }
 
-//books
-#box-1 {
-  display: none;
-}
+// //books
+// #box-1 {
+//   display: none;
+// }
 
-#box-2{
-  display: none;
-}
+// #box-2{
+//   display: none;
+// }
 
-#v{
-  display: block; 
+// #v{
+//   display: block; 
 
-}
+// }
 
-#vv {
-  display: block;
-}
+// #vv {
+//   display: block;
+// }
 
 // .row-eq-height {
 //   display: -webkit-box;
@@ -1347,9 +1397,9 @@ $carousel-height: 450px;
 // }
 
 
-.book-row.book-nav-item {
+.book-row .book-nav-item {
 
-  height: 290px;
+  height: 270px;
   text-align: center;
   // padding: 2em 0;
   position: relative;
@@ -1374,6 +1424,10 @@ $carousel-height: 450px;
 
 /* Product page CSS
 -------------------------------------------------- */
+
+// .buy-btn {
+//   background: #e39b00;
+// }
 
 .home-span {
   // font-weight: bold;
@@ -1479,5 +1533,45 @@ $carousel-height: 450px;
 
   a {
     text-indent: 0 !important;
+  }
+}
+
+
+/* HACKATHON */
+
+.card .collapse.in, .card .collapsing {
+  box-shadow: none;
+  background-color: #ffffff;
+}
+
+.buy-btn-contain {
+  text-align: center;
+  padding-top: 1.5em;
+  .buy-btn {
+    background: #e39b00;
+  }
+}
+.buy-btn-start {
+  position: absolute;
+  bottom: 30px;
+  right: 10%;
+  background: #e39b00;
+
+  @media screen and(max-width: 500px){
+    display: none;
+  }
+}
+
+.blog-preview {
+  display: flex;
+  flex-wrap: wrap;
+  .blog-preview-item {
+    flex-basis: 0;
+    flex-grow: 1;
+    min-width: 300px;
+    padding-bottom: 1.5em;
+    .thumbnail {
+      height: 100%;
+    }
   }
 }
