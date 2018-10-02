@@ -9,25 +9,45 @@
 {{ t.description_installieren }}
 
 <p>&nbsp;</p>
-  <div class="row">
-    <div class="col-md-6 blockly-links">
-       <img src="{{ site.baseurl | append: '/images/Genuino.png' }}" style="height: 100px;" />
-       <div>
-         <a class="btn" href="https://sensebox.de/blockly" target="_blank" role="button">{{ t.link }}</a>                            
-       </div>
-      </div>
 
-     <div class="col-md-6 blockly-links">
-        <img src="{{ site.baseurl | append: '/images/mcu_one_top.png' }}" style="height: 100px;" />
-        <div>
-          <a class="btn" href="https://blockly.sensebox.de/ardublockly/?lang={{page.lang}}&board=sensebox-mcu" target="_blank" role="button">{{ t.links }}</a>
-        </div> 
+    <div class="row blockly-row" style="padding-top: 2em;">
+ 
+        <div class="col-md-4 book-nav-item">
+         <a   role="button" >
+          <img src="{{ site.baseurl | append: '/images/mcu_one_top.png' }}" class="ut-select-img" /></a>
+            <div>
+             <div class = "mid">
+              <a class="btn" href="https://blockly.sensebox.de/ardublockly?lang={{page.lang}}&board=sensebox-mcu" target="_blank" role="button">{{t.links}}</a>
 
-     </div>
+           </div>
+        </div>
+      </div> 
+
+        <div class="col-md-4 book-nav-item">
+         <a   role="button">
+          <img src="{{ site.baseurl | append: '/images/Genuino.png' }}" class="ut-select-img"  /></a>
+            <div>
+             <div class = "mid">
+                <a class="btn" href="https://sensebox.de/blockly" target="_blank" role="button">{{t.link}}</a>
+           </div>
+        </div>
+      </div> 
+          
+
+
+        <div class="col-md-4 book-nav-item">
+         <a   role="button" >
+            <img src="{{ site.baseurl | append: '/images/block.png' }}" class="ut-select-img"  /></a>
+            <div>
+             <div class = "mid">
+                <a class="btn" href="https://sensebox.github.io/books-v2/blockly/"target="_blank" role="button">{{t.linkd}}</a>
+           </div>
+        </div>
+      </div> 
+      
   </div>
-
  <p>&nbsp;</p>    
    
 
-<p style="text-align:center"><a href="https://sensebox.de/blockly" target="_blank"><img class="responsive-img" src="{{ site.baseurl | append: '/images/senseBox_blockly.gif'}}" alt="Blockly"></a></p>
+<p style="text-align:center"><img class="responsive-img" src="{{ site.baseurl | append: '/images/senseBox_blockly.gif'}}" alt="Blockly"></a></p>
 

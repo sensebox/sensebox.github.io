@@ -1389,9 +1389,24 @@ $carousel-height: 450px;
 //   display: block;
 // }
 
-.book-nav-item {
+// .row-eq-height {
+//   display: -webkit-box;
+//   display: -webkit-flex;
+//   display: -ms-flexbox;
+//   display:         flex;
+// }
+
+
+.book-row .book-nav-item {
+
+  height: 270px;
   text-align: center;
-  padding: 2em 0;
+  // padding: 2em 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 3em;
 
   a {
     text-indent: 0 !important;
@@ -1400,6 +1415,11 @@ $carousel-height: 450px;
 
 #text-style{
   color: #ffffff;
+}
+
+.ut-select-img {
+  max-width: 70%;
+  max-height: 130px;
 }
 
 /* Product page CSS
@@ -1500,6 +1520,21 @@ $carousel-height: 450px;
   text-align: center;
 }
 
+.blockly-row .book-nav-item {
+  
+  height: 200px;
+  text-align: center;
+  // padding: 2em 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 3em;
+
+  a {
+    text-indent: 0 !important;
+  }
+}
 
 
 /* HACKATHON */
