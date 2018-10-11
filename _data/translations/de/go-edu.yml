@@ -1,6 +1,6 @@
 title: "Quick Start Guide"
 quick-start-intro: "Der einfachste Weg die senseBox auszuprobieren, ist mit Blockly einen Programmcode zu generieren und diesen auf das Board zu spielen:"
-go-to: "Gehe auf: <a target='_blank' href='https://blockly.sensebox.de/ardublockly/?lang=de&board=sensebox-mcu'>https://blockly.sensebox.de/ardublockly/?lang=de&board=sensebox-mcu</a>" 
+go-to: "Gehe auf: <a target='_blank' href='https://blockly.sensebox.de/ardublockly/?lang=de&board=sensebox-mcu'>https://blockly.sensebox.de/</a>" 
 drag-drop: "Per Drag & Drop kannst du dir einen kleinen Code zusammenziehen: z.B."
 compile: 'Klicke jetzt auf das rote Symbol mit dem Notizblock “Sketch kompilieren”, wodurch der Sketch heruntergeladen wird.'
 connect: 'Schließe die senseBox mit dem beiliegenden Mikro USB Kabel an deine Computer an und führe einen “Doppelklick” mit dem roten Knopf auf der senseBox durch.'
