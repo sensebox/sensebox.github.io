@@ -15,8 +15,8 @@ Mit dem neu entwickelten Dashboard können Messwerte deiner Station live auf dei
 
 Wie kann ich das Dashboard installieren?
 ============
-Nach Aufrufen der [Webseite](www.eboard.netlifly.com) muss die ID der senseBox eingegeben werden, die du angezeigt haben willst. Die senseBox ID findest du in deinen Accounteinstellungen. Alternativ kannst du die ID auch aus der URL der openSenseMap bei einer ausgewählten Box auslesen. 
-In der URL'https://www.opensensemap.org/explore/5ae36a64223bd8001973462f' sind die Ziffern die hinter 'explore/' stehen die gesuchte ID (hier also: '5ae36a64223bd8001973462f').
+Nach Aufrufen der [Webseite](https://eboard.netlify.com/) muss die ID der senseBox eingegeben werden, die du angezeigt haben willst. Die senseBox ID findest du in deinen Accounteinstellungen. Alternativ kannst du die ID auch aus der URL der openSenseMap bei einer ausgewählten Box auslesen. 
+In der URL 'https://www.opensensemap.org/explore/5ae36a64223bd8001973462f' sind die Ziffern die hinter 'explore/' stehen die gesuchte ID (hier also: '5ae36a64223bd8001973462f').
 Nachdem du die ID eingegeben hast, werden dir die aktuellen Messwerte der senseBox angezeigt und jede Minute aktualisiert, sodass du immer auf dem neuesten Stand bleibst. 
 
 Weitere Einstellungen und Features
@@ -24,5 +24,5 @@ Weitere Einstellungen und Features
 Die Farben der Kacheln werden anfangs zufällig vergeben. Gefallen dir gewisse Farbanordnungen nicht oder möchtest du einen Sensor komplett ausblenden, so kannst du dies über das Einstellungsmenü (kleines Zahnrad am oberen Ende der Seite) ändern.
 Sollte die angezeigte senseBox seit längerem inaktiv sein so werden die Kacheln grau gefärbt. So kannst du möglichst früh erkennen, falls mit der senseBox etwas nicht stimmen sollte. 
 
-Probier es unter eboard.netlify.com doch einfach mal aus! Wenn du uns Feedback zum neuen Dashboard geben möchtest, kannst du uns gerne eine Mail an info@senseBox.de senden.
+Probier es unter [https://eboard.netlify.com/](https://eboard.netlify.com/) doch einfach mal aus! Wenn du uns Feedback zum neuen Dashboard geben möchtest, kannst du uns gerne eine Mail an info@senseBox.de senden.
 
