@@ -4,7 +4,8 @@ title: "Das senseBox:dashboard ist da!"
 date: 2018-10-12
 author: Erik und Gina
 abstract: "Die senseBox wird noch interaktiver! Mit dem neu entwickelten senseBox:dashboard kannst du dir jetzt live Messwerte auf deinem Smartphone, Laptop oder Tablet auf einem Blick anzeigen lassen. Wie das geht, erfahrt ihr hier."
-thumbnail: /images/blog_images/dashboard.png
+thumbnail: /images/blog_images/Dashboard1.JPG
+image1: /images/blog_images/dashboard.png
 lang: de
 ---
 
@@ -23,6 +24,8 @@ Weitere Einstellungen und Features
 ============
 Die Farben der Kacheln werden anfangs zufällig vergeben. Gefallen dir gewisse Farbanordnungen nicht oder möchtest du einen Sensor komplett ausblenden, so kannst du dies über das Einstellungsmenü (kleines Zahnrad am oberen Ende der Seite) ändern.
 Sollte die angezeigte senseBox seit längerem inaktiv sein so werden die Kacheln grau gefärbt. So kannst du möglichst früh erkennen, falls mit der senseBox etwas nicht stimmen sollte. 
+
+{% include image.html image=page.image1 %}
 
 Probier es unter [https://eboard.netlify.com/](https://eboard.netlify.com/) doch einfach mal aus! Wenn du uns Feedback zum neuen Dashboard geben möchtest, kannst du uns gerne eine Mail an info@senseBox.de senden.
 
