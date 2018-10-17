@@ -2,7 +2,7 @@
 layout: post
 title: "Das senseBox:dashboard ist da!"
 date: 2018-10-12
-author: Erik und Gina
+author: Eric und Gina
 abstract: "Die senseBox wird noch interaktiver! Mit dem neu entwickelten senseBox:dashboard kannst du dir jetzt live Messwerte auf deinem Smartphone, Laptop oder Tablet auf einem Blick anzeigen lassen. Wie das geht, erfahrt ihr hier."
 thumbnail: /images/blog_images/Dashboard1.JPG
 image1: /images/blog_images/dashboard.png
