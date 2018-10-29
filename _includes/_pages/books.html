@@ -1,69 +1,8 @@
-<!--
-
-{% assign t = site.data.translations.[page.lang].books %}
-<div class="page-header">
-  <h1>Books</h1>
-</div>
-
-<p>
-  {{ t.description }}
-</p>
-<br><br>
-
-<div>
-  <div class="col-md-4">
-    <div class="card">
-      <a href="https://sensebox.github.io/books/senseBox:edu_{{ page.lang }}.pdf" class="overlay opacity-animation-fast" target="_blank">
-        <em style="font-size: 1.4em;">PDF</em>
-      </a>
-      <a href="//edu.books.sensebox.de/{{ page.lang }}" style="text-decoration: none;" target="_blank">
-        <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_edu_bg.jpg'}});"></canvas>
-        <div class="price-text" style="padding:20px;">
-          <h3>senseBox:edu</h3>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card">
-      <a href="https://sensebox.github.io/books/senseBox:home_{{ page.lang }}.pdf" class="overlay opacity-animation-fast" target="_blank">
-        <em style="font-size: 1.4em;">PDF</em>
-      </a>
-      <a href="//home.books.sensebox.de/{{ page.lang }}" style="text-decoration: none;" target="_blank">
-        <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_home_bg.jpg'}});"></canvas>
-        <div class="price-text" style="padding:20px;">
-          <h3>senseBox:home</h3>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card">
-      <a href="https://sensebox.github.io/books/senseBox:osem_{{ page.lang }}.pdf" class="overlay opacity-animation-fast" target="_blank">
-        <em style="font-size: 1.4em;">PDF</em>
-      </a>
-      <a href="//osem.books.sensebox.de/{{ page.lang }}" style="text-decoration: none;" target="_blank">
-        <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_OSeM_bg.png'}});"></canvas>
-        <div class="price-text" style="padding:20px;">
-          <h3>openSenseMap</h3>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <br>
-  <p><b>{{ t.commenthint }}</b></p>
-  <p>{{ t.instructions.content }}</p>
-</div>
-
-
--->
-
 {% assign t = site.data.translations.[page.lang].books %}
 
 
 <div>
-          
+  <h1>{{t.book-header}}</h1>        
   <p>
     {{ t.description }}
   </p>
@@ -125,4 +64,25 @@
         </div>
       </div> 
           
+  </div>
+
+  <div>
+    <h1>{{t.material-header}}</h1>
+    <p>
+      {{ t.material-desc }}
+    </p>
+    <br>
+    <div class="book-row row" style="padding-top: 2em;">
+      <div class="col-md-3 book-nav-item">
+        <a  id = "vvv" >
+         <img class="ut-select-img" src="{{ site.baseurl | append: '/images/lern-karten.png' }}" /></a>
+           <div>
+            <div class = "mid">
+              <h3 style="padding-bottom: 0;" class = "text">{{t.learn-cards}}</h3>
+              <br>
+              <a class="btn" href="{{ site.baseurl | append: '/senseBox_Karten.pdf' }}" target="_blank" role="button">Download</a>
+           </div>
+       </div>
+     </div>
+    </div>
   </div>

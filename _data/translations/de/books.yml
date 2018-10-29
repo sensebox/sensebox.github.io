@@ -1,3 +1,4 @@
+book-header: "Bücher"
 description: "Hier finden Sie die gesamte Dokumentation rund um die senseBox. Alle hier befindlichen Anleitungen sind Open Educational Resources (OER) unter der Creative Commons Lizenz <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">CC BY SA 4.0</a>. Bestehende Texte können so nach und nach von der kreativen Gemeinschaft weiterentwickelt, sowie durch neue Experimente oder Projekte erweitert werden."
 instructions:
   header: "Anleitungen & Dokumentation"
@@ -16,3 +17,7 @@ old-sensebox: "senseBox mit Arduino/Genuino Uno"
 new-sensebox: "senseBox mit senseBox MCU"
 osem: "openSenseMap"
 blockly: "Blockly"
+
+material-header: "Materialien"
+material-desc: "Hier finden Sie weitere Materialien zur senseBox, wie z.B. Arbeitsblätter."
+learn-cards: "Arbeitsblätter für Workshops"
