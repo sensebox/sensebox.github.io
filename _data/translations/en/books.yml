@@ -1,3 +1,4 @@
+book-header: "Books"
 description: "Here you can find all documentation regarding senseBox and openSenseMap. All documents listed here are considered to be Open Educational Resources (OER) under Creative Commons License <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" class=\"link\" target=\"_blank\">CC BY SA 4.0</a>. Existing content can be further developed and enhanced with new experiments or projects by the community."
 instructions:
   header: "Instructions & Documentation"
@@ -14,3 +15,7 @@ commenthint: "If you find errors or improvements in the documentation, please le
 
 old-sensebox: "senseBox with Arduino/Genuino Uno"
 new-sensebox: "senseBox with senseBox MCU"
+
+material-header: "Additional Content"
+material-desc: "Here you will find additional content we provide for the senseBox, e.g. worksheets."
+learn-cards: "Worksheets for workshops"
