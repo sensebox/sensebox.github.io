@@ -31,6 +31,10 @@ Hier kannst du das LoRa-Bee bestellen [Shop](https://sensebox.kaufen/product/lor
 
 {% include image.html image=page.image3 %}
 
+Materialien und Experimente
+============
+In unseren Books findet Ihr neue Anleitungen für die senseBox:MCU sowie die gesamte Dokumentation rund um die senseBox und die openSenseMap. Mittlerweile sind sie auch auf Englisch verfügbar. Damit wir die bestehenden Texte weiterentwickeln können, benötigen wir Euer Feedback! Außerdem würden wir uns freuen, wenn Ihr uns neue Experimente oder Projekte zur Erweiterung unserer Books schicken würdet. Alle bisherigen Projektdokumentationen sind als Open Educational Resources (OER) kostenlos unter [Books](https://sensebox.de/de/books).
+
 Nächste Termine und Workshops!
 ============
 10.11. – Koblenz: Nacht der Technik: Workshop Umweltsensoren programmieren und vernetzen.
@@ -39,6 +43,5 @@ Nächste Termine und Workshops!
 21.11. – Hannover: BDEW-Fachtagung 
 22.11. – Düsseldorf: EduLabs Workshop
 01.12. – Berlin: Turing Bus Abschluss
-   
 
-Ihr wollt auch regelmäßig Neuigkeiten von der senseBox erhalten? Dann tragt euch den Newsletter einfach [hier](https://sensebox.de/#newsletter) ein!
+Ihr wollt auch regelmäßig Neuigkeiten rund um die senseBox erhalten? Dann tragt euch für unseren Newsletter einfach [hier](https://sensebox.de/#newsletter) ein!
