@@ -3,7 +3,7 @@ layout: post
 title: "Herbst-Newsletter 2018"
 date: 2018-11-05
 author: Gina
-abstract: "Der neue Nesletter ist da! Hier erfahrt Ihr, was es Neues von der senseBox gibt."
+abstract: "Der neue Newsletter ist da! Hier erfahrt Ihr, was es Neues von der senseBox gibt."
 thumbnail: /images/blog_images/senseBoxlogo.png
 image1: /images/blog_images/Blockly.png
 image2: /images/blog_images/home.jpg
