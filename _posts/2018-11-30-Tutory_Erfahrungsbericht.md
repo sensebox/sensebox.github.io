@@ -32,7 +32,7 @@ Alle Features kann man jederzeit noch einmal bearbeiten. Auch kann man sie dupli
 Insgesamt war die Bearbeitung sehr intuitiv. Tutory bietet eine Vielzahl an Features, an die man oft selber gar nicht denkt und die so die eigene Kreativität gefördert wird. Wir haben im ersten Schritt folgende Arbeitsblätter erstellt und Veröffentlicht:
 
 
-1. [Was ist die senseBox und was kann man alles mit ihr machen?:]   (https://www.tutory.de/w/5f62f920)
-2. [Wie installiere ich die Software, die die senseBox benötigt?:] (https://www.tutory.de/w/3ccdeff0)
-3. [Welches Projekt möchte ich mit der senseBox durchführen, ein Ideensammler:]  (https://www.tutory.de/w/0ab88490)
-4. [Wie ich mit Hilfe von Blockly lernen kann, wie ein Algortihmus funktioniert:]  (https://www.tutory.de/worksheet/e5170bf0)
+1. [Was ist die senseBox und was kann man alles mit ihr machen?](https://www.tutory.de/w/5f62f920)
+2. [Wie installiere ich die Software, die die senseBox benötigt?](https://www.tutory.de/w/3ccdeff0)
+3. [Welches Projekt möchte ich mit der senseBox durchführen, ein Ideensammler](https://www.tutory.de/w/0ab88490)
+4. [Wie ich mit Hilfe von Blockly lernen kann, wie ein Algortihmus funktioniert](https://www.tutory.de/worksheet/e5170bf0)
