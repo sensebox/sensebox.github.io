@@ -19,7 +19,6 @@ Hier seht Ihr ein Bild von allen Arbeitsblättern und wie die Tutorystartseite a
 
 {% include image.html image=page.image1 %}
 
-![HIer seht Ihr ein Bild von allen Arbeitsblättern und wie die Tutorystartseite aussieht.](https://github.com/sensebox/sensebox.github.io/blob/2b59a5852e537d1ff6f8eccf4c6e849f2985d9f3/images/Bildschirmfoto%202018-11-30%20um%2012.55.55.jpg?raw=true)
 Im Folgenden möchten wir kurz über unsere Erfahrungen mit Tutory erzählen und Euch vorstellen wie man damit arbeiten kann.
 Um Tutory nutzen zu können, muss man sich zuerst einen Account anlegen. In der Freemium Version können xy privat und xy öffentlich gestaltet werden. 
 Grundsätzlich steht bei der Plattform die Idee im Vordergrund, bereits vorgefertigte Arbeitsblätter den eigenen Bedürfnissen anzupassen und so zu erweitern, dass sie zum selbst gesetzten Ziel passen. Betrachtet man die vorgefertigten Vorlagen und weiß, was man vermitteln möchte tauchen am Rand viele Features auf, die es erleichtern den Plan umzusetzen. Auch hatten wir das Gefühl, dass es keinerlei Vorkenntnisse im Bereich der Arbeitsblattgestaltung braucht und dadurch einen guten Einstieg bietet.
@@ -27,9 +26,6 @@ Grundsätzlich steht bei der Plattform die Idee im Vordergrund, bereits vorgefer
 So sieht die Oberfläche aus, wenn man ein neues Arbeitsblatt erstellen möchte:
 
 {% include image.html image=page.image2 %}
-
-![So sieht die Oberfläche aus, wenn man ein neues Arbeitsblatt erstellen möchte:](https://github.com/sensebox/sensebox.github.io/blob/2b59a5852e537d1ff6f8eccf4c6e849f2985d9f3/images/Bildschirmfoto%202018-11-30%20um%2012.56.47.jpg?raw=true)
-
 
 Anders als bei Microsoft Word oder bei anderen Plattformen muss man sich kaum Gedanken um die Formatierung machen. Die meisten Feature sind bereits vorgefertigt und lassen sich problemlos vergrößern und/oder an die richtige Stelle ziehen. Es gibt eine bereits vorgefertigte Kopf- und Fußzeile, bei der man alle Infos, die man braucht einfügen kann. Das Einzige, bei dem man sich Gedanken machen kann oder muss ist, in welcher Farbe man den Text haben möchte, oder wie groß die Schrift nachher ist. Aber auch hier gibt es immer einen vorgefertigten Vorschlag. 
 
