@@ -1,21 +1,12 @@
 ---
-
 layout: post
-
 title: "SenseBox und Tutory!"
-
 date: 2018-11-30
-
 author: Lia 
-
 abstract: "Wir haben senseBox Arbeitsblätter mit Online-Editor Tutory erstellt – unser Erfahrungsbericht"
-
 thumbnail: 
-
 image1: 
-
 lang: de
-
 ---
 
 ============
