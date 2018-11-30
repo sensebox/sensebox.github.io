@@ -9,11 +9,10 @@ image1: /images/blog_images/tutory_01.png
 image2: /images/blog_images/tutory_02.png
 lang: de
 ---
-
+Neue senseBox Arbeitsblätter
 ============
-
-Als erste Organisation wurde senseBox auf der Plattform Tutory zugelassen. Tutory ist eine Autoren Plattform mit integriertem Online-Editor, die das Erstellen von Arbeitsblättern für Lehrerinnen und Lehrer erleichtert. Dafür werden verschiedene Tools, Elemente und Funktionen bereitgestellt, welche die Zusammenstellung erleichtern, sowie den Austausch von Arbeitsblätter erleichtert. Ganz wichtig für uns: Veröffentlichte Arbeitsblätter auf Tutory sind Open Educational Ressources (OER) womit die Plattform optimal zur senseBox passt.
-Wir vom senseBox-Team haben bereits einige Arbeitsblätter entwickelt, die Schüler/innen den Umgang mit Umweltdaten, Algorithmen, mit der Informatik näherbringen. Die Arbeitsblätter können eigenständig und ohne viel Hilfe von Lehrenden bearbeitet werden. Damit kommen wir den Bedürfnissen von Lehrinnen und Lehrern nach, welche uns immer wieder nach solchen Materialien gefragt haben. Wie immer hoffen wir natürlich, dass auch Ihr bald Arbeitsblätter zur senseBox erstellt und diese veröffentlicht. 
+Als erste Organisation wurde senseBox auf der Plattform [Tutory](https://www.tutory.de/) zugelassen. Tutory ist eine Autoren Plattform mit integriertem Online-Editor, die das Erstellen von Arbeitsblättern für Lehrerinnen und Lehrer erleichtert. Dafür werden verschiedene Tools, Elemente und Funktionen bereitgestellt, welche die Zusammenstellung erleichtern, sowie den Austausch von Arbeitsblätter erleichtert. Ganz wichtig für uns: Veröffentlichte Arbeitsblätter auf Tutory sind Open Educational Ressources (OER) womit die Plattform optimal zur senseBox passt.
+Wir vom senseBox-Team haben bereits einige Arbeitsblätter entwickelt, die Schüler/innen den Umgang mit Umweltdaten, Algorithmen, mit der Informatik näherbringen. Die Arbeitsblätter können eigenständig und ohne viel Hilfe von Lehrerinnen und Lehrer bearbeitet werden. Damit kommen wir den Wünschen von Lehrinnen und Lehrern nach, welche uns immer wieder nach solchen Materialien gefragt haben. Wie immer hoffen wir natürlich, dass auch Ihr bald Arbeitsblätter zur senseBox erstellt und diese veröffentlicht. 
 
 Hier seht Ihr ein Bild von allen Arbeitsblättern und wie die Tutorystartseite aussieht, wenn man bereits Arbeitsblätter erstellt hat:
 
