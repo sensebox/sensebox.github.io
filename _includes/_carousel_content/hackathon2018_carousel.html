@@ -46,29 +46,34 @@ var updateTimeUntilStr = function updateTimeUntilStr() {
   var diff = hackStart - new Date().getTime(); // difference in ms
   timeUntilStr = "Noch ";
 
-  var days = (diff / 86400000).toFixed(0);
-  timeUntilStr += days;
-  diff -= (diff / 86400000) * 86400000 - (diff % 86400000);
-  timeUntilStr += " Tag" + (days === "1" ? "" : "e") + ", ";
+  if (Math.sign(diff) === -1) {
+    timeUntilStr += " 0 Tage, 0 Stunden, 0 Minuten, 0 Sekunden!";
+    clearInterval(updateTimeUntilStrInterval);
+  } else {
+    var days = Math.floor((diff / 86400000).toFixed(0));
+    timeUntilStr += days;
+    diff -= (diff / 86400000) * 86400000 - (diff % 86400000);
+    timeUntilStr += " Tag" + (days === "1" ? "" : "e") + ", ";
 
-  var hours = (diff / 3600000).toFixed(0);
-  timeUntilStr += hours;
-  diff -= (diff / 3600000) * 3600000 - (diff % 3600000);
-  timeUntilStr += " Stunde" + (hours === "1" ? "" : "n") + ", ";
+    var hours = (diff / 3600000).toFixed(0);
+    timeUntilStr += hours;
+    diff -= (diff / 3600000) * 3600000 - (diff % 3600000);
+    timeUntilStr += " Stunde" + (hours === "1" ? "" : "n") + ", ";
 
-  var minutes = (diff / 60000).toFixed(0);
-  timeUntilStr += minutes;
-  diff -= (diff / 60000) * 60000 - (diff % 60000);
-  timeUntilStr += " Minute" + (minutes === "1" ? "" : "n") + " und ";
+    var minutes = (diff / 60000).toFixed(0);
+    timeUntilStr += minutes;
+    diff -= (diff / 60000) * 60000 - (diff % 60000);
+    timeUntilStr += " Minute" + (minutes === "1" ? "" : "n") + " und ";
 
-  var seconds = (diff / 1000).toFixed(0);
-  timeUntilStr += seconds;
-  timeUntilStr += " Sekunde" + (seconds === "1" ? "" : "n") + "!";
+    var seconds = (diff / 1000).toFixed(0);
+    timeUntilStr += seconds;
+    timeUntilStr += " Sekunde" + (seconds === "1" ? "" : "n") + "!";
+  }
 
   timeUntilElem.textContent = timeUntilStr;
 }
 
 updateTimeUntilStr();
 
-setInterval(updateTimeUntilStr, 1000);
+var updateTimeUntilStrInterval = setInterval(updateTimeUntilStr, 1000);
 </script>
