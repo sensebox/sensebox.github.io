@@ -1,0 +1,35 @@
+{% assign t = site.data.translations.[page.lang].events %}
+<h1>senseBox.de/events</h1>
+
+<h3>{{t.intro}}</h3>
+<div class="row">
+    <div class="col-sm-6 col-xs-12 go-nav-item">
+        <a href="{{ 'go-home' | prepend: site.baseurl }}">
+
+            <div class="go-nav-inner home-inner">
+                <div class="img-container">
+                    <img src="{{ site.baseurl | append: '/images/go/home.jpg' }}">
+                </div>
+                <div class="text-container">
+                    <h2>:home</h2>
+                    <p class="desc-text">{{t.home-text}}</p>
+                </div>
+                
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-6 col-xs-12 go-nav-item">
+        <a href="{{ 'go-edu' | prepend: site.baseurl }}">
+
+            <div class="go-nav-inner edu-inner">
+                <div class="img-container">
+                    <img src="{{ site.baseurl | append: '/images/go/edu.png' }}">
+                </div>
+                <div class="text-container">
+                    <h2>:edu</h2>
+                    <p class="desc-text">{{t.edu-text}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>

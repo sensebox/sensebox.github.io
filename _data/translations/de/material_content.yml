@@ -1,0 +1,27 @@
+- name: :edu Book
+  image: /images/team/hackathon-jury/schwering.jpg
+  position: 1
+  organisation: senseBox - Team
+  description: Anleitung, Experimente und Infos zur senseBox:edu. Dieses Book ist eine Sammlung von Material und eignet sich gut um die senseBox:edu kennenzulernen. 
+  bgImage: /images/material/edu_book.png
+
+- name: :home Book
+  image: /images/team/hackathon-jury/schwering.jpg
+  position: 2
+  organisation: senseBox - Team
+  description: Anleitung und Infos zum Aufbau der senseBox:home. Wie stelle ich die senseBox:home auf, wie werden die Daten auf die openSenseMap übertragen und wo finde ich Hilfe?
+  bgImage: /images/material/home_book.png
+
+- name: :blockly Book
+  image: /images/team/hackathon-jury/schwering.jpg
+  position: 2
+  organisation: senseBox - Team
+  description: Dokumentation und Einstieg in die graphische Programmierung der senseBox mit Blockly. Was bedeuten die Blöcke, wie kann ich online kompilieren und was sind meine Möglichkeiten?
+  bgImage: /images/material/blockly_book.png
+
+- name: :openSenseMap Book
+  image: /images/team/hackathon-jury/schwering.jpg
+  position: 2
+  organisation: senseBox - Team
+  description: Dokumentation und Einstieg in offene Datenplattform openSenseMap. Hier gibt es technische Infos zur API und Informationen zur Integration anderer Microcontroller auf die openSenseMap.
+  bgImage: /images/material/osem_book.png

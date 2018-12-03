@@ -13,10 +13,11 @@ background:
 press:
   header: "Presse"
   articles: "Berichte"
-  material: "Material"
-publications:
-  header: "Publikationen"
-  books: "Books"
-  thesis: "Bachelor-Arbeiten"
+  material: "Pressekit"
+more:
+  header: "Mehr"
+  books: "Material"
+  thesis: "Research"
+  events: "Events"
 partner:
   header: "Partner"

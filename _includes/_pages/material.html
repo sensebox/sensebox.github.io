@@ -1,0 +1,111 @@
+{% assign t = site.data.translations.[page.lang].material_page %}
+
+<div class="page-header">
+    <h1>senseBox Material</h1>
+  </div>
+  {{ t.description_header }}
+  </div>
+
+
+
+<h3 class="smallcaps" id="Material">Books</h3>
+
+<p>Unsere Books sind das Herzstück der Dokumentation. Hier findet man die Grundlagen, Hilfe und erste Beispiele zur senseBox. Im folgenden werden die aktuellen Ressourcen zur aktuellen Version der senseBox vorgestellt</p>
+{% assign material = site.data.translations.de.material_content | sort: 'position' %}
+
+<!-- count Material -> if odd, there has to be a blank col in the end -->
+<div hidden>
+{% for material in material %}
+{% increment material_count %}
+{% capture oddOrEvenMaterialCount %}{% cycle 'odd', 'even' %}{% endcapture %}
+{% endfor %}
+</div>
+
+{% for material in material %}
+  {% capture firstLastInRow %}{% cycle 'first', 'last' %}{% endcapture %}
+
+  {% if firstLastInRow == 'first' %}
+  <div class="container">  
+  <div class="row">
+  {% endif %}
+
+ <div class="col-lg-4 col-sm-6">
+
+      <div class="card" style="cursor: pointer;" data-toggle="collapse" data-target="#desc_{{ material.position }}">
+          <canvas class="header-bg" width="250" id="header-blur" style="background-image: url({{ material.bgImage }});"></canvas>
+          <div class="content">
+            <h4 style="clear:both">{{ material.name }}</h4>
+            <h5 style="clear:both">{{ material.organisation }}</h5>
+            <div id="desc_{{ material.position }}" class="collapse">
+              {{ material.description }}
+            </div>
+          </div>
+      </div>
+    </div>
+
+  {% if firstLastInRow == 'last' %}
+    </div>
+  {% endif %}
+
+  <!-- if this is the last element and the count is even, add blank col -->
+  {% if material.position == material and oddOrMaterialCount == 'odd' %}
+  <div class="col-md-6">
+   </div>
+    </div>
+  {% endif %}
+
+
+
+{% endfor %}
+
+
+<h3 class="smallcaps" id="Material">Material für den Einsatz in der Lehre</h3>
+
+{% assign teaching = site.data.translations.de.teaching_content | sort: 'position' %}
+
+<!-- count Material -> if odd, there has to be a blank col in the end -->
+<div hidden>
+{% for teaching in teaching %}
+{% increment teaching_count %}
+{% capture oddOrEventeachingCount %}{% cycle 'odd', 'even' %}{% endcapture %}
+{% endfor %}
+</div>
+
+{% for teaching in teaching %}
+  {% capture firstLastInRow %}{% cycle 'first', 'last' %}{% endcapture %}
+
+  {% if firstLastInRow == 'first' %}
+  <div class="container">  
+  <div class="row">
+  {% endif %}
+
+    <div class="col-md-3">
+
+      <div class="card" style="cursor: pointer;" data-toggle="collapse" data-target="#desc_{{ teaching.position }}">
+          <canvas class="header-bg" width="250" id="header-blur" style="background-image: url({{ teaching.bgImage }});"></canvas>
+          <div class="content">
+            <h4 style="clear:both">{{ teaching.name }}</h4>
+            <h5 style="clear:both">{{ teaching.organisation }}</h5>
+            <div id="desc_{{ teaching.position }}" class="collapse">
+              {{ teaching.description }}
+            </div>
+          </div>
+      </div>
+    </div>
+
+  {% if firstLastInRow == 'last' %}
+    </div>
+  {% endif %}
+
+  <!-- if this is the last element and the count is even, add blank col -->
+  {% if teaching.position == teaching and oddOrteachingCount == 'odd' %}
+  <div class="col-md-6">
+   </div>
+    </div>
+  {% endif %}
+
+
+
+{% endfor %}
+
+  </div>
