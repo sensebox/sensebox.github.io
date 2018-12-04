@@ -1,6 +1,23 @@
-- name: :edu Book
-  image: /images/team/hackathon-jury/schwering.jpg
-  position: 1
+- name: :Lernkarten
+  image: 
+  position: t1
   organisation: senseBox - Team
+  description: Lernkarten für das selbstständige Arbeiten mit der senseBox und der Programmierung mit Blockly. Die Lernkarten können doppelseitig ausgedruckt werden.
+  bgImage: /images/material/cards.png
+  download: senseBox_Karten.pdf
+
+- name: :Arbeitsblätter
+  image: 
+  position: t2
+  organisation: senseBox - Team
+  description: Tutory bietet die Möglichkeit interaktiv Arbeitsblätter zu gestalten. Auf der Platform können unsere Arbeitsblätter nach den eigenen Wünschen angepasst werden. Alle Arbeitsblätter finden Sie auf unserem Profil veröffentlicht. 
+  bgImage: /images/material/sheets_tutory.png
+  link: https://www.tutory.de/user/sensebox
+
+- name: :ETH Zürich
+  image: 
+  position: t3
+  organisation: ETH Zürich
   description: Anleitung, Experimente und Infos zur senseBox:edu. Dieses Book ist eine Sammlung von Material und eignet sich gut um die senseBox:edu kennenzulernen. 
   bgImage: https://www.blb.nrw.de/Bilder/Bilder_BLB/Geowissenschaften_Muenster_Bilder/GEO-I.jpg
+

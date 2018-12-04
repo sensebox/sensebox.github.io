@@ -3,14 +3,14 @@
 <div class="page-header">
     <h1>senseBox Material</h1>
   </div>
-  {{ t.description_header }}
-  </div>
+
 
 
 
 <h3 class="smallcaps" id="Material">Books</h3>
 
 <p>Unsere Books sind das Herzstück der Dokumentation. Hier findet man die Grundlagen, Hilfe und erste Beispiele zur senseBox. Im folgenden werden die aktuellen Ressourcen zur aktuellen Version der senseBox vorgestellt</p>
+<div class="container">
 {% assign material = site.data.translations.de.material_content | sort: 'position' %}
 
 <!-- count Material -> if odd, there has to be a blank col in the end -->
@@ -20,16 +20,10 @@
 {% capture oddOrEvenMaterialCount %}{% cycle 'odd', 'even' %}{% endcapture %}
 {% endfor %}
 </div>
-
+<div class="row">
 {% for material in material %}
   {% capture firstLastInRow %}{% cycle 'first', 'last' %}{% endcapture %}
-
-  {% if firstLastInRow == 'first' %}
-  <div class="container">  
-  <div class="row">
-  {% endif %}
-
- <div class="col-lg-4 col-sm-6">
+ <div class="col-lg-3 col-sm-6">
 
       <div class="card" style="cursor: pointer;" data-toggle="collapse" data-target="#desc_{{ material.position }}">
           <canvas class="header-bg" width="250" id="header-blur" style="background-image: url({{ material.bgImage }});"></canvas>
@@ -37,15 +31,16 @@
             <h4 style="clear:both">{{ material.name }}</h4>
             <h5 style="clear:both">{{ material.organisation }}</h5>
             <div id="desc_{{ material.position }}" class="collapse">
-              {{ material.description }}
+              <div>{{ material.description }}</div>
+              <a class="social-media" href="{{ material.link_mcu }}" target="_blank" role="button" ><img src="{{ site.baseurl | append: '/images/iconmonstr-book-20.svg'}}" alt="homepage icon"></a>
             </div>
           </div>
       </div>
     </div>
 
-  {% if firstLastInRow == 'last' %}
+  <!--{% if firstLastInRow == 'last' %}
     </div>
-  {% endif %}
+  {% endif %}-->
 
   <!-- if this is the last element and the count is even, add blank col -->
   {% if material.position == material and oddOrMaterialCount == 'odd' %}
@@ -57,7 +52,7 @@
 
 
 {% endfor %}
-
+  </div>
 
 <h3 class="smallcaps" id="Material">Material für den Einsatz in der Lehre</h3>
 
@@ -70,15 +65,9 @@
 {% capture oddOrEventeachingCount %}{% cycle 'odd', 'even' %}{% endcapture %}
 {% endfor %}
 </div>
-
+<div class="row">
 {% for teaching in teaching %}
   {% capture firstLastInRow %}{% cycle 'first', 'last' %}{% endcapture %}
-
-  {% if firstLastInRow == 'first' %}
-  <div class="container">  
-  <div class="row">
-  {% endif %}
-
     <div class="col-md-3">
 
       <div class="card" style="cursor: pointer;" data-toggle="collapse" data-target="#desc_{{ teaching.position }}">
@@ -87,15 +76,17 @@
             <h4 style="clear:both">{{ teaching.name }}</h4>
             <h5 style="clear:both">{{ teaching.organisation }}</h5>
             <div id="desc_{{ teaching.position }}" class="collapse">
-              {{ teaching.description }}
+              <div>{{ teaching.description }}</div>
+              {% if teaching.download %}
+              <a class="social-media" href="{{ site.baseurl | append: teaching.download }}" target="_blank" role="button" ><img src="{{ site.baseurl | append: '/images/iconmonstr-download-9.svg'}}" alt="homepage icon"></a>
+              {% endif %}
+              {% if teaching.link %}
+              <a class="social-media" href="{{teaching.link }}" target="_blank" role="button" ><img src="{{ site.baseurl | append: '/images/iconmonstr-link-1.svg'}}" alt="homepage icon"></a>
+              {% endif %}
             </div>
           </div>
       </div>
     </div>
-
-  {% if firstLastInRow == 'last' %}
-    </div>
-  {% endif %}
 
   <!-- if this is the last element and the count is even, add blank col -->
   {% if teaching.position == teaching and oddOrteachingCount == 'odd' %}
@@ -108,4 +99,56 @@
 
 {% endfor %}
 
+</div>
+
+<h3 class="smallcaps" id="Material">weitere Materialien</h3>
+<p>Hier findet man weitere Materialien rund um die senseBox.</p>
+
+{% assign more = site.data.translations.de.material_more | sort: 'position' %}
+
+<!-- count Material -> if odd, there has to be a blank col in the end -->
+<div hidden>
+{% for more in more %}
+{% increment more_count %}
+{% capture oddOrEvenmoreCount %}{% cycle 'odd', 'even' %}{% endcapture %}
+{% endfor %}
+</div>
+<div class="row">
+{% for more in more %}
+  {% capture firstLastInRow %}{% cycle 'first', 'last' %}{% endcapture %}
+    <div class="col-md-3">
+
+      <div class="card" style="cursor: pointer;" data-toggle="collapse" data-target="#desc_{{ more.position }}">
+          <canvas class="header-bg" width="250" id="header-blur" style="background-image: url({{ more.bgImage }});"></canvas>
+          <div class="content">
+            <h4 style="clear:both">{{ more.name }}</h4>
+            <h5 style="clear:both">{{ more.organisation }}</h5>
+            <div id="desc_{{ more.position }}" class="collapse">
+              <div>{{ more.description }}</div>
+              {% if more.download %}
+              <a class="social-media" href="{{ site.baseurl | append: more.download }}" target="_blank" role="button" ><img src="{{ site.baseurl | append: '/images/iconmonstr-download-9.svg'}}" alt="homepage icon"></a>
+              {% endif %}
+              {% if more.link %}
+              <a class="social-media" href="{{more.link }}" target="_blank" role="button" ><img src="{{ site.baseurl | append: '/images/iconmonstr-link-1.svg'}}" alt="homepage icon"></a>
+              {% endif %}
+            </div>
+          </div>
+      </div>
+    </div>
+
+  <!-- if this is the last element and the count is even, add blank col -->
+  {% if more.position == more and oddOrmoreCount == 'odd' %}
+  <div class="col-md-6">
+   </div>
+    </div>
+  {% endif %}
+
+
+
+{% endfor %}
+
+
   </div>
+
+  {{ t.description_header }}
+</div>
