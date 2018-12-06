@@ -128,6 +128,12 @@
               {% if more.download %}
               <a class="social-media" href="{{ site.baseurl | append: more.download }}" target="_blank" role="button" ><img src="{{ site.baseurl | append: '/images/iconmonstr-download-9.svg'}}" alt="homepage icon"></a>
               {% endif %}
+              {% if more.edulink %}
+              <a class="social-media" href="{{more.edulink }}" target="_blank" role="button" ><img src="{{ site.baseurl | append: '/images/iconmonstr-link-1.svg'}}" alt="homepage icon"></a>
+              {% endif %}
+              {% if more.homelink %}
+              <a class="social-media" href="{{more.homelink }}" target="_blank" role="button" ><img src="{{ site.baseurl | append: '/images/iconmonstr-link-1.svg'}}" alt="homepage icon"></a>
+              {% endif %}
               {% if more.link %}
               <a class="social-media" href="{{more.link }}" target="_blank" role="button" ><img src="{{ site.baseurl | append: '/images/iconmonstr-link-1.svg'}}" alt="homepage icon"></a>
               {% endif %}

@@ -3,6 +3,8 @@
   position: more1
   organisation: senseBox - Team
   description: Die alte Version der senseBox basierte auf einem Arduino und dem senseBox-Shield. Diese Version ist nichtmehr käuflich. Hier die Anleitungen zur alten":" senseBox:home, senseBox:edu, sowie die dazugehörige Blockly Version.
+  edulink: https://senseBox.github.io/books
+  homelink: https://senseBox.github.io/books
   bgImage: /images/Genuino.png
   download: senseBox_Karten.pdf
 

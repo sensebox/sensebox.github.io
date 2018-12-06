@@ -2,34 +2,51 @@
 <h1>senseBox.de/events</h1>
 
 <h3>{{t.intro}}</h3>
-<div class="row">
-    <div class="col-sm-6 col-xs-12 go-nav-item">
-        <a href="{{ 'go-home' | prepend: site.baseurl }}">
 
-            <div class="go-nav-inner home-inner">
-                <div class="img-container">
-                    <img src="{{ site.baseurl | append: '/images/go/home.jpg' }}">
-                </div>
-                <div class="text-container">
-                    <h2>:home</h2>
-                    <p class="desc-text">{{t.home-text}}</p>
-                </div>
-                
-            </div>
-        </a>
-    </div>
-    <div class="col-sm-6 col-xs-12 go-nav-item">
-        <a href="{{ 'go-edu' | prepend: site.baseurl }}">
+<hr />
+<div style="text-align: center;" id="2016">
+    <h1>2016</h1>
+          <h1 style="text-align: center;">{{ t.past_events }}</h1>
+          <div class="row events-row">
+            {% assign events = site.events | sort: 'ending-date' %}
+            {% for event in events %}
+              {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+              {% capture eventendingdateunix %}{{event.ending-date | date: '%s'}}{% endcapture %}
+              {% capture year %}{{event.ending-date | date: '%Y'}}{% endcapture %}
+              {% if nowunix > eventendingdateunix and year =='2016' %}
+                {% include event_template.html event=event %}
+              {% endif %}
+            {% endfor %}
+          </div>
+    <br>
 
-            <div class="go-nav-inner edu-inner">
-                <div class="img-container">
-                    <img src="{{ site.baseurl | append: '/images/go/edu.png' }}">
-                </div>
-                <div class="text-container">
-                    <h2>:edu</h2>
-                    <p class="desc-text">{{t.edu-text}}</p>
-                </div>
-            </div>
-        </a>
-    </div>
-</div>
+<div style="text-align: center;" id="2017">
+<h1>2017</h1>
+      <h1 style="text-align: center;">{{ t.past_events }}</h1>
+      <div class="row events-row">
+        {% assign events = site.events | sort: 'ending-date' %}
+        {% for event in events %}
+          {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+          {% capture eventendingdateunix %}{{event.ending-date | date: '%s'}}{% endcapture %}
+          {% capture year %}{{event.ending-date | date: '%Y'}}{% endcapture %}
+          {% if nowunix > eventendingdateunix and year =='2017' %}
+            {% include event_template.html event=event %}
+          {% endif %}
+        {% endfor %}
+      </div>
+<br>
+<div style="text-align: center;" id="2018">
+<h1>2018</h1>
+      <div class="row events-row">
+        {% assign events = site.events | sort: 'ending-date' %}
+        {% for event in events %}
+          {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+          {% capture eventendingdateunix %}{{event.ending-date | date: '%s'}}{% endcapture %}
+          {% capture year %}{{event.ending-date | date: '%Y'}}{% endcapture %}
+          {% if nowunix > eventendingdateunix and year =='2018' %}
+            {% include event_template.html event=event %}
+          {% endif %}
+        {% endfor %}
+      </div>
+
+     <hr />
