@@ -9,7 +9,7 @@
 
 <h3 class="smallcaps" id="Material">Books</h3>
 
-<p>Unsere Books sind das Herzstück der Dokumentation. Hier findet man die Grundlagen, Hilfe und erste Beispiele zur senseBox. Im folgenden werden die aktuellen Ressourcen zur aktuellen Version der senseBox vorgestellt</p>
+<p>  {{ t.description_book }}</p>
 <div class="container">
 {% assign material = site.data.translations.de.material_content | sort: 'position' %}
 
@@ -54,7 +54,8 @@
 {% endfor %}
   </div>
 
-<h3 class="smallcaps" id="Material">Material für den Einsatz in der Lehre</h3>
+<h3 class="smallcaps" id="Material"><p>  {{ t.description_teaching_short }}</p></h3>
+<p>  {{ t.description_teaching }}</p>
 
 {% assign teaching = site.data.translations.de.teaching_content | sort: 'position' %}
 
