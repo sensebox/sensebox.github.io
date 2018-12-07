@@ -79,7 +79,7 @@
             <div id="desc_{{ teaching.position }}" class="collapse">
               <div>{{ teaching.description }}</div>
               {% if teaching.download %}
-              <a class="social-media" href="{{ site.baseurl | append: teaching.download }}" target="_blank" role="button" ><img src="{{ site.baseurl | append: '/images/iconmonstr-download-9.svg'}}" alt="homepage icon"></a>
+              <a class="social-media" href="{{ teaching.download }}" target="_blank" role="button" ><img src="{{ site.baseurl | append: '/images/iconmonstr-download-9.svg'}}" alt="homepage icon"></a>
               {% endif %}
               {% if teaching.link %}
               <a class="social-media" href="{{teaching.link }}" target="_blank" role="button" ><img src="{{ site.baseurl | append: '/images/iconmonstr-link-1.svg'}}" alt="homepage icon"></a>

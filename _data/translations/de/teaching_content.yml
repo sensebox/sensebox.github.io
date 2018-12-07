@@ -4,7 +4,7 @@
   organisation: senseBox - Team
   description: Lernkarten für das selbstständige Arbeiten mit der senseBox und der Programmierung mit Blockly. Die Lernkarten können doppelseitig ausgedruckt werden.
   bgImage: /images/material/cards.png
-  download: senseBox_Karten.pdf
+  download: https://sensebox.de/docs/senseBox_Karten.pdf
 
 - name: :Arbeitsblätter
   image: 
