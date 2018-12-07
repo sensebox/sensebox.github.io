@@ -8,7 +8,7 @@
   bgImage: /images/material/edu_book.png
 
 - name: :home Book
-  image: /images/team/hackathon-jury/schwering.jpg
+  image: 
   position: m2
   organisation: senseBox - Team
   description: Anleitung und Infos zum Aufbau der senseBox:home. Wie stelle ich die senseBox:home auf, wie werden die Daten auf die openSenseMap übertragen und wo finde ich Hilfe?

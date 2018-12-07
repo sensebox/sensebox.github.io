@@ -2,17 +2,16 @@
   image: 
   position: more1
   organisation: senseBox - Team
-  description: Die alte Version der senseBox basierte auf einem Arduino und dem senseBox-Shield. Diese Version ist nichtmehr käuflich. Hier die Anleitungen zur alten":" senseBox:home, senseBox:edu, sowie die dazugehörige Blockly Version.
-  edulink: https://senseBox.github.io/books
-  homelink: https://senseBox.github.io/books
+  description: The old version of senseBox was based on an Arduino and the senseBox-Shield. This version is no longer for sale. Here are the instructions for the "old":" senseBox:home, senseBox:edu, and the corresponding Blockly version.
+  edulink: https://edu.books.sensebox.de/de/ 
+  homelink: https://home.books.sensebox.de/de/
   bgImage: /images/Genuino.png
-  download: senseBox_Karten.pdf
 
 - name: :openSenseMap API
   image: 
   position: more2
   organisation: senseBox - Team
-  description: Die Dokumentation der openSenseMap API ist eine technische Dokumentation mit Fokus auf die Software Integration der Daten
+  description: The documentation of the openSenseMap API is a technical documentation with focus on the software integration of the data.
   bgImage: /images/material/osem_api.png
   link: https://docs.opensensemap.org/
 
@@ -20,7 +19,7 @@
   image: 
   position: more3
   organisation: senseBox - Team
-  description: Anleitung, Experimente und Infos zur senseBox:edu. Dieses Book ist eine Sammlung von Material und eignet sich gut um die senseBox:edu kennenzulernen. 
+  description:  
   link: https://github.com/sensebox
   bgImage: /images/material/senseBox_github.png
 

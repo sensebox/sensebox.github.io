@@ -2,28 +2,28 @@
   image: 
   position: m1
   organisation: senseBox - Team
-  description: Anleitung, Experimente und Infos zur senseBox:edu. Dieses Book ist eine Sammlung von Material und eignet sich gut um die senseBox:edu kennenzulernen.
+  description: Instructions, experiments and info about senseBox:edu. This book is a collection of material and a good way to get to know senseBox:edu.
   link_mcu: https://sensebox.github.io/books-v2/edu/
   link_mcu_text: MCU 
   bgImage: /images/material/edu_book.png
 
 - name: :home Book
-  image: /images/team/hackathon-jury/schwering.jpg
+  image: 
   position: m2
   organisation: senseBox - Team
-  description: Anleitung und Infos zum Aufbau der senseBox:home. Wie stelle ich die senseBox:home auf, wie werden die Daten auf die openSenseMap übertragen und wo finde ich Hilfe?
+  description: Instructions and info for the setup of senseBox:home. How do I set up senseBox:home, how is the data transferred to the openSenseMap and where can I find help?
   bgImage: /images/material/home_book.png
 
 - name: :blockly Book
   image: 
   position: m3
   organisation: senseBox - Team
-  description: Dokumentation und Einstieg in die graphische Programmierung der senseBox mit Blockly. Was bedeuten die Blöcke, wie kann ich online kompilieren und was sind meine Möglichkeiten?
+  description: Documentation and introduction to the graphical programming of the senseBox with Blockly. What do the blocks mean, how can I compile online and what are my options?
   bgImage: /images/material/blockly_book.png
 
 - name: :openSenseMap Book
   image: 
   position: m4
   organisation: senseBox - Team
-  description: Dokumentation und Einstieg in offene Datenplattform openSenseMap. Hier gibt es technische Infos zur API und Informationen zur Integration anderer Microcontroller auf die openSenseMap.
+  description: Documentation and access to the open data platform openSenseMap. Here you can find technical information about the API and information about the integration of other microcontrollers on the openSenseMap.
   bgImage: /images/material/osem_book.png
