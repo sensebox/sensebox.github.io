@@ -14,10 +14,4 @@
   bgImage: /images/material/sheets_tutory.png
   link: https://www.tutory.de/user/sensebox
 
-- name: :ETH Zürich
-  image: 
-  position: t3
-  organisation: ETH Zürich
-  description: Die ETH Zürich verwendet die senseBox in drei verschiedenen Studiengängen. Für die Lehre in der Hochschule wurden eigene Materialien konzipiert, die auch als OER zur Verfügung gestellt werden.
-  bgImage: 
 
