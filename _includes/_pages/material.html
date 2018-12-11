@@ -5,13 +5,11 @@
   </div>
 
 
-
-
 <h3 class="smallcaps" id="Material">Books</h3>
 
 <p>  {{ t.description_book }}</p>
 <div class="container">
-{% assign material = site.data.translations.de.material_content | sort: 'position' %}
+{% assign material = site.data.translations.[page.lang].material_content | sort: 'position' %}
 
 <!-- count Material -> if odd, there has to be a blank col in the end -->
 <div hidden>
@@ -57,7 +55,7 @@
 <h3 class="smallcaps" id="Material"><p>  {{ t.description_teaching_short }}</p></h3>
 <p>  {{ t.description_teaching }}</p>
 
-{% assign teaching = site.data.translations.de.teaching_content | sort: 'position' %}
+{% assign teaching = site.data.translations.[page.lang].teaching_content | sort: 'position' %}
 
 <!-- count Material -> if odd, there has to be a blank col in the end -->
 <div hidden>
@@ -105,7 +103,7 @@
 <h3 class="smallcaps" id="Material">{{ t.description_more_short }}</h3>
 <p>{{ t.description_more }}</p>
 
-{% assign more = site.data.translations.de.material_more | sort: 'position' %}
+{% assign more = site.data.translations.[page.lang].material_more | sort: 'position' %}
 
 <!-- count Material -> if odd, there has to be a blank col in the end -->
 <div hidden>
