@@ -1,0 +1,32 @@
+- name: :edu Book
+  image: 
+  position: m1
+  organisation: senseBox - Team
+  description: Anleitung, Experimente und Infos zur senseBox:edu. Dieses Book ist eine Sammlung von Material und eignet sich gut um die senseBox:edu kennenzulernen.
+  link_mcu: https://sensebox.github.io/books-v2/edu/de/
+  link_mcu_text: MCU 
+  bgImage: /images/material/edu_book.png
+
+- name: :home Book
+  image: 
+  position: m2
+  organisation: senseBox - Team
+  link_mcu: https://sensebox.github.io/books-v2/home/de/
+  description: Anleitung und Infos zum Aufbau der senseBox:home. Wie stelle ich die senseBox:home auf, wie werden die Daten auf die openSenseMap übertragen und wo finde ich Hilfe?
+  bgImage: /images/material/home_book.png
+
+- name: :blockly Book
+  image: 
+  position: m3
+  organisation: senseBox - Team
+  link_mcu: https://sensebox.github.io/books-v2/blockly/de/
+  description: Dokumentation und Einstieg in die graphische Programmierung der senseBox mit Blockly. Was bedeuten die Blöcke, wie kann ich online kompilieren und was sind meine Möglichkeiten?
+  bgImage: /images/material/blockly_book.png
+
+- name: :openSenseMap Book
+  image: 
+  position: m4
+  organisation: senseBox - Team
+  link_mcu: https://sensebox.github.io/books-v2/osem/
+  description: Dokumentation und Einstieg in offene Datenplattform openSenseMap. Hier gibt es technische Infos zur API und Informationen zur Integration anderer Microcontroller auf die openSenseMap.
+  bgImage: /images/material/osem_book.png

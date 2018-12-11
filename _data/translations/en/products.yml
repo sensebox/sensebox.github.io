@@ -4,13 +4,10 @@ header-introduction: "There are two versions of senseBox: <b>senseBox:home</b> a
 
 to-senseBox-overwiew: "senseBox.kaufen"
 
-introduction: '<p>Von der senseBox gibt es zwei Varianten: die <span class="home-span">senseBox:home</span> und die <span class="edu-span">senseBox:edu</span>.</p>
-
-    <p>Die <span class="home-span">senseBox:home</span> ist eine modulare Umweltmessstation zum selber bauen. Je nach Interesse oder Forschungsfrage können sich Bürgerinnen eine Messstation mit verschiedenen Sensoren zusammenstellen und über LAN, WLAN oder LoRa mit dem Internet verbinden. Eine einfache Anleitung ermöglicht den Aufbau und die Registrierung auf der openSenseMap. Danach liefert sie kontinuierlich ortsbezogene (mobile oder stationäre) Messungen zu Temperatur, Luftfeuchte, Luftdruck, Beleuchtungsstärke, UV-Strahlung oder Feinstaubbelastung.</p>
-
-    <p>Mit der <span class="edu-span">senseBox:edu</span> kann man Messwerkzeuge selber bauen und programmieren (lernen). An vielen Schulen und Bildungseinrichtungen ist die senseBox bereits im Einsatz. Dank der Vielzahl von möglichen Projekten und Experimenten eignet Sie sich hervorragend für den Einsatz im gesamten MINT-Bereich. So können anhand relevanter Themenstellungen die Grundlagen des Programmierens gelernt werden oder auch schnell und einfach Messkampagnen durchgeführt werden.</p>    
-
-    <p>Bis Anfang 2018 basierte die senseBox auf einem Arduino/Genuino UNO Microcontroller, diese Version wird nicht mehr verkauft aber weiterhin unterstützt. Seit Mai 2018 basiert die senseBox auf der senseBox MCU und ist durch weitere Sensoren und Erweiterungen ausgestattet. Mehr dazu im <a href="">Blog-Post</a></p>
+introduction: '<p>There are two versions of the senseBox, the <span class="home-span">senseBox:home</span> and the <span class="edu-span">senseBox:edu</span>.</p>
+    <p>The <span class="home-span">senseBox:home</span> is a modular do-it-yourself environmental sensor station. Depending on your interest or research question, citizens can put together a measuring station with various sensors and connect to the Internet via LAN, WLAN or LoRa. A simple tutorial allows you to set up and register on the openSenseMap. It then continuously provides location-based (mobile or stationary) measurements of temperature, humidity, air pressure, illuminance, UV radiation or fine dust exposure.</p>
+    <p>With the <span class="edu-span">senseBox:edu</span> you can build and program your own measuring tools. The senseBox is already in use at many schools and educational institutions. Thanks to the large number of possible projects and experiments, it is ideally suited for use in the entire STEM field. This allows you to learn the basics of programming on the basis of relevant topics or to carry out measurement campaigns quickly and easily.</p>    
+    <p>Until early 2018 senseBox was based on an Arduino/Genuino UNO microcontroller, this version is no longer sold but still supported. Since May 2018 the senseBox is based on the senseBox MCU and is equipped with further sensors and extensions.</p>
     <p>&nbsp;</p>'
 
 sensors:
@@ -60,11 +57,11 @@ misc:
   header: "Equipment"
   mcu: "senseBox MCU"
   mcu-bread: "senseBox MCU with Breadboard"
-  jst: "JST Cabel"
-  usb: "USB-Cabel (with Power-Adapter)"
-  edu-usb: "USB-Cabel"
+  jst: "JST Cable"
+  usb: "USB-Cable (with Power-Adapter)"
+  edu-usb: "USB-Cable"
   box: "Outdoor case"
-  protection: "Radiation protection"
+  protection: "Radiation shield"
   lan-bee: "LAN-Bee"
   wifi-bee: "WiFi-Bee"
   sd-bee: "microSD-Bee"
@@ -84,4 +81,4 @@ addon:
   expander: JST Expander
   
 
-license: "Die Zusammenstellung der senseBox-Komponenten ist unter der CERN Open Hardware Lizenz 1.2 offen. Der Source Code der senseBox:home ist Open Source unter der LGPL 3.0 Lizenz verfügbar. Die Anleitungen sind Open Educational Resources (OER) unter der Creative Commons Lizenz CC BY SA 4.0."
+license: "The compilation of senseBox components is open under the CERN Open Hardware License 1.2. The source code of senseBox:home is open source available under the LGPL 3.0 license. The manuals are Open Educational Resources (OER) under the Creative Commons License CC BY SA 4.0."

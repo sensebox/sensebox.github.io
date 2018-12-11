@@ -1,4 +1,4 @@
-<div class="col-sm-4 col-md-4 col-lg-4 event-item">
+<div class="col-sm-3 col-md-3 col-lg-3 event-item">
   <div class="thumbnail">
     <div class="caption">
       <p>{{ include.event.starting-date | date: '%d.%m.%Y' }}</p>
@@ -8,6 +8,9 @@
 			<h3>{{ include.event.title }}</h3>
 		{% endif %}
       <p>{{ include.event.place }}</p>
+    {% if include.event.blog %}
+      <a class="social-media" href="{{include.event.blog }}" target="_blank" role="button" ><img src="{{ site.baseurl | append: '/images/iconmonstr-newspaper-13.svg'}}" alt="homepage icon"></a>
+    {% endif %}
     </div>
   </div>
 </div>
