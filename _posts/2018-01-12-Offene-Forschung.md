@@ -20,7 +20,7 @@ Dank der offenen Hardware von _senseBox_, den offenen Daten von der _openSenseMa
 Auf Basis von _[BinderHub](https://binderhub.readthedocs.io)_ kann jeder mit nur wenigen Klicks das gleiche virtuelle Labor in seinem Browser öffnen, welches für die ursprüngliche Untersuchung genutzt wurde.
 Und alles ohne irgendwelche Software zu installieren.
 
-Probiere es aus: [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/nuest/sensebox-binder/master)
+Probiere es aus: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/nuest/sensebox-binder/master)
 
 {% include image.html image=page.image2 %}
 
