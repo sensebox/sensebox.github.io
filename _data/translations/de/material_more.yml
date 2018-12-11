@@ -19,7 +19,7 @@
   image: 
   position: more3
   organisation: senseBox - Team
-  description: Github is our point of contact for software and hardware. In different repositories you can find the source code for openSenseMap, Blockly and much more. 
+  description: Github ist unsere Basis für Soft- und Hardware. In verschiedenen Repositories befindet sich der Quellcode für die openSenseMap, Blockly und vieles mehr. 
   link: https://github.com/sensebox
   bgImage: /images/material/senseBox_github.png
 
