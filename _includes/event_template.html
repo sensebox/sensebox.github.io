@@ -1,7 +1,7 @@
 <div class="col-sm-3 col-md-3 col-lg-3 event-item">
   <div class="thumbnail">
     <div class="caption">
-      <p>{{ include.event.starting-date | date: '%d.%m.%Y' }}</p>
+      <p>{{ include.event.starting-date | date: '%d.%m.%Y' }} {% if include.event.starting-date != include.event.ending-date %} - {{ include.event.ending-date | date: '%d.%m.%Y' }} {% endif %} </p>
 		{% if include.event.link %}
 			<h3>{{ include.event.title }} <small><a href="{{ include.event.link }}" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></small></h3>
 		{% else %}
