@@ -1,26 +1,26 @@
 title: "go:home"
 
-first-steps: "Erste Schritte"
-first-steps-text: "Alles zur Installation und zum Aufbau der senseBox"
+first-steps: "First Steps"
+first-steps-text: "Everything about the installation and the structure of the senseBox"
 
 software-installation: "Software Installation"
-hardware-install: "Anschluss und Verkabelung"
-osem-reg: "Registrierung auf der openSenseMap"
+hardware-install: "Connection and wiring"
+osem-reg: "Registration on the openSenseMap"
 
-components: "Komponenten"
-components-text: "Hier findest Du genaue Informationen zu den verschiedenen Komponenten der senseBox"
+components: "Components"
+components-text: "Here you can find detailed information about the different components of the senseBox"
 
 mcu: "senseBox MCU"
 bees: "Bees"
-sensors: "Sensoren"
-zubehoer: "Zubehör"
+sensors: "Sensors"
+zubehoer: "Equipment"
 
-help: "Wo finde ich Hilfe?"
-help-text: "Du benötigst Hilfe mit deiner senseBox, hier findest du die nötigen Informationen"
+help: "Where can I find help?"
+help-text: "You need help with your senseBox, here you will find the necessary information:"
 
 forum: "Forum"
-mail: "Email"
+mail: "E-mail"
 
 
 links: "Links"
-links-text: "Hier findest du Links rund um das senseBox Projekt"
+links-text: "Here you will find links around the senseBox project"
