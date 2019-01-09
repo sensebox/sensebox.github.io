@@ -1,7 +1,7 @@
 title: "go:home"
 
 first-steps: "First Steps"
-first-steps-text: "Everything about the installation and the structure of the senseBox"
+first-steps-text: "Everything about the installation and assembly of the senseBox"
 
 software-installation: "Software Installation"
 hardware-install: "Connection and wiring"
@@ -13,10 +13,10 @@ components-text: "Here you can find detailed information about the different com
 mcu: "senseBox MCU"
 bees: "Bees"
 sensors: "Sensors"
-zubehoer: "Equipment"
+zubehoer: "Accessories"
 
 help: "Where can I find help?"
-help-text: "You need help with your senseBox, here you will find the necessary information:"
+help-text: "If you need help with your senseBox, you will find all the necessary information here:"
 
 forum: "Forum"
 mail: "E-mail"

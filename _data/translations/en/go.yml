@@ -1,3 +1,3 @@
-intro: 'Do you need help <span class="go-home">senseBox:home</span> or want to go to <span class="go-edu">senseBox:edu</soan>?'
+intro: 'Do you need help with your <span class="go-home">senseBox:home</span> or <span class="go-edu">senseBox:edu</soan>?'
 home-text: "The senseBox for your home."
-edu-text: "The senseBox for measuring, learning, programming and experimenting."
+edu-text: "The senseBox for measuring, learn programming and experimenting."
