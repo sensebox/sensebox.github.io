@@ -27,6 +27,6 @@
   image: 
   position: m4
   organisation: senseBox - Team
-  link_mcu: https://sensebox.github.io/books-v2/osem/
+  link_mcu: https://docs.opensensemap.org/
   description: Documentation and access to the open data platform openSenseMap. Here you can find technical information about the API and information about the integration of other microcontrollers on the openSenseMap.
   bgImage: /images/material/osem_book.png

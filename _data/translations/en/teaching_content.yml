@@ -14,4 +14,10 @@
   bgImage: /images/material/sheets_tutory.png
   link: https://www.tutory.de/user/sensebox
 
+- name: :ETH Zürich
+  image: 
+  position: t3
+  organisation: ETH - Zürich
+  description: ETH Zürich uses the senseBox for teaching purposes in two different courses. The teaching materials are currently being evaluated and will be made available to you as OER after this process. 
+  bgImage: /images/material/eth.jpg
 
