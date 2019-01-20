@@ -18,8 +18,9 @@
   image: 
   position: t3
   organisation: ETH - Zürich
-  description: Die ETH Zürich verwendet die senseBox in der Lehre in zwei verschiedenen Studiengängen. Die Lehrmaterialien befinden sich gerade in der Evaluation und werden euch nach diesem Prozess als OER zur Verfügung gestellt. 
+  description: Die ETH Zürich verwendet die senseBox in der Lehre in zwei verschiedenen Studiengängen und stellt uns und euch die Materialien aus der Lehre zu verfügung (Zurzeit nur auf Englisch)
   bgImage: /images/material/eth.jpg
+  download: https://sensebox.de/docs/ETH_GeosensorsLab_tutorial.pdf
 
 
 
