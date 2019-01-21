@@ -1,26 +1,18 @@
-title: "go:home"
+title: "Zusammenbau des Gehäuses"
+go-to: "Gehe auf: <a target='_blank' href='https://blockly.sensebox.de/ardublockly/?lang=de&board=sensebox-mcu'>https://blockly.sensebox.de/</a>" 
 
-first-steps: "Erste Schritte"
-first-steps-text: "Alles zur Installation und zum Aufbau der senseBox"
+wiring: "Schließe das WiFi-Bee am XBEE1 Steckplatz an."
+screw: "Schraube die MCU im Gehäuse fest. Achte darauf den USB-Eingang zum Loch des Gehäuses auszurichten."
+outside_wire: "Befestige das M20 Gewinde am Ausgang des Gehäuses und führe die beiden Kabel hindurch."
+temp_sensor: "Bringe den Temperatur&Luftfeuchtesensor im Strahlenschutz an."
+other_sensors: "Schließe die anderen Sensoren am I²C/Wire Block an."
+setup_sensors: "Führe die Kabel durch die vorgestanzten Löcher und verbinde sie mit den Sensoren. Benutze die mitgelieferten Stelzen um die Sensoren über der Plexiglasscheibe zu installieren."
 
-software-installation: "Software Installation"
-hardware-install: "Anschluss und Verkabelung"
-osem-reg: "Registrierung auf der openSenseMap"
+fine_dust: "Feinstaub-Erweiterung"
+fine_dust_1: ""
+fine_dust_wiring: "Löse zunächst die Kappe und dann die Gummidichtung im Gewinde. Stecke das Kabel vom Sensor nacheinander durch die gerade gelösten Komponente. Stecke das Kabel durch das Loch im Gehäuse und verbinde es mit dem Sensor."
+fine_dust_wiring2: "Stecke die Kunststoffröhre auf den Eingang vom Feinstaubsensor und durch das zweite Loch im Gehäuse. Drehe beide Gewinde fest und befestige den Deckel des Gehäuses."
+final: "Registrierung auf der openSenseMap"
+final_text: "Registriere dich auf der openSenseMap und wähle den Reiter 'neue senseBox' aus und erstelle eine neue senseBox mit deinen Sensoren und Konfigurationen"
 
-components: "Komponenten"
-components-text: "Hier findest Du genaue Informationen zu den verschiedenen Komponenten der senseBox"
-
-mcu: "senseBox MCU"
-bees: "Bees"
-sensors: "Sensoren"
-zubehoer: "Zubehör"
-
-help: "Wo finde ich Hilfe?"
-help-text: "Du benötigst Hilfe mit deiner senseBox, hier findest du die nötigen Informationen"
-
-forum: "Forum"
-mail: "Email"
-
-
-links: "Links"
-links-text: "Hier findest du Links rund um das senseBox Projekt"
+transmit_sketch: "Verbinde das USB-Kabel mit einem Computer und Klicke den roten 'Reset' Knopf auf der senseBoxMCU doppelt. Die senseBox MCU wird als Wechseldatenträger auf deinem Computer erkannt. Ziehe nun den runtergeladenen Sketch auf die senseBox MCU!"

@@ -1,61 +1,76 @@
 {% assign t = site.data.translations.[page.lang].go-home %}
 
-<h1 class="title">{{t.title}}</h1>
-<div class="ut-container">
-    <div class="ut-item">
-        <div class="ut-item-head">
-            <h1>{{t.first-steps}}</h1>
-            <p>{{t.first-steps-text}}</p>
+
+<div class="edu-go-page">
+    <div class="topic-block">
+        <h1 class="title">{{t.title}}</h1>
+        <div class="content-container">
+            <ol class="quick-start-list">
+                <li>
+                    <div class="text">
+                        {{t.wiring}}
+                    </div>
+                </li>
+                <li>
+                    <div class="text">
+                        {{t.screw}}
+                    </div>
+                </li>
+                <li>
+                    <div class="text">
+                        {{t.outside_wire}}
+                    </div>
+                </li>
+                <li>
+                    <div class="text">
+                        {{t.temp_sensor}}
+                    </div>
+                </li>
+                <li>
+                    <div class="text">
+                        {{t.other_sensors}}
+                    </div>
+                </li>
+                <li>
+                    <div class="text">
+                        {{t.setup_sensors}}
+                    </div>
+                </li>
+            </ol>
+            </div>
         </div>
-        <div class="ut-item-body">
-            <ol>
-                <li><a target="_blank" href="https://sensebox.github.io/books-v2/home/de/erste-schritte/software-installation.html">{{t.software-installation}}</a></li>
-                <li><a target="_blank" href="https://sensebox.github.io/books-v2/home/de/erste-schritte/anschluss-und-verkabelung.html">{{t.hardware-install}}</a></li>
-                <li><a target="_blank" href="https://sensebox.github.io/books-v2/home/de/erste-schritte/registrierung-auf-der-openSenseMap.html">{{t.osem-reg}}</a></li>
+        <div class="topic-block">
+                <h1 class="title">{{t.fine_dust}}</h1>
+                <div class="content-container">
+                    <ol class="quick-start-list">
+                <li>
+                        <div class="text">
+                            {{t.fine_dust_wiring}}
+                        </div>
+                    </li>
+                    <li>
+                            <div class="text">
+                                {{t.fine_dust_wiring2}}
+                            </div>
+                        </li>
             </ol>
         </div>
     </div>
-
-    <div class="ut-item">
-        <div class="ut-item-head">
-            <h1>{{t.components}}</h1>
-            <p>{{t.components-text}}</p>
-        </div>
-        <div class="ut-item-body">
-            <ol>
-                <li><a target="_blank" href="https://sensebox.github.io/books-v2/home/de/komponenten/sensebox-mcu.html">{{t.mcu}}</a></li>
-                <li><a target="_blank" href="https://sensebox.github.io/books-v2/home/de/komponenten/bees/">{{t.bees}}</a></li>
-                <li><a target="_blank" href="https://sensebox.github.io/books-v2/home/de/komponenten/sensoren/">{{t.sensors}}</a></li>
-                <li><a target="_blank" href="https://sensebox.github.io/books-v2/home/de/komponenten/zubehoer/">{{t.zubehoer}}</a></li>
+    <div class="topic-block">
+            <h1 class="title">{{t.final}}</h1>
+            <div class="content-container">
+                <ol class="quick-start-list">
+            <li>
+                <div class="text">
+                    {{t.final_text}}
+                </div>
+            </li>
+            <li>
+                <div class="text">
+                    {{t.transmit_sketch}}
+                </div>
+                </li>
             </ol>
-        </div>
-    </div>
-
-    <div class="ut-item">
-        <div class="ut-item-head">
-            <h1>{{t.help}}</h1>
-            <p>{{t.help-text}}</p>
-        </div>
-        <div class="ut-item-body">
-            <ul>
-                <li><a target="_blank" href="https://forum.sensebox.de/">{{t.forum}}</a></li>
-                <li><a href="mailto:support@sensebox.de">{{t.mail}}</a></li>
-                <li><a target="_blank" href="https://sensebox.github.io/books-v2/home/hilfe/hilfe.html">FAQ</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="ut-item">
-        <div class="ut-item-head">
-            <h1>{{t.links}}</h1>
-            <p>{{t.links-text}}</p>
-        </div>
-        <div class="ut-item-body">
-            <ul>
-                <li><a target="_blank" href="https://opensensemap.org/">openSenseMap</a></li>
-                <li><a target="_blank" href="https://blockly.sensebox.de/">Blockly für senseBox</a></li>
-            </ul>
-        </div>
-    </div>
-
+            </div>
+</div>
 </div>
