@@ -18,6 +18,7 @@
   image: 
   position: t3
   organisation: ETH - Zürich
-  description: ETH Zürich uses the senseBox for teaching purposes in two different courses. The teaching materials are currently being evaluated and will be made available to you as OER after this process. 
+  description: ETH Zürich uses the senseBox for teaching purposes in two different courses. The senseBox was used in the Geosensensors Lab and the ETH is happy to share the teaching material with you.
   bgImage: /images/material/eth.jpg
+  download: https://sensebox.de/docs/ETH_GeosensorsLab_tutorial.pdf
 
