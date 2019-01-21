@@ -8,11 +8,13 @@ temp_sensor: "Bringe den Temperatur&Luftfeuchtesensor im Strahlenschutz an."
 other_sensors: "Schließe die anderen Sensoren am I²C/Wire Block an."
 setup_sensors: "Führe die Kabel durch die vorgestanzten Löcher und verbinde sie mit den Sensoren. Benutze die mitgelieferten Stelzen um die Sensoren über der Plexiglasscheibe zu installieren."
 
+bgImage1: /images/material/home_book.png
 fine_dust: "Feinstaub-Erweiterung"
 fine_dust_1: ""
 fine_dust_wiring: "Löse zunächst die Kappe und dann die Gummidichtung im Gewinde. Stecke das Kabel vom Sensor nacheinander durch die gerade gelösten Komponente. Stecke das Kabel durch das Loch im Gehäuse und verbinde es mit dem Sensor."
 fine_dust_wiring2: "Stecke die Kunststoffröhre auf den Eingang vom Feinstaubsensor und durch das zweite Loch im Gehäuse. Drehe beide Gewinde fest und befestige den Deckel des Gehäuses."
+bgImage2: 
 final: "Registrierung auf der openSenseMap"
 final_text: "Registriere dich auf der openSenseMap und wähle den Reiter 'neue senseBox' aus und erstelle eine neue senseBox mit deinen Sensoren und Konfigurationen"
-
+bgImage3: /images/material/osem_book.png
 transmit_sketch: "Verbinde das USB-Kabel mit einem Computer und Klicke den roten 'Reset' Knopf auf der senseBoxMCU doppelt. Die senseBox MCU wird als Wechseldatenträger auf deinem Computer erkannt. Ziehe nun den runtergeladenen Sketch auf die senseBox MCU!"

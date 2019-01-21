@@ -2,75 +2,172 @@
 
 
 <div class="edu-go-page">
-    <div class="topic-block">
-        <h1 class="title">{{t.title}}</h1>
-        <div class="content-container">
-            <ol class="quick-start-list">
-                <li>
-                    <div class="text">
-                        {{t.wiring}}
+    <div class="row">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                            {{t.title}}
+                        </a>
+                    </h4>
+                </div>
+            <div id="collapse1" style="background-color:none" class="panel-collapse collapse go-home">
+                    <div class="panel-body">
+                            <div class="content-container">
+                                    <ol class="quick-start-list">
+                                        <li>
+                                            <div class="text">
+                                                {{t.wiring}}
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text">
+                                                {{t.screw}}
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text">
+                                                {{t.outside_wire}}
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text">
+                                                {{t.temp_sensor}}
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text">
+                                                {{t.other_sensors}}
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text">
+                                                {{t.setup_sensors}}
+                                            </div>
+                                        </li>
+                                    </ol>
+                                    </div>
                     </div>
-                </li>
-                <li>
-                    <div class="text">
-                        {{t.screw}}
-                    </div>
-                </li>
-                <li>
-                    <div class="text">
-                        {{t.outside_wire}}
-                    </div>
-                </li>
-                <li>
-                    <div class="text">
-                        {{t.temp_sensor}}
-                    </div>
-                </li>
-                <li>
-                    <div class="text">
-                        {{t.other_sensors}}
-                    </div>
-                </li>
-                <li>
-                    <div class="text">
-                        {{t.setup_sensors}}
-                    </div>
-                </li>
-            </ol>
+                </div>
             </div>
-        </div>
-        <div class="topic-block">
-                <h1 class="title">{{t.fine_dust}}</h1>
-                <div class="content-container">
-                    <ol class="quick-start-list">
-                <li>
-                        <div class="text">
-                            {{t.fine_dust_wiring}}
+                <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                    {{t.fine_dust}}
+                                </a>
+                            </h4>
                         </div>
-                    </li>
-                    <li>
-                            <div class="text">
-                                {{t.fine_dust_wiring2}}
+                        <div id="collapse2" class="panel-collapse collapse go-home">
+                            <div class="panel-body">
+                                    <div class="content-container">
+                                            <ol class="quick-start-list">
+                                                <li>
+                                                    <div class="text">
+                                                        {{t.fine_dust_wiring}}
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="text">
+                                                        {{t.fine_dust_wiring2}}
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                    </div>
                             </div>
-                        </li>
-            </ol>
+                        </div>
+                </div>
+                <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                    {{t.final}}
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse go-home">
+                            <div class="panel-body">
+                                    <div class="content-container">
+                                            <ol class="quick-start-list">
+                                                <li>
+                                                    <div class="text">
+                                                        {{t.final_text}}
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="text">
+                                                        {{t.transmit_sketch}}
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                    </div>
+                            </div>
+                        </div>
+                </div>
         </div>
     </div>
-    <div class="topic-block">
-            <h1 class="title">{{t.final}}</h1>
-            <div class="content-container">
-                <ol class="quick-start-list">
-            <li>
-                <div class="text">
-                    {{t.final_text}}
+</div>
+
+
+
+<!--                         
+            <div class="col-lg-3 col-sm-6"> 
+                    <div class="card" style="cursor: pointer;" data-toggle="collapse" data-target="#desc">
+                            <canvas class="header-bg" width="250" id="header-blur" style="background-image: url({{ t.bgImage1 }});"></canvas>
+                            <div class="content">
+                            <h4 class="" style="clear:both">{{ t.title}}</h4>
+
+                            </div>
+                            </div>
+                        </div>
+                <div class="col-lg-3 col-sm-6">
+                        <div class="card" style="cursor: pointer;" data-toggle="collapse" data-target="#descfine">
+                                <canvas class="header-bg" width="250" id="header-blur" style="background-image: url({{ t.bgImage2 }});"></canvas>
+                                <div class="content">
+                                        <h4 class="" style="clear:both">{{ t.fine_dust}}</h4>
+                                        <div class="content-container">
+                                                <ol class="quick-start-list">
+                                                    <li>
+                                                        <div class="text">
+                                                            {{t.fine_dust_wiring}}
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="text">
+                                                            {{t.fine_dust_wiring2}}
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                        </div>
+
+                                </div>
+                        </div>
+                            
                 </div>
-            </li>
-            <li>
-                <div class="text">
-                    {{t.transmit_sketch}}
+                <div class="col-lg-3 col-sm-6">
+                        <div class="card" style="cursor: pointer;" data-toggle="collapse" data-target="#descfinal">
+                                <canvas class="header-bg" width="250" id="header-blur" style="background-image: url({{ t.bgImage3 }});"></canvas>
+                                <div class="content">
+                                        <h4 class="" style="clear:both">{{t.final}}</h4>
+                                        <div id="descfinal" class="content-container collapse">
+                                                <ol class="quick-start-list">
+                                                    <li>
+                                                        <div class="text">
+                                                            {{t.final_text}}
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="text">
+                                                            {{t.transmit_sketch}}
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                        </div>
+
+                                </div>
+                        </div>
                 </div>
-                </li>
-            </ol>
             </div>
-</div>
-</div>
+        </div>
+    </div><!--End Row-->
