@@ -390,6 +390,31 @@ hr {
   box-shadow: none;
 }
 
+h1.panel-title{
+  a{
+    color: $sensebox-green;
+    font-size:30px;
+
+    &:before{
+      background-image: url('../images/raute-gruen.png');
+      background-repeat: no-repeat;
+      color: white;
+      font-size: 28px;
+      content: '×';
+      width:34px;
+      height: 34px;
+      vertical-align: middle;
+      user-select: none;
+      text-decoration: none;
+      line-height: 34px;
+      position: absolute;
+      left:600px
+    }
+    &.collapsed:before {
+      content: '+'
+    }
+  }
+}
 h3.panel-title {
   a {
     color: $sensebox-green;
@@ -406,7 +431,6 @@ h3.panel-title {
       color: white;
       user-select: none;
       text-decoration: none;
-      text-align: center;
       font-size: 28px;
       vertical-align: middle;
       line-height: 34px;
