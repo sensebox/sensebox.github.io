@@ -4,7 +4,7 @@
   organisation: senseBox - Team
   description: Learning cards for working independently with the senseBox and programming with Blockly. The Learning Cards should be printed double-sided.
   bgImage: /images/material/cards.png
-  download: senseBox_cards_en.pdf
+  download: https://sensebox.de/docs/senseBox_cards_en.pdf
 
 - name: :Worksheets
   image: 
