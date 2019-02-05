@@ -1,0 +1,57 @@
+.community-list {
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+}
+
+.category-header {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.card-link {
+    display: block;
+    text-align: left;
+    color: black;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+
+
+.community-card {
+    text-align: left;
+    padding: 0.5em;
+
+    h3 {
+        span {
+            opacity: 0.8;
+            font-size: 0.8em;
+        }
+    }
+
+    .info-box {
+        display: flex;
+        .image-container {
+            max-width: 250px;
+            min-width: 150px;
+            img {
+                max-height: 100%;
+                max-width: 100%;
+            }
+        }
+        .info-text {
+            padding: 0 0.5em;
+            font-size: 0.8em;
+            .light-op {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+

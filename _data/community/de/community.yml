@@ -1,0 +1,36 @@
+categories:
+  - name: Dashboards
+    projects:
+      - name: Hub
+        image: /images/community/hub.png
+        description: Zeige die Daten deiner senseBox in einem schönen Graph an.
+        link: https://dashboardsensebox.netlify.com/#/go
+        date: 2018-02-10
+        tags: dashboard, graphs, uni
+        creator: Eric
+
+      - name: Eboard
+        image: /images/community/dashbaord.jpg
+        description: Zeige die Daten deiner senseBox in einem schönen Graph an.
+        link: https://dashboardsensebox.netlify.com/#/go
+        date: 2018-09-10
+        tags: dashboard
+        creator: Eric
+
+  - name: Hardware Projekte
+    projects:
+      - name: Wurzelfenster
+        image: /images/community/dashbaord.jpg
+        description: Intelligente Bewässerung.
+        link: https://dashboardsensebox.netlify.com/#/go
+        date: 2018-09-10
+        tags: bewässerung, bodenfeuchte, grundschule
+        creator: Eric
+
+      - name: Ameisenfenster
+        image: /images/community/dashbaord.jpg
+        description: Überwache die ameisen mit der sensebox.
+        link: https://dashboardsensebox.netlify.com/#/go
+        date: 2018-09-10
+        tags: ameisen, schule
+        creator: Eric
