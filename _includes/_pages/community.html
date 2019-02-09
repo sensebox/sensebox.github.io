@@ -4,17 +4,18 @@
 
 <p>{{t.subHeader}}</p>
 
-<input id="com-search" type="text" placeholder="Search..">
-<div>Anzahl Ergebnisse: <span id="totalVisible"></span> </div>
+<h3>{{t.search_projects}}</h3>
+<input id="com-search" type="text" placeholder="{{t.search}}">
+<div>{{t.project_numbers}}: <span id="totalVisible"></span> </div>
 
 <div id="community-list">
     {% for categorie in projects.categories %}
-    <h2 class="category-header">{{categorie.name}}</h2>
     
     <ul>
+        <h2 class="category-header">{{categorie.name}}</h2>
         {% for project in categorie.projects %}
             <li class="card">
-                <a class="card-link">
+                <a href="{{project.link}}" target="_blank" class="card-link">
                     <div class="community-card">
                         <h3>{{project.name}} <span> | {{project.date | date: '%d.%m.%Y'}} ({{project.creator}})</span></h3>
                         <div class="info-box">
@@ -31,7 +32,6 @@
             </li>
         {% endfor %}
     </ul>
-    
     {% endfor %}
 </div>
 
@@ -46,6 +46,9 @@
         $("#com-search").on("keyup", function() {
             var value = $(this).val().toLowerCase();
             $("#community-list li").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+            $("#community-list ul").filter(function() {
                 $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
             });
             checkNumber();
