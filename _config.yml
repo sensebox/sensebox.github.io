@@ -13,6 +13,9 @@ markdown: kramdown
 permalink: /blog/:year-:month-:day-:title
 
 future: true
+# Project Tags
+enableTags: true
+tagarray: []
 
 # Extra styling
 # sass:
