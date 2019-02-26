@@ -33,14 +33,17 @@
 
 	$.fn.extend({
 	  filterTags: function(tagNames) {
-	  	if(tagNames.length == 0) return this.showAll();
-
+			if(tagNames.length == 0) return this.showAll();
+			console.log(this);
 	    return this.each(function() {
-	    	var itemTagArray = JSON.parse( $(this).attr('data-tags') );
-	    	var unfound = $( tagNames ).not( itemTagArray ).get();
-	    	console.log("unfound", unfound, itemTagArray.length);
-	    	if( unfound.length == tagNames.length ){
-		//	if($.inArray(tagName, itemTagArray) === -1){
+				var itemTagArray = JSON.parse( $(this).attr('data-tags') );
+				console.log(tagNames);
+				
+				var unfound = $( tagNames ).filter( itemTagArray ).get();
+				console.log(unfound);
+	    	//console.log("unfound", unfound, itemTagArray.length);
+	    	if( unfound.length != tagNames.length ){
+			//if($.inArray(tagNames, itemTagArray) === -1){
 				$(this).addClass('not-show');
 			}else{
 				$(this).removeClass('not-show');

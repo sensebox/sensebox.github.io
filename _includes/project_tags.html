@@ -1,3 +1,45 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4"></div>
+            <span class="project-label-all tag-filter tag-cloud all">Alle</span>
+    </div>
+ <div class="row">
+     <div class="col-md-1 col-xs-1">
+            <p>Language:</p>
+     </div>
+     <div class="col-md-10">
+{% if site.enableTags ==  true %} 
+	<div id="tag-filter" class="col-md-12 col-xs-12 tag-group">
+        {% assign tagarray = site.tagarray %}
+        {% for project in site.data.projects %}
+            {% for tag in project.lang %}
+                {% assign tagarray = tagarray | push: tag %}
+            {% endfor %}
+        {% endfor %}
+
+        {% assign tags = tagarray[1] %}
+        {% for item in tagarray %}
+            {% assign tagDown = item | downcase %}
+            {% assign tagComp = tags | downcase %}
+            {% unless tagComp contains tagDown %}
+                {% capture tags %}{{ tags }}|{{ item }}{% endcapture %}
+            {% endunless %}
+        {% endfor %}
+
+        {% assign taglist = tags | split: '|' | sort %}
+        {% for tag in taglist %}
+            <span class="project-label tag-filter tag-cloud" data-tag="{{ tag | downcase }}">{{ tag }}</span>
+        {% endfor %}
+	</div>
+{% endif %}
+</div>
+</div>
+<div class="row">
+        <div class="col-md-1 col-xs-1">
+               <p>Fächer:</p>
+        </div>
+        <div class="col-md-10">
 {% if site.enableTags ==  true %} 
 	<div id="tag-filter" class="col-md-12 col-xs-12 tag-group">
         {% assign tagarray = site.tagarray %}
@@ -22,7 +64,13 @@
         {% endfor %}
 	</div>
 {% endif %}
-
+        </div>
+</div>
+<div class="row">
+        <div class="col-md-2 col-xs-2">
+               <p>Alter/Jahrgangsstufe:</p>
+        </div>
+        <div class="col-md-10">
 {% if site.enableTags ==  true %} 
 	<div id="tag-filter" class="col-md-12 col-xs-12 tag-group">
         {% assign tagarray = site.tagarray %}
@@ -47,3 +95,5 @@
         {% endfor %}
 	</div>
 {% endif %}
+</div>
+</div>

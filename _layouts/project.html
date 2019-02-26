@@ -7,17 +7,29 @@ layout: default
 		{{ content }}
 
 		<div class="projects row">
+				<div style="text-align: center;">
 		<h2>Filter</h2>
+				</div>
 		{% include project_tags.html %}
 		{% for i in site.data.projects %}
-		<div class="project-item col-md-4 col-sm-6 col-xs-12" data-tags='{{ i.tags | jsonify | downcase }}'>
+		{% assign tagarray = site.tagarray %}
+				{% for tag in i.tags %}
+						{% assign tagarray = tagarray | push: tag %}
+				{% endfor %}
+				{% for tag in i.age_tag %}
+						{% assign tagarray = tagarray | push: tag %}
+				{% endfor %}
+				{% for tag in i.lang %}
+						{% assign tagarray = tagarray | push: tag %}
+				{% endfor %}
+		<div class="project-item col-md-4 col-sm-6 col-xs-12" data-tags='{{ tagarray | jsonify | downcase }}'>
 				<div class="well project-outer">
 						<div class="project-inner">
 								<a href="/images/projects/i.image }}" class="thickbox">
 								<div class="project-img bordered" style="background-image: url('/images/projects/{{ i.image }}');"></div>
 								</a>
 								{% if i.url %} <a href="{{ i.url }}"> {% endif %}
-								<h3 class="project-headlines">{{ i.name }}</h3>
+								<h4 class="project-headlines">{{ i.name }}</h4>
 								{% if i.url %} </a> {% endif %}
 								<p>{{ i.abstract }}</p>
 								<div class="project-content">

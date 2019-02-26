@@ -26,10 +26,11 @@ $text_size: 18px;
  */
 .project-item.not-show{ display: none; }
 
+
 .project-outer {
 
-    vertical-align: top;
-
+    vertical-align: middle;
+    
     .project-headlines {
 
         @include margins(5px 0);
