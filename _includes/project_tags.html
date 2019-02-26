@@ -1,9 +1,5 @@
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-4 col-md-offset-4"></div>
-            <span class="project-label-all tag-filter tag-cloud all">Alle</span>
-    </div>
  <div class="row">
      <div class="col-md-1 col-xs-1">
             <p>Language:</p>
@@ -91,9 +87,13 @@
 
         {% assign taglist = tags | split: '|' | sort %}
         {% for tag in taglist %}
-            <span class="project-label tag-filter tag-cloud" data-tag="{{ tag | downcase }}">{{ tag }}</span>
+            <span class="project-label tag-filter tag-group tag-cloud" data-tag="{{ tag | downcase }}">{{ tag }}</span>
         {% endfor %}
 	</div>
 {% endif %}
 </div>
+<div class="row">
+            <span class="project-label-all tag-filter tag-group tag-cloud all">Alle</span>
+</div>
+<hr>
 </div>

@@ -37,12 +37,12 @@ layout: default
 											<h4>Tags:</h4>
 										{% if i.tags %} 
 												{% for j in i.tags %}
-												<span class="label tags tag-filter" data-tag="{{ j | downcase }}">{{ j }}</span>
+												<span class="project-label tags tag-filter" data-tag="{{ j | downcase }}">{{ j }}</span>
 												{% endfor %}
 										{% endif %}
 										{% if i.age_tag %} 
 												{% for j in i.age_tag %}
-												<span class="label tags tag-filter" data-tag="{{ j | downcase }}">{{ j }}</span>
+												<span class="project-label tags tag-filter" data-tag="{{ j | downcase }}">{{ j }}</span>
 												{% endfor %}
 										{% endif %}
 										</div>
