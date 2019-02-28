@@ -28,7 +28,7 @@ layout: default
 								<a href="/images/projects/i.image }}" class="thickbox">
 								<div class="project-img bordered" style="background-image: url('/images/projects/{{ i.image }}');"></div>
 								</a>
-								{% if i.url %} <a href="{{ i.url }}"> {% endif %}
+								{% if i.url %} <a href="{{ site.baseurl | append: i.url }}"> {% endif %}
 								<h4 class="project-headlines">{{ i.name }}</h4>
 								{% if i.url %} </a> {% endif %}
 								<p>{{ i.abstract }}</p>

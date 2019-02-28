@@ -3,7 +3,7 @@
 		"name": "Verkehrszähler",
 		"image": "traffic_counter.png",
 		"abstract": "Ein kleiner Verkehrzähler mithilfe des Ultraschallsensors",
-		"url": "https://sensebox.github.io/books-v2/edu/de/projekte/verkehrszaehlerv2.html",
+		"url": "2018-11-05-Verkehrszähler",
 		"date": "April 2018",
 		"lang": ["Arduino"],
 		"tags": ["Geographie"],

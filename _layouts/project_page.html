@@ -1,0 +1,38 @@
+---
+layout: simple
+---
+
+<!-- News Bereich / Blogeinträge -->
+<div class="posts">
+	<div class="row">
+		<div class="col-lg-12 post-header">
+			<div style="text-align: center;">
+				<h2>
+					<a href="{{ site.url | append: '/projects' }}" style="color: rgba(0,0,0,0.5);">Projekte</a>
+				</h2>
+				<h1 class="post-title">{{ page.title }}</h1>
+				<div class="clearfix">
+					<span class="author">Von {{ page.author }} am {{ page.date | date: "%d/%m/%Y" }}</span>
+				</div>
+				{% if page.thumbnail %}
+				<div class="col-lg-6 col-sm-6 col-lg-offset-3 col-sm-offset-3 hidden-xs">
+						<img class="press-pic" src="{{ site.baseurl | append: page.thumbnail }}" alt="{{ page.title }} - Logo"/>
+					</div>
+				{% endif %}	
+			</div>
+		</div>
+	</div>
+	<hr>
+<div>
+	<h2>Benötigte Materialien</h2>
+	<ul>
+		{% for material in page.material %}
+		<li>{{material | upcase}}</li>
+		{% endfor %}
+		</ul>
+</div>
+<hr>
+    <article class="post-content">
+        {{ content }}
+    </article>
+</div>

@@ -33,11 +33,13 @@ tagarray: []
 exclude: ["README.md", "how-to-add-blog-post.md", "how-to-create-new-page.md", "LICENSE", "run-in-docker-jekyll.sh"]
 
 collections:
-  - press
-  - events
-  - posts
-  - awards_de
-  - awards_en
+  press:
+  events:
+  posts:
+  projects: 
+    output: true
+  awards_de:
+  awards_en:
 
 plugins:
   - jekyll-redirect-from
