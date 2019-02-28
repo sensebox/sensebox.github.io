@@ -61,21 +61,15 @@ Need to override the 3.3 new styles for modern browsers & apply opacity
 
 <div id="myCarousel" class="carousel slide{% if include.transition == 'fade' %} carousel-fade{% endif %}" data-ride="carousel" data-interval="{{ include.duration }}000">
     <!-- Indicators -->
-    <ol class="carousel-indicators">
-    {% for item in page.slider.slides %}
-      <li data-target="#myCarousel" data-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>
-    {% endfor %}
-    </ol>
+
   
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
     {% for item in page.slider.slides %}
-        <div class="item{% if forloop.first %} active{% endif %}" style="background: url({{ item.image }}) center center no-repeat; background-size: cover;">
+        <div class="item{% if forloop.first %} active{% endif %}" style="background: url({{ item.image }}) center center no-repeat; background-size: contain;">
         <div>{{ item.slide_html }}</div>
       </div>
     {% endfor %}
-    </div>
-  
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left">‹</span>
@@ -85,6 +79,14 @@ Need to override the 3.3 new styles for modern browsers & apply opacity
       <span class="glyphicon glyphicon-chevron-right">›</span>
       <span class="sr-only">Next</span>
     </a>
+    <ol class="carousel-indicators">
+      {% for item in page.slider.slides %}
+        <li data-target="#myCarousel" data-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>
+      {% endfor %}
+      </ol>
+    </div>
+  
+    
   </div>
 
 
@@ -110,13 +112,13 @@ Need to override the 3.3 new styles for modern browsers & apply opacity
   }
   #myCarousel span.glyphicon {
       font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif!important;
-      color: {{ page.slider.text_color }}!important;
+      color: green;
       font-size: 60px!important;
       height: 60px!important;
       line-height: 50px!important;
       margin-top: -30px!important;
   }
-  #myCarousel .carousel-control {opacity: 0!important;
+  #myCarousel .carousel-control {opacity: 1!important;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -124,11 +126,11 @@ Need to override the 3.3 new styles for modern browsers & apply opacity
   min-width: 60px!important;
   }
   #myCarousel .carousel-control:hover {opacity: 1!important;}
-  #myCarousel .carousel-indicators {bottom: 0!important; margin-bottom: 12px;}
+  #myCarousel .carousel-indicators {bottom: 0%!important; margin-bottom: 10px;}
   #myCarousel .glyphicon-chevron-left::before,
   #myCarousel .glyphicon-chevron-right::before {content: "";}
-  #myCarousel .carousel-control.left {text-align: left; background: none!important;}
-  #myCarousel .carousel-control.right {text-align: right; background: none!important;}
-  #myCarousel .carousel-control .glyphicon-chevron-right {margin-right: 15px; position: relative; right: auto; text-shadow: none;}
-  #myCarousel .carousel-control .glyphicon-chevron-left {margin-left: 15px; position: relative; left: auto; text-shadow: none}
+  #myCarousel .carousel-control.left {text-align: left; margin-left: 50px; background: none!important;}
+  #myCarousel .carousel-control.right {text-align: right; margin-right: 50px; background: none!important;}
+  #myCarousel .carousel-control .glyphicon-chevron-right {margin-right: 15px; position: relative; right: auto; text-shadow: none; color: grey!important;}
+  #myCarousel .carousel-control .glyphicon-chevron-left {margin-left: 15px; position: relative; left: auto; text-shadow: none; color:grey!important;}
   </style>
