@@ -2,6 +2,8 @@
 layout: simple
 ---
 
+{% include head.html %}
+
 <!-- News Bereich / Blogeinträge -->
 <div class="posts">
 	<div class="row">
@@ -10,43 +12,25 @@ layout: simple
 				<h2>
 					<a href="{{ site.url | append: '/projects' }}" style="color: rgba(0,0,0,0.5);">Projekte</a>
 				</h2>
-				<h1 class="post-title">{{ page.title }}</h1>
+				<h1 class="post-title">{{ page.name }}</h1>
 				<div class="clearfix">
 					<span class="author">Von {{ page.author }} am {{ page.date | date: "%d/%m/%Y" }}</span>
 				</div>
-				{% if page.thumbnail %}
+				{% if page.image %}
 				<div class="col-lg-6 col-sm-6 col-lg-offset-3 col-sm-offset-3 hidden-xs">
-						<img class="press-pic" src="{{ site.baseurl | append: page.thumbnail }}" alt="{{ page.title }} - Logo"/>
+						{% assign image_url = page.image | prepend: "/images/projects/" %}
+						<img class="press-pic" src="{{ site.baseurl  | append: image_url }}" alt="{{ page.title }} - Logo"/>
 					</div>
 				{% endif %}	
 			</div>
 		</div>
 	</div>
 	<hr>
-<div>
-		<div class="card-deck">
-				{% for material in page.material %}
-				<div class="card">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">{{material}}</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-					</div>
-					<div class="card-footer">
-						<small class="text-muted">Last updated 3 mins ago</small>
-					</div>
-				</div>
-				{% endfor %}
-		<div class="card" style="width: 18rem;">
-				<div class="card-header">
-					Benötigte Materialien
-				</div>
-				<ul class="list-group list-group-flush">
-						{% for material in page.material %}
-		<li class="list-group-item">{{material}}</li>
-		{% endfor %}
-				</ul>
-			</div>
+							<ul>
+									{% for material in page.material %}
+							<li>{{material}}</li>
+							{% endfor %}
+									</ul>		
 <hr>
     <article class="post-content">
         {{ content }}

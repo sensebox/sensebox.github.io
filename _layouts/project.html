@@ -11,7 +11,7 @@ layout: default
 		<h2>Filter</h2>
 				</div>
 		{% include project_tags.html %}
-		{% for i in site.data.projects %}
+		{% for i in site.projects %}
 		{% assign tagarray = site.tagarray %}
 				{% for tag in i.tags %}
 						{% assign tagarray = tagarray | push: tag %}
@@ -22,10 +22,14 @@ layout: default
 				{% for tag in i.lang %}
 						{% assign tagarray = tagarray | push: tag %}
 				{% endfor %}
+				{% for tag in i.ide %}
+						{% assign tagarray = tagarray | push: tag %}
+				{% endfor %}
 		<div class="project-item col-md-4 col-sm-6 col-xs-12" data-tags='{{ tagarray | jsonify | downcase }}'>
 				<div class="well project-outer">
+						<span class="ribbon"><span class={{i.ide}}>{{ i.ide }}</span></span>
 						<div class="project-inner">
-								<a href="/images/projects/i.image }}" class="thickbox">
+								<a href="{{ i.url }}" class="thickbox">
 								<div class="project-img bordered" style="background-image: url('/images/projects/{{ i.image }}');"></div>
 								</a>
 								{% if i.url %} <a href="{{ site.baseurl | append: i.url }}"> {% endif %}
@@ -52,7 +56,7 @@ layout: default
 										{% if i.url %} 
 										<a href="{{ i.url }}" class="btn btn-info btn-raised btn-sm project-link">View</a>
 										{% endif %}
-										<span class="project-timeline">{{ i.date }}</span>
+										<span class="project-timeline">{{ i.date | date: "%m %Y"}}</span>
 								</div>
 						</div>
 				</div>
