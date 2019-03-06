@@ -12,9 +12,9 @@ material:
     - senseBox MCU
     - Ultraschallsensor
     - JST Kabel
-lang: ["EN"]
+lang: en
 tags: ["Geographie", "Physik", "Informatik"]
-age_tag: ["5-7"]    
+age_tag: leicht    
 ---
 Verkehrszähler
 ============

@@ -1,88 +1,9 @@
-products: "Produkte"
-
-header-introduction: 'Von der senseBox gibt es zwei Varianten: die <span class="home-span">senseBox:home</span> und die <span class="edu-span">senseBox:edu</span>'
-
-to-senseBox-overwiew: "senseBox.kaufen"
-
-introduction: '<p>Von der senseBox gibt es zwei Varianten: die <span class="home-span">senseBox:home</span> und die <span class="edu-span">senseBox:edu</span>.</p>
-
-    <p>Die <span class="home-span">senseBox:home</span> ist eine modulare Umweltmessstation zum selber bauen. Je nach Interesse oder Forschungsfrage können sich BürgerInnen eine Messstation mit verschiedenen Sensoren zusammenstellen und über LAN, WLAN oder LoRa mit dem Internet verbinden. Eine einfache Anleitung ermöglicht den Aufbau und die Registrierung auf der openSenseMap. Danach liefert sie kontinuierlich ortsbezogene (mobile oder stationäre) Messungen zu Temperatur, Luftfeuchte, Luftdruck, Beleuchtungsstärke, UV-Strahlung oder Feinstaubbelastung.</p>
-
-    <p>Die <span class="edu-span">senseBox:edu</span> ist unser Elektronikbausatz für Schulen, Universitäten und Bildungseinrichtungen, bei dem das Experimentieren und Programmieren unter Einsatz von Sensoren im Vordergrund steht. Neben einer programmierbaren Open-Source Mikrocontrollereinheit (MCU), die auf der Arduino Plattform basiert, werden Sensoren, Bauteile zur Übertragung von Daten ins Internet und weiteres Zubehör mitgeliefert. Mit der senseBox:edu können Grundlagen der Informatik an realen Problemstellungen aus dem gesamten MINT-Bereich erlernt werden. Eigene Messgeräte für verschiedene Zwecke können mit wenig Aufwand gebaut und programmiert werden. Sensoren für die Messung von verschiedenen Umweltphänomenen wie Temperatur, Luftfeuchtigkeit, Luftdruck, Beleuchtungsstärke, UV-Strahlung, Lautstärke, Distanzen (per Ultraschall- und Lichtsensor) sowie Neigung und Ausrichtung ermöglichen ein kreatives Arbeiten an einer Vielzahl von Fragestellungen. Gemessene Werte können über ein WiFi-Modul auf unsere Webplattform für offene Sensordaten, die openSenseMap, übertragen werden.</p>    
-
-    <p>Bis Anfang 2018 basierte die senseBox auf einem Arduino/Genuino UNO Microcontroller, diese Version wird nicht mehr verkauft aber weiterhin unterstützt. Seit Mai 2018 basiert die senseBox auf der senseBox MCU und ist durch weitere Sensoren und Erweiterungen ausgestattet. Mehr dazu im <a href="https://sensebox.de/blog/2018-03-06-senseBox_MCU">Blog-Post</a>.</p>
-<p>&nbsp;</p>'
-
-sensors:
-  header: "Sensoren"
-  uv-light: "<b>TSL45315 & VEML6070</b> Beleuchtungsstärke & UV-Strahlung"
-  uv-light-data-sheet: "https://www.vishay.com/docs/84277/veml6070.pdf"
-  light: "<b>TSL45315</b> Lichtsensor"
-  light-data-sheet: "https://ams.com/eng/content/download/320004/1118282/file/TSL4531_DS000182_2-00.pdf"
-  barometric-pressure: "<b>BMP280</b> Luftdruck- und Temperatursensor"
-  barometric-pressure-data-sheet: "https://cdn-shop.adafruit.com/datasheets/BST-BMP280-DS001-11.pdf"
-  temperature: "<b>HDC1080</b> Temperatur- und Luftfeuchtigkeitssensor"
-  temperature-data-sheet: "http://www.ti.com/lit/ds/symlink/hdc1008.pdf"
-  microphone: "Mikrofon"
-  microphone-data-sheet: "https://github.com/watterott/Mic-Breakout"
-  ultrasonic: "<b>HC-SR04</b> Ultraschall Entfernungssensor"
-  ultrasonic-data-sheet: "https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf"
-  ir: "IR Entfernungssensor"
-  ir-data-sheet: "https://www.sparkfun.com/datasheets/Components/GP2Y0A21YK.pdf"
-  pm: "<b>SDS011</b> - Feinstaub (PM10 & PM2.5) "
-  mikro: "Mikrofon"
-  bmx: "<b>BMX055</b> Lage-/ Kompass-/ Beschleunigungssensor"
-
-components:
-  header: "Komponenten"
-  arduino: "Genuino UNO"
-  arduino-data-sheet: "https://store.arduino.cc/arduino-uno-rev3"
-  internet: "Ethernet Shield (WIZnet W5500 Chipsatz) <b>oder</b> WLAN/WiFi Shield (Atmel ATWINC1500B Chipsatz)"
-  ethernet-data-sheet: "https://cdn.sparkfun.com/datasheets/Dev/Arduino/Shields/W5500_datasheet_v1.0.2_1.pdf"
-  wifi-data-sheet: "http://www.atmel.com/Images/Atmel-42487-ATWINC1500B-MU_Datasheet.pdf"
-  senseBox-shield: "senseBox Shield"
-  senseBox-shield-data-sheet: "https://github.com/watterott/SenseBox-Shield"
-  power-plug: "9V Steckernetzteil"
-  cables: "senseBox Kabel (3x100mm, 1x200mm)"
-  usb: "USB Kabel"
-  microSD: "2GB microSD Karte"
-  battery: "Batteriehalter"
-  breadboard: "Breadboard"
-  wires: "Jumper Wires"
-
-order:
-  header: "Bestellen"
-  home: "senseBox:home bestellen"
-  edu: "senseBox:edu bestellen"
-
-optional: "(optional)"
-
-misc:
-  header: "Zubehör"
-  mcu: "senseBox MCU"
-  mcu-bread: "senseBox MCU mit Breadboard"
-  jst: "JST Kabel"
-  usb: "USB-Kabel (mit Netzteil)"
-  edu-usb: "USB-Kabel"
-  box: "Outdoor Gehäuse"
-  protection: "Strahlungsschutz"
-  lan-bee: "LAN-Bee"
-  wifi-bee: "WiFi-Bee"
-  sd-bee: "microSD-Bee"
-  lora-bee: "LoRa-Bee"
-  sd-card: "SD-Karte (2GB)"
-  leds: "Verschiedene LEDs"
-  button: "Knöpfe"
-  potentio: "Potentiometer"
-  piezo: "Piezo Element"
-  ldr: "Fotowiderstand (LDR)"
-  resistors: "Widerstände"
-
-addon:
-  header: "Erweiterungen"
-  gps: "<b>CAM-M8Q</b> GPS-Empfänger"
-  oled: "OLED Display"
-  expander: "JST-Anschluss Expander"
-  
-
-license: "Die Zusammenstellung der senseBox-Komponenten ist unter der CERN Open Hardware Lizenz 1.2 offen. Der Source Code der senseBox:home ist Open Source unter der LGPL 3.0 Lizenz verfügbar. Die Anleitungen sind Open Educational Resources (OER) unter der Creative Commons Lizenz CC BY SA 4.0."
+title: "Projekte rund um die senseBox"
+language_choose: "Wähle deine Sprache"
+language: "Sprachen"
+ide_choose: "Wähle deine Programmierumgebung"
+ide: "IDE"
+filter_more: "weitere Filter"
+subjects: "Fächer"
+difficulty: "Schwierigkeit"
+view: "Anzeigen"

@@ -26,10 +26,21 @@ $text_size: 18px;
  */
 .project-item.not-show{ display: none; }
 
+.project-item{
+    margin-bottom: 15px;
+}
+
+.project-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 100%;
+}
 
 .project-outer {
 
     vertical-align: middle;
+    height: 100%;
     
     .project-headlines {
 
@@ -101,12 +112,19 @@ $text_size: 18px;
     }
 }
 
-
 project-head {
     font-family: BrixSlab-Bold;
     font-weight: normal;
     font-style: normal;
     font-size: 150%;
+  }
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-wrap: wrap;
   }
 
 .blockly {

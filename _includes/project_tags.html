@@ -1,11 +1,11 @@
-
+{% assign t = site.data.translations.[page.lang].projects %}
 <div class="container">
         <div class="row">
-            <project-head>Wähle zuerst deine Sprache aus</project-head>
+            <project-head>{{ t.language_choose }}</project-head>
         </div>
         <div class="row">
                 <div class="col-md-1 col-xs-1">
-                       <p>Language:</p>
+                       <p>{{ t.language }}</p>
                 </div>
                 <div class="col-md-10">
            {% if site.enableTags ==  true %} 
@@ -35,11 +35,11 @@
            </div>
            </div>
         <div class="row">
-                <project-head>In welcher Programmumgebung möchtest du arbeiten?</project-head>
+                <project-head>{{ t.ide_choose }}</project-head>
         </div>
         <div class="row">
                 <div class="col-md-3 col-xs-3">
-                       <p>Programmierumgebung:</p>
+                       <p>{{ t.ide }}</p>
                 </div>
                 <div class="col-md-9">
            {% if site.enableTags ==  true %} 
@@ -70,11 +70,11 @@
            </div>    
 
 <div class="row">
-    <project-head>weitere Filter:</project-head>
+    <project-head>{{ t.filter_more }}</project-head>
 </div>
 <div class="row">
         <div class="col-md-1 col-xs-1">
-               <p>Fächer:</p>
+               <p>{{ t.subjects }}:</p>
         </div>
         <div class="col-md-10">
 {% if site.enableTags ==  true %} 
@@ -105,7 +105,7 @@
 </div>
 <div class="row">
         <div class="col-md-2 col-xs-2">
-               <p>Alter/Jahrgangsstufe:</p>
+               <p>{{ t.difficulty }}</p>
         </div>
         <div class="col-md-10">
 {% if site.enableTags ==  true %} 

@@ -1,8 +1,9 @@
 ---
 layout: default
 ---
-<article class="post">
 
+<article class="post">
+		{% assign t = site.data.translations[page.lang].projects %}
 	<div class="post-content">
 		{{ content }}
 
@@ -11,6 +12,7 @@ layout: default
 		<h2>Filter</h2>
 				</div>
 		{% include project_tags.html %}
+		
 		{% for i in site.projects %}
 		{% assign tagarray = site.tagarray %}
 				{% for tag in i.tags %}
@@ -25,6 +27,10 @@ layout: default
 				{% for tag in i.ide %}
 						{% assign tagarray = tagarray | push: tag %}
 				{% endfor %}
+		{% endfor %}
+		</div>		
+		<div class="row row-eq-height">	
+		{% for i in site.projects %}			
 		<div class="project-item col-md-4 col-sm-6 col-xs-12" data-tags='{{ tagarray | jsonify | downcase }}'>
 				<div class="well project-outer">
 						<span class="ribbon"><span class={{i.ide}}>{{ i.ide }}</span></span>
@@ -38,7 +44,9 @@ layout: default
 								<p>{{ i.abstract }}</p>
 								<div class="project-content">
 										<div class="tag-holder">
+											<div class="row">
 											<h4>Tags:</h4>
+											<div class="row">
 										{% if i.tags %} 
 												{% for j in i.tags %}
 												<span class="project-label tags tag-filter" data-tag="{{ j | downcase }}">{{ j }}</span>
@@ -49,20 +57,24 @@ layout: default
 												<span class="project-label tags tag-filter" data-tag="{{ j | downcase }}">{{ j }}</span>
 												{% endfor %}
 										{% endif %}
+									</div>
+									</div>
 										</div>
 										
 								</div>
 								<div class="project-footer"> 
 										{% if i.url %} 
-										<a href="{{ i.url }}" class="btn btn-info btn-raised btn-sm project-link">View</a>
+										<a href="{{ i.url }}" class="btn btn-info btn-raised btn-sm project-link">{{ t.view }}</a>
 										{% endif %}
 										<span class="project-timeline">{{ i.date | date: "%m %Y"}}</span>
 								</div>
 						</div>
 				</div>
 				</div>
+			
 		{% endfor %}
-		</div>
+	</div>
+</div>
 	</div>
 
 </article>
