@@ -4,7 +4,7 @@
             <project-head>{{ t.language_choose }}</project-head>
         </div>
         <div class="row">
-                <div class="col-md-1 col-xs-1">
+                <div class="col-md-2 col-xs-2">
                        <p>{{ t.language }}</p>
                 </div>
                 <div class="col-md-10">
@@ -28,7 +28,7 @@
            
                    {% assign taglist = tags | split: '|' | sort %}
                    {% for tag in taglist %}
-                       <span class="project-label tag-filter tag-cloud" data-tag="{{ tag | downcase }}">{{ tag }}</span>
+                       <span class="project-label project-border tag-filter tag-cloud" data-tag="{{ tag | downcase }}">{{ tag }}</span>
                    {% endfor %}
                </div>
            {% endif %}
@@ -38,10 +38,10 @@
                 <project-head>{{ t.ide_choose }}</project-head>
         </div>
         <div class="row">
-                <div class="col-md-3 col-xs-3">
+                <div class="col-md-2 col-xs-2">
                        <p>{{ t.ide }}</p>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-10">
            {% if site.enableTags ==  true %} 
                <div id="tag-filter" class="col-md-12 col-xs-12 tag-group">
                    {% assign tagarray = site.tagarray %}
@@ -62,7 +62,7 @@
            
                    {% assign taglist = tags | split: '|' | sort %}
                    {% for tag in taglist %}
-                       <span class="btn project-label tag-filter tag-cloud" data-tag="{{ tag | downcase }}">{{ tag }}</span>
+                       <span class="project-label project-border tag-filter tag-cloud" data-tag="{{ tag | downcase }}">{{ tag }}</span>
                    {% endfor %}
                </div>
            {% endif %}
@@ -73,7 +73,7 @@
     <project-head>{{ t.filter_more }}</project-head>
 </div>
 <div class="row">
-        <div class="col-md-1 col-xs-1">
+        <div class="col-md-2 col-xs-2">
                <p>{{ t.subjects }}:</p>
         </div>
         <div class="col-md-10">
@@ -97,7 +97,7 @@
 
         {% assign taglist = tags | split: '|' | sort %}
         {% for tag in taglist %}
-            <span class="project-label tag-filter tag-cloud" data-tag="{{ tag | downcase }}">{{ tag }}</span>
+            <span class="project-label project-border tag-filter tag-cloud" data-tag="{{ tag | downcase }}">{{ tag }}</span>
         {% endfor %}
 	</div>
 {% endif %}
@@ -128,13 +128,13 @@
 
         {% assign taglist = tags | split: '|' | sort %}
         {% for tag in taglist %}
-            <span class="project-label tag-filter tag-group tag-cloud" data-tag="{{ tag | downcase }}">{{ tag }}</span>
+            <span class="project-label project-border tag-filter tag-group tag-cloud" data-tag="{{ tag | downcase }}">{{ tag }}</span>
         {% endfor %}
 	</div>
 {% endif %}
 </div>
 <div class="row">
-            <span class="project-label-all tag-filter tag-group tag-cloud all">Alle</span>
+            <span class="project-label-all project-border tag-filter tag-group tag-cloud all">Alle</span>
 </div>
 <hr>
 </div>

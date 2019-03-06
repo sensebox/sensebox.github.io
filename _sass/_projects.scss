@@ -37,6 +37,10 @@ $text_size: 18px;
     height: 100%;
 }
 
+.project-border{
+    @include borderbtm( #888 );
+}
+
 .project-outer {
 
     vertical-align: middle;
@@ -137,6 +141,11 @@ background: #00979d;
 background: rgb(242, 148, 0);
 }
 
+.label-ticked{
+    color: white!important;
+    padding: 8px;
+    background: $sensebox-green;
+}
 
 .ribbon{
     position: absolute;
