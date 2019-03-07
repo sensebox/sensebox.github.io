@@ -112,7 +112,7 @@
 	<div id="tag-filter" class="col-md-12 col-xs-12 tag-group">
         {% assign tagarray = site.tagarray %}
         {% for project in site.projects %}
-            {% for tag in project.age_tag %}
+            {% for tag in project.difficult %}
                 {% assign tagarray = tagarray | push: tag %}
             {% endfor %}
         {% endfor %}

@@ -3,7 +3,7 @@ layout: simple
 ---
 
 {% include head.html %}
-
+{% assign t = site.data.translations[page.lang].projects %}
 <!-- News Bereich / Blogeinträge -->
 <div class="posts">
 	<div class="row">
@@ -26,6 +26,7 @@ layout: simple
 		</div>
 	</div>
 	<hr>
+	<h4>{{ t.material }} </h4>
 							<ul>
 									{% for material in page.material %}
 							<li>{{material}}</li>

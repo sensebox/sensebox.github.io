@@ -321,6 +321,16 @@ hr {
       }
     }
 
+    .block-image {
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      > img {
+        margin: 2px;
+        max-width: 300px;
+      }
+    }
+
     > ul {
       font-size: inherit;
     }
@@ -1150,7 +1160,8 @@ $carousel-height: 450px;
 
 .events-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: 1;;
+  
 
   .event-item {
     flex-grow: 1;

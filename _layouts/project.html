@@ -18,7 +18,7 @@ layout: default
 				{% for tag in i.tags %}
 						{% assign tagarray = tagarray | push: tag %}
 				{% endfor %}
-				{% for tag in i.age_tag %}
+				{% for tag in i.difficult %}
 						{% assign tagarray = tagarray | push: tag %}
 				{% endfor %}
 				{% for tag in i.lang %}
@@ -35,7 +35,7 @@ layout: default
 				{% for tag in i.tags %}
 						{% assign tagarray = tagarray | push: tag %}
 				{% endfor %}
-				{% for tag in i.age_tag %}
+				{% for tag in i.difficult %}
 						{% assign tagarray = tagarray | push: tag %}
 				{% endfor %}
 				{% for tag in i.lang %}
@@ -65,8 +65,8 @@ layout: default
 												<span class="project-label tags tag-filter" data-tag="{{ j | downcase }}">{{ j }}</span>
 												{% endfor %}
 										{% endif %}
-										{% if i.age_tag %} 
-												{% for j in i.age_tag %}
+										{% if i.difficult %} 
+												{% for j in i.difficult %}
 												<span class="project-label tags tag-filter" data-tag="{{ j | downcase }}">{{ j }}</span>
 												{% endfor %}
 										{% endif %}
@@ -79,7 +79,7 @@ layout: default
 										{% if i.url %} 
 										<a href="{{ i.url }}" class="btn btn-info btn-raised btn-sm project-link">{{ t.view }}</a>
 										{% endif %}
-										<span class="project-timeline">{{ i.date | date: "%m %Y"}}</span>
+										<span class="project-timeline">{{ i.difficult }}</span>
 								</div>
 						</div>
 				</div>

@@ -18,6 +18,6 @@ material:
 ide: blockly    
 lang: de
 tags: ["Geographie", "informatik"]
-age_tag: leicht
+difficult: leicht
 ---
 # Sensoren und das Display

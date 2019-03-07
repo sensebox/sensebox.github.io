@@ -14,7 +14,7 @@ material:
     - JST Kabel
 lang: en
 tags: ["Geographie", "Physik", "Informatik"]
-age_tag: leicht    
+difficult: leicht    
 ---
 Verkehrszähler
 ============

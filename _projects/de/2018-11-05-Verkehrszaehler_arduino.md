@@ -13,7 +13,7 @@ material:
 ide: arduino    
 lang: de
 tags: ["Geographie", "informatik"]
-age_tag: leicht
+difficult: leicht
 ---
 # Verkehrszähler
 

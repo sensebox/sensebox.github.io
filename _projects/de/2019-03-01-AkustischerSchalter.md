@@ -15,7 +15,7 @@ material:
     - 2x Male-to-Male Kabel
 ide: arduino    
 tags: ["Physik", "Informatik"]
-age_tag: mittel
+difficult: mittel
 ---
 # Akustischer Lichtschalter
 
