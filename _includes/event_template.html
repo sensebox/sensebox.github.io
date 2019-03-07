@@ -1,19 +1,22 @@
 <div class="col-sm-3 col-md-3 col-lg-3 event-item">
   <div class="thumbnail">
     <div class="caption">
-      <p>{{ include.event.starting-date | date: '%d.%m.%Y' }} {% if include.event.starting-date != include.event.ending-date %} - {{ include.event.ending-date | date: '%d.%m.%Y' }} {% endif %} </p>
-      {% if include.event.time %}
-      <p>{{ include.event.time }}</p>
-      {% endif %}
+      <div class="row">
+      <p>{{ include.event.starting-date | date: '%d.%m.%Y' }} {% if include.event.starting-date != include.event.ending-date %} - {{ include.event.ending-date | date: '%d.%m.%Y' }} {% endif %}  {% if include.event.time %} | {{ include.event.time }}{% endif %}</p>
 		{% if include.event.link %}
 			<h3>{{ include.event.title }} <small><a href="{{ include.event.link }}" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></small></h3>
 		{% else %}
 			<h3>{{ include.event.title }}</h3>
     {% endif %}
+  </div>
+    <div class="row">
     {% if include.event.description %}
-      <em>{{ include.event.description }}</em><br></br>
+      <em>{{ include.event.description }}</em>
       {% endif %}
+    </div>
+    <div class="row">  
       <p>{{ include.event.place }}</p>
+    </div> 
     {% if include.event.blog %}
       <a class="social-media" href="{{include.event.blog }}" target="_blank" role="button" ><img src="{{ site.baseurl | append: '/images/iconmonstr-newspaper-13.svg'}}" alt="homepage icon"></a>
     {% endif %}
