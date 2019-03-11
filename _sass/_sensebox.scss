@@ -327,7 +327,8 @@ hr {
 
       > img {
         margin: 2px;
-        max-width: 300px;
+        min-width: 300px;
+        height: auto;
       }
     }
 
