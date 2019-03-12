@@ -26,12 +26,20 @@ layout: simple
 		</div>
 	</div>
 	<hr>
+<div class="row">
+	<div class="col-md-6">
+	<h4>{{ t.toc }}</h4>
+		{% include toc.html sanitize=true html=content h_min=1 h_max=3 class="toc__menu" %}
+	</div>
+	<div class="col-md-6">
 	<h4>{{ t.material }} </h4>
-							<ul>
-									{% for material in page.material %}
-							<li>{{material}}</li>
-							{% endfor %}
-									</ul>		
+		<ul>
+		{% for material in page.material %}
+			<li>{{material}}</li>
+				{% endfor %}
+		</ul>	
+	</div>
+</div>	
 <hr>
     <article class="post-content">
         {{ content }}
