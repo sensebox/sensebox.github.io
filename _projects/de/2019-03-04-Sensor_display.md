@@ -4,7 +4,7 @@ name: "Sensor Display"
 date: 2019-03-04
 author: Mario
 abstract: "Zeige Messwerte auf dem Display an"
-image: traffic_counter.png
+image: logo_bunt.png
 image0: /images/projects/parts/mcu_sensoren.png
 image1: /images/projects/sensor_display/Helligkeit_Display_Skizze_0.png
 image2: /images/projects/sensor_display/Helligkeit_Display_Skizze_1.png

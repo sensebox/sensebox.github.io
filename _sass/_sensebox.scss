@@ -324,12 +324,9 @@ hr {
     .block-image {
       padding-top: 20px;
       padding-bottom: 20px;
-
-      > img {
-        margin: 2px;
-        min-width: 300px;
-        height: auto;
-      }
+      margin: 2px;
+      min-width: 300px;
+      height: auto;
     }
 
     > ul {
