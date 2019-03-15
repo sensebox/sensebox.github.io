@@ -4,7 +4,7 @@ name: "Feinstaubmessstation"
 date: 2018-11-02
 author: Mario
 abstract: "Eine einfache Feinstaubmessstation mit Internetanbindung"
-image: traffic_counter.png
+image: logo_bunt.png
 image0: /images/projects/feinstaubmessstation/schritt_1.jpg
 image1: /images/projects/feinstaubmessstation/schritt_2.png
 image2: /images/projects/feinstaubmessstation/schritt_3.png

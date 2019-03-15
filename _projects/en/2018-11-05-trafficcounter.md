@@ -16,10 +16,4 @@ lang: en
 tags: ["Geographie", "Physik", "Informatik"]
 difficult: leicht    
 ---
-Verkehrszähler
-============
-ksdfjlsdjf
 
-## Überschrift
-
-sdfjkasdfjlsd
