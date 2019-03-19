@@ -13,6 +13,7 @@ material:
     - Ultraschallsensor
     - JST Kabel
 lang: en
+ide: blockly  
 tags: ["Geographie", "Physik", "Informatik"]
 difficult: leicht    
 ---
