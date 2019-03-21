@@ -176,3 +176,25 @@ ol {
           font-size: 18px;
       }
 }
+
+.media-go-image{
+    max-width: 200px;
+    max-height: 200px
+}
+
+.first-steps{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.eq-height{
+    display: flex;
+    width: 100%;
+}
+
+.col-eq-height{
+    flex: 1;
+    padding: 16px;
+}

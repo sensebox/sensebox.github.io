@@ -1,43 +1,47 @@
 {% assign t = site.data.translations.[page.lang].go-edu %}
-
 <div class="edu-go-page">
     <div class="topic-block">
         <h1 class="title">{{t.title}}</h1>
         <div class="content-container">
             <p class="quick-start-text">{{t.quick-start-intro}}</p>
-            <ol class="quick-start-list">
-                <li>{{t.go-to}}</li>
-                <li>
-                    <div class="text">
-                        {{t.drag-drop}}
-                    </div>
-                    <div class="image">
-                        <img src="/images/senseBox_blockly.gif">
-                    </div>
-                </li>
-                <li>
-                    <div class="text">
-                        {{t.compile}}
-                    </div>
-                    <div class="image">
-                        <img src="/images/go/edu/blockly.png">
-                    </div>
-                </li>
-                <li>
-                    <div class="text">
-                        {{t.connect}}
-                    </div>
-                    <!-- <div class="image">
-                        <img src="/images/go/edu/blockly.png">
-                    </div> -->
-                </li>
-                <li>{{t.copy}}</li>
-            </ol>
-        
-            <p>{{t.quick-start-outro}}</p>
+<div class="row eq-height">
+    <div class="col-md-4 col-eq-height well">
+        <div class="first-steps">
+        <a href="/instructions/de/01_connect.html"><h3>1. Verbinden</h3></a>
+        <a href="/instructions/de/connect.html" class="thumbnail"><img src="/images/go/edu/connect.jpg" alt="..."></a>
+        <p>Verbinde die senseBox MCU mit dem beigelegten USB Kabel mit deinem Computer</p>
         </div>
-    </div>
-
+        </div>
+        <div class="col-md-4 col-eq-height well">
+        <a href="/instructions/de/02_construct.html"><h3>2. Zusammenbauen</h3></a>
+        <a href="/instructions/de/construct.html" class="thumbnail" ><img src="/images/go/edu/connect.jpg" alt="..."></a>
+        <p>Baue deine Schaltung auf oder verbinde die Sensoren mit der senseBox MCU</p>
+        </div>
+        <div class="col-md-4 col-eq-height well">
+        <a href="/instructions/de/03_code.html"><h3>3. Programmieren</h3></a>
+        <a href="/instructions/de/03_code.html" class="thumbnail"><img src="/images/go/edu/blockly.png" alt="..."></a>
+        <p>Erstelle deine Programmcode online mithilfe von Blockly für die senseBox</p>
+        </div>
+</div>
+<div class="row eq-height">
+        <div class="col-md-4 well">
+        <a href="/instructions/de/04_transfer.html"><h3>4. Übertragen</h3></a>
+        <a href="/instructions/de/04_transfer.html" class="thumbnail"><img src="/images/go/edu/blockly.png" alt="..."></a>
+        <p>Kompiliere den Programmcode und übertrage ihn auf deine senseBox MCU</p>
+        </div>
+        <div class="col-md-4 well">
+        <h3>Hilfe</h3>
+        <p>Du suchtst Hilfe oder benötigst mehr Informationen?</p>
+        <ol>
+            <a href="https://sensebox.de/material"><li>Material</li></a>
+            <a href="https://forum.sensebox.de/"><li>Forum</li></a>
+        </ol>
+        </div>
+        <div class="col-md-4 well">
+        <h3>Projekte</h3>
+        <p>Viele Projekte für die senseBox findest du online auf unserer Seite</p>
+        </div>
+</div>
     <div class="topic-block">
         <h1 class="title">{{t.arduino-title}}</h1>
         <div class="content-container">
@@ -94,10 +98,8 @@
             <a class="exp-link" target="_blank" href="https://sensebox.github.io/books-v2/edu/">senseBox:edu Buch</a>
         </div>
     </div>
-
-
-
 </div>
+
 
 <!-- <h1 class="title">{{t.title}}</h1>
 <div class="ut-container">

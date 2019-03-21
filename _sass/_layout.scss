@@ -234,3 +234,22 @@
         }
     }
 }
+
+.PageNavigation {
+    display: block;
+    width: auto;
+    overflow: hidden;
+
+   .a {
+    display: block;
+    font-size: 20px;
+    width: 50%;
+    float: left;
+    margin: 1em 0;
+  }
+  
+   .next {
+    text-align: right;
+    font-size: x-large!important;
+  }
+}
