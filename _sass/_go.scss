@@ -197,4 +197,12 @@ ol {
 .col-eq-height{
     flex: 1;
     padding: 16px;
+    margin: 5px;
+}
+
+.project-inner {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }

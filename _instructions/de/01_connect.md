@@ -11,3 +11,5 @@ Verbinden der senseBox MCU
 Verbinde die senseBox MCU mithilfe des USB Kabel mit deinem Computer. Mache einen Doppelklick auf den roten Reset Button und die MCU wird dir in deinem Dateimanager als Wechseldatenträger angezeigt. 
 
 
+
+
