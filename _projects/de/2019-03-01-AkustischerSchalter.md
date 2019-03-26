@@ -102,7 +102,7 @@ void loop()
         }
     }
  peakToPeak = signalMax - signalMin;  // max - min = Abstand von maximalem zu minimalem Amplitudenausschlag
- double volts = (peakToPeak * 3.3) / 1024;  // wandle in Volt um
+ double volts = (peakToPeak * 5.0) / 1024;  // wandle in Volt um
 
 
 Serial.print(volts);         

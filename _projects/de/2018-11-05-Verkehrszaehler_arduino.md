@@ -5,14 +5,14 @@ date: 2018-11-02
 author: Mario
 abstract: "Ein kleiner Verkehrszähler"
 image: traffic_counter.png
-image1: /images/projects/Verkehrszaehler_v2.png
+image1: /images/projects/verkehrszaehler/Verkehrszaehler_v2.png
 material:
     - senseBox MCU
     - Ultraschallsensor
     - JST Kabel
 ide: arduino    
 lang: de
-tags: ["Geographie", "informatik"]
+tags: ["Geographie", "Informatik"]
 difficult: leicht
 ---
 # Verkehrszähler
