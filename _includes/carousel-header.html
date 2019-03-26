@@ -48,8 +48,12 @@
                         </li>
                         {% endif %} {% endfor %}
                     </ul>
-
+                    
+                    {% if include.simple %}
+                    <ul class="nav navbar-nav simple pull-right">
+                    {% else %}
                     <ul class="nav navbar-nav pull-right">
+                    {% endif %}
                         {% assign t = site.data.translations.[page.lang].header %}
                         {% assign menupages = site.pages | sort:"weight" %}
                         {% for menupage in menupages %}
