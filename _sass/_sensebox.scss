@@ -176,6 +176,7 @@ hr {
           background-color: transparent;
         }
       }
+     
 
       // navbar item dividers
       // @media (min-width: $grid-float-breakpoint) {
@@ -258,6 +259,16 @@ hr {
 .dropdown:hover .dropdown-menu {
   display: block;
   }
+
+.sensebox-dropdown-menu {
+  border: unset;
+  background-color: unset;
+  box-shadow: none;
+  .nav {
+    display: flex;
+  }
+}
+  
 
 .row {
   padding-right: 0;
