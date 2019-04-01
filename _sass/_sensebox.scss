@@ -256,9 +256,11 @@ hr {
 
 // end
 // dropdown on hover
-.dropdown:hover .dropdown-menu {
+@media (min-width: 1200px) {
+  .dropdown:hover .dropdown-menu {
   display: block;
   }
+}
 
 .sensebox-dropdown-menu {
   border: unset;
