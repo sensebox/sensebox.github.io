@@ -45,12 +45,12 @@ Zur [Veranstaltungsseite](https://www.buergerschaffenwissen.de/citizen-science/v
 
 Nächste Termine und Workshops!
 ============
-23. - 24.03.  – Leipzig: Buchmesse - Messestand Halle 2, A501
-01. - 05.04.  – Hannover Messe - Messestand Halle 13, F20
-12.04. – Münster: Lehrerfortbildung am Institut für Geoinformatik, 10-13 Uhr (Anmeldung per Mail)
-09.05. – Kaiserslautern: Markt der Medien 
-10.05. – Münster: Lehrerfortbildung am Institut für Geoinformatik, 14-17 Uhr (Anmeldung per Mail)
-23. - 25.05. – Linz: Didacta DIGITAL
-04.06. – Mainz: iMedia
+
+* 01\. bis 05.04.:Hannover Messe - Messestand Halle 13, F20
+* 12.04.: Münster - Lehrerfortbildung am Institut für Geoinformatik, 10-13 Uhr (Anmeldung per Mail)
+* 09.05.: Kaiserslautern - Markt der Medien 
+* 10.05.: Münster - Lehrerfortbildung am Institut für Geoinformatik, 14-17 Uhr (Anmeldung per Mail)
+* 23\. bis 25.05.: Linz - Didacta DIGITAL
+* 04.06.: Mainz - iMedia
 
 Ihr wollt auch regelmäßig Neuigkeiten rund um die senseBox erhalten? Dann tragt Euch einfach mit Eurer Mailadresse für unseren [Newsletter](https://sensebox.de/#newsletter) ein!
