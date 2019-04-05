@@ -254,6 +254,40 @@ hr {
   animation-name: slideIn;
 }
 
+//dropdownmenu styles
+
+.dropdown-menu {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.dropdown-menu a {
+  color: white;
+  font-size: 1.3em;
+}
+.dropdown-menu ul {
+  border-left: 1px solid white;
+  list-style: none;
+}
+
+@media screen and (min-width: 1200px){
+}
+
+@media screen and (max-width: 1200px){
+  .dropdown-menu {
+    display: block;
+    position: relative;
+    float: none;
+    text-align: center;
+  }
+  .dropdown-menu ul {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+
 // end
 // dropdown on hover
 @media (min-width: 1200px) {
