@@ -261,7 +261,6 @@ hr {
   font-size: 1.3em;
 }
 .dropdown-menu ul {
-  border-left: 1px solid white;
   list-style: none;
 }
 
@@ -278,6 +277,8 @@ hr {
   .dropdown-menu ul {
     display: inline-block;
     text-align: left;
+    border-left: 1px solid white;
+
   }
 }
 
