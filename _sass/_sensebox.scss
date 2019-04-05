@@ -256,12 +256,6 @@ hr {
 
 //dropdownmenu styles
 
-.dropdown-menu {
-  background: none;
-  border: none;
-  box-shadow: none;
-}
-
 .dropdown-menu a {
   color: white;
   font-size: 1.3em;
@@ -271,15 +265,15 @@ hr {
   list-style: none;
 }
 
-@media screen and (min-width: 1200px){
-}
-
 @media screen and (max-width: 1200px){
   .dropdown-menu {
     display: block;
     position: relative;
     float: none;
     text-align: center;
+    .nav {
+      justify-content: center;
+    }
   }
   .dropdown-menu ul {
     display: inline-block;
