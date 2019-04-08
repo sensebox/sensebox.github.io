@@ -1,6 +1,6 @@
 {% assign carouselpages = "main|products|osem|books|background|press|awards|blog|blockly|go-edu|material|events" | split: "|" %}
-{% assign navpages = "products||material|osem|blockly|blog" | split: "|" %}
-{% assign navpagesright = "go" | split: "|" %}
+{% assign navpages = "products||material|osem|blockly" | split: "|" %}
+{% assign navpagesright = "blog" | split: "|" %}
 {% if include.simple == true %}
     <div class="navbar-wrapper">
 {% else %}
@@ -41,6 +41,19 @@
                         <ul class="nav navbar-nav">
 
                         {% endif %}
+                        <!-- Add los gehts by Hand-->
+                        {% assign t = site.data.translations.[page.lang].header %}
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              {{ t.getStarted }}
+                            </a>
+                            <div class="dropdown-menu sensebox-dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                                    <ul class="nav navbar-nav">                       
+                                <li class="nav-item"><a class="navbar-item" href="{{site.baseurl }}/{{ page.lang }}/go-edu">:edu</a></li>
+                                <li class="nav-item"><a class="navbar-item" href="{{site.baseurl }}/{{page.lang }}/go-home">:home</a></li>
+                                </ul>
+                            </div>
+                          </li>
                         {% assign t = site.data.translations.[page.lang].header %} {% assign menupages = site.pages | sort:"weight" %} {% for menupage
                         in menupages %} {% if menupage.lang == page.lang and navpages contains menupage.id %}
                         <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
