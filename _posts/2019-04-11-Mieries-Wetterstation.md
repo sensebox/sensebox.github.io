@@ -4,21 +4,21 @@ title: "Mieries smarte Wetterstation: Ein Best-Practice-Beispiel für den Schule
 date: 2019-04-11
 author: Gina
 abstract: "Die Mierendorff Grundschule in Berlin-Charlottenburg arbeitet mit dem Gottfried Keller Gymnasium und der DorfwerkStadt e.V. an dem Kiez Projekt „Den Schäden des Rekordsommers 2018 auf der Spur“ und baut dazu ein smartes IoT-Wetterstations-Netz mit der senseBox in Charlottenburg auf – ein tolles Beispielprojekt für den Einsatz der senseBox an Schulen."
-thumbnail: /images/blog_images/Wetterstation_Grundschule_Mierendorff.jpg
-image1: /images/blog_images/Pflanzensensorik1.jpg
-image2: /images/blog_images/Pflanzensensorik.jpg
-image3: /images/blog_images/LoRaWAN Umweltstation mit Solarpanel.jpg
-image4: /images/blog_images/Übersicht-Mierie-Wetterstation.jpeg
+thumbnail: /images/blog_images/Grundschule_Mierendorff/Wetterstation_Grundschule_Mierendorff.jpg
+image1: /images/blog_images/Grundschule_Mierendorff/Pflanzensensorik1.jpg
+image2: /images/blog_images/Grundschule_Mierendorff/Pflanzensensorik.jpg
+image3: /images/blog_images/Grundschule_Mierendorff/LoRaWAN Umweltstation mit Solarpanel.jpg
+image4: /images/blog_images/Grundschule_Mierendorff/Übersicht-Mierie-Wetterstation.jpeg
 lang: de
 slider:
   text_color: white
   shadow_color: black
   slides: 
-    - image: /images/blog_images/Mierie1.jpeg
+    - image: /images/blog_images/Grundschule_Mierendorff/Mierie1.jpeg
       slide_html:
-    - image: /images/blog_images/Mierie2.jpeg
+    - image: /images/blog_images/Grundschule_Mierendorff/Mierie2.jpeg
       slide_html:
-    - image: /images/blog_images/Mieris-Wetterstation.jpg
+    - image: /images/blog_images/Grundschule_Mierendorff/Mieris-Wetterstation.jpg
       slide_html:
       
 ---
@@ -41,7 +41,7 @@ Im Rahmen des Projektes „Den Schäden des Rekordsommers 2018 auf der Spur“ w
 Weitere Infos findet Ihr auf dem [Blog](https://www.mierendorff-schule.de/2019/01/23/wetterstation/) der Mierendorff-Schule!
 
 {% if page.slider %}
-{% include slider.html height="500" unit="px" transition="slide" duration="5" %}
+{% include slider.html height="500" unit="px" transition="slide" duration="3" %}
 {% endif %}
 
 
