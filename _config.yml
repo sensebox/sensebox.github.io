@@ -35,6 +35,8 @@ collections:
   posts:
   instructions:
     output: true
+  instructions_home:
+    output: true  
   awards_de:
   awards_en:
 
