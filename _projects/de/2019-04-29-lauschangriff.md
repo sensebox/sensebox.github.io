@@ -17,14 +17,9 @@ difficult: mittel
 
 In dieser Station wollen wir lernen, wie wir das Mikrofon mit dem Arduino nutzen können.
 
-<div class="panel panel-info">
-  <div class="panel-heading">
-    <h3 class="panel-title">Grundlagen</h3>
-  </div>
-  <div class="panel-body">
+## Grundlagen
+
 Das Mikrofon (Mic-Breakout) benötigt eine Betriebsspannung von 2.7V-5.5V und ist in der Lage Amplituden von Schallwellen wahrzunehmen. Anhand dieser Schallwellen wird eine elektrische Spannung erzeugt und von dem Sensor als Signal an die senseBox weitergegeben. Wie ihr dieses elektrische Signal auslesen könnt und in Volt umwandeln könnt erfahrt ihr hier!
-  </div>
-</div>
 
 ## Aufbau
 
@@ -60,7 +55,7 @@ void setup()
 }
 ```
 
-### Schritt 3:
+### Schritt 3
 
 In der `loop()`-Funktion passieren nun mehrere Dinge.
 Es werden zuerst vier Variablen erstellt. 
@@ -110,7 +105,7 @@ Serial.println(" Volt");
 
 Wenn du den gesamten Sketch nun auf deine senseBox:Edu hochlädst und den seriellen Monitor öffnest siehst du dort die Ausgabewerte deines Mic-Breakout Mikrofons.
 
-### Weiter Aufgaben
+## Weitere Aufgaben
 Jetzt könnt ihr ausprobieren welche Geräusche welche Ausschläge verursachen:
 * Wie stark ist der Ausschlag bei Gesprächen ? 
 * Was passiert wenn du den etwas lautes vor das Mikrofon hältst ? 

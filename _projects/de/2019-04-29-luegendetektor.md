@@ -6,10 +6,10 @@ author: Lennart
 abstract: "In diesem Kapitel soll es darum gehen, einen Lügendetektor zu bauen. Der Lügendetektor, den wir zusammen erstellen, misst die Leitfähigkeit deiner Haut."
 image: logo_bunt.png
 material:
-    - senseBox_MCU
+    - senseBox MCU
     - OLED-Display
-    - STJ-Adapterkabel
-    - STJ-Male Kabel
+    - JST-Adapterkabel
+    - JST-Male Kabel
     - Male-Male Kabel
     - 1*470Ω Widerstand
 ide: arduino    
@@ -17,7 +17,7 @@ lang: de
 tags: ["Informatik", "Physik"]
 difficult: mittel
 ---
-# Lauschangriff
+# Lügendetektor
 
 In diesem Kapitel soll es darum gehen, einen Lügendetektor zu bauen. Der Lügendetektor, den wir zusammen erstellen, misst die Leitfähigkeit deiner Haut. Bei normalen und professionellen Lügendetektoren werden neben der Leitfähigkeit deiner Haut auch dein Atem und dein Puls überwacht. In der Fachsprache wird der Lügendetektor auch Polygraph (Vielschreiber) genannt, was aus  Sicht der Wissenschaftler deutlich mehr Sinn ergibt, da dieser nicht über richtig oder falsch entscheidet, sondern die physischen Parameter misst.
 
