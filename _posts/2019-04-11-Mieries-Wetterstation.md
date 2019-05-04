@@ -24,7 +24,7 @@ slider:
 ---
 Mieries smarte Schul-Wetterstation 
 ============
-Der engagierte Lehrer Faris Hammad setzt die senseBox im Fach Naturwissenschaft zum Thema “Digitale Ansätze und Klimawandel/Umweltbildung” an der Mierendorff Grundschule in Berlin Charlottenburg ein. Letztes Jahr nahm er an unserem Gewinnspiel zur Verlosung der senseBox:MCU teil und überzeugte uns mit seiner Projektidee, die senseBox zur smarten Bewässerung von Pflanzen einzusetzen. Daraus entstand das Wurzelfenster, das bald mit einem Sensor zur Messung von Bodenfeuchte erweitert wird!
+Der engagierte Lehrer Faris Hammad setzt die senseBox im Fach Naturwissenschaft zum Thema “Digitale Ansätze und Klimawandel/Umweltbildung” an der Mierendorff Grundschule in Berlin Charlottenburg ein. Letztes Jahr nahm er an unserer Verlosung der senseBox:MCU teil und überzeugte uns mit seiner Projektidee, die senseBox zur smarten Bewässerung von Pflanzen einzusetzen. Daraus entstand das Wurzelfenster, das bald mit einem Sensor zur Messung von Bodenfeuchte erweitert wird!
 
 {% include image.html image=page.image1 %}
 {% include image.html image=page.image2 %}
