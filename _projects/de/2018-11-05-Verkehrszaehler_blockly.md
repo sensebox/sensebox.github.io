@@ -1,6 +1,6 @@
 ---
 layout: project_page
-name: "Verkehrszähler"
+name: "Verkehrszähler mit Blockly"
 date: 2019-04-09
 author: Lia
 abstract: "Ein kleiner Verkehrszähler"
@@ -23,41 +23,49 @@ Dazu wird ein Ultraschall-Distanzsensor verwendet.
 Die so aufgenommenen Werte sollen auf dem <b>Display</b> ausgegeben werden.
 
 ## Grundlagen
-Der Ultraschall-Distanzsensor nutzt den Schall um die Entfernung von Objekten zu bestimmen. Der Sensor sendet einen Impuls aus und misst die Zeit, bis er das Echo des Impulses wieder empfängt. Aus dieser Zeit wird dann mit Hilfe der Schallgeschwindigkeit die Entfernung des Objekts berechnet.
+Der Ultraschall-Distanzsensor nutzt den Schall um die Entfernung von Objekten zu bestimmen. Der Sensor sendet einen Impuls aus und misst die Zeit, bis er das Echo des Impulses wieder empfängt. Aus dieser Zeit kann dann mit Hilfe der Schallgeschwindigkeit die Entfernung des Objekts berechnet werden.
 
 ## Aufbau
-Der Ultraschallsensor wird mit einem JST-Adapterkabel mit der senseBox MCU verbunden. Dazu wird das JST-Adapterkabel mit dem Steckplatz Digital A verbunden.
-Der ultraschallsensor wird nun vertikal in eine der Spalten auf dem weißen Steckbrett gesteckt
-Zur Stromversorgung wird der VCC-Pin des Sensors mit dem roten Kabel (5V)und der GND-Pin des Sensors mit
-dem schwarzen Kabel (GND) verbunden. Zur Datenübertragung wird dann das grüne Kabel (1) mit dem Echo- und das gelbe Kabel (2) mit dem Trig-Pin des Sensors verbunden.
+
+Um den Ultraschallsensor mit Strom zu versorgen kann ein JST-Adapterkabel genutzt werden, welches die sensebox-MCU und den Ultraschallsensor verbindet. Dafür kann das eine Ende des JST-Adapterkabels an den Digital A Steckplatz der sensebox MCU gesteckt werden. Das andere Ende dient der Strom- und Datenversorgung. Es ist wichtig, dass die verschiedenen Kabel an die richtigen Stellen des Sensors angesteckt werden.
+Zur Stromversorgung dient der VCC-Pin, sowie der GND-Pin des Sensors. Der VCC-Pin sollte mit dem roten Kabel (5V) des JST-Adapterkabels, der GND-Pin mit dem schwarzen Kabel des JST-Adapterkabels verbunden werden.
+Das grüne und das gelbe  Kabel können zur Datenübertragung genutzt werden. Das grüne Kabel sollte hierzu mit dem Echo-Anschluss des Sensors verbunden werden und das gelbe Kabel mit dem Trig-Pin.
+
+***Hinweis :*** *Der Sensor sollte vertikal auf dem Steckbrett der MCU angebracht werden.*
 
 {% include image.html image=page.image1 %}
 
-***Hinweis :*** *Der Sensor sollte in die Richtung zeigen, bei der keine Kabel im Weg sind.*
+***Hinweis :*** *Der Sensor sollte in die Richtung zeigen, bei der keine Kabel im Weg sind, da so der Schall nicht behindert werden kann.*
 
 ## Programmierung
 
-Die Programmierung wird über die Programmieroberfläche Blockly geschehen. Mit Hilfe der Blöcke kann der Code gut zusammengestelt werden.
-Alle Blöcke die zur Programmierung dieser Aufgabe benötigt werden sind auf dem unteren Foto abgebildet.
+Bei der Programmierung kann die Programmieroberfläche Blockly genutzt werden. Mit Hilfe der vorgegebenen Blöcke kann verschiedener Code gut zusammengesetzt werden.
+Die Blöcke die auf dem unteren Bild abgebildet sind können zur Programmierung des Ultarschallsensors genutzt werden.
 
 {% include image.html image=page.image2 %}
 
-***Hinweis:*** *Manche Blöcke müssen doppelt verwendet werden.*
+Um den Wert des Sensors auf dem Display anzuzeigen sollte zuerst das Display in der Setup()-Schleife initialisiert und dann in der Endlos()-Schleife genutzt werden.
+In den Block "Zeige auf dem Display" kann nun der Ultraschall-Abstand-Sensor hineingezogen werden. Meistens sind der Port, wie auch Trigger und Echo bereits richtig eingestellt. Sollte dies einmal nicht so sein, sollte hier ein wenig variiert werden.
 
-
-**Hinweis** *Wir gehen davon aus, dass sich der Schall mit 348 Metern pro Sekunde ausbreitet. Diese Zahl ist nicht fix sondern [hängt von der Umgebungstemperatur ab](https://de.wikipedia.org/wiki/Schallgeschwindigkeit#Temperaturabh.C3.A4ngigkeit_in_Luft).*
 
 ## Aufgabe 1
 
 Versucht mit Hilfe der Blöcke einen Personen- bzw. Verkehrszähler zu entwickeln.
 
-Dabei muss folgendes beachtet werden:
-- Es sillte nur ein bestimmter Entfernungbereich ausgewertet werden, damit es
+***Hinweis:*** *Hier können die Blöcke, die auf dem oberen Foto abgebildet sind genutzt werden. Manche Blöcke müssen allerdings doppelt verwendet werden.*
+
+
+Um nun einen Personen- bzw. Verkehrszähler zu entwickeln muss folgendes beachtet werden:
+
+- Es sollte nur ein bestimmter Entfernungbereich ausgewertet werden, damit es
 nicht zu Störungen durch Bewegungen im Hintergrund kommt. Effektiv misst der Sensor ca. 3 Meter.
 
-- Um Mehrfachzählungen eines stehenden Fahrzeuges zu vermeiden sollte eine Bedingung programmiert werden, die den Zählvorgang stoppt bis die Spur wieder frei ist. Der Sensor sollte also eine vorher festgelegte Maximaldistanz für eine Spur haben. Hierzu bieten sich die wenn, dann Blöcke an. Zuerst muss überprüft werden, ob sich etwas im Messbereich befindet. Solange der Sensor nicht misst, dass die Fahrbahn wieder frei ist, soll er erneut messen. Erst wenn die Fahrbahn wieder frei ist wird die Zählvariable um eins erhöht.
+
+- Um Mehrfachzählungen eines stehenden Fahrzeuges zu vermeiden sollte eine Bedingung programmiert werden, die den Zählvorgang stoppt bis die Spur wieder frei ist. 
+Der Sensor sollte also eine vorher festgelegte Maximaldistanz für eine Spur haben. Hierzu bieten sich die wenn, dann Blöcke an. Zuerst muss überprüft werden, ob sich etwas im Messbereich befindet. Solange der Sensor nicht misst, dass die Fahrbahn wieder frei ist, muss er erneut messen. Erst wenn die Fahrbahn wieder frei ist sollte die Zählvariable um eins erhöht werden.
 
 
+**Hinweis** *Wir gehen davon aus, dass sich der Schall mit 348 Metern pro Sekunde ausbreitet. Diese Zahl ist nicht fix sondern [hängt von der Umgebungstemperatur ab](https://de.wikipedia.org/wiki/Schallgeschwindigkeit#Temperaturabh.C3.A4ngigkeit_in_Luft).*
     
 
 
