@@ -5,7 +5,7 @@ date: 2018-11-02
 author: Mario
 abstract: "Das LoRaWAN-Bee und wird verwendet um eine IoT-Wetterstation zu bauen!"
 image: traffic_counter.png
-image1: /images/projects/loraiot
+image1: /images/projects/lorapics/Final_Temp..PNG
 material:
     - senseBox MCU
     - Beleuchtungsstärke-, UV-, Temperatur-, Luftfeuchtigkeit-, Luftdrucksensor.
@@ -29,7 +29,6 @@ aufgebaut und verwaltet. Dadurch ist die Übermittlung von Daten über die TTN-I
 ## Aufbau
 Die Sensoren werden mit JST-JST Kabel mit der I2C/Wire Ports der senseBox MCU verbunden. Das LoRa-Bee wird auf den XBEE1 Steckplatz gesteckt.
 
-
 ## Regiestrierung bei TheThingsNetwork und auf der openSenseMap
 
 Für dieses Beispiel beginnen beginnst du nicht Null in der Programmierung, sondern baust auf einem Code auf, welcher von der openSenseMap generiert wird. Um den Code richtig 
@@ -39,34 +38,37 @@ generieren zu lassen, brauchst du jedoch einige Informationen aus dem TheThingsN
 
 Besuche die Website thethingsnetwork.org und erstelle dir einen Account. Wenn du eingeloggt bist, siehst du in der Kopfzeile der Startseite ein Option "Applications". Diese
 klickst du an und klickst dann auf "add application". Gib dort eine "Application ID" an, welche einzigartig ist. Alle anderen Auswahlmöglichkeiten lässt du unverändert.
-!BILD!
+
+/images/projects/lorapics/station_anlegen_ttn.PNG
 
 Danach erhälst du eine Übersicht mit der gewählten "Application ID" und die "Application EUIS". 
 
-!BILD! 
+/images/projects/lorapics/station_anlegen_ttn_final.PNG
 
 Nun musst du in deiner neuen Application noch ein Device hinzufügen. Gehe dafür unter der Rubrik "Devices" auf "register device". Gib deinem Device eine "Device ID". Durch klicken
 auf geschlungenen Pfeile ("generate") bei "DeviceEUI" wird dir automatisch einen DeviceEUI generiert.
 
-!Bild!
+/images/projects/lorapics/device_anlegen_ttn.PNG
 
 Klicke dann auf "Register" und du erhälst folgende Übersicht mit der "Application ID" und der "Device ID" welche du beide gleich bei der Registrierung auf der openSenseMap brauchst.
 
-!Bild!
+/images/projects/lorapics/device_anlegen_ttn_overview.PNG
 
 ### Registrierung auf der openSenseMap
 
 Falls du noch keinen Account hast, registriere dich auf der openSenseMap und legst eine neue senseBox an. Akzeptiere die Datenschutzbedingung, gib der Station einen Namen und gib an
 ob die Station drinnen oder draußen steht. Wähle deinen Standort und wähle dann in der Rubrik Hardware die "senseBox:home" aus. Wähle dann dein Set-up mit LoRa-Bee und den verwendeten Sensoren.
 
-!BILD! 
+/images/projects/lorapics/Auswahl_OSEM.PNG
 
 Da du das LoRa-Bee gewählt hast, öffnet sich automatisch die Rubrik TheThingsNetwork - TTN. Dort musst du nun die "Application ID" und die "Device ID" eingeben, wie du diese bei TTN bestimmt hast.
 
-!Bild!
+/images/projects/lorapics/Auswahl_OSEM_2.PNG
 
 Du kommst dann auf eine Übersichtsseite und kannst dort auf "Abschließen" klicken und erhälst einen Zusammenfassung. In dieser findest du auch den Arduino Code, in welchem schon für deine Station
 vorbereitet ist.
+
+/images/projects/lorapics/osem_zusammenfassung.PNG
 
 ## Einstellungen in der Arduino IDE
 
@@ -105,7 +107,7 @@ Wie du in der Beschreibung des Codes lesen kannst, ist es hier wichtig, das Form
 Beim kopieren der Schlüssel muss deshalb darauf achten, das in deinem Device Overview wie im folgenden Bild eingestellt sind. Du kannst das Format der Darstellung ändern,
 indem du auf die Icons am Anfang drückst (<> und ->)
 
-!BILD!
+/images/projects/lorapics/device_overview_right_format.PNG
 
 Jetzt kannst du deinen Code übertragen, und deine senseBox sollte Daten an TTN, sowie an die openSenseMap senden.
 
@@ -120,7 +122,7 @@ Gehe dafür in deinem TTN-Profil auf dein Device und wähle „Integrations“. 
 die openSenseMap zu schicken. Wähle dort nun „add integration“ und wähle „TagoIO“.  Dann kannst Du eine eindeutige Identifizierung frei wählen und musst dir außerdem einen 
 „Autorization“ aussuchen. Diese brauchst du später wieder um auf deine Werte zugreifen zu können. 
 
-BILD
+/images/projects/lorapics/Integration.PNG
     
 Gehe nun auf https://tago.io und lege dir einen Account an. Wähle „I am Developer“, da du später eigene Geräte anlegen möchtest. 
 In der Übersicht deines Accounts findest du nun die Option „Devices“. Klicke dort auf „Add Device“ und wähle dann die Option „Custom The Things Network“ aus.
@@ -128,17 +130,17 @@ Gib deinem Device ein Namen und eine kurze Beschreibung. Danach musst du noch di
 Diese findest du wieder unter dem „Device Overview“ in deinem TTN Account. Dann musst du auch noch dein vorher gewählten Authorization Code eingeben. 
 Abschließend klickst du auf „Create Device“ und bist fertig. 
 
-Bild
+/images/projects/lorapics/tago_add_devices.PNG
 
 Nun kannst du auf die Sensorwerte des Devices zugreifen und deine eigenen Dashboards bauen. Gehe dazu auf „Dashboards“ in deinem TagoIO Account und wähle „Add Dashboard“. 
 Gib dem Dashboard einen Namen und klicke auf „Add Widget“. Hier kannst du zwischen verschiedenen Darstellungsweisen der Werte wählen. Hier wird im Folgenden einen „Line“ Diagramm gewählt. 
 
-Bild
+/images/projects/lorapics/Tago_add_dashboard.PNG
 
 Gib dem Diagramm einen Titel und wähle dann dein Device aus, falls du mehrere hast. Nun gibst du noch die Variable die du ausgeben möchtest. Hier wählst du die Sensor ID deiner senseBox aus. 
 Welche Sensor ID zu welchem Sensor gehört findest du in deinem openSenseMap Account unter dem Punkt „Sensors“. In diesem Fall wurde der Temperaturwert gewählt und kann nun angezeigt werden. 
 
-Bild
+/images/projects/lorapics/sensor_id_erkennen.PNG
 
 Da es auch eine App von TagoIO gibt, ist das auch eine gute Möglichkeit deine Sensorwerte mobil anzuzeigen.
  Es stehen dir natürlich auch weiter Dashboards und weitere Möglichkeiten über TagoIO zur Verfügung. 
