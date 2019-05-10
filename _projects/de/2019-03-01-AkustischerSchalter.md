@@ -6,7 +6,7 @@ author: Benni
 abstract: "Mithilfe des Mikrofons lässt sich ein akustischer Schalter bauen"
 image: IntelligenterLichtschalterKlein.png
 image1: /images/projects/IntelligenterLichtschalterKlein.png
-lang: en
+lang: de
 material:
     - Mic-Breakout
     - 1x LED
