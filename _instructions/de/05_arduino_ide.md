@@ -1,15 +1,11 @@
 ---
 layout: instructions
 title: "Arbeiten mit der Arduino IDE"
-date: 2017-05-11
-author: Mario
 abstract: "Programmieren der senseBox MCU mit der Arduino IDE"
-thumbnail: /images/blog_images/screenshot_osem.png
 lang: de
 ---
 Arbeiten mit der Arduino IDE
 ============
-
 
 # Installieren der Arduino IDE
 Lade dir die [Arduino IDE](https://www.arduino.cc/en/Main/Software) herunter und installiere sie auf deinem Computer.
