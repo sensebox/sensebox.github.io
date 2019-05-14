@@ -3,15 +3,15 @@ layout: project_page
 name: "Lügendetektor"
 date: 2019-04-29
 author: Lennart
-abstract: "In diesem Kapitel soll es darum gehen, einen Lügendetektor zu bauen. Der Lügendetektor, den wir zusammen erstellen, misst die Leitfähigkeit deiner Haut."
+abstract: "In diesem Kapitel soll es darum gehen, einen Lügendetektor zu bauen. Der Lügendetektor, misst die Leitfähigkeit deiner Haut."
 image: logo_bunt.png
 material:
     - senseBox MCU
     - OLED-Display
     - JST-Adapterkabel
-    - JST-Male Kabel
-    - Male-Male Kabel
-    - 1*470Ω Widerstand
+    - JST-JST Kabel
+    - Steckkabel
+    - 470Ω Widerstand
 ide: arduino    
 lang: de
 tags: ["Informatik", "Physik"]
@@ -24,7 +24,7 @@ In diesem Kapitel soll es darum gehen, einen Lügendetektor zu bauen. Der Lügen
 
 ## Aufbau
 
-Zunächst wird das JST-Adapterkabel an dein Display und an ein I2C/Wire Port angeschlossen. Nun steckst du das JST-Male Kabel in einen Digital Port deiner Wahl. Das schwarze Kabel (GND) findet in diesem Experiment keine Verwendung. Das rote Kabel (5V) steckst du auf dein Breadboard und verlängerst dieses mittels eines Male-Male Kabels, sodass hier ein freies Ende entsteht. Schließe nun eines der beiden übrig gebliebenen Kabel (grün/gelb) ebenfalls in ein freiliegenden Slot des Breadboards. Über einen Widerstand verbindest du nun das Kabel (grün/gelb) mit ein Male-Male Kabel, sodass du jetzt ein freies Ende hast, welches du in die Hand nehmen kannst. Das Kabel dient als dein Leitfähigkeitssensor.
+Zunächst wird das Display über das JST-JST Kabel an einen der I2C/Wire Ports angeschlossen. Nun steckst du das JST-Male Kabel in einen Digital Port deiner Wahl. Das schwarze Kabel (GND) findet in diesem Experiment keine Verwendung. Das rote Kabel (5V) steckst du auf dein Breadboard und verlängerst dieses mittels eines Male-Male Kabels, sodass hier ein freies Ende entsteht. Schließe nun eines der beiden übrig gebliebenen Kabel (grün/gelb) ebenfalls in ein freiliegenden Slot des Breadboards. Über einen Widerstand verbindest du nun das Kabel (grün/gelb) mit ein Male-Male Kabel, sodass du jetzt ein freies Ende hast, welches du in die Hand nehmen kannst. Das Kabel dient als dein Leitfähigkeitssensor.
 
 ## Programmierung
 

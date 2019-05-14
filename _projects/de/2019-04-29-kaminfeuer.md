@@ -2,7 +2,7 @@
 layout: project_page
 name: "Kaminfeuer"
 date: 2019-04-29
-author: unkown
+author: Bernd
 abstract: "Es soll ein Kaminfeuer simuliert werden. Dazu wird eine rote LED zum flackern gebracht."
 image: logo_bunt.png
 image0: /images/projects/KaminfeuerKlein.png
@@ -18,8 +18,6 @@ difficult: leicht
 # Kaminfeuer
 
 Es soll ein Kaminfeuer simuliert werden. Dazu wird eine rote LED zum flackern gebracht.
-
-
 
 ## Aufbau
 
