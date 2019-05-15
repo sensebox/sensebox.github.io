@@ -34,12 +34,16 @@ In diesem Projekt wird mit der SenseBoxMCU ein mobiler Feinstaubmesser gebaut, d
 
 ## Aufbau
 Wir brauchen:
-    - den LoRa Bee auf dem XBEE1 Steckplatz
-    - das OLED-Display auf einem I²C Steckplatz
-    - den HDC 1080 auf einem I²C Steckplatz
-    - das GPS-Modul auf dem UART Steckplatz 1
-    - den SDS011 auf dem UART Steckplatz 2
+  - den LoRa Bee auf dem XBEE1 Steckplatz
 
+  - das OLED-Display auf einem I²C Steckplatz
+
+  - den HDC 1080 auf einem I²C Steckplatz
+
+  - das GPS-Modul auf dem UART Steckplatz 1
+
+  - den SDS011 auf dem UART Steckplatz 2
+  
 {% include image.html image=page.image7 %}
 Das auf UART gelötete GPS-Modul.
 
