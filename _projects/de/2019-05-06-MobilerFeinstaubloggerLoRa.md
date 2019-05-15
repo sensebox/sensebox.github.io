@@ -46,14 +46,6 @@ Das auf UART gelötete GPS-Modul.
 {% include image.html image=page.image8 %}
 Beispielaufbau.
 
-<div class="panel panel-info">
-  <div class="panel-heading">
-    <h3 class="panel-title">UART-Steckplätze</h3>
-  </div>
-  <div class="panel-body">
-    Es ist wichtig, hier die Nummerierung der Steckplätze zu beachten, da wir im Code später zwischen Serial1 und Serial2 unterscheiden
-  </div>
-</div>
 
 ## TheThingsNetwork & OpenSenseMap(OSeM)-Setup
 Bevor wir die SenseBox mit der OSeM verbinden, müssen wir uns erst einmal ein TheThingsNetwork Konto, eine Application und ein Device erstellen. Dabei erhalten wir eine Application EUI, eine Device EUI und einen Appkey, diese müssen wir später im Code eintragen. Dabei ist das Format der Keys und EUI´s wichtig
