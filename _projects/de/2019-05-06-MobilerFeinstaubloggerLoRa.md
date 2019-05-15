@@ -12,6 +12,8 @@ image3: /images/projects/mobile_feinstaubstation/lora/osem_httpinteg.png
 image4: /images/projects/mobile_feinstaubstation/lora/lora_oled.jpg
 image5: /images/projects/mobile_feinstaubstation/lora/final_osem.jpg
 image6: /images/projects/mobile_feinstaubstation/lora/osem_decode.png
+image7: /images/projects/mobile_feinstaubstation/lora/gps_uart.jpg
+image8: /images/projects/mobile_feinstaubstation/lora/example_build.jpg
 material:
     - senseBox MCU
     - OLED Display
@@ -19,7 +21,6 @@ material:
     - Feinstaubsensor(SDS011)
     - GPS Modul auf UART gelötet(CAM-M8Q)
     - LoRa Bee
-    - mSD Bee
     - JST Kabel
 ide: arduino    
 lang: de
@@ -34,11 +35,16 @@ In diesem Projekt wird mit der SenseBoxMCU ein mobiler Feinstaubmesser gebaut, d
 ## Aufbau
 Wir brauchen:
     - den LoRa Bee auf dem XBEE1 Steckplatz
-    - den mSD-Bee auf dem XBEE2 Steckplatz
     - das OLED-Display auf einem I²C Steckplatz
     - den HDC 1080 auf einem I²C Steckplatz
     - das GPS-Modul auf dem UART Steckplatz 1
     - den SDS011 auf dem UART Steckplatz 2
+
+{% include image.html image=page.image7 %}
+Das auf UART gelötete GPS-Modul.
+
+{% include image.html image=page.image8 %}
+Beispielaufbau.
 
 <div class="panel panel-info">
   <div class="panel-heading">
