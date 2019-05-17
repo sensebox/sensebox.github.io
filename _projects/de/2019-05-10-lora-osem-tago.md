@@ -17,6 +17,7 @@ image9: /images/projects/lora-osem-tago/Integration.PNG
 image10: /images/projects/lora-osem-tago/tago_add_devices.PNG
 image11: /images/projects/lora-osem-tago/Tago_add_dashboard.PNG
 image12: /images/projects/lora-osem-tago/sensor_id_erkennen.PNG
+image13: /images/projects/lora-osem-tago/Integration_osem.PNG
 material:
     - senseBox MCU
     - 3x JST-JST Kabel 
@@ -61,6 +62,10 @@ Nun musst du in deiner neuen Application noch ein Device hinzufügen. Gehe dafü
 Klicke dann auf "Register" und du erhälst folgende Übersicht mit der "Application ID" und der "Device ID", die du beide anschließend bei der Registrierung auf der openSenseMap brauchst.
 
 {% include image.html image=page.image4 %}
+
+Da die Daten später an die openSenseMap gesendet werden sollen brauchst du noch eine sogenannte "Integration". Diese findest du oben in deinem Menu. Klicke darauf und klicke dann gleich auf den Button mit der Aufschrift "Add Integration". Dort hast du dann die Möglichkeit verschiedenste Integrations hinzuzufügen um die Daten von TTN an andere Service weiterzuleiten. Wähle dort die "HTTP Integration" aus. Gib nun eine "Process ID" an, die du frei wählen kannst. Danach wählst du noch "default key" im Dropdown Menu bei "Access Key" aus. Schließlich gibst du noch an, wohin die Daten gesendet werden sollen, zur URL: https://ttn.opensensemap.org/v1.1 und klickst dann auf "Add Integration"
+
+{% include image.html image=page.image13 %}
 
 
 ### Registrierung auf der openSenseMap
@@ -126,8 +131,7 @@ Jetzt kannst du deinen Code übertragen und deine senseBox übermittelt Daten an
 
 Abschließend möchten wir noch eine kleine Funktion vom Anbieter tago.io benutzen, durch die man Daten seiner auf TheThingsNetwork registrierten Stationen in einem Dashboard ansehen kann.
 
-Gehe dafür in deinem TTN-Profil auf dein Device und wähle „Integrations“. Dort sollte es bereits eine Http-Integration geben, welche benutzt wird, um die Daten an 
-die openSenseMap zu schicken. Wähle dort nun „add integration“ und wähle „TagoIO“.  Dann kannst Du eine eindeutige Identifizierung frei wählen und musst dir außerdem einen 
+Gehe dafür in deinem TTN-Profil auf dein Device und wähle „Integrations“. Dort sollte es jetzt bereits eine Http-Integration geben, welche benutzt wird, um die Daten an die openSenseMap zu schicken. Wähle dort nun „add integration“ und wähle „TagoIO“.  Dann kannst Du eine eindeutige Identifizierung frei wählen und musst dir außerdem einen 
 „Autorization“ aussuchen. Diese brauchst du später wieder um auf deine Werte zugreifen zu können. 
 
 {% include image.html image=page.image9 %}
