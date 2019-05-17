@@ -21,7 +21,7 @@ lang: de
 tags: ["Informatik"]
 difficult: mittel
 ---
-# IoT Messtattion 
+# IoT Messstattion 
 In diesem Projekt erfahrt ihr, wie man eine senseBox Umweltstation aufbaut. Am Ende wird die Messung diverser Umweltphänomene wie Temperatur, Luftfeuchte, Helligkeit und Luftdruck, sowie die Veröffentlichung der Daten auf der openSenseMap möglich sein!
 
 ## Aufbau
