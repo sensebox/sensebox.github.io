@@ -3,7 +3,7 @@ layout: project_page
 name: "IoT Messtation"
 date: 2019-04-11
 author: Eric
-abstract: "Erstelle eine Messtation die Messwerte für Temperatur, Luftfeuchte, Luftdruck und Feinstaub an die openSenseMap schickt."
+abstract: "Erstelle eine Messtation die Messwerte für Temperatur, Luftfeuchte, Luftdruck, Lichtintensität und UV-Intensität an die openSenseMap schickt."
 image: /images/projects/iot_messstation/senseBox_Uebersicht.png
 image0: /images/projects/iot_messstation/WiFi.png
 image1: /images/projects/iot_messstation/upload_osem.png
@@ -12,8 +12,8 @@ image2: home.jpg
 material:
     - senseBox MCU
     - OLED Display
-    - Temperatur und Luftfeuchtigkeitssensor (HDC1080)
-    - Luftdrucksensor
+    - Temperatur und Luftfeuchtigkeitssensor 
+    - Luftdrucksensor 
     - Beleuchtungsstärke und UV Sensor 
 ide: blockly    
 lang: de
