@@ -1,13 +1,14 @@
 ---
 layout: project_page
 name: "IoT Messtation"
-date: 2019-04-11
+date: 2019-05-17
 author: Eric
 abstract: "Erstelle eine Messtation die Messwerte für Temperatur, Luftfeuchte, Luftdruck, Lichtintensität und UV-Intensität an die openSenseMap schickt."
 image: /images/projects/iot_messstation/senseBox_Uebersicht.png
 image0: /images/projects/iot_messstation/WiFi.png
 image1: /images/projects/iot_messstation/upload_osem.png
 image2: home.jpg
+image3: /images/projects/iot_messstation/neueSenseBox.png
 
 material:
     - senseBox MCU
@@ -44,6 +45,8 @@ Damit du die Werte deiner Messstation von überall aus abrufen kannst, können d
 ### Schritt 2 - Anlegen einer neuen 'senseBox'
 
 Ist die Registrierung abgeschlossen, melde dich an und wähle über das Dropdown Menü (siehe Bild) den Punkt "Neue senseBox" aus. Hier kannst du deiner Messstation einen Namen geben, eine Position angeben und die Phänomene die messen möchtest bestimmen. Wichtig ist, dass du auch nur die Sensoren angibst die du auch zur Verfügung hast. Nachdem das erledigt ist, siehst du eine Übersicht in der dir deine registrierte senseBox mit den dazugehörigen Sensoren angezeigt werden.
+
+{% include image.html image=page.image3 %}
 
 <div class="panel panel-info">
   <div class="panel-heading">
