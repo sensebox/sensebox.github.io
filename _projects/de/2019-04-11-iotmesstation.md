@@ -3,7 +3,7 @@ layout: project_page
 name: "IoT Messtation"
 date: 2019-04-11
 author: Eric
-abstract: "Erstelle eine Messtation die in einem Intervall Messwerte an die openSenseMap schickt."
+abstract: "Erstelle eine Messtation die Messwerte für Temperatur, Luftfeuchte, Luftdruck und Feinstaub an die openSenseMap schickt."
 image: /images/projects/iot_messstation/senseBox_Uebersicht.png
 image0: /images/projects/iot_messstation/WiFi.png
 image1: /images/projects/iot_messstation/upload_osem.png
@@ -37,9 +37,13 @@ Die Kommunikation des Sensors mit dem Mikrokontroller läuft über den seriellen
 
 ## Programmierung
 
-### Schritt 1 
+### Schritt 1 - Registrierung auf der openSenseMap
 
-Gehe auf die [openSenseMap](www.opensensemap.org) und legen dort einen Account an. Hast du das getan kannst du über den Reiter "neue senseBox" musst du nun eine senseBox erstellen. Nachdem das erledigt ist, siehst du eine Übersicht in der dir deine registrierte senseBox mit den dazugehörigen Sensoren angezeigt werden. 
+Damit du die Werte deiner Messstation von überall aus abrufen kannst, können die Werte im Internet auf der [openSenseMap](www.opensensemap.org) hochgeladen werden. Dafür muss ein Benutzerkonto auf ebendieser Plattform erstellt werden. Rufe die [openSenseMap](www.opensensemap.org) in einem Internet-Browser auf. Klicke in der oberen Leiste auf den Menüpunkt "Registrierung". Fülle dort alle freien Felder aus. Achte darauf deine E-Mail Adresse korrekt einzugeben, da du diese für die nächsten Schritte noch benötigst. 
+
+### Schritt 2 - Anlegen einer neuen 'senseBox'
+
+Ist die Registrierung abgeschlossen, melde dich an und wähle über das Dropdown Menü (siehe Bild) den Punkt "Neue senseBox" aus. Hier kannst du deiner Messstation einen Namen geben, eine Position angeben und die Phänomene die messen möchtest bestimmen. Wichtig ist, dass du auch nur die Sensoren angibst die du auch zur Verfügung hast. Nachdem das erledigt ist, siehst du eine Übersicht in der dir deine registrierte senseBox mit den dazugehörigen Sensoren angezeigt werden.
 
 <div class="panel panel-info">
   <div class="panel-heading">
@@ -53,24 +57,31 @@ Die Sensor ID's können benutzt werden um Sensoren zu unterscheiden. Jede senseB
 {% include image.html image=page.image %}
 
 
-### Schritt 2
+### Schritt 3 - Anfang der Programmierung
 
-Im ersten Schritt wollen wir eine Verbindung mit dem Internet über WiFi herstellen. Hierfür brauchst du den Namen und das Passwort für das WLAN welches du zum Datenupload benutzen möchtest.
+Super! Die Registrierung auf der [openSenseMap](www.opensensemap.org) ist abgeschlossen, nun können wir uns der Programmierung widmen. Gehe hierfür auf die [Ardublockly](https://blockly.sensebox.de/ardublockly/?lang=de&board=sensebox-mcu) Seite. Der Umgang mit Ardublockly sollte dir aus vorherigen Anleitungen bekannt sein. Falls dem nicht so ist besuche die [senseBox Go](www.sensebox.de/go).
+Im ersten Schritt wird  eine Verbindung mit dem Internet über WiFi hergestellt. Hierfür brauchst du den Namen und das Passwort für das WLAN welches du zum Datenupload benutzen möchtest. Die hierfür verwendeten Blöcke befinden sich in der Kategorie `Web`->`WiFi`.
 
 
 {% include image.html image=page.image0 %}
  
 
-### Schritt 3 
-
-Nun wollen wir eine Verbindung zur openSenseMap herstellen und unsere Messwerte alle 60 Sekunden dort hochladen. 
+### Schritt 4 - Verbindung zur openSenseMap und hochladen der Messwerte
+Hast du den korrekten Netzwerknamen und das Passwort eingegeben kann nun eine Verbindung zur openSenseMap hergestellt werden. Um das Netzwerk nicht zu überlasten, werden die Messwerte alle 60 Sekunden übertragen. Den passenden Block hierfür findest du in der Kategorie `Zeit`. Ziehe diesen die `Endlosschleife` und ändere das Messintervall zu 60000 Millisekunden. Nun soll alle 60 Sekunden eine Verbindung zur openSenseMap hergestellt werden. Den Block dafür findest du in der Kategorie `Web`-> `openSenseMap`. Ähnlich wie bei der Verbindug über WiFi aus Schritt 4 musst du in diesen Block deine senseBox ID aus Schritt 2 angeben. 
+In diesen Block kannst du nun alle Sensoren die registriert hast angeben und somit hochladen. Dafür wird der Block `Sende Messwerte an die openSenseMap` aus der Kategorie `Web`-> `openSenseMap` benötigt. An diesen Block kann nun der Wert für den Sensor aus der Kategorie `Sensoren` eingefügt werden.
 
 {% include image.html image=page.image1 %}
 
-Achte hier darauf, dass hier die ID's aus Schritt 1 übertragen wurden. Um jetzt die restlichen Sensoren hinzuzufügen musst du diese wie beim Temperatursensor einfach in die Schleife hinzufügen. 
+Wichtig! Achte auch hier darauf, dass du die Sensor ID's in den Block `Sende Messwerte an die openSenseMap` einfügst. 
 
+### Schritt 6 - Code übertragen
 
+Übertrage den Code auf die senseBox wie auf der [senseBox Go](www.sensebox.de/go) beschrieben.
+
+### Schritt 7 - Fertig!
+
+Herzlichen Glückwunsch! Du hast eine eigene Messstation programmiert. Für was du die senseBox sonst noch benutzen kannst erfährst du in anderen spannenden [Projekten](www.sensebox.de/projekte).
 ## Download 
 
-Den fertigen Arduino Sketch findest du <a href="https://raw.githubusercontent.com/sensebox/resources/master/code/Arduino_Sketch.ino" download="https://raw.githubusercontent.com/sensebox/resources/master/code/Arduino_Sketch.ino">hier</a> und die fertigen Blockly Blöcke <a href="https://raw.githubusercontent.com/sensebox/resources/master/code/Blockly_Sketch.xml" download="https://raw.githubusercontent.com/sensebox/resources/master/code/Blockly_Sketch.xml">hier</a>.
+Die fertigen Blockly Blöcke <a href="https://raw.githubusercontent.com/sensebox/resources/master/code/Blockly_Sketch.xml" download="https://raw.githubusercontent.com/sensebox/resources/master/code/Blockly_Sketch.xml">hier</a>.
 
