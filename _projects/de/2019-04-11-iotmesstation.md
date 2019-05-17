@@ -83,7 +83,7 @@ Wichtig! Achte auch hier darauf, dass du die Sensor ID's in den Block `Sende Mes
 
 ### Schritt 7 - Fertig!
 
-Herzlichen Glückwunsch! Du hast eine eigene Messstation programmiert. Für was du die senseBox sonst noch benutzen kannst erfährst du in anderen spannenden [Projekten](www.sensebox.de/projekte).
+Herzlichen Glückwunsch! Du hast eine eigene Messstation programmiert. Für was du die senseBox sonst noch benutzen kannst erfährst du in anderen spannenden [Projekten](www.sensebox.de/de/projects).
 ## Download 
 
 Die fertigen Blockly Blöcke <a href="https://raw.githubusercontent.com/sensebox/resources/master/code/Blockly_Sketch.xml" download="https://raw.githubusercontent.com/sensebox/resources/master/code/Blockly_Sketch.xml">hier</a>.
