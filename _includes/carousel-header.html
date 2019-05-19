@@ -58,7 +58,7 @@
                                 <ul class="nav navbar-nav">                       
                                 <li class="nav-item"><a class="navbar-item" href="{{site.baseurl }}/{{ page.lang }}/go-edu">:edu</a></li>
                                 <li class="nav-item"><a class="navbar-item" href="{{site.baseurl }}/{{page.lang }}/go-home">:home</a></li>
-                                <li class="nav-item"><a class="navbar-item" href="{{site.baseurl }}/{{page.lang }}/Projects">Projects</a></li>
+                                <li class="nav-item"><a class="navbar-item" href="{{site.baseurl }}/{{page.lang }}/Projects">{{ t.projects }}</a></li>
                                 </ul>
                                 {% endif %}
                             </div>
@@ -70,8 +70,11 @@
                         </li>
                         {% endif %} {% endfor %}
                     </ul>
-
+                    {% if include.simple %}
+                        <ul class="nav navbar-nav pull-right simple">
+                                {% else %}
                     <ul class="nav navbar-nav pull-right">
+                        {% endif %}
                         {% assign t = site.data.translations.[page.lang].header %}
                         {% assign menupages = site.pages | sort:"weight" %}
                         {% for menupage in menupages %}
