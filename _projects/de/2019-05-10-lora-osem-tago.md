@@ -17,6 +17,7 @@ image9: /images/projects/lora-osem-tago/Integration.PNG
 image10: /images/projects/lora-osem-tago/tago_add_devices.PNG
 image11: /images/projects/lora-osem-tago/Tago_add_dashboard.PNG
 image12: /images/projects/lora-osem-tago/sensor_id_erkennen.PNG
+image13: /images/projects/lora-osem-tago/Integration_osem.PNG
 material:
     - senseBox MCU
     - 3x JST-JST Kabel 
@@ -31,22 +32,22 @@ difficult: schwierig
 ---
 # LoRaWAN IoT-Sensorstation
 
-Ziel ist es, eine senseBox Sensorstation mit LoRaWAN Modul zu entwickeln. Die Daten werden das freie Netzwerks [TheThingsNetwork](https://www.thethingsnetwork.org/) ins Internet gesendet.
+Ziel ist es, eine senseBox Sensorstation mit LoRaWAN Modul zu entwickeln. Die Daten werden über das freie Netzwerk [TheThingsNetwork](https://www.thethingsnetwork.org/) ins Internet gesendet.
 Die Messwerte der Sensoren für Beleuchtungsstärke & UV, Temperatur & Luftfeuchtigkeit und Luftdruck sollen dabei übermittelt werden. Anschließend können die Daten zusätzlich zur openSenseMap auch auf der Platform [tago.io](https://tago.io/) angezeigt werden.
 
 ## Grundlagen
-Das The Things Network ist eine communitybasierte Initiative zur Errichtung eines globalen LPWAN-Internet-of-Things-Netzwerks. Über das Netzwerk können kostenlos und über große Distanzen Daten übermittelt werden. Mehr dazu findest du [hier](https://de.wikipedia.org/wiki/The_Things_Network). Bevor du mit dem Projekt beginnst überprüfe ob ein Gateway, der LoRaWan bereitstellt in deiner nähe ist. Am einfachsten kannst du dies über die Website  [ttnmapper](https://ttnmapper.org/). 
+Das The Things Network ist eine communitybasierte Initiative zur Errichtung eines globalen LPWAN-Internet-of-Things-Netzwerks. Über das Netzwerk können kostenlos und über große Distanzen Daten übermittelt werden. Mehr dazu findest du [hier](https://de.wikipedia.org/wiki/The_Things_Network). Bevor du mit dem Projekt beginnst, überprüfe ob ein Gateway, der LoRaWan in deiner Nähe bereitgestellt ist. Am einfachsten kannst du dies über die Website  [ttnmapper](https://ttnmapper.org/) machen. 
 
 ## Aufbau
 Die Sensoren werden mit JST-JST Kabel mit der I2C/Wire Ports der senseBox MCU verbunden. Das LoRa-Bee wird auf den XBEE1 Steckplatz gesteckt.
 
-## Regiestrierung bei TheThingsNetwork und auf der openSenseMap
+## Registrierung bei TheThingsNetwork und auf der openSenseMap
 
 Für dieses Beispiel beginnst du nicht bei Null in der Programmierung, sondern baust auf einem Code auf, der von der openSenseMap generiert wird. Um den Code richtig generieren zu lassen, brauchst du jedoch einige Informationen aus dem TheThingsNetwork.
 
 ### Registrierung auf TheThingsNetwork und anlegen einer Application
 
-Besuche die Website [thethingsnetwork.org](https://www.thethingsnetwork.org/) und erstelle dir einen Account. Wenn du eingeloggt bist, siehst du in der Kopfzeile der Startseite ein Option "Applications". Diese klickst du an und klickst dann auf "add application". Gib dort eine "Application ID" an, welche einzigartig ist. Alle anderen Auswahlmöglichkeiten lässt du unverändert.
+Besuche die Website [thethingsnetwork.org](https://www.thethingsnetwork.org/) und erstelle dir einen Account. Wenn du eingeloggt bist, siehst du in der Kopfzeile der Startseite eine Option "Learn". Diese klickst du an und wählst auf der nachfolgenden Seite "Applications" und anschließend "add application" aus. Gib dort eine "Application ID" an, welche einzigartig ist. Alle anderen Auswahlmöglichkeiten lässt du unverändert.
 
 {% include image.html image=page.image1 %}
 
@@ -54,18 +55,22 @@ Danach erhälst du eine Übersicht mit der gewählten "Application ID" und die "
 
 {% include image.html image=page.image2 %}
 
-Nun musst du in deiner neuen Application noch ein Device hinzufügen. Gehe dafür unter der Rubrik "Devices" auf "register device". Gib deinem Device eine "Device ID". Durch klicken auf geschlungenen Pfeile ("generate") bei "DeviceEUI" wird dir automatisch einen DeviceEUI generiert.
+Nun musst du in deiner neuen Application noch ein Device hinzufügen. Gehe dafür unter der Rubrik "Devices" auf "register device". Gib deinem Device eine "Device ID". Durch klicken auf die geschlungenen Pfeile ("generate") bei "DeviceEUI" wird dir automatisch einen DeviceEUI generiert.
 
 {% include image.html image=page.image3 %}
 
-Klicke dann auf "Register" und du erhälst folgende Übersicht mit der "Application ID" und der "Device ID", die du beide gleich bei der Registrierung auf der openSenseMap brauchst.
+Klicke dann auf "Register" und du erhälst folgende Übersicht mit der "Application ID" und der "Device ID", die du beide anschließend bei der Registrierung auf der openSenseMap brauchst.
 
 {% include image.html image=page.image4 %}
+
+Da die Daten später an die openSenseMap gesendet werden sollen brauchst du noch eine sogenannte "Integration". Diese findest du oben in deinem Menu. Klicke darauf und klicke dann gleich auf den Button mit der Aufschrift "Add Integration". Dort hast du dann die Möglichkeit verschiedenste Integrations hinzuzufügen um die Daten von TTN an andere Service weiterzuleiten. Wähle dort die "HTTP Integration" aus. Gib nun eine "Process ID" an, die du frei wählen kannst. Danach wählst du noch "default key" im Dropdown Menu bei "Access Key" aus. Schließlich gibst du noch an, wohin die Daten gesendet werden sollen, zur URL: https://ttn.opensensemap.org/v1.1 und klickst dann auf "Add Integration"
+
+{% include image.html image=page.image13 %}
 
 
 ### Registrierung auf der openSenseMap
 
-Falls du noch keinen Account hast, registriere dich auf der openSenseMap und legst eine neue senseBox an. Akzeptiere die Datenschutzerklärung und gib der Station einen Namen. Gib an ob die Station drinnen oder draußen steht. Wähle deinen Standort und wähle anschließend in der Rubrik Hardware die "senseBox:home" aus. Wähle dann dein Set-up mit LoRa-Bee und den verwendeten Sensoren.
+Falls du noch keinen Account hast, registriere dich auf der openSenseMap und lege eine neue senseBox an. Akzeptiere die Datenschutzerklärung und gib der Station einen Namen. Gib an ob die Station drinnen oder draußen steht. Wähle deinen Standort und wähle anschließend in der Rubrik Hardware die "senseBox:home V2" aus. Wähle dann dein Set-up mit LoRa-Bee und den verwendeten Sensoren.
 
 {% include image.html image=page.image5 %}
 
@@ -73,7 +78,7 @@ Da du das LoRa-Bee gewählt hast, öffnet sich automatisch die Rubrik TheThingsN
 
 {% include image.html image=page.image6 %}
 
-Du kommst dann auf eine Übersichtsseite und kannst dort auf "Abschließen" klicken und erhälst einen Zusammenfassung. In dieser findest du auch den Arduino Code, in dem schon für deine Station vorbereitet ist.
+Du kommst dann auf eine Übersichtsseite und kannst dort auf "Abschließen" klicken und erhälst eine Zusammenfassung. In dieser findest du auch den Arduino Code, der schon für deine Station vorbereitet ist.
 
 {% include image.html image=page.image7 %}
 
@@ -111,7 +116,7 @@ void os_getDevKey (u1_t* buf) {  memcpy_P(buf, APPKEY, 16);}
 Wie du in der Beschreibung des Codes lesen kannst, ist es hier wichtig, das Format der Schlüssel richtig einzusetzen. Die "Device EUI" und die "Application EUI" werden im 
 ```lsb``` Format kopiert und eingefügt. Der AppKey im ```msb``` Format. 
 
-Beim kopieren der Schlüssel muss deshalb darauf achten, das in deinem Device Overview wie im folgenden Bild eingestellt sind. Du kannst das Format der Darstellung ändern,
+Beim kopieren der Schlüssel musst du deshalb darauf achten, dass deine Device Overview wie im folgenden Bild eingestellt ist. Du kannst das Format der Darstellung ändern,
 indem du auf die Icons am Anfang drückst (<> und ->)
 
 {% include image.html image=page.image8 %}
@@ -126,8 +131,7 @@ Jetzt kannst du deinen Code übertragen und deine senseBox übermittelt Daten an
 
 Abschließend möchten wir noch eine kleine Funktion vom Anbieter tago.io benutzen, durch die man Daten seiner auf TheThingsNetwork registrierten Stationen in einem Dashboard ansehen kann.
 
-Gehe dafür in deinem TTN-Profil auf dein Device und wähle „Integrations“. Dort sollte es bereits eine Http-Integration geben, welche benutzt wird um die Daten an 
-die openSenseMap zu schicken. Wähle dort nun „add integration“ und wähle „TagoIO“.  Dann kannst Du eine eindeutige Identifizierung frei wählen und musst dir außerdem einen 
+Gehe dafür in deinem TTN-Profil auf dein Device und wähle „Integrations“. Dort sollte es jetzt bereits eine Http-Integration geben, welche benutzt wird, um die Daten an die openSenseMap zu schicken. Wähle dort nun „add integration“ und wähle „TagoIO“.  Dann kannst Du eine eindeutige Identifizierung frei wählen und musst dir außerdem einen 
 „Autorization“ aussuchen. Diese brauchst du später wieder um auf deine Werte zugreifen zu können. 
 
 {% include image.html image=page.image9 %}
@@ -143,13 +147,13 @@ Abschließend klickst du auf „Create Device“ und bist fertig.
 
 
 Nun kannst du auf die Sensorwerte des Devices zugreifen und deine eigenen Dashboards bauen. Gehe dazu auf „Dashboards“ in deinem TagoIO Account und wähle „Add Dashboard“. 
-Gib dem Dashboard einen Namen und klicke auf „Add Widget“. Hier kannst du zwischen verschiedenen Darstellungsweisen der Werte wählen. Hier wird im Folgenden einen „Line“ Diagramm gewählt.
+Gib dem Dashboard einen Namen und klicke auf „Add Widget“. Hier kannst du zwischen verschiedenen Darstellungsweisen der Werte wählen. Hier wird im Folgenden ein „Line“ Diagramm gewählt.
 
 {% include image.html image=page.image11 %} 
 
 
-Gib dem Diagramm einen Titel und wähle dann dein Device aus, falls du mehrere hast. Nun gibst du noch die Variable die du ausgeben möchtest. Hier wählst du die Sensor ID deiner senseBox aus. 
-Welche Sensor ID zu welchem Sensor gehört findest du in deinem openSenseMap Account unter dem Punkt „Sensors“. In diesem Fall wurde der Temperaturwert gewählt und kann nun angezeigt werden. 
+Gib dem Diagramm einen Titel und wähle dann dein Device aus, falls du mehrere hast. Nun gibst du noch die Variable, die du ausgeben möchtest, ein. Hier wählst du die Sensor ID deiner senseBox aus. 
+Welche Sensor ID zu welchem Sensor gehört, findest du in deinem openSenseMap Account unter dem Punkt „Sensors“. In diesem Fall wurde der Temperaturwert gewählt und kann nun angezeigt werden. 
 
 {% include image.html image=page.image12 %} 
 
