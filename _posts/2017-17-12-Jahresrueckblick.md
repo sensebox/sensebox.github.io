@@ -20,7 +20,7 @@ Neues Jahr, neue Webseite! So ging im Mai unsere neue Webseite online - mit neue
 
 Ein erfolgreiches und preisgekröntes Jahr 2017
 ============
-Bereits im März waren wir Gewinner des Cebit Innovation Awards 2017, eine Auszeichnung für Nachwuchsforscher und Nachwuchsentwickler. Dabei waren wir eines von vier ausgezeichneten Projekten, was uns nach wie vor sehr stolz macht. Auch beim NRWHack vor kurzem waren wir erfolgreich und räumten mit <a href="www.webgis.nrw/">WebGIS</a> den 1. Platz ab. 
+Bereits im März waren wir Gewinner des Cebit Innovation Awards 2017, eine Auszeichnung für Nachwuchsforscher\*innen und Nachwuchsentwickler\*innen. Dabei waren wir eines von vier ausgezeichneten Projekten, was uns nach wie vor sehr stolz macht. Auch beim NRWHack vor kurzem waren wir erfolgreich und räumten mit <a href="www.webgis.nrw/">WebGIS</a> den 1. Platz ab. 
 Doch nicht nur mit unserer senseBox konnten wir in diesem Jahr punkten, sondern auch unser Startup eduSense wurde mit dem Sybille-Hahne-Nachwuchs-Gründerpreis und mit dem Sonderpreis Paypal-Startup-Unterstützung beim ERCIS Launch Pad ausgezeichnet. Bei eduSense dreht sich alles rund um das Thema Citizen Science und digitale Bildung – seid gespannt, wie es mit eduSense weitergeht!
 
 Doch die wohl größte Auszeichnung für uns ist, dass mittlerweile über 1000 senseBoxen mit mehr als 480 Millionen Messungen auf der <a href="https://opensensemap.org/">openSenseMap</a> registriert sind. Dabei werden nicht nur Daten in Deutschland erhoben, sondern auf der ganzen Welt wie in Brasilien, Argentinien, Amerika, Portugal, Frankreich, Kambodscha oder Kuala Lumpur. Einfach unglaublich!
@@ -38,7 +38,7 @@ Dabei waren wir nicht nur in vielen Städten unterwegs, sondern hatten auch eini
 
 So viel erlebt – doch das sind unsere Highlights 2017
 ============
-Zu unseren Highlights zählt vor allem der Besuch des InnoTrucks im Juli, der als mobile Initiative des Bundesministeriums für Bildung und Forschung (BMBF) durch Deutschland tourt. Dieser kam im Rahmen des Gewinns des Cebit Innovation Awards ans ifgi, um 10 senseBox Klassenkisten in Deutschland zu verteilen. Besonders lustig war unser Ausflug auf die Zugspitze Ende August, um unseren senseBoxen auf 2000 Höhenmetern einen Besuch abzustatten.  Nur kurze Zeit später fand wie jedes Jahr die Projektwoche statt, dieses Mal mit dem Motto „Stadt.Land.Wasser“. Im Rahmen von openSea lernten Schüler und Schülerinnen aus Havixbeck alles rund um Kartierung, Arduino, Programmierung, Labormessungen, Filmschnitt und Social-Media-Kommunikation kennen. 
+Zu unseren Highlights zählt vor allem der Besuch des InnoTrucks im Juli, der als mobile Initiative des Bundesministeriums für Bildung und Forschung (BMBF) durch Deutschland tourt. Dieser kam im Rahmen des Gewinns des Cebit Innovation Awards ans ifgi, um 10 senseBox Klassenkisten in Deutschland zu verteilen. Besonders lustig war unser Ausflug auf die Zugspitze Ende August, um unseren senseBoxen auf 2000 Höhenmetern einen Besuch abzustatten.  Nur kurze Zeit später fand wie jedes Jahr die Projektwoche statt, dieses Mal mit dem Motto „Stadt.Land.Wasser“. Im Rahmen von openSea lernten Schüler\*innen aus Havixbeck alles rund um Kartierung, Arduino, Programmierung, Labormessungen, Filmschnitt und Social-Media-Kommunikation kennen. 
 Besonders cool war natürlich wieder unsere diesjährige Weihnachtsfeier mit dem gesamten Team, bei dem wir das Jahr mit leckerem portugiesischen Essen und dem einen oder anderen Wein ausklingen ließen.
 
 

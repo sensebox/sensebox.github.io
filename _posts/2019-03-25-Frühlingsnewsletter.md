@@ -27,15 +27,15 @@ Zu unseren [Events](https://sensebox.de/#newsletter)
 
 Neue Materialien für die senseBox
 ============
-Wir bedanken uns bei Nils Buxel und Karl Wollmann aus dem Bereich Grundschuldidaktik Sachunterricht der Erziehungswissenschaftlichen Fakultät der Universität Leipzig für die Erstellung eines Erklärvideos über die senseBox. Das kurze Video soll den Einstieg insbesondere für Grundschüler in die Programmierung, Sensorik und Umweltthematik erleichtern und erklärt bildlich die Funktionen der senseBox als Elektronikbausatz zur Erhebung von Umweltdaten. Das Erklärvideo findet Ihr unter: [YouTube](https://www.youtube.com/watch?v=sf3RzXq6iVo&t=1s). Außerdem hat die ETH Zürich im Rahmen des Masterkurses „GIS III“ Materialien für den Einsatz der senseBox in der Lehre an Hochschulen entwickelt. Genauere Infos findet Ihr in unserem [Blogbeitrag](https://sensebox.de/blog/2019-01-19-senseBox_Hochschule). 
+Wir bedanken uns bei Nils Buxel und Karl Wollmann aus dem Bereich Grundschuldidaktik Sachunterricht der Erziehungswissenschaftlichen Fakultät der Universität Leipzig für die Erstellung eines Erklärvideos über die senseBox. Das kurze Video soll den Einstieg insbesondere für Grundschüler\*innen in die Programmierung, Sensorik und Umweltthematik erleichtern und erklärt bildlich die Funktionen der senseBox als Elektronikbausatz zur Erhebung von Umweltdaten. Das Erklärvideo findet Ihr unter: [YouTube](https://www.youtube.com/watch?v=sf3RzXq6iVo&t=1s). Außerdem hat die ETH Zürich im Rahmen des Masterkurses „GIS III“ Materialien für den Einsatz der senseBox in der Lehre an Hochschulen entwickelt. Genauere Infos findet Ihr in unserem [Blogbeitrag](https://sensebox.de/blog/2019-01-19-senseBox_Hochschule). 
 
 Zu unserer [Materialseite](https://sensebox.de/de/material)
 
 {% include image.html image=page.image3 %}
 
-Kostenlose Lehrerfortbildungen
+Kostenlose Lehrer\*innenfortbildungen
 ============
-Wir bieten kostenlose Lehrerfortbildungen zum Einsatz von Mikrocontrollern im Unterricht - Programmieren lernen und Messgeräte bauen mit der senseBox an. In den Workshops zeigen wir, welche Projekte und Anwendungen mit der senseBox im Rahmen des Schulunterrichts stufen- und fächerübergreifend umgesetzt werden können. Von intelligenten Schaltungen, Temperatur-, Luftfeuchte- und Luftdruckmessgeräten bis hin zu IoT-Geräten ist eine kreative und vielfältige Verwendung möglich. Die Fortbildungen finden am 12. April von 10-13 Uhr und am 10. Mai von 14-17 Uhr in Raum 255 am Institut für Geoinformatik in Münster statt. Es sind noch ein paar Plätze frei, meldet Euch einfach per Mail an info@sensebox.de mit Eurem Namen und dem jeweiligen Datum an.
+Wir bieten kostenlose Lehrer\*innenfortbildungen zum Einsatz von Mikrocontrollern im Unterricht - Programmieren lernen und Messgeräte bauen mit der senseBox an. In den Workshops zeigen wir, welche Projekte und Anwendungen mit der senseBox im Rahmen des Schulunterrichts stufen- und fächerübergreifend umgesetzt werden können. Von intelligenten Schaltungen, Temperatur-, Luftfeuchte- und Luftdruckmessgeräten bis hin zu IoT-Geräten ist eine kreative und vielfältige Verwendung möglich. Die Fortbildungen finden am 12. April von 10-13 Uhr und am 10. Mai von 14-17 Uhr in Raum 255 am Institut für Geoinformatik in Münster statt. Es sind noch ein paar Plätze frei, meldet Euch einfach per Mail an info@sensebox.de mit Eurem Namen und dem jeweiligen Datum an.
 
 Forum Citizen Science – Call for Proposals
 ============

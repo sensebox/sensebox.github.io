@@ -35,9 +35,3 @@ Am Anfang ihrer Praktikumszeit bauten Nils, Sören und Julian die senseBox mit A
 Fortsetzung folgt
 ============
 In den nächsten zwei Wochen werden drei weitere Schüler des Pascal Gymnasiums ein Praktikum bei der senseBox machen und an der solarbetriebenen senseBox weiterarbeiten. Glen, Malek und Moritz werden sich über die verschiedenen Möglichkeiten der Datenübertragung kümmern. Wir sind gespannt, wie es weitergeht und halten euch auf dem Laufenden.
-
-
-
-
-
-

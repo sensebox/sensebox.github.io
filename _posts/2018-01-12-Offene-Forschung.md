@@ -17,7 +17,7 @@ Der Beginn des neuen Jahres ist die Zeit der guten Vorsätze.
 Für den Wissenschaftler [Daniel Nüst](http://nordholmen.net/) vom Forschungsprojekt "Offene Reproduzierbare Forschung" ([o2r](http://o2r.info)) bedeutete dies sich endlich mit seiner brandneuen _senseBox:home_ zu beschäftigen und eine kleine [reproduzierbare](https://de.wikipedia.org/wiki/Reproduzierbarkeit#Wissenschaft) Datenanalyse zu erstellen.
 Dank der offenen Hardware von _senseBox_, den offenen Daten von der _openSenseMap_, und Freier Open Source Software ([FOSS](https://de.wikipedia.org/wiki/Free/Libre_Open_Source_Software)) konnte er eine transparente und nachvollziehbare Untersuchung über Feinstaubwerte zum Jahreswechsel in Münster erstellen.
 
-Auf Basis von _[BinderHub](https://binderhub.readthedocs.io)_ kann jeder mit nur wenigen Klicks das gleiche virtuelle Labor in seinem Browser öffnen, welches für die ursprüngliche Untersuchung genutzt wurde.
+Auf Basis von _[BinderHub](https://binderhub.readthedocs.io)_ kann jede\*r mit nur wenigen Klicks das gleiche virtuelle Labor in seinem Browser öffnen, welches für die ursprüngliche Untersuchung genutzt wurde.
 Und alles ohne irgendwelche Software zu installieren.
 
 Probiere es aus: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/nuest/sensebox-binder/master)

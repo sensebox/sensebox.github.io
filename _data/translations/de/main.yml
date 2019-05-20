@@ -1,15 +1,15 @@
-header:    "<p>Die <b>senseBox</b> ist ein Do-it-yourself-Bausatz für stationäre und mobile Sensorstationen - ein <b>Citizen Science</b> Toolkit für jedermann.</p>"
-text:      "<p>Mit der <em>senseBox</em> können Bürger und Schulen <i>Umweltdaten</i> über Klima, Luftqualität, Verkehrsaufkommen, Lärmbelästigung und vieles mehr <i>messen</i> und so zu genaueren Aussagen über lokale Umweltphänomene beitragen.</p>
+header:    "<p>Die <b>senseBox</b> ist ein Do-it-yourself-Bausatz für stationäre und mobile Sensorstationen - ein <b>Citizen Science</b> Toolkit für jede*n.</p>"
+text:      "<p>Mit der <em>senseBox</em> können Bürger*innen und Schulen <i>Umweltdaten</i> über Klima, Luftqualität, Verkehrsaufkommen, Lärmbelästigung und vieles mehr <i>messen</i> und so zu genaueren Aussagen über lokale Umweltphänomene beitragen.</p>
 
     <p>Die Daten können im Internet als Open Data bereitgestellt und auf einer <a href=\"http://www.sensebox.de/de/osem\" class=\"link\">Karte</a> sichtbar gemacht werden.</p>
 
-    <p>Bürger können mit der <a href=\"http://www.sensebox.de/de/products\" class=\"link\">senseBox:home</a> ihre eigenen lokalen Forschungsfragen stellen und die nötigen Daten selbst sammeln und sammeln lassen.</p>
+    <p>Bürger*innen können mit der <a href=\"http://www.sensebox.de/de/products\" class=\"link\">senseBox:home</a> ihre eigenen lokalen Forschungsfragen stellen und die nötigen Daten selbst sammeln und sammeln lassen.</p>
 
-    <p>Für Schulen und Nachwuchsforscher gibt es die <a href=\"http://www.sensebox.de/de/products\" class=\"link\">senseBox:edu</a> als Experimentierkasten mit didaktischen Konzepten, Anleitungen und Projektideen.</p>
+    <p>Für Schulen und Nachwuchsforscher*innen gibt es die <a href=\"http://www.sensebox.de/de/products\" class=\"link\">senseBox:edu</a> als Experimentierkasten mit didaktischen Konzepten, Anleitungen und Projektideen.</p>
 
     <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span><a> </a><a href=\"http://www.sensebox.de/de/products\" class=\"link\">mehr Informationen und bestellen</a></span></a></p>"
-home_info: "Bürger können mit der senseBox:home ihre eigenen lokalen Forschungsfragen stellen und die nötigen Daten selbst sammeln und sammeln lassen."
-edu_info:  "Für Schulen und Nachwuchsforscher gibt es die senseBox:edu als Experimentierkasten mit didaktischen Konzepten, Anleitungen und Projektideen."
+home_info: "Bürger*innen können mit der senseBox:home ihre eigenen lokalen Forschungsfragen stellen und die nötigen Daten selbst sammeln und sammeln lassen."
+edu_info:  "Für Schulen und Nachwuchsforscher*innen gibt es die senseBox:edu als Experimentierkasten mit didaktischen Konzepten, Anleitungen und Projektideen."
 osem_info: "Die openSenseMap ist unsere Web-Plattform für die offenen Daten der senseBox. Hier werden die Daten visualisiert und jeder kann Analysen durchführen."
 
 info:

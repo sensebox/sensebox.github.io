@@ -31,6 +31,6 @@ In seiner Praktikumszeit hat Ben die Map größer gemacht, damit sie übersichtl
 
 Auch Lust auf ein Praktikum bei uns?
 ============
-Du bist Schülerin oder Schüler und interessierst dich für Sensorik, Programmieren oder Coden? Dann mach es wie Ben und schick uns einfach deine Bewerbung. Wir freuen uns auf dich!
+Du bist Schülerr\*in und interessierst dich für Sensorik, Programmieren oder Coden? Dann mach es wie Ben und schick uns einfach deine Bewerbung. Wir freuen uns auf dich!
 
 
