@@ -22,9 +22,9 @@ lang: de
 ---
 Spannende Forschungstage auf der Zugspitze
 ============
-2000 Höhenmeter, neun Stunden Wanderzeit, drei Forschungstage und 20 Geowissenschaftler\*innen: Die Tage auf der Zugspitze versprachen anstrengend aber auch spannend und lustig zu werden – und so war es auch!
+2000 Höhenmeter, neun Stunden Wanderzeit, drei Forschungstage und 20 Forschende der Geoinformatik: Die Tage auf der Zugspitze versprachen anstrengend aber auch spannend und lustig zu werden – und so war es auch!
 
-Gemeinsam mit der Arbeitsgruppe „Spatial Intelligence Lab“ des IfGi waren wir – das senseBox-Team – drei Tage unterwegs, um unseren senseBoxen auf der Zugspitze einen Besuch abzustatten. Neben Forschungszwecken stand besonders der Spaß im Vordergrund.
+Gemeinsam mit der Arbeitsgruppe „Spatial Intelligence Lab“ des IfGI waren wir – das senseBox-Team – drei Tage unterwegs, um unseren senseBoxen auf der Zugspitze einen Besuch abzustatten. Neben Forschungszwecken stand besonders der Spaß im Vordergrund.
 
 {% include image.html image=page.image1 %}
 

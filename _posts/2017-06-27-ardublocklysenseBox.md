@@ -44,7 +44,7 @@ Verwendung der Oberfläche
 ============
 Der Screenshot zeigt den Grundaufbau der Ardublockly Oberläche. Im Auswahlmenü rechts können die Programmierblöcke herausgezogen und in der Programmieroberfläche zusammengesetzt werden. Es empfiehlt sich mit dem Block "Arduino Führe zuerst aus/Arduino Endlosschleife" aus dem Bereich Funktionen zu starten.
 
-Im rechten Fenster wird der generierte Code angezeigt. Mithilfe dieser Ansicht lässt sich nachvollziehen, welche Programmierbefehle hinter den Blöcken stehen. Neben den senseBox Blöcken gibt es eine Vielzahl von verschiedenen Blöcken, die es ermöglichen, komplexe Proramme zu schreiben ohne die Syntax der Programmiersprache mühsam erlernen zu müssen. Mithilfe der Ardublockly Oberfläche können auch schon jüngere Nachwuchswissenschaftler\*innen mit der senseBox:edu arbeiten. Durch das Parallele Anzeigen des Programmcodes wird der Schritt zu den ersten Textbasierten Programmen deutlich erleichtert.
+Im rechten Fenster wird der generierte Code angezeigt. Mithilfe dieser Ansicht lässt sich nachvollziehen, welche Programmierbefehle hinter den Blöcken stehen. Neben den senseBox Blöcken gibt es eine Vielzahl von verschiedenen Blöcken, die es ermöglichen, komplexe Proramme zu schreiben ohne die Syntax der Programmiersprache mühsam erlernen zu müssen. Mithilfe der Ardublockly Oberfläche können auch schon jüngere Nachwuchsforschende mit der senseBox:edu arbeiten. Durch das Parallele Anzeigen des Programmcodes wird der Schritt zu den ersten Textbasierten Programmen deutlich erleichtert.
 {% include image.html image=page.image2 %}
 
 Ausblick

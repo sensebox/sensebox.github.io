@@ -1,14 +1,14 @@
 header: "Materialien & Leitfäden"
 logos: "Logos"
 flyer: "Flyer"
-spellingNotice: 'senseBox fängt bewusst mit einem kleinen <code>s</code> an und wird immer als ein Wort geschrieben.<br>Bei der Schreibweise haben wir uns durch unseren Background in der Informatik an der <a href="https://en.wikipedia.org/wiki/Naming_convention_(programming)">Namenskonvention</a> von C orientiert, nach der Methoden im <a href="https://en.wikipedia.org/wiki/Camel_case">"lowerCamelCase"</a> benannt werden sollten. Ein zusammegesetztes Wort sollte mit einem kleingeschriebenen Verb beginnen ("sense") und das folgenen Wort sollte groß geschrieben werden ("Box"), zusammen "senseBox".'
+spellingNotice: senseBox fängt bewusst mit einem kleinen <code>s</code> an und wird immer als ein Wort geschrieben.<br>Bei der Schreibweise haben wir uns durch unseren Background in der Informatik an der <a href="https://en.wikipedia.org/wiki/Naming_convention_(programming)">Namenskonvention</a> von C orientiert, nach der Methoden im <a href="https://en.wikipedia.org/wiki/Camel_case">"lowerCamelCase"</a> benannt werden sollten. Ein zusammegesetztes Wort sollte mit einem kleingeschriebenen Verb beginnen ("sense") und das folgenen Wort sollte groß geschrieben werden ("Box"), zusammen "senseBox".'
 colors: "Farben"
 color-values-header: "Das senseBox Grün hat folgende Farbwerte"
 about: "<b>senseBox und openSenseMap</b>
-<p>Die senseBox ist ein Citizen Science Projekt, welches im Schüler*innen- und Forschungslabor
+<p>Die senseBox ist ein Citizen Science Projekt, welches im Schüler- und Forschungslabor
 GI@School am Institut für Geoinformatik der Universität Münster entwickelt wurde. Bei
 diesem Projekt werden Do-It-Yourself Bausätze für Sensorstationen zusammen mit
-detaillierten Anleitungen interessierten Bürger*innen bereitgestellt, um ihnen
+detaillierten Anleitungen interessierten Bürgerinnen und Bürgern bereitgestellt, um ihnen
 die Möglichkeit zu geben, sich an einer wissenschaftlichen Messkampagne für
 Umweltdaten mit Hilfe von Photonik-Technologien zu beteiligen.</p>
 
@@ -19,7 +19,7 @@ gearbeitet, bei denen z.B. durch einen photonischen Feinstaubsensor
 Luftqualitätsmessungen möglich sind, oder mit einer Kamera der Wolkendeckungsgrad am
 Himmel bestimmt werden kann.</p>
 
-<p>Des Weiteren kommt die <b>senseBox:edu</b> in Schulen zum Einsatz, um Schüler*innen ab der 7. Klassen die Grundlagen des Programmierens anhand von
+<p>Des Weiteren kommt die <b>senseBox:edu</b> in Schulen zum Einsatz, um Kindern und Jugendlichen die Grundlagen des Programmierens anhand von
 Microkontrollern und Umweltsensorik praktisch beizubringen.</p>
 
 <p>Um Schulen die Möglichkeit zu kooperativen Projekten zu geben und die Messungen mit
@@ -27,7 +27,7 @@ der Öffentlichkeit zu teilen, wurde die <b>openSenseMap</b> entwickelt. Auf die
 Plattform werden alle Messungen als Download oder Schnittstelle für
 Softwareanwendungen im Internet bereitgestellt.</p>
 
-<p>Die Forscher*innen am Institut für Geoinformatik erhoffen sich durch die Kampagne großflächige
+<p>Die Forschenden am Institut für Geoinformatik erhoffen sich durch die Kampagne großflächige
 und hochaufgelöste Messungen zu erhalten, mit denen in Zukunft gesellschaftlich
 relevante Fragestellungen zu lokalen Wetterphänomenen, Luft- und Gewässerqualität
 oder Verkehrsaufkommen beantwortet werden können.</p>"
