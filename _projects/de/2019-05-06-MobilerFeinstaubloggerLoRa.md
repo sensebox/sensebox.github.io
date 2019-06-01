@@ -27,13 +27,13 @@ lang: de
 tags: ["Informatik","TTN","LoRa","Feinstaub","Geographie"]
 difficult: sehr schwer
 ---
-<head><title>Mobiler Feinstaublogger mit GPS und LoRa</title></head>>
+<head><title>Mobiler Feinstaublogger mit GPS und LoRa</title></head>
 
 # Mobiler Datenlogger für Feinstaubwerte(LoRa)
 In diesem Projekt wird mit der SenseBoxMCU ein mobiler Feinstaubmesser gebaut, der auf Knopfdruck seine Messwerte auf der SD-Karte speichert und sie mit GPS-Koordinaten an die OpenSenseMap schickt. Dafür wird in dieser Variante der LoRa Funkstandard benutzt, der die Daten über TheThingsNetwork an die OpenSenseMap sendet.
 
 ## Aufbau
-Wir brauchen:
+Man braucht:
   - den LoRa Bee auf dem XBEE1 Steckplatz
 
   - das OLED-Display auf einem I²C Steckplatz
@@ -44,6 +44,7 @@ Wir brauchen:
 
   - den SDS011 auf dem UART Steckplatz 2
   
+
 {% include image.html image=page.image7 %}
 Das auf UART gelötete GPS-Modul.
 
@@ -52,16 +53,12 @@ Beispielaufbau.
 
 
 ## TheThingsNetwork & OpenSenseMap(OSeM)-Setup
-Bevor wir die SenseBox mit der OSeM verbinden, müssen wir uns erst einmal ein TheThingsNetwork Konto, eine Application und ein Device erstellen. Dabei erhalten wir eine Application EUI, eine Device EUI und einen Appkey, diese müssen wir später im Code eintragen. Dabei ist das Format der Keys und EUI´s wichtig
+Bevor du die SenseBox mit der OSeM verbinden kannst, musst du dir erst einmal ein TheThingsNetwork Konto, eine Application und ein Device erstellen. Dabei erhältst du eine Application EUI, eine Device EUI und einen Appkey, diese musst du später im Code eintragen. Dabei ist das Format der Keys und EUI´s wichtig
 {% include image.html image=page.image0 %}
-Bei der Registrierung bestimmen wir außerdem noch eine ``App_ID`` und eine ``Dev_ID``, diese müssen im TheThingsNetwork-Reiter in der OpenSenseMap eingetragen werden:
+Bei der Registrierung bestimmst du außerdem noch eine ``App_ID`` und eine ``Dev_ID``, diese müssen im TheThingsNetwork-Reiter in der OpenSenseMap eingetragen werden:
 {% include image.html image=page.image1 %}
 
-Falls du noch nicht weißt, wie man eine SenseBox auf der OpenSenseMap einrichtet, schaue [*hier*](https://sensebox.github.io/books-v2/osem/osem_registrierung.html "Registrierung einer SenseBox auf der OpenSenseMap")
-
-Weitere Infos zum LoRa Bee und zur TTN Registrierung findest du [*hier*](https://sensebox.github.io/books-v2/osem/osem_registrierung.html "LoRa Bee Books Seite")
-
-Wenn unser TTN-Konto, die Application und das Device eingerichtet sind, müssen wir noch eine Weiterleitung an die OpenSenseMap einrichten, eine sogennante HTTP-Integration. Diese befindet sich unter Console, Integrations. Hier klicken wir auf "add Integration" und tragen die Werte ein:
+Wenn dein TTN-Konto, die Application und das Device eingerichtet sind, musst du noch eine Weiterleitung an die OpenSenseMap einrichten, eine sogennante HTTP-Integration. Diese befindet sich unter Console, Integrations. Hier klickst du auf "add Integration" und trägst die Werte ein:
 {% include image.html image=page.image3 %}
 
 Die hier nicht aufgelisteten Zeilen *sollten* leer bleiben.
@@ -123,8 +120,9 @@ latLng.BYTES = 8;
  humidity.BYTES = 2;
 
  
-
-
+```
+In diesem ersten Abschnitt werden alle Datentypen definiert, die per LoRa geschickt werden können. Dabei werden auch gleich die Decodiermethoden mitgegeben.
+```
  var decode = function (bytes, mask, names) {
 
    var maskLength = mask.reduce(function (prev, cur) {
@@ -211,13 +209,15 @@ latLng.BYTES = 8;
  return bytesToSenseBoxJson(bytes);
 }
 ```
+
+Im zweiten Abschnitt findet die eigentliche Decodierung statt: Die Werte werden in der Sendereihenfolge decodiert und in ein JSON-Objekt geschrieben. Dieses Objekt wird danach in das Format der OpenSenseMap konvertiert und an die HTTP-Integration gesendet.
+
 {%include image.html image=page.image6%}
 
 ## Programmierung
 Dieses Projekt erfordert ein sehr komplexes Programm, deshalb auch die Schwierigkeitsstufe "Schwer"
 Das Programm enthält viel "Kosmetik", vorallem für das Display, weshalb der Code so lang ist.
 ### Libarys
-Dieses Projekt verwendet statt der <SenseBoxMCU.h> Libary die Einzellibarys, vorallem, weil wir hier das GPS-Modul im UART-Modus baruchen und die MCU Libary den I²C Modus verwendet.
 ```
 //Einbinden der benötigten Libaries
 #include <senseBoxIO.h>
@@ -234,7 +234,7 @@ Dieses Projekt verwendet statt der <SenseBoxMCU.h> Libary die Einzellibarys, vor
 #include <SPI.h>
 ```
 ### Globale Variablen
-Wir brauchen globale Variablen, um die Messwerte der Sensoren sowie Hardwareinformationen im gesamten Programm verfügbar zu machen. Die MCU hat einen vom Bootloader reservierten Speicherbereich für diese Variablen. Wir nutzen hier direkt beide Methoden der Definition, einmal die ``#define``-Methode und die Typendefinition.
+Man braucht globale Variablen, um die Messwerte der Sensoren sowie Hardwareinformationen im gesamten Programm verfügbar zu machen. Die MCU hat einen vom Bootloader reservierten Speicherbereich für diese Variablen. Du nutzt hier direkt beide Methoden der Definition, einmal die ``#define``-Methode und die Typendefinition.
 ```
 // #define Statements für Globale Variablen
 #define OLED_RESET 4
@@ -261,7 +261,7 @@ float humidity;
 In diesem Programm werden die Typen ``boolean``,``int`` und ``float`` benutzt.
 
 ### Libary-Objekte
-Diese Objekte brauchen wir, um die Funktionen der Libarys ansprechen zu können.
+Diese Objekte brauchst du, um die Funktionen der Libarys ansprechen zu können.
 ```
 //Libary-Objekte
 SDS011 SDS(Serial2);        
@@ -531,7 +531,7 @@ void do_send(osjob_t* j){
 ```
 
 ### Setup
-Im Setup schalten wir erstmal alle benötigten Schnittstellen der MCU ein,danach initialisieren wir das Display und die Sensoren.
+Im Setup werden erstmal alle benötigten Schnittstellen der MCU eingeschaltet,danach werden das Display und die Sensoren initialisiert.
 ```
   #ifdef ENABLE_DEBUG //Wenn Debug aktiviert ist, warten, bis eine Serielle Verbindung besteht  
     while(!Serial){}
@@ -561,7 +561,7 @@ Im Setup schalten wir erstmal alle benötigten Schnittstellen der MCU ein,danach
 
 ```
 
-Jetzt überprüfen wir, ob das GPS-Modul angeschlossen ist, und suchen nach einem GPS-Signal
+Jetzt wird überprüft, ob das GPS-Modul angeschlossen ist, und nach einem GPS-Signal gesucht.
 ```
   if(!Serial1.available()){ //Überprüfen, ob das GPS-Modul verbunden ist
       Serial.println("ERR404: DEVICE ON Serial1 NOT FOUND");
@@ -638,7 +638,7 @@ Jetzt überprüfen wir, ob das GPS-Modul angeschlossen ist, und suchen nach eine
     beginLoop:
 
 ```
-Zum Schluss starten wir den LoRa-Bee:
+Zum Schluss wird der LoRa-Bee gestartet:
 ```
     //LoRa Schnittstelle starten
     os_init();
@@ -646,9 +646,9 @@ Zum Schluss starten wir den LoRa-Bee:
     smartDelay(3000);
 ```
 ### Loop
-Im Loop machen wir nur zwei Dinge:
-1. Wir zeigen die GPS-Informationen auf dem OLED-Display an
-2. Wir verbinden uns auf Knopfdruck per LoRa mit der OpenSenseMap und senden die Sensorwerte mit Standort
+Im Loop passieren nur zwei Dinge:
+1. Die GPS-Informationen werden auf dem OLED-Display angezeigt.
+2. Auf Knopfdruck verbindet sich das Programm per LoRa mit der OpenSenseMap und sendet die Sensorwerte mit Standort
 
 Als erstes kommt der Code für das Display, dieser Teil ist von der vorher gennanten "Kosmetik" ziemlich voll:
 ```
