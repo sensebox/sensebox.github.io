@@ -25,7 +25,7 @@ difficult: mittel
 Ziel ist es, einen Personenzähler zu entwickeln. Dazu wird der Ultraschall-Distanzsensor verwendet. Die so aufgenommenen Werte sollen auf dem <b>Display</b> ausgegeben werden.
 
 ## Grundlagen
-Der Ultraschall-Distanzsensor nutzt den Schall um die Entfernung von Objekten zu bestimmen. Der Sensor sendet einen Impuls aus und misst die Zeit, bis er das Echo des Impulses wieder empfängt. Aus dieser Zeit kann dann mit Hilfe der Schallgeschwindigkeit die Entfernung des Objekts berechnet werden.
+Der Ultraschall-Distanzsensor nutzt den Schall, um die Entfernung von Objekten zu bestimmen. Der Sensor sendet einen Impuls aus und misst die Zeit, bis er das Echo des Impulses wieder empfängt. Aus dieser Zeit kann dann mit Hilfe der Schallgeschwindigkeit die Entfernung des Objekts berechnet werden.
 
 ## Aufbau
 
@@ -41,28 +41,28 @@ Im ersten Schritt wird der Messwert des Ultraschall-Distanzsensor ausgelesen, ei
 
 {% include image.html image=page.image2 %}
 
-Um den Wert des Sensors auf dem Display anzuzeigen muss zuerst das Display im Setup() initialisiert werden. Anschließend kann das Display in der Endlosschleife() genutzt werden.
-Ziehe den Block "Zeige auf dem Display" in die Endlosschleife. Um Texte oder Zahlen anzuzeigen wird der Block "Zeige Text/Zahl" in den offenen Blockabschnitt gezogen. In diesem Block kannst du einstellen, in welcher Schriftgröße und wo auf dem Display Text oder Zahlen angezeigt werden sollen. Nach dem Block "Zeige auf dem Display" muss das Display mit dem Block "Display löschen" gelöscht werden. Unter Variablen findest du den Block um eine Variable zu erstellen.
+Um den Wert des Sensors auf dem Display anzuzeigen, muss zuerst das Display im Setup() initialisiert werden. Anschließend kann das Display in der Endlosschleife() genutzt werden.
+Ziehe den Block "Zeige auf dem Display" in die Endlosschleife. Um Texte oder Zahlen anzuzeigen, wird der Block "Zeige Text/Zahl" in den offenen Blockabschnitt gezogen. In diesem Block kannst du einstellen, in welcher Schriftgröße und wo auf dem Display Texte oder Zahlen angezeigt werden sollen. Nach dem Block "Zeige auf dem Display" muss das Display mit dem Block "Display löschen" gelöscht werden. Unter Variablen findest du den Block, um eine Variable zu erstellen.
 
-Übertrage den Programmcode auf die senseBox MCU überprüfe was mit der Distanz passiert, wenn eine Person an dem Sensor vorbeiläuft. 
+Übertrage den Programmcode auf die senseBox MCU und überprüfe, was mit der Distanz passiert, wenn eine Person an dem Sensor vorbeiläuft. 
 
-***Hinweis*** *Effektiv misst der Ultraschall-Distanzsensor zuverlässig in einem Bereich zwischen 5 und 200cm.*
+***Hinweis*** *Effektiv misst der Ultraschall-Distanzsensor zuverlässig in einem Bereich zwischen 5cm und 200cm.*
 
 ## Erkennen, ob eine Person vorbeiläuft
-Die Distanz ist wichtig um zu erfassen, ob eine am Sensor vorbeiläuft. Um zu schauen, ob eine Person vorbeiläuft wird eine Wenn-Dann Bedingung verwendet. Wenn eine Person am Sensor vorbeiläuft fällt die Distanz. 
-Bei einer Wenn-Dann Bedingung wird mithilfe von Operatoren können zum Beispiel zwei Werte miteinander verglichen werden. Wenn die Bedingung erfüllt ist wird der Code ausgeführt, der in dem offenen Blockabschnitt platziert wird. In diesem Fall wird die Variable *personen* immer um eins hochgezählt.   
+Die Distanz ist wichtig, um zu erfassen, ob eine Person am Sensor vorbeiläuft. Dafür wird eine Wenn-Dann Bedingung verwendet: Wenn eine Person am Sensor vorbeiläuft, dann sinkt die Distanz. 
+Bei einer Wenn-Dann Bedingung können mithilfe von Operatoren zum Beispiel zwei Werte miteinander verglichen werden. Ist die Bedingung erfüllt, so wird der Code ausgeführt, der in dem offenen Blockabschnitt platziert wird. In diesem Fall wird die Variable *personen* immer um eins erhöht.   
 
 {% include image.html image=page.image3 %}
 
-Übertrage den Programmcode auf deine senseBox MCU und überpüfe ob das Programm funktioniert. 
+Übertrage den Programmcode auf deine senseBox MCU und überpüfe, ob das Programm funktioniert. 
 
 ## Doppelzählungen?
 
-Wenn du das Programm übertragen und getestet hast, wirst du festgestellt haben, dass der Zähler Personen mehrfach zählt, wenn diese vor dem Sensor stehen bleiben. Um dieses Problem zu beheben kannst du eine zweite Bedinung einfügen, in der Überprüft wird, ob nach dem Unterbrechen der Distanz wieder die maximal Distanz erreicht worden ist. Der zähler wird gesperrt, wenn die Distanz unterbrochen wird und erst wieder freigeschaltet, wenn die Distanz wieder einen maximal Wert erreicht hat. Mit dem logischen UND kannst du zwei Bedinungen verknüpfen und der Code im Blockabschnitt "mache" wird nur dann ausgeführt, wenn beide Bedingungen erfüllt werden. 
+Wenn du das Programm übertragen und getestet hast, wirst du festgestellt haben, dass der Zähler Personen mehrfach zählt, wenn diese vor dem Sensor stehen bleiben. Um dieses Problem zu beheben, kannst du eine zweite Bedingung einfügen, in der überprüft wird, ob nach dem Unterbrechen der Distanz wieder die maximale Distanz erreicht worden ist. Der Zähler wird gesperrt, wenn die Distanz unterbrochen wird und erst wieder freigeschaltet, wenn die Distanz den maximalen Wert erreicht hat. Mit dem logischen UND kannst du zwei Bedingungen verknüpfen und der Code im Blockabschnitt "mache" wird nur dann ausgeführt, wenn beide Bedingungen erfüllt sind. 
 
 {% include image.html image=page.image4 %}
 
-Die Variable gesperrt wird zu Begin des Programmes auf "falsch" gesetzt. Immer wenn die Distanz kleiner als 40cm und gleichzeit gesperrt "falsch" ist wird der Zähler hochgezählt und die Variable gesperrt auf "wahr" gesetzt. Damit wird der Zähler erstmal unterbrochen. Erneut gezählt wird erst dann, wenn die Sperrung aufgehoben wird. 
+Die Variable *gesperrt* wird zu Beginn des Programms auf "falsch" gesetzt. Immer, wenn die Distanz kleiner als 40cm und gleichzeit *gesperrt* "falsch" ist, wird der Zähler erhöht und die Variable *gesperrt* auf "wahr" gesetzt. Damit wird der Zähler zunächst einmal unterbrochen. Erneut gezählt wird erst dann, wenn die Sperrung aufgehoben wird. 
 
 
 
