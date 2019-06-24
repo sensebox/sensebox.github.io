@@ -5,7 +5,6 @@ date: 2019-03-01
 author: Benni
 abstract: "Mithilfe des Mikrofons lässt sich ein akustischer Schalter bauen"
 image: IntelligenterLichtschalterKlein.png
-image1: /images/projects/akustischer_schalter/akustischer_schalter_circuit.png
 lang: de
 material:
     - Mikrofon (Mic-Breakout)
@@ -30,7 +29,7 @@ Das Mikrofon wird mit einen JST-Adapterkabel mit der senseBox MCU verbunden. Ste
 Nun wird das längere Ende der LED (Plus-Pol) mit dem 470Ω Widerstand verbunden. Der Widerstand wird am anderen Ende mit dem gelben Kabel des JST-Adapterkabels verbunden. Das kürzere Ende der LED wird mit einem einfachen Male-to-Male Kabel mit der `-`Spalte des Breadbords verbunden.
 
 Steckt den Schaltkries wie ihr ihn unten in der Grafik seht.
-{% include image.html image=page.image1 %}
+{% include image.html image=page.image %}
 
 ## Programmierung
 
