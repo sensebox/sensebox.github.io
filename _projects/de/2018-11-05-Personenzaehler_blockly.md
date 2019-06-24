@@ -14,7 +14,7 @@ material:
     - Ultraschallsensor
     - OLED Display
     - JST-Adapterkabel
-    - JST-JST Kabel
+    - JST-Kabel
 ide: blockly    
 lang: de
 tags: ["Geographie", "Informatik"]
@@ -37,6 +37,8 @@ Der Ultraschall-Distanzsensor wird über das JST-Adapterkabel mit der senseBox M
 
 ## Programmierung
 
+### Schritt 1
+
 Im ersten Schritt wird der Messwert des Ultraschall-Distanzsensor ausgelesen, einer Variablen zugewiesen und auf dem Display angezeigt.
 
 {% include image.html image=page.image2 %}
@@ -48,7 +50,8 @@ Ziehe den Block "Zeige auf dem Display" in die Endlosschleife. Um Texte oder Zah
 
 ***Hinweis*** *Effektiv misst der Ultraschall-Distanzsensor zuverlässig in einem Bereich zwischen 5cm und 200cm.*
 
-## Erkennen, ob eine Person vorbeiläuft
+### Schritt 2
+
 Die Distanz ist wichtig, um zu erfassen, ob eine Person am Sensor vorbeiläuft. Dafür wird eine Wenn-Dann Bedingung verwendet: Wenn eine Person am Sensor vorbeiläuft, dann sinkt die Distanz. 
 Bei einer Wenn-Dann Bedingung können mithilfe von Operatoren zum Beispiel zwei Werte miteinander verglichen werden. Ist die Bedingung erfüllt, so wird der Code ausgeführt, der in dem offenen Blockabschnitt platziert wird. In diesem Fall wird die Variable *personen* immer um eins erhöht.   
 
@@ -56,7 +59,7 @@ Bei einer Wenn-Dann Bedingung können mithilfe von Operatoren zum Beispiel zwei 
 
 Übertrage den Programmcode auf deine senseBox MCU und überpüfe, ob das Programm funktioniert. 
 
-## Doppelzählungen?
+### Schritt 3: Doppelzählungen?
 
 Wenn du das Programm übertragen und getestet hast, wirst du festgestellt haben, dass der Zähler Personen mehrfach zählt, wenn diese vor dem Sensor stehen bleiben. Um dieses Problem zu beheben, kannst du eine zweite Bedingung einfügen, in der überprüft wird, ob nach dem Unterbrechen der Distanz wieder die maximale Distanz erreicht worden ist. Der Zähler wird gesperrt, wenn die Distanz unterbrochen wird und erst wieder freigeschaltet, wenn die Distanz den maximalen Wert erreicht hat. Mit dem logischen UND kannst du zwei Bedingungen verknüpfen und der Code im Blockabschnitt "mache" wird nur dann ausgeführt, wenn beide Bedingungen erfüllt sind. 
 
