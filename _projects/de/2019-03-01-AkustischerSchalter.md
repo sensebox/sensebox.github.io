@@ -4,7 +4,7 @@ name: "Akustischer Lichtschalter"
 date: 2019-03-01
 author: Benni
 abstract: "Mithilfe des Mikrofons lässt sich ein akustischer Schalter bauen"
-image: IntelligenterLichtschalterKlein.png
+image: /images/projects/IntelligenterLichtschalterKlein.png
 lang: de
 material:
     - Mikrofon (Mic-Breakout)
