@@ -3,7 +3,7 @@ layout: project_page
 name: "Personenzähler"
 date: 2019-05-13
 author: Lia
-abstract: "Ein kleiner Personenzähler mit Ultraschall-Distanzsensor und dem Display"
+abstract: "Mit dem Ultraschall-Distanzsensor und dem Display lässt sich ein Personenzähler bauen"
 image: traffic_counter.png
 image1: /images/projects/personenzaehler/01_personenzaehler_schaltung.jpg
 image2: /images/projects/personenzaehler/02_sensor_display.png
@@ -13,12 +13,12 @@ material:
     - senseBox MCU
     - Ultraschallsensor
     - OLED Display
-    - JST-Adapterkabel
-    - JST-Kabel
+    - 1x JST-Adapterkabel
+    - 1x JST-Kabel
 ide: blockly    
 lang: de
 tags: ["Geographie", "Informatik"]
-difficult: mittel
+difficult: leicht
 ---
 # Personenzähler
 
@@ -43,8 +43,8 @@ Im ersten Schritt wird der Messwert des Ultraschall-Distanzsensor ausgelesen, ei
 
 {% include image.html image=page.image2 %}
 
-Um den Wert des Sensors auf dem Display anzuzeigen, muss zuerst das Display im Setup() initialisiert werden. Anschließend kann das Display in der Endlosschleife() genutzt werden.
-Ziehe den Block "Zeige auf dem Display" in die Endlosschleife. Um Texte oder Zahlen anzuzeigen, wird der Block "Zeige Text/Zahl" in den offenen Blockabschnitt gezogen. In diesem Block kannst du einstellen, in welcher Schriftgröße und wo auf dem Display Texte oder Zahlen angezeigt werden sollen. Nach dem Block "Zeige auf dem Display" muss das Display mit dem Block "Display löschen" gelöscht werden. Unter Variablen findest du den Block, um eine Variable zu erstellen.
+Um den Wert des Sensors auf dem Display anzuzeigen, muss zuerst das Display im Setup() initialisiert werden. Anschließend kann das Display in der `Endlosschleife` genutzt werden.
+Ziehe den Block `Zeige auf dem Display` in die Endlosschleife. Um Texte oder Zahlen anzuzeigen, wird der Block ` Zeige Text/Zahl` in den offenen Blockabschnitt gezogen. In diesem Block kannst du einstellen, in welcher Schriftgröße und wo auf dem Display Texte oder Zahlen angezeigt werden sollen. Nach dem Block `Zeige auf dem Display` muss das Display mit dem Block `Display löschen` gelöscht werden. Unter Variablen findest du den Block, um eine Variable zu erstellen.
 
 Übertrage den Programmcode auf die senseBox MCU und überprüfe, was mit der Distanz passiert, wenn eine Person an dem Sensor vorbeiläuft. 
 

@@ -3,7 +3,7 @@ layout: project_page
 name: "Erste Schritte: Dein erster Sketch"
 date: 2019-03-15
 author: Björn
-abstract: "Dein erster Sketch mit der senseBox"
+abstract: "Lasse mit deinem ersten Sketch die LED auf der senseBox MCU blinken"
 image: /ErsterSketch_Titel.png
 image1: /images/projects/ES_ersterSketch/setup_loop.png
 image2: /images/projects/ES_ersterSketch/builtin1_on.png
@@ -18,18 +18,20 @@ difficult: leicht
 ---
 
 # Erste Schritte: Dein erster Sketch
+Ziel dieses Projektes ist es, Blockly kennenzulernen und mit einem ersten Sketch die LED auf der senseBox MCU blinken zu lassen.
 
+## Programmierung
 
-## Setup und Endlosschleife
+###Schritt 1: Setup und Endlosschleife
 
-Dieser Block wird direkt beim Starten der Oberfläche geladen und sollte immer verwendet werden. Die zwei Basisfunktionen Setup() und Endlosschleife() werden immer benötigt um ein Funtkionsfähiges Programm zu schreiben.
-Alle Blöcke, die innerhalb der *Setup()* Funktion stehen werden nur zu begin des Programmes einmal ausgeführt. In dieser Funktion werden zum Beispiel das Display initialsiert oder die Wlan Verbindung hergestellt. Alle Blöcke, die innerhalb der *Endlosschleife()* stehen werden durchgehend ausgeführt. Der Mikrokontroller führt hierbei alle Blöcke immer wieder von oben nach unten hin aus. In der Endlosschleife() werden zum Beispiel die Sensoren ausgelesen oder auch die Messwerte auf SD-Karte gespeichert oder übertragen.
+Dieser Block wird direkt beim Starten der Oberfläche geladen und sollte immer verwendet werden. Die zwei Basisfunktionen `Setup()` und `Endlosschleife()` werden immer benötigt, um ein funtkionsfähiges Programm zu schreiben.
+Alle Blöcke, die innerhalb der `Setup()` Funktion stehen, werden nur zu Beginn des Programmes einmal ausgeführt. In dieser Funktion wird zum Beispiel das Display initialsiert oder die WLAN Verbindung hergestellt. Alle Blöcke, die innerhalb der `Endlosschleife()` stehen, werden durchgehend ausgeführt. Der Mikrocontroller führt hierbei alle Blöcke immer wieder von oben nach unten hin aus. In der `Endlosschleife` werden zum Beispiel die Sensoren ausgelesen oder auch die Messwerte auf die SD-Karte gespeichert oder übertragen.
 
 {% include image.html image=page.image1 %}
 
-## Die eingebaute LED einschalten
+### Schritt 2: Die eingebaute LED einschalten
 
-Um die eingebaute LED anzuschalten musst Du den "LED an digital"-Block in die Endlosschleife ziehen. Anschließend musst du unter PIN "BUILTIN_1" und unter Status "Ein" auswählen.
+Um die eingebaute LED anzuschalten, musst du den `LED an digital`-Block in die Endlosschleife ziehen. Anschließend wählst du unter PIN "BUILTIN_1" und unter Status "Ein" aus.
 
 {% include image.html image=page.image2 %}
 
@@ -41,9 +43,9 @@ Um die eingebaute LED anzuschalten musst Du den "LED an digital"-Block in die En
   </div>
 </div>
 
-## Die eingebaute LED blinken lassen
+### Schritt 3: Die eingebaute LED blinken lassen
 
-Um die eingebaute LED blinken zu lassen muss Du sie mit einem weiteren "LED an digital"-Block ausschalten. Zusätzlich muss nach dem An- sowie Ausschalten eine Pause eingefügt werden, damit das Blinken überhaupt sichtbar ist. Den "Warte"-Block findest in der Kategorie Zeit.
+Um die eingebaute LED blinken zu lassen, ist es nötig, sie mit einem weiteren `LED an digital` Block wieder auszuschalten. Zusätzlich muss nach dem An- sowie Ausschalten eine Pause eingefügt werden, damit das Blinken überhaupt sichtbar ist. Den `Warte` Block findest du in der Kategorie `Zeit`.
 
 {% include image.html image=page.image3 %}
 

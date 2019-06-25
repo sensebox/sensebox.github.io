@@ -3,7 +3,7 @@ layout: project_page
 name: "IoT Umweltmessstation"
 date: 2019-03-04
 author: Mario
-abstract: "Eine Umweltmessstation mit Internet Anbindung"
+abstract: "Eine Umweltmessstation mit Internetanbindung"
 image: home.jpg
 image0: /images/projects/blocks/output/web/output_web-0.png
 image1: /images/projects/umweltstation/umweltstation_01.png
@@ -14,8 +14,8 @@ material:
     - Luftdruck- und Temperatursensor
     - Helligkeits- und UV-Sensor
     - (optional) OLED Display
-    - 4 JST-Adapterkabel
-    - WLAN Netzwerk (Netzwerkname und Passwort benötigt)
+    - 4x JST-Adapterkabel
+    - WLAN Netzwerk (Netzwerkname und Passwort nötig)
 ide: blockly    
 lang: de
 tags: ["Geographie", "Informatik"]
@@ -24,20 +24,21 @@ solution: /docs/projects/solutions/umweltstation.xml
 ---
 # IoT Umweltmessstation 
 
-Viele Leute besitzen eine eigene kleine Wetterstation zuhause. In diesem Projekt wird eine Umweltmesstation mit Internet Anbindung selbst gebaut. Die Sensoren für deine Wetterstation kannst du selber auswählen und erweitern. Die Messwerte werden auf die [openSenseMap](https://opensensemap.org) übertragen. 
+Viele Leute besitzen eine eigene kleine Wetterstation Zuhause. In diesem Projekt wird eine Umweltmesstation mit Internetanbindung selbst gebaut. Die Sensoren für deine Wetterstation kannst du selber auswählen und erweitern. Die Messwerte werden auf die [openSenseMap](https://opensensemap.org) übertragen. 
 
 
 
 ## Aufbau
 
-Verbinde im ersten Schritt die 3 Sensoren mithilfe der JST-Adapterkabel mit den I2C Anschlüsse auf der senseBox MCU. Stecke das Wifi-Bee auf den Steckplatz 1 der MCU.
+Verbinde im ersten Schritt die 3 Sensoren mithilfe der JST-Adapterkabel mit den I2C Anschlüssen auf der senseBox MCU. Stecke das Wifi-Bee auf den Steckplatz 1 der MCU.
 
 ## Programmierung 
 
-Im ersten Schritt wird eine Verbindung mit dem WLAN Netzwerk hergestellt. Ziehe dazu den Block für das Herstellen einer Wlan Verbindung in die Setup Schleife. Trage in diesen Block deinen Netzwerknamen und das entsprechende Passwort ein.
+### Schritt 1
+Im ersten Schritt wird eine Verbindung mit dem WLAN Netzwerk hergestellt. Ziehe dazu den Block für das Herstellen einer WLAN Verbindung in die Setup Schleife. Trage in diesen Block deinen Netzwerknamen und das entsprechende Passwort ein.
 
 
-Nun müssen die Sensoren noch ausgelesen werden. Hierfür findest du die entsprechenden Blöcke unter senseBox - Sensoren. Um ein einfaches Arbeiten mit den Messwerten zu ermöglichen werden die ausgelesen Messwerte jeweils einer Variable zugewiesen. Benenne die Variable immer so,dass du nachvollziehen kannst um welchen Messwert es sich handelt. 
+Nun müssen die Sensoren noch ausgelesen werden. Hierfür findest du die entsprechenden Blöcke unter senseBox - Sensoren. Um ein einfaches Arbeiten mit den Messwerten zu ermöglichen, werden die ausgelesenen Messwerte jeweils einer Variable zugewiesen. Benenne die Variable immer so,dass du nachvollziehen kannst, um welchen Messwert es sich handelt. 
 
 
 <div class="panel panel-info">
