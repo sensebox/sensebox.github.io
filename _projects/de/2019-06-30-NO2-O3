@@ -4,17 +4,17 @@ name: "NO2 & O3 Sensoren Erweiterung"
 date: 2019-06-30
 author: David & Jan
 abstract: "Aufbau einer NO2 und O3 Sensors mit der senseBox welche mit Hilfe des Wifi-Bees an die openSenseMap sendet."
-image: Final_Temp.png
-image1: /images/projects/alphasense/ - Gehäuse von Außen
-image2: /images/projects/alphasense/ - Gehäußeteile
-image3: /images/projects/alphasense/ - Schrauben auf AFE
-image4: /images/projects/alphasense/ - Dichtungsringe auf Membran
-image5: /images/projects/alphasense/ - Verschraubung AFE
-image6: /images/projects/alphasense/ - Ansicht Verkabelung Verstärker
-image7: /images/projects/alphasense/ - Reihenfolge Sensoren
-image8: /images/projects/alphasense/ - Übersicht Sensoren und IDs
-image9: /images/projects/alphasense/ - Library einbinden
-image10: /images/projects/alphasense/ - Kalibrations-Datenblatt
+image: final_station.jpg
+image1: /images/projects/alphasense/housing-outside.png
+image2: /images/projects/alphasense/housing-parts.png
+image3: /images/projects/alphasense/afe-sensor-board.png
+image4: /images/projects/alphasense/ring-membran.png
+image5: /images/projects/alphasense/skews-afe.png
+image6: /images/projects/alphasense/verstaerker-board.png
+image7: /images/projects/alphasense/order-sensors.png
+image8: /images/projects/alphasense/overview-sensors.png
+image9: /images/projects/alphasense/include_libs.png
+image10: /images/projects/alphasense/calibration-sheet.png
 material:
     - senseBox Microcontroller (MCU)
     - 2x JST-JST Kabel (lang 500mm) 
