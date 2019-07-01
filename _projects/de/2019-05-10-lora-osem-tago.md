@@ -3,7 +3,7 @@ layout: project_page
 name: "LoRaWAN IoT-Wetterstation"
 date: 2018-11-02
 author: David
-abstract: "Das LoRaWAN-Bee und wird verwendet um eine IoT-Wetterstation zu bauen!"
+abstract: "Das LoRaWAN-Bee wird verwendet, um eine IoT-Wetterstation zu bauen!"
 image: Final_Temp.png
 image1: /images/projects/lora-osem-tago/station_anlegen_ttn.PNG
 image2: /images/projects/lora-osem-tago/station_anlegen_ttn_final.PNG
@@ -20,7 +20,7 @@ image12: /images/projects/lora-osem-tago/sensor_id_erkennen.PNG
 image13: /images/projects/lora-osem-tago/Integration_osem.PNG
 material:
     - senseBox MCU
-    - 3x JST-JST Kabel 
+    - 3x JST-Kabel 
     - LoRa-Bee
     - Temperatur-/Luftfeuchtigkeitssensor
     - Luftdrucksensor
@@ -33,13 +33,13 @@ difficult: schwierig
 # LoRaWAN IoT-Sensorstation
 
 Ziel ist es, eine senseBox Sensorstation mit LoRaWAN Modul zu entwickeln. Die Daten werden über das freie Netzwerk [TheThingsNetwork](https://www.thethingsnetwork.org/) ins Internet gesendet.
-Die Messwerte der Sensoren für Beleuchtungsstärke & UV, Temperatur & Luftfeuchtigkeit und Luftdruck sollen dabei übermittelt werden. Anschließend können die Daten zusätzlich zur openSenseMap auch auf der Platform [tago.io](https://tago.io/) angezeigt werden.
+Die Messwerte der Sensoren für Beleuchtungsstärke & UV, Temperatur & Luftfeuchtigkeit und Luftdruck sollen dabei übermittelt werden. Anschließend können die Daten zusätzlich zur openSenseMap auch auf der Plattform [tago.io](https://tago.io/) angezeigt werden.
 
 ## Grundlagen
-Das The Things Network ist eine communitybasierte Initiative zur Errichtung eines globalen LPWAN-Internet-of-Things-Netzwerks. Über das Netzwerk können kostenlos und über große Distanzen Daten übermittelt werden. Mehr dazu findest du [hier](https://de.wikipedia.org/wiki/The_Things_Network). Bevor du mit dem Projekt beginnst, überprüfe ob ein Gateway, der LoRaWan in deiner Nähe bereitgestellt ist. Am einfachsten kannst du dies über die Website  [ttnmapper](https://ttnmapper.org/) machen. 
+Das The Things Network ist eine communitybasierte Initiative zur Errichtung eines globalen LPWAN-Internet-of-Things-Netzwerks. Über das Netzwerk können kostenlos und über große Distanzen Daten übermittelt werden. Mehr dazu findest du [hier](https://de.wikipedia.org/wiki/The_Things_Network). Bevor du mit dem Projekt beginnst, überprüfe, ob ein Gateway, der LoRaWan, in deiner Nähe bereitgestellt ist. Am einfachsten kannst du dies über die Website  [ttnmapper](https://ttnmapper.org/) machen. 
 
 ## Aufbau
-Die Sensoren werden mit JST-JST Kabel mit der I2C/Wire Ports der senseBox MCU verbunden. Das LoRa-Bee wird auf den XBEE1 Steckplatz gesteckt.
+Die Sensoren werden mit JST Kabel mit der I2C/Wire Ports der senseBox MCU verbunden. Das LoRa-Bee wird auf den XBEE1 Steckplatz gesteckt.
 
 ## Registrierung bei TheThingsNetwork und auf der openSenseMap
 
@@ -63,7 +63,7 @@ Klicke dann auf "Register" und du erhälst folgende Übersicht mit der "Applicat
 
 {% include image.html image=page.image4 %}
 
-Da die Daten später an die openSenseMap gesendet werden sollen brauchst du noch eine sogenannte "Integration". Diese findest du oben in deinem Menu. Klicke darauf und klicke dann gleich auf den Button mit der Aufschrift "Add Integration". Dort hast du dann die Möglichkeit verschiedenste Integrations hinzuzufügen um die Daten von TTN an andere Service weiterzuleiten. Wähle dort die "HTTP Integration" aus. Gib nun eine "Process ID" an, die du frei wählen kannst. Danach wählst du noch "default key" im Dropdown Menu bei "Access Key" aus. Schließlich gibst du noch an, wohin die Daten gesendet werden sollen, zur URL: https://ttn.opensensemap.org/v1.1 und klickst dann auf "Add Integration"
+Da die Daten später an die openSenseMap gesendet werden sollen, brauchst du noch eine sogenannte "Integration". Diese findest du oben in deinem Menü. Klicke darauf und klicke dann gleich auf den Button mit der Aufschrift "Add Integration". Dort hast du dann die Möglichkeit, verschiedenste Integrations hinzuzufügen, um die Daten von TTN an andere Services weiterzuleiten. Wähle dort die "HTTP Integration" aus. Gib nun eine "Process ID" an, die du frei wählen kannst. Danach wählst du noch "default key" im Dropdown Menu bei "Access Key" aus. Schließlich gibst du noch an, wohin die Daten gesendet werden sollen, zur URL: https://ttn.opensensemap.org/v1.1 und klickst dann auf "Add Integration"
 
 {% include image.html image=page.image13 %}
 
