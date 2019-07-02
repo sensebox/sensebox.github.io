@@ -9,7 +9,6 @@ image1: /images/projects/iot_messstation/senseBox_Uebersicht.png
 image2: /images/projects/iot_messstation/WiFi.png
 image3: /images/projects/iot_messstation/upload_osem.png
 image0: /images/projects/iot_messstation/neueSenseBox.png
-
 material:
     - senseBox MCU
     - OLED Display

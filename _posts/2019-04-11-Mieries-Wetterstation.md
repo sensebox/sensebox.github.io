@@ -14,8 +14,6 @@ slider:
   text_color: white
   shadow_color: black
   slides: 
-    - image: /images/blog_images/Grundschule_Mierendorff/Mierie1.jpeg
-      slide_html:
     - image: /images/blog_images/Grundschule_Mierendorff/Mierie2.jpeg
       slide_html:
     - image: /images/blog_images/Grundschule_Mierendorff/Mieris-Wetterstation.jpg
