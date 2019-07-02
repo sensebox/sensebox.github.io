@@ -16,12 +16,12 @@ material:
 ide:     
 lang: de
 tags: ["Geographie", "Informatik"]
-difficult: mittel
+difficult: leicht
 ---
-Ziel ist es, Daten aus der openSenseMap herunterzuladen und diese anschließend mithilfe von ArcGIS Online graphisch darzustellen bzw. auszuwerten. Dafür können zum einen Daten verwendet werden, die mit der eigenen senseBox erfasst wurden, zum anderen aber auch solche, die frei auf der openSenseMap zur Verfügung stehen
+Ziel ist es, Daten aus der openSenseMap herunterzuladen und diese anschließend mithilfe von ArcGIS Online graphisch darzustellen bzw. auszuwerten. Dafür können zum einen Daten verwendet werden, die mit der eigenen senseBox erfasst wurden, zum anderen aber auch solche, die frei auf der openSenseMap zur Verfügung stehen.
 
 ## Herunterladen der Daten aus der openSenseMap
-Die Daten werden aus der openSenseMap über den Button ‚Datendownload‘ heruntergeladen. Unter diesem Menüpunkt ist es möglich, alle Daten der senseBoxen herunterzuladen, die auf dem jeweiligen Zommlevel auf der openSenseMap angezeigt werden. Durch eine Auswahl des Zeitraums, des Sensors und der Operation, können die Informationen eingeschränkt und gefiltert heruntergeladen werden. Es ist wichtig, unter dem Button ‚Erweitert‘ die geographische Länge und Breite auszuwählen, damit eine anschließende Verarbeitung der Daten in einem Geoinformationssystem problemlos möglich ist.  Des Weiteren wird über einem Filter die Option geboten, nach bestimmten Kriterien (Name, Modell, Standort, Phänomen) zu suchen, sodass darauf zutreffende senseBoxen angezeigt und ihre Daten heruntergeladen werden können. Je nach Umfang der Datenmenge kann der Download etwas Zeit in Anspruch nehmen.  
+Die Daten werden aus der openSenseMap über den Button ‚Datendownload‘ heruntergeladen. Unter diesem Menüpunkt ist es möglich, alle Daten der senseBoxen herunterzuladen, die auf dem jeweiligen Zommlevel auf der openSenseMap angezeigt werden. Durch eine Auswahl des Zeitraums, des Sensors und der Operation, können die Informationen eingeschränkt und gefiltert heruntergeladen werden. Es ist wichtig, unter dem Button ‚Erweitert‘ die geographische Länge und Breite auszuwählen, damit eine anschließende Verarbeitung der Daten in einem Geoinformationssystem problemlos möglich ist.  Des Weiteren wird über einem Filter die Option geboten, nach bestimmten Kriterien (Name, Modell, Standort, Phänomen) zu suchen, sodass darauf zutreffende senseBoxen angezeigt und ihre Daten heruntergeladen werden können. Je nach Umfang der Datenmenge, kann der Download etwas Zeit in Anspruch nehmen.  
 {% include image.html image=page.image1 %}
 
 ## Einbindung der Daten in ArcGIS Online

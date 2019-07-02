@@ -70,7 +70,7 @@ Da die Daten später an die openSenseMap gesendet werden sollen, brauchst du noc
 
 ### Registrierung auf der openSenseMap
 
-Falls du noch keinen Account hast, registriere dich auf der openSenseMap und lege eine neue senseBox an. Akzeptiere die Datenschutzerklärung und gib der Station einen Namen. Gib an ob die Station drinnen oder draußen steht. Wähle deinen Standort und wähle anschließend in der Rubrik Hardware die "senseBox:home V2" aus. Wähle dann dein Set-up mit LoRa-Bee und den verwendeten Sensoren.
+Falls du noch keinen Account hast, registriere dich auf der openSenseMap und lege eine neue senseBox an. Akzeptiere die Datenschutzerklärung und gib der Station einen Namen. Gib an, ob die Station drinnen oder draußen steht. Wähle deinen Standort und wähle anschließend in der Rubrik Hardware die "senseBox:home V2" aus. Wähle dann dein Set-up mit LoRa-Bee und den verwendeten Sensoren.
 
 {% include image.html image=page.image5 %}
 
@@ -131,16 +131,16 @@ Jetzt kannst du deinen Code übertragen und deine senseBox übermittelt Daten an
 
 Abschließend möchten wir noch eine kleine Funktion vom Anbieter tago.io benutzen, durch die man Daten seiner auf TheThingsNetwork registrierten Stationen in einem Dashboard ansehen kann.
 
-Gehe dafür in deinem TTN-Profil auf dein Device und wähle „Integrations“. Dort sollte es jetzt bereits eine Http-Integration geben, welche benutzt wird, um die Daten an die openSenseMap zu schicken. Wähle dort nun „add integration“ und wähle „TagoIO“.  Dann kannst Du eine eindeutige Identifizierung frei wählen und musst dir außerdem einen 
-„Autorization“ aussuchen. Diese brauchst du später wieder um auf deine Werte zugreifen zu können. 
+Gehe dafür in deinem TTN-Profil auf dein Device und wähle „Integrations“. Dort sollte es jetzt bereits eine Http-Integration geben, welche benutzt wird, um die Daten an die openSenseMap zu schicken. Wähle dort nun „add integration“ und wähle „TagoIO“.  Dann kannst du eine eindeutige Identifizierung frei wählen und musst dir außerdem einen 
+„Autorization“ aussuchen. Diese brauchst du später wieder, um auf deine Werte zugreifen zu können. 
 
 {% include image.html image=page.image9 %}
 
     
 Gehe nun auf https://tago.io und lege dir einen Account an. Wähle „I am Developer“, da du später eigene Geräte anlegen möchtest. 
 In der Übersicht deines Accounts findest du nun die Option „Devices“. Klicke dort auf „Add Device“ und wähle dann die Option „Custom The Things Network“ aus.
-Gib deinem Device ein Namen und eine kurze Beschreibung. Danach musst du noch die Device EUI aus TTN kopieren und einfügen. 
-Diese findest du wieder unter dem „Device Overview“ in deinem TTN Account. Dann musst du auch noch dein vorher gewählten Authorization Code eingeben. 
+Gib deinem Device einen Namen und eine kurze Beschreibung. Danach musst du noch die Device EUI aus TTN kopieren und einfügen. 
+Diese findest du wieder unter der „Device Overview“ in deinem TTN Account. Dann musst du auch noch deinen vorher gewählten Authorization Code eingeben. 
 Abschließend klickst du auf „Create Device“ und bist fertig. 
 
 {% include image.html image=page.image10 %}
@@ -157,5 +157,5 @@ Welche Sensor ID zu welchem Sensor gehört, findest du in deinem openSenseMap Ac
 
 {% include image.html image=page.image12 %} 
 
-Da es auch eine App von TagoIO gibt, ist das auch eine gute Möglichkeit deine Sensorwerte mobil anzuzeigen.
+Da es auch eine App von TagoIO gibt, ist das auch eine gute Möglichkeit, deine Sensorwerte mobil anzuzeigen.
 Es stehen dir natürlich auch weiter Dashboards und weitere Möglichkeiten über TagoIO zur Verfügung. 
