@@ -115,7 +115,7 @@ Jetzt kannst du ausprobieren, welche Geräusche welche Ausschläge verursachen:
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title">Weitere Projekte mit dem Mic-Breakout</h3>
+    Weitere Projekte mit dem Mic-Breakout
   </div>
   <div class="panel-body">
 <b>Du kannst mit rohen Messwerten nicht viel anfangen oder würdest gerne sehen, wie man das Mikrofon in eine Anwendung einbauen kann?</b> <br>

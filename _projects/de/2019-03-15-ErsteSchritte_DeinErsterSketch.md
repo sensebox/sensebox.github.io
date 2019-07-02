@@ -37,7 +37,7 @@ Um die eingebaute LED anzuschalten, musst du den `LED an digital`-Block in die E
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title">Die eingebaute LED findest du über dem roten Reset-Knopf auf der senseBox MCU.</h3>
+    Die eingebaute LED findest du über dem roten Reset-Knopf auf der senseBox MCU
   </div>
   <div class="panel-body">
   </div>
@@ -51,7 +51,7 @@ Um die eingebaute LED blinken zu lassen, ist es nötig, sie mit einem weiteren `
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title">1000 Millisekunden sind 1 Sekunde.</h3>
+1000 Millisekunden sind 1 Sekunde
   </div>
   <div class="panel-body">
   </div>

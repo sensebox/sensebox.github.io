@@ -144,7 +144,7 @@ void loop() {
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title">Wie bekomme ich ein Ergebnis?</h3>
+    Wie bekomme ich ein Ergebnis?
   </div>
   <div class="panel-body">
 Um nun den im Display dargestellen Graphen zu verändern, musst du lediglich die beiden Kabel des Digital Ports jeweils in einer Hand halten. Du solltest eine Veränderung im Display feststellen, wodurch die Leitfähigkeit deiner Haut wiedergespiegelt wird.
@@ -153,7 +153,7 @@ Um nun den im Display dargestellen Graphen zu verändern, musst du lediglich die
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title">Was bedeutet das Ergebnis?</h3>
+    Was bedeutet das Ergebnis?
   </div>
   <div class="panel-body">
 Das Ergebnis zeigt, dass deine Haut ein Leiter für Strom ist. Dies wird durch den hohen y-Wert (Lf), welcher im Graphen gezeigt wird, dargestellt.
