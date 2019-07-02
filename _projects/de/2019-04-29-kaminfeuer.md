@@ -3,13 +3,14 @@ layout: project_page
 name: "Kaminfeuer"
 date: 2019-04-29
 author: Bernd
-abstract: "Es soll ein Kaminfeuer simuliert werden. Dazu wird eine rote LED zum flackern gebracht."
+abstract: "Es wird ein Kaminfeuer simuliert, indem eine rote LED zum flackern gebracht wird."
 image: logo_bunt.png
 image0: /images/projects/KaminfeuerKlein.png
 material:
-    - LED
-    - 1x 470Ω Widerstand
-    - JST-Adapterkabel
+    - senseBox MSU
+    - rote LED
+    - 470Ω Widerstand
+    - 1x JST-Adapterkabel
 ide: arduino    
 lang: de
 tags: ["Informatik", "Physik"]
@@ -17,17 +18,19 @@ difficult: leicht
 ---
 # Kaminfeuer
 
-Es soll ein Kaminfeuer simuliert werden. Dazu wird eine rote LED zum flackern gebracht.
+Ziel dieses Projektes ist es, ein Kaminfeuer zu simulieren. Dazu wird eine rote LED zum flackern gebracht.
 
 ## Aufbau
 
-Es wird nur die LED angeschlossen. Diese wird am langen Beinchen mit einem 470Ω Widerstand mit dem digitalen Port 1 verbunden. Das kurze Beinchen wird mit GND verbunden.
+Es wird nur die rote LED mithilfe eines JST-Adapterkabels an die senseBox MCU angeschlossen. Diese wird am langen Beinchen mit einem 470Ω Widerstand mit dem digitalen Port 1 verbunden. Das kurze Beinchen wird mit dem schwarzen Kabel (GND) verbunden.
 
 {% include image.html image=page.image0 %}
 
 ## Programmierung
 
-### Schritt 1: Definieren der globalen Variable und setup()-Funktion
+### Schritt 1
+
+In diesem Schritt definierst du die globale Variable und die setup()-Funktion
 
 ```arduino
 
@@ -40,7 +43,7 @@ void setup() {
   pinMode(led, OUTPUT);
 }
 ```
-Wir speichern den digitalen Port 1 in einer Variable, damit wir uns nur noch den aussagekräftigen Variablennamen merken müssen und nicht die Portnummer. Das ist vorallem bei mehreren angeschlossenen LEDs hilfreich.
+Du speicherst den digitalen Port 1 in einer Variable, damit du dir nur noch den aussagekräftigen Variablennamen merken musst und nicht die Portnummer. Das ist vorallem bei mehreren angeschlossenen LEDs hilfreich.
 
 ### Schritt 2: loop()-Funktion
 
@@ -61,6 +64,8 @@ void loop() {
   delay(randomDelayAus);
 }
 ```
-Die Funktion random(max) generiert Zufallszahlen von 0 bis max. Falls man ebenfalls ein Minimum angeben will kann man die Funktion random(min, max) benutzen.
+Die Funktion random(max) generiert Zufallszahlen von 0 bis max. Falls man ebenfalls ein Minimum angeben will, kann man die Funktion random(min, max) benutzen.
+
+Damit ist die Programmierung abgeschlossen und du hast ein Kaminfeuer durch eine flackernde LED erzeugt. 
 
 
