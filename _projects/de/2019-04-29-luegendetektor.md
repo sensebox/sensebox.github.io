@@ -4,7 +4,7 @@ name: "Lügendetektor"
 date: 2019-04-29
 author: Lennart
 abstract: "Es wird ein Lügendetektor gebaut, der die Leitfähigkeit deiner Haut misst."
-image: logo_bunt.png
+image: titelbild_luegendetektor.png
 material:
     - senseBox MCU
     - OLED-Display
