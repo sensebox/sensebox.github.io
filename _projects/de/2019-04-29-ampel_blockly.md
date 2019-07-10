@@ -5,7 +5,7 @@ date: 2019-04-29
 author: Björn und Benni
 abstract: "Es wird eine Ampel simuliert, die sich mit einem Button umschalten lässt."
 image: Titelbild_Ampelschaltung.jpg
-image1: /images/projects/traffic_light/AmpelSchaltungKlein.png
+image1: /images/projects/traffic_light/ampelschaltung_setup.png
 image2: /images/projects/traffic_light/Setup.png
 image3: /images/projects/traffic_light/Wenn_mache.png
 image4: /images/projects/traffic_light/Endlosschleife.png

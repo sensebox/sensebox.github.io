@@ -5,7 +5,7 @@ date: 2019-04-29
 author: Benni
 abstract: "Die Nutzung des Mikrofons mit dem Arduino." 
 image: Titelbild_Lauschangriff.jpg
-image0: /images/projects/LauschangriffKlein.png
+image0: /images/projects/lauschangriff_setup.png
 material:
     - senseBox MSU
     - Mic-Breakout
