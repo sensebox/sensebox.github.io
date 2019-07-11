@@ -5,7 +5,7 @@ date: 2018-11-02
 author: Mario
 abstract: "Ein kleiner Verkehrszähler"
 image: traffic_counter.png
-image1: /images/projects/verkehrszaehler/Verkehrszaehler_v2.png
+image1: /images/projects/verkehrszaehler_setup.png
 material:
     - senseBox MCU
     - Ultraschallsensor

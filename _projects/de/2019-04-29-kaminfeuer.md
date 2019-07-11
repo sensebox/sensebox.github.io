@@ -4,8 +4,8 @@ name: "Kaminfeuer"
 date: 2019-04-29
 author: Bernd
 abstract: "Es wird ein Kaminfeuer simuliert, indem eine rote LED zum flackern gebracht wird."
-image: logo_bunt.png
-image0: /images/projects/KaminfeuerKlein.png
+image: Titelbild_Kaminfeuer.png
+image0: /images/projects/kaminfeuer_setup.png
 material:
     - senseBox MSU
     - rote LED
