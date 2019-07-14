@@ -1,6 +1,6 @@
 
 {% assign carouselpages = "main|products|osem|books|background|press|awards|blog|blockly|go-edu|material|events" | split: "|" %}
-{% assign navpages = "products|osem|blockly" | split: "|" %}
+{% assign navpages = "material|products|osem|blockly" | split: "|" %}
 {% assign navpagesright = "blog" | split: "|" %}
 {% if include.simple == true %}
     <div class="navbar-wrapper">
@@ -62,7 +62,7 @@
                                 {% endif %}
                             </div>
                           </li>
-                          <li class="nav-item dropdown">
+                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               {{ t.material }}
                             </a>
@@ -77,7 +77,7 @@
                                 </ul>
                                 {% endif %}
                             </div>
-                          </li>
+                          </li>-->
                         {% assign t = site.data.translations.[page.lang].header %} {% assign menupages = site.pages | sort:"weight" %} {% for menupage
                         in menupages %} {% if menupage.lang == page.lang and navpages contains menupage.id %}
                         <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
