@@ -1,33 +1,26 @@
-- name: :Projekte
-  position: t1
-  organisation: senseBox - Team
-  description: 
-  bgImage: /images/material/projects.png
-  link: /de/projects
-
 - name: :Lernkarten
-  position: t2
+  position: t1
   organisation: senseBox - Team
   description: Lernkarten für das selbstständige Arbeiten mit der senseBox und der Programmierung mit Blockly. Die Lernkarten können doppelseitig ausgedruckt werden.
   bgImage: /images/material/cards.png
   download: https://sensebox.de/docs/senseBox_Karten.pdf
 
 - name: :Arbeitsblätter
-  position: t3
+  position: t2
   organisation: senseBox - Team
   description: Tutory bietet die Möglichkeit interaktiv Arbeitsblätter zu gestalten. Auf der Platform können unsere Arbeitsblätter nach den eigenen Wünschen angepasst werden. Alle Arbeitsblätter finden Sie auf unserem Profil veröffentlicht. 
   bgImage: /images/material/sheets_tutory.png
   link: https://www.tutory.de/user/sensebox
 
 - name: :ETH Zürich
-  position: t4
+  position: t3
   organisation: ETH - Zürich
   description: Die ETH Zürich verwendet die senseBox in der Lehre in zwei verschiedenen Studiengängen und stellt uns und euch die Materialien aus der Lehre zu verfügung (Zurzeit nur auf Englisch)
   bgImage: /images/material/eth.jpg
   download: https://sensebox.de/docs/ETH_GeosensorsLab_tutorial.pdf
 
 - name: :Lehrhandreichung
-  position: t5
+  position: t4
   organisation: 
   description: 
   bgImage: /images/logo_bunt.png

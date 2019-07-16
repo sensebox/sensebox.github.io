@@ -5,7 +5,7 @@
   </div>
 
 
-<h3 class="smallcaps" id="Material">Books</h3>
+<h2 class="smallcaps" id="Material">Books</h2>
 
 <p>  {{ t.description_book }}</p>
 <div class="container">
@@ -48,7 +48,7 @@
 {% endfor %}
   </div>
 
-<h3 class="smallcaps" id="Material"><p>  {{ t.description_teaching_short }}</p></h3>
+<h2 class="smallcaps" id="Material">{{ t.description_teaching_short }}</h2>
 <p>  {{ t.description_teaching }}</p>
 
 {% assign teaching = site.data.translations.[page.lang].teaching_content | sort: 'position' %}
@@ -94,7 +94,7 @@
 
 </div>
 
-<h3 class="smallcaps" id="Material">{{ t.description_more_short }}</h3>
+<h2 class="smallcaps" id="Material">{{ t.description_more_short }}</h2>
 <p>{{ t.description_more }}</p>
 
 {% assign more = site.data.translations.[page.lang].material_more | sort: 'position' %}
@@ -115,7 +115,6 @@
           <canvas class="header-bg" width="250" id="header-blur" style="background-image: url({{ more.bgImage }});"></canvas>
           <div class="content">
             <h4 style="clear:both">{{ more.name }}</h4>
-            <h5 style="clear:both">{{ more.organisation }}</h5>
             <div id="desc_{{ more.position }}">
               {% if more.link %}
               <a class="stretched-link" href="{{more.link }}" ></a>
