@@ -3,7 +3,7 @@ layout: project_page
 name: "Lauschangriff"
 date: 2019-04-29
 author: Benni
-abstract: "Die Nutzung des Mikrofons mit dem Arduino." 
+abstract: "Laute Geräusche mit der senseBox messen." 
 image: Titelbild_Lauschangriff.jpg
 image0: /images/projects/lauschangriff_setup.png
 material:
@@ -16,8 +16,7 @@ tags: ["Informatik", "Physik"]
 difficult: mittel
 ---
 # Lauschangriff
-
-Ziel dieses Projektes ist es, das Mikrofon mit dem Arduino zu nutzen. 
+Ziel dieses Projektes ist es, mit der senseBox laute Geräusche zu erkennen. Dazu wird das Mikrofon benutzt. Es misst den Ausschlag von Schallwellen.
 
 ## Grundlagen
 
