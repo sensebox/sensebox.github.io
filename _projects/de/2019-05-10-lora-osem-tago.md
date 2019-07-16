@@ -36,10 +36,10 @@ Ziel ist es, eine senseBox Sensorstation mit LoRaWAN Modul zu entwickeln. Die Da
 Die Messwerte der Sensoren für Beleuchtungsstärke & UV, Temperatur & Luftfeuchtigkeit und Luftdruck sollen dabei übermittelt werden. Anschließend können die Daten zusätzlich zur openSenseMap auch auf der Plattform [tago.io](https://tago.io/) angezeigt werden.
 
 ## Grundlagen
-Das The Things Network ist eine communitybasierte Initiative zur Errichtung eines globalen LPWAN-Internet-of-Things-Netzwerks. Über das Netzwerk können kostenlos und über große Distanzen Daten übermittelt werden. Mehr dazu findest du [hier](https://de.wikipedia.org/wiki/The_Things_Network). Bevor du mit dem Projekt beginnst, überprüfe, ob ein Gateway, der LoRaWan, in deiner Nähe bereitgestellt ist. Am einfachsten kannst du dies über die Website  [ttnmapper](https://ttnmapper.org/) machen. 
+Das TheThingsNetwork ist eine communitybasierte Initiative zur Errichtung eines globalen LPWAN-Internet-of-Things-Netzwerks. Über das Netzwerk können kostenlos und über große Distanzen Daten übermittelt werden. Mehr dazu findest du [hier](https://de.wikipedia.org/wiki/The_Things_Network). Bevor du mit dem Projekt beginnst, überprüfe ob ein Gateway - der LoRaWan - in deiner Nähe bereitgestellt ist. Am einfachsten kannst du dies über die Website  [ttnmapper](https://ttnmapper.org/) machen. 
 
 ## Aufbau
-Die Sensoren werden mit JST Kabel mit der I2C/Wire Ports der senseBox MCU verbunden. Das LoRa-Bee wird auf den XBEE1 Steckplatz gesteckt.
+Die Sensoren werden mit JST-Kabel mit der I2C/Wire Ports der senseBox MCU verbunden. Das LoRa-Bee wird auf den XBEE1 Steckplatz gesteckt.
 
 ## Registrierung bei TheThingsNetwork und auf der openSenseMap
 
@@ -63,7 +63,7 @@ Klicke dann auf "Register" und du erhälst folgende Übersicht mit der "Applicat
 
 {% include image.html image=page.image4 %}
 
-Da die Daten später an die openSenseMap gesendet werden sollen, brauchst du noch eine sogenannte "Integration". Diese findest du oben in deinem Menü. Klicke darauf und klicke dann gleich auf den Button mit der Aufschrift "Add Integration". Dort hast du dann die Möglichkeit, verschiedenste Integrations hinzuzufügen, um die Daten von TTN an andere Services weiterzuleiten. Wähle dort die "HTTP Integration" aus. Gib nun eine "Process ID" an, die du frei wählen kannst. Danach wählst du noch "default key" im Dropdown Menu bei "Access Key" aus. Schließlich gibst du noch an, wohin die Daten gesendet werden sollen, zur URL: https://ttn.opensensemap.org/v1.1 und klickst dann auf "Add Integration"
+Da die Daten später an die openSenseMap gesendet werden sollen, brauchst du noch eine sogenannte "Integration". Diese findest du oben in deinem Menü. Klicke darauf und klicke dann gleich auf den Button mit der Aufschrift "Add Integration". Dort hast du dann die Möglichkeit, verschiedenste Integrations hinzuzufügen, um die Daten von TTN an andere Services weiterzuleiten. Wähle dort die "HTTP Integration" aus. Gib nun eine "Process ID" an, die du frei wählen kannst. Danach wählst du noch "default key" im Dropdown Menü bei "Access Key" aus. Schließlich gibst du noch an, wohin die Daten gesendet werden sollen, zur URL: https://ttn.opensensemap.org/v1.1 und klickst dann auf "Add Integration"
 
 {% include image.html image=page.image13 %}
 
@@ -116,7 +116,7 @@ void os_getDevKey (u1_t* buf) {  memcpy_P(buf, APPKEY, 16);}
 Wie du in der Beschreibung des Codes lesen kannst, ist es hier wichtig, das Format der Schlüssel richtig einzusetzen. Die "Device EUI" und die "Application EUI" werden im 
 ```lsb``` Format kopiert und eingefügt. Der AppKey im ```msb``` Format. 
 
-Beim kopieren der Schlüssel musst du deshalb darauf achten, dass deine Device Overview wie im folgenden Bild eingestellt ist. Du kannst das Format der Darstellung ändern,
+Beim Kopieren der Schlüssel musst du deshalb darauf achten, dass deine Device Overview wie im folgenden Bild eingestellt ist. Du kannst das Format der Darstellung ändern,
 indem du auf die Icons am Anfang drückst (<> und ->)
 
 {% include image.html image=page.image8 %}
@@ -158,4 +158,4 @@ Welche Sensor ID zu welchem Sensor gehört, findest du in deinem openSenseMap Ac
 {% include image.html image=page.image12 %} 
 
 Da es auch eine App von TagoIO gibt, ist das auch eine gute Möglichkeit, deine Sensorwerte mobil anzuzeigen.
-Es stehen dir natürlich auch weiter Dashboards und weitere Möglichkeiten über TagoIO zur Verfügung. 
+Es stehen dir natürlich auch weitere Dashboards und Optionen über TagoIO zur Verfügung. 
