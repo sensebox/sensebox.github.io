@@ -1,10 +1,10 @@
 {% assign t = site.data.translations.[page.lang].projects %}
 <div class="container">
         <div class="row">
-                <div class="col-md-2 col-xs-2">
+                <div class="col-md-3 col-xs-3">
                        <p>{{ t.language }}</p>
                 </div>
-                <div class="col-md-10">
+                <div class="col-md-9">
            {% if site.enableTags ==  true %} 
                <div id="tag-filter" class="col-md-12 col-xs-12 tag-group">
                    {% assign tagarray = site.tagarray %}
@@ -32,10 +32,10 @@
            </div>
            </div>
         <div class="row">
-                <div class="col-md-2 col-xs-2">
+                <div class="col-md-3 col-xs-3">
                        <p>{{ t.ide }}</p>
                 </div>
-                <div class="col-md-10">
+                <div class="col-md-9">
            {% if site.enableTags ==  true %} 
                <div id="tag-filter" class="col-md-12 col-xs-12 tag-group">
                    {% assign tagarray = site.tagarray %}
@@ -63,10 +63,10 @@
            </div>
            </div>    
 <div class="row">
-        <div class="col-md-2 col-xs-2">
+        <div class="col-md-3 col-xs-3">
                <p>{{ t.tags }}</p>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-9">
 {% if site.enableTags ==  true %} 
 	<div id="tag-filter" class="col-md-12 col-xs-12 tag-group">
         {% assign tagarray = site.tagarray %}
@@ -94,10 +94,10 @@
         </div>
 </div>
 <div class="row">
-        <div class="col-md-2 col-xs-2">
+        <div class="col-md-3 col-xs-3">
                <p>{{ t.difficulty }}</p>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-9">
 {% if site.enableTags ==  true %} 
 	<div id="tag-filter" class="col-md-12 col-xs-12 tag-group">
         {% assign tagarray = site.tagarray %}
@@ -122,6 +122,7 @@
         {% endfor %}
 	</div>
 {% endif %}
+    </div>
 </div>
 <div class="row">
             <span class="project-label-all project-border tag-filter tag-group tag-cloud all">Alle</span>

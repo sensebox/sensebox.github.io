@@ -1,27 +1,23 @@
 - name: :senseBox:edu V1
-  image: 
   position: more1
   description: Die alte Version der senseBox basierte auf einem Arduino und dem senseBox-Shield. Diese Version ist nichtmehr käuflich. Hier die Anleitungen zur alten":" senseBox:home, senseBox:edu, sowie die dazugehörige Blockly Version.
   link: https://edu.books.sensebox.de/de/ 
   bgImage: /images/material/product-sensebox-edu.jpg
 
 - name: :senseBox:home V1
-  image: 
   position: more2
   description: The old version of senseBox was based on an Arduino and the senseBox-Shield. This version is no longer for sale. Here are the instructions for the "old":" senseBox:home, senseBox:edu, and the corresponding Blockly version.
   link: https://home.books.sensebox.de/de/
   bgImage: /images/material/instructions_home_bg.jpg
 
 - name: :openSenseMap API
-  image: 
-  position: more2
+  position: more3
   description: Die Dokumentation der openSenseMap API ist eine technische Dokumentation mit Fokus auf die Software Integration der Daten.
   bgImage: /images/material/osem_api.png
   link: https://docs.opensensemap.org/
 
 - name: :GitHub
-  image: 
-  position: more3
+  position: more4
   description: Github ist unsere Basis für Soft- und Hardware. In verschiedenen Repositories befindet sich der Quellcode für die openSenseMap, Blockly und vieles mehr. 
   link: https://github.com/sensebox
   bgImage: /images/material/Octocat.jpg
