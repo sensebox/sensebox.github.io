@@ -65,7 +65,7 @@ dem Display anzeigen.
 
 ### Schritt 3: Verbinden mit dem Internet und senden der Messwerte an die openSenseMap
 
-Für die Übertragung an die openSenseMap benötigst du neben deinen Zugangsdaten für das Wlan auch eine BoxID und Sensor ID's 
+Für die Übertragung an die openSenseMap benötigst du neben deinen Zugangsdaten für das WLAN auch eine BoxID und Sensor ID's 
 für die einzelnen Messwerte und Sensoren. Registriere eine neue senseBox auf der openSenseMap, um die entsprechenden ID's
 zu erhalten.
 
