@@ -1,5 +1,6 @@
 title: "Projekte rund um die senseBox"
-description: "Auf dieser Seite findest du allerlei Projekte rund um die senseBox. Um die Projekte bearbeiten zu können solltest du bereits wissen wie du einen Programmcode auf die senseBox MCU überträgst. Für Projekte mit der Arduino IDE muss diese auf dem Computer installiert sein. Weitere Informationen dazu findest du hier: <a href=\"https://sensebox.de/go\" target=\"_blank\" class=\"link\">sensebox.de/go</a>"
+description: "Auf dieser Seite findest du allerlei Projekte rund um die senseBox."
+additional_info: "Um die Projekte bearbeiten zu können solltest du bereits wissen wie du einen Programmcode auf die senseBox MCU überträgst. Für Projekte mit der Arduino IDE muss diese auf dem Computer installiert sein. Weitere Informationen dazu findest du hier: <a href=\"https://sensebox.de/go\" target=\"_blank\" class=\"link\">sensebox.de/go</a>"
 language: "Sprache"
 ide: "Programmierumgebung"
 tags: "Tags"
