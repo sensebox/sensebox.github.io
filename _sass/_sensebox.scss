@@ -415,6 +415,14 @@ hr {
       }
     }
 
+    .block-image {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin: 2px;
+      min-width: 300px;
+      height: auto;
+    }
+
     > ul {
       font-size: inherit;
     }
@@ -1245,6 +1253,7 @@ $carousel-height: 450px;
 .events-row {
   display: flex;
   flex-wrap: wrap;
+  
 
   .event-item {
     flex-grow: 1;
@@ -1256,16 +1265,6 @@ $carousel-height: 450px;
 
   .thumbnail {
     height: 100%;
-  }
-  .caption {
-    height: 100%;
-    display:flex;
-    flex-grow: 1;
-    flex-direction: column;
-    justify-content: space-between;
-     h3 {
-      padding-bottom: 0px;
-    }
   }
 }
 
@@ -1355,8 +1354,10 @@ $carousel-height: 450px;
 }
 
 .collapse.in, .collapsing {
-  background-color: #272727;
-  box-shadow: 0 0 30px 6px rgba(34, 34, 34, 0.25); 
+  background-color:none;
+  box-shadow: none; 
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .carousel-caption {
@@ -1682,4 +1683,43 @@ $carousel-height: 450px;
       height: 100%;
     }
   }
+}
+
+.project-label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 2;
+    color: $sensebox-green;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    cursor: pointer;
+}
+
+.project-label-all {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  color: black;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  cursor: pointer;
+}
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: rgba(0,0,0,0);
 }

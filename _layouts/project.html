@@ -1,0 +1,93 @@
+---
+layout: default
+---
+
+<article class="post">
+		{% assign t = site.data.translations[page.lang].projects %}
+	<div class="post-content">
+		{{ content }}
+
+		<div class="projects row">
+		<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+			Filter
+		  </a>
+				</div>
+				<div class="collapse" id="collapseExample">
+					<div class="well project-outer">
+						{% include project_tags.html %}
+		
+						{% for i in site.projects %}
+						{% assign tagarray = site.tagarray %}
+								{% for tag in i.tags %}
+										{% assign tagarray = tagarray | push: tag %}
+								{% endfor %}
+								{% for tag in i.difficult %}
+										{% assign tagarray = tagarray | push: tag %}
+								{% endfor %}
+								{% for tag in i.lang %}
+										{% assign tagarray = tagarray | push: tag %}
+								{% endfor %}
+								{% for tag in i.ide %}
+										{% assign tagarray = tagarray | push: tag %}
+								{% endfor %}
+						{% endfor %}
+					</div>
+				  </div>
+		<div class="row row-eq-height">	
+		{% for i in site.projects %}
+		{% assign tagarray = site.tagarray %}
+				{% for tag in i.tags %}
+						{% assign tagarray = tagarray | push: tag %}
+				{% endfor %}
+				{% for tag in i.difficult %}
+						{% assign tagarray = tagarray | push: tag %}
+				{% endfor %}
+				{% for tag in i.lang %}
+						{% assign tagarray = tagarray | push: tag %}
+				{% endfor %}
+				{% for tag in i.ide %}
+						{% assign tagarray = tagarray | push: tag %}
+				{% endfor %}			
+		<div class="project-item col-md-4 col-sm-6 col-xs-12" data-tags='{{ tagarray | jsonify | downcase }}'>
+				<div class="well project-outer">
+						<span class="ribbon"><span class={{i.ide}}>{{ i.ide }}</span></span>
+						<div class="project-inner">
+								<a href="{{ i.url }}" class="thickbox">
+								<div class="project-img bordered" style="background-image: url('/images/projects/{{ i.image }}');"></div>
+								</a>
+								{% if i.url %} <a href="{{ site.baseurl | append: i.url }}"> {% endif %}
+								<h4 class="project-headlines">{{ i.name }}</h4>
+								{% if i.url %} </a> {% endif %}
+								<p>{{ i.abstract }}</p>
+								<div class="project-content">
+										<div class="tag-holder">
+											<div class="row">
+											<h4>Tags:</h4>
+											<div class="row">
+										{% if i.tags %} 
+												{% for j in i.tags %}
+												<span class="project-label tags tag-filter" data-tag="{{ j | downcase }}">{{ j }}</span>
+												{% endfor %}
+										{% endif %}
+
+									</div>
+									</div>
+										</div>
+										
+								</div>
+								<div class="project-footer"> 
+										{% if i.url %} 
+										<a href="{{ i.url }}" class="btn btn-info btn-raised btn-sm project-link">{{ t.view }}</a>
+										{% endif %}
+										<span class="project-timeline">{{ i.difficult }}</span>
+								</div>
+						</div>
+				</div>
+				</div>
+			
+		{% endfor %}
+	</div>
+</div>
+	</div>
+<p>{{ t.contribution }}</p>
+</article>

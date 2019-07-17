@@ -1,0 +1,203 @@
+$heading_size: 30px;
+$text_size: 18px;
+
+@mixin curhand {
+  cursor: pointer;
+}
+@mixin margins ($margin) {
+  margin: $margin;
+}
+@mixin pad ($pad) {
+  padding: $pad;
+}
+@mixin bg ($size, $repeat: no-repeat, $posTop: center, $posLeft: center) {
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $posTop $posLeft;
+}
+@mixin borderbtm ($color, $size: 1px) {
+  border-bottom: $size $color solid;
+}
+
+/**
+ * //////////////////////////////////
+ * Project Block
+ * //////////////////////////////////
+ */
+.project-item.not-show{ display: none; }
+
+.project-item{
+    margin-bottom: 15px;
+}
+
+.project-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 100%;
+}
+
+.project-border{
+    @include borderbtm( #888 );
+}
+
+.project-outer {
+
+    vertical-align: middle;
+    height: 100%;
+    
+    .project-headlines {
+
+        @include margins(5px 0);
+        @include borderbtm( #EEE );
+        font-size: $heading_size;
+
+    }
+
+    .project-inner > a { display: block; }
+
+    .project-img {
+        height: 200px;
+        display: block;
+        @include bg( cover );
+    }
+
+    span.tags {
+
+        @include borderbtm( #888 );
+        @include margins(0 5px);
+        font-size: ($heading_size / 2);
+        color: black;
+
+        &:first-child, &:last-child { margin-left: 0; }
+    }
+
+    .project-footer {
+
+        clear: both;
+        display: inline-block;
+        width: 100%;
+
+        .project-link {
+            display: inline-block;
+            position: relative;
+            float: left;
+        }
+
+        .project-timeline {
+
+            display: inline-block;
+            position: relative;
+            float: right;
+            font-size: $text_size;
+            font-style: italic;
+            vertical-align: middle;
+            @include margins(10px 0);
+            @include pad(5px 0);
+        }
+    }
+}
+
+
+/**
+ * //////////////////////////////////
+ * Project Tags Block
+ * //////////////////////////////////
+ */
+
+.tag-group{
+    @include margins(5px 0 25px 0);
+
+    .tag-cloud {
+        @include margins(0 2px);
+        @include curhand;
+
+        .active { background: #ccc; }
+    }
+}
+
+project-head {
+    font-family: BrixSlab-Bold;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 150%;
+  }
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-wrap: wrap;
+  }
+
+.blockly {
+    background: $sensebox-green;
+} 
+.arduino {
+background: #00979d;
+}
+.nepo {
+background: rgb(242, 148, 0);
+}
+
+.label-ticked{
+    color: white!important;
+    padding: 8px;
+    background: $sensebox-green;
+}
+
+.ribbon{
+    position: absolute;
+    right: -5px ;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px ;
+    height: 75px;
+    text-align: right;
+    span {
+        font-size: rem(12px);
+        font-weight: bold;
+        color: #FFF;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 20px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        width: 100px;
+        display: block;
+        position: absolute;
+        top: 19px; 
+        right: -21px;
+        before{
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 100%;
+            z-index: -1;
+            border-left: 3px solid main;
+            border-right: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid main;
+          
+        }
+        after{ 
+            content: "";
+            position: absolute ;
+            right: 0px; 
+            top: 100%;
+            z-index: -1;
+            border-left: 3px solid transparent;
+            border-right: 3px solid main;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid main;
+        }
+    }
+}
+
+.image-column {
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
