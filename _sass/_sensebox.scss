@@ -1354,11 +1354,11 @@ $carousel-height: 450px;
 }
 
 .collapse.in, .collapsing {
-  background-color:none;
-  box-shadow: none; 
-  padding-left: 15px;
-  padding-right: 15px;
+  background-color: #272727;
+  box-shadow: 0 0 30px 6px rgba(34, 34, 34, 0.25); 
 }
+
+
 
 .carousel-caption {
     z-index: 10;
