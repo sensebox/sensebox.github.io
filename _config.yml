@@ -36,7 +36,7 @@ collections:
   press:
   events:
   posts:
-  instructions:
+  instructions_edu:
     output: true
   instructions_home:
     output: true  

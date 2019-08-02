@@ -93,29 +93,4 @@ Dieses Video kann dir dabei helfen: Link zum Video
 
 ## Viel Spaß mit der senseBox App! 
 
-## YAML Front Matter
 
-```
----
-layout: project_page // Muss nicht verändert werden
-name: "Projekt Template" // Der Projektname taucht später in der Übersicht auf
-date: 2019-03-04 // Datum, an dem das Projekt erstellt bzw. bearbeitet wurde 
-author: Mario // Wer ist der Autor dieses Projektes
-abstract: "Ein tolles Projekt mit der senseBox" // Eine Kurze Beschreibung des Projektes, die auf der Übersichtsseite dargstellt wird
-image: logo_bunt.png // Das Titelbild liegt im Ordner Images/projects
-image0: /images/projects/parts/mcu_sensoren.png // der Zielordner für das erste Bild. Lege für dein Projekt ein Ordner mit allen Bildern an
-image1: /images/projects/sensor_display/Helligkeit_Display_Skizze_0.png
-image2: /images/projects/sensor_display/Helligkeit_Display_Skizze_1.png
-image3: /images/projects/sensor_display/Helligkeit_Display_Skizze_2.png
-image4: /images/projects/sensor_display/Helligkeit_Display_Skizze_3.png
-image5: /images/projects/sensor_display/Helligkeit_Display_Skizze_4.png
-material: // Liste kurz die verwendeten Bauteile auf
-    - senseBox MCU 
-    - OLED Display
-    - Umweltsensor
-ide: blockly    // weitere Möglichkeiten: "arduino", "nepo"
-lang: de // weitere Möglichkeiten: "en"
-tags: ["Geographie", "informatik"] // schaue welche Tags bisher existieren
-difficult: leicht // weitere Möglichkeiten: "mittel", "schwer"
----
-```

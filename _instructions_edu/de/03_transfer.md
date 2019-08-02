@@ -28,5 +28,3 @@ Ein alternativer Dateimanager wie zum Beispiel [muCommander](http://www.mucomman
 Über das Terminal kann mithilfe des dd Befehls die Datei auf die senseBox MCU kopiert werden.
 
 
-
-
