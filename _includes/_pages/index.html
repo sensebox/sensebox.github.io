@@ -45,7 +45,7 @@
       <div class="row blog-preview">
       {% assign posts = site.posts | sort: 'date' | reverse %}
       {% for post in posts %}
-        {% if forloop.index0 == 2 %}
+        {% if forloop.index0 == 2%}
           {% break %}
         {% else %}
           <a class="col-sm-6 col-md-6 col-lg-6 blog-preview-item" href="{{ site.baseurl | append: post.url }}">
@@ -97,17 +97,12 @@
       <h1 style="text-align: center;">{{ t.upcoming_events }}</h1>
       <div class="row events-row">
         {% assign events = site.events | sort: 'ending-date' %}
-        {% assign i=0 %}
-        {% for event in events %}      
+        {% for event in events %}
           {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-          {% capture eventendingdateunix %}{{event.ending-date | date: '%s'}}{% endcapture %} 
-            {% if eventendingdateunix > nowunix%}
-              {% include event_template.html event=event %}
-              {% assign i = i | plus: 1 %}
-            {% endif %}
-            {% if i == 6 %}
-              {% break %}
-            {% endif %} 
+          {% capture eventendingdateunix %}{{event.ending-date | date: '%s'}}{% endcapture %}
+          {% if eventendingdateunix > nowunix %}
+            {% include event_template.html event=event %}
+          {% endif %}
         {% endfor %}
       </div>
      <hr />

@@ -13,6 +13,9 @@ Most of the articles and press releases are written with [markdown](https://gith
 
 Add the event as a markdown file in the `_events` folder. Follow the same schema as existing files.
 
+### Adding new Projects
+
+Add the new projects a a markdown file in the `_projects` folder. Use the template and follow the same schema as existing files.
 
 ### Adding press reports
 
@@ -47,6 +50,7 @@ Add the biography as a markdown file in the format `name.md` in the `_team` fold
   - footer, header etc...
 - `_layouts`: default page layout
 - `_posts`: blog posts
+- `_projects`: project pages
 - `_press`: press articles
 - `_sass`: sass stylesheets
 - `assets`: .js scripts
