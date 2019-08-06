@@ -1,0 +1,5 @@
+- q: Kann ich auch andere Geräte als eine senseBox auf der openSenseMap registrieren?
+  a: Ja sicher! Jedes Gerät welches HTTP spricht, kann seine Sensordaten zur openSenseMap übertragen. Du kannst bei der Registrierung die Sensoren [selbst konfigurieren](https://osem.books.sensebox.de/de/osem_custom_sensor.html). Die Dokumentation wie die Sensordaten übertragen werden müssen, findest du in unseren [API-Docs](https://docs.opensensemap.org/).
+
+- q: Unter welcher Datenlizenz stehen die Daten der openSenseMap?
+  a: Die Daten der openSenseMap stehen unter der [Public Domain Dedication and License 1.0](https://opendatacommons.org/licenses/pddl/summary/) und sind somit Open Data. Dies erlaubt dir, die Daten in jeglicher Weise zu nutzen. Wir würden uns natürlich freuen von dir zu hören, wie du die Daten verwendest.

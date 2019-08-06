@@ -1,0 +1,73 @@
+{% assign t = site.data.translations.[page.lang].faq %}
+<div class="page-header">
+  <h1>FAQ</h1>
+  <p>{{ t.smalltalk }}</p>
+</div>
+{% assign osem = site.data.faq.[page.lang].osem %}
+{% assign home = site.data.faq.[page.lang].home %}
+{% assign edu = site.data.faq.[page.lang].edu %}
+<div class="container">
+<div class="row" id="home">
+
+    <h2>senseBox:home</h2>
+
+
+<div class="panel-group faq" id="accordion">
+    {% for qa in home %}
+  <div class="panel panel-default">
+      <div class="panel-heading">
+          <h4 class="panel-title">
+              <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_home{{ forloop.index }}">{{ qa.q | markdownify}}</a>
+          </h4>
+      </div>
+      <div id="collapse_home{{ forloop.index }}" class="panel-collapse collapse noCrossRef">
+          <div class="panel-body">
+              {{ qa.a | markdownify}}
+          </div>
+      </div>
+      {% endfor %}
+  </div>
+</div>
+
+<div class="row" id="edu">
+  <h2>senseBox:edu</h2>
+
+
+  <div class="panel-group faq" id="accordion">
+      {% for qa in edu %}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_edu{{ forloop.index }}">{{ qa.q | markdownify}}</a>
+            </h4>
+        </div>
+        <div id="collapse_edu{{ forloop.index }}" class="panel-collapse collapse noCrossRef">
+            <div class="panel-body">
+                {{ qa.a | markdownify}}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+  </div>
+
+<div class="row" id="osem">
+    <h2>openSenseMap</h2>
+
+
+    <div class="panel-group faq" id="accordion">
+        {% for qa in osem %}
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_osem{{ forloop.index }}">{{ qa.q | markdownify}}</a>
+              </h4>
+          </div>
+          <div id="collapse_osem{{ forloop.index }}" class="panel-collapse collapse noCrossRef">
+              <div class="panel-body">
+                  {{ qa.a | markdownify}}
+              </div>
+          </div>
+          {% endfor %}
+      </div>
+  </div>
+</div>
