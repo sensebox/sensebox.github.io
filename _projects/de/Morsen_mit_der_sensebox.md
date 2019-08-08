@@ -4,7 +4,7 @@ name: "Morsen mit der senseBox"
 date: 2019-07-18
 author: Lia
 abstract: "Ein tolles Projekt mit der senseBox"
-image: logo_bunt.png
+image: /images/projects/kaminfeuer_setup.png
 
 image1: /images/projects/kaminfeuer_setup.png
 image2: /images/projects/Lampe_ansteuern.jpg
