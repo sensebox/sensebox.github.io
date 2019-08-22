@@ -29,24 +29,38 @@ lang: de
 tags: ["Elektrotechnik", "Informatik"]
 difficult: schwierig
 ---
+# NO2 und O3 Messungen in Berlin
+
+Gemeinsam mit dem Futurium in Berlin ein gewagtes Projekt durchgeführt. 10 Berliner Bürger konnten an einer Verlosung teilnehmen 
+und eine senseBox mit NO2 und O3 Sensor gewinnen. Bei einem Workshop haben wir Sie gemeinsam zusammengebaut und die Bürger wurden
+aufgefordet diese Zuhause aufzuhängen. In die Details des Projekts möchte ich hier nicht eingehen, für uns war es aber die Chance
+das erste Mal senseBoxen mit NO2 und O3 Sensoren auszustatten. Im folgenden erzähle ich deshalb etwas über den Aufbau, sowie unsere
+Erfahrungen mit dem Sensor. Wir freuen uns über Rückmeldungen und Eure Erfahrungen zum Thema in diesem Forum-Post: https://forum.sensebox.de/t/stickoxyd-sensor/206/5
+
 # Vorbereitungen für den Anschluss der Sensoren
 
-Ziel ist es, eine senseBox Sensorstation aufzubauen welche neben Feinstaub, Temperatur, Luftfeuchte, Luftdruck, Beleuchtungsstärke und UV zudem NO2 und O3 Messwerte sendet. Dieses Kapitel ist nicht für Einsteiger geeignet, zudem überspringt es eine detaillierte Beschreibung der Grundlagen beim Anschluss der Sensoren, ausgenommen der NO2 & O3 Sensorik. Bitte nutze andere Projekte und Anleitungen falls du eine genauere Erklärung beim Anschluss einzelner Sensoren brauchst.
+Neben den üblichen senseBox Sensoren, also Feinstaub, Temperatur, Luftfeuchte, Luftdruck, Beleuchtungsstärke und UV soll die senseBox nun NO2 und O3 Messwerte sendet. 
+Eine detaillierte Beschreibung der Grundlagen beim Anschluss der üblichen senseBox Sensoren überspringe ich, aber konzentriere mich auf die NO2 & O3 Sensorik.
+Bitte nutze andere Projekte und Anleitungen falls du eine genauere Erklärung beim Anschluss einzelner Sensoren brauchst.
 
 ## Sicherheitshinweiße
-Bitte beachte, dass die Alphasense Sensorik sehr empflindlich ist. Bitte fassen nie direkt auf die Membran der Sensoren, da Fettpartikel der Haut an der Membran hängen bleiben und dadurch die Messwerte zerstören. 
+Falls hier jemand das Projekt nachbaut, beachte bitte, dass die Alphasense Sensorik sehr empflindlich ist. Bitte fassen nie direkt auf die Membran der 
+Sensoren, da Fettpartikel der Haut an der Membran hängen bleiben und dadurch die Messwerte zerstören. 
 
-Die Sensoren müssen zudem jährlich kalibriert werden. Dafür müssen Sie in ein Labor eingeschickt werden.
+Die Sensoren müssen zudem jährlich kalibriert werden. Dafür müssen Sie in ein Labor eingeschickt werden. Wir versuchen das Set irgendwann
+als Erweiterung anbieten zu können, wir wissen aber nochnicht genau wie, deshalb könnt ihr die Sensoren aktuell nicht auf www.sensebox.kaufen
+besorgen. Den Rest gibt's natürlich dort ;-) .
 
 ## Grundlagen Anschluss der Hardware
 Bitte schließe alle Sensoren außer den NO2 & O3 Sensor an die senseBox-MCU, wie in diesem Video erklärt.
 
 [![Video](http://img.youtube.com/vi/dUuRfZI39U8&feature=youtu.be/0.jpg)](http://www.youtube.com/watch?v=dUuRfZI39U8&feature=youtu.be)
 
- Verbinde jedoch die Verbindungsplatte noch nicht mit dem Mikrocontroller und schließe das Gehäuse auch noch nicht, da natürlich noch die Erweiterung angeschlossen werden muss. 
+Verbinde jedoch die Verbindungsplatte noch nicht mit dem Mikrocontroller und schließe das Gehäuse 
+auch noch nicht, da natürlich noch die Erweiterung angeschlossen werden muss. 
 
 ## Anschluss des NO2 & O3 Sensors
-Das Erweiterungsset für NO2 & O3 besteht aus folgenden Komponenten:
+Das Erweiterungsset für NO2 & O3 welches wir benutzt haben besteht aus folgenden Komponenten:
 - Einem gebohrten Aluminium Gehäuse für die beiden Sensoren
 - Einem Alphasense NO2 Sensor: NO2-A43F
 - Einem Alphasense OX Sensor: OX-A431
@@ -78,7 +92,7 @@ Jetzt musst du noch den Sensor am Gehäuse montieren. Auchte darauf, dass der Di
 
 ### Verbidnung des NO2 & O3 Sensors mit dem Mikrontroller
 
- Das Kabel das AFE wird mit der Verstärker Platine verbunden. In die Verstärker Platine werden außerdem die beiden JST-JST Verbindungskabel gesteckt und durch die M20 Verschraubung nach außern gefädelt. Das Kabel welches links vor dem Verstärker eingesteckt wird, wird in einen der freuen I2C/Wire Ports auf dem senseBox MCU eingesteckt. Das Kabel aus dem rechten Port auf dem Verstärker wird mit dem Digital A Port der senseBox MCU verbunden.  
+ Das Kabel das AFE wird mit der Verstärker-Platine verbunden. In die Verstärker Platine werden außerdem die beiden JST-JST Verbindungskabel gesteckt und durch die M20 Verschraubung nach außen gefädelt. Das Kabel welches links vor dem Verstärker eingesteckt wird, wird in einen der freien I2C/Wire Ports auf dem senseBox MCU eingesteckt. Das Kabel aus dem rechten Port auf dem Verstärker wird mit dem Digital A Port der senseBox MCU verbunden.  
 
 {% include image.html image=page.image6 %}
 
@@ -190,6 +204,8 @@ Jetzt musst du nur noch den Code hochladen indem du auf den Uploud Pfeil in der 
 ## Aufstellungsort
 
 Das wars erstmal, suche einen guten Aufstellungsort für deine senseBox und achte darauf, dass der NO2 / O3 Sensor unter keinen Umständen Feuchte oder Staub ausgesetzt ist.
+Bitte beachtet außerdem, dass wir keine Experten im Bereich chemische Gase sind. Deshalb sind Fehler in diesem Prototypen möglich. Wir freuen
+und auf den Austausch mit Euch.
 
 
 ```arduino
