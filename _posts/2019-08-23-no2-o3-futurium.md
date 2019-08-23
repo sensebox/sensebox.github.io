@@ -43,7 +43,7 @@ besorgen. Den Rest gibt's natürlich dort ;-) .
 ## Grundlagen Anschluss der Hardware
 Bitte schließe alle Sensoren außer den NO2 & O3 Sensor an die senseBox-MCU, wie in diesem Video erklärt.
 
-[![Video](http://img.youtube.com/vi/dUuRfZI39U8&feature=youtu.be/0.jpg)](http://www.youtube.com/watch?v=dUuRfZI39U8&feature=youtu.be)
+[![Video](https://img.youtube.com/vi/dUuRfZI39U8&feature=youtu.be/0.jpg)](https://www.youtube.com/watch?v=dUuRfZI39U8&feature=youtu.be)
 
 Verbinde jedoch die Verbindungsplatte noch nicht mit dem Mikrocontroller und schließe den Deckel des Gehäuses 
 auch noch nicht, da natürlich noch die Erweiterung angeschlossen werden muss. 
