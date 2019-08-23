@@ -5,7 +5,7 @@
   </div>
 
 
-<h3 class="smallcaps" id="Material">Books</h3>
+<h2 class="smallcaps" id="Material">Books</h2>
 
 <p>  {{ t.description_book }}</p>
 <div class="container">
@@ -22,20 +22,16 @@
 {% for material in material %}
   {% capture firstLastInRow %}{% cycle 'first', 'last' %}{% endcapture %}
  <div class="col-lg-3 col-sm-6">
-
-      <div class="card" style="cursor: pointer;" data-toggle="collapse" data-target="#desc_{{ material.position }}">
+      <div class="card" style="cursor: pointer;">
           <canvas class="header-bg" width="250" id="header-blur" style="background-image: url({{ material.bgImage }});"></canvas>
           <div class="content">
             <h4 style="clear:both">{{ material.name }}</h4>
-            <h5 style="clear:both">{{ material.organisation }}</h5>
-            <div id="desc_{{ material.position }}" class="collapse">
-              <div>{{ material.description }}</div>
-              <a class="social-media" href="{{ material.link_mcu }}" target="_blank" role="button" ><img src="{{ site.baseurl | append: '/images/iconmonstr-book-20.svg'}}" alt="homepage icon"></a>
+            <div id="desc_{{ material.position }}">
+              <a class="stretched-link" href="{{ material.link_mcu }}"></a>
             </div>
           </div>
       </div>
     </div>
-
   <!--{% if firstLastInRow == 'last' %}
     </div>
   {% endif %}-->
@@ -52,7 +48,7 @@
 {% endfor %}
   </div>
 
-<h3 class="smallcaps" id="Material"><p>  {{ t.description_teaching_short }}</p></h3>
+<h2 class="smallcaps" id="Material">{{ t.description_teaching_short }}</h2>
 <p>  {{ t.description_teaching }}</p>
 
 {% assign teaching = site.data.translations.[page.lang].teaching_content | sort: 'position' %}
@@ -69,18 +65,16 @@
   {% capture firstLastInRow %}{% cycle 'first', 'last' %}{% endcapture %}
     <div class="col-md-3">
 
-      <div class="card" style="cursor: pointer;" data-toggle="collapse" data-target="#desc_{{ teaching.position }}">
+      <div class="card" style="cursor: pointer;">
           <canvas class="header-bg" width="250" id="header-blur" style="background-image: url({{ teaching.bgImage }});"></canvas>
           <div class="content">
             <h4 style="clear:both">{{ teaching.name }}</h4>
-            <h5 style="clear:both">{{ teaching.organisation }}</h5>
-            <div id="desc_{{ teaching.position }}" class="collapse">
-              <div>{{ teaching.description }}</div>
+            <div id="desc_{{ teaching.position }}">
               {% if teaching.download %}
-              <a class="social-media" href="{{ teaching.download }}" target="_blank" role="button" ><img src="{{ site.baseurl | append: '/images/iconmonstr-download-9.svg'}}" alt="homepage icon"></a>
+              <a class="stretched-link" href="{{ teaching.download }}" ></a>
               {% endif %}
               {% if teaching.link %}
-              <a class="social-media" href="{{teaching.link }}" target="_blank" role="button" ><img src="{{ site.baseurl | append: '/images/iconmonstr-link-1.svg'}}" alt="homepage icon"></a>
+              <a class="stretched-link" href="{{teaching.link }}"></a>
               {% endif %}
             </div>
           </div>
@@ -100,7 +94,7 @@
 
 </div>
 
-<h3 class="smallcaps" id="Material">{{ t.description_more_short }}</h3>
+<h2 class="smallcaps" id="Material">{{ t.description_more_short }}</h2>
 <p>{{ t.description_more }}</p>
 
 {% assign more = site.data.translations.[page.lang].material_more | sort: 'position' %}
@@ -117,24 +111,13 @@
   {% capture firstLastInRow %}{% cycle 'first', 'last' %}{% endcapture %}
     <div class="col-md-3">
 
-      <div class="card" style="cursor: pointer;" data-toggle="collapse" data-target="#desc_{{ more.position }}">
+      <div class="card" style="cursor: pointer;">
           <canvas class="header-bg" width="250" id="header-blur" style="background-image: url({{ more.bgImage }});"></canvas>
           <div class="content">
             <h4 style="clear:both">{{ more.name }}</h4>
-            <h5 style="clear:both">{{ more.organisation }}</h5>
-            <div id="desc_{{ more.position }}" class="collapse">
-              <div>{{ more.description }}</div>
-              {% if more.download %}
-              <a class="social-media" href="{{ site.baseurl | append: more.download }}" target="_blank" role="button" ><img src="{{ site.baseurl | append: '/images/iconmonstr-download-9.svg'}}" alt="homepage icon"></a>
-              {% endif %}
-              {% if more.edulink %}
-              <a class="btn" href="{{more.edulink }}" target="_blank" role="button">:edu</a>
-              {% endif %}
-              {% if more.homelink %}
-              <a class="btn" href="{{more.homelink }}" target="_blank" role="button">:home</a>
-              {% endif %}
+            <div id="desc_{{ more.position }}">
               {% if more.link %}
-              <a class="social-media" href="{{more.link }}" target="_blank" role="button" ><img src="{{ site.baseurl | append: '/images/iconmonstr-link-1.svg'}}" alt="homepage icon"></a>
+              <a class="stretched-link" href="{{more.link }}" ></a>
               {% endif %}
             </div>
           </div>

@@ -2,14 +2,14 @@
 	$(document).ready(function(){
 		var selectedTags = [];
 		$(document).on('click','.tag-filter',function(){
-			console.log("Tags", selectedTags);
 			if( $(this).hasClass('all')){
 				selectedTags = [];
 				$('span.tag-filter').removeClass("label-ticked");
-				$(this).addClass("label-ticked");
+				//$(this).addClass("label-ticked");
 				$('.project-item').showAll();
 			}else{
-				if( $(this).hasClass("label-ticked") ){
+				if($(this).hasClass("label-ticked")){
+					console.log("remove class");
 					selectedTags.removeTag( $(this).data('tag') );
 					$(this).removeClass("label-ticked");
 				}
@@ -17,6 +17,7 @@
 					selectedTags.addTag( $(this).data('tag') );
 					$(this).addClass("label-ticked");
 				}
+
 				$('.project-item').filterTags( selectedTags );
 			}
 		});
@@ -37,10 +38,8 @@
 			console.log(this);
 	    return this.each(function() {
 				var itemTagArray = JSON.parse( $(this).attr('data-tags') );
-				console.log(tagNames);
 				
 				var unfound = $( tagNames ).filter( itemTagArray ).get();
-				console.log(unfound);
 	    	//console.log("unfound", unfound, itemTagArray.length);
 	    	if( unfound.length != tagNames.length ){
 			//if($.inArray(tagNames, itemTagArray) === -1){
