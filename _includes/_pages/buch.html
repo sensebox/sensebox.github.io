@@ -1,36 +1,90 @@
-
 <div class="page-header">
-  <h1>Das senseBox Buch</h1>
+    <h1>Das senseBox Buch</h1>
+</div>
+<div class="container">
+<div class="row">
+<p>Wir freuen uns, dass das senseBox Buch den Weg zu dir gefunden hat. Auf dieser Seite werden Begleitmaterialien und die
+Lösungen zu den einzelnen Kapiteln bereitgestellt.</p>
 </div>
 
-<h2>Blockly Dokumentation und Forum</h2>
 
-<p>Solltet ihr noch mehr Informationen zu den einzelen Blöcken benötigen findet ihr diese hier:
-https://sensebox.github.io/books-v2/blockly/de/</p>
+    <div class="row">
+        <h2>Mac OS X Kopiertool</h2>
+        <hr>
+        <p>Unter MacOS funktioniert das kopieren der .BIN per Drag & Drop leider zurzeit noch nicht. Eine Möglichkeit
+            ist die Datei im Terminal per dd-Befehl zu kopieren (nur erfahrenen Nutzern zu empfehlen!) oder einen
+            alternativen Dateimanager wie zum Beispiel muCommander zu verwenden.
+            Am einfachsten funktioniert es mit unserem senseBox-Sketch Uploader. Einfach die Zip Datei entpacken und das
+            Programm starten.</p>
+        <a class="btn" href="{{ site.baseurl | append: '/docs/senseBox_Sketch_Uploader_DE.zip' }}" target="_blank"
+            role="button">Download</a>
+    </div>
 
+    <h2>Blockly Dokumentation und Forum</h2>
 
-<h2>Mac OS X Kopiertool</h2>
+    <p>Solltet ihr noch mehr Informationen zu den einzelen Blöcken und Blockly benötigen findet ihr diese hier. Falls
+        ihr einmal nicht weiterkommt könnt ihr eure Frage im Forum stellen:</p>
 
-<p>Unter MacOS funktioniert das kopieren der .BIN per Drag & Drop leider zurzeit noch nicht. Eine Möglichkeit ist die Datei im Terminal per dd-Befehl zu kopieren (nur erfahrenen Nutzern zu empfehlen!) oder einen alternativen Dateimanager wie zum Beispiel muCommander zu verwenden.
-Am einfachsten funktioniert es mit unserem senseBox-Sketch Uploader. Einfach die Zip Datei entpacken und das Programm starten.</p>
-              <a class="btn" href="{{ site.baseurl | append: '/docs/senseBox_Sketch_Uploader_DE.zip' }}" target="_blank" role="button">Download</a>
+    <div class="row">
+        <div class="col-lg-3 col-sm-6 col-md-offset-3">
+            <div class="card" style="cursor: pointer;">
+                <canvas class="header-bg" width="250" id="header-blur"
+                    style="background-image: url({{ site.baseurl | append: '/images/material/blockly_book.png' }});"></canvas>
+                <div class="content">
+                    <h4 style="clear:both">Blockly Dokumentation</h4>
+                    <div id="Blockly">
+                        <a class="stretched-link" href="https://sensebox.github.io/books-v2/blockly/de/"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 ">
+            <div class="card" style="cursor: pointer;">
+                <canvas class="header-bg" width="250" id="header-blur"
+                    style="background-image: url({{ site.baseurl | append: '/images/forum.png' }});"></canvas>
+                <div class="content">
+                    <h4 style="clear:both">senseBox Forum</h4>
+                    <div id="forum">
+                        <a class="stretched-link" href="https://forum.sensebox.de"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="row">
+        <h2>Lösungen</h2>
+        <hr>
+        <p>Hier findest du Lösungen zu den einzelnen Projekten. Die Lösungen werden direkt ein einem neuen Tab geöffnet
+            und in Blockly angezeigt.</p>
 
-<h2>Lösungen</h2>
-<p>Hier findest du Lösungen zu den einzelnen Projekten. Die Lösungen werden direkt ein einem neuen Tab geöffnet und in Blockly angezeigt.</p>
-
-<ul>
-    <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel2" target="_blank">Hello World</a></li>
-    <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel3" target="_blank">Erfasse deine Umwelt mit Sensoren</a></li>
-    <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel4" target="_blank">Mit Knöpfen zur Logik</a></li>
-    <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel5" target="_blank">Der akustische Schalter</a></li>
-    <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel6" target="_blank">Zufälle mit dem senseBox-Orakel</a></li>
-    <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel7" target="_blank">Jetz wird's bunt!</a></li>
-    <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel8" target="_blank">Einparken leicht gemacht</a></li>
-    <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel9" target="_blank">Verkehrszähler</a></li>
-    <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel10" target="_blank">Techno mit der senseBox</a></li>
-    <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel11" target="_blank">IoT-Wetterstation</a></li>
-    <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel12" target="_blank">IoT-Alarmanlage</a></li>
-    <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel13" target="_blank">Webserver</a></li>
-    <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel14" target="_blank">Gehe auf Punktefang</a></li>
-</ul>
+        <ul>
+            <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel2"
+                    target="_blank">Hello World</a></li>
+            <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel3"
+                    target="_blank">Erfasse deine Umwelt mit Sensoren</a></li>
+            <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel4"
+                    target="_blank">Mit Knöpfen zur Logik</a></li>
+            <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel5"
+                    target="_blank">Der akustische Schalter</a></li>
+            <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel6"
+                    target="_blank">Zufälle mit dem senseBox-Orakel</a></li>
+            <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel7"
+                    target="_blank">Jetz wird's bunt!</a></li>
+            <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel8"
+                    target="_blank">Einparken leicht gemacht</a></li>
+            <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel9"
+                    target="_blank">Verkehrszähler</a></li>
+            <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel10"
+                    target="_blank">Techno mit der senseBox</a></li>
+            <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel11"
+                    target="_blank">IoT-Wetterstation</a></li>
+            <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel12"
+                    target="_blank">IoT-Alarmanlage</a></li>
+            <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel13"
+                    target="_blank">Webserver</a></li>
+            <li><a href="https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=Kapitel14"
+                    target="_blank">Gehe auf Punktefang</a></li>
+        </ul>
+    </div>
+</div>
