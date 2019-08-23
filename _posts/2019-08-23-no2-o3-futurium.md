@@ -1,33 +1,21 @@
 ---
-layout: project_page
-name: "NO2 & O3 Sensoren Erweiterung"
+layout: post
+title: "senseBox:home mit Stickstoffoxid- und Ozon-Sensoren "
 date: 2019-06-30
 author: David & Jan
-abstract: "Aufbau einer NO2 und O3 Sensors mit der senseBox welche mit Hilfe des Wifi-Bees an die openSenseMap sendet."
-image: final_station.jpg
-image1: /images/projects/alphasense/housing-outside.png
-image2: /images/projects/alphasense/housing-parts.png
-image3: /images/projects/alphasense/afe-sensor-board.png
-image4: /images/projects/alphasense/ring-membran.png
-image5: /images/projects/alphasense/skews-afe.png
-image6: /images/projects/alphasense/verstaerker-board.png
-image7: /images/projects/alphasense/order-sensors.png
-image8: /images/projects/alphasense/overview-sensors.png
-image9: /images/projects/alphasense/include_libs.png
-image10: /images/projects/alphasense/calibration-sheet.png
-material:
-    - senseBox Microcontroller (MCU)
-    - 2x JST-JST Kabel (lang 500mm) 
-    - Wifi-Bee
-    - Temperatur-/Luftfeuchtigkeitssensor
-    - Luftdrucksensor
-    - Beleuchtungsstärke-/UV-Sensor
-    - Feinstaub (SDS011)
-    - Alphasense NO2 & O3 Erweiterung
-ide: arduino    
+abstract: "In einem ersten Test haben wir die senseBoxh:home mit einem Stickstoffoxid (NO2) und Ozon (O3) Sensor ausgestattet."
+thumbnail: /images/blog_images/no2-o3-futurium/final_station.jpg
+image1: /images/blog_images/alphasense/housing-outside.png
+image2: /images/blog_images/no2-o3-futurium/housing-parts.png
+image3: /images/blog_images/no2-o3-futurium/afe-sensor-board.png
+image4: /images/blog_images/no2-o3-futurium/ring-membran.png
+image5: /images/blog_images/no2-o3-futurium/skews-afe.png
+image6: /images/blog_images/no2-o3-futurium/verstaerker-board.png
+image7: /images/blog_images/no2-o3-futurium/order-sensors.png
+image8: /images/blog_images/no2-o3-futurium/overview-sensors.png
+image9: /images/blog_images/no2-o3-futurium/include_libs.png
+image10: /images/blog_images/no2-o3-futurium/calibration-sheet.png
 lang: de
-tags: ["Elektrotechnik", "Informatik"]
-difficult: schwierig
 ---
 # Stickstoffdioxid (NO2) und Ozon (O3) Messungen in Berlin
 
