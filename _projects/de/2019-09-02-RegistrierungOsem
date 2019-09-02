@@ -1,0 +1,59 @@
+layout: project_page
+name: "Einfache Registrierung auf der openSenseMap ohne Programmierkenntnisse"
+date: 2019-09-02
+author: Verena
+abstract: "Du kannst ohne jegliche Prommierkenntnisse eine senseBox auf der openSenseMap registrieren"
+image: Titelbild_RegistrierungOsem.PNG
+image1: /images/projects/RegistrierungOsem/NeueSenseBox.PNG
+image2: /images/projects/RegistrierungOsem/Zusammenfassung.PNG
+image3: /images/projects/RegistrierungOsem/ArduinoCode.PNG
+
+material:
+    - senseBox MCU
+    - WiFi-Bee
+    - JST-Kabel
+    - beliebige Sensoren
+ide:   
+lang: de
+tags: ["Geographie"]
+difficult: leicht
+---
+# Registrierung auf der openSenseMap ohne Pragrammierkenntnisse
+
+Ziel dieses Projektes ist es, deine senseBox auf der openSenseMap zu registrieren, ohne dass du jegliche Programmierkenntnisse 
+besitzen und anwenden musst. 
+
+## Aufbau
+Schließe die Sensoren deiner Wahl mithilfe der mitgelieferten JST-Kabel an die I2C/Wire Anschlüsse der senseBox MCU an.
+
+## Registrierung auf der openSenseMap
+
+### Schritt 1: Anlegen eines Benutzerkontos
+
+Damit deine senseBox Teil der openSenseMap werden und somit weltweit zugängliche Daten sammeln kann, ist es notwendig, dass du
+dich auf der Plattform registrierst. Dazu klicke oben rechts in der Ecke auf den Button ‚Anmelden‘ und fülle alle notwendigen 
+Felder aus. Hast du die Anlegung eines Benutzerkontos fertiggestellt, so kannst du beginnen und deine senseBox auf der openSenseMap 
+registrieren. 
+
+
+### Schritt 2: Neue senseBox hinzufügen
+
+Um deine eigene senseBox auf der Karte finden zu können, musst du sie zuerst einmal einrichten. Klicke dazu im Dropdown-Menü auf
+‚Neue senseBox‘. Dann öffnet sich eine Seite, auf der du der senseBox einen Namen geben, den Aufstellungsort, den Standort sowie
+die Hardware bestimmen kannst. Des Weiteren solltest du an dieser Stelle die Verbindungsart per WiFi sowie die angeschlossenen 
+Sensoren auswählen. 
+
+{% include image.html image=page.image1 %}
+
+### Schritt 3: Registrierung abschließen
+Hast du die Angaben bestätigt, so erhältst du eine Übersicht über die Daten der senseBox und die dazugehörigen Sensoren und IDs. 
+
+{% include image.html image=page.image2 %}
+
+Nun hast du die Möglichkeit, ohne jegliche eigenständige Programmierung per Arduino oder Blockly einen passenden Sketch zu 
+erhalten, den du anschließend per Drag&Drop auf deine senseBox ziehen kannst. Konfiguriere dazu im grün hinterlegten Feld dein 
+WiFi, klicke auf ‚Kompilieren‘ und schon erhältst du eine sketch.bin Datei, die du auf deine senseBox MCU kopieren kannst.
+
+{% include image.html image=page.image3 %}
+
+Damit ist die Registrierung deiner senseBox vollständig abgeschlossen und sie ist nun ein Teil der openSenseMap. 
