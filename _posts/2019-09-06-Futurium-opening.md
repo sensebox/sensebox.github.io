@@ -14,7 +14,7 @@ lang: de
 
 Eröffnung des Futuriums in Berlin
 ============
-Gestern hat das [Futurium](https://futurium.de/) in Berlin in Sichtweite des Bundesministeriums für Bildung und Forschung (BMBF), des Bundeskanzleramtes und des Hauptbahnhofs eröffnet. Im Haus der Zukünfte dreht sich alles um die Frage „Wie wollen wir leben?“. Besucher*innen können kostenlos die spannende Ausstellung besuchen, und viele mögliche Zukünftsentwürfe entdecken, diskutieren und im Futurium Lab eigene Ideen ausprobieren. 
+Gestern hat das [Futurium](https://futurium.de/) in Berlin in Sichtweite des Bundesministeriums für Bildung und Forschung (BMBF), des Bundeskanzleramtes und des Hauptbahnhofs eröffnet. Im Haus der Zukünfte dreht sich alles um die Frage „Wie wollen wir leben?“. Besucher*innen können kostenlos die spannende Ausstellung besuchen, und viele mögliche Zukunftsentwürfe entdecken, diskutieren und im Futurium Lab eigene Ideen ausprobieren. 
 
 Die senseBox ist dabei zu einem zentralen Baustein des Hauses geworden. Ein integriertes Konzept verzahnt viele Ideen der senseBox mit der Idee mögliche Zukunftsvisionen zu kommunizieren, zu verstehen und mitzugestalten. Aber der Reihe nach.
 
