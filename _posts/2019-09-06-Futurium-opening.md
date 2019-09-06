@@ -4,7 +4,7 @@ title: "Das Futurium in Berlin ist eröffnet"
 date: 2019-09-06
 author: Thomas
 abstract: "Am 5. September wurde das Futurium in Berlin feierlich eröffnet. Im Futurium könnt Ihr die senseBox an verschiedenen Stellen sehen und ausprobieren."
-thumbnail: /images/blog_images/futurium_opening/.jpg
+thumbnail: /images/blog_images/futurium_opening/titel.jpg
 image1: /images/blog_images/futurium_opening/exponat.png
 image2: /images/blog_images/futurium_opening/openSenseMap_visualisierung.png
 image3: /images/blog_images/futurium_opening/mieris.png
