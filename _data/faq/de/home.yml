@@ -5,7 +5,7 @@
   a: >
     Ja! Die senseBox:home basiert auf der Arduino Plattform und kann somit alle Arduino kompatiblen Sensoren abfragen.
     Dazu musst du deinen Sketch anpassen und danach deiner senseBox auf der openSenseMap den [neuen Sensor](https://osem.books.sensebox.de/de/osem_bearbeiten.html) hinzufügen.
-- q: Wäre ein schattiger Ort besser oder beeinflusst der die Daten zu stark?
+- q: Welche technischen Voraussetzungen müssen gegeben sein und wie muss der Ort beschaffen sein, an dem die senseBox befestigt wird?
   a: >
     Dort kommt es auf den Sensor an. Temperatur -und Luftfeuchtigkeit dürfen nicht mit in die eigentliche Station gelegt werden, sondern müssen außerhalb des Gehäuses im Schatten angebracht werden.
     Der Rest der Sensoren, darf gerne auch in der Sonne stehen.

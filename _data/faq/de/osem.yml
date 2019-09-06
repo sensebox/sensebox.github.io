@@ -3,3 +3,17 @@
 
 - q: Unter welcher Datenlizenz stehen die Daten der openSenseMap?
   a: Die Daten der openSenseMap stehen unter der [Public Domain Dedication and License 1.0](https://opendatacommons.org/licenses/pddl/summary/) und sind somit Open Data. Dies erlaubt dir, die Daten in jeglicher Weise zu nutzen. Wir würden uns natürlich freuen von dir zu hören, wie du die Daten verwendest.
+
+- q: Wie kann ich die Daten meiner senseBox herunterladen?
+  a: >
+    Es ist Möglich, von allen Stationen die Daten per CSV herunterzuladen Dazu gibt es unterschiedliche Möglichkeiten.
+
+    - Unser [Archiv](https://archive.opensensemap.org) Dort liegen tageweise die Daten jeder Station die Livedaten übertragt. Allerdings handelt es sich dabei um Rohdaten Du nutzt die Filter und Downloadfunktionalitäten der openSenseMap
+    Über den Menüpunkt “Filter” kannst du dir zB. nur deine Station filter oder auch andere. Wenn du dann in den Menüpunkt “Download” wechselst, kann du für die vorher gefilterten Stationen und Messwerte gruppieren lassen nach 10 Minuten, Stunden oder Tagesmitteln. 
+    
+    - Unter Operation kannst du dann eine statistische Methode wählen, wie zB. Minimum oder Maximum etc. So solltest du deinen Anwedungsfall abbilden können.
+    
+    - Du lädst die Daten direkt über die API herunter. Die passende Dokumentation findest du unter https://docs.opensensemap.org/
+- q: 
+  a:
+    
