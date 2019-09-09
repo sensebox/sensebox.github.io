@@ -18,7 +18,7 @@ material:
     - OLED Display
     - Temperatur und Luftfeuchtesensor(HDC 1080)
     - Feinstaubsensor(SDS011)
-    - GPS Modul auf UART gelötet(CAM-M8Q)
+    - GPS Modul
     - LoRa Bee
     - JST Kabel
 ide: arduino    
