@@ -50,7 +50,7 @@ Man braucht:
 
 ## TheThingsNetwork & OpenSenseMap(OSeM)-Setup
 
-Bevor du die SenseBox mit der [OSeM](http://opensesemap.org) verbinden kannst, musst du dir erst einmal ein [TheThingsNetwork](https://console.thethingsnetwork.org) Konto, eine Application und ein Device erstellen. Dabei erhältst du eine Application EUI, eine Device EUI und einen Appkey, diese musst du später im Code eintragen. Dabei ist das Format der Keys und EUI´s wichtig
+Bevor du die SenseBox mit der [OSeM](https://opensesemap.org) verbinden kannst, musst du dir erst einmal ein [TheThingsNetwork](https://console.thethingsnetwork.org) Konto, eine Application und ein Device erstellen. Dabei erhältst du eine Application EUI, eine Device EUI und einen Appkey, diese musst du später im Code eintragen. Dabei ist das Format der Keys und EUI´s wichtig
 {% include image.html image=page.image0 %}
 Bei der Registrierung bestimmst du außerdem noch eine ``App_ID`` und eine ``Dev_ID``, diese müssen im TheThingsNetwork-Reiter in der OpenSenseMap eingetragen werden:
 {% include image.html image=page.image1 %}
