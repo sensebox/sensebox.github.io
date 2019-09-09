@@ -32,7 +32,7 @@ difficult: sehr schwer
 In diesem Projekt wird mit der SenseBoxMCU ein mobiler Feinstaubmesser gebaut, der auf Knopfdruck seine Messwerte auf der SD-Karte speichert und sie mit GPS-Koordinaten an die OpenSenseMap schickt. Dafür wird in dieser Variante der LoRa Funkstandard benutzt, der die Daten über TheThingsNetwork an die OpenSenseMap sendet.
 
 ## Aufbau
-Für den Aufbau werden folgende Komponenten verwendet. Achte darauf, dass das LoRa-Bee auf den XBEE Steckplatz 1 aufgesteckt werden muss.
+Für den Aufbau werden folgende Komponenten verwendet. Achte darauf, dass das LoRa-Bee auf den XBEE Steckplatz 1 und der Feinstaubsensor auf UART 2 aufgesteckt werden muss. 
 Man braucht:
   - den LoRa Bee
 
@@ -49,7 +49,8 @@ Man braucht:
 
 
 ## TheThingsNetwork & OpenSenseMap(OSeM)-Setup
-Bevor du die SenseBox mit der OSeM verbinden kannst, musst du dir erst einmal ein TheThingsNetwork Konto, eine Application und ein Device erstellen. Dabei erhältst du eine Application EUI, eine Device EUI und einen Appkey, diese musst du später im Code eintragen. Dabei ist das Format der Keys und EUI´s wichtig
+
+Bevor du die SenseBox mit der [OSeM](http://opensensemap.org) verbinden kannst, musst du dir erst einmal ein [TheThingsNetwork](http://www.console.thehingsnetwork.org) Konto, eine Application und ein Device erstellen. Dabei erhältst du eine Application EUI, eine Device EUI und einen Appkey, diese musst du später im Code eintragen. Dabei ist das Format der Keys und EUI´s wichtig
 {% include image.html image=page.image0 %}
 Bei der Registrierung bestimmst du außerdem noch eine ``App_ID`` und eine ``Dev_ID``, diese müssen im TheThingsNetwork-Reiter in der OpenSenseMap eingetragen werden:
 {% include image.html image=page.image1 %}
