@@ -11,7 +11,7 @@ image2: /images/projects/mobile_feinstaubstation/lora/decodingprofile.png
 image3: /images/projects/mobile_feinstaubstation/lora/osem_httpinteg.png
 image4: /images/projects/mobile_feinstaubstation/lora/lora_oled.jpg
 image5: /images/projects/mobile_feinstaubstation/lora/final_osem.jpg
-image6: /images/projects/mobile_feinstaubstation/lora/osem_decode.png
+image6: /images/projects/mobile_feinstaubstation/lora/osem_decoder.png
 image7: /images/projects/mobile_feinstaubstation/lora/gps_uart.jpg
 material:
     - senseBox MCU
