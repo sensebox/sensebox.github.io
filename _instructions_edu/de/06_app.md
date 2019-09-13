@@ -30,9 +30,6 @@ Unter MacOS kannst du zum kopieren der Datei unsere App verwenden, die du <a hre
 
 #### Arbeiten mit der App und übertragen des Programmcodes über Wlan
 
-
-
-
 1.	Drücke hierzu den grauen Switch-Button.
 2.	Halte den grauen Switch-Button gedrückt und drücke einmal auf den roten Reset-Button.
 3.	Nun sollte dir auffallen, dass die Lichter auf der senseBox MCU ausgehen. Lasse den grauen Switch-Button erst wieder los, wenn die Lichter auf der senseBox-MCU wieder leuchten.

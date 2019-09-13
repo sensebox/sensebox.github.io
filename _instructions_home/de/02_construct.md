@@ -1,6 +1,6 @@
 ---
 layout: instructions
-title: "2. Zusammenbau der Hardware"
+title: "1. Zusammenbau der Hardware"
 date: 2017-05-11
 author: Mario
 abstract: "Verbinden von Bauteilen mit der senseBox MCU"

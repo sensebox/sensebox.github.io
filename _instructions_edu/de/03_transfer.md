@@ -1,6 +1,6 @@
 ---
 layout: instructions
-title: "4. Übertragen des Programmcodes"
+title: "3. Übertragen des Programmcodes"
 abstract: "Übertragen des Programmcodes auf die senseBox MCU"
 lang: de
 ---
