@@ -41,7 +41,7 @@ info:
     fact3: "<a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a><a class=\"link\" href=\"http://www.sensebox.de/en/products\"> and many more</a>"
 
 news: "News"
-read: "Read"
+read: "Read more"
 events: "Events"
 past_events: "Past Events"
 running_events: "Running Events"
