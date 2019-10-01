@@ -2,7 +2,10 @@ products: "Products"
 
 header-introduction: "There are two versions of senseBox: <b>senseBox:home</b> and <b>senseBox:edu</b>"
 
-to-senseBox-overwiew: "senseBox.kaufen"
+to-senseBox-overwiew: "senseBox.shop"
+
+shop-link: "https://sensebox.shop"
+shop-button: "sensebox.shop"
 
 introduction: '<p>There are two versions of the senseBox, the <span class="home-span">senseBox:home</span> and the <span class="edu-span">senseBox:edu</span>.</p>
     <p>The <span class="home-span">senseBox:home</span> is a modular do-it-yourself environmental sensor station. Depending on your interest or research question, citizens can put together a measuring station with various sensors and connect to the Internet via LAN, WLAN or LoRa. A simple tutorial allows you to set up and register on the openSenseMap. It then continuously provides location-based (mobile or stationary) measurements of temperature, humidity, air pressure, illuminance, UV radiation or fine dust exposure.</p>

@@ -12,6 +12,8 @@ home_info: "Bürger können mit der senseBox:home ihre eigenen lokalen Forschung
 edu_info:  "Für Schulen und Nachwuchsforscher gibt es die senseBox:edu als Experimentierkasten mit didaktischen Konzepten, Anleitungen und Projektideen."
 osem_info: "Die openSenseMap ist unsere Web-Plattform für die offenen Daten der senseBox. Hier werden die Daten visualisiert und jeder kann Analysen durchführen."
 
+shop-link: "https://sensebox.kaufen"
+shop-button: "sensebox.kaufen"
 info:
   temperature:
     header: "Temperatur"
