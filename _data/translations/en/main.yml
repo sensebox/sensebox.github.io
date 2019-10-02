@@ -12,6 +12,8 @@ home_info: Citizens with senseBox:home can use the technology for their own loca
 edu_info: Additionally, we created senseBox:edu for schools and junior scientists, which is an experimental box with didactical concepts, instructions and project ideas included.
 osem_info: openSenseMap is our platform for open sensor data of senseBox. The data are visualized and everybody can do his own analysis.
 
+shop-link: "https://sensebox.shop"
+shop-button: "sensebox.shop"
 
 info:
   temperature:
@@ -41,7 +43,7 @@ info:
     fact3: "<a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></a><a class=\"link\" href=\"http://www.sensebox.de/en/products\"> and many more</a>"
 
 news: "News"
-read: "Read"
+read: "Read more"
 events: "Events"
 past_events: "Past Events"
 running_events: "Running Events"

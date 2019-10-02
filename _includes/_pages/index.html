@@ -53,7 +53,7 @@
               <img src="{{ site.baseurl | append: post.thumbnail }}" alt="{{ post.title }} - Logo">
               <div class="caption">
                 <h3>{{ post.title }}</h3>
-                <p>{{ post.abstract }}</p>
+                <p>{{ post.abstract | truncatewords: 20 }}</p>
                 <p><button href="#" class="btn" role="button">{{ t.read }}</button>
               </div>
             </div>

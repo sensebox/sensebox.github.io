@@ -4,6 +4,9 @@ header-introduction: 'Von der senseBox gibt es zwei Varianten: die <span class="
 
 to-senseBox-overwiew: "senseBox.kaufen"
 
+shop-link: "https://sensebox.kaufen"
+shop-button: "sensebox.kaufen"
+
 introduction: '<p>Von der senseBox gibt es zwei Varianten: die <span class="home-span">senseBox:home</span> und die <span class="edu-span">senseBox:edu</span>.</p>
 
     <p>Die <span class="home-span">senseBox:home</span> ist eine modulare Umweltmessstation zum selber bauen. Je nach Interesse oder Forschungsfrage können sich BürgerInnen eine Messstation mit verschiedenen Sensoren zusammenstellen und über LAN, WLAN oder LoRa mit dem Internet verbinden. Eine einfache Anleitung ermöglicht den Aufbau und die Registrierung auf der openSenseMap. Danach liefert sie kontinuierlich ortsbezogene (mobile oder stationäre) Messungen zu Temperatur, Luftfeuchte, Luftdruck, Beleuchtungsstärke, UV-Strahlung oder Feinstaubbelastung.</p>
