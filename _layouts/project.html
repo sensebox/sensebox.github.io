@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: default
 ---
 
 <article class="post">
@@ -7,28 +7,33 @@ layout: simple
 	<div class="post-content">
 		{{ content }}
 
-		<div class="projects row">
-				<div style="text-align: center;">
-		<h2>Filter</h2>
+		<div class="projects row ">
+		<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+			Filter
+		  </a>
 				</div>
-		{% include project_tags.html %}
+				<div class="collapse" id="collapseExample">
+					<div class="well project-outer">
+						{% include project_tags.html %}
 		
-		{% for i in site.projects %}
-		{% assign tagarray = site.tagarray %}
-				{% for tag in i.tags %}
-						{% assign tagarray = tagarray | push: tag %}
-				{% endfor %}
-				{% for tag in i.difficult %}
-						{% assign tagarray = tagarray | push: tag %}
-				{% endfor %}
-				{% for tag in i.lang %}
-						{% assign tagarray = tagarray | push: tag %}
-				{% endfor %}
-				{% for tag in i.ide %}
-						{% assign tagarray = tagarray | push: tag %}
-				{% endfor %}
-		{% endfor %}
-		</div>		
+						{% for i in site.projects %}
+						{% assign tagarray = site.tagarray %}
+								{% for tag in i.tags %}
+										{% assign tagarray = tagarray | push: tag %}
+								{% endfor %}
+								{% for tag in i.difficult %}
+										{% assign tagarray = tagarray | push: tag %}
+								{% endfor %}
+								{% for tag in i.lang %}
+										{% assign tagarray = tagarray | push: tag %}
+								{% endfor %}
+								{% for tag in i.ide %}
+										{% assign tagarray = tagarray | push: tag %}
+								{% endfor %}
+						{% endfor %}
+					</div>
+				  </div>
+				  {{ t.additional_info }}
 		<div class="row row-eq-height">	
 		{% for i in site.projects %}
 		{% assign tagarray = site.tagarray %}

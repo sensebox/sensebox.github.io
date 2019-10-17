@@ -3,65 +3,70 @@ layout: project_page
 name: "Akustischer Lichtschalter"
 date: 2019-03-01
 author: Benni
-abstract: "Mithilfe des Mikrofons lässt sich ein akustischer Schalter bauen"
-image: IntelligenterLichtschalterKlein.png
-image1: /images/projects/IntelligenterLichtschalterKlein.png
+abstract: "Mithilfe des Mikrofons lässt sich ein akustischer Lichtschalter bauen"
+image: Titelbild_akustischer_lichtschalter.png
+image1: /images/projects/akustischer_schalter/akustischer_lichtschalter_setup.png
 lang: de
 material:
-    - Mic-Breakout
-    - 1x LED
-    - 1x 470Ω Widerstand
-    - 1x JST-Adapterkabel
-    - 2x Male-to-Male Kabel
+    - Mikrofon (Mic-Breakout)
+    - LED
+    - 470Ω Widerstand
+    - JST-Adapterkabel
+    - Steckkabel
 ide: arduino    
 tags: ["Physik", "Informatik"]
 difficult: mittel
 ---
 # Akustischer Lichtschalter
 
-In diesem Projekt wollen wir lernen, wie wir das Mikrofon mit dem Arduino nutzen können, um laute Geräusche zu erkennen. So können wir eine LED akustisch ein- und ausschalten, beispielsweise durch ein Händeklatschen.
+Ziel dieses Projektes ist es, das Mikrofon in der Arduino-Programmierumgebung zu nutzen, um laute Geräusche zu erkennen. So kann beispielsweise durch ein Händeklatschen eine LED akustisch ein- und ausgeschaltet werden. 
  
 ## Grundlagen 
-Das Mikrofon (Mic-Breakout) ist in der Lage Amplituden von Schallwellen wahrzunehmen. Anhand dieser Schallwellen wird eine elektrische Spannung erzeugt und von dem Sensor als Signal an die senseBox weitergegeben. Über die Messwerte des Mikrofons können wir registrieren, ob laute Geräusche zu hören sind. So können wir eine Beleuchtung z.B. in Form einer LED ansteuern. Wie das funktioniert, erfahrt ihr hier!
+Das Mikrofon (Mic-Breakout) ist in der Lage, Amplituden von Schallwellen wahrzunehmen. Anhand dieser Schallwellen wird eine elektrische Spannung erzeugt und von dem Sensor als Signal an die senseBox weitergegeben. Über die Messwerte des Mikrofons kann registriert werden, ob laute Geräusche zu hören sind. So kann eine Beleuchtung, z.B. in Form einer LED, angesteuert werden. 
 
 ## Aufbau 
-Ähnlich wie beim Lauschangriff wird das Mikrofon mit einen JST-Adapterkabel mit der senseBox MCU verbunden. Dazu wird das JST-Adapterkabel mit dem Steckplatz Digital A verbunden. Das Mikrofon verfügt über drei Pins(GND, VCC und OUT). Das rote Kabel wird mit VCC und das grüne mit OUT verbunden. Das schwarze Kabel des JST-Adapterkabel wird diesmal mit der `-`Spalte des Breadbords verbunden. Die `-`Spalte des Breadbords wird dann über ein einfaches Male-to-Male Kabel mit dem GND des Mikrofons verbunden. Hierbei stellen wir mit dem schwarzen Kabel einen Minuspol, mit dem roten Kabel die Stromversorgung und mit dem grünen Kabel eine Datenübertragung zum Port 1 her.
+Das Mikrofon wird mit einen JST-Adapterkabel mit der senseBox MCU verbunden. Stecke dazu das JST-Adapterkabel in den Digital/Analog Port A. Das Mikrofon verfügt über drei Pins (GND, VCC und OUT). Das rote Kabel wird mit VCC und das grüne mit OUT verbunden. Das schwarze Kabel des JST-Adapterkabels wird diesmal mit der `-`Spalte des Breadbords verbunden. Die `-`Spalte des Breadbords wird dann über ein Steckkabel mit dem GND des Mikrofons verbunden. Hierbei stellen wir mit dem schwarzen Kabel einen Minuspol, mit dem roten Kabel die Stromversorgung und mit dem grünen Kabel eine Datenübertragung zum Port 1 her.
 
-Nun wird das längere Ende der LED (Plus-Pol) mit dem 470Ω Widerstand verbunden. Der Widerstand wird am anderen Ende mit dem gelben Kabel des JST-Adapterkabels verbunden. Das kürzere Ende der LED wird mit einem einfachen Male-to-Male Kabel mit der `-`Spalte des Breadbords verbunden.
+Nun wird das längere Ende der LED (Plus-Pol) mit dem 470Ω Widerstand verbunden. Der Widerstand wird am anderen Ende mit dem gelben Kabel des JST-Adapterkabels verbunden. Das kürzere Ende der LED wird mit einem einfachen Steckkabel mit der `-`Spalte des Breadbords verbunden.
 
-Steckt den Schaltkries wie ihr ihn unten in der Grafik seht.
+Stecke den Schaltkreis so, wie du ihn unten in der Grafik siehst.
 {% include image.html image=page.image1 %}
 
 ## Programmierung
 
-Das Programm basier auf dem Projekt Lauschangriff und erweitert den dort erstellten Code. Alles was neu hinzukommt in diesem Projekt wird durch einen Kommentar im Code `// +++ NEU +++` gekennzeichnet.
+### Schritt 1
 
-Für die loop()-Funktion habt ihr nun zwei Möglichkeiten: 
-1. Wir programmieren die LED so, dass sie jedes Mal für 0.5 Sekunden angeht wenn ein lautes Geräusch zu hören ist - **Der akustische Alarm**
-2. Wir programmieren einen Lichtschalter, der bei einem lauten Geräusch die LED ein- bzw. wieder ausschaltet - **Der akustische Lichtschalter**
+Im ersten Schritt werden die Messwerte des Mikrofons ausgelesen und im seriellen Monitor ausgegeben. 
 
-Beide Programme sind sehr ähnlich, es liegt also bei euch was ihr lieber programmieren wollt!
-
-Vorab definieren wir den digitalen Port an den wir die LED angeschlossen haben. 
 ```arduino
+#include "SenseBoxMCU.h"
 
- /*
- * This code has been adapted from the Electret Mic Breakout Board Hookup Guide by sparkfun
- */
+Microphone microphone(1);
+double volts;
 
-unsigned int micValue;
-int micPort = 1;
-const int aufnahmeZeitfenster = 100; // Dauer des Messintervalls in ms (100 ms = 10Hz)
+void setup() {
+  // put your setup code here, to run once:
+Serial.begin(9600);
+}
 
-// +++ NEU +++
-    // Port an dem die LED angeschlossen ist
+void loop() {
+  // put your main code here, to run repeatedly:
+  volts = microphone.getValue();
+Serial.println(volts);
+}
+```
+Im nächsten Schritt wird zuerst ein akustischer Alarm entwickelt. Hierbei wird die LED so programmiert, dass sie jedes Mal für 0,5 Sekunden angeht, wenn ein lautes Geräusch zu hören ist. Im darauffolgenden Schritt wird ein akustischer Schalter entwickelt, bei dem die LED angeschaltet wird und solange angeschaltet bleibt, bis erneut ein lautes Geräusch zu hören ist. 
+
+### Schritt 2: Der akustische Alarm
+
+Vorab definierst du den digitalen Port, an dem du die LED angeschlossen hast. 
+```arduino
 int ledPort = 2;
 ```
 
+Im Setup ergänzt du eine Zeile, die den LED Port als OUTPUT deklariert.
 
-Im Setup ergänzen wir eine Zeile, die unseren LED Port als OUTPUT deklariert.
-
-### setup()-Funktion
+#### setup()-Funktion
 
 ```arduino
 void setup() 
@@ -73,43 +78,15 @@ void setup()
 }
 ```
 
-### loop()-Funktion
-Abließend ergänzen wir unsere loop()-Funktion um einen `if/else`-Block. Dieser bekommt den Messwert unseres Messintervalls übergeben. Falls der Wert der Wert größer/gleich 1.0 Volt ist, schalten wir die LED für 0.5 Sekunden ein und geben im seriellen Monitor ein "Klopf, Klopf" aus, als Zeichen für ein lautes Geräusch. Falls der Wert kleiner als 1 ist schalten wir die LED wieder aus. 
+#### loop()-Funktion
+Abschließend ergänzt du die loop()-Funktion um eine `if/else`-Bedingung. Diese bekommt den Messwert des Messintervalls übergeben. Falls der Wert größer/gleich 1.0 Volt ist, schalte die LED für 0.5 Sekunden ein und gebe im seriellen Monitor ein "Klopf, Klopf" aus, als Zeichen für ein lautes Geräusch. Falls der Wert kleiner als 1 ist, schalte die LED wieder aus. 
 
 
 ```arduino
 void loop()
 {
- unsigned long start= millis();  // Start des Messintervalls
- unsigned int peakToPeak = 0;   // Abstand von maximalem zu minimalem Amplitudenausschlag
- unsigned int signalMax = 0;    
- unsigned int signalMin = 1024;
-
- // Sammle Daten für 100 Millisekunden
- while (millis() - start < aufnahmeZeitfenster)
-    {
-    micValue = analogRead(micPort);
-        if (micValue < 1024)  // sortiere Fehlmessungen aus, deren Werte über dem max Wert 1024 liegen 
-        {
-            if (micValue > signalMax)
-            {
-            signalMax = micValue;  // speichere den maximal gemessenen Wert
-            }
-        else if (micValue < signalMin)
-            {
-            signalMin = micValue;  // speichere den minimal gemessenen Wert
-            }
-        }
-    }
- peakToPeak = signalMax - signalMin;  // max - min = Abstand von maximalem zu minimalem Amplitudenausschlag
- double volts = (peakToPeak * 5.0) / 1024;  // wandle in Volt um
-
-
-Serial.print(volts);         
-Serial.println(" Volt");  
-
 // +++ NEU +++
-if (volts >=1.0)
+if (volts >=3.0)
     {
     // schalte die LED ein
     digitalWrite(ledPort, HIGH);
@@ -125,81 +102,27 @@ if (volts >=1.0)
 }
 ```
 
-Du kannst nun die Zahl in der Zeile `if (volts >= 1.0)` bearbeiten um die Sensibilität deiner Anwendung zu variieren.
+Du kannst nun die Zahl in der Zeile `if (volts >= 3.0)` bearbeiten, um die Sensibilität deiner Anwendung zu variieren.
 
+### Schritt 3: Der akustische Schalter
 
-Vorab definieren wir den digitalen Port an den wir die LED angeschlossen haben und setzen den Status der LED auf false (aus). 
+Der akustische Alarm kann nun auch so verändert werden, dass das Mikrofon wie ein Schalter funktioniert. Hierbei wird die LED nicht nur kurz angeschaltet, sondern bleibt so lange an, bis erneut geklascht wird. Um die Funktion eines Schalters einzuprogrammieren, wird eine neue Variable `ledStatus` definiert und zu Beginn auf false gesetzt. 
 ```arduino
-/*  
- * This code has been adapted from the
- * Example Sound Level Sketch for the Adafruit Microphone Amplifier 
- */
-
-unsigned int micValue;
-int micPort = 1;
-const int aufnahmeZeitfenster = 100; // Dauer des Messintervalls in ms (100 ms = 10Hz)
-
-// +++ NEU +++
-    // Port an dem die LED angeschlossen ist
-int ledPort = 2;
-    // Status der LED 
 boolean ledStatus = false;
 ```
 
+Im Setup bleibt der Code unverändert. 
 
-Im Setup ergänzen wir eine Zeile, die unseren LED Port als OUTPUT deklariert.
-
-### setup()-Funktion
-
-```arduino
-void setup() 
-{
-    Serial.begin(9600);
-
-    // +++ NEU +++
-    pinMode(ledPort, OUTPUT);
-}
-```
-
-### loop()-Funktion
-Nun ergänzen wir unsere loop()-Funktion um einen `if`-Block, indem sich ein `if/else`-Block befindet. 
-In die Bedingung der ersten `if`-Statements geben wir den Messwert unseres Messintervalls herein. Die `if`-Bedingung überprüft ob der Wert größer/gleich 1.0 Volt ist. 
-Falls diese Bedingung erfüllt ist nehmen wir an das das Mikrofon ein lautes Geräusch gemessen hat. Dann schauen wir, ob die LED aktuell eingeschaltet ist, indem wir den ledStatus prüfen. Ist die LED an, schalten wir sie aus. Ist sie ausgeschaltet, dann wird sie eingeschaltet. In beiden Fällen ändern wir noch den Status der LED. 
-
+#### loop()-Funktion
+Nun ergänzt du unsere loop()-Funktion um einen `if`-Block, indem sich ein `if/else`-Block befindet. 
+In die Bedingung der ersten `if`-Statements geben wir den Messwert unseres Messintervalls ein. Die `if`-Bedingung überprüft, ob der Wert größer/gleich 1.0 Volt ist. 
+Falls diese Bedingung erfüllt ist, nimmst du an, dass das Mikrofon ein lautes Geräusch gemessen hat. Dann schaust du, ob die LED aktuell eingeschaltet ist, indem du den ledStatus prüfst. Ist die LED an, schaltest du sie aus. Ist sie ausgeschaltet, dann wird sie eingeschaltet. In beiden Fällen änderst du noch den Status der LED. 
 
 ```arduino
 void loop()
 {
- unsigned long start= millis();  // Start des Messintervalls
- unsigned int peakToPeak = 0;   // Abstand von maximalem zu minimalem Amplitudenausschlag
- unsigned int signalMax = 0;    
- unsigned int signalMin = 1024;
-
- // Sammle Daten für 100 Millisekunden
- while (millis() - start < aufnahmeZeitfenster)
-    {
-    micValue = analogRead(micPort);
-        if (micValue < 1024)  // sortiere Fehlmessungen aus, deren Werte über dem max Wert 1024 liegen 
-        {
-            if (micValue > signalMax)
-            {
-            signalMax = micValue;  // speichere den maximal gemessenen Wert
-            }
-        else if (micValue < signalMin)
-            {
-            signalMin = micValue;  // speichere den minimal gemessenen Wert
-            }
-        }
-    }
- peakToPeak = signalMax - signalMin;  // max - min = Abstand von maximalem zu minimalem Amplitudenausschlag
- double volts = (peakToPeak * 3.3) / 1024;  // wandle in Volt um
-
-
-Serial.print(volts);         
-Serial.println(" Volt");  
-
 // +++ NEU +++
-if (volts >=1.0)
+if (volts >=3.0)
     {
     if (ledStatus == true)
         {
@@ -222,7 +145,6 @@ if (volts >=1.0)
     }            
 }
 ```
-
-Du kannst nun die Zahl in der Zeile `if (volts >= 1.0)` bearbeiten um die Sensibilität deiner Anwendung zu variieren.
+Du kannst nun die Zahl in der Zeile `if (volts >= 3.0)` bearbeiten, um die Sensibilität deiner Anwendung zu variieren.
 
 

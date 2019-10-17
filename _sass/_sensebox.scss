@@ -1358,6 +1358,8 @@ $carousel-height: 450px;
   box-shadow: 0 0 30px 6px rgba(34, 34, 34, 0.25); 
 }
 
+
+
 .carousel-caption {
     z-index: 10;
     text-align: center;
@@ -1708,4 +1710,16 @@ $carousel-height: 450px;
   vertical-align: baseline;
   border-radius: .25em;
   cursor: pointer;
+}
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: rgba(0,0,0,0);
 }
