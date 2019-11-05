@@ -30,6 +30,9 @@ layout: default
 								{% for tag in i.ide %}
 										{% assign tagarray = tagarray | push: tag %}
 								{% endfor %}
+								{% for tag in i.version %}
+										{% assign tagarray = tagarray | push: tag %}
+								{% endfor %}
 						{% endfor %}
 					</div>
 				  </div>
@@ -47,6 +50,9 @@ layout: default
 						{% assign tagarray = tagarray | push: tag %}
 				{% endfor %}
 				{% for tag in i.ide %}
+						{% assign tagarray = tagarray | push: tag %}
+				{% endfor %}
+				{% for tag in i.version %}
 						{% assign tagarray = tagarray | push: tag %}
 				{% endfor %}			
 		<div class="project-item col-md-4 col-sm-6 col-xs-12" data-tags='{{ tagarray | jsonify | downcase }}'>
