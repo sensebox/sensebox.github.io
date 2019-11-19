@@ -12,15 +12,22 @@
   bgImage: /images/material/sheets_tutory.png
   link: https://www.tutory.de/user/sensebox
 
-- name: :ETH Zürich
+- name: :TüftelAkademie
   position: t3
+  organisation: TüftelAkademie
+  description: 
+  bgImage: /images/material/tueftelakademie.png
+  link: https://tueftelakademie.de/tutorials/sensebox/
+
+- name: :ETH Zürich
+  position: t4
   organisation: ETH - Zürich
   description: Die ETH Zürich verwendet die senseBox in der Lehre in zwei verschiedenen Studiengängen und stellt uns und euch die Materialien aus der Lehre zu verfügung (Zurzeit nur auf Englisch)
   bgImage: /images/material/eth.jpg
   download: https://sensebox.de/docs/ETH_GeosensorsLab_tutorial.pdf
 
 - name: :Lehrhandreichung
-  position: t4
+  position: t5
   organisation: 
   description: 
   bgImage: /images/logo_bunt.png
