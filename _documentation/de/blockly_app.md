@@ -1,5 +1,5 @@
 ---
-layout: instructions
+layout: documentation
 title: "Programmieren mit dem Tablet"
 abstract: "Programmieren der senseBox MCU mit der Android App"
 lang: de

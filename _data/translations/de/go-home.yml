@@ -1,4 +1,5 @@
-title: "go:home"
+title: "senseBox:home Quickstart"
+quick-start-intro: "Du hast deine senseBox:home erhalten und möchtest nun loslegen? Hier findest du alle wichtigen Informationen zur senseBox:home"
 
 first-steps: "Erste Schritte"
 first-steps-text: "Alles zur Installation und zum Aufbau der senseBox"
@@ -24,3 +25,7 @@ mail: "Email"
 
 links: "Links"
 links-text: "Hier findest du Links rund um das senseBox Projekt"
+
+anleitung_headline: "senseBox:home Anleitung"
+anleitung_short: "Hier findest du die Anleitung um die senseBox:home aufzubauen und in Betrieb zu nehmen"
+button_anleitung: "Weiterlesen"

@@ -7,139 +7,57 @@
             <p class="quick-start-text">{{t.quick-start-intro}}</p>
             <div class="row eq-height">
                 <div class="col-md-4 col-eq-height well">
-                        <div class="project-inner">
-                    <div class="first-steps">
-                        <a href="/instructions_home/de/01_opensensemap.html">
-                            <h3>1. Zusammenbau der Hardware</h3>
-                        </a>
-                        <a href="/instructions_home/de/01_opensensemap.html" class="thumbnail"><img src="/images/go/edu/connect.jpg"
-                                alt="..."></a>
-                        <p>Im ersten Schritt wird die Hardware zusammengebaut</p>
-                        <a href="/instructions_home/de/01_opensensemap.html" class="btn btn-xs">Mehr Informationen</a>
+                    <div class="project-inner">
+                        <div class="first-steps">
+                            <a href="/documentation/de/home_anleitung.html">
+                                <h3>{{ t.anleitung_headline }}</h3>
+                            </a>
+                            <a href="/documentation/de/home_anleitung.html" class="thumbnail"><img
+                                    src="/images/go/edu/connect.jpg" alt="..."></a>
+                            <p>{{ t.anleitung_short }}</p>
+                            <a href="/documentation/de/home_anleitung.html"
+                                class="btn btn-xs">{{ t.button_anleitung }}</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-eq-height well">
-                        <div class="project-inner">
-                    <a href="/instructions_home/de/02_construct.html">
-                        <h3>2. Registieren auf der openSenseMap</h3>
-                    </a>
-                    <a href="/instructions_home/de/construct.html" class="thumbnail"><img src="/images/go/edu/connect.jpg"
-                            alt="..."></a>
-                    <p>Baue deine Schaltung auf oder verbinde die Sensoren mit der senseBox MCU</p>
-                    <a href="/instructions_home/de/connect.html" class="btn btn-xs">Mehr Informationen</a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-eq-height well">
-                        <div class="project-inner">
-                    <a href="/instructions_home/de/03_code.html">
-                        <h3>3. Übertragen des Programmcodes</h3>
-                    </a>
-                    <a href="/instructions_home/de/03_code.html" class="thumbnail"><img src="/images/go/edu/blockly.png"
-                            alt="..."></a>
-                    <p>Erstelle deine Programmcode online mithilfe von Blockly für die senseBox</p>
-                    <a href="/instructions_home/de/connect.html" class="btn btn-xs">Mehr Informationen</a>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="row eq-height">
-                <div class="col-md-4 col-eq-height well">
                     <div class="project-inner">
-                    <a href="/instructions_home/de/04_transfer.html">
-                        <h3>4. Übertragen</h3>
-                    </a>
-                    <a href="/instructions_home/de/04_transfer.html" class="thumbnail"><img src="/images/go/edu/blockly.png"
-                            alt="..."></a>
-                    <p>Kompiliere den Programmcode und übertrage ihn auf deine senseBox MCU</p>
-                    <a href="/instructions_home/de/connect.html" class="btn btn-xs">Mehr Informationen</a>
-                </div>
-                </div>
-                <div class="col-md-4 col-eq-height well">
-                    <h3>Weiter gehts!</h3>
-                    <p>Weitere Möglichkeiten mit der senseBox zu arbeiten</p>
-                    <ol>
-                        <a href="/instructions_home/de/05_arduino_ide.html">
-                            <li>Arbeiten mit der Arduino IDE</li>
-                        </a>
-                        <a href="/instructions_home/de/06_opensensemap.html">
-                            <li>Arbeiten mit der App</li>
-                        </a>
-                        <a href="https://sensebox.de/material">
-                            <li>Material</li>
-                        </a>
-                        <a href="https://forum.sensebox.de/">
-                            <li>Forum</li>
-                        </a>
-                    </ol>
+                        <h3>Deine senseBox erweitern</h3>
+                        <p>Die senseBox lässt durch verschiedenen Sensoren und Komponenten erweitern</p>
+                        <ol>
+                            <a href="/documentation/de/arduino_ide.html">
+                                <li>Arbeiten mit der Arduino IDE</li>
+                            </a>
+                            <a href="/documentation/de/06_opensensemap.html">
+                                <li>Erweitern der senseBox:home um ein Solarpanel</li>
+                            </a>
+                            <a href="https://sensebox.de/material">
+                                <li>Eigene Sensoren hinzufügen</li>
+                            </a>
+                            <a href="https://forum.sensebox.de/">
+                                <li>Forum</li>
+                            </a>
+                            <a href="https://forum.sensebox.de/">
+                                <li>FAQ</li>
+                            </a>
+                        </ol>
+                    </div>
                 </div>
                 <div class="col-md-4 col-eq-height well">
-                    <h3>Projekte</h3>
-                    <p>Viele Projekte für die senseBox findest du online auf unserer Seite</p>
-                </div>
+                        <div class="project-inner">
+                            <h3>Hilfe?</h3>
+                            <p>Etwas funktioniert nicht oder du benötigst mehr hilfe?</p>
+                            <ol>
+                                <a href="https://forum.sensebox.de/">
+                                    <li>Forum</li>
+                                </a>
+                                <a href="https://forum.sensebox.de/">
+                                    <li>FAQ</li>
+                                </a>
+                            </ol>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
 </div>
-
-
-<!-- OLD Go SITE
-<h1 class="title">{{t.title}}</h1>
-<div class="ut-container">
-    <div class="ut-item">
-        <div class="ut-item-head">
-            <h1>{{t.first-steps}}</h1>
-            <p>{{t.first-steps-text}}</p>
-        </div>
-        <div class="ut-item-body">
-            <ol>
-                <li><a target="_blank" href="https://sensebox.github.io/books-v2/home/de/erste-schritte/software-installation.html">{{t.software-installation}}</a></li>
-                <li><a target="_blank" href="https://sensebox.github.io/books-v2/home/de/erste-schritte/anschluss-und-verkabelung.html">{{t.hardware-install}}</a></li>
-                <li><a target="_blank" href="https://sensebox.github.io/books-v2/home/de/erste-schritte/registrierung-auf-der-openSenseMap.html">{{t.osem-reg}}</a></li>
-            </ol>
-        </div>
-    </div>
-
-    <div class="ut-item">
-        <div class="ut-item-head">
-            <h1>{{t.components}}</h1>
-            <p>{{t.components-text}}</p>
-        </div>
-        <div class="ut-item-body">
-            <ol>
-                <li><a target="_blank" href="https://sensebox.github.io/books-v2/home/de/komponenten/sensebox-mcu.html">{{t.mcu}}</a></li>
-                <li><a target="_blank" href="https://sensebox.github.io/books-v2/home/de/komponenten/bees/">{{t.bees}}</a></li>
-                <li><a target="_blank" href="https://sensebox.github.io/books-v2/home/de/komponenten/sensoren/">{{t.sensors}}</a></li>
-                <li><a target="_blank" href="https://sensebox.github.io/books-v2/home/de/komponenten/zubehoer/">{{t.zubehoer}}</a></li>
-            </ol>
-        </div>
-    </div>
-
-    <div class="ut-item">
-        <div class="ut-item-head">
-            <h1>{{t.help}}</h1>
-            <p>{{t.help-text}}</p>
-        </div>
-        <div class="ut-item-body">
-            <ul>
-                <li><a target="_blank" href="https://forum.sensebox.de/">{{t.forum}}</a></li>
-                <li><a href="mailto:support@sensebox.de">{{t.mail}}</a></li>
-                <li><a target="_blank" href="https://sensebox.github.io/books-v2/home/hilfe/hilfe.html">FAQ</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="ut-item">
-        <div class="ut-item-head">
-            <h1>{{t.links}}</h1>
-            <p>{{t.links-text}}</p>
-        </div>
-        <div class="ut-item-body">
-            <ul>
-                <li><a target="_blank" href="https://opensensemap.org/">openSenseMap</a></li>
-                <li><a target="_blank" href="https://blockly.sensebox.de/">Blockly für senseBox</a></li>
-            </ul>
-        </div>
-    </div>
-
-</div>-->

@@ -36,10 +36,8 @@ collections:
   press:
   events:
   posts:
-  instructions_edu:
+  documentation:
     output: true
-  instructions_home:
-    output: true  
   projects: 
     output: true
   awards_de:
