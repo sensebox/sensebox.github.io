@@ -1,0 +1,12 @@
+<div class="row">
+	<div class="thumbnail">
+		{% if include.image | slice 0,3 == "http://" or include.image | slice 0,4 == "https://" include.image | slice 0,2 == "www" %}
+		<img src="{{ include.image }}" alt="{{ include.image }} - Logo"  style="height: 400px;" />
+		{% else %}
+		<img src="{{ site.baseurl | append: include.image }}" alt="{{ page.title }} - Logo" style="height: 400px;"/>
+		{% endif %}
+		<div class="caption" style="text-align: center;">
+			<p> {{ include.caption }}</p>
+		</div>
+	</div>
+</div>

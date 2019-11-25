@@ -5,11 +5,13 @@ date: 2017-05-11
 thumbnail: /images/blog_images/screenshot_osem.png
 lang: de
 system: home
+image1: /images/documentation/de/home_anleitung/01_aufbau.png
+image2: /images/documentation/de/home_anleitung/mcu_verschraubung.jpeg
 ---
 # Übersicht über die senseBox:home
 
 
-![Komponentenübersicht der Standardversion](/images/documentation/de/home_anleitung/01_aufbau.png)
+{% include image_small.html image=page.image1 caption="Die Bauteile der senseBox:home" %}
 
 - Gehäuse mit Deckel
 - mini-USB Kabel + Adapter
@@ -37,8 +39,7 @@ Danach schraubst du die MCU mit zwei kleinen Schrauben am Gehäuse fest. Nutze d
 des MCUs.
 
 
-
-![ MCU im Gehäuse](/images/documentation/de/home_anleitung/mcu_verschraubung.jpeg)
+{% include image_small.html image=page.image2 caption="Einsetzten der MCU ins Gehäuse" %}
 
 ## 2. Schritt
 
@@ -46,7 +47,8 @@ des MCUs.
 
 Unanhängig davon, welches Bee du benutzt, musst du im nächsten Schritt dein Bee auf dem dafür vorgesehenen *XBEE1* Steckplatz anbringen. 
 
-![MCU im Gehäuse mit WiFi Bee](../../../pictures/xbee.jpeg)
+
+{% include image_small.html image=page.image2 caption="Einsetzten des WiFi Bee auf den Steckplatz XBEE1" %}
 
 ## 3. Schritt
 
@@ -58,10 +60,11 @@ Jetzt kannst du die Kappe wieder auf das Gewinde drehen und den Sensor mit dem K
 Der Stecker des Sensors im Gehäuse kann auf einem der 5 *12C/Wire* Steckplätze angebracht werden.
 **Das mini-USB Kabel solltest du erst am MCU anschließen, sobald alles aufgebaut ist.**
 
+{% include image_small.html image=page.image2 caption="Anschluss des Temperatur und Luftfeuchtigkeitssensor" %}
 
-![Temperatur und Luftfeuchtigkeitssensor + USB ](../../../pictures/usb_sensor.png)
 
 ## 4. Schritt
+
 
 *Sensor im Schutzgehäuse anbringen*
 
@@ -76,11 +79,13 @@ Mit dem Zubehör kannst du das Gehäuse nun da befestigen, wo du möchtest.
     Achte darauf, dass der Sensor dabei nach oben zeigt! 
 </div>
 
-![Temperatur und Luftfeuchtigskeitssensor im Schutzgehäuse](../../../pictures/tempGeh.jpeg)
+{% include image_small.html image=page.image2 caption="Anbringen des Temperatur und Luftfeuchtigkeitssensor im Strahlenschutzegehäuse" %}
+
 
 
 # Zusätzliche Komponenten  (optional)
  
+In diesen Schritten wird die gezeigt, wie du die anderen Sensoren anschließt. Je nachdem wie deine Konfiguration ist kannst du einige Schritte überspringen. 
 
 ## 5. Schritt
 

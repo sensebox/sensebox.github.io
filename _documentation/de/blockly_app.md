@@ -3,8 +3,8 @@ layout: documentation
 title: "Programmieren mit dem Tablet"
 abstract: "Programmieren der senseBox MCU mit der Android App"
 lang: de
-image1: /images/instructions_edu/wifi-bee.jpeg
-image2: /images/instructions_edu/
+image1: /images/documentation/de/wifi-bee.jpeg
+image2: /images/documentation/de/
 ---
 Arbeiten mit senseBox App
 ============

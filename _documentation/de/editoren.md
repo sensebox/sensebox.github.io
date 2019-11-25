@@ -2,6 +2,7 @@
 layout: documentation
 title: "Übersicht der Editoren"
 date: 2017-05-11
+system: edu
 thumbnail: /images/blog_images/screenshot_osem.png
 image1: /images/
 image2: /images

@@ -14,7 +14,7 @@ Bevor du mit den Projekten anfängst, wird dir im folgenden Abschnitt gezeigt, w
 
 
 ## Schritt 1: Die Programmierumgebung
-Öffne Blockly für die senseBox, indem du mit einem geeigneten Internetbrowser (Chrome, Firefox oder Edge) auf https://blockly.sensebox.degehst. Wähle die senseBox MCU, um zur richtigen Programmieroberfläche zu gelangen.
+Öffne Blockly für die senseBox, indem du mit einem geeigneten Internetbrowser (Chrome, Firefox oder Edge) auf (https://blockly.sensebox.de)[https://blockly.sensebox.de] gehst. Wähle die senseBox MCU, um zur richtigen Programmieroberfläche zu gelangen.
 
 ## Schritt 2: Programmieren
 
@@ -32,19 +32,15 @@ Nach dem Programmieren musst du den Programmcode noch auf die senseBox MCU über
 1.Verbinden:
 Das Programm muss nun auf die senseBox MCU übertragen werden. Verbinde dazu die senseBox MCU mithilfe des USB-Kabels mit deinem Computer.
 
-Abb. 1–32Anschluss des USB-Kabels an einen Laptop
-
-Abb. 1–33 Anschluss des USB-Kabels an die senseBox MCU
 Mache anschließend einen Doppelklick auf den Reset-Button, um die senseBox MCU in den Lernmodus zu versetzten. Im Lernmodus leuchtet die kleine rote LED neben dem Reset-Button auf, und die senseBox MCU wird als Wechseldatenträger (zum Beispiel im Windows Explorer) erkannt.
 Nur im Lernmodus kannst du einen Programmcode auf die sense-
 Box MCU übertragen. Nach dem erfolgreichen Übertragen startet
 die senseBox MCU neu und befindet sich anschließend im Programmmodus.
+
 2.Kompilieren:
 Bevor der Programmcode übertragen werden kann, muss dieser kompiliert werden. Das bedeutet, dass die Blöcke in eine Maschinensprache übersetzt werden. Klicke dazu auf den orangenen Button in der Oberfläche.
-Abb. 1–34Mit dem orangenen Button kann der Programmcode kompiliert werden.
 Der Code wird nun online kompiliert, und anschließend startet ein Download.
 
-Abb. 1–35Die Infografik in Blockly zeigt dir, wie du den Code übertragen musst.
 3.Übertragen:
 Wenn du die senseBox MCU erfolgreich in den Lernmodus versetzt hast, wird diese nun im Windows Explorer angezeigt. Um das zuvor kompilierte Programm zu übertragen, ziehe es per Drag-and-drop auf die senseBox MCU.
 Nach dem erfolgreichen Kopieren verlässt die senseBox MCU den Lernmodus und führt das Programm aus. Hast du alles wie in diesem Abschnitt erläutert durchgeführt, leuchtet die kleine rote LED neben dem Reset-Button auf.

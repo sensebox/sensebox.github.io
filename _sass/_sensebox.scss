@@ -423,10 +423,6 @@ hr {
       height: auto;
     }
 
-    > ul {
-      font-size: inherit;
-    }
-
   }
 
   > h1 {
@@ -635,7 +631,7 @@ h3.panel-title {
 }
 
 em {
-  color: darken($sensebox-green, 10%);
+  //color: darken($sensebox-green, 10%);
   font-weight: bold;
   font-style: normal;
 }
