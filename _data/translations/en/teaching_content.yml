@@ -1,21 +1,17 @@
 - name: :Learning Cards
-  image: 
   position: t1
-  organisation: senseBox - Team
   description: Learning cards for working independently with the senseBox and programming with Blockly. The Learning Cards should be printed double-sided.
   bgImage: /images/material/cards.png
   download: https://sensebox.de/docs/senseBox_cards_en.pdf
 
 - name: :Worksheets
-  image: 
   position: t2
   organisation: senseBox - Team
   description: Tutory offers the possibility to design worksheets interactively. On the platform our worksheets can be adapted according to your wishes. All worksheets are published on our profile. 
   bgImage: /images/material/sheets_tutory.png
   link: https://www.tutory.de/user/sensebox
 
-- name: :ETH Zürich
-  image: 
+- name: :ETH Zürich 
   position: t3
   organisation: ETH - Zürich
   description: ETH Zürich uses the senseBox for teaching purposes in two different courses. The senseBox was used in the Geosensensors Lab and the ETH is happy to share the teaching material with you.
