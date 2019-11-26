@@ -15,7 +15,8 @@ material:
     - Feinstaubsensor inkl. Kabel
     - OLED Display
     - WIFI Bee
-ide: blockly    
+ide: blockly
+addons: Feinstaubsensor    
 lang: de
 tags: ["Geographie", "Informatik"]
 difficult: mittel

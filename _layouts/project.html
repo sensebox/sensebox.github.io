@@ -7,12 +7,12 @@ layout: default
 	<div class="post-content">
 		{{ content }}
 
-		<div class="projects row ">
+		<div class="projects row">
 		<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
 			Filter
 		  </a>
 				</div>
-				<div class="collapse" id="collapseExample">
+				<div class="collapse" id="collapseExample" style="box-shadow: none;">
 					<div class="well project-outer">
 						{% include project_tags.html %}
 		
@@ -31,6 +31,9 @@ layout: default
 										{% assign tagarray = tagarray | push: tag %}
 								{% endfor %}
 								{% for tag in i.version %}
+										{% assign tagarray = tagarray | push: tag %}
+								{% endfor %}
+								{% for tag in i.addons %}
 										{% assign tagarray = tagarray | push: tag %}
 								{% endfor %}
 						{% endfor %}
@@ -54,7 +57,10 @@ layout: default
 				{% endfor %}
 				{% for tag in i.version %}
 						{% assign tagarray = tagarray | push: tag %}
-				{% endfor %}			
+				{% endfor %}
+				{% for tag in i.addons %}
+						{% assign tagarray = tagarray | push: tag %}
+				{% endfor %}				
 		<div class="project-item col-md-4 col-sm-6 col-xs-12" data-tags='{{ tagarray | jsonify | downcase }}'>
 				<div class="well project-outer">
 						<span class="ribbon"><span class={{i.ide}}>{{ i.ide }}</span></span>
