@@ -9,9 +9,11 @@
                <div id="tag-filter" class="col-md-12 col-xs-12 tag-group">
                    {% assign tagarray = site.tagarray %}
                    {% for project in site.projects %}
+                   {% if project.lang == page.lang %}
                        {% for tag in project.ide %}
                            {% assign tagarray = tagarray | push: tag %}
                        {% endfor %}
+                       {% endif %}
                    {% endfor %}
            
                    {% assign tags = tagarray[1] %}
@@ -26,7 +28,7 @@
                    {% assign taglist = tags | split: '|' | sort %}
                    {% for tag in taglist %}
                        <span class="project-label project-border tag-filter tag-cloud" data-tag="{{ tag | downcase }}">{{ tag }}</span>
-                   {% endfor %}
+                    {% endfor %}
                </div>
            {% endif %}
            </div>
@@ -40,9 +42,11 @@
 	<div id="tag-filter" class="col-md-12 col-xs-12 tag-group">
         {% assign tagarray = site.tagarray %}
         {% for project in site.projects %}
+        {% if project.lang == page.lang %}
             {% for tag in project.tags %}
                 {% assign tagarray = tagarray | push: tag %}
             {% endfor %}
+            {% endif %}
         {% endfor %}
 
         {% assign tags = tagarray[1] %}
@@ -71,9 +75,11 @@
 	<div id="tag-filter" class="col-md-12 col-xs-12 tag-group">
         {% assign tagarray = site.tagarray %}
         {% for project in site.projects %}
+        {% if project.lang == page.lang %}
             {% for tag in project.difficult %}
                 {% assign tagarray = tagarray | push: tag %}
             {% endfor %}
+            {% endif %}
         {% endfor %}
 
         {% assign tags = tagarray[1] %}
@@ -103,9 +109,11 @@
 <div id="tag-filter" class="col-md-12 col-xs-12 tag-group">
     {% assign tagarray = site.tagarray %}
     {% for project in site.projects %}
+    {% if project.lang == page.lang %}
         {% for tag in project.version %}
             {% assign tagarray = tagarray | push: tag %}
         {% endfor %}
+        {% endif %}
     {% endfor %}
 
     {% assign tags = tagarray[1] %}
@@ -134,9 +142,11 @@
     <div id="tag-filter" class="col-md-12 col-xs-12 tag-group">
         {% assign tagarray = site.tagarray %}
         {% for project in site.projects %}
+        {% if project.lang == page.lang %}
             {% for tag in project.addons %}
                 {% assign tagarray = tagarray | push: tag %}
             {% endfor %}
+        {% endif %}
         {% endfor %}
     
         {% assign tags = tagarray[1] %}
