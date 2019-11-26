@@ -24,9 +24,6 @@ layout: default
 								{% for tag in i.difficult %}
 										{% assign tagarray = tagarray | push: tag %}
 								{% endfor %}
-								{% for tag in i.lang %}
-										{% assign tagarray = tagarray | push: tag %}
-								{% endfor %}
 								{% for tag in i.ide %}
 										{% assign tagarray = tagarray | push: tag %}
 								{% endfor %}
@@ -42,14 +39,12 @@ layout: default
 				  {{ t.additional_info }}
 		<div class="row row-eq-height">	
 		{% for i in site.projects %}
+		{% if i.lang == page.lang %}
 		{% assign tagarray = site.tagarray %}
 				{% for tag in i.tags %}
 						{% assign tagarray = tagarray | push: tag %}
 				{% endfor %}
 				{% for tag in i.difficult %}
-						{% assign tagarray = tagarray | push: tag %}
-				{% endfor %}
-				{% for tag in i.lang %}
 						{% assign tagarray = tagarray | push: tag %}
 				{% endfor %}
 				{% for tag in i.ide %}
@@ -97,8 +92,9 @@ layout: default
 						</div>
 				</div>
 				</div>
-			
+				{% endif %}
 		{% endfor %}
+		
 	</div>
 </div>
 	</div>

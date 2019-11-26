@@ -18,7 +18,7 @@ material:
     - JST-Kabel
 ide: blockly    
 lang: de
-version: ["edu", "mini"]
+version: ["edu"]
 tags: ["Informatik", "Geographie"]
 difficult: mittel
 ---
