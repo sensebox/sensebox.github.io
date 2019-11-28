@@ -29,7 +29,7 @@ difficult: schwer
 
 ---
 
-*Dieses Projekt eines der vielen spannenden Projekte, die auch im [senseBox Buch](https://www.dpunkt.de/buecher/13482/9783864906848-das-sensebox-buch.html) (erschienen im dPunkt Verlag 2019) veröffentlicht wurden.*
+*Dieses Projekt ist eines der vielen spannenden Projekte, die auch im [senseBox Buch](https://www.dpunkt.de/buecher/13482/9783864906848-das-sensebox-buch.html) (erschienen im dPunkt Verlag 2019) veröffentlicht wurden.*
 
 # Gehe auf Punktefang
 Du kennst bestimmt noch die ersten Computerspiele aus den 80er-Jahren wie zum Beispiel Pong oder Tetris. Auf alten zweifarbigen Fernsehern wurden in 2-D spannende und einfache Spiele erstellt. Einfache grafische Elemente wurden kombiniert mit tollen Spielkonzepten, und es entstanden
