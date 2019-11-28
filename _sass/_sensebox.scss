@@ -1669,12 +1669,45 @@ $carousel-height: 450px;
   border: 1px solid #eee;
   padding: 0.5em 0.5em;
   position: relative;
+  text-align: left;
+
+  > h1,
+  > h2,
+  > a {
+    text-align: center;
+  }
+
+  > a > button {
+    white-space: normal;
+  }
 
   .main-product-image {
     img {
       width: 100%;
     }
   }
+
+  .info {
+    font-size: 1.4em;
+    margin-top: 1em;
+    text-align: center;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  > ul.features {
+    height: 200px;
+  }
+
+  .collapse-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
   .sensor-list {
     padding-top: 1em;
   }
