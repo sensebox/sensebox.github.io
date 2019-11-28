@@ -1,0 +1,152 @@
+layout: project_page  
+date: 2019-12-15  
+author: Verena 
+abstract: "Konstruiere dein eigenes kleines Spiel " 
+image: Titelbild_Punktefang.png 
+image0: /images/projects/Punktefang/Punktefang_Image00.png
+image1: /images/projects/Punktefang/Punktefang_Image01.png
+image2: /images/projects/Punktefang/Punktefang_Image02.png
+image3: /images/projects/Punktefang/Punktefang_Image03.png
+image4: /images/projects/Punktefang/Punktefang_Image04.png
+image5: /images/projects/Punktefang/Punktefang_Image05.png
+image6: /images/projects/Punktefang/Punktefang_Image06.png
+image7: /images/projects/Punktefang/Punktefang_Image07.png
+image8: /images/projects/Punktefang/Punktefang_Image08.png
+image9: /images/projects/Punktefang/Punktefang_Image09.png
+image10: /images/projects/Punktefang/Punktefang_Image10.png
+image11: /images/projects/Punktefang/Punktefang_Image11.png
+
+
+material: // Liste kurz die verwendeten Bauteile auf
+    - senseBox MCU 
+    - OLED Display
+    - JST-JST Kabel
+ide: blockly    
+lang: de 
+tags: ["informatik"] 
+difficult: mittel 
+
+#Gehe auf Punktefang
+Du erinnerst dich bestimmt noch an Computerspiele wie Tetris und Pong aus den 80er Jahren, oder? Jetzt kannst du selbst 
+aktiv werden und ebenso wie bei diesen bekannten Spielen einfache grafische Elemente mit einem Spielkonzept kombinieren. 
+Ziel dieses Projektes ist es somit, ein kleines Spiel zu konstruieren, indem der integrierte Beschleunigungssensor der senseBox MCU 
+genutzt wird. 
+
+##Aufbau
+Da der Beschleunigungssensor auf der senseBox aufgelötet ist, kann er direkt genutzt werden und du musst lediglich das Display
+anschließen. Dieses verbindest du mittels eines JST-JST-Kabels mit einem der I2C/Wire Anschlüsse der senseBox MCU.
+
+{% include image.html image=page.image0 %}
+
+##Programmierung
+###Spielsteuerung - der Fänger
+####Schritt 1: Display initialisieren
+Zuerst einmal ist es wichtig, den Block `Display initialisieren` in das Setup() zu ziehen und anschließend in der Endlosschleife 
+anzugeben, was auf dem Display angezeigt werden soll. Dies machst du über die beiden Blöcke `Zeige auf dem Display` und 
+`Schreibe Text/ Zahl`. Dabei kannst du die Schriftgröße sowie die x- und y- Koordinaten beliebig variieren. 
+Bei `Wert` kannst du anschließend den verwendeten Sensor platzieren, in diesem Fall handelt es sich um den Beschleunigungssensor. 
+
+{% include image.html image=page.image1 %}
+
+####Schritt 2: Richtung des Beschleunigungssensors
+Der Block für den Beschleunigungssensor hat zwei Drop-Down-Menüs, in denen verschiedene Parameter eingestellt werden können.
+Im ersten Drop-Down-Menü kann die Richtung eingestellt werden, in der die Beschleunigung gemessen werden soll. Die Beschleunigung
+kann in drei Achsen gemessen werden. Die x-Achse kannst du beeinflussen, wenn du die MCU nach vorn und nach hinten kippst, die 
+y-Achse, wenn du sie nach rechts oder links bewegst, und die z-Achse reagiert auf Bewegungen nach oben oder unten. 
+
+{% include image.html image=page.image2 %}
+
+####Schritt 3: Messbereich des Beschleunigungssensors
+Das Zweite der zuvor erwähnten Drop-Down-Menüs stellt den Messbereich dar, welcher zwischen 2g und 16g eingestellt werden kann 
+und folglich die Werte als g-Kraft ausgibt. Die g-Kraft hat eine Dimension der Beschleunigung in einer Richtung und wird als 
+Vielfaches der Fallbeschleunigung angegeben. 1g entspricht daher dem Wert der normalen Fallbeschleunigung der Erde (9,81 m/s²). 
+Die Gesamtbeschleunigung wird aus der Beschleunigung in drei verschiedene Achsen berechnet und als Messwert in m/s² ausgegeben.   
+
+Du kannst nun deinen jetzigen Programmcode testen, indem du die senseBox in die Hand nimmst und an den Werten auf dem 
+Display nachvollziehst, wie stark du sie bewegst. 
+
+{% include image.html image=page.image3 %}
+
+####Schritt 4: Mapping
+Für das Spiel werden die Beschleunigungswerte auf der x- und y-Achse verwendet. Mithilfe der Bewegung der senseBox MCU soll ein 
+kleiner Punkt auf dem Display gesteuert werden. In der Toolbox findest du die Blöcke für das Display. Der Block `Zeichne Punkt`
+kann verwendet werden, um einen Punkt mit einer bestimmten Größe auf dem Display anzeigen zu lassen. 
+
+{% include image.html image=page.image4 %}
+
+Um einen Punkt zu zeichnen, müssen drei verschiedene Parameter angegeben werden: die x- und y-Koordinate auf dem Display und der 
+Radius. Letzterer wird in Pixeln angegeben und sollte nicht zu groß sein. In diesem Beispiel wird immer ein Radius von 3 Pixeln 
+verwendet. Das Display hat auf seiner x-Achse 128 und auf der y-Achse 64 Pixel, die Messwerte des Beschleunigungssensors liegen 
+allerdings zwischen -1 und 1 beim normalen Bewegen der Platine. An dieser Stelle kann eine praktische Funktion aus der Informatik
+verwendet werden: das Mapping.
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    Grundlegend wird unter Mapping die Zurodnung von Werten zwischen einer oberen und unteren Grenze zu neuen Werten zwischen 
+    einer unteren und oberen Grenze verstanden. 
+  </div>
+  <div class="panel-body">
+  </div>
+</div>
+
+Der Beschleunigungssensor gibt Werte zwischen -1 und 1 aus. Da das Mapping nur mit ganzzahligen Werten funktioniert, 
+müssen die Messwerte mit 100 multipliziert werden, um eine höhere Genauigkeit zu erhalten. 
+Durch den Block `Verteile Wert` werden die Messwerte dynamisch zwischen dem Minimum und Maximum auf 0 bis 128 verteilt. 
+Diese Grenzen werden aufgrund der Pixel des Displays gewählt.
+Über das Mapping können wir nun einen Punkt auf dem Display anzeigen lassen, der sich je nach Lage der senseBox MCU verschiebt. 
+Beachte hierbei, dass die x-Achse auf dem Display nicht der x-Achse des Beschleunigungssensors entspricht.
+
+{% include image.html image=page.image5 %}
+
+###Der gejagte Punkt
+Die Spielsteuerung ist fertig, jetzt fehlt noch der gejagte Punkt! Dieser Punkt soll an einer zufälligen Position auf dem Display 
+angezeigt und von dem anderen Punkt, der über die Bewegung der MCU gesteuert wird, gefangen werden. Zufallszahlen lassen sich 
+über Blockly mit dem Block `ganzzahliger Zufallswert` aus der Kategorie `Mathematik`sehr einfach erstellen. Für die x-Koordinate 
+muss eine Zahl zwischen 10 und 118 und für die y-Koordinate eine Zahl zwischen 10 und 54 generiert werden. 
+Da es fast unmöglich ist, Punkte zu fangen, die direkt am Displayrand liegen, werden von den Koordinaten jeweils 10 Pixel 
+abgezogen. Die generierten Zufallszahlen speichern wir unter den Variablen randomX und randomY ab, da diese für das Spiel noch in 
+einem anderen Zusammenhang verwendet werden. Das Erstellen der Zufallszahlen lassen wir zunächst im Setup durchführen, sodass 
+wir einen zufälligen Punkt bekommen und dieser anschließend angezeigt wird
+
+{% include image.html image=page.image6 %}
+{% include image.html image=page.image7 %}
+
+###Das Fangen
+Im aktuellen Programm sollten nun immer zwei Punkte zu sehen sein: Einer, der sich über die Steuerung der MCU bewegt, 
+und ein Zweiter, der bewegungslos ist. Der nächste Schritt des Programms ist das Fangen. Es lässt sich über eine Wenn-Dann-Bedingung 
+realisieren. Wenn die x- und y-Koordinaten des Punktes, der über die MCU gesteuert wird, gleich den zufällig erstellten Koordinaten 
+sind, wurde der Punkt gefangen.
+
+{% include image.html image=page.image8 %}
+
+Die Wenn-Dann-Bedingung setzt sich aus zwei Bedingungen zusammen, die mit dem logischen UND verknüpft werden. Wenn die Bedingungen 
+erfüllt sind, dann wird das Display gelöscht sowie auf dem Display angezeigt, dass der Punkt gefangen wurde. 
+Damit das Spiel auch wirklich endet, füge noch den Block `Warte für immer` aus der Kategorie `Zeit` in die Wenn-Dann-Bedingung ein.
+
+###Das Spiel erweitern
+Bisher ist das Spiel noch nicht wirklich ausgefeilt. Der zufällige Punkt wird nur einmal erstellt, und das Spiel ist bereits 
+vorbei, wenn der Punkt gefangen wurde. In diesem Schritt wird das Spiel erweitert, sodass es endlos spielbar wird. 
+Folgende Schritte müssen dafür durchgeführt werden. Zum einen muss fortlaufend ein neuer Punkt generiert werden, wenn der 
+vorherige Punkt gefangen wurde. Damit immer wieder ein neuer Punkt generiert wird, muss das Erstellen in der Endlosschleife 
+passieren. Anstelle der Anzeige auf dem Display, dass der Punkt gefangen wurde, werden in der Wenn-Dann-Bedingung 
+neue Koordinaten erstellt. So wird sichergestellt, dass immer, wenn du einen Punkt gefangen hast, direkt ein neuer erstellt wird. 
+
+{% include image.html image=page.image9 %}
+
+###Spielzeit und Zähler
+Ein Spiel ist natürlich erst dann vollständig, wenn es eine Spielzeit und einen Spielstandzähler gibt. Die Spielzeit kann über 
+den Block `Messintervall`erfasst werden, für den Zähler des Spielstands wird eine neue Variable angelegt, die immer um eins 
+hochgezählt wird, wenn die Bedingung zum Fangen eines Punkts erfüllt wird.
+
+{% include image.html image=page.image10 %}
+
+Den Block zum Anlegen und Hochzählen der Variablen findest du in der Kategorie `Mathematik`. Die Variable wird automatisch 
+angelegt und du kannst ihr wieder einen Namen geben. 
+Wenn die Spielzeit abgelaufen ist, wird auf dem Display »Spiel beendet« sowie die Anzahl der gefangenen Punkte angezeigt.
+
+{% include image.html image=page.image11 %}
+
+Am Ende wird das Programm wieder mit dem Block `Warte für immer` beendet. Baue den Programmcode der einzelnen Bestandteile 
+zusammen und übertrage das Programm auf die senseBox MCU. Anschließend kannst du einen kleinen Wettstreit mit Freunden und der 
+Familie starten, wer die meisten Punkte fängt.
+---
