@@ -15,6 +15,17 @@ introduction:
   <p>Until early 2018 senseBox was based on an Arduino/Genuino UNO microcontroller, this version is no longer sold but still supported. Since May 2018 the senseBox is based on the senseBox MCU and is equipped with further sensors and extensions.</p>
   <p>&nbsp;</p>'
 
+introduction-short: "Our senseBox variations"
+
+headlines:
+  home: "Your stationary IoT environmental monitoing station for your home"
+  edu: "Your DIY kit to learn to program and experiment with sensors"
+  mini: "Your senseBox starter kit"
+
+contains: "Contains"
+further-data-modules: "Further data modules"
+further-sensors: "Further sensors"
+
 sensors:
   header: "Sensors"
   uv-light: "<b>TSL45315 & VEML6070</b> UV Sensor & Ambient Light Sensor"
@@ -31,9 +42,10 @@ sensors:
   ultrasonic-data-sheet: "https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf"
   ir: "Infrared Distance Sensor"
   ir-data-sheet: "https://www.sparkfun.com/datasheets/Components/GP2Y0A21YK.pdf"
-  bmx: "<b>BMX055</b> Lage-/ Kompass-/ Beschleunigungssensor"
+  bmx: "<b>BMX055</b> Orientation-/ Compass-/ Acceleration sensor"
   pm: "<b>SDS011</b> Fine Particular Matter (PM10 & PM2.5) "
   bme: "<b>BME680</b> Temperature-/ Humidity-/ Pressure-/ Gassensor"
+  smt: "<b>SMT50</b> Soil moisture- & temperature sensor"
 
 components:
   header: "Components"
