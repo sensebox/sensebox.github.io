@@ -1698,7 +1698,9 @@ $carousel-height: 450px;
   }
 
   > ul.features {
-    height: 200px;
+    @media (min-width: 1200px) {
+      height: 200px;
+    }
   }
 
   .collapse-header {
