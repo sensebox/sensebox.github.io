@@ -10,7 +10,7 @@ text: "<p>With <em>senseBox</em> , citizens and schools are able to collect envi
     <p><a class=\"link\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span><a> </a><a href=\"http://www.sensebox.de/en/products\" class=\"link\">find out more</a></span></a></p>"
 home_info: Citizens with senseBox:home can use the technology for their own local research, to collect data by themselves or to contribute to the openSenseMap sensor network.
 edu_info: Additionally, we created senseBox:edu for schools and junior scientists, which is an experimental box with didactical concepts, instructions and project ideas included.
-edu_info: The senseBox:mini is your introduction in our world of \#sensors, \#IoT and \#coding.
+mini_info: "The senseBox:mini is your introduction in our world of #sensors, #IoT and #coding."
 osem_info: openSenseMap is our platform for open sensor data of senseBox. The data are visualized and everybody can do his own analysis.
 
 shop-link: "https://sensebox.shop"
