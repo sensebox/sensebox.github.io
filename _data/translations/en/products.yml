@@ -68,6 +68,12 @@ order:
   header: "Order"
   home: "Order senseBox:home"
   edu: "Order senseBox:edu"
+  mini: "Order senseBox:mini"
+
+further-readings:
+  home: Getting started
+  edu: Getting started
+  mini: Getting started
 
   optional: "(optional)"
 

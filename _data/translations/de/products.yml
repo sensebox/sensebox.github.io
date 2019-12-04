@@ -75,6 +75,12 @@ order:
   header: "Bestellen"
   home: "senseBox:home bestellen"
   edu: "senseBox:edu bestellen"
+  mini: "senseBox:mini bestellen"
+
+further-readings:
+  home: Informationen zum Zusammenbau
+  edu: Erste Schritte, Projekte und vieles mehr
+  mini: Erste Schritte, Projekte und vieles mehr
 
 optional: "(optional)"
 
