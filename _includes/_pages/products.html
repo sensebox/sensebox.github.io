@@ -220,8 +220,8 @@
       </ul>
       <a href="https://sensebox.kaufen/product/sensebox-home" target="_blank" class="link"><button
           class="btn">{{ t.order.home }}</button></a>
-      <a href="{{ site.baseurl | append: '/de/go-home' }}" target="_blank" class="link"><button
-          class="btn">Informationen zum Zusammenbau</button></a>
+      <a href="{{ site.baseurl | append: '/' | append: page.lang | append: '/go-home' }}" target="_blank" class="link"><button
+          class="btn">{{ t.further-readings.home }}</button></a>
 
     </div>
   </div>
@@ -520,8 +520,7 @@
       </ul>
       <a href="https://sensebox.kaufen/product/sensebox-edu" target="_blank" class="link"><button
           class="btn">{{ t.order.edu }}</button></a>
-      <a href="{{ site.baseurl | append: '/de/go-edu' }}" target="_blank" class="link"><button class="btn">Erste
-          Schritte, Projekte und vieles mehr</button></a>
+      <a href="{{ site.baseurl | append: '/' | append: page.lang | append: '/go-edu' }}" target="_blank" class="link"><button class="btn">{{ t.further-readings.edu }}</button></a>
     </div>
   </div>
   <!-- MINI -->
@@ -737,9 +736,8 @@
         </li>
       </ul>
       <a href="https://sensebox.kaufen/product/sensebox-mini" target="_blank" class="link"><button
-          class="btn">senseBox:mini bestellen</button></a>
-      <a href="{{ site.baseurl | append: '/de/go-edu' }}" target="_blank" class="link"><button class="btn">Erste
-          Schritte, Projekte und vieles mehr</button></a>
+          class="btn">{{ t.order.mini }}</button></a>
+      <a href="{{ site.baseurl | append: '/' | append: page.lang | append: '/go-edu' }}" target="_blank" class="link"><button class="btn">{{ t.further-readings.mini }}</button></a>
     </div>
   </div>
 </div>
