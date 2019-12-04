@@ -1,17 +1,30 @@
 products: "Products"
 
-header-introduction: "There are two versions of senseBox: <b>senseBox:home</b> and <b>senseBox:edu</b>"
-
+header-introduction: 'There are three versions of senseBox: <span class="home-span">senseBox:home</span>, <span class="edu-span">senseBox:edu</span> and <span class="mini-span">senseBox:mini</span>'
 to-senseBox-overwiew: "senseBox.shop"
 
 shop-link: "https://sensebox.shop"
 shop-button: "sensebox.shop"
 
-introduction: '<p>There are two versions of the senseBox, the <span class="home-span">senseBox:home</span> and the <span class="edu-span">senseBox:edu</span>.</p>
-    <p>The <span class="home-span">senseBox:home</span> is a modular do-it-yourself environmental sensor station. Depending on your interest or research question, citizens can put together a measuring station with various sensors and connect to the Internet via LAN, WLAN or LoRa. A simple tutorial allows you to set up and register on the openSenseMap. It then continuously provides location-based (mobile or stationary) measurements of temperature, humidity, air pressure, illuminance, UV radiation or fine dust exposure.</p>
-    <p>With the <span class="edu-span">senseBox:edu</span> you can build and program your own measuring tools. The senseBox is already in use at many schools and educational institutions. Thanks to the large number of possible projects and experiments, it is ideally suited for use in the entire STEM field. This allows you to learn the basics of programming on the basis of relevant topics or to carry out measurement campaigns quickly and easily.</p>    
-    <p>Until early 2018 senseBox was based on an Arduino/Genuino UNO microcontroller, this version is no longer sold but still supported. Since May 2018 the senseBox is based on the senseBox MCU and is equipped with further sensors and extensions.</p>
-    <p>&nbsp;</p>'
+introduction:
+  '<p>There are three versions of senseBox: <span class="home-span">senseBox:home</span>, <span class="edu-span">senseBox:edu</span> and <span class="mini-span">senseBox:mini</span>.</p>
+  <p>The <span class="home-span">senseBox:home</span> is a modular do-it-yourself environmental sensor station. Depending on your interest or research question, citizens can put together a measuring station with various sensors and connect to the Internet via LAN, WLAN or LoRa. A simple tutorial allows you to set up and register on the openSenseMap. It then continuously provides location-based (mobile or stationary) measurements of temperature, humidity, air pressure, illuminance, UV radiation or fine dust exposure.</p>
+  <p>With the <span class="edu-span">senseBox:edu</span> you can build and program your own measuring tools. The senseBox is already in use at many schools and educational institutions. Thanks to the large number of possible projects and experiments, it is ideally suited for use in the entire STEM field. This allows you to learn the basics of programming on the basis of relevant topics or to carry out measurement campaigns quickly and easily.</p>
+  <p>The new <span class="mini-span">senseBox:mini</span> is the starting point for everybody who wants to start measuring environmental phenomena. The included BME680 sensor measures temperature, humidity, pressure and gas. You can visualize your measurements on the OLED-Display and transmit those to the openSenseMap via the WiFi module.</p>
+
+  <p>Until early 2018 senseBox was based on an Arduino/Genuino UNO microcontroller, this version is no longer sold but still supported. Since May 2018 the senseBox is based on the senseBox MCU and is equipped with further sensors and extensions.</p>
+  <p>&nbsp;</p>'
+
+introduction-short: "Our senseBox variations"
+
+headlines:
+  home: "Your stationary IoT environmental monitoing station for your home"
+  edu: "Your DIY kit to learn to program and experiment with sensors"
+  mini: "Your senseBox starter kit"
+
+contains: "Contains"
+further-data-modules: "Further data modules"
+further-sensors: "Further sensors"
 
 sensors:
   header: "Sensors"
@@ -29,8 +42,10 @@ sensors:
   ultrasonic-data-sheet: "https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf"
   ir: "Infrared Distance Sensor"
   ir-data-sheet: "https://www.sparkfun.com/datasheets/Components/GP2Y0A21YK.pdf"
-  bmx: "<b>BMX055</b> Lage-/ Kompass-/ Beschleunigungssensor"
+  bmx: "<b>BMX055</b> Orientation-/ Compass-/ Acceleration sensor"
   pm: "<b>SDS011</b> Fine Particular Matter (PM10 & PM2.5) "
+  bme: "<b>BME680</b> Temperature-/ Humidity-/ Pressure-/ Gassensor"
+  smt: "<b>SMT50</b> Soil moisture- & temperature sensor"
 
 components:
   header: "Components"
@@ -82,6 +97,5 @@ addon:
   gps: "<b>CAM-M8Q</b> GPS-Receiver"
   oled: "OLED Display"
   expander: JST Expander
-  
 
 license: "The compilation of senseBox components is open under the CERN Open Hardware License 1.2. The source code of senseBox:home is open source available under the LGPL 3.0 license. The manuals are Open Educational Resources (OER) under the Creative Commons License CC BY SA 4.0."
