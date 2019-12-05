@@ -19,6 +19,19 @@ introduction: '<p>Von der senseBox gibt es drei Varianten: die <span class="home
     <p>Bis Anfang 2018 basierte die senseBox auf einem Arduino/Genuino UNO Microcontroller, diese Version wird nicht mehr verkauft aber weiterhin unterstützt. Seit Mai 2018 basiert die senseBox auf der senseBox MCU und ist durch weitere Sensoren und Erweiterungen ausgestattet. Mehr dazu im <a href="https://sensebox.de/blog/2018-03-06-senseBox_MCU">Blog-Post</a>.</p>
 <p>&nbsp;</p>'
 
+introduction-short: "Unsere senseBox Varianten"
+
+headlines:
+  home: 'Deine stationäre IoT-Umweltmessstation für Zuhause'
+  edu: 'Dein Elektronikbausatz zum Experimentieren und Programmieren lernen mit Sensoren'
+  mini: 'Dein Einsteigerset in die Welt der senseBox'
+
+contains: "Enthält"
+further-data-modules: "Zusätzliche Datenmodule"
+further-sensors: "Erweiterbare Sensoren"
+
+
+
 sensors:
   header: "Sensoren"
   uv-light: "<b>TSL45315 & VEML6070</b> Beleuchtungsstärke & UV-Strahlung"
@@ -39,6 +52,7 @@ sensors:
   mikro: "Mikrofon"
   bmx: "<b>BMX055</b> Lage-/ Kompass-/ Beschleunigungssensor"
   bme: "<b>BME680</b> Temperatur-/ Luftfeuchtigkeit-/ Luftdruck-/ Gassensor"
+  smt: "<b>SMT50</b> Bodenfeuchte- & Temperatursensor"
 
 components:
   header: "Komponenten"
@@ -61,6 +75,12 @@ order:
   header: "Bestellen"
   home: "senseBox:home bestellen"
   edu: "senseBox:edu bestellen"
+  mini: "senseBox:mini bestellen"
+
+further-readings:
+  home: Informationen zum Zusammenbau
+  edu: Erste Schritte, Projekte und vieles mehr
+  mini: Erste Schritte, Projekte und vieles mehr
 
 optional: "(optional)"
 

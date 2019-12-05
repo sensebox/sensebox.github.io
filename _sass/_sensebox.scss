@@ -1325,7 +1325,7 @@ $carousel-height: 450px;
 
 /* Center align the text within the three columns below the carousel */
 
-.marketing .col-lg-4 {
+.marketing .col-lg-4,.marketing .col-lg-3  {
   margin-bottom: 20px;
   text-align: center;
 }
@@ -1334,12 +1334,12 @@ $carousel-height: 450px;
   font-weight: normal;
 }
 
-.marketing .col-lg-4 p {
+.marketing .col-lg-4 p,.marketing .col-lg-3 p {
   margin-right: 10px;
   margin-left: 10px;
 }
 
-.marketing .col-lg-4 {
+.marketing .col-lg-4,.marketing .col-lg-3 {
   .hero-product {
     color: $text-color;
     &:hover {
@@ -1669,12 +1669,51 @@ $carousel-height: 450px;
   border: 1px solid #eee;
   padding: 0.5em 0.5em;
   position: relative;
+  text-align: left;
+
+  > h1,
+  > h2,
+  > a {
+    text-align: center;
+  }
+
+  > a > button {
+    white-space: normal;
+  }
 
   .main-product-image {
+    @media (min-width: 1200px) {
+      overflow: hidden;
+      height: 180px;
+    }
     img {
       width: 100%;
     }
   }
+
+  .info {
+    font-size: 1.4em;
+    margin-top: 1em;
+    text-align: center;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  > ul.features {
+    @media (min-width: 1200px) {
+      height: 200px;
+    }
+  }
+
+  .collapse-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
   .sensor-list {
     padding-top: 1em;
   }
