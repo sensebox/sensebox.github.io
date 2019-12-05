@@ -13,6 +13,8 @@ material:
     - 3x Temperatur-/Luftfeuchtigkeitssensor
     - 4x JST-JST Kabel
 ide: arduino
+addons: ["Multiplexer"]
+version: ["edu", "mini"]
 lang: de
 tags: ["Informatik"]
 difficult: leicht
