@@ -1,0 +1,52 @@
+---
+layout: project_page
+name: "Telegram Chatbot für die senseBox"
+date: 2019-12-04
+author: Felix
+abstract: "Ein Chatbot der die Sensorwerte der senseBox zurückgibt!"
+image: /telegram-blockly/telegram-blockly.png
+
+material:
+    - senseBox MCU
+    - WiFi Bee
+    - Beliebige(r) Sensor(en)
+    - senseBox JST Kabel
+ide: blockly
+lang: de
+tags: ["IoT","Chatbot"]
+difficult: einfach
+---
+# Telegram Chatbot für die senseBox
+Ein einfacher Chatbot um die senseBox auszulesen ist ein cooles Feature. Man kann zum Beispiel von überall die aktuellen Werte der senseBox abrufen. In diesem Projekt lernt ihr den Chatbot über Blockly zu Programmieren um angeschlossene Aktoren zu steuern und Sensoren auszulesen.
+
+## Telegram-Bot erstellen
+Erstelle zunächst einen neuen Telegram-Bot. Eine genaue Anleitung findest Du hier: [https://sensebox.de/projects/de/2019-05-13-chatbot#telegram-bot-erstellen](https://sensebox.de/projects/de/2019-05-13-chatbot#telegram-bot-erstellen)
+
+__Lass das Telegram Fenster geöffnet oder kopiere dein Telegram Token und den Namen des Bots damit Du es später nutzen kannst__
+
+## Chatbot über Blockly Programmieren
+Die Programmieren des Chatbots ist mit Blockly recht einfach. Zuerst muss die senseBox über WLAN mit Telegram kommunizieren können. Wähle dafür den `Verbinde mit WLAN` Block und gebe Deine WLAN-Zugangsdaten ein. Darunter muss der Telegram Bot initialisiert werden. Im Feld `token` musst Du den Telegram Token eingeben welchen Du vom BotFather erhalten hast. Blockly sollte nun in etwa so aussehen:
+
+{% include image.html image='/images/projects/telegram-blockly/1.png' %}
+
+Nun kannst Du einstellen, was der Bot beim Erhalt einer Nachricht machen soll. Das muss im `Telegram mache` Block geschehen. Dort rein kommt der `bei Nachticht` Block. Hier kannst Du die Nachricht angeben bei welcher etwas passieren soll. Achte darauf, dass die Nachricht mit `/` beginnt. In diesem Fall möchte ich, dass die interne LED der senseBox bei `/ledan` angeschaltet wird. Innerhalb des `Telegram mache` Blocks füge ich noch einen zweiten `bei Nachricht` Block ein, welcher die LED wieder ausschaltet.
+
+{% include image.html image='/images/projects/telegram-blockly/2.png' %}
+
+In Telegram kannst Du nun Deinen neuen Bot Ansprechen (den Kontakt hast Du vom BotFather als Link erhalten). Du kannst ihm nun deine Befehle `/ledan` oder `/ledaus` senden und die LED der senseBox sollte an bzw. aus gehen.
+
+{% include image.html image='/images/projects/telegram-blockly/3.png' %}
+
+## Sensorwerte auslesen
+Der Bot kann Dir auch Nachrichten schicken. Hier möchte ich beispielsweise Sensorwerte bei der Nachricht `/status` erhalten. Dazu erstelle ich zwei `Sende Nachricht` Blöcke. An jedem Block kann ich einen beliebigen Text angeben. Eine Nachricht enthält die Temperatur, die zweite enthält die rel. Luftfeuchtigkeit.
+
+{% include image.html image='/images/projects/telegram-blockly/4.png' %}
+
+In Telegram erhalte ich nun bei der Nachricht `/status` nach wenigen Sekunden meine aktuellen Messwerte.
+
+{% include image.html image='/images/projects/telegram-blockly/5.png' %}
+
+Viel Spaß mit Deinem Persönlichen ChatBot!
+
+### Weitere Tipps
+* Achte darauf, dass das WiFi-Bee die richtige Firmware besitzt. Ansonsten kann es sein, dass sich die senseBox nicht mit Telegram verbinden kann. Weitere Informationen findest Du hier: [https://sensebox.github.io/books-v2/home/de/additional-info.html](https://sensebox.github.io/books-v2/home/de/additional-info.html)
