@@ -16,6 +16,7 @@ material:
     - OLED Display
     - WIFI Bee
 ide: blockly
+version: ["edu", "mini"]
 addons: Feinstaubsensor    
 lang: de
 tags: ["Geographie", "Informatik"]
