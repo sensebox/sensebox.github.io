@@ -21,7 +21,9 @@ material:
     - GPS Modul
     - LoRa Bee
     - JST Kabel
-ide: arduino    
+ide: arduino
+version: ["edu", "mini"]   
+addons: ["GPS", "LoRa-Bee", "Feinstaubsensor"] 
 lang: de
 tags: ["Informatik","TTN","LoRa","Feinstaub","Geographie"]
 difficult: sehr schwer

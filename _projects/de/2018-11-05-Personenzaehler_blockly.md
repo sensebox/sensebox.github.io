@@ -15,7 +15,8 @@ material:
     - OLED Display
     - 1x JST-Adapterkabel
     - 1x JST-Kabel
-ide: blockly    
+ide: blockly 
+version: ["edu"]   
 lang: de
 tags: ["Geographie", "Informatik"]
 difficult: leicht
