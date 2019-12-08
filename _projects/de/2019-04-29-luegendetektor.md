@@ -16,6 +16,7 @@ ide: arduino
 lang: de
 tags: ["Informatik", "Physik"]
 difficult: mittel
+version: ["edu"]
 ---
 # Lügendetektor
 
