@@ -43,7 +43,7 @@ Du kannst die senseBox MCU mithilfe von drei verschiedenen Editoren Programmiere
                           </div>
                           <div class="media-body">
                             <h4 class="media-heading">Arduino IDE</h4>
-                             <p>Die Arduino IDE kannst du unter <a href="https://arduino.cc/downloads">kostenlos herunterladen</a>. Die Arduino IDE bietet dir den kompletten Zugriff auf alle Funktionen, die die Programmiersprache Arduino bereithält. Über die Arduino IDE kannst du auch zusätzliche Sensoren und Bauteile, die nicht in Blockly für senseBox oder openRoberta, enthalten sind programmieren. Die Arduino IDE muss auf dem Computer installiert werden und zusätzlich muss ein Board Support Package für die senseBox MCU installiert werden. Wie genau das funktioniert erfährst du <a href="/">hier</a></p>
+                             <p>Die Arduino IDE kannst du unter <a href="https://arduino.cc/downloads">kostenlos herunterladen</a>. Die Arduino IDE bietet dir den kompletten Zugriff auf alle Funktionen, die die Programmiersprache Arduino bereithält. Über die Arduino IDE kannst du auch zusätzliche Sensoren und Bauteile, die nicht in Blockly für senseBox oder openRoberta, enthalten sind programmieren. Die Arduino IDE muss auf dem Computer installiert werden und zusätzlich muss ein Board Support Package für die senseBox MCU installiert werden. Wie genau das funktioniert erfährst du <a href="/documentation/de/arduino_ide.html">hier</a></p>
                           </div>
             </div>
             <hr>
@@ -61,7 +61,7 @@ Du kannst die senseBox MCU mithilfe von drei verschiedenen Editoren Programmiere
                             <a class="btn" href="https://lab.obenRoberta.org" target="_blank" role="button">Zum openRoberta Lab</a> 
                           </div>
                           <div class="col-md-4">
-                                <a class="btn" href="https://sensebox.github.io/books-v2/blockly/de/" target="_blank" role="button">Zur Dokumentation</a> 
+                                <a class="btn" href="https://jira.iais.fraunhofer.de/wiki/display/ORInfo/Programmieren+senseBox" target="_blank" role="button">Zur Dokumentation</a> 
                               </div>
                       </div>
             </div>

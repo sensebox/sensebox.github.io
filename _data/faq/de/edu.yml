@@ -3,10 +3,12 @@
 - q: Wer ist die Zielgruppe für die senseBox:edu?
   a: Die senseBox:edu eignet sich für Schülerinnen und Schüler ab der fünften Klasse. Sie kann in so gut wie allen naturwissenschaftlichen Unterrichtsfächern eingesetzt werden.
 - q: Wo finde ich Unterrichtsmaterialien zur senseBox?
-  a: Unterrichtsmaterialien findest du auf unserer [Materialseite](https://sensebox.de/de/materials/)
+  a: Unterrichtsmaterialien findest du auf unserer [Materialseite](https://sensebox.de/de/materials/) und zusätzlich findest du in der Rubrik [Projekte](https://sensebox.de/de/projects) spannenden Projekte mit der senseBox. Das [senseBox Buch]() ist online erhätlich und enthält weitere 12 spannende Projekte. 
 - q: Benötige ich für die Verwendung der senseBox eine Softwareinstallation auf dem Computer?
   a: Nein und genau das ist das schöne an der senseBox. Du benötigst zum Programmieren keine Softwareinstallation auf dem Computer. Du kannst direkt mit der [grafischen Programmieroberfläche](https://blockly.sensebox.de) starten. Wenn du jedoch mit der Arduino IDE programmieren möchtest musst du diese auf deinem Computer installieren. Wie das geht erfährst du [hier](https://sensebox.de/)
 - q: Wie verbinde ich die senseBox MCU mit dem Computer und übertrage einen Programmcode?
   a: Die senseBox MCU kann mit dem Micro USB Kabel mit deinem Computer verbunden werden. Mit einem Doppelklick auf den roten Resetbutton auf der senseBox MCU versetzt du diese in den Lernmodus und taucht in deinem Dateimanager am Computer auf.
 - q: Muss ich für die senseBox bereits programmieren können?
   a: Nein du lernst das Programmieren mithilfe der senseBox und benötigst keine Vorerfahrung.
+- q: Kann ich die senseBox:edu um weitere Komponenten und Sensoren erweitern?
+  a: 

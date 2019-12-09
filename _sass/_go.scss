@@ -1,6 +1,7 @@
 
 $home: #b3a900;
 $edu: #2eb6eb;
+$mini: #7F0D22;
 
 .title {
     display: inline-block;
@@ -56,6 +57,17 @@ $edu: #2eb6eb;
                 color: $edu;
             }
         }
+
+        &.mini-inner {
+            .text-container {
+                border-left: 2px solid $mini;
+            }            
+            h2 {
+                color: $mini;
+            }
+        }
+
+
     }
 
     .img-container {

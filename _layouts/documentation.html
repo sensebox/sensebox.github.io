@@ -15,34 +15,18 @@ layout: simple
 		</div>
 	</div>
 	<div class="row">
-			<div class="col-md-6">
+		<div class="col-md-6">
 			<h4>{{ t.toc }}</h4>
-				{% include toc.html sanitize=true html=content h_min=1 h_max=3 class="toc__menu" %}
-			</div>
-			</div>
+			{% include toc.html sanitize=true html=content h_min=1 h_max=3 class="toc__menu" %}
+		</div>
+	</div>
 	<hr>
-    <article class="post-content">
-        {{ content }}
-		</article>
-		<div class="PageNavigation">
-			<div class="row">
-				{% if page.previous.url %}
-				<div class="col-md-6 text-left">
-					<a class="prev" href="{{page.previous.url}}"><h4>&laquo; {{page.previous.title}}</h4></a>
-				{% endif %}
-			</div>
-			<div class="col-md-6 text-right">
-				{% if page.next.url %}
-					<a class="next" href="{{page.next.url}}"><h4>{{page.next.title}} &raquo;</h4></a>
-				{% endif %}
-			</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 col-md-offset-4">
-					<a class="btn" href="/de/go-edu" role="button">zurück zur Übersicht</a> 
-				</div>
-			</div>
-			</div>
+	<article class="post-content">
+		{{ content }}
+	</article>
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<a class="btn" href="/de/go-edu" role="button">zurück zur Übersicht</a>
+		</div>
+	</div>
 </div>
-
-	

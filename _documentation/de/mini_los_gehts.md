@@ -6,23 +6,25 @@ author: Mario
 abstract: "Verbinden der Bauteilen mit der senseBox MCU"
 thumbnail: /images/blog_images/screenshot_osem.png
 lang: de
-image1:
-image2:
+version: mini
 ---
 Los gehts!
 ============
 
 Bevor du mit den Projekten anfängst, wird dir im folgenden Abschnitt gezeigt, wie du ein Programmcode auf die senseBox MCU überträgst. Die senseBox MCU kann einen Programmcode speichern, sodass dieser auch nach dem Trennen der Stromverbindung noch vorhanden ist.
 
+Für die ersten Schritte benötigst du neben der senseBox MCU und dem USB Kabel das Display und den Umweltsensor BME680.
 
-## Schritt 1: Die Programmierumgebung
-Öffne Blockly für die senseBox, indem du mit einem geeigneten Internetbrowser (Chrome, Firefox oder Edge) auf [https://blockly.sensebox.de](https://blockly.sensebox.de) gehst. Wähle die senseBox MCU, um zur richtigen Programmieroberfläche zu gelangen.
 
-## Schritt 2: Programmieren
+## Display und Sensor anschließen
 
-In der Programmieroberfläche ist bereits ein Block vorhanden. Dieser Block ist die Basis und wird für jedes Programm benötigt. Zum einen findest du einen offenen Blockabschnitt unter `Setup()` und unter `Endlosschleife()`. Unter `Setup()` plaziertst du alle Blöcke, die nur einmal ausgeführt werden sollen, wenn du Mikrokontroller das Programm startet. Unter `Endlosschleife()` kommen alle Blöcke, die in einer Endlosschleife ausgeführt werden. 
+Schließe den Sensor und das Display mit dem JST-JST Kabel an die I2C Ports auf der senseBox MCU an. 
 
-Um den Lichtsensor auszulesen benötigst du folgenden Block, der unter senseBox Sensoren zu finden ist:
+
+## Die Programmierumgebung
+Öffne Blockly für die senseBox, indem du mit einem geeigneten Internetbrowser (Chrome, Firefox oder Edge) auf [https://blockly.sensebox.de](https://blockly.sensebox.de/ardublockly/?board=sensebox-mcu?lang=de) gehst. Wähle die senseBox MCU, um zur richtigen Programmieroberfläche zu gelangen.
+
+## Programmieren
 
 
 
@@ -34,7 +36,7 @@ Verknüpfst du jetzt den Lichtsensor-Block mit der “Wert“-Schnittstelle des 
 Nach dem Programmieren musst du den Programmcode noch auf die senseBox MCU übertragen. Wie genau das geht findest du auf der nächsten Seite. 
 
 
-## Schritt 3: Programmcode übertragen
+## Programmcode übertragen
 1.Verbinden:
 Das Programm muss nun auf die senseBox MCU übertragen werden. Verbinde dazu die senseBox MCU mithilfe des USB-Kabels mit deinem Computer.
 

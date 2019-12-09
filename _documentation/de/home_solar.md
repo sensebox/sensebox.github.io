@@ -5,6 +5,7 @@ date: 2017-05-11
 image1: /images/documentation/de/home_solar/
 image2: /images/documentation/de/home_solar/
 lang: de
+version: home
 ---
 
 # senseBox:home mit einem Solarpanel betreiben {#head}
@@ -19,13 +20,13 @@ Du findest diese Materialien auch als vollständiges Set mit einem Schutzgehäus
 
 ## Aufbau
 
-Zunächst baust Du die senseBox nach deinem belieben auf. Um zu gewährleisten, dass die senseBox zeitgleich mit Strom versorgt wird und einen Akku nutzt, der durch die Solarzelle aufgeladen wird, benötigst du den [Adafruit Powerboost 1000C](https://learn.adafruit.com/adafruit-powerboost-1000c-load-share-usb-charge-boost/overview).
+Zunächst baust Du die senseBox nach deinem belieben auf. Um zu gewährleisten, dass die senseBox zeitgleich mit Strom versorgt wird und einen Akku nutzt, der durch die Solarzelle aufgeladen wird, benötigst du den Laderegler, der im Solar-Set enthalten ist.
 
 ![Powerboost Aufbau](../../../pictures/solar_powerboost.jpg)
 
 ## Programmierung
 
-Um die senseBox:home möglichst lange autark betreiben zu können bietet die openSenseMap einen speziellen Sketch an, der auf einen möglichst geringen Stromverbrauch hin optimiert wurde. 
+
 
 ## Nutzung
 

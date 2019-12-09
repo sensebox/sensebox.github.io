@@ -5,300 +5,113 @@ date: 2017-05-11
 thumbnail: /images/blog_images/screenshot_osem.png
 lang: de
 system: home
-image1: /images/documentation/de/home_lora/01_aufbau.png
-image2: /images/documentation/de/home_lora/mcu_verschraubung.jpeg
+image1: /images/projects/lora-osem-tago/station_anlegen_ttn.PNG
+image2: /images/projects/lora-osem-tago/station_anlegen_ttn_final.PNG
+image3: /images/projects/lora-osem-tago/device_anlegen_ttn.PNG
+image4: /images/projects/lora-osem-tago/device_anlegen_ttn_overview.PNG
+image5: /images/projects/lora-osem-tago/Auswahl_OSEM.PNG
+image6: /images/projects/lora-osem-tago/Auswahl_OSEM_2.PNG
+image7: /images/projects/lora-osem-tago/osem_zusammenfassung.PNG
+image8: /images/projects/lora-osem-tago/device_overview_right_format.PNG
+image9: /images/projects/lora-osem-tago/Integration.PNG
+image10: /images/projects/lora-osem-tago/tago_add_devices.PNG
+image11: /images/projects/lora-osem-tago/Tago_add_dashboard.PNG
+image12: /images/projects/lora-osem-tago/sensor_id_erkennen.PNG
+image13: /images/projects/lora-osem-tago/Integration_osem.PNG
 ---
 # senseBox:home mit LoRa
 
-Verwendet die LoRa-Schnittstelle um Daten ins Internet zu übertragen. Neu ist das LoRa WAN-XBee-Modul, mit dem eine stromsparende und kostenlose Möglichkeit der Datenübertragung ins Internet über den LoRa-Funk-Standard ermöglicht wird. Dafür werden bestehende LoRa-Netzwerke, wie zum Beispeil TheThingsNetwork genutzt um Daten zu übertragen. Die hierzu benötigte Infrastruktur wird bei TheThingsNetwork von der Community bereit gestellt, und ist in immer mehr Regionen verfügbar.
+
+Deine senseBox:home kann um eine LoRa-Bee erweitert werden um die Daten über LoRa-WAN an die openSenseMap zu schicken. Die Daten werden über das freie Netzwerk [TheThingsNetwork](https://www.thethingsnetwork.org/) ins Internet gesendet.
+Die Messwerte der Sensoren für Beleuchtungsstärke & UV, Temperatur & Luftfeuchtigkeit und Luftdruck sollen dabei übermittelt werden. Anschließend können die Daten zusätzlich zur openSenseMap auch auf der Plattform [tago.io](https://tago.io/) angezeigt werden.
+
+## Grundlagen
+Das TheThingsNetwork ist eine communitybasierte Initiative zur Errichtung eines globalen LPWAN-Internet-of-Things-Netzwerks. Über das Netzwerk können kostenlos und über große Distanzen Daten übermittelt werden. Mehr dazu findest du [hier](https://de.wikipedia.org/wiki/The_Things_Network). Bevor du mit dem Projekt beginnst, überprüfe ob ein Gateway - der LoRaWan - in deiner Nähe bereitgestellt ist. Am einfachsten kannst du dies über die Website  [ttnmapper](https://ttnmapper.org/) machen. 
+
+## Aufbau
+Die Sensoren werden mit JST-Kabel mit der I2C/Wire Ports der senseBox MCU verbunden. Das LoRa-Bee wird auf den XBEE1 Steckplatz gesteckt. Hast du die senseBox:home bereits aufgebaut, musst du nur das LoRa-Bee mit dem Wifi-Bee tauschen. 
+
+## Registrierung bei TheThingsNetwork und auf der openSenseMap
+
+Registrierst du einen senseBox:home mit LoRa Modul auf der openSenseMap wird dir ein fertiger Programmcode generiert.  Um den Code richtig generieren zu lassen, brauchst du jedoch einige Informationen aus dem TheThingsNetwork.
+
+### Registrierung auf TheThingsNetwork und anlegen einer Application
+
+Besuche die Website [thethingsnetwork.org](https://www.thethingsnetwork.org/) und erstelle dir einen Account. Wenn du eingeloggt bist, siehst du in der Kopfzeile der Startseite eine Option "Learn". Diese klickst du an und wählst auf der nachfolgenden Seite "Applications" und anschließend "add application" aus. Gib dort eine "Application ID" an, welche einzigartig ist. Alle anderen Auswahlmöglichkeiten lässt du unverändert.
+
+{% include image.html image=page.image1 %}
+
+Danach erhälst du eine Übersicht mit der gewählten "Application ID" und die "Application EUIS". 
+
+{% include image.html image=page.image2 %}
+
+Nun musst du in deiner neuen Application noch ein Device hinzufügen. Gehe dafür unter der Rubrik "Devices" auf "register device". Gib deinem Device eine "Device ID". Durch klicken auf die geschlungenen Pfeile ("generate") bei "DeviceEUI" wird dir automatisch einen DeviceEUI generiert.
+
+{% include image.html image=page.image3 %}
+
+Klicke dann auf "Register" und du erhälst folgende Übersicht mit der "Application ID" und der "Device ID", die du beide anschließend bei der Registrierung auf der openSenseMap brauchst.
+
+{% include image.html image=page.image4 %}
+
+Da die Daten später an die openSenseMap gesendet werden sollen, brauchst du noch eine sogenannte "Integration". Diese findest du oben in deinem Menü. Klicke darauf und klicke dann gleich auf den Button mit der Aufschrift "Add Integration". Dort hast du dann die Möglichkeit, verschiedenste Integrations hinzuzufügen, um die Daten von TTN an andere Services weiterzuleiten. Wähle dort die "HTTP Integration" aus. Gib nun eine "Process ID" an, die du frei wählen kannst. Danach wählst du noch "default key" im Dropdown Menü bei "Access Key" aus. Schließlich gibst du noch an, wohin die Daten gesendet werden sollen, zur URL: https://ttn.opensensemap.org/v1.1 und klickst dann auf "Add Integration"
+
+{% include image.html image=page.image13 %}
 
 
-![Lora Bee](../../../../pictures/LoraBee%20bottom.png)
+### Registrierung auf der openSenseMap
 
-# Technische Informationen
-* HopeRF RFM95W/RFM96W LoRa Transceiver
-* LoRa-Bee 868 / 915 MHz nutzt RFM95W (SX1276 kompatibel)
-* LoRa-Bee 433 / 470 MHz nutzt RFM96W (SX1276 kompatibel)
-* SPI interface
-* Bezeichnung: RFN9xW
-* Maße: 46mm x 25mm x 12mm
-* Gewicht: 1,1 g
+Falls du noch keinen Account hast, registriere dich auf der openSenseMap und lege eine neue senseBox an. Akzeptiere die Datenschutzerklärung und gib der Station einen Namen. Gib an, ob die Station drinnen oder draußen steht. Wähle deinen Standort und wähle anschließend in der Rubrik Hardware die "senseBox:home V2" aus. Wähle dann dein Set-up mit LoRa-Bee und den verwendeten Sensoren.
 
-# Hinweise
-Bitte prüfe bevor du dir eine senseBox mit LoRa Bee holst, ob dein Gebiet bereits von LoRa erschlossen ist: https://www.thethingsnetwork.org/community#list-communities-map
+{% include image.html image=page.image5 %}
 
+Da du das LoRa-Bee gewählt hast, öffnet sich automatisch die Rubrik TheThingsNetwork - TTN. Dort musst du nun die "Application ID" und die "Device ID" eingeben, wie du diese bei TTN bestimmt hast.
 
-# Upload über LoRaWAN
+{% include image.html image=page.image6 %}
 
-Es ist möglich Sensordaten per LoRaWAN™ durch das [TheThingsNetwork](https://thethingsnetwork.org)
-(TTN) auf die openSenseMap zu laden.
-LoRa ist ein zunehmend Verbreitung findender Funkstandard, welcher ähnlich wie
-WiFi digitale Datenübertragung in einem IP-Netzwerk erlaubt, jedoch deutlich
-andere Features bietet:
+Du kommst dann auf eine Übersichtsseite und kannst dort auf "Abschließen" klicken und erhälst eine Zusammenfassung. In dieser findest du auch den Arduino Code, der schon für deine Station vorbereitet ist.
 
-- Datendurchsatz: 300 - 3000 Bit/s
-- Reichweite:     bis zu 15km 
-
-TTN ist eins von mehreren Projekten, welches die zur Funk-Hardware zugehörige
-Infrastruktur für das IP-Netzwerk implementiert, wodurch registrierte Geräte
-mit dem Internet verbunden werden können.
-
-Nutzer können *Gateways* sowie *Nodes* zu dem Netzwerk hinzufügen.
+{% include image.html image=page.image7 %}
 
 
-## TTN openSenseMap Integration
-Die openSenseMap bietet eine direkte Integration in das TTN Netzwerk, was die
-Konfiguration stark vereinfacht. Hierfür musst du einen Account [TheThingsNetwork](https://thethingsnetwork.org) erstellen.
+## Einstellungen in der Arduino IDE
 
-### Registrierung in TTN Console
+Öffne nun Arduino und kopiere den generierten Code der openSenseMap in die Programmierumgebung. Hast du die Arduino IDE und das Board Support-Package noch nicht installiert und weißt nicht genau wie der Programmcode übertragen wird findest du eine Anleitung [hier](/documentation/de/arduino_ide.html).  Scrolle zur Stelle im Code, an der du die Schlüssel "DEVEUI" den "APPEUI" und den "APPKEY" eingeben musst. 
 
-Um ein Gerät in das TTN einzubinden, muss für dieses zunächst unter
-[thethingsnetwork.org](https://console.thethingsnetwork.org/)
-eine *Application* und ein *Device* registriert werden. Die Application und Device ID können frei gewählt werden. Die EUIs lässt man sich am besten generieren. Dann erhält man eine `app_id` und eine `dev_id`.
-
-Für die registrierte Application muss die *HTTP Integration* unter <https://console.thethingsnetwork.org/applications/DEINE_APPID/integrations/create/http-ttn>
-aktiviert werden. Diese muss konfiguriert werden, dass sie die Nachrichten von
-Devices per `POST` an `https://ttn.opensensemap.org/v1.1` weiterleitet. Das
-Authorization-Feld kann leer bleiben! Unter Access Key den `default key` auswählen.
-
-<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/osem_ttnconsole.png" alt="ttnconsole" center width="767" />
-
-Gehe nun auf die openSenseMap und registriere eine senseBox mit deinen Sensoren die du angeschlossen hast.
-Für die Datenübertragung zur openSenseMap müssen die `app_id` und `dev_id` bei
-der Registrierung auf der openSenseMap in der TTN-Konfiguration angegeben
-werden. Darüber hinaus muss ein passendes Decoding-Profil konfiguriert werden,
-welches bestimmt wie die - wegen der geringen Bandbreite als rohe Bytes 
-übertragenen - Daten als Messungen interpretiert werden sollen.
-
-<div class="box_warning">
-     <i class="fa fa-exclamation-circle fa-fw" aria-hidden="true" style="color: #f0ad4e"></i>
-    <b>Wichtig:</b> Wenn du den Feinstaubsensor anschließen willst musst du im Dekodierungs-Profil <b>JSON</b> auswählen. Wenn du nur die anderen Sensoren benutzt kannst du <b>senseBox:home</b> auswählen. Das LoRa-Bee wird wie alle Übertragungsmodule an den XBEE1-Sockel angeschlossen.  
-</div>
-
-<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/osem_register_ttn.png"  alt="osemregister" center width="767"/>
-
-Optional kann im Feld `port` noch der Port angegeben werden, auf welchem
-der Sender seine Daten an das TTN schickt. So lassen sich die selbe `app_id`
-und `dev_id` für mehrere Sensorstationen verwenden.
-
-### Arduino Sketch 
-So könnte ein Arduino Sketch aussehen, mit dem du Daten über das TTN-Netzwerk an die openSenseMap senden kannst.
-
-<div class="box_warning">
-     <i class="fa fa-exclamation-circle fa-fw" aria-hidden="true" style="color: #f0ad4e"></i>
-    <b>Wichtig:</b> Du musst deine eben erstellte <b>Application-EUI, Device-EUI</b> und den <b>App-Key</b> in den Sketch einfügen. Dies machst du in den ersten Zeilen des Programmcode wo in Großbuchstaben <b>'INSERT YOUR ID HERE'</b> steht. <br><br> Achte darauf, dass auf der TTN-Homepage du für die <b>Device-EUI</b> und die <b>Application-EUI</b> das <b>lsb</b>-Format und für den <b>App-Key</b> das <b>msb</b>-Format ausgewählt hast!
-</div>
-
-![Ausgewählte ID's und Keys](../../../../pictures/LoRa_TTN_EUI.png)
+```arduino
 
 
-### Decoding Profile
-Für eine Box muss passend zu den übertragenen Messdaten ein Decoding-Profil
-ausgewählt oder definiert werden.
-Die Auswahl des Decoding-Profils ist von dem Encoding der Nachrichten auf dem
-Mikrocontroller, und ob im TTN eine Payload-Function eingestellt wurde abhängig.
+// This EUI must be in little-endian format, so least-significant-byte (lsb)
+// first. When copying an EUI from ttnctl output, this means to reverse
+// the bytes.
+static const u1_t PROGMEM DEVEUI[8]={0x10, 0xC0, 0x7F, 0xE2, 0xCF, 0xB9, 0x34, 0x00 };
+void os_getDevEui (u1_t* buf) { memcpy_P(buf, DEVEUI, 8);}
 
-- Für die senseBox:home (ohne Erweiterungen) kann das `senseBox:home` Profil
-verwendet werden.
-- Werden die Messungen auf der LoRa-Node mit der `lora-serialization`-Library
-encodiert, sollte das `lora-serialization` Profil verwendet werden.
-- Mit dem `json` Profil werden beliebige andere Encodings unterstuetzt, falls eine
-Payload-Function in der TTN Console die Nachrichten passend decodiert.
+// This EUI must be in little-endian format, so least-significant-byte (lsb)
+// first. When copying an EUI from ttnctl output, this means to reverse
+// the bytes. For TTN issued EUIs the last bytes should be 0xD5, 0xB3,
+// 0x70.
+static const u1_t PROGMEM APPEUI[8]={ 0x24, 0xBE, 0x01, 0xD0, 0x7E, 0xD5, 0xB3, 0x70 };
+void os_getArtEui (u1_t* buf) { memcpy_P(buf, APPEUI, 8);}
 
-Im Folgenden wird erklärt wie die unterstützten Profile konfiguriert werden:
+// This key should be in big endian format (msb) (or, since it is not really a
+// number but a block of memory, endianness does not really apply). In
+// practice, a key taken from ttnctl can be copied as-is.
+// The key shown here is the semtech default key.
+static const u1_t PROGMEM APPKEY[16] = { 0x5A, 0x9D, 0x13, 0xEB, 0x5A, 0x1F, 0x01, 0xD7, 0x35, 0x90, 0x85, 0xE5, 0x36, 0x18, 0x10, 0x6C };
+void os_getDevKey (u1_t* buf) {  memcpy_P(buf, APPKEY, 16);}
 
-#### sensebox/home
-Dieses Profil ist zugeschnitten auf die mit der senseBox:home gelieferten Sensoren.
-Neben der Angabe `sensebox/home` unter `profile` ist keine weitere Konfiguration
-notwendig.
-<br><b>Dies funktioniert nur ohne die Feinstaub(PM2.5 und PM10) Sensoren</b>
 
-Zusätzlich zu dem Arduino Sketch musst du auf der TTN-Homepage einen Decoder einrichten, sodass deine Messwerte im richtigen Format an die openSenseMap gesendet werden.
-![Im Overview Fenster zu "Payload Formats" navigieren](../../../../pictures/decoder_1st.png)
-
-![In der Textbox muss der Decoder nun eingefügt werden](../../../../pictures/decoder_code.png)
-
-<h1 id="decoder"></h1>
-<div class="box_warning">
-     <i class="fa fa-exclamation-circle fa-fw" aria-hidden="true" style="color: #f0ad4e"></i>
-    <b>Wichtig:</b> Hier musst du deine <b>sensor ID's</b> nachtragen.
-</div>
-
-```javascript
-function Decoder(bytes, port) {
-  // bytes is of type Buffer.
-  'use strict';
-  var TEMPSENSOR_ID = 'YOUR TEMPERATURE SENSOR ID HERE',
-    HUMISENSOR_ID = 'YOUR HUMIDITY SENSOR ID HERE',
-    PRESSURESENSOR_ID = 'YOUR PRESSURE SENSOR ID HERE ',
-    LUXSENSOR_ID = 'YOUR LUXSENSOR ID HERE ',
-    UVSENSOR_ID = 'YOUR UV SENSOR ID HERE';
-
-  var bytesToInt = function (bytes) {
-    var i = 0;
-    for (var x = 0; x < bytes.length; x++) {
-      i |= +(bytes[x] << (x * 8));
-    }
-    return i;
-  };
-
-  var uint8 = function (bytes) {
-    if (bytes.length !== uint8.BYTES) {
-      throw new Error('int must have exactly 1 byte');
-    }
-    return bytesToInt(bytes);
-  };
-  uint8.BYTES = 1;
-
-  var uint16 = function (bytes) {
-    if (bytes.length !== uint16.BYTES) {
-      throw new Error('int must have exactly 2 bytes');
-    }
-    return bytesToInt(bytes);
-  };
-  uint16.BYTES = 2;
-
-  var humidity = function (bytes) {
-    if (bytes.length !== humidity.BYTES) {
-      throw new Error('Humidity must have exactly 2 bytes');
-    }
-
-    var h = bytesToInt(bytes);
-    return h / 1e2;
-  };
-  humidity.BYTES = 2;
-
-  var decode = function (bytes, mask, names) {
-
-    var maskLength = mask.reduce(function (prev, cur) {
-      return prev + cur.BYTES;
-    }, 0);
-    if (bytes.length < maskLength) {
-      throw new Error('Mask length is ' + maskLength + ' whereas input is ' + bytes.length);
-    }
-
-    names = names || [];
-    var offset = 0;
-    return mask
-      .map(function (decodeFn) {
-        var current = bytes.slice(offset, offset += decodeFn.BYTES);
-        return decodeFn(current);
-      })
-      .reduce(function (prev, cur, idx) {
-        prev[names[idx] || idx] = cur;
-        return prev;
-      }, {});
-  };
-
-  var bytesToSenseBoxJson = function (bytes) {
-    var json;
-
-    try {
-      json = decode(bytes,
-        [
-          uint16,
-          humidity,
-          uint16,
-          uint8,
-          uint16,
-          uint8,
-          uint16
-        ],
-        [
-          TEMPSENSOR_ID,
-          HUMISENSOR_ID,
-          PRESSURESENSOR_ID,
-          LUXSENSOR_ID + '_mod',
-          LUXSENSOR_ID + '_times',
-          UVSENSOR_ID + '_mod',
-          UVSENSOR_ID + '_times'
-        ]);
-
-      //temp
-      json[TEMPSENSOR_ID] = parseFloat(((json[TEMPSENSOR_ID] / 771) - 18).toFixed(1));
-
-      //hum
-      json[HUMISENSOR_ID] = parseFloat(json[HUMISENSOR_ID].toFixed(1));
-
-      // pressure
-      if (json[PRESSURESENSOR_ID] !== '0') {
-        json[PRESSURESENSOR_ID] = parseFloat(((json[PRESSURESENSOR_ID] / 81.9187) + 300).toFixed(1));
-      } else {
-        delete json[PRESSURESENSOR_ID];
-      }
-
-      // lux
-      json[LUXSENSOR_ID] = (json[LUXSENSOR_ID + '_times'] * 255) + json[LUXSENSOR_ID + '_mod'];
-      delete json[LUXSENSOR_ID + '_times'];
-      delete json[LUXSENSOR_ID + '_mod'];
-
-      // uv
-      json[UVSENSOR_ID] = (json[UVSENSOR_ID + '_times'] * 255) + json[UVSENSOR_ID + '_mod'];
-      delete json[UVSENSOR_ID + '_times'];
-      delete json[UVSENSOR_ID + '_mod'];
-
-    } catch (e) {
-      json = { payload: bytes };
-    }
-
-    return json;
-  };
-
-  return bytesToSenseBoxJson(bytes);
-}
 ```
 
-#### lora-serialization
-Für Sensorstationen, welche eine spezielle Sensorkonfiguration haben, können
-durch das `lora-serialization` Profil nahezu beliebige Daten annehmen.
-Hierzu nutzen wir die [`lora-serialization`](https://github.com/thesolarnomad/lora-serialization)
-Bibliothek, welche ein einheitliches Encoding auf dem Microcontroller, und
-Decoding am anderen Ende der Leitung erlaubt.
+Wie du in der Beschreibung des Codes lesen kannst, ist es hier wichtig, das Format der Schlüssel richtig einzusetzen. Die "Device EUI" und die "Application EUI" werden im 
+```lsb``` Format kopiert und eingefügt. Der AppKey im ```msb``` Format. 
 
-Es werden die Encodings `temperature`, `humidity`, `unixtime`, `uint8` und
-`uint16` unterstützt, welche pro Sensor unter **Dekodierungsoptionen** angegeben
-werden müssen.  Die Zuordnung des Sensors kann über eine der Properties
-`sensor_id`, `sensor_title`, `sensor_unit`, `sensor_type` erfolgen.
+Beim Kopieren der Schlüssel musst du deshalb darauf achten, dass deine Device Overview wie im folgenden Bild eingestellt ist. Du kannst das Format der Darstellung ändern,
+indem du auf die Icons am Anfang drückst (<> und ->)
 
-Ein Beispiel für zwei Sensoren sähe so aus:
+{% include image.html image=page.image8 %}
 
-```json
-[
-  { "decoder": "temperature", "sensor_title": "Temperatur" },
-  { "decoder": "humidity", "sensor_unit": "%" }
-]
-```
 
-> ***Hinweis:*** *Die Reihenfolge der Sensoren muss hier beim Arduino und der
-> openSenseMap identisch sein!*
+Jetzt kannst du deinen Code übertragen und deine senseBox übermittelt Daten an TTN, sowie an die openSenseMap.
 
-Wenn ein `unixtime` Decoder angegeben wird, wird dessen Zeitstempel für alle im
-Folgenden angegebenen Messungen verwendet.
-Andernfalls wird der Moment verwendet, in dem das erste Gateway die Nachricht
-erhält. Beispiel: 
-
-```json
-[
-  { "decoder": "unixtime" },
-  { "decoder": "temperature", "sensor_title": "Temperatur" }
-]
-```
-
-#### json - Decoding mit TTN Payload Function
-Falls die `lora-serialization` Library nicht zur Wahl steht, können Messungen
-schon auf Seite des TTN mittels einer *Payload Function* dekodiert werden,
-sodass hier beliebige Datenformate unterstützt werden.
-
-![In der TTN Console muss eine Payload Function definiert werden](https://raw.githubusercontent.com/sensebox/resources/master/images/lora_ttn_payloadfunc.png)
-
-Das resultierende JSON muss kompatibel mit den von der [openSenseMap-API verstandenen
-Measurement Formaten sein](https://docs.opensensemap.org/#api-Measurements-postNewMeasurements).
-Ein einfaches Beispiel:
-
-```json
-{ "sensor_id1": "value1, "sensor_id2: "value2" }
-```
-
-Ein Beispiel dafür wurde dir [oben](#decoder) gezeigt.
-
-Auf Seiten der openSenseMap ist keine Konfiguration notwendig.
+   
