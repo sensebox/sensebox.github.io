@@ -21,6 +21,7 @@ material:
     - 2x JST-Adapterkabel
 ide: blockly    
 lang: de
+version: ["edu"]
 tags: ["Informatik", "Physik"]
 difficult: leicht
 ---
