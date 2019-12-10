@@ -6,7 +6,7 @@ compile: 'Klicke jetzt auf das rote Symbol mit dem Notizblock “Sketch kompilie
 connect: 'Schließe die senseBox mit dem beiliegenden Mikro USB Kabel an deine Computer an und führe einen “Doppelklick” mit dem roten Knopf auf der senseBox durch.'
 copy: 'Ziehe die Sketch-Datei auf die senseBox als wäre diese ein USB-Stick'
 
-quick-start-outro: "Wenn das funktioniert hat, hast du das Prinzip von Blockly schon verstanden und kannst loslegen. Wenn du mehr über Blockly und die Funktionen wissen willst schau dir dieses Book an:"
+quick-start-outro: "Wenn das funktioniert hat, hast du das Prinzip von Blockly schon verstanden und kannst loslegen."
 
 
 arduino-title: "Arbeiten mit der Arduino IDE:"
@@ -20,7 +20,7 @@ support-title: "Hilfe und Support"
 support: "Informationen zur Programmieroberfläche findest du im Blockly Buch. Benötigst du Hilfe oder möchtest du Ideen, Projekte oder ähnliches mit anderen senseBox Usern diskutieren schaue doch mal im Forum vorbei."
 
 experiment-title: "Experimente und Lernmaterial"
-experiment: "Experimente, Projekte und Lernmaterial findest du auf folgenden Seiten:"
+experiment: "Experimente, Projekte und Lernmaterial findest du auf folgenden Seiten. Verwende den Filter um herauszufinden, welche Projekt du mit deiner senseBox:mini direkt umsetzten kannst."
 # title: "go:edu"
 
 # first-steps: "Erste Schritte"
