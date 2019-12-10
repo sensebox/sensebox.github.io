@@ -17,7 +17,7 @@ arduino-copy: "Copy the code to the board using the arrow button."
 arduino-outro: "More information can be found in the <a href='https://sensebox.github.io/books-v2/edu/'>Book</a>."
 
 support-title: "Help and Support"
-support: "The book is out collected knowledge. You will find all the information that you will need to experiment with your senseBox. If you still run into some problems feel free to send an email."
+support: "Information about the programming interface can be found in the Blockly book. If you need help or want to discuss ideas, projects or the like with other senseBox users, have a look at the forum."
 
 experiment-title: "Experiments and Learning Resources"
 experiment: "Additional resources can be found here:"

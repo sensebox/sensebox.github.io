@@ -17,7 +17,7 @@ arduino-copy: "Den Code mit der Pfeiltaste in der Arduino IDE auf das Board lade
 arduino-outro: "Wenn du noch nie mit Arduino gearbeitet hast, findest du mehr Informationen und detaillierte Prozesse zur Vorgehensweise im <a target='_blank' href='https://sensebox.github.io/books-v2/edu/'>Book</a>. Dort findest du auch Anleitungen zur Registrierung auf der openSenseMap und zu verschiedenen Erweiterungen und einzelnen Komponenten."
 
 support-title: "Hilfe und Support"
-support: "Informationen zur Programmieroberfläche findest du im Blockly Buch. Benötigst du Hilfe oder möchtest du Ideen, Projekte oder ähnliches mit anderen senseBox Usern diskutieren schaue doch mal im Forum vorbei"
+support: "Informationen zur Programmieroberfläche findest du im Blockly Buch. Benötigst du Hilfe oder möchtest du Ideen, Projekte oder ähnliches mit anderen senseBox Usern diskutieren schaue doch mal im Forum vorbei."
 
 experiment-title: "Experimente und Lernmaterial"
 experiment: "Experimente, Projekte und Lernmaterial findest du auf folgenden Seiten:"
