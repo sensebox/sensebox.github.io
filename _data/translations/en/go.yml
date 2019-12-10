@@ -1,3 +1,4 @@
 intro: 'Do you need help with your <span class="go-home">senseBox:home</span> or <span class="go-edu">senseBox:edu</soan>?'
-home-text: "The senseBox for your home."
-edu-text: "The senseBox for measuring, learn programming and experimenting."
+home-text: "Your stationary IoT environmental monitoing station for your home"
+edu-text: "Your DIY kit to learn to program and experiment with sensors"
+mini-text: "Your senseBox starter kit"

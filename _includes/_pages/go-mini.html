@@ -1,0 +1,182 @@
+{% assign t = site.data.translations.[page.lang].go-mini %}
+
+<div class="edu-go-page">
+    <div class="topic-block">
+        <h1 class="title">{{t.title}}</h1>
+        <div class="content-container">
+            <p class="quick-start-text">{{t.quick-start-intro}}</p>
+            <ol class="quick-start-list">
+                <li>{{t.go-to}}</li>
+                <li>
+                    <div class="text">
+                        {{t.drag-drop}}
+                    </div>
+                    <div class="image">
+                        <img src="/images/senseBox_blockly.gif">
+                    </div>
+                </li>
+                <li>
+                    <div class="text">
+                        {{t.compile}}
+                    </div>
+                    <div class="image">
+                        <img src="/images/go/edu/blockly.png">
+                    </div>
+                </li>
+                <li>
+                    <div class="text">
+                        {{t.connect}}
+                    </div>
+                    <!-- <div class="image">
+                        <img src="/images/go/edu/blockly.png">
+                    </div> -->
+                </li>
+                <li>{{t.copy}}</li>
+            </ol>
+        
+            <p>{{t.quick-start-outro}}</p>
+        </div>
+    </div>
+
+
+    <div class="topic-block">
+        <h1 class="title">{{t.experiment-title}}</h1>
+        <p>{{t.experiment}}</p>
+
+<div class="row">
+    <div class="col-md-4 col-sm-6 col-md-offset-2">
+            <div class="card" style="cursor: pointer;">
+                <canvas class="header-bg" width="250" id="header-blur"
+                    style="background-image: url({{ site.baseurl | append: '/images/go/mini/material.png' }});"></canvas>
+                <div class="content">
+                    <h4 style="clear:both">Materialien</h4>
+                    <div id="forum">
+                        <a class="stretched-link" href="/material"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="col-md-4 col-sm-6">
+        <div class="card" style="cursor: pointer;">
+            <canvas class="header-bg" width="250" id="header-blur"
+                style="background-image: url({{ site.baseurl | append: '/images/material/projects.png' }});"></canvas>
+            <div class="content">
+                <h4 style="clear:both">Projekte</h4>
+                <div id="forum">
+                    <a class="stretched-link" href="/de/projects"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+
+
+    <div class="topic-block">
+            <h1 class="title">{{t.support-title}}</h1>
+            <p>{{t.support}}</p>
+            <div class="row">
+
+                    <div class="col-md-4 col-sm-6 col-md-offset-2">
+                            <div class="card" style="cursor: pointer;">
+                                <canvas class="header-bg" width="250" id="header-blur"
+                                    style="background-image: url({{ site.baseurl | append: '/images/material/blockly_book.png' }});"></canvas>
+                                <div class="content">
+                                    <h4 style="clear:both">Blockly Dokumentation</h4>
+                                    <div id="Blockly">
+                                        <a class="stretched-link" href="https://sensebox.github.io/books-v2/blockly/de/"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="col-md-4 col-sm-6 ">
+                            <div class="card" style="cursor: pointer;">
+                                <canvas class="header-bg" width="250" id="header-blur"
+                                    style="background-image: url({{ site.baseurl | append: '/images/forum.png' }});"></canvas>
+                                <div class="content">
+                                    <h4 style="clear:both">senseBox Forum</h4>
+                                    <div id="forum">
+                                        <a class="stretched-link" href="https://forum.sensebox.de"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        </div>
+
+<!-- <h1 class="title">{{t.title}}</h1>
+<div class="ut-container">
+    <div class="ut-item">
+        <div class="ut-item-head">
+            <h1>{{t.first-steps}}</h1>
+            <p>{{t.first-steps-text}}</p>
+        </div>
+        <div class="ut-item-body">
+            <ol>
+                <li><a target="_blank" href="https://sensebox.github.io/books-v2/edu/erste-schritte/software-installation.html">{{t.software-installation}}</a></li>
+                <li><a target="_blank" href="https://sensebox.github.io/books-v2/edu/erste-schritte/anschluss-und-verkabelung.html">{{t.hardware-install}}</a></li>
+                <li><a target="_blank" href="https://sensebox.github.io/books-v2/edu/erste-schritte/registrierung-auf-der-openSenseMap.html">{{t.osem-reg}}</a></li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="ut-item">
+        <div class="ut-item-head">
+            <h1>{{t.components}}</h1>
+            <p>{{t.components-text}}</p>
+        </div>
+        <div class="ut-item-body">
+            <ol>
+                <li><a target="_blank" href="https://sensebox.github.io/books-v2/edu/komponenten/sensebox-mcu.html">{{t.mcu}}</a></li>
+                <li><a target="_blank" href="https://sensebox.github.io/books-v2/edu/komponenten/bees/">{{t.bees}}</a></li>
+                <li><a target="_blank" href="https://sensebox.github.io/books-v2/edu/komponenten/sensoren/">{{t.sensors}}</a></li>
+                <li><a target="_blank" href="https://sensebox.github.io/books-v2/edu/komponenten/zubehoer/">{{t.zubehoer}}</a></li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="ut-item">
+            <div class="ut-item-head">
+                <h1>{{t.experiments}}</h1>
+                <p>{{t.experiments-text}}</p>
+            </div>
+            <div class="ut-item-body">
+                <ol>
+                    <li><a target="_blank" href="https://sensebox.github.io/books-v2/edu/projekte/Umweltstation/">{{t.weather-station}}</a></li>
+                    <li><a target="_blank" href="https://sensebox.github.io/books-v2/edu/projekte/verkehrszaehlerv2.html">{{t.traffic-counter}}</a></li>
+                </ol>
+            </div>
+        </div>
+    
+
+    <div class="ut-item">
+        <div class="ut-item-head">
+            <h1>{{t.help}}</h1>
+            <p>{{t.help-text}}</p>
+        </div>
+        <div class="ut-item-body">
+            <ul>
+                <li><a target="_blank" href="https://forum.sensebox.de/">{{t.forum}}</a></li>
+                <li><a href="mailto:support@sensebox.de">{{t.mail}}</a></li>
+                <li><a target="_blank" href="https://sensebox.github.io/books-v2/edu/hilfe/hilfe.html">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="ut-item">
+        <div class="ut-item-head">
+            <h1>{{t.links}}</h1>
+            <p>{{t.links-text}}</p>
+        </div>
+        <div class="ut-item-body">
+            <ul>
+                <li><a target="_blank" href="https://opensensemap.org/">openSenseMap</a></li>
+                <li><a target="_blank" href="https://blockly.sensebox.de/ardublockly/">Blockly</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div> -->
