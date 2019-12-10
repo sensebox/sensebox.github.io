@@ -38,6 +38,43 @@
         </div>
     </div>
 
+
+    <div class="topic-block">
+        <h1 class="title">{{t.experiment-title}}</h1>
+        <p>{{t.experiment}}</p>
+
+<div class="row">
+    <div class="col-md-4 col-sm-6 col-md-offset-2">
+            <div class="card" style="cursor: pointer;">
+                <canvas class="header-bg" width="250" id="header-blur"
+                    style="background-image: url({{ site.baseurl | append: '/images/go/mini/material.png' }});"></canvas>
+                <div class="content">
+                    <h4 style="clear:both">Materialien</h4>
+                    <div id="forum">
+                        <a class="stretched-link" href="/material"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="col-md-4 col-sm-6">
+        <div class="card" style="cursor: pointer;">
+            <canvas class="header-bg" width="250" id="header-blur"
+                style="background-image: url({{ site.baseurl | append: '/images/material/projects.png' }});"></canvas>
+            <div class="content">
+                <h4 style="clear:both">Projekte</h4>
+                <div id="forum">
+                    <a class="stretched-link" href="/de/projects"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+
+
     <div class="topic-block">
             <h1 class="title">{{t.support-title}}</h1>
             <p>{{t.support}}</p>
@@ -69,41 +106,6 @@
                             </div>
                         </div>
         </div>
-
-        <div class="topic-block">
-                <h1 class="title">{{t.experiment-title}}</h1>
-                <p>{{t.experiment}}</p>
-    
-    <div class="row">
-            <div class="col-md-4 col-sm-6 col-md-offset-2">
-                    <div class="card" style="cursor: pointer;">
-                        <canvas class="header-bg" width="250" id="header-blur"
-                            style="background-image: url({{ site.baseurl | append: '/images/go/mini/material.png' }});"></canvas>
-                        <div class="content">
-                            <h4 style="clear:both">Materialien</h4>
-                            <div id="forum">
-                                <a class="stretched-link" href="/material"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="card" style="cursor: pointer;">
-                    <canvas class="header-bg" width="250" id="header-blur"
-                        style="background-image: url({{ site.baseurl | append: '/images/material/projects.png' }});"></canvas>
-                    <div class="content">
-                        <h4 style="clear:both">Projekte</h4>
-                        <div id="forum">
-                            <a class="stretched-link" href="/de/projects"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-</div>
 
 <!-- <h1 class="title">{{t.title}}</h1>
 <div class="ut-container">
