@@ -15,11 +15,12 @@ material:
     - OLED-Display
     - Ultraschall-Distanzsensor
     - Piezo / Summer
-    - senseBox JST-Adapterkabel
-    - senseBox JST-Kabel
-ide: NEPO
+    - JST-Adapterkabel
+    - JST-JST-Kabel
+ide: nepo
 lang: de
-tags: ["Einparkhilfe","Ultraschall","Distanzsensor","Ultraschall-Distanzsensor"]
+version: edu
+tags: ["Einparkhilfe","Distanzsensor"]
 difficult: mittel
 ---
 # Einparkhilfe {#head}
