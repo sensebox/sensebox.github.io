@@ -1,10 +1,13 @@
 ---
 layout: project_page
 name: "3. Advent: Telegram Chatbot für die senseBox mit Blockly"
-date: 2019-12-04
+date: 2019-12-15
 author: Felix
 abstract: "Ein mit Blockly programmierter Chatbot der die Sensorwerte der senseBox zurückgibt!"
 image: /telegram-blockly/telegram-blockly.png
+image1: /images/projects/telegram_bot/01_botfather.png
+image2: /images/projects/telegram_bot/02_botname.png
+image4: /images/projects/telegram_bot/03_botcreated.png
 
 material:
     - senseBox MCU
@@ -20,9 +23,20 @@ difficult: einfach
 Ein einfacher Chatbot um die senseBox auszulesen ist ein cooles Feature. Man kann zum Beispiel von überall die aktuellen Werte der senseBox abrufen. In diesem Projekt lernt ihr wie man den Chatbot über Blockly programmiert um angeschlossene Aktoren zu steuern und Sensoren auszulesen.
 
 ## Telegram-Bot erstellen
-Erstelle zunächst einen neuen Telegram-Bot. Eine genaue Anleitung findest Du hier: [https://sensebox.de/projects/de/2019-05-13-chatbot#telegram-bot-erstellen](https://sensebox.de/projects/de/2019-05-13-chatbot#telegram-bot-erstellen)
+> Falls du den Telegram Messenger noch nicht verwendest, installiere diesen auf deinem Smartphone oder Computer. (https://telegram.org/apps).
+Starte Telegram und suche über das Eingabefeld nach *@BotFather* und starte den Chat mit ihm. *@BotFather* ist selbst ein Bot und wird genutzt um eigene Bots zu erstellen oder zu bearbeiten.
 
-__Lass das Telegram Fenster geöffnet oder kopiere dein Telegram Token und den Namen des Bots damit Du es später nutzen kannst__
+{% include image.html image=page.image1 %}
+
+> Erstelle nun mit dem `/newbot` Befehl im Chat einen neuen Bot und gib ihm einen Namen.
+
+{% include image.html image=page.image2 %}
+
+> Als nächstes braucht der Bot noch einen eindeutigen Nutzernamen (username). Hier wird der Name senseBoxMCU_testBot gewählt.
+
+{% include image.html image=page.image4 %}
+
+> Wenn du einen Namen gefunden hast der noch nicht vergeben ist bekommst du eine Bestätigung das alles geklappt hat, wie oben dargestellt. Wichtige Informationen sind einmal der Chatlink zu deinem Bot, sowie den rot gedruckten Access Token. Letzteren musst du kopieren und gleich im Anwendungsbeispiel einfügen.
 
 ## Chatbot über Blockly Programmieren
 Das Programmieren des Chatbots ist mit Blockly recht einfach. Zuerst muss die senseBox über WLAN mit Telegram kommunizieren können. Wähle dafür den `Verbinde mit WLAN` Block und gebe Deine WLAN-Zugangsdaten ein. Darunter muss der Telegram Bot initialisiert werden. Im Feld `token` wird der Telegram Token eingegeben, welchen Du vom BotFather erhalten hast. Blockly sollte nun in etwa so aussehen:
