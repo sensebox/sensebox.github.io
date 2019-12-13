@@ -411,6 +411,9 @@ hr {
       > img {
         margin: 2px;
         max-width: 100%;
+        @media (min-width: 992px) { 
+          width: 60%;
+        }
       }
     }
 
