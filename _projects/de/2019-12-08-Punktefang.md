@@ -1,6 +1,6 @@
 ---
 layout: project_page  
-date: 2019-12-15  
+date: 2019-12-08  
 author: Mario
 name: "2. Advent: Geh auf Punktefang"
 abstract: "Erstelle dein eigenes kleines Spiel mit der senseBox" 
