@@ -400,6 +400,10 @@ hr {
     }
   }
 
+  blockquote {
+    font-size: inherit;
+  }
+
   .post-content {
     text-align: justify;
 
@@ -411,6 +415,9 @@ hr {
       > img {
         margin: 2px;
         max-width: 100%;
+        @media (min-width: 992px) { 
+          width: 60%;
+        }
       }
     }
 
