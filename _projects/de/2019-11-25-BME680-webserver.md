@@ -22,12 +22,12 @@ image13: /images/projects/bme680-webserver/heimserver_blockly_http_response_brea
 image14: /images/projects/bme680-webserver/heimserver_blockly_http_response.png
 image15: /images/projects/bme680-webserver/heimserver_blockly_full.png
 image16: /images/projects/bme680-webserver/heimserver_site.png
-
 material:
     - senseBox MCU
     - OLED Display
     - beliebiger Umweltsensor
-ide: blockly    
+ide: blockly   
+version: ["edu", "mini"] 
 lang: de
 tags: ["Informatik"]
 difficult: mittel
