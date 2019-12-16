@@ -30,7 +30,7 @@ tagarray: []
 #   # nested 138,7kB, compact 129,1kB, expanded 135,9 kB, compressed 122,4 kB
 #   style: compressed
 
-exclude: ["README.md", "how-to-add-blog-post.md", "how-to-create-new-page.md", "LICENSE", "run-in-docker-jekyll.sh", ".jekyll-cache"]
+exclude: ["README.md", "how-to-add-blog-post.md", "how-to-create-new-page.md", "LICENSE", "run-in-docker-jekyll.sh"]
 
 collections:
   press:
