@@ -10,7 +10,7 @@ image1: /images/projects/Wasserwaage/step_1.png
 image2: /images/projects/Wasserwaage/step_2.png
 image3: /images/projects/Wasserwaage/Mapping.png
 image4: /images/projects/Wasserwaage/Kreis.png
-image4: /images/projects/Wasserwaage/step_3.png
+image5: /images/projects/Wasserwaage/step_3.png
 imageSolution: /images/projects/Wasserwaage/final.png
 
 material:
