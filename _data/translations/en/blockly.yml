@@ -4,4 +4,5 @@ description_installieren: "<p><em>Blockly for senseBox</em> runs online and with
 description_short: "<p>Blockly for senseBox is a visual programming interface to offer a fast and easy access working with the senseBox.</p>"
 link: "Blockly senseBox with Arduino/Genuino UNO »"
 links: "Blockly senseBox with senseBox MCU »"
+linkd: "Documentation"
 
