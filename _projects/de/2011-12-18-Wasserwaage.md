@@ -4,7 +4,7 @@ name: "Wasserwaage"
 date: 2019-12-18
 author: Björn 
 abstract: "Es wird eine Wasserwaage mit der senseBox programmiert"
-image: Wasserwaage/Wasserwaage_title.png
+image: Wasserwaage/Wasserwaage_title.jpg
 image0: /images/projects/Punktefang/Punktefang_Image00.png
 image1: /images/projects/Wasserwaage/step_1.png
 image2: /images/projects/Wasserwaage/step_2.png
