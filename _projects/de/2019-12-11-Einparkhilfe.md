@@ -4,7 +4,7 @@ name: "Einparkhilfe"
 date: 2019-12-11
 author: Björn
 abstract: "Die Einparkhilfe die jeder aus dem Auto kennt."
-image: 
+image: Titelbild_Einparkhilfe.jpg
 image0: /images/projects/Einparkhilfe/Einparkhilfe_Aufbau.png
 image1: /images/projects/Einparkhilfe/Schritt1.png
 image2: /images/projects/Einparkhilfe/Schritt2.png
