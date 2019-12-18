@@ -4,7 +4,7 @@ date: 2019-12-18
 author: Björn
 name: "Die senseBox entscheidet"
 abstract: "Du kannst dich nie entscheiden? Hier ist die Lösung!" 
-image: Titelbild_Punktefang.jpg
+image: /Entscheider/Entscheider_title.jpg
 image0: /images/projects/Punktefang/Punktefang_Image00.png
 image1: /images/projects/Entscheider/step_01.png
 image2: /images/projects/Entscheider/step_02.png
