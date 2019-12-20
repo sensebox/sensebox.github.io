@@ -66,4 +66,4 @@ Nun bewegt sich dein Punkt je nach Ausrichtung der MCU. Was jetzt noch fehlt ist
 {% include image.html image=page.image4 %}
 
 ### Fertiger Code
-Du kannst dir die Lösung dieses Projektes direkt in Blockly [öffnen](https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=projects/wasswerwaage)
+Du kannst dir die Lösung dieses Projektes direkt in Blockly [öffnen](https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&lang=de&gallery=projects/wasserwaage)
