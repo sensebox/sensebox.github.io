@@ -61,8 +61,4 @@ Anschließend musst du weitere Bedingungen hinzufügen, die dafür sorgen, dass 
 Die beiden Bedingungen müssen nun ineinander verschachtelt ,sodass wenn die MCU geschüttelt wird eine Zufallszahl generiert wird und dementsprechend geantwortet wird.
 
 ### Fertiger Code
-
-<details><summary>Zeige Lösung</summary>
-{% include image.html image=page.imageSolution %}
-</p>
-</details>
+Du kannst dir die Lösung dieses Projektes direkt in Blockly [öffnen](https://blockly.sensebox.de/ardublockly/index.html?board=sensebox-mcu&gallery=projects/entscheidet)
