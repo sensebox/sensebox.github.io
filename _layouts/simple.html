@@ -16,7 +16,12 @@
       {% include footer.html %}
 
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.5/dist/medium-zoom.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        mediumZoom('[data-zoomable]')
+      });
+    </script>
   </body>
 
 </html>
