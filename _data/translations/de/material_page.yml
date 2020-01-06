@@ -4,5 +4,6 @@ description_short: "Hier finden Sie die gesamte Dokumentation rund um die senseB
 description_book: "Unsere Books sind das Herzstück der Dokumentation. Hier findet man die Grundlagen, Hilfe und erste Beispiele zur senseBox. Im folgenden werden die aktuellen Ressourcen zur aktuellen Version der senseBox vorgestellt"
 description_teaching: "In diesem Abschnitt findest du Materialen für den Einsatz in der Lehre. Die Projekteseite hält spannende Projekte für dich bereit. Die Lehrhandreichung gibt wichtige Einordnung der senseBox in die verschiedenen Lehrpläne."
 description_teaching_short: "Materialien für den Einsatz in der Lehre"
+description_more_deprecated: "Die folgenden Books der senseBox:home und senseBox:edu sind nur mit der ersten Version der senseBox kompatibel. Sie werden nicht weiterentwickelt und funktionieren nicht mit der senseBox MCU."
 description_more: "In diesem Abschnitt finden Sie weiteres Material für die Arbeit mit der senseBox. Der Github-Bereich bietet Zugriff auf alle unsere Soft- und Hardware-Repositories."
 description_more_short: "Mehr Materialien für die senseBox"
