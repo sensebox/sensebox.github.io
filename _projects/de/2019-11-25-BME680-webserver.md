@@ -1,9 +1,9 @@
 ---
 layout: project_page
-name: "1. Advent: Heimserver mit der senseBox"
+name: "Heimserver mit der senseBox"
 date: 2019-12-01
 author: Yannick
-abstract: "Das erste der vier Adventsprojekte - es geht um die Erstellung eines eigenen Heimservers über die senseBox mit dem BME680, der Temperatur, Luftdruck und Luftfeuchte messen kann."
+abstract: "Ein eigener Heimservers über die senseBox, der mit dem BME680 die Temperatur, Luftdruck und Luftfeuchte messen kann."
 image: titelbild_webserver.jpg
 image0: /images/projects/bme680-webserver/webserver_IP_auslesen_w_wifi_module.png
 image1: /images/projects/bme680-webserver/ip_blockly.png
