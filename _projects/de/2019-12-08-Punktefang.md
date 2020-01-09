@@ -2,7 +2,7 @@
 layout: project_page  
 date: 2019-12-08  
 author: Mario
-name: "2. Advent: Geh auf Punktefang"
+name: "Geh auf Punktefang"
 abstract: "Erstelle dein eigenes kleines Spiel mit der senseBox" 
 image: Titelbild_Punktefang.jpg
 image0: /images/projects/Punktefang/Punktefang_Image00.png
