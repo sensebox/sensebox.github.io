@@ -97,7 +97,7 @@ function Decoder(bytes) {
 }
 ```
 
-That function takes the first two bytes and converts them to the humidity reading. Then, the next two bytes are converted to a temperature reading. When you are using the openSenseMap endpoint `https://ttn.opensensemap.org/v1.1` in your TTN HTTP integration, the measurements are matched with your sensor IDs and you can see the measurements on openSenseMap.
+That function takes the first two bytes and converts them to the humidity reading. Then, the next two bytes are converted to a temperature reading. When you are using the openSenseMap endpoint `https://ttn.opensensemap.org/v1.1` in your TTN HTTP integration, the measurements are matched with your sensor IDs and you can see the measurements on openSenseMap. Read more about the openSenseMap TTN integration [here](https://sensebox.github.io/books-v2/osem/ttn_integration.html)
 
 ## Keep in mind
 There are a few things that you need to keep in mind. 
@@ -115,6 +115,8 @@ and decode it like this:
 var lux = bytes[i] | bytes[i+1]<<8 | bytes[i+2]<<16;
 i = i + 3 // increment counter afterwards
 ```
+
+→ You need to use the JSON decoding profile on openSenseMap when you are writing the decoder by yourself. Read more about the openSenseMap TTN integration [here](https://sensebox.github.io/books-v2/osem/ttn_integration.html)
 
 → The lora-serialization library provides enhanced functions to send coordinates (`message.addLatLng(-33.905052, 151.26641)`) or temperature (`message.addTemperature(-2.43)`). The corresponding functions to decode the values on TTN can be found here: [https://github.com/thesolarnomad/lora-serialization/blob/master/src/decoder.js](https://github.com/thesolarnomad/lora-serialization/blob/master/src/decoder.js)
 
