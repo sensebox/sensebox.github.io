@@ -5,15 +5,9 @@ date: 2019-03-04
 author: Felix
 abstract: "A small walkthrough"
 image: /ttn-decoding/animation.gif
-image0: /images/projects/parts/mcu_sensoren.png
-image1: /images/projects/sensor_display/Helligkeit_Display_Skizze_0.png
-image2: /images/projects/sensor_display/Helligkeit_Display_Skizze_1.png
-image3: /images/projects/sensor_display/Helligkeit_Display_Skizze_2.png
-image4: /images/projects/sensor_display/Helligkeit_Display_Skizze_3.png
-image5: /images/projects/sensor_display/Helligkeit_Display_Skizze_4.png 
 lang: en
 tags: ["LoRaWAN", "TTN"]
-difficult: "hard"
+difficult: "medium"
 ---
 # TTN Decoding isn't hard
 It's just about understanding bytes. After that is done, it's quite simple to create a fast solution in order to access your data measured by senseBox.
