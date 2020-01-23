@@ -1,7 +1,7 @@
 ---
 layout: project_page
 name: "TTN Decoding for Dummies"
-date: 2019-03-04
+date: 2020-01-23
 author: Felix
 abstract: "A small walkthrough"
 image: /ttn-decoding/animation.gif
@@ -114,6 +114,6 @@ i = i + 3 // increment counter afterwards
 
 → The lora-serialization library provides enhanced functions to send coordinates (`message.addLatLng(-33.905052, 151.26641)`) or temperature (`message.addTemperature(-2.43)`). The corresponding functions to decode the values on TTN can be found here: [https://github.com/thesolarnomad/lora-serialization/blob/master/src/decoder.js](https://github.com/thesolarnomad/lora-serialization/blob/master/src/decoder.js)
 
-→ If you want to see a full example of a senseBox MCU sending temperature, humidity, pressure, illuminance, UV, PM10, PM2.5, 2x soil moisture, 2x soil tempoerature and ultrasonic distance values over LoRaWAN to TTN, check out this code: [https://gist.github.com/felixerdy/f3cebe0aeddf942043f49052308e1551](https://gist.github.com/felixerdy/f3cebe0aeddf942043f49052308e1551). The corresponding decoding is here [https://gist.github.com/felixerdy/04f8ee955a4f5828be97eb981e5b2d27](https://gist.github.com/felixerdy/04f8ee955a4f5828be97eb981e5b2d27).
+→ If you want to see a full example of a senseBox MCU sending temperature, humidity, pressure, illuminance, UV, PM10, PM2.5, 2x soil moisture, 2x soil tempoerature and ultrasonic distance values over LoRaWAN to TTN, check out this code: [https://gist.github.com/felixerdy/a42dab711531a8ac587a96b5ab7b24cf](https://gist.github.com/felixerdy/a42dab711531a8ac587a96b5ab7b24cf). The corresponding decoding is here [https://gist.github.com/felixerdy/04f8ee955a4f5828be97eb981e5b2d27](https://gist.github.com/felixerdy/04f8ee955a4f5828be97eb981e5b2d27).
 
 
