@@ -2,8 +2,8 @@
 layout: post
 title: "Ein Bodenfeuchtesensor für die senseBox"
 date: 2020-01-28
-author: Christof Huebner
-abstract: "Der Bodentemperatur und Feuchte Sensor von Truebner ermöglicht viele spannende Einsätze mit der senseBox"
+author: Christof Hübner
+abstract: "Der Bodentemperatur und -feuchte Sensor von Truebner ermöglicht viele spannende Einsätze mit der senseBox"
 thumbnail: /images/blog_images/truebner/truebner_smt50.jpg
 image1: /images/blog_images/truebner/truebner_smt50.jpg
 image2: /images/blog_images/truebner/truebner_setup.jpg
@@ -14,7 +14,7 @@ lang: de
 ---
 
 
-Wenn Pflanzen welken oder gelbe Blätter bekommen denkt man meist ans Gießen. Zu viel Wasser kann aber mehr schaden als nutzen, wenn damit der lebensnotwendige Sauerstoff um die Wurzeln verdrängt wird. Staunässe führt zum Verfaulen der Wurzeln und die Pflanze stirbt ab. Deshalb ist für ein optimales Pflanzenwachstum ein bestimmter mittlerer Wassergehalt notwendig, der mit Hilfe eines Bodenfeuchtesensors an der Sensebox überwacht und für eine Bewässerungssteuerung genutzt werden kann. Bei der Auswahl eines geeigneten Bodenfeuchtesensors ist jedoch einiges zu beachten.
+Wenn Pflanzen welken oder gelbe Blätter bekommen denkt man meist ans Gießen. Zu viel Wasser kann aber mehr schaden als nutzen, wenn damit der lebensnotwendige Sauerstoff um die Wurzeln verdrängt wird. Staunässe führt zum Verfaulen der Wurzeln und die Pflanze stirbt ab. Deshalb ist für ein optimales Pflanzenwachstum ein bestimmter mittlerer Wassergehalt notwendig, der mit Hilfe eines Bodenfeuchtesensors an der senseBox überwacht und für eine Bewässerungssteuerung genutzt werden kann. Bei der Auswahl eines geeigneten Bodenfeuchtesensors ist jedoch einiges zu beachten.
 
 Bodenfeuchtesensoren basieren auf unterschiedlichen physikalischen Messprinzipien. Besonders kostengünstig ist eine elektrische Leitfähigkeitsmessung, die jedoch aus verschiedenen Gründen sehr unzuverlässig ist. So wird die Leitfähigkeit durch die Menge der gelösten Ionen bestimmt. Bei gleichem Wassergehalt kann es in Abhängigkeit von Bodenart (Sand, Lehm, Ton), Salzgehalt und Dünger zu völlig unterschiedlichen Messwerten führen. Darüber hinaus ist die elektrische Leitfähigkeit stark temperaturabhängig und kann nicht auf einfachem Wege kompensiert werden. Das größte Problem der oft sehr billigen Leitfähigkeitssensoren ist jedoch die Korrosion der Elektroden, so dass die Haltbarkeit oft nur wenige Tage oder Wochen beträgt. Die Enttäuschung ist dann vorprogrammiert.
 
@@ -36,7 +36,7 @@ Nachfolgend sind einige typische Einbaufehler dargestellt, die unbedingt vermied
 
  {% include image.html image=page.image4 %}
 
-Mit dem Bodenfeuchtesensor SMT50 und der Sensebox sind viele interessante Experimente möglich wie:
+Mit dem Bodenfeuchtesensor SMT50 und der senseBox sind viele interessante Experimente möglich wie:
 - Bewässerungssteuerung (z.B. im Schulgarten, Rasen von Schulsportanlagen)
 - Untersuchung des Wassertransports im Boden
 - Charakterisierung des Austrocknungsverhaltens von Böden
@@ -44,9 +44,11 @@ Mit dem Bodenfeuchtesensor SMT50 und der Sensebox sind viele interessante Experi
 - Grüne Dächer und grüne Wände (Mikroklima)
 - Wasserbedarf von Stadtbäumen
 
-Der Truebner SMT50 kann direkt über unsere graphische Programmieroberfläche programmiert werden.
+Der Truebner SMT50 kann direkt über unsere graphische Programmieroberfläche programmiert werden und lässt sich so einfach mit allen weiteren Sensoren und Komponenten der senseBox 
 
  {% include image.html image=page.image5 %}
+
+<hr> 
 
 Erhältlich ist der Sensor in unserem [Shop](https://sensebox.kaufen/product/bodenfeuchte-temperatursensor-smt50) und auf der [Projektseite](https://sensebox.de/de/projects) findest du ein erstens Projekt, um deine Zimmerplfanze "smart" zu machen.
 
