@@ -1,0 +1,11 @@
+- q: Wie kann ich die senseBox im Unterricht einsetzen?
+  a: >
+    Bestellen kannst du die senseBox:home über [Watterott](http://www.watterott.com/index.php?page=search&page_action=query&desc=on&sdesc=on&keywords=sensebox&x=0&y=0). Dort findest du auch die Preise.
+- q: Ich habe bereits Arduino kompatible Sensoren und Bauteile, kann ich diese mit der senseBox MCU verbinden und nutzen?
+  a: >
+    Ja! Die senseBox basiert auf der Arduino Plattform und kann somit alle Arduino kompatiblen Sensoren abfragen.
+    Dazu musst du deinen Sketch anpassen. Einige Sensoren und Bauteile lassen sich auch über Blockly programmieren.
+- q: Ich habe bereits Arduino kompatible Sensoren und Bauteile, kann ich diese mit der senseBox MCU verbinden und nutzen?
+  a: >
+    Ja! Die senseBox basiert auf der Arduino Plattform und kann somit alle Arduino kompatiblen Sensoren abfragen.
+    Dazu musst du deinen Sketch anpassen. Einige Sensoren und Bauteile lassen sich auch über Blockly programmieren.

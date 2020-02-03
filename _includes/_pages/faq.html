@@ -18,10 +18,10 @@
   <div class="panel panel-default">
       <div class="panel-heading">
           <h4 class="panel-title">
-              <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_home{{ forloop.index }}">{{ qa.q | markdownify}}</a>
+              <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_general{{ forloop.index }}">{{ qa.q | markdownify}}</a>
           </h4>
       </div>
-      <div id="collapse_home{{ forloop.index }}" class="panel-collapse collapse noCrossRef">
+      <div id="collapse_general{{ forloop.index }}" class="panel-collapse collapse noCrossRef">
           <div class="panel-body">
               {{ qa.a | markdownify}}
           </div>
