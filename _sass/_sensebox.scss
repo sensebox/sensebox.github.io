@@ -1887,3 +1887,14 @@ $carousel-height: 450px;
   background-color: rgba(0, 0, 0, 0);
 }
 
+/* FAQ page css
+-------------------------------------------------- */
+
+.faq .collapse.in, .faq .collapsing {
+  box-shadow: none;
+  background-color: #ffffff;
+}
+
+.faq .panel-heading {
+  background-color: lightgrey;
+} 
