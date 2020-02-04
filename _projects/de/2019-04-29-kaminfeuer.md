@@ -15,6 +15,7 @@ ide: arduino
 lang: de
 tags: ["Informatik", "Physik"]
 difficult: leicht
+version: ["edu"]
 ---
 # Kaminfeuer
 

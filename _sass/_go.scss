@@ -1,6 +1,7 @@
 
 $home: #b3a900;
 $edu: #2eb6eb;
+$mini: #9135aa;
 
 
 .title {
@@ -28,6 +29,11 @@ h3 {
 .go-home {
     color: $home;
 }
+
+.go-mini {
+    color: $mini;
+}
+
 
 .go-nav-item {
     padding: 1em;
@@ -61,10 +67,21 @@ h3 {
                 color: $edu;
             }
         }
+
+        &.mini-inner {
+            .text-container {
+                border-left: 2px solid $mini;
+            }            
+            h2 {
+                color: $mini;
+            }
+        }
+
     }
 
     .img-container {
         width: 100%;
+        
     }
     img {
         width: 100%;
@@ -75,7 +92,7 @@ h3 {
         padding: 0.5em;
 
         .desc-text {
-            height: 55px;
+            height: 70px;
         }
     }
 

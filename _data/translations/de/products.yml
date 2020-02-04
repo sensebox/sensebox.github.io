@@ -1,20 +1,36 @@
 products: "Produkte"
 
-header-introduction: 'Von der senseBox gibt es zwei Varianten: die <span class="home-span">senseBox:home</span> und die <span class="edu-span">senseBox:edu</span>'
+header-introduction: 'Von der senseBox gibt es drei Varianten: die <span class="home-span">senseBox:home</span>, die <span class="edu-span">senseBox:edu</span> und die <span class="mini-span">senseBox:mini</span>'
 
 to-senseBox-overwiew: "senseBox.kaufen"
 
 shop-link: "https://sensebox.kaufen"
 shop-button: "sensebox.kaufen"
 
-introduction: '<p>Von der senseBox gibt es zwei Varianten: die <span class="home-span">senseBox:home</span> und die <span class="edu-span">senseBox:edu</span>.</p>
+introduction: '<p>Von der senseBox gibt es drei Varianten: die <span class="home-span">senseBox:home</span>, die <span class="edu-span">senseBox:edu</span> und die <span class="mini-span">senseBox:mini</span>.</p>
 
     <p>Die <span class="home-span">senseBox:home</span> ist eine modulare Umweltmessstation zum selber bauen. Je nach Interesse oder Forschungsfrage können sich BürgerInnen eine Messstation mit verschiedenen Sensoren zusammenstellen und über LAN, WLAN oder LoRa mit dem Internet verbinden. Eine einfache Anleitung ermöglicht den Aufbau und die Registrierung auf der openSenseMap. Danach liefert sie kontinuierlich ortsbezogene (mobile oder stationäre) Messungen zu Temperatur, Luftfeuchte, Luftdruck, Beleuchtungsstärke, UV-Strahlung oder Feinstaubbelastung.</p>
 
     <p>Die <span class="edu-span">senseBox:edu</span> ist unser Elektronikbausatz für Schulen, Universitäten und Bildungseinrichtungen, bei dem das Experimentieren und Programmieren unter Einsatz von Sensoren im Vordergrund steht. Neben einer programmierbaren Open-Source Mikrocontrollereinheit (MCU), die auf der Arduino Plattform basiert, werden Sensoren, Bauteile zur Übertragung von Daten ins Internet und weiteres Zubehör mitgeliefert. Mit der senseBox:edu können Grundlagen der Informatik an realen Problemstellungen aus dem gesamten MINT-Bereich erlernt werden. Eigene Messgeräte für verschiedene Zwecke können mit wenig Aufwand gebaut und programmiert werden. Sensoren für die Messung von verschiedenen Umweltphänomenen wie Temperatur, Luftfeuchtigkeit, Luftdruck, Beleuchtungsstärke, UV-Strahlung, Lautstärke, Distanzen (per Ultraschall- und Lichtsensor) sowie Neigung und Ausrichtung ermöglichen ein kreatives Arbeiten an einer Vielzahl von Fragestellungen. Gemessene Werte können über ein WiFi-Modul auf unsere Webplattform für offene Sensordaten, die openSenseMap, übertragen werden.</p>    
 
+    <p>Die neue <span class="mini-span">senseBox:mini</span> ist unser Einsteigerset für alle, die mit der senseBox ihre ersten Messungen durchführen wollen. Sie enthält exclusiv den BME680 Sensor, welcher Temperatur, Luftfeuchtigkeit, Luftdruck und Gas misst. Die Messwerte können dann direkt auf dem OLED-Display visualisiert und über das WiFi-Modul auf die openSenseMap übertragen werden.</p>    
+
+
     <p>Bis Anfang 2018 basierte die senseBox auf einem Arduino/Genuino UNO Microcontroller, diese Version wird nicht mehr verkauft aber weiterhin unterstützt. Seit Mai 2018 basiert die senseBox auf der senseBox MCU und ist durch weitere Sensoren und Erweiterungen ausgestattet. Mehr dazu im <a href="https://sensebox.de/blog/2018-03-06-senseBox_MCU">Blog-Post</a>.</p>
 <p>&nbsp;</p>'
+
+introduction-short: "Unsere senseBox Varianten"
+
+headlines:
+  home: 'Deine stationäre IoT-Umweltmessstation für Zuhause'
+  edu: 'Dein Elektronikbausatz zum Experimentieren und Programmieren lernen mit Sensoren'
+  mini: 'Dein Einsteigerset in die Welt der senseBox'
+
+contains: "Enthält"
+further-data-modules: "Zusätzliche Datenmodule"
+further-sensors: "Erweiterbare Sensoren"
+
+
 
 sensors:
   header: "Sensoren"
@@ -35,6 +51,8 @@ sensors:
   pm: "<b>SDS011</b> - Feinstaub (PM10 & PM2.5) "
   mikro: "Mikrofon"
   bmx: "<b>BMX055</b> Lage-/ Kompass-/ Beschleunigungssensor"
+  bme: "<b>BME680</b> Temperatur-/ Luftfeuchtigkeit-/ Luftdruck-/ Gassensor"
+  smt: "<b>SMT50</b> Bodenfeuchte- & Temperatursensor"
 
 components:
   header: "Komponenten"
@@ -57,6 +75,12 @@ order:
   header: "Bestellen"
   home: "senseBox:home bestellen"
   edu: "senseBox:edu bestellen"
+  mini: "senseBox:mini bestellen"
+
+further-readings:
+  home: Informationen zum Zusammenbau
+  edu: Erste Schritte, Projekte und vieles mehr
+  mini: Erste Schritte, Projekte und vieles mehr
 
 optional: "(optional)"
 

@@ -14,6 +14,7 @@ material:
     - JST-Adapterkabel
     - Steckkabel
 ide: arduino    
+version: ["edu"]
 tags: ["Physik", "Informatik"]
 difficult: mittel
 ---

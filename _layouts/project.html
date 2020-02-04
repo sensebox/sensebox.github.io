@@ -7,12 +7,12 @@ layout: default
 	<div class="post-content">
 		{{ content }}
 
-		<div class="projects row ">
+		<div class="projects row">
 		<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
 			Filter
 		  </a>
 				</div>
-				<div class="collapse" id="collapseExample">
+				<div class="collapse" id="collapseExample" style="box-shadow: none;">
 					<div class="well project-outer">
 						{% include project_tags.html %}
 		
@@ -24,10 +24,13 @@ layout: default
 								{% for tag in i.difficult %}
 										{% assign tagarray = tagarray | push: tag %}
 								{% endfor %}
-								{% for tag in i.lang %}
+								{% for tag in i.ide %}
 										{% assign tagarray = tagarray | push: tag %}
 								{% endfor %}
-								{% for tag in i.ide %}
+								{% for tag in i.version %}
+										{% assign tagarray = tagarray | push: tag %}
+								{% endfor %}
+								{% for tag in i.addons %}
 										{% assign tagarray = tagarray | push: tag %}
 								{% endfor %}
 						{% endfor %}
@@ -35,7 +38,9 @@ layout: default
 				  </div>
 				  {{ t.additional_info }}
 		<div class="row row-eq-height">	
-		{% for i in site.projects %}
+		{% assign sorted = site.projects | sort: 'date' | reverse %}
+		{% for i in sorted %}
+		{% if i.lang == page.lang %}
 		{% assign tagarray = site.tagarray %}
 				{% for tag in i.tags %}
 						{% assign tagarray = tagarray | push: tag %}
@@ -43,12 +48,15 @@ layout: default
 				{% for tag in i.difficult %}
 						{% assign tagarray = tagarray | push: tag %}
 				{% endfor %}
-				{% for tag in i.lang %}
-						{% assign tagarray = tagarray | push: tag %}
-				{% endfor %}
 				{% for tag in i.ide %}
 						{% assign tagarray = tagarray | push: tag %}
-				{% endfor %}			
+				{% endfor %}
+				{% for tag in i.version %}
+						{% assign tagarray = tagarray | push: tag %}
+				{% endfor %}
+				{% for tag in i.addons %}
+						{% assign tagarray = tagarray | push: tag %}
+				{% endfor %}				
 		<div class="project-item col-md-4 col-sm-6 col-xs-12" data-tags='{{ tagarray | jsonify | downcase }}'>
 				<div class="well project-outer">
 						<span class="ribbon"><span class={{i.ide}}>{{ i.ide }}</span></span>
@@ -85,8 +93,9 @@ layout: default
 						</div>
 				</div>
 				</div>
-			
+				{% endif %}
 		{% endfor %}
+		
 	</div>
 </div>
 	</div>

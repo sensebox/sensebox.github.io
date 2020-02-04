@@ -3,7 +3,7 @@
 
 <h3>{{t.intro}}</h3>
 <div class="row">
-    <div class="col-sm-6 col-xs-12 go-nav-item">
+    <div class="col-md-4 col-xs-12 go-nav-item">
         <a href="{{ 'go-home' | prepend: site.baseurl }}">
 
             <div class="go-nav-inner home-inner">
@@ -14,11 +14,10 @@
                     <h2>:home</h2>
                     <p class="desc-text">{{t.home-text}}</p>
                 </div>
-                
             </div>
         </a>
     </div>
-    <div class="col-sm-6 col-xs-12 go-nav-item">
+    <div class="col-md-4 col-xs-12 go-nav-item">
         <a href="{{ 'go-edu' | prepend: site.baseurl }}">
 
             <div class="go-nav-inner edu-inner">
@@ -32,4 +31,19 @@
             </div>
         </a>
     </div>
+    <div class="col-md-4 col-xs-12 go-nav-item">
+            <a href="{{ 'go-mini' | prepend: site.baseurl }}">
+    
+                <div class="go-nav-inner mini-inner">
+                    <div class="img-container">
+                        <img src="{{ site.baseurl | append: '/images/go/mini.jpg' }}">
+                    </div>
+                    <div class="text-container">
+                        <h2>:mini</h2>
+                        <p class="desc-text">{{t.mini-text}}</p>
+                    </div>
+                    
+                </div>
+            </a>
+        </div>
 </div>

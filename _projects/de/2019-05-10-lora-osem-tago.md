@@ -25,7 +25,9 @@ material:
     - Temperatur-/Luftfeuchtigkeitssensor
     - Luftdrucksensor
     - Beleuchtungsstärke-/UV-Sensor
-ide: arduino    
+ide: arduino  
+version: ["edu", "mini"]
+addons: ["LoRa-Bee"]  
 lang: de
 tags: ["Geographie", "Informatik", "LoRa", "TTN"]
 difficult: schwierig

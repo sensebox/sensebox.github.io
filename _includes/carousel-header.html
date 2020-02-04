@@ -1,5 +1,5 @@
 
-{% assign carouselpages = "main|products|osem|books|background|press|awards|blog|blockly|go-edu|material|events|projects|buch" | split: "|" %}
+{% assign carouselpages = "main|products|osem|books|background|press|awards|blog|blockly|go-edu|go-mini|material|events|projects|buch" | split: "|" %}
 {% assign navpages = "material|projects|products|osem|blockly" | split: "|" %}
 {% assign navpagesright = "blog" | split: "|" %}
 {% if include.simple == true %}
@@ -53,11 +53,13 @@
                                 <ul class="nav navbar-nav simple">                       
                                             <li class="nav-item"><a class="navbar-item" href="{{site.baseurl }}/{{ page.lang }}/go-edu">:edu</a></li>
                                             <li class="nav-item"><a class="navbar-item" href="{{site.baseurl }}/{{page.lang }}/go-home">:home</a></li>
+                                            <li class="nav-item"><a class="navbar-item" href="{{site.baseurl }}/{{ page.lang }}/go-mini">:mini</a></li>
                                             </ul>   
                                 {% else %}
                                 <ul class="nav navbar-nav">                       
                                 <li class="nav-item"><a class="navbar-item" href="{{site.baseurl }}/{{ page.lang }}/go-edu">:edu</a></li>
                                 <li class="nav-item"><a class="navbar-item" href="{{site.baseurl }}/{{page.lang }}/go-home">:home</a></li>
+                                <li class="nav-item"><a class="navbar-item" href="{{site.baseurl }}/{{ page.lang }}/go-mini">:mini</a></li>
                                 </ul>
                                 {% endif %}
                             </div>
