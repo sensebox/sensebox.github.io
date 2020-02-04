@@ -1,10 +1,12 @@
+
+- q: Wo kann ich die senseBox kaufen?
+  a: Wir haben einen eigenen Onlineshop, den du über [sensebox.kaufen](https://sensebox.kaufen) erreichst.
 - q: Gibt es Ersatzteile für die senseBox?
-  a: >
-    Ersatzteile für die senseBox findest du auf https://sensebox.kaufen.
-- q: Kann ich den Code mit dem Tablet übertragen?
-  a: >
+  a: Ersatzteile für die senseBox findest du auf https://sensebox.kaufen.
+- q: Ich habe bereits Arduino kompatible Sensoren und Bauteile, kann ich diese mit der senseBox MCU verbinden und nutzen?
+  a: Ja! Die senseBox basiert auf der Arduino Plattform und kann somit alle Arduino kompatiblen Sensoren und Bauteile ansteuern.
+    Dazu musst du deinen Sketch anpassen. Einige Sensoren und Bauteile lassen sich auch über Blockly programmieren.
 - q: Wie kann ich die senseBox programmieren?
-  a: >
-  Die senseBox über drei verschiedenen System programmiert werden:
-    
-- q: 
+  a: Die senseBox kann über drei verschiedene Systeme programmiert werden. Eine Übersicht über die verschiedenen Editoren findest du [hier](/de/editors)
+- q:
+  a: 

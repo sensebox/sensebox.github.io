@@ -1,0 +1,63 @@
+{% assign t = site.data.translations.[page.lang].editors %}
+<div class="page-header">
+  <h1>{{ t.headline }}</h1>
+  <p>{{ t.smalltalk }}</p>
+</div>
+
+<div class="container">
+<div class="row">
+
+ <div class="media">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object media-editors-image" src="/images/blockly_de.png" alt="...">
+                      </a>
+                    </div>
+                    <div class="media-body" id="blockly">
+                      <h4 class="media-heading">{{ t.blockly-head }}</h4>
+                      <p>{{ t.blockly-text }}</p>
+                      <div class="row">
+                          <div class="col-md-4">
+                            <a class="btn" href="https://blockly.sensebox.de/ardublockly/?board=sensebox-mcu" target="_blank" role="button">{{ t.blockly-button }}</a> 
+                          </div>
+                          <div class="col-md-4">
+                                <a class="btn" href="https://sensebox.github.io/books-v2/blockly/de/" target="_blank" role="button">{{ t.blockly-docs }}</a> 
+                          </div>
+                           <div class="col-md-4">
+                                <a class="btn" href="" target="_blank" role="button">App</a> 
+                          </div>
+                      </div>
+                    </div>
+                <hr>        
+            <div class="media">        
+                    <div class="media-left">
+                            <a href="#">
+                              <img class="media-object media-editors-image" src="/images/editors/arduino.png" alt="...">
+                            </a>
+                          </div>
+                          <div class="media-body" id="arduino">
+                            <h4 class="media-heading">{{ t.arduino-head }}</h4>
+                             <p>{{ t.arduino-text }}</p>
+                          </div>
+            </div>
+            <hr>
+            <div class="media">        
+                    <div class="media-left">
+                            <a href="#">
+                              <img class="media-object media-editors-image" src="/images/editors/nepo.png" alt="...">
+                            </a>
+                          </div>
+                          <div class="media-body" id="nepo">
+                            <h4 class="media-heading">{{ t.nepo-head }}</h4>
+                            <p>{{ t.nepo-text }}</p>
+                             <div class="row">
+                          <div class="col-md-4">
+                            <a class="btn" href="https://lab.obenRoberta.org" target="_blank" role="button">{{ t.nepo-button }}</a> 
+                          </div>
+                          <div class="col-md-4">
+                                <a class="btn" href="https://jira.iais.fraunhofer.de/wiki/display/ORInfo/Programmieren+senseBox" target="_blank" role="button">{{ t.nepo-docs }}</a> 
+                              </div>
+                      </div>
+            </div>
+            <hr>
+</div> 
