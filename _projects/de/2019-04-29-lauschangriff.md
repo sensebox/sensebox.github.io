@@ -14,6 +14,7 @@ ide: arduino
 lang: de
 tags: ["Informatik", "Physik"]
 difficult: mittel
+version: ["edu"]
 ---
 # Lauschangriff
 Ziel dieses Projektes ist es, mit der senseBox laute Geräusche zu erkennen. Dazu wird das Mikrofon benutzt. Es misst den Ausschlag von Schallwellen.
