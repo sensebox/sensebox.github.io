@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Erste Einblicke in das "Futurium" - Von Verwandlungskünstlern, Energiefängern und Naturtalenten"
+title:  "Erste Einblicke in das \"Futurium\" - Von Verwandlungskünstlern, Energiefängern und Naturtalenten"
 date:   2019-08-15
 author: Gina
 thumbnail: /images/press/Tagesspiegel_Logo.png
