@@ -13,6 +13,7 @@ material:
     - senseBox MCU
 ide: blockly  
 lang: de
+version: ["edu", "mini"]   
 tags: ["Erste Schritte", "Informatik"]
 difficult: leicht
 ---
