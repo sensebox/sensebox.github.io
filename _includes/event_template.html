@@ -31,7 +31,7 @@
     <div id="collapse_event{{ forloop.index }}" class="panel-collapse collapse noCrossRef">
         <div class="panel-body">
           {% if include.event.description %}
-          {{ include.event.description }}<br></br>
+          <div class="events-description">{{ include.event.description }}</div><br></br>
           {% endif %}
         </div>
         {% if include.event.link %}
