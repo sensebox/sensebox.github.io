@@ -1887,3 +1887,31 @@ $carousel-height: 450px;
   background-color: rgba(0, 0, 0, 0);
 }
 
+
+/* Events css
+-------------------------------------------------- */
+
+.events .collapse.in, .collapsing {
+  box-shadow: none;
+  background-color: #ffffff;
+}
+
+.events-description {
+  color: black;
+}
+
+.events {
+color: lightslategrey;
+font-family: Arial, sans-serif;
+font-size: initial;
+}
+
+.events .panel-heading {
+  background-color: #4eaf4714;
+  border-radius: 1rem;
+  margin-bottom: 12px;
+
+  > a {
+      color: black;
+  }
+}
