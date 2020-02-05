@@ -108,7 +108,8 @@
 
 
       <h1 style="text-align: center;">{{ t.upcoming_events }}</h1>
-      <div class="row events-row">
+      <div class ="container">
+        <div class="panel-group events" id="accordion">
         {% assign events = site.events | sort: 'ending-date' %}
         {% assign i=0 %}
         {% for event in events %}
@@ -120,6 +121,7 @@
           {% endif %}
         {% endfor %}
       </div>
+    </div>
 
      <hr/>
       <h1 style="text-align: center;">Partner</h1>
