@@ -1,6 +1,6 @@
-- q: Wie und wo kann man die senseBox:home ordern bzw. kaufen? Und was würde so etwas kosten?
+- q: Wo kann ich die senseBox:home kaufen?
   a: >
-    Bestellen kannst du die senseBox:home über [Watterott](http://www.watterott.com/index.php?page=search&page_action=query&desc=on&sdesc=on&keywords=sensebox&x=0&y=0). Dort findest du auch die Preise.
+    Bestellen kannst du die senseBox:home über unseren [online Shop](https://sensebox.kaufen). Die senseBox:home startet in einer Basiskonfiguration und kann im Shop durch weitere Sensoren ergänzt werden.
 - q: Kann ich noch weitere Sensoren an die senseBox:home anschließen?
   a: >
     Ja! Die senseBox:home basiert auf der Arduino Plattform und kann somit alle Arduino kompatiblen Sensoren abfragen.
@@ -16,12 +16,9 @@
 - q: Gibt es Erfahrungen hinsichtlich Überhitzung der Box? Hier kann es gerne mal extrem warm werden und ich befürchte Kondenswasser oder Ausfall von Bauteilen.
   a: >
     Wir haben ein paar Boxen in Gebieten stehen, die sehr heiß und kalt werden (Zugspitze und Sao Paulo). Was hilft einfach etwas Silikagel mit in die Station packen.
-- q: Wo kriege ich dieses Temperaturgehäuse her?
+- q: Kann ich die senseBox:home unbhängig von einer Stromversorgung betreiben?
   a: >
-    Das in den Bildern gezeigte Temperaturgehäuse ist ein im 3D-Druck hergestelltes Gehäuse. Dieses lässt sich auf jeden handelsüblichen 3D-Drucker ausdrucken. Die benötigten Dateien kannst du [hier](https://www.thingiverse.com/thing:1523429) herunterladen.
-- q: Kann ich die senseBox:home auch mit einer 9V Blockbatterie betreiben?
-  a: >
-    Ja, wir raten allerdings davon ab. Die senseBox:home würde nur eine kurze Zeit mit einer 9V Blockbatterie laufen und müsste nach kurzer Zeit wieder ausgetauscht werden.
+    Ja wir eine Solarset, welches dir ermöglich die senseBox:home unabhängig von einer Stromversorgung zu betreiben. Beachte hierbei allerdings, dass viele Variablen, wie Sonneneinstrahlung, Ausrichtung des Solarpanels und auch die Temperatur, die Laufzeit beeinflussen können. 
 - q: Der Sensortest funktioniert nicht. Was kann ich tun?
   a: >
     Das beste Vorgehen wenn der Sensortest fehlschlägt oder überhaupt keine Werte angezeigt werden, ist es, zu allererst alle Sensoren vom Arduino zu trennen und dann nach und nach die Sensoren einzeln nach Neustarts wieder mit dem Arduino verbinden. So kann man erkennen, welcher Sensor die Probleme verursacht.
