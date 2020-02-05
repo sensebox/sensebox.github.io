@@ -3,7 +3,19 @@
 
 <h3>{{t.intro}}</h3>
 
-
+<div style="text-align: center;" id="2020">
+  <h1>2020</h1>
+        <div class="row events-row">
+          {% assign events = site.events | sort: 'ending-date' %}
+          {% for event in events %}
+            {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+            {% capture eventendingdateunix %}{{event.ending-date | date: '%s'}}{% endcapture %}
+            {% capture year %}{{event.ending-date | date: '%Y'}}{% endcapture %}
+            {% if nowunix > eventendingdateunix and year =='2020' %}
+              {% include event_history.html event=event %}
+            {% endif %}
+          {% endfor %}
+        </div>
 
 <div style="text-align: center;" id="2019">
   <h1>2019</h1>
@@ -14,7 +26,7 @@
             {% capture eventendingdateunix %}{{event.ending-date | date: '%s'}}{% endcapture %}
             {% capture year %}{{event.ending-date | date: '%Y'}}{% endcapture %}
             {% if nowunix > eventendingdateunix and year =='2019' %}
-              {% include event_template.html event=event %}
+              {% include event_history.html event=event %}
             {% endif %}
           {% endfor %}
         </div>
@@ -28,7 +40,7 @@
           {% capture eventendingdateunix %}{{event.ending-date | date: '%s'}}{% endcapture %}
           {% capture year %}{{event.ending-date | date: '%Y'}}{% endcapture %}
           {% if nowunix > eventendingdateunix and year =='2018' %}
-            {% include event_template.html event=event %}
+            {% include event_history.html event=event %}
           {% endif %}
         {% endfor %}
       </div>
@@ -43,7 +55,7 @@
                   {% capture eventendingdateunix %}{{event.ending-date | date: '%s'}}{% endcapture %}
                   {% capture year %}{{event.ending-date | date: '%Y'}}{% endcapture %}
                   {% if nowunix > eventendingdateunix and year =='2017' %}
-                    {% include event_template.html event=event %}
+                    {% include event_history.html event=event %}
                   {% endif %}
                 {% endfor %}
               </div>
@@ -59,7 +71,7 @@
                 {% capture eventendingdateunix %}{{event.ending-date | date: '%s'}}{% endcapture %}
                 {% capture year %}{{event.ending-date | date: '%Y'}}{% endcapture %}
                 {% if nowunix > eventendingdateunix and year =='2016' %}
-                  {% include event_template.html event=event %}
+                  {% include event_history.html event=event %}
                 {% endif %}
               {% endfor %}
             </div>
