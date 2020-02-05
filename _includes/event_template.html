@@ -1,4 +1,4 @@
-<div class="col-sm-3 col-md-3 col-lg-3 event-item">
+<!--<div class="col-sm-3 col-md-3 col-lg-3 event-item">
   <div class="thumbnail">
     <div class="caption">
       <p>{{ include.event.starting-date | date: '%d.%m.%Y' }} {% if include.event.starting-date != include.event.ending-date %} - {{ include.event.ending-date | date: '%d.%m.%Y' }} {% endif %} </p>
@@ -19,4 +19,28 @@
     {% endif %}
     </div>
   </div>
+</div>-->
+<div class ="container">
+<div class="panel-group events" id="accordion">
+<div class="panel panel-default">
+    <div class="panel-heading">
+            <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_event{{ forloop.index }}">{{ include.event.starting-date | date: '%d.%m.%Y' }} {% if include.event.starting-date != include.event.ending-date %} - {{ include.event.ending-date | date: '%d.%m.%Y' }} {% endif %} {% if include.event.time %}
+              {{ include.event.time }}
+              {% endif %} | <strong>{{ include.event.title }} </strong>| {{ include.event.place }}</a>
+    </div>
+    <div id="collapse_event{{ forloop.index }}" class="panel-collapse collapse noCrossRef">
+        <div class="panel-body">
+          {% if include.event.description %}
+          {{ include.event.description }}<br></br>
+          {% endif %}
+        </div>
+        {% if include.event.link %}
+        <div class="panel-footer">
+          <a href="{{ include.event.link }}" target="_blank">weitere Informationen</a>
+    </div>
+    {% endif %}
 </div>
+</div>
+</div>
+</div>
+
