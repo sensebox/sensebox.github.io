@@ -1,26 +1,23 @@
 ---
 layout: project_page
-name: "TTN Decoding für Anfänger"
+name: "TTN Decoding for Dummies"
 date: 2020-01-23
-author: Felix u Mario
-abstract: "Eine kleine Anleitung zum Decoding in TTN"
+author: Felix
+abstract: "A small walkthrough"
 image: /ttn-decoding/animation.gif
-lang: de
+lang: en
 tags: ["LoRaWAN", "TTN"]
-difficult: "mittel"
+difficult: "medium"
 ---
-# TTN Decoding für Anfänger
+# TTN Decoding isn't hard
+It's just about understanding bytes. After that is done, it's quite simple to create a fast solution in order to access your data measured by senseBox.
 
-Es geht nur darum, Bytes zu verstehen. Nachdem das erledigt ist, ist es ganz einfach, eine schnelle Lösung zu erstellen, um auf deine, von senseBox gemessenen Daten, zuzugreifen.
-
-__Szenario:__ Senden einer willkürlichen Anzahl von Messungen mit LoRaWAN über The Things Network an die openSenseMap.
-
+__Scenario:__ Sending an abritary number of measurements with LoRaWAN via The Things Network to openSenseMap.
 
 ## Theory
-LoRaWAN ist nicht geeignet für das Senden von großen Datenmengen, deshalb werden die Informationen in kleine Bytes unterteilt und gesendet. Ein Byte enhält 8 Bit. Das heißt, man kann zwischen 256 verschiedenen Werten unterscheiden. 2 Bytes enhalten schon 16 Bits, sodass es möglich ist zwischen 65536 Werten zu unterscheiden.
+LoRaWAN isn't suitable for large amount of data. That's why we usually send our information in small byte chunks. It is important to think about the number of bytes that are suitable to contain all neccesary information. One byte contains 8 bit. That means, you can differentiate between 256 values. 2 bytes contain 16 bits where you can differentiate between 65.536 values.
 
-Die nachfolgende Tabelle gibt eine Übersicht üer die Bandbreite:
-
+The following table identifies which range how many bytes provide:
 
 | Bytes | Bit | min (signed)   | max (signed)  | min (unsigned) | max (unsigned) |
 |-------|-----|----------------|---------------|----------------|----------------|
@@ -28,33 +25,30 @@ Die nachfolgende Tabelle gibt eine Übersicht üer die Bandbreite:
 | 2     | 16  | −32.768        | 32.767        | 0              | 65.535         |
 | 3     | 24  | −2.147.483.648 | 2.147.483.647 | 0              | 4.294.967.295  |
 
-In der Tabelle gibt es zwei verschiedenen Typen: "signed" und "unsigned". Signded Werte decken sowohl den positiven als auch negativen Wertebereich ab. 
+As you can see, there are two range types: signed and unsigned. Signed values range from negative values to positive values. Unsigned values are only positive values. These values are also no decimal numbers but only integer numbers.
 
-Beispiel: Du möchtest die Luftfeuchtigkeit messen. Die Werte liegen zwischen 0% und 100%. Es handelt sich aber um keine Kommazahlen sondern nur um Ganzzahlige Werte. Man könnte nun ein Byte verwenden, welcher die Wert für die Luftfeuchtigkeit entspricht. Möchte man allerdings eine Dezimalzahl mit zwei Nachkommastellen versenden, reicht 1 Byte nicht mehr aus. 2 Bytes müssen verwendet werden.  
+Example: you want to measure humidity values. These values can range between 0% and 100%. Of course, you could use 1 byte to represent a humidity reading. If you want to use two decimal digits however, this representation can't be used anymore. You will need to use 2 bytes and think about a conversion formula. 
 
-Stellen dir vor vor, wir messen 85,42%. Ein einfacher Ansatz wäre es, die Messung zu nehmen und mit 100 zu multiplizieren. Nun haben wir ein Wert von 85,42 * 100 = 8542. Wir können 8542 in zwei Bytes kodieren, sie an TTN senden und diese zwei Bytes decodieren, um 8542 zu erhalten. Diese Zahl kann nun durch 100 geteilt werden, und wir erhalten den Wert von 85,42%. So funktioniert es im Grunde genommen.
-
+Imagine we are measuring 85.42%. A simple approach would be to take the measurement and multiply it by 100. Now we have a measurement of `85.42 * 100 = 8542`. We can encode 8542 to two bytes, send them to TTN and encode these two bytes again to get 8542. This number can now be divided by 100 and we get our measurement of 85.42%. That's basically how it works.
 
 ## Programming
 
 __Arduino__
-Auf der Arduino Seite wird die [lora-serialization](https://github.com/thesolarnomad/lora-serialization) Bibliothek verwendet. Die Dokumentation zeigt eine[Funktion](https://github.com/thesolarnomad/lora-serialization#unsigned-16bit-integer-2-bytes) um einen Wert als mit 16 Bit zu versenden. Diese Funktion kann genutzt werden um die Werte für Luftfeuchtigkeit zu versenden.
+On Arduino side we are using the [lora-serialization](https://github.com/thesolarnomad/lora-serialization) library. According to the documentation there is a [function](https://github.com/thesolarnomad/lora-serialization#unsigned-16bit-integer-2-bytes) to send unsigned (only positive values) 16 bit (range from 0 to 65.535) integer (no decimals) values. To send humidity values to TTN, we can use this function
 ```c
 humidity = HDC.readHumidity();
 message.addUint16(humidity * 100);
 ```
+Keep in mind to multiply your measurement by 100 in order to keep two decimals.
 
-Denke daran deinen Messwert mit 100 zu multiplizieren, um die Nachkommastellen beizubehalten.
-
-Da der Wert für die Temperatur auch in den negativen Bereich fallen kann muss zunächst der Wert in einen positven konvertviert werden und anschließend mit einem Wert multipliziert werden um die Nachkommastellen zu behalten. 
+Sending additional temperature values needs a little bit of thinking. As temperature can contain negative values, we need to convert it to positive values first. And to keep decimals, we also need to multiply it. This is the function we are using to encode temperature values
 ```c
 temperature = HDC.readTemperature();
 message.addUint16((temperature + 18) * 771);
 ```
-In diesem Beispiel wird ein Temperatursensor verwendet, der Werte ab -18 Grad Celsius gemessen hat und die Temperatur mit einer Genauigkeit von 0.0013 Grad Celsius rausgibt. 
 
 __TTN__
-In der TTN Console kommen nun zwei verschiedene Werte von der senseBox an. Diese Werte müssen nun mithilfe eines Decoders wieder von Bytes zu den ursprünglichen Werte decodiert werden.
+So there are two values arriving from a senseBox on TTN. Now, we need to keep the order of bytes in mind. To decode bytes to integer values, I usually use the following method to convert bytes to an unsigned integer
 ```js
 /**
  * Convert the array of bytes to an unsigned integer, LSB. 
