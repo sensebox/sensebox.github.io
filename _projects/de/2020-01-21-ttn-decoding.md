@@ -72,7 +72,7 @@ function uint(bytes) {
 }
 ```
 
-Below that, I can create my decoder
+Hier kann nun der Decoder definiert werden
 ```js
 function Decoder(bytes) {
 
@@ -96,10 +96,9 @@ function Decoder(bytes) {
   return decoded;
 }
 ```
+Die Funktion nimmt die ersten zwei Bytes und konvertiert sie zu zum Messwert für Luftfeuchtigkeit. Die nächsten zwei Bytes werden zu einem Messwert für die Temperatur konvertiert. Wenn du die openSenseMap als Endpunkt (`https://ttn.opensensemap.org/v1.1`)in der TTN HTTP integration verwendest, werden die Messwerte mit deinen Sensor IDs verknüpft und die Messwerte auf der openSenseMap angezeigt. Mehr über die openSenseMap TTN integration findest du [hier](https://sensebox.github.io/books-v2/osem/ttn_integration.html)
 
-That function takes the first two bytes and converts them to the humidity reading. Then, the next two bytes are converted to a temperature reading. When you are using the openSenseMap endpoint `https://ttn.opensensemap.org/v1.1` in your TTN HTTP integration, the measurements are matched with your sensor IDs and you can see the measurements on openSenseMap. Read more about the openSenseMap TTN integration [here](https://sensebox.github.io/books-v2/osem/ttn_integration.html)
-
-## Keep in mind
+## Wichtige Punkte
 There are a few things that you need to keep in mind. 
 
 → Decoding fails / returns false values when you are not sending everything that needs to be decoded. If the decoder accepts e.g. a humidity and a temperature value, but your Arduino is only sending a humidity value, you will not receive correct values.
@@ -120,6 +119,6 @@ i = i + 3 // increment counter afterwards
 
 → The lora-serialization library provides enhanced functions to send coordinates (`message.addLatLng(-33.905052, 151.26641)`) or temperature (`message.addTemperature(-2.43)`). The corresponding functions to decode the values on TTN can be found here: [https://github.com/thesolarnomad/lora-serialization/blob/master/src/decoder.js](https://github.com/thesolarnomad/lora-serialization/blob/master/src/decoder.js)
 
-→ If you want to see a full example of a senseBox MCU sending temperature, humidity, pressure, illuminance, UV, PM10, PM2.5, 2x soil moisture, 2x soil tempoerature and ultrasonic distance values over LoRaWAN to TTN, check out this code: [https://gist.github.com/felixerdy/a42dab711531a8ac587a96b5ab7b24cf](https://gist.github.com/felixerdy/a42dab711531a8ac587a96b5ab7b24cf). The corresponding decoding is here [https://gist.github.com/felixerdy/04f8ee955a4f5828be97eb981e5b2d27](https://gist.github.com/felixerdy/04f8ee955a4f5828be97eb981e5b2d27).
+→ If you want to see a full example of a senseBox MCU sending temperature, humidity, pressure, illuminance, UV, PM10, PM2.5, 2x soil moisture, 2x soil tempoerature and ultrasonic distance values over LoRaWAN to TTN, check out this code: [https://gist.github.com/felixerdy/a42dab711531a8ac587a96b5ab7b24cf](https://gist.github.com/felixerdy/a42dab711531a8ac587a96b5ab7b24cf). Den entsprechenden Decoder findes du hier: [https://gist.github.com/felixerdy/04f8ee955a4f5828be97eb981e5b2d27](https://gist.github.com/felixerdy/04f8ee955a4f5828be97eb981e5b2d27).
 
 
