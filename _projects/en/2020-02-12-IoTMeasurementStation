@@ -16,7 +16,7 @@ material:
     - Brightness- and UV-sensor 
     - JST-cabel
 ide: blockly    
-lang: de
+lang: en
 version: ["edu"]
 tags: ["informatics", "Geography"]
 difficult: medium
