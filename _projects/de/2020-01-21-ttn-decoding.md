@@ -1,23 +1,27 @@
 ---
 layout: project_page
-name: "TTN Decoding for Dummies"
+name: "TTN Decoding für Anfänger"
 date: 2020-01-23
-author: Felix
-abstract: "A small walkthrough"
+author: Felix u Mario
+abstract: "Eine kleine Anleitung zum Decoding in TTN"
 image: /ttn-decoding/animation.gif
-lang: en
+lang: de
 tags: ["LoRaWAN", "TTN"]
-difficult: "medium"
+difficult: "mittel"
 ---
-# TTN Decoding isn't hard
-It's just about understanding bytes. After that is done, it's quite simple to create a fast solution in order to access your data measured by senseBox.
+# TTN Decoding für Anfänger
 
-__Scenario:__ Sending an abritary number of measurements with LoRaWAN via The Things Network to openSenseMap.
 
-## Theory
-LoRaWAN isn't suitable for large amount of data. That's why we usually send our information in small byte chunks. It is important to think about the number of bytes that are suitable to contain all neccesary information. One byte contains 8 bit. That means, you can differentiate between 256 values. 2 bytes contain 16 bits where you can differentiate between 65.536 values.
+Beim TTN Decoding geht nur darum, Bytes zu verstehen. Danach ist es möglich, schnelle Lösungen zu erstellen, um auf deine, von senseBox gemessenen Daten, zuzugreifen.
 
-The following table identifies which range how many bytes provide:
+__Szenario:__ Senden einer willkürlichen Anzahl von Messungen mit LoRaWAN über The Things Network an die openSenseMap.
+
+
+## Theorie
+LoRaWAN ist nicht geeignet für das Senden von großen Datenmengen, deshalb werden die Informationen in kleine Bytes unterteilt und gesendet. Ein Byte enhält 8 Bit. Das heißt, man kann zwischen 256 verschiedenen Werten unterscheiden. 2 Bytes enhalten schon 16 Bits, sodass es möglich ist, zwischen 65536 Werten zu unterscheiden.
+
+Die nachfolgende Tabelle gibt eine Übersicht über die Bandbreite:
+
 
 | Bytes | Bit | min (signed)   | max (signed)  | min (unsigned) | max (unsigned) |
 |-------|-----|----------------|---------------|----------------|----------------|
@@ -25,30 +29,33 @@ The following table identifies which range how many bytes provide:
 | 2     | 16  | −32.768        | 32.767        | 0              | 65.535         |
 | 3     | 24  | −2.147.483.648 | 2.147.483.647 | 0              | 4.294.967.295  |
 
-As you can see, there are two range types: signed and unsigned. Signed values range from negative values to positive values. Unsigned values are only positive values. These values are also no decimal numbers but only integer numbers.
+In der Tabelle gibt es zwei verschiedenen Typen: "signed" und "unsigned". Signded Werte decken sowohl den positiven als auch negativen Wertebereich ab. 
 
-Example: you want to measure humidity values. These values can range between 0% and 100%. Of course, you could use 1 byte to represent a humidity reading. If you want to use two decimal digits however, this representation can't be used anymore. You will need to use 2 bytes and think about a conversion formula. 
+Beispiel: Du möchtest die Luftfeuchtigkeit messen. Die Werte liegen zwischen 0% und 100%. Es handelt sich aber um keine Kommazahlen sondern nur um ganzzahlige Werte. Man könnte nun ein Byte verwenden, welcher den Wert für die Luftfeuchtigkeit entspricht. Möchte man allerdings eine Dezimalzahl mit zwei Nachkommastellen versenden, reicht 1 Byte nicht mehr aus. 2 Bytes müssen verwendet werden.  
 
-Imagine we are measuring 85.42%. A simple approach would be to take the measurement and multiply it by 100. Now we have a measurement of `85.42 * 100 = 8542`. We can encode 8542 to two bytes, send them to TTN and encode these two bytes again to get 8542. This number can now be divided by 100 and we get our measurement of 85.42%. That's basically how it works.
+Stellen dir vor vor, wir messen 85,42%. Ein einfacher Ansatz wäre es, die Messung zu nehmen und mit 100 zu multiplizieren. Nun haben wir ein Wert von 85,42 * 100 = 8542. Wir können 8542 in zwei Bytes kodieren, sie an TTN senden und diese zwei Bytes decodieren, um 8542 zu erhalten. Diese Zahl kann nun durch 100 geteilt werden, und wir erhalten den Wert von 85,42%. So funktioniert es im Grunde genommen.
 
-## Programming
+
+## Programmierung
 
 __Arduino__
-On Arduino side we are using the [lora-serialization](https://github.com/thesolarnomad/lora-serialization) library. According to the documentation there is a [function](https://github.com/thesolarnomad/lora-serialization#unsigned-16bit-integer-2-bytes) to send unsigned (only positive values) 16 bit (range from 0 to 65.535) integer (no decimals) values. To send humidity values to TTN, we can use this function
+Auf der Arduino Seite wird die [lora-serialization](https://github.com/thesolarnomad/lora-serialization) Bibliothek verwendet. Die Dokumentation zeigt eine[Funktion](https://github.com/thesolarnomad/lora-serialization#unsigned-16bit-integer-2-bytes), um einen Wert mit 16 Bit zu versenden. Diese Funktion kann genutzt werden, um die Werte für die Luftfeuchtigkeit zu versenden.
 ```c
 humidity = HDC.readHumidity();
 message.addUint16(humidity * 100);
 ```
-Keep in mind to multiply your measurement by 100 in order to keep two decimals.
 
-Sending additional temperature values needs a little bit of thinking. As temperature can contain negative values, we need to convert it to positive values first. And to keep decimals, we also need to multiply it. This is the function we are using to encode temperature values
+Denke daran deinen Messwert mit 100 zu multiplizieren, um die Nachkommastellen beizubehalten.
+
+Da der Wert für die Temperatur auch in den negativen Bereich fallen kann, muss zunächst der Wert in einen positven konvertviert werden und anschließend mit einem Wert multipliziert werden, um die Nachkommastellen zu behalten. 
 ```c
 temperature = HDC.readTemperature();
 message.addUint16((temperature + 18) * 771);
 ```
+In diesem Beispiel wird ein Temperatursensor verwendet, der Werte ab -18 Grad Celsius gemessen hat und die Temperatur mit einer Genauigkeit von 0.0013 Grad Celsius rausgibt. 
 
 __TTN__
-So there are two values arriving from a senseBox on TTN. Now, we need to keep the order of bytes in mind. To decode bytes to integer values, I usually use the following method to convert bytes to an unsigned integer
+In der TTN Console kommen nun zwei verschiedene Werte von der senseBox an. Diese Werte müssen nun mithilfe eines Decoders wieder von Bytes zu den ursprünglichen Werten decodiert werden.
 ```js
 /**
  * Convert the array of bytes to an unsigned integer, LSB. 
@@ -66,7 +73,7 @@ function uint(bytes) {
 }
 ```
 
-Below that, I can create my decoder
+Hier kann nun der Decoder definiert werden
 ```js
 function Decoder(bytes) {
 
@@ -90,15 +97,14 @@ function Decoder(bytes) {
   return decoded;
 }
 ```
+Die Funktion nimmt die ersten zwei Bytes und konvertiert sie zu zum Messwert für Luftfeuchtigkeit. Die nächsten zwei Bytes werden zu einem Messwert für die Temperatur konvertiert. Wenn du die openSenseMap als Endpunkt (`https://ttn.opensensemap.org/v1.1`)in der TTN HTTP integration verwendest, werden die Messwerte mit deinen Sensor IDs verknüpft und die Messwerte auf der openSenseMap angezeigt. Mehr über die openSenseMap TTN integration findest du [hier](https://sensebox.github.io/books-v2/osem/ttn_integration.html)
 
-That function takes the first two bytes and converts them to the humidity reading. Then, the next two bytes are converted to a temperature reading. When you are using the openSenseMap endpoint `https://ttn.opensensemap.org/v1.1` in your TTN HTTP integration, the measurements are matched with your sensor IDs and you can see the measurements on openSenseMap. Read more about the openSenseMap TTN integration [here](https://sensebox.github.io/books-v2/osem/ttn_integration.html)
+## Wichtige Punkte
+Einige wichtige Punkte sind zu beachten:
 
-## Keep in mind
-There are a few things that you need to keep in mind. 
+→ Die Dekodierung schlägt fehl / gibt falsche Werte zurück, wenn du nicht alles sendest, was dekodiert werden muss. Wenn der Decoder z.B. einen Feuchte- und einen Temperaturwert akzeptiert, die senseBox aber nur einen Feuchtewert sendet, erhälst du keine korrekten Werte.
 
-→ Decoding fails / returns false values when you are not sending everything that needs to be decoded. If the decoder accepts e.g. a humidity and a temperature value, but your Arduino is only sending a humidity value, you will not receive correct values.
-
-→ Sending 3 byte values is a little different. Illuminance values can be higher that the maximum of 2 byte integer. Therefore, you will need 3 bytes. You can send a 3 byte message like this: 
+→ Beim senden von Werten, die größer als 3 Bytes sind, ist es ein wenig anders. Werte für die Helligkeit können im Maximum größer sein als ein 2 Byte Integer. Daher werden 3 Bytes benötigt. Du kannst das Ganze wie folgt senden: 
 ```c
 lux = TSL.readLux();
 message.addUint8(lux);
@@ -110,10 +116,10 @@ var lux = bytes[i] | bytes[i+1]<<8 | bytes[i+2]<<16;
 i = i + 3 // increment counter afterwards
 ```
 
-→ You need to use the JSON decoding profile on openSenseMap when you are writing the decoder by yourself. Read more about the openSenseMap TTN integration [here](https://sensebox.github.io/books-v2/osem/ttn_integration.html)
+→ Du musst das JSON-Decodierungsprofil auf der openSenseMap verwenden, wenn du den Decoder selbst schreibst. Lies mehr über die openSenseMap-TTN-Integration [hier](https://sensebox.github.io/books-v2/osem/ttn_integration.html)
 
-→ The lora-serialization library provides enhanced functions to send coordinates (`message.addLatLng(-33.905052, 151.26641)`) or temperature (`message.addTemperature(-2.43)`). The corresponding functions to decode the values on TTN can be found here: [https://github.com/thesolarnomad/lora-serialization/blob/master/src/decoder.js](https://github.com/thesolarnomad/lora-serialization/blob/master/src/decoder.js)
+→ Die Library `lora-serialization` bietet erweiterte Funktionen um Koordinaten (`message.addLatLng(-33.905052, 151.26641)`) oder Temperaturwerte (`message.addTemperature(-2.43)`) zu versenden. Die entsprechenden Funktionen zum decodieren der Werte in TTN kannst du hier finden: [https://github.com/thesolarnomad/lora-serialization/blob/master/src/decoder.js](https://github.com/thesolarnomad/lora-serialization/blob/master/src/decoder.js)
 
-→ If you want to see a full example of a senseBox MCU sending temperature, humidity, pressure, illuminance, UV, PM10, PM2.5, 2x soil moisture, 2x soil tempoerature and ultrasonic distance values over LoRaWAN to TTN, check out this code: [https://gist.github.com/felixerdy/a42dab711531a8ac587a96b5ab7b24cf](https://gist.github.com/felixerdy/a42dab711531a8ac587a96b5ab7b24cf). The corresponding decoding is here [https://gist.github.com/felixerdy/04f8ee955a4f5828be97eb981e5b2d27](https://gist.github.com/felixerdy/04f8ee955a4f5828be97eb981e5b2d27).
+→ Wenn du ein komplettes Beispiel für die senseBox suchst, die Temperatur, Luftfeuchtigkeit, Luftdruck, Helligkeit, UV, PM10, PM2.5, Bodenfeuchtigkeit- und Temperatur über LoRaWAN sendet, schaue dir folgenden Code an:[https://gist.github.com/felixerdy/a42dab711531a8ac587a96b5ab7b24cf](https://gist.github.com/felixerdy/a42dab711531a8ac587a96b5ab7b24cf). Den entsprechenden Decoder findes du hier: [https://gist.github.com/felixerdy/04f8ee955a4f5828be97eb981e5b2d27](https://gist.github.com/felixerdy/04f8ee955a4f5828be97eb981e5b2d27).
 
 
