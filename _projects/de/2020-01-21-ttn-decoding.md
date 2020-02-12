@@ -11,7 +11,8 @@ difficult: "mittel"
 ---
 # TTN Decoding für Anfänger
 
-Es geht nur darum, Bytes zu verstehen. Nachdem das erledigt ist, ist es ganz einfach, eine schnelle Lösung zu erstellen, um auf deine, von senseBox gemessenen Daten, zuzugreifen.
+
+Beim TTN Decoding geht nur darum, Bytes zu verstehen. Danach ist es möglich, schnelle Lösungen zu erstellen, um auf deine, von senseBox gemessenen Daten, zuzugreifen.
 
 __Szenario:__ Senden einer willkürlichen Anzahl von Messungen mit LoRaWAN über The Things Network an die openSenseMap.
 
@@ -99,11 +100,11 @@ function Decoder(bytes) {
 Die Funktion nimmt die ersten zwei Bytes und konvertiert sie zu zum Messwert für Luftfeuchtigkeit. Die nächsten zwei Bytes werden zu einem Messwert für die Temperatur konvertiert. Wenn du die openSenseMap als Endpunkt (`https://ttn.opensensemap.org/v1.1`)in der TTN HTTP integration verwendest, werden die Messwerte mit deinen Sensor IDs verknüpft und die Messwerte auf der openSenseMap angezeigt. Mehr über die openSenseMap TTN integration findest du [hier](https://sensebox.github.io/books-v2/osem/ttn_integration.html)
 
 ## Wichtige Punkte
-There are a few things that you need to keep in mind. 
+Einige wichtige Punkte sind zu beachten:
 
-→ Decoding fails / returns false values when you are not sending everything that needs to be decoded. If the decoder accepts e.g. a humidity and a temperature value, but your Arduino is only sending a humidity value, you will not receive correct values.
+→ Die Dekodierung schlägt fehl / gibt falsche Werte zurück, wenn du nicht alles senden, was dekodiert werden muss. Wenn der Decoder z.B. einen Feuchte- und einen Temperaturwert akzeptiert, die senseBox aber nur einen Feuchtewert sendet, erhälst du keine korrekten Werte.
 
-→ Sending 3 byte values is a little different. Illuminance values can be higher that the maximum of 2 byte integer. Therefore, you will need 3 bytes. You can send a 3 byte message like this: 
+→ Beim senden von Werten die größer als 3 Bytes sind ist es ein wenig anders. Werte für die Helligkeit können im Maximum größer sein als ein 2 Byte Integer. Daher werden 3 Bytes benötigt. Du kannst das ganze wie folgt senden: 
 ```c
 lux = TSL.readLux();
 message.addUint8(lux);
@@ -115,10 +116,10 @@ var lux = bytes[i] | bytes[i+1]<<8 | bytes[i+2]<<16;
 i = i + 3 // increment counter afterwards
 ```
 
-→ You need to use the JSON decoding profile on openSenseMap when you are writing the decoder by yourself. Read more about the openSenseMap TTN integration [here](https://sensebox.github.io/books-v2/osem/ttn_integration.html)
+→ Du musst das JSON-Decodierungsprofil auf der openSenseMap verwenden, wenn du den Decoder selbst schreibst. Lies mehr über die openSenseMap-TTN-Integration [hier](https://sensebox.github.io/books-v2/osem/ttn_integration.html)
 
-→ The lora-serialization library provides enhanced functions to send coordinates (`message.addLatLng(-33.905052, 151.26641)`) or temperature (`message.addTemperature(-2.43)`). The corresponding functions to decode the values on TTN can be found here: [https://github.com/thesolarnomad/lora-serialization/blob/master/src/decoder.js](https://github.com/thesolarnomad/lora-serialization/blob/master/src/decoder.js)
+→ Die Library `lora-serialization` bietet erweiterte Funktionen um Koordinaten (`message.addLatLng(-33.905052, 151.26641)`) oder Temperaturwerte (`message.addTemperature(-2.43)`) zu versenden. Die entsprechenden Funktionen zum decodieren der Werte in TTN kannst du hier finden: [https://github.com/thesolarnomad/lora-serialization/blob/master/src/decoder.js](https://github.com/thesolarnomad/lora-serialization/blob/master/src/decoder.js)
 
-→ If you want to see a full example of a senseBox MCU sending temperature, humidity, pressure, illuminance, UV, PM10, PM2.5, 2x soil moisture, 2x soil tempoerature and ultrasonic distance values over LoRaWAN to TTN, check out this code: [https://gist.github.com/felixerdy/a42dab711531a8ac587a96b5ab7b24cf](https://gist.github.com/felixerdy/a42dab711531a8ac587a96b5ab7b24cf). Den entsprechenden Decoder findes du hier: [https://gist.github.com/felixerdy/04f8ee955a4f5828be97eb981e5b2d27](https://gist.github.com/felixerdy/04f8ee955a4f5828be97eb981e5b2d27).
+→ Wenn du ein komplettes Beispiel für die senseBox suchst, die Temperatur, Luftfeuchtigkeit, Luftdruck, Helligkeit, UV, PM10, PM2.5, Bodenfeuchtigkeit- und Temperatur über LoRaWAN sendet schaue dir folgenden Code an:[https://gist.github.com/felixerdy/a42dab711531a8ac587a96b5ab7b24cf](https://gist.github.com/felixerdy/a42dab711531a8ac587a96b5ab7b24cf). Den entsprechenden Decoder findes du hier: [https://gist.github.com/felixerdy/04f8ee955a4f5828be97eb981e5b2d27](https://gist.github.com/felixerdy/04f8ee955a4f5828be97eb981e5b2d27).
 
 
