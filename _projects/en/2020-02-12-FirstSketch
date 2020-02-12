@@ -11,7 +11,7 @@ image3: /images/projects/FirstSketch_Image02.PNG
 material:
     - senseBox MCU
 ide: blockly  
-lang: de
+lang: en
 version: ["edu", "mini"]   
 tags: ["first steps", "computer science"]
 difficult: easy
