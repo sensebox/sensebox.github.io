@@ -1,6 +1,6 @@
 layout: project_page
 name: "People Counter"
-date: 2019-02-12
+date: 2020-02-19
 author: Lia
 abstract: "With the ultrasonic distance sensor and the display a people counter can be built"
 image: traffic_counter.png
