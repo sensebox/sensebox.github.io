@@ -4,10 +4,10 @@ date: 2019-02-12
 author: Lia
 abstract: "With the ultrasonic distance sensor and the display a people counter can be built"
 image: traffic_counter.png
-image1: /images/projects/person counter/01_person counter_circuit.jpg
-image2: /images/projects/person counter/02_sensor_display.png
-image3: /images/projects/person counter/03_if_condition.png
-image4: /images/projects/person counter/04_if_condition_2.png
+image1: /images/projects/personenzähler/01_person counter_circuit.jpg
+image2: /images/projects/personenzähler/02_sensor_displayEn.png
+image3: /images/projects/personenzähler/03_wenn_bedingungEn.png
+image4: /images/projects/personenzähler/04_wenn_bedingung_2En.png
 material:
     - senseBox MCU
     - Ultrasonic sensor
