@@ -1,3 +1,4 @@
+---
 layout: project_page
 name: "People Counter"
 date: 2020-02-19

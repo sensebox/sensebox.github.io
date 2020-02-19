@@ -1,3 +1,4 @@
+---
 layout: project_page
 name: "IoT Measurement station"
 date: 2020-02-12
@@ -18,7 +19,7 @@ material:
 ide: blockly    
 lang: en
 version: ["edu"]
-tags: ["informatics", "Geography"]
+tags: ["computer science", "geography"]
 difficult: medium
 ---
 # IoT Measurement station
