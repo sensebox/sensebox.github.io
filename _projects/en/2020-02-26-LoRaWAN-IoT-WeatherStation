@@ -103,7 +103,6 @@ void os_getArtEui (u1_t* buf) { memcpy_P(buf, APPEUI, 8);}
 static const u1_t PROGMEM APPKEY[16] = { 0x5A, 0x9D, 0x13, 0xEB, 0x5A, 0x1F, 0x01, 0xD7, 0x35, 0x90, 0x85, 0xE5, 0x36, 0x18, 0x10, 0x6C };
 void os_getDevKey (u1_t* buf) {  memcpy_P(buf, APPKEY, 16);}
 
-
 ```
 
 As you can read in the description of the code, it is important here to use the format of the keys correctly. The "Device EUI" and the "Application EUI" are stored in 
