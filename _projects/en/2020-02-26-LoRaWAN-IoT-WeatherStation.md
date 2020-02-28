@@ -9,10 +9,11 @@ image1: /images/projects/lora-osem-tago/station_anlegen_ttn.PNG
 image2: /images/projects/lora-osem-tago/station_anlegen_ttn_final.PNG
 image3: /images/projects/lora-osem-tago/device_anlegen_ttn.PNG
 image4: /images/projects/lora-osem-tago/device_anlegen_ttn_overview.PNG
-image5: /images/projects/lora-osem-tago/en/SelecetSenseBox_En.PNG
+image5: /images/projects/lora-osem-tago/en/SelectSenseBox_En.PNG
 image6: /images/projects/lora-osem-tago/en/OsemTTN_En.PNG
 image7: /images/projects/lora-osem-tago/en/OsemSummary_En.PNG
 image8: /images/projects/lora-osem-tago/device_overview_right_format.PNG
+image13: /images/projects/lora-osem-tago/Integration_osem.PNG
 material:
     - senseBox MCU
     - 3x JST-cable 
