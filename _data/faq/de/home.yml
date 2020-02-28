@@ -11,11 +11,11 @@
     Der Rest der Sensoren darf gerne auch in der Sonne stehen.
 - q: Wie kann ich von hier die Daten in euer Netzwerk einspeisen?
   a: >
-    Wenn du eine Box erwerbst, kannst du die Station auf der openSenseMap (https://opensensemap.org) registrieren und bekommst schon den Programmcode vorgefertigt zugeschickt.
+    Wenn du eine Box erwirbst, kannst du die Station auf der openSenseMap (https://opensensemap.org) registrieren und bekommst schon den Programmcode vorgefertigt zugeschickt.
     Wenn der Programmcode dann auf die Station gespielt wird und mit dem Internet verbunden ist, werden die Daten automatisch übertragen.
 - q: Gibt es Erfahrungen hinsichtlich einer Überhitzung der Box? Hier kann es gerne mal extrem warm werden und ich befürchte Kondenswasser oder einen Ausfall von Bauteilen.
   a: >
-    Wir haben ein paar Boxen in Gebieten stehen, die sehr heiß und kalt werden (Zugspitze und Sao Paulo). Es ist hilfreich einfach etwas Silikagel mit in die Station packen.
+    Wir haben ein paar Boxen in Gebieten stehen, die sehr heiß und kalt werden (Zugspitze und Sao Paulo). Es ist hilfreich, einfach etwas Silikagel mit in die Station zu packen.
 - q: Kann ich die senseBox:home unbhängig von einer Stromversorgung betreiben?
   a: >
     Ja! Wir bieten ein Solarset an, welches dir ermöglicht, die senseBox:home unabhängig von einer Stromversorgung zu betreiben. Beachte hierbei allerdings, dass viele Variablen, wie Sonneneinstrahlung, Ausrichtung des Solarpanels und auch die Temperatur, die Laufzeit beeinflussen können. 
