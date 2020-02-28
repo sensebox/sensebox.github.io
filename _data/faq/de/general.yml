@@ -1,12 +1,14 @@
 
-- q: Wo kann ich die senseBox kaufen?
+ -q: Wo kann ich die senseBox kaufen?
   a: Wir haben einen eigenen Onlineshop, den du über [sensebox.kaufen](https://sensebox.kaufen) erreichst.
-- q: Gibt es Ersatzteile für die senseBox?
+ -q: Gibt es Ersatzteile für die senseBox?
   a: Ersatzteile für die senseBox findest du auf https://sensebox.kaufen.
-- q: Ich habe bereits Arduino kompatible Sensoren und Bauteile, kann ich diese mit der senseBox MCU verbinden und nutzen?
+ -q: Ich habe bereits Arduino kompatible Sensoren und Bauteile, kann ich diese mit der senseBox MCU verbinden und nutzen?
   a: Ja! Die senseBox basiert auf der Arduino Plattform und kann somit alle Arduino kompatiblen Sensoren und Bauteile ansteuern.
     Dazu musst du deinen Sketch anpassen. Einige Sensoren und Bauteile lassen sich auch über Blockly programmieren.
-- q: Wie kann ich die senseBox programmieren?
-  a: Die senseBox kann über drei verschiedene Systeme programmiert werden. Eine Übersicht über die verschiedenen Editoren findest du [hier](/de/editors)
-- q:
-  a: 
+ -q: Wie kann ich die senseBox programmieren?
+  a: Die senseBox kann entweder über die visuelle Programmieroberfläche Blockly oder mit der Arduiono IDE, die von der Syntax ähnlich zu C++ ist, programmiert werden. Eine weitere Möglichkeit bietet zudem das openRoberta-Lab. 
+ -q: Worin unterscheiden sich die drei Varianten der senseBox?
+  a: Die senseBox:edu ist ein Elektronikbausatz zum Experimentieren und programmieren lernen mit Sensoren und eignet sich daher besonders für den Einsatz in der Schule. Etwas weniger umfangreich ist hingegen die senseBox:mini, die einen ersten Einsteig in dem Bereich der Programmierung und Umweltbildung gewährt. Bei der senseBox:home ist dagegen keine eigenständige Programmierung notwendig und es handelt sich dabei um eine stationäre IoT-Umweltmessstation für Zuhause.  
+ -q: Wo kann ich mich melden, wenn ich Probleme mit der senseBox habe?
+  a: Bei Fragen, Ideen oder Anregungen bietet das [Forum](https://forum.sensebox.de/) eine gute Möglichkeit, um sich mit anderen Nutzer*innen auszutauschen und sich gegenseitig zu unterstützen. Zudem kannst du dich bei Problemen an support@senseBox.de wenden. 
