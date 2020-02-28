@@ -1,7 +1,24 @@
-- q: Wie kann ich die senseBox im Unterricht einsetzen?
-  a: >
-    Mit der senseBox kannst du eine Vielzahl von verschiedenen Projekten umsetzten. Eine gute Übersicht über die verschiedenen Projekte und weitere Materialien findest du [hier](https://sensebox.de/de/materials). Dort findest du auch eine kurze Handreichung für Lehrkräfte
-- q: Kann ich noch weiteren Sensoren anschließen?
-  a: >
-    Ja! Die senseBox basiert auf der Arduino Plattform und kann somit alle Arduino kompatiblen Sensoren abfragen.
-    Dazu musst du deinen Sketch anpassen. Einige Sensoren und Bauteile lassen sich auch über Blockly programmieren.
+-q: Wie kann ich die senseBox im Unterricht einsetzen?
+  a: Mit der senseBox kannst du eine Vielzahl von verschiedenen Projekten umsetzten. Eine gute Übersicht über die verschiedenen Projekte und weitere Materialien findest du [hier](https://sensebox.de/de/material). Dort findest du auch eine kurze Handreichung für Lehrkräfte.
+ -q: In welchen Unterrichtsfächern kann ich die senseBox einsetzen?
+  a: Der Einsatz der senseBox eignet sich vor allem im MINT-Bereich. Ein direkter Bezug zum Kernlehrplan besteht bei den Fächern Informatik, Erdkunde und Technik. Es bestehen aber durchaus Einsatzmöglichkeiten in weiteren Unterrichtsfächern, welche [hier](https://sensebox.de/docs/lehrkraefte_senseBox_de.pdf) aufgeführt sind. 
+ -q: In welchen Jahrgangsstufen ist der Einsatz der senseBox sinnvoll?
+  a: Die senseBox wird hauptsächlich in der Sekundarstufe 1 eingesetzt. Durch die vielfältigen Einsatzmöglichkeiten eröffnen sich jedoch auch Anwendungsfelder in der Grundschule sowie für umfangreichere Projekte in der Sekundarstufe 2 und in der Hochschullehre. Mit Projekten, die dem Leistungsniveau der Lernenden angepasst sind, ist das Einsatzspektrum der senseBox folglich nicht begrenzt. Beispielprojekte findest du [hier] (https://sensebox.de/de/projects/) sowie im senseBox Buch. 
+ -q: Brauchen die Schülerinnen und Schüler Vorwissen im Bereich der Informatik?
+  a: Nein! Blockly ist eine visuelle Programmieroberfläche, die es ermöglicht, ohne informatische Vorkenntnisse die senseBox zu programmieren. Es werden aber durchaus algorithmische Denk- und Arbeitsweisen geschult. Es eignet sich also vor allem ein Einsatz über den Infomratikunterricht hinaus, beipsielsweise im Bereich der Umweltbildung und Datenerfassung. Fortgeschrittene Anwenderinnen und Anwender können auch auf eine Programmierung direkt in der Arduino IDE zurückgreifen.  
+
+ -q: Wie übertrage ich den Programmcode aus Blockly auf die senseBox MCU?
+  a: Mit dem orangen Button kannst du den Programmcode kompilieren und anschließend auf die senseBox MCU, die durch den Anschluss über USB als Wechseldatenträger erkannt wurde, übertragen. Eine ausführlichere Beschreibung findest du [hier] (https://sensebox.de/de/go-edu).
+ -q: Kann an einem in Blockly bereits begonnenen Programmcode in einer neuen Unterrichtsstunde weitergearbeitet werden?
+  a: Ja! Blockly bietet die Möglichkeit, die Blöcke als XML-Datei zu speichern, sodass diese in einer neuen Sitzung wieder geöffnet und anschließnend weiter bearbeitet werden können. 
+ -q: Kann ich in Blockly die Sprache ändern?
+  a: Ja! Im Menü gibt es unter den Einstellungen die Option, die Sprache (Deutsch - Englisch) zu wechseln. Aber Achtung: Wechselst du die Sprache während eines Programmiervorgangs, gehen die bereits erstellten Blöcke verloren. 
+
+ -q: Welchen Mehrwert bietet mir die openSenseMap, wenn ich mit der senseBox:edu arbeite?
+  a: Die openSenseMap liefert ein offenes und flächendeckendes Messdatennetz, dass für jeden frei zur Verfügung steht. Die mit der senseBox eigenständig erhobenen Daten können somit Teil eines Citizen Science Projektes werden, indem sie auf der openSenseMap betrachtet, analysiert und heruntergleaden werden können. Sowohl die eigenen als auch die fremd erfassten Daten bieten die Möglichkeit der Veranschulichung und Weiterverarbeitung in Karten, beispielsweise mit ArcGIS Online. 
+ -q: Wie kann die senseBox:edu Daten an die openSenseMap senden, wenn keine WLAN Verbindung besteht?
+  a: Es gibt die Möglichkeit, mit dem Handy einen Hotspot einzurichten, über den sich die senseBox Zugriff zum Internet verschaffen und somit auch bei einer mobilen Messung dauerhaft Daten an die openSenseMap schicken kann. 
+ -q: Wie kann die sneseBox bei einer mobilen Messung mit Strom versorgt werden?
+  a: Die senseBox kann ihren Strom beispielsweise über eine Powerbank beziehen. Hier solltest du allerdings auf die richtige Wahl achten, da sich einige Powerbanks bei einem zu geringen Stromverbrauch selbst abschalten und folglich der senseBox nicht mehr den nötigen Strom liefern. 
+
+
