@@ -4,7 +4,7 @@ name: "Implementing energy saving functions"
 date: 2020-03-04
 author: Jan
 abstract: "There are some ways to modify your Arduino sketches and save some engery"
-image: /ttn-decoding/animation.gif
+image: /energysaving/energysavind.png
 lang: en
 tags: ["Arduino", "Electronics", "Energy Saving"]
 difficult: "medium"
