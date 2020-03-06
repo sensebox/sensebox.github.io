@@ -4,8 +4,8 @@ title: "Neue Blockly Version"
 date: 2020-03-06
 author: Mario und Felix
 abstract: ""
-thumbnail: /images/blog_images/Blockly_new_release.jpg
-image1: /images/blog_images/truebner/truebner_smt50.jpg
+thumbnail: /images/blog_images/blockly_release_march/Blockly_new_release.jpg
+image1: /images/blog_images/blockly_release_march/new_osem_block.png
 lang: de
 ---
 
@@ -15,7 +15,7 @@ englisch version below
 Neues Blockly Release
 ============
 
-Wir haben eine neue Version von Blockly für senseBox veröffenlticht. Die Neue Version enthält neben kleiner Änderungen und Fehlerbeseitung zwei große Veränderungen:
+Wir haben eine neue Version von Blockly für senseBox veröffenlticht. Die neue Version enthält neben kleiner Änderungen und Fehlerbeseitung zwei große Veränderungen:
 
 ## Neue Blöcke für LoRa
 
@@ -29,6 +29,8 @@ Um den Traffic auf der openSenseMap besser unter Kontrolle zu haben und euch ein
 Beim senden von Messwerten über Blockly an die openSenseMap wurde bisher jeder Messwert als einzelner Request versendet. Mit dem Update von März 2020 werden nun die Messwerte gesammelt und als einen Request versendet. So ist es nun auch über Blockly mögliche mehr als 6 Messwerte pro Minute zu senden.
 
 Die Zweite Veränderung betrifft das bauen von Mobilen Messstationen, die die Messwerte direkt an die openSenseMap versenden. Im Block gibt es nun ein Dropdown Menü, in dem du zwischen einer Stationären und einer Mobilen Messstation wählen kannst. Bei einer Stationären Messstation wird der Standort über die openSenseMap festgelegt und dieser wird nicht verändert. Bei einer Mobilen Messstation legst du einen ersten Standort über die openSenseMap fest, allerdings werden bei jedem senden der Messwerte ein Standort und ein Zeitstempel übertragen. Der Standort und der Zeitstempel wird über das GPS Modul bestimmt und muss an den Block übergeben werden. Ein Beispielprojekt für den Bau einer mobilen Messstationen findest du auch [hier](https://sensebox.de/de/projects).
+
+ {% include image.html image=page.image1 %}
 
 ### workshop.openSenseMap.org
 
