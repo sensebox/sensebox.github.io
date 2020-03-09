@@ -13,6 +13,7 @@ image5: /images/projects/TTN-Mapper/ttn-mapper-integration.PNG
 image6: /images/projects/TTN-Mapper/blockly-activation-de.PNG
 image7: /images/projects/lora-osem-tago/device_overview_right_format.PNG
 image8: /images/projects/TTN-Mapper/blockly-gps-de.PNG
+image9: /images/projects/TTN-Mapper/ttn-mapper.PNG
 
 material:
     - senseBox MCU
@@ -88,6 +89,8 @@ Deinen persönlichen TTN Mapper findest Du unter dem Namen deines Experiments. �
 http://ttnmapper.org/experiments/?experiment=EXPERIMENT_NAME
 
 und ersetze EXPERIMENT_NAME mit dem Namen deines Experiments. Es kann eine Weile dauern bis die senseBox GPS Daten empfängt. Zwischendurch kannst Du die Seite neu laden um die neuesten Messungen zu sehen.
+
+{% include image.html image=page.image9 %}
 
 ## Hilfe
 
