@@ -3,7 +3,7 @@ layout: post
 title: "Neue Blockly Version"
 date: 2020-03-06
 author: Mario und Felix
-abstract: ""
+abstract: "Neue Blockly Version bringt LoRa Blöcke"
 thumbnail: /images/blog_images/blockly_release_march/Blockly_new_release.jpg
 image1: /images/blog_images/blockly_release_march/new_osem_block.png
 lang: de
