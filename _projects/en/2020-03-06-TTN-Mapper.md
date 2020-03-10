@@ -39,7 +39,7 @@ Start by connecting the LoRa-Bee to XBEE1 on your senseBox MCU. Additionally, co
 
 ## Registration at TheThingsNetwork
 
-Visit the website [thethingsnetwork.org](https://www.thethingsnetwork.org/) and create an account. If you are logged in, you will see a "Learn" option in the header of the homepage. Click on it and select "Applications" and then "add application" on the following page. Enter an "Application ID" there, which is unique. Leave all other options unchanged.
+Visit the website [thethingsnetwork.org](https://www.thethingsnetwork.org/) and create an account. If you are logged in, visit the [TTN Console](https://console.thethingsnetwork.org/). Click on  "Applications" and create a new application on the following page. Enter an "Application ID" there, which is unique. Leave all other options unchanged.
 
 {% include image.html image=page.image1 %}
 
@@ -61,13 +61,13 @@ Since the data is to be sent to the TTN Mapper later, you still need a so-called
 
 ## Blockly 
 
-Open Blockly and start developing code for your senseBox MCU. As we want to use TTN's infrastructure, we need to perform an Activation. Select the OTAA Activation. Depending on your needs, you can change the transmission interval. Keep in mind that TTN runs on a fair use policy, which means that you should keep your transmission rate as low as possible. 
+Open Blockly and start developing code for your senseBox MCU. As we want to use TTN's infrastructure, we need to perform an activation. Select the OTAA activation. Depending on your needs, you can change the transmission interval. Keep in mind that TTN runs on a fair use policy, which means that you should keep your transmission rate as low as possible. 
 
 {% include image.html image=page.image6 %}
 
-Insert your TTN keys now. It is important here to use the format of the keys correctly. The "Device EUI" and the "Application EUI" are stored in ``lsb`` format copied and pasted. The AppKey in ``msb`` format. 
+Insert your TTN keys now. Here it is important to use the correct format of the keys. The "Device EUI" and the "Application EUI" are stored in ``lsb`` format. The AppKey in ``msb`` format. 
 
-When copying the keys you must therefore make sure that your Device Overview is set up as shown in the following picture. You can change the format of the display by pressing the icons at the beginning (<> and ->)
+When copying the keys you must therefore make sure that your Device Overview is set up as shown in the following picture. You can change the format of the display by pressing the icons at the beginning (<> and ⇆)
 
 {% include image.html image=page.image7 %}
 
@@ -77,7 +77,7 @@ There are different ways of sending LoRa data. We want to use the Cayenne Low Po
 
 {% include image.html image=page.image8 %}
 
-Add the `Send as Cayenne Payload` Block and send a `Latitude, Longitute and Altitude` Message. Insert the corresponding GPS block here. You don't need to change the channel.
+Add the `Send as Cayenne Payload` Block and send a `Latitude, Longitute and Altitude` message. Insert the corresponding GPS block here. You don't need to change the channel.
 
 Compile the sketch and upload it to the senseBox MCU. The senseBox should now look for GPS data and transmit them to TTN which forwards them to TTN Mapper.
 
@@ -95,6 +95,6 @@ and replace EXPERIMENT_NAME with your experiment name. It can take a while until
 
 ## Troubleshooting
 
-Please notice that it can take quite a while until the GPS module receives GPS data. Sometimes, it takes up to multiple hours on the first time. After the module successfully received some information, it usually won't take that long on the next time. It helps to insert a small coin cell to the GPS module.
-
 You can check the incoming LoRa data in your TTN console. In your application, click the `Data` tab and you will see incoming messages. If there are no messages, please check your EUIs and their format. If there is no TTN coverage in your area, you will also not be able to see incoming messages.
+
+Please notice that it can take quite a while until the GPS module receives GPS data. Sometimes, it takes up to multiple hours on the first time. After the module successfully received some information, it usually won't take that long on the next time. It helps to insert a small coin cell to the GPS module.
