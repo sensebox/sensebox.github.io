@@ -29,7 +29,7 @@ difficult: medium
 ---
 # senseBox TTN Mapper
 
-Das Ziel ist die Entwicklung eines TTN Mappers mit Hilfe des LoRa Bees und des GPS Moduls. Die Daten werden über das freie [TheThingsNetwork](https://www.thethingsnetwork.org/) zum TTN Mapper übertragen. Der [TTN Mapper](http://ttnmapper.org/) ist eine Karte auf welcher man Orte mit TTN Empfang verorten kann. Mithilfe der senseBox wollen wir uns an der Platform beteiligen.
+Das Ziel ist die Entwicklung eines TTN Mappers mit Hilfe des LoRa Bees und des GPS Moduls. Die Daten werden über das freie [TheThingsNetwork](https://www.thethingsnetwork.org/) zum TTN Mapper übertragen. Der [TTN Mapper](http://ttnmapper.org/) ist eine Karte auf welcher man Orte mit TTN Empfang kartieren kann. Mithilfe der senseBox wollen wir uns an der Platform beteiligen.
 
 
 ## Hardware
@@ -37,10 +37,9 @@ Das Ziel ist die Entwicklung eines TTN Mappers mit Hilfe des LoRa Bees und des G
 Verbinde das LoRa-Bee mit XBEE1 deiner senseBox MCU. Verbinde außerdem das GPS Modul mit einem I2C Steckplatz.
 
 
-
 ## Registrierung auf TheThingsNetwork und anlegen einer Application
 
-Besuche die Website [thethingsnetwork.org](https://www.thethingsnetwork.org/) und erstelle dir einen Account. Wenn du eingeloggt bist, siehst du in der Kopfzeile der Startseite eine Option "Learn". Diese klickst du an und wählst auf der nachfolgenden Seite "Applications" und anschließend "add application" aus. Gib dort eine "Application ID" an, welche einzigartig ist. Alle anderen Auswahlmöglichkeiten lässt du unverändert.
+Besuche die Website [thethingsnetwork.org](https://www.thethingsnetwork.org/) und erstelle dir einen Account. Wenn du eingeloggt bist, gehe auf die [TTN Console](https://console.thethingsnetwork.org/). Dort erstellst du unter "Applications" eine neue Application. Gib dort eine "Application ID" an, welche einzigartig ist. Alle anderen Auswahlmöglichkeiten lässt du unverändert.
 
 {% include image.html image=page.image1 %}
 
@@ -62,17 +61,17 @@ Da wir die Daten später an den TTN Mapper senden möchten, musst Du außerdem e
 
 ## Blockly 
 
-Öffne Blockly und beginne mit dem Code für deine senseBox MCU. Um die TTN Infrastruktur zu nutzen müssen wir zunächst eine Activation starten. Dazu nutzen wir die OTAA Activation. Je nach Anwendungsfall kannst Du Übertragungsintervall anpassen. Bitte denke daran, dass TTN unter einer Fair Use Policy läuft. Das beideutet, dass man seine Übertragungsrate möglichst gering halten sollte. 
+Öffne Blockly und beginne mit dem Code für deine senseBox MCU. Um die TTN Infrastruktur zu nutzen müssen wir zunächst eine Activation starten. Dazu nutzen wir die OTAA Activation. Je nach Anwendungsfall kannst Du das Übertragungsintervall anpassen. Bitte denke daran, dass TTN unter einer Fair Use Policy läuft. Das bedeutet, dass man seine Übertragungsrate möglichst gering halten sollte. 
 
 {% include image.html image=page.image6 %}
 
 Füge nun deine TTN EUIs ein. Achte darauf, dass Du die Keys im richtigen Format einfügst. "Device EUI" und "Application EUI" müssen im ``lsb`` Format genutzt werden. Der "AppKey" im ``msb`` Format. 
 
-Beim Kopieren der Keys musst du deshalb bei TTN in der Device Overview die Einstellungen wie hier gezeigt vornehmen. Du kannst das Format ändern indem Du auf die Icons am Anfang (<> and ->) klickst.
+Beim Kopieren der Keys musst du deshalb bei TTN in der Device Overview die Einstellungen wie hier gezeigt vornehmen. Du kannst das Format ändern indem Du auf die Icons am Anfang (<> und ⇆) klickst.
 
 {% include image.html image=page.image7 %}
 
-Es gibt verschiedene Wege LoRa Daten zu versenden. In diesem Fall nutzen wir das Cayenne Low Power Payload (LPP) da es sehr einfach ist und es bereits fertigen Code für diesen Anwendungsfall gibt. Bezüglich TTN Mapper gibt es aber folgende Informationen:
+Es gibt verschiedene Wege LoRa Daten zu versenden. In diesem Fall nutzen wir das Cayenne Low Power Payload (LPP) da es sehr einfach ist und bereits fertiger Code für diesen Anwendungsfall existiert. Von TTN Mapper gibt es aber folgende Informationen zum Cayenne LPP:
 
 > When using the Cayenne LPP data format, the GPS coordinates will be decoded into a different JSON format which is also supported. Cayenne LPP does not contain the GPS accuracy, and therefore this data will be considered as inferior and will carry less weight in calculation of coverage, and will be deleted first during data cleanup. [Quelle](https://www.thethingsnetwork.org/docs/applications/ttnmapper/)
 
@@ -88,12 +87,12 @@ Deinen persönlichen TTN Mapper findest Du unter dem Namen deines Experiments. �
 
 http://ttnmapper.org/experiments/?experiment=EXPERIMENT_NAME
 
-und ersetze EXPERIMENT_NAME mit dem Namen deines Experiments. Es kann eine Weile dauern bis die senseBox GPS Daten empfängt. Zwischendurch kannst Du die Seite neu laden um die neuesten Messungen zu sehen.
+und ersetze EXPERIMENT_NAME mit dem Namen deines Experiments. Es dauert ein bisschen bis die senseBox GPS Daten empfängt. Zwischendurch kannst Du die Seite neu laden um die neuesten Messungen zu sehen.
 
 {% include image.html image=page.image9 %}
 
 ## Hilfe
 
-Es kann eine Weile dauern bis das GPS Modul Daten empfängt. Manchmal dauert es mehrere Stunden bei der ersten Nutzung. Wurden aber einmal Daten empfangen sollte es beim nächsten mal schneller funktionieren. Die Nutzung einer kleinen Knopfzelle verbessert den GPS Empfang.
-
 Du kannst in der TTN Konsole nachschauen ob LoRa Daten bei TTN ankommen. Klicke in deiner Application auf den `Data` Tab und die neusten Nachrichten sollten nach kurzer Zeit auftauchen. Falls keine Nachrichten ankommen schau nochmal über deine EUIs und dessen Format. Ansonsten könnte es sein, dass in deiner Umgebung kein LoRa Gateway in Reichweite ist.
+
+Es kann eine Weile dauern bis das GPS Modul Daten empfängt. Manchmal dauert es mehrere Stunden bei der ersten Nutzung. Wurden aber einmal Daten empfangen sollte es beim nächsten mal schneller funktionieren. Die Nutzung einer kleinen Knopfzelle verbessert den GPS Empfang.

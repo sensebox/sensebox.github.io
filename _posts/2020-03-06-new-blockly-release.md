@@ -16,11 +16,12 @@ Wir haben eine neue Version von Blockly für senseBox veröffentlich. Die neue V
 
 ## Neue Blöcke für LoRa
 
-Unter Web > Lora kann man jetzt seinen eigenen LoRaWAN Code erstellen. Es stehen zwei Möglichkeiten zur Aktivierung zur Verfügung. Außerdem kann man seine Nachrichten mit zwei verschiedenen Protokollen versenden: Als rohe Bytes als [LoRa Message](https://github.com/thesolarnomad/lora-serialization) oder bereits fertig dekodiert als [Cayenne LPP](https://www.thethingsnetwork.org/docs/devices/arduino/api/cayennelpp.html). Damit kann man beispielsweise einfach einen TTN Mapper aus einer senseBox mit Lora-Bee und GPS Modul erstellen. Ein erstes Beispiel findet ihr hier: [Erstelle einen TTN Mapper in unter 10 Minuten](/projects/de/2020-03-06-TTN-Mapper).
+Unter Web > Lora kann man jetzt seinen eigenen LoRaWAN Code erstellen. Es stehen zwei Möglichkeiten zur Aktivierung zur Verfügung. Außerdem kann man seine Nachrichten mit zwei verschiedenen Protokollen versenden: Als rohe Bytes als [LoRa Message](https://github.com/thesolarnomad/lora-serialization) oder bereits fertig kodiert als [Cayenne LPP](https://www.thethingsnetwork.org/docs/devices/arduino/api/cayennelpp.html). Damit kann man beispielsweise einfach einen TTN Mapper aus einer senseBox mit Lora-Bee und GPS Modul erstellen. Ein erstes Projekt findet ihr hier: [Erstelle einen TTN Mapper in unter 10 Minuten](/projects/de/2020-03-06-TTN-Mapper).
 
- {% include image.html image=page.image2 %}
+{% include image.html image=page.image2 %}
 
 Es gibt allerdings noch ein paar Einschränkungen: Aktuell existiert noch keine direkte Integration für die openSenseMap. Außerdem können noch Probleme mit anderen Komponenten, beispielsweise dem Display, auftauchen. Das liegt am besonderen Programmcode, der für das LoRa Bee nötig ist. Der Programmablauf ist dazu etwas anders als gewöhnlich, deshalb können insbesondere `delay` Funktionen das Programm behindern. Falls ihr solche Fehler findet meldet uns diese doch bitte unter info@sensebox.de oder im entsprechenden [Github Repository](https://github.com/sensebox/ardublockly-1/issues).
+
 
 ## Veränderung der Blöcke für die openSenseMap
 
