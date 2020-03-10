@@ -9,14 +9,10 @@ image1: /images/blog_images/blockly_release_march/new_osem_block.png
 image2: /images/projects/TTN-Mapper/blockly-gps-de.PNG
 lang: de
 ---
-
---------
-englisch version below
-
 Neues Blockly Release
 ============
 
-Wir haben eine neue Version von Blockly für senseBox veröffenlticht. Die neue Version enthält neben kleiner Änderungen und Fehlerbeseitung zwei große Veränderungen:
+Wir haben eine neue Version von Blockly für senseBox veröffentlich. Die neue Version enthält neben kleiner Änderungen und Fehlerbeseitung zwei große Veränderungen:
 
 ## Neue Blöcke für LoRa
 
@@ -25,9 +21,6 @@ Unter Web > Lora kann man jetzt seinen eigenen LoRaWAN Code erstellen. Es stehen
  {% include image.html image=page.image2 %}
 
 Es gibt allerdings noch ein paar Einschränkungen: Aktuell existiert noch keine direkte Integration für die openSenseMap. Außerdem können noch Probleme mit anderen Komponenten, beispielsweise dem Display, auftauchen. Das liegt am besonderen Programmcode, der für das LoRa Bee nötig ist. Der Programmablauf ist dazu etwas anders als gewöhnlich, deshalb können insbesondere `delay` Funktionen das Programm behindern. Falls ihr solche Fehler findet meldet uns diese doch bitte unter info@sensebox.de oder im entsprechenden [Github Repository](https://github.com/sensebox/ardublockly-1/issues).
-
-
-
 
 ## Veränderung der Blöcke für die openSenseMap
 
