@@ -3,7 +3,7 @@ layout: post
 title: "Neue Blockly Version"
 date: 2020-03-06
 author: Mario und Felix
-abstract: "Neue Blockly Version bringt LoRa Blöcke"
+abstract: "Neue Blockly Version bringt Blöcke für LoRa und die openSenseMap"
 thumbnail: /images/blog_images/blockly_release_march/Blockly_new_release.jpg
 image1: /images/blog_images/blockly_release_march/new_osem_block.png
 image2: /images/projects/TTN-Mapper/blockly-gps-de.PNG
@@ -12,7 +12,7 @@ lang: de
 Neues Blockly Release
 ============
 
-Wir haben eine neue Version von Blockly für senseBox veröffentlich. Die neue Version enthält neben kleiner Änderungen und Fehlerbeseitung zwei große Veränderungen:
+Wir haben eine neue Version von Blockly für senseBox veröffentlich. Die neue Version enthält neben kleiner Änderungen und Fehlerkorrekturen zwei große Veränderungen:
 
 ## Neue Blöcke für LoRa
 

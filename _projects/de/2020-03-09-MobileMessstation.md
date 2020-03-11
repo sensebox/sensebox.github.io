@@ -3,19 +3,17 @@ layout: project_page
 name: "Mobiler Datenlogger"
 date: 2020-03-09
 author: Mario
-abstract: "Ein mobiles Feinstaubmessgerät, das die Daten per WLAN an die OpenSenseMap sendet"
-image:  /mobile_feinstaubstation/lora/lora_oled.jpg
+abstract: "Ein mobiler Datenlogger, der die Daten per WLAN an die openSenseMap sendet"
+image:  MobilerDatenlogger.png
 image0: /images/projects/mobile_feinstaubstation/wifi/AnlegenVariablen.png
 image1: /images/projects/mobile_feinstaubstation/wifi/ZeigeDisplay.png
 image2: /images/projects/mobile_feinstaubstation/wifi/RegistrierungOSEM.png
 image3: /images/projects/mobile_feinstaubstation/wifi/SendeOSEM.png
-
-
 material:
     - senseBox MCU
     - OLED Display
     - Temperatur und Luftfeuchtesensor(HDC 1080)
-    - Feinstaubsensor(SDS011)
+    - Feinstaubsensor(SDS011) inkl. Kabel
     - GPS Modul
     - WiFi-Bee
     - JST Kabel
@@ -29,17 +27,10 @@ difficult: schwer
 <head><title>Mobiler Feinstaublogger mit GPS</title></head>
 
 # Mobiler Datenlogger für Feinstaubwerte
-In diesem Projekt wird mit der senseBox ein mobiler Datenlogger gebaut, der die Messwerte über WLAN mithilfe eines Handyhotspot direkt an die openSenseMap überträgt. Über das GPS Modul wird der Standort der Station  
+In diesem Projekt wird mit der senseBox ein mobiler Datenlogger gebaut, der die Messwerte über WLAN, mithilfe eines Handyhotspot, direkt an die openSenseMap überträgt. Der aktuelle Standort wird über das GPS-Modul bestimmt und zusätzlich zu den Messwerten übertragen.  
 
 ## Aufbau
-Für den Aufbau werden folgende Komponenten verwendet. Achte darauf, dass das WiFi-Bee auf den XBEE Steckplatz 1 aufgesteckt wird. 
-Man braucht:
-  - den LoRa Bee
-  - das OLED-Display
-  - den HDC 1080
-  - das GPS-Modul
-  - den SDS011 
-  
+Stecke das WiFi-Bee auf den Steckplatz __XBEE1__. 
 Das OLED Display, der Temperatur- und Luftfeuchtesensor und das GPS Modul werden mit jeweils einem JST-JST Kabel an die I2C Ports angeschlossen. Der Feinstaubsensor mit dem JST-Feinstaubkabel an einen der beiden Serial/UART Ports.
 
 ## Registrierung auf der openSenseMap
@@ -50,16 +41,16 @@ Die Registrierung erfolgt auf der openSenseMap. Wähle dort als __Aufstellungsor
 
 ## Programmierung
 
-Die Programmierung des Mobilen Datenlogger wird in [Blockly](https://blockly.sensebox.de) durchgeführt. Im ersten Schritt werden die Messwerte ausgelesen und als Variable gespeichert. Anschließend im Abstand von 10 Sekunden an die openSenseMap übertragen.
+Die Programmierung des Mobilen Datenlogger wird in [Blockly](https://blockly.sensebox.de) durchgeführt. Im ersten Schritt werden die Messwerte ausgelesen und als Variable gespeichert. Die Messwerte werden auf dem Display angezeigt und anschließend im Abstand von 10 Sekunden an die openSenseMap übertragen.
 
-### Auslesen der Sensoren und Anlegen der Variablen
+### Schritt 1: Auslesen der Sensoren und Anlegen der Variablen
 
 Um die Messwerte der Sensoren nicht nur auf dem Display anzeigen zu lassen sondern auch in regelmäßigen Abständen an die openSenseMap zu versenden werden diese zu Begin der Endlosschleife ausgelesen und in einer Variablen gespeichert. Lege für jeden Messwert eine neue Variable an und geben ihr einen sinnvollen Namen. 
 
 
- {% include image.html image=page.image0 %}
+{% include image.html image=page.image0 %}
 
-### Anzeigen der Messwerte auf dem Display
+### Schritt 2: Anzeigen der Messwerte auf dem Display
 
 Initialisiere das Display im Setup() und füge den Block __Zeige auf dem Display__ in die Endlosschleife. Mit den Block __Schreibe Text/Zahl__ kannst du die jeweilen Messwerte auf dem Display anzeigen lassen. Um mehrere Messwerte auf dem Display anzuzeigen musst du jeweils die Platzierung (Verschiebung auf der Y-Achse) auf dem Display anpassen.
 
@@ -68,7 +59,7 @@ Initialisiere das Display im Setup() und füge den Block __Zeige auf dem Display
 
 Übertrage den Programmcode und überprüfe auf dem Display ob alle Messwerte korrekt angezeigt werden. 
 
-### Übertragen der Messwerte an die openSenseMap
+### Schritt 3: Übertragen der Messwerte an die openSenseMap
 
 Um Messwerte an die openSenseMap zu übertragen muss eine Internetverbindung hergestellt werden. Da in diesem Projekt eine mobile Messstation gebaut wird ist es am einfachsten den Hotspot deines Handy zu verwenden. 
 Damit die Messwerte nicht jede Sekunde an die openSenseMap übertragen werden, ziehe zuerst den Block Messintervall unter die Blöcke für das Display. (Tip: Mit einem Rechtsklick auf den Block __Zeige auf dem Display__ und der Option __Block zusammenfalten__ kannst du Platz sparen).
