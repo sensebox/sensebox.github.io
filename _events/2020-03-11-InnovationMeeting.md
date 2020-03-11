@@ -1,5 +1,5 @@
 ---
-place: "Weinheim"
+place: "Münsrwer"
 title: "Kostenlose senseBox Fortbildungen für Lehrkräfte an weiterführenden Schulen"
 description: "Die Hopp"
 link: "https://www.hopp-foundation.de/workshops/lehrer-workshops/weiterfuehrende-schulen/informatik/"
