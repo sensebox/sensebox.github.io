@@ -5,13 +5,13 @@ date: 2020-03-06
 author: Felix
 abstract: "The LoRa-Bee and GPS module is used to build an senseBox based TTN Mapper"
 image: ttn-mapper-en.png
-image1: /images/projects/lora-osem-tago/station_anlegen_ttn.png
-image2: /images/projects/lora-osem-tago/station_anlegen_ttn_final.png
-image3: /images/projects/lora-osem-tago/device_anlegen_ttn.png
-image4: /images/projects/lora-osem-tago/device_anlegen_ttn_overview.png
+image1: /images/projects/lora-osem-tago/station_anlegen_ttn.PNG
+image2: /images/projects/lora-osem-tago/station_anlegen_ttn_final.PNG
+image3: /images/projects/lora-osem-tago/device_anlegen_ttn.PNG
+image4: /images/projects/lora-osem-tago/device_anlegen_ttn_overview.PNG
 image5: /images/projects/TTN-Mapper/ttn-mapper-integration.png
 image6: /images/projects/TTN-Mapper/blockly-activation.png
-image7: /images/projects/lora-osem-tago/device_overview_right_format.png
+image7: /images/projects/lora-osem-tago/device_overview_right_format.PNG
 image8: /images/projects/TTN-Mapper/blockly-gps.png
 image9: /images/projects/TTN-Mapper/ttn-mapper.png
 
