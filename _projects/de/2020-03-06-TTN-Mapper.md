@@ -4,16 +4,16 @@ name: "Erstelle einen TTN Mapper in unter 10 Minuten"
 date: 2020-03-06
 author: Felix
 abstract: "Mit dem LoRa-Bee und GPS Modul bauen wir einen senseBox TTN Mapper"
-image: ttn-mapper-de.PNG
-image1: /images/projects/lora-osem-tago/station_anlegen_ttn.PNG
-image2: /images/projects/lora-osem-tago/station_anlegen_ttn_final.PNG
-image3: /images/projects/lora-osem-tago/device_anlegen_ttn.PNG
-image4: /images/projects/lora-osem-tago/device_anlegen_ttn_overview.PNG
-image5: /images/projects/TTN-Mapper/ttn-mapper-integration.PNG
-image6: /images/projects/TTN-Mapper/blockly-activation-de.PNG
-image7: /images/projects/lora-osem-tago/device_overview_right_format.PNG
-image8: /images/projects/TTN-Mapper/blockly-gps-de.PNG
-image9: /images/projects/TTN-Mapper/ttn-mapper.PNG
+image: ttn-mapper-de.png
+image1: /images/projects/lora-osem-tago/station_anlegen_ttn.png
+image2: /images/projects/lora-osem-tago/station_anlegen_ttn_final.png
+image3: /images/projects/lora-osem-tago/device_anlegen_ttn.png
+image4: /images/projects/lora-osem-tago/device_anlegen_ttn_overview.png
+image5: /images/projects/TTN-Mapper/ttn-mapper-integration.png
+image6: /images/projects/TTN-Mapper/blockly-activation-de.png
+image7: /images/projects/lora-osem-tago/device_overview_right_format.png
+image8: /images/projects/TTN-Mapper/blockly-gps-de.png
+image9: /images/projects/TTN-Mapper/ttn-mapper.png
 
 material:
     - senseBox MCU
