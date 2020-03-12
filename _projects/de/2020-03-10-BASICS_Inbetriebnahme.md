@@ -1,6 +1,6 @@
 ---
 layout: project_page
-name: "BASICS: Die senseBox on Betrieb nehmen"
+name: "BASICS: Die senseBox in Betrieb nehmen"
 date: 2020-03-10
 author: Björn
 abstract: "Nimm deine senseBox in Betrieb"
