@@ -34,8 +34,17 @@ The goal is to develop a senseBox TTN mapper with LoRaWAN module. The data will 
 
 ## Hardware
 
+<div class="row">
+	<div class="post-image">
+			<img src="https://sensebox.kaufen/api/public/uploads/1584028489927-TTN-Mapper.png" alt="TTN-Mapper-Shop - Logo" data-zoomable/>
+	</div>
+</div>
+
+You will need a senseBox MCU, a LoRa-Bee and a GPS module. You can find a set of those in our shop: [https://sensebox.shop/product/sensebox-ttn-mapper-set](https://sensebox.shop/product/sensebox-ttn-mapper-set)
+
 Start by connecting the LoRa-Bee to XBEE1 on your senseBox MCU. Additionally, connect the GPS module via I2C to the senseBox MCU. You are now ready to go.
 
+Additionally, you will need a mobile power supply. The easiest way is a USB powerbank or a battery that is compatible with the senseBox MCU connector.
 
 ## Registration at TheThingsNetwork
 
@@ -81,6 +90,7 @@ Add the `Send as Cayenne Payload` Block and send a `Latitude, Longitute and Alti
 
 Compile the sketch and upload it to the senseBox MCU. The senseBox should now look for GPS data and transmit them to TTN which forwards them to TTN Mapper.
 
+Connect your external power supply and you are ready to measure LoRa connectivity in your neighborhood.
 
 ## TTN Mapper
 
