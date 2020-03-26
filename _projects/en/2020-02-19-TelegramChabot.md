@@ -65,3 +65,4 @@ Have fun with your personal ChatBot!
 ### Further tips
 * Make sure that the WiFi-Bee has the correct firmware. Otherwise the senseBox may not be able to connect to Telegram. You can find more information here: [https://sensebox.github.io/books-v2/home/de/additional-info.html](https://sensebox.github.io/books-v2/home/de/additional-info.html)
 
+* There have been some issues with the WiFi-Bee settings lately. If there is no connection despite an up to date firmware you may need to add a certificate. Please try to open the wifi updater panel [https://forum.sensebox.de/t/sensebox-home-v2-upload-zu-opensensemap-funzt-nicht/757/2](https://forum.sensebox.de/t/sensebox-home-v2-upload-zu-opensensemap-funzt-nicht/757/2) and add the domain `api.telegram.org:443`.

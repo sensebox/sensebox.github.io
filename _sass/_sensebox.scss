@@ -877,9 +877,9 @@ article.post-content img {
   width: 80%;
 }
 
-// ul li {
-//   font-size: 1.2em;
-// }
+ul > li > p {
+  font-size: inherit;
+}
 
 .opacity-animation-fast {
   position: relative;
