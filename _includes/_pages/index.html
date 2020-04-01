@@ -1,209 +1,254 @@
 {% assign t = site.data.translations.[page.lang].main %}
 {% assign taward = site.data.translations.[page.lang].awards %}
 {% if page.lang == 'de' %}
-  {% assign awardslist = site.awards_de | sort: 'weight' %}
+{% assign awardslist = site.awards_de | sort: 'weight' %}
 {% else %}
-  {% assign awardslist = site.awards_en | sort: 'weight' %}
+{% assign awardslist = site.awards_en | sort: 'weight' %}
 {% endif %}
-    <div class="marketing">
-      <div style="text-align: center;">
-        <h1>#wirbleibenschlau</h1>
-        <div class="row">
-          <div class="col-md-5" >
-            <img src="{{ site.baseurl | append: '/images/wirbleibenschlau/logo.png' }}" style="height: 300px;">
-          </div>
-          <div class="col-md-7">
-            <p>#wirbleibenschlau ist eine Initiative des BMBF. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-        <div>
-          <p><a class="btn" href="{{ site.baseurl | append: "/wirbleibenschlau" }}" role="button">#wirbleibenschlau &raquo;</a></p>
-        </div>
+<div class="marketing">
+  <div style="text-align: center;">
+    <h1>Wir bleiben schlau! Die Allianz für MINT-Bildung zu Hause</h1>
+    <div class="row">
+      <div class="col-md-5">
+        <img src="{{ site.baseurl | append: '/images/wirbleibenschlau/MINT_Allianz_Logo_RZ.svg' }}"
+          style="max-height: 300px;">
       </div>
-      <br>
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-          <div class="col-lg-3">
-            <a href="{{ site.baseurl | append: "/" | append: page.lang | append: "/products" }}" class="hero-product">
-              <h2>senseBox:home</h2>
-              <img src="{{ site.baseurl | append: '/images/senseBox_home_circle_500.png' }}" alt="senseBox:home" class="hero-product-img">
-              <p>{{ t.home_info }}</p>
-              <p><button class="btn" href="{{ site.baseurl | append: "/" | append: page.lang | append: "/products" }}" role="button" type="button">{{ t.further-infos}} &raquo;</button></p>
-            </a>
-          </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-3">
-            <a href="{{ site.baseurl | append: "/" | append: page.lang | append: "/products" }}" class="hero-product">
-              <h2>senseBox:edu</h2>
-              <img src="{{ site.baseurl | append: '/images/senseBox_edu_500.png' }}" alt="senseBox:edu" class="hero-product-img">
-              <p>{{ t.edu_info }}</p>
-              <p><button class="btn" href="{{ site.baseurl | append: "/" | append: page.lang | append: "/products" }}" role="button" type="button">{{ t.further-infos}} &raquo;</button></p>
-            </a>
-          </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-3">
-            <a href="{{ site.baseurl | append: "/" | append: page.lang | append: "/products" }}" class="hero-product">
-              <h2>senseBox:mini</h2>
-              <img src="{{ site.baseurl | append: '/images/products/mini_1x1.png' }}" alt="senseBox:mini" class="hero-product-img"/>
-              <p>{{ t.mini_info }}</p>
-              <p><button class="btn" href="{{ site.baseurl | append: "/" | append: page.lang | append: "/products" }}" role="button" type="button">{{ t.further-infos}} &raquo;</button></p>
-            </a>
-          </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-3">
-            <a href="{{ site.baseurl | append: "/" | append: page.lang | append: "/osem" }}" class="hero-product">
-              <h2>openSenseMap</h2>
-              <img src="{{ site.baseurl | append: '/images/osem_laptop_500.png' }}" alt="openSenseMap" class="hero-product-img"/>
-              <p>{{ t.osem_info }}</p>
-              <p><button class="btn" href="{{ site.baseurl | append: "/" | append: page.lang | append: "/osem" }}" role="button" type="button">{{ t.further-infos}} &raquo;</button></p>
-            </a>
-          </div>
-          <!-- /.col-lg-4 -->
-      </div>
-      <!-- /.row -->
-
-      <hr />
-
-      <h1 style="text-align: center;">{{ t.news }}</h1>
-      <div class="row blog-preview">
-      {% assign posts = site.posts | sort: 'date' | reverse %}
-      {% for post in posts %}
-        {% if forloop.index0 == 2 %}
-          {% break %}
-        {% else %}
-          <a class="col-sm-6 col-md-6 col-lg-6 blog-preview-item" href="{{ site.baseurl | append: post.url }}">
-            <div class="thumbnail">
-              <img src="{{ site.baseurl | append: post.thumbnail }}" alt="{{ post.title }} - Logo">
-              <div class="caption">
-                <h3>{{ post.title }}</h3>
-                <p>{{ post.abstract | truncatewords: 20 }}</p>
-                <p><button href="#" class="btn" role="button">{{ t.read }}</button>
-              </div>
-            </div>
-          </a>
-        {% endif %}
-      {% endfor %}
-      </div>
-      <div style="text-align: center;">
-        <p><a class="btn" href="{{ site.baseurl | append: "/blog" }}" role="button">{{ t.go-to-blog }} &raquo;</a></p>
-      </div>
-
-      <hr />
-
-      <div style="text-align: center;" id="newsletter">
-
-        <!-- Begin MailChimp Signup Form -->
-        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-        <style type="text/css">
-          #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;font-family: BrixSlab-Regular, Helvetica, sans-serif;}
-          #mc_embed_signup input.email{color: #4eaf47;font-size: 18px;padding: 10px 20px 10px 20px;border: solid #ddd 2px;text-decoration: none;background: none;margin: 5px; text-align: center;height: 49px;}
-          /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-        </style>
-        <div id="mc_embed_signup">
-          <form action="https://sensebox.us18.list-manage.com/subscribe/post?u=0d572f7997d4dae2c9e424299&amp;id=46738cd0bd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-              <h1 for="mce-EMAIL">{{ t.newsletter.header}}</h1>
-              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="{{t.newsletter.placeholder}}" required>
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0d572f7997d4dae2c9e424299_46738cd0bd" tabindex="-1" value=""></div>
-              <div class="clear"><input type="submit" value="{{t.newsletter.button}}" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
-            </div>
-          </form>
-        </div>
-
-        <!--End mc_embed_signup-->
-
+      <div class="col-md-7">
+        <p style="text-align: justify"> Zu Hause wird es langweilig? Nicht mit MINT, mit Mathe, Informatik,
+          Naturwissenschaft und Technik! Denn
+          dafür gibt
+          es unglaublich viele tolle Angebote im Netz. Die Allianz für MINT-Bildung zu Hause aus Bund, Ländern,
+          Wissenschaft,
+          Wirtschaft und Zivilgesellschaft zeigt, was digital alles möglich ist und wie viel Spaß es macht, zu tüfteln,
+          zu
+          experimentieren, zu lernen oder zu codieren, auch wenn die Schulen geschlossen sind. Ob Schlaumeierin oder
+          Anfänger,
+          ob Computernerd oder Bastlerin: Für alle ist etwas dabei, ob für einmal in der Woche oder für jeden Tag. Damit
+          Kinder, Jugendliche, Eltern und alle, die dabei sein wollen, auch in herausfordernden Zeiten sagen können: Wir
+          bleiben
+          schlau!</p>
       </div>
     </div>
-
-      <hr/>
-      
-
-
-      <h1 style="text-align: center;">{{ t.upcoming_events }}</h1>
-      <div class ="container">
-        <div class="panel-group events" id="accordion">
-        {% assign events = site.events | sort: 'ending-date' %}
-        {% assign i=0 %}
-        {% for event in events %}
-          {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-          {% capture eventendingdateunix %}{{event.ending-date | date: '%s'}}{% endcapture %}
-          {% if eventendingdateunix > nowunix %}
-            {% include event_template.html event=event %}
-            {% assign i = i | plus: 1 %}
-          {% endif %}
-        {% endfor %}
-      </div>
+    <div>
+      <p><a class="btn" href="{{ site.baseurl | append: "/wirbleibenschlau" }}" role="button">#wirbleibenschlau
+          &raquo;</a></p>
     </div>
+  </div>
+  <br>
 
-     <hr/>
-      <h1 style="text-align: center;">Partner</h1>
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row sponsor">
-          <ul>
-            <li>
-              <a href="http://www.gi-at-school.de" target="_blank">
-                <img src="{{ site.baseurl | append: "/images/sponsors/giatschool.png" }}" alt="giatschool Logo">
-              </a>
-            </li>
-            <li>
-              <a href="https://ifgi.uni-muenster.de" target="_blank">
-                <img src="{{ site.baseurl | append: "/images/sponsors/ifgi.png" }}" alt="ifgi Logo">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.uni-muenster.de/" target="_blank">
-                <img src="{{ site.baseurl | append: "/images/sponsors/wwu.png" }}" alt="wwu Logo">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.wissenschaftsjahr-zukunftsstadt.de/" target="_blank">
-                <img src="{{ site.baseurl | append: "/images/sponsors/zukunftsstadt.png" }}" alt="zukunftsstadt Logo">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.photonikforschung.de/make-light/" target="_blank">
-                <img src="{{ site.baseurl | append: "/images/sponsors/make-light.png" }}" alt="make light Logo">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.innotruck.de/initiative-innotruck-startseite/" target="_blank">
-                <img src="{{ site.baseurl | append: "/images/sponsors/innotruck.jpg" }}" alt="innotruck Logo">
-              </a>
-            </li>
-          </ul>
-          </div>
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-3">
+      <a href="{{ site.baseurl | append: "/" | append: page.lang | append: "/products" }}" class="hero-product">
+        <h2>senseBox:home</h2>
+        <img src="{{ site.baseurl | append: '/images/senseBox_home_circle_500.png' }}" alt="senseBox:home"
+          class="hero-product-img">
+        <p>{{ t.home_info }}</p>
+        <p><button class="btn" href="{{ site.baseurl | append: "/" | append: page.lang | append: "/products" }}"
+            role="button" type="button">{{ t.further-infos}} &raquo;</button></p>
+      </a>
+    </div>
+    <!-- /.col-lg-4 -->
+    <div class="col-lg-3">
+      <a href="{{ site.baseurl | append: "/" | append: page.lang | append: "/products" }}" class="hero-product">
+        <h2>senseBox:edu</h2>
+        <img src="{{ site.baseurl | append: '/images/senseBox_edu_500.png' }}" alt="senseBox:edu"
+          class="hero-product-img">
+        <p>{{ t.edu_info }}</p>
+        <p><button class="btn" href="{{ site.baseurl | append: "/" | append: page.lang | append: "/products" }}"
+            role="button" type="button">{{ t.further-infos}} &raquo;</button></p>
+      </a>
+    </div>
+    <!-- /.col-lg-4 -->
+    <div class="col-lg-3">
+      <a href="{{ site.baseurl | append: "/" | append: page.lang | append: "/products" }}" class="hero-product">
+        <h2>senseBox:mini</h2>
+        <img src="{{ site.baseurl | append: '/images/products/mini_1x1.png' }}" alt="senseBox:mini"
+          class="hero-product-img" />
+        <p>{{ t.mini_info }}</p>
+        <p><button class="btn" href="{{ site.baseurl | append: "/" | append: page.lang | append: "/products" }}"
+            role="button" type="button">{{ t.further-infos}} &raquo;</button></p>
+      </a>
+    </div>
+    <!-- /.col-lg-4 -->
+    <div class="col-lg-3">
+      <a href="{{ site.baseurl | append: "/" | append: page.lang | append: "/osem" }}" class="hero-product">
+        <h2>openSenseMap</h2>
+        <img src="{{ site.baseurl | append: '/images/osem_laptop_500.png' }}" alt="openSenseMap"
+          class="hero-product-img" />
+        <p>{{ t.osem_info }}</p>
+        <p><button class="btn" href="{{ site.baseurl | append: "/" | append: page.lang | append: "/osem" }}"
+            role="button" type="button">{{ t.further-infos}} &raquo;</button></p>
+      </a>
+    </div>
+    <!-- /.col-lg-4 -->
+  </div>
+  <!-- /.row -->
+
+  <hr />
+
+  <h1 style="text-align: center;">{{ t.news }}</h1>
+  <div class="row blog-preview">
+    {% assign posts = site.posts | sort: 'date' | reverse %}
+    {% for post in posts %}
+    {% if forloop.index0 == 2 %}
+    {% break %}
+    {% else %}
+    <a class="col-sm-6 col-md-6 col-lg-6 blog-preview-item" href="{{ site.baseurl | append: post.url }}">
+      <div class="thumbnail">
+        <img src="{{ site.baseurl | append: post.thumbnail }}" alt="{{ post.title }} - Logo">
+        <div class="caption">
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.abstract | truncatewords: 20 }}</p>
+          <p><button href="#" class="btn" role="button">{{ t.read }}</button>
         </div>
       </div>
-
-      <hr>
-      <h1 style="text-align: center">{{t.fundedBy}}</h1>
-      {% for award in awardslist %}
-      {% if award.title == 'BMBF Open Photonics' or award.title == 'Federal Ministry of Education and Research - Open Photonics' %}
-      <div class="posts">
-        <h2 style="clear:both">{{ award.title }}</h2>
-        <div class="row">
-          {% if award.thumbnail %}
-          <div class="col-sm-4">
-            <img class="award-pic" src="{{ site.baseurl | append: award.thumbnail }}" alt="{{ award.title }} - Logo" />
-          </div>
-
-          <div class="col-sm-8">
-            <div class="content press-text">
-              {{ award.content }}
-            </div>
-          </div>
-          {% else %}
-            <div class="content press-text">
-              {{ award.content }}
-            </div>
-          {% endif %}
-          </div>
-          <hr class="clear nomargin">
-        </div>
-      {% endif %}
+    </a>
+    {% endif %}
     {% endfor %}
+  </div>
+  <div style="text-align: center;">
+    <p><a class="btn" href="{{ site.baseurl | append: "/blog" }}" role="button">{{ t.go-to-blog }} &raquo;</a></p>
+  </div>
+
+  <hr />
+
+  <div style="text-align: center;" id="newsletter">
+
+    <!-- Begin MailChimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      #mc_embed_signup {
+        background: #fff;
+        clear: left;
+        font: 14px Helvetica, Arial, sans-serif;
+        width: 100%;
+        font-family: BrixSlab-Regular, Helvetica, sans-serif;
+      }
+
+      #mc_embed_signup input.email {
+        color: #4eaf47;
+        font-size: 18px;
+        padding: 10px 20px 10px 20px;
+        border: solid #ddd 2px;
+        text-decoration: none;
+        background: none;
+        margin: 5px;
+        text-align: center;
+        height: 49px;
+      }
+
+      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <div id="mc_embed_signup">
+      <form action="https://sensebox.us18.list-manage.com/subscribe/post?u=0d572f7997d4dae2c9e424299&amp;id=46738cd0bd"
+        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+        novalidate>
+        <div id="mc_embed_signup_scroll">
+          <h1 for="mce-EMAIL">{{ t.newsletter.header}}</h1>
+          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+            placeholder="{{t.newsletter.placeholder}}" required>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+              name="b_0d572f7997d4dae2c9e424299_46738cd0bd" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="{{t.newsletter.button}}" name="subscribe"
+              id="mc-embedded-subscribe" class="btn"></div>
+        </div>
+      </form>
     </div>
+
+    <!--End mc_embed_signup-->
+
+  </div>
+</div>
+
+<hr />
+
+
+
+<h1 style="text-align: center;">{{ t.upcoming_events }}</h1>
+<div class="container">
+  <div class="panel-group events" id="accordion">
+    {% assign events = site.events | sort: 'ending-date' %}
+    {% assign i=0 %}
+    {% for event in events %}
+    {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+    {% capture eventendingdateunix %}{{event.ending-date | date: '%s'}}{% endcapture %}
+    {% if eventendingdateunix > nowunix %}
+    {% include event_template.html event=event %}
+    {% assign i = i | plus: 1 %}
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<hr />
+<h1 style="text-align: center;">Partner</h1>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="row sponsor">
+      <ul>
+        <li>
+          <a href="http://www.gi-at-school.de" target="_blank">
+            <img src="{{ site.baseurl | append: "/images/sponsors/giatschool.png" }}" alt="giatschool Logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://ifgi.uni-muenster.de" target="_blank">
+            <img src="{{ site.baseurl | append: "/images/sponsors/ifgi.png" }}" alt="ifgi Logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.uni-muenster.de/" target="_blank">
+            <img src="{{ site.baseurl | append: "/images/sponsors/wwu.png" }}" alt="wwu Logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.wissenschaftsjahr-zukunftsstadt.de/" target="_blank">
+            <img src="{{ site.baseurl | append: "/images/sponsors/zukunftsstadt.png" }}" alt="zukunftsstadt Logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.photonikforschung.de/make-light/" target="_blank">
+            <img src="{{ site.baseurl | append: "/images/sponsors/make-light.png" }}" alt="make light Logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.innotruck.de/initiative-innotruck-startseite/" target="_blank">
+            <img src="{{ site.baseurl | append: "/images/sponsors/innotruck.jpg" }}" alt="innotruck Logo">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr>
+<h1 style="text-align: center">{{t.fundedBy}}</h1>
+{% for award in awardslist %}
+{% if award.title == 'BMBF Open Photonics' or award.title == 'Federal Ministry of Education and Research - Open Photonics' %}
+<div class="posts">
+  <h2 style="clear:both">{{ award.title }}</h2>
+  <div class="row">
+    {% if award.thumbnail %}
+    <div class="col-sm-4">
+      <img class="award-pic" src="{{ site.baseurl | append: award.thumbnail }}" alt="{{ award.title }} - Logo" />
+    </div>
+
+    <div class="col-sm-8">
+      <div class="content press-text">
+        {{ award.content }}
+      </div>
+    </div>
+    {% else %}
+    <div class="content press-text">
+      {{ award.content }}
+    </div>
+    {% endif %}
+  </div>
+  <hr class="clear nomargin">
+</div>
+{% endif %}
+{% endfor %}
+</div>
