@@ -12,6 +12,7 @@ material:
     - JST-Kabel
 ide: arduino    
 lang: de
+version: ["edu"]
 tags: ["Geographie", "Informatik"]
 difficult: leicht
 ---

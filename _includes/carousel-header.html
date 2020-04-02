@@ -1,68 +1,80 @@
-
-{% assign carouselpages = "main|products|osem|books|background|press|awards|blog|blockly|go-edu|material|events|projects|buch" | split: "|" %}
+{% assign carouselpages = "main|products|osem|books|background|press|awards|blog|blockly|go-edu|go-mini|go-home|material|events|projects|buch" | split: "|" %}
 {% assign navpages = "material|projects|products|osem|blockly" | split: "|" %}
 {% assign navpagesright = "blog" | split: "|" %}
 {% if include.simple == true %}
-    <div class="navbar-wrapper">
-{% else %}
+<div class="navbar-wrapper">
+    {% else %}
     <div class="navbar-wrapper inline">
-{% endif %}
-    <div class="container">
-        <nav class="navbar navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-                    {% if include.simple == true %}
-                    <button type="button" class="navbar-toggle collapsed simple" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                        aria-controls="navbar">
-                    {% else %}
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                        aria-controls="navbar">
-                    {% endif %}
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    {% if page.lang == 'en' %}
-                    <a class="navbar-brand" href="{{ site.url }}/en">
-                        {% else %}
-                        <a class="navbar-brand" href="{{ site.url }}">
-                            {% endif %}
-                            {% if include.simple %}
-                            <img class="logo simple" style="max-height:100%;" src="{{ site.baseurl | append: " /images/sensebox_logo.svg "}}"/>
+        {% endif %}
+        <div class="container">
+            <nav class="navbar navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        {% if include.simple == true %}
+                        <button type="button" class="navbar-toggle collapsed simple" data-toggle="collapse"
+                            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                             {% else %}
-                            <img class="logo" style="max-height:100%;" src="{{ site.baseurl | append: " /images/sensebox_logo.svg "}}"/>
-                            {% endif %}
-                        </a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                {% endif %}
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            {% if page.lang == 'en' %}
+                            <a class="navbar-brand" href="{{ site.url }}/en">
+                                {% else %}
+                                <a class="navbar-brand" href="{{ site.url }}">
+                                    {% endif %}
+                                    {% if include.simple %}
+                                    <img class="logo simple" style="max-height:100%;"
+                                        src="{{ site.baseurl | append: " /images/sensebox_logo.svg "}}" />
+                                    {% else %}
+                                    <img class="logo" style="max-height:100%;"
+                                        src="{{ site.baseurl | append: " /images/sensebox_logo.svg "}}" />
+                                    {% endif %}
+                                </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
                         {% if include.simple %}
                         <ul class="nav navbar-nav simple">
-                                {% else %}
-                        <ul class="nav navbar-nav">
+                            {% else %}
+                            <ul class="nav navbar-nav">
 
-                        {% endif %}
-                        <!-- Add los gehts by Hand-->
-                        {% assign t = site.data.translations.[page.lang].header %}
-                        <li class="nav-item dropdown">
-                            <a class="nav-link navbar-item dropdown-toggle" href="{{site.baseurl }}/{{ page.lang }}/go" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              {{ t.getStarted }}
-                            </a>
-                            <div class="dropdown-menu sensebox-dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
-                                    {% if include.simple == true %}
-                                <ul class="nav navbar-nav simple">                       
-                                            <li class="nav-item"><a class="navbar-item" href="{{site.baseurl }}/{{ page.lang }}/go-edu">:edu</a></li>
-                                            <li class="nav-item"><a class="navbar-item" href="{{site.baseurl }}/{{page.lang }}/go-home">:home</a></li>
-                                            </ul>   
-                                {% else %}
-                                <ul class="nav navbar-nav">                       
-                                <li class="nav-item"><a class="navbar-item" href="{{site.baseurl }}/{{ page.lang }}/go-edu">:edu</a></li>
-                                <li class="nav-item"><a class="navbar-item" href="{{site.baseurl }}/{{page.lang }}/go-home">:home</a></li>
-                                </ul>
                                 {% endif %}
-                            </div>
-                          </li>
-                         <!-- <li class="nav-item dropdown">
+                                <!-- Add los gehts by Hand-->
+                                {% assign t = site.data.translations.[page.lang].header %}
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link navbar-item dropdown-toggle"
+                                        href="{{site.baseurl }}/{{ page.lang }}/go" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        {{ t.getStarted }}
+                                    </a>
+                                    <div class="dropdown-menu sensebox-dropdown-menu animate slideIn"
+                                        aria-labelledby="navbarDropdown">
+                                        {% if include.simple == true %}
+                                        <ul class="nav navbar-nav simple">
+                                            <li class="nav-item"><a class="navbar-item"
+                                                    href="{{site.baseurl }}/{{ page.lang }}/go-edu">:edu</a></li>
+                                            <li class="nav-item"><a class="navbar-item"
+                                                    href="{{site.baseurl }}/{{page.lang }}/go-home">:home</a></li>
+                                            <li class="nav-item"><a class="navbar-item"
+                                                    href="{{site.baseurl }}/{{ page.lang }}/go-mini">:mini</a></li>
+                                        </ul>
+                                        {% else %}
+                                        <ul class="nav navbar-nav">
+                                            <li class="nav-item"><a class="navbar-item"
+                                                    href="{{site.baseurl }}/{{ page.lang }}/go-edu">:edu</a></li>
+                                            <li class="nav-item"><a class="navbar-item"
+                                                    href="{{site.baseurl }}/{{page.lang }}/go-home">:home</a></li>
+                                            <li class="nav-item"><a class="navbar-item"
+                                                    href="{{site.baseurl }}/{{ page.lang }}/go-mini">:mini</a></li>
+                                        </ul>
+                                        {% endif %}
+                                    </div>
+                                </li>
+                                <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               {{ t.material }}
                             </a>
@@ -78,78 +90,85 @@
                                 {% endif %}
                             </div>
                           </li>-->
-                        {% assign t = site.data.translations.[page.lang].header %} {% assign menupages = site.pages | sort:"weight" %} {% for menupage
+                                {% assign t = site.data.translations.[page.lang].header %}
+                                {% assign menupages = site.pages | sort:"weight" %} {% for menupage
                         in menupages %} {% if menupage.lang == page.lang and navpages contains menupage.id %}
-                        <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
-                            <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
-                        </li>
-                        {% endif %} {% endfor %}
-                    </ul>
-                    {% if include.simple %}
-                        <ul class="nav navbar-nav pull-right simple">
+                                <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
+                                    <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
+                                </li>
+                                {% endif %} {% endfor %}
+                            </ul>
+                            {% if include.simple %}
+                            <ul class="nav navbar-nav pull-right simple">
                                 {% else %}
-                    <ul class="nav navbar-nav pull-right">
-                        {% endif %}
-                        {% assign t = site.data.translations.[page.lang].header %}
-                        {% assign menupages = site.pages | sort:"weight" %}
-                        {% for menupage in menupages %}
-                        {% if menupage.lang == page.lang and navpagesright contains menupage.id %}
-                        <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
-                            <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
-                        </li>
-                        {% endif %}
-                        {% endfor %}
+                                <ul class="nav navbar-nav pull-right">
+                                    {% endif %}
+                                    {% assign t = site.data.translations.[page.lang].header %}
+                                    {% assign menupages = site.pages | sort:"weight" %}
+                                    {% for menupage in menupages %}
+                                    {% if menupage.lang == page.lang and navpagesright contains menupage.id %}
+                                    <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
+                                        <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
+                                    </li>
+                                    {% endif %}
+                                    {% endfor %}
 
-                        <!-- ADD FORUM LINK BY HAND -->
-                        <li class="navbar-item">
-                            <a target="_blank" href="https://forum.sensebox.de/">Forum</a>
-                        </li>
-                        {% if page.translationAvailable != false %}
-                        <li class="navbar-item">
-                            {% if page.lang == 'de' %}
-                            <a href="{{ page.url | remove:'de/' | remove:'index.html' | prepend:'/en' | prepend: site.url }}">EN</a>
-                            {% else %} {% if page.id == 'main' %}
-                            <a href="{{ page.url | remove:'en/' | remove:'index.html'| prepend: site.url }}">DE</a>
-                            {% else %}
-                            <a href="{{ page.url | remove:'en/' | remove:'index.html' | prepend:'/de' | prepend: site.url }}">DE</a>
-                            {% endif %} {% endif %}
-                        </li>
-                        {% endif %}
-                    </ul>
+                                    <!-- ADD FORUM LINK BY HAND -->
+                                    <li class="navbar-item">
+                                        <a target="_blank" href="https://forum.sensebox.de/">Forum</a>
+                                    </li>
+                                    {% if page.translationAvailable != false %}
+                                    <li class="navbar-item">
+                                        {% if page.lang == 'de' %}
+                                        <a
+                                            href="{{ page.url | remove:'de/' | remove:'index.html' | prepend:'/en' | prepend: site.url }}">EN</a>
+                                        {% else %} {% if page.id == 'main' %}
+                                        <a
+                                            href="{{ page.url | remove:'en/' | remove:'index.html'| prepend: site.url }}">DE</a>
+                                        {% else %}
+                                        <a
+                                            href="{{ page.url | remove:'en/' | remove:'index.html' | prepend:'/de' | prepend: site.url }}">DE</a>
+                                        {% endif %} {% endif %}
+                                    </li>
+                                    {% endif %}
+                                </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </div>
-</div>
 
-{% unless include.simple %}
-<!-- Carousel
+    {% unless include.simple %}
+    <!-- Carousel
     ================================================== -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    {% if page.needsCarouselControl == true %}
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    {% endif %}
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        {% if page.needsCarouselControl == true %}
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        {% endif %}
 
-    <div class="carousel-inner" role="listbox">
-        {% if carouselpages contains page.id %} {% include _carousel_content/{{ page.id }}_carousel.html %} {% else %} {% include
+        <div class="carousel-inner" role="listbox">
+            {% if carouselpages contains page.id %} {% include _carousel_content/{{ page.id }}_carousel.html %}
+            {% else %} {% include
         _carousel_content/default_carousel.html %} {% endif %}
-    </div>
+        </div>
 
-    {% if page.needsCarouselControl == true %}
-    <a class="left carousel-control">
-        <span class="glyphicon glyphicon-chevron-left" href="#myCarousel" aria-hidden="true" role="button" data-slide="prev"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control">
-        <span class="glyphicon glyphicon-chevron-right" href="#myCarousel" aria-hidden="true" role="button" data-slide="next"></span>
-        <span class="sr-only">Next</span>
-    </a>
-    {% endif %}
-</div>
-<!-- /.carousel -->
-{% endunless %}
+        {% if page.needsCarouselControl == true %}
+        <a class="left carousel-control">
+            <span class="glyphicon glyphicon-chevron-left" href="#myCarousel" aria-hidden="true" role="button"
+                data-slide="prev"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control">
+            <span class="glyphicon glyphicon-chevron-right" href="#myCarousel" aria-hidden="true" role="button"
+                data-slide="next"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        {% endif %}
+    </div>
+    <!-- /.carousel -->
+    {% endunless %}
