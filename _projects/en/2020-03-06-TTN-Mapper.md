@@ -14,6 +14,7 @@ image6: /images/projects/TTN-Mapper/blockly-activation.png
 image7: /images/projects/lora-osem-tago/device_overview_right_format.PNG
 image8: /images/projects/TTN-Mapper/blockly-gps.png
 image9: /images/projects/TTN-Mapper/ttn-mapper.png
+image10: /images/projects/TTN-Mapper/cayenne.png
 
 material:
     - senseBox MCU
@@ -60,12 +61,17 @@ Now you have to add a Device in your new application. To do this, go to the "reg
 
 {% include image.html image=page.image3 %}
 
-Then click on "Register" and you will get the following overview with the "Application ID" and the "Device ID", which you will need when registering on the openSenseMap.
+Then click on "Register" and you will get the following overview with the "Application ID" and the "Device ID".
+
 {% include image.html image=page.image4 %}
 
 Since the data is to be sent to the TTN Mapper later, you still need a so-called "integration". You can find it in your menu above. Click on it and then click on the button with the label "Add Integration". There you have the possibility to add various integrations to forward the data from TTN to other services. Select the "TTN Mapper" there. Now enter a "Process ID", which you can choose freely. Then enter your E-Mail address and specify an experiment name. Please use your own experiment name. You can also omit the experiemt name but you won't be able to identify your own measurements on TTN Mapper. Then click on "Add Integration".
 
 {% include image.html image=page.image5 %}
+
+Last but not least we need to change the Payload Format in order to send Cayenne LPP messages to TTN Mapper. To do so, click on the Payload Format tab and select Cayenne LPP and click "save". Now, TTN decodes the payload based on the [Cayenne LPP specification](https://developers.mydevices.com/cayenne/docs/lora/#lora-cayenne-low-power-payload).
+
+{% include image.html image=page.image10 %}
 
 
 ## Blockly 
