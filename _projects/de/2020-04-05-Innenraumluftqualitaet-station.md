@@ -1,64 +1,53 @@
 ---
 layout: project_page
-name: "Mobiler Datenlogger"
+name: "IAQ-Station"
 date: 2020-03-09
 author: Mario
-abstract: "Ein mobiler Datenlogger, der die Daten per WLAN an die openSenseMap sendet"
+abstract: "Eine Messstation für die Innenraumluftqualität"
 image:  MobilerDatenlogger.png
-image0: /images/projects/mobile_feinstaubstation/wifi/AnlegenVariablen.png
-image1: /images/projects/mobile_feinstaubstation/wifi/ZeigeDisplay.png
-image2: /images/projects/mobile_feinstaubstation/wifi/RegistrierungOSEM.png
-image3: /images/projects/mobile_feinstaubstation/wifi/SendeOSEM.png
+image1: /images/projects/iaq-station/temperatur_display.svg
+image2: /images/projects/iaq-station/temp_humi_display.svg
+image5: /images/projects/iaq-station/gesamt.svg
 material:
     - senseBox MCU
     - OLED Display
-    - Temperatur und Luftfeuchtesensor(HDC 1080)
-    - Feinstaubsensor(SDS011) inkl. Kabel
-    - GPS Modul
+    - Umweltsensor BME680
     - WiFi-Bee
-    - JST Kabel
+    - 2x JST Kabel
 ide: blockly
-version: ["edu", "mini"]   
-addons: ["GPS", "Feinstaubsensor"] 
+version: ["mini"]   
 lang: de
-tags: ["Informatik","GPS","Feinstaub","Geographie"]
-difficult: schwer
+tags: ["Informatik"]
+difficult: Mittel
 ---
-<head><title>Mobiler Feinstaublogger mit GPS</title></head>
+<head><title>Innenraumluftqualitäts Messstation</title></head>
 
 # Mobiler Datenlogger für Feinstaubwerte
-In diesem Projekt wird mit der senseBox ein mobiler Datenlogger gebaut, der die Messwerte über WLAN, mithilfe eines Handyhotspot, direkt an die openSenseMap überträgt. Der aktuelle Standort wird über das GPS-Modul bestimmt und zusätzlich zu den Messwerten übertragen.  
+In diesem Projekt wird mit der senseBox eine Messstation für die Luftqualität in Innenräumen gebaut. Mithilfe des Umweltsensors kann neben der Temperatur, Luftfeuchtigkeit, Luftdruck auch Messwerte für die Innenraumluftqualität gemessen werden. Hierbei wird ein Index berechnet (IAQ - Indoor Air Quality) und ein CO2-Äquivalenter Messwert ausgegeben. Die Messwerte werden nacheinander auf dem Display angezeigt und können optional auch über die openSenseMap online abgerufen werden. 
 
 ## Aufbau
 Stecke das WiFi-Bee auf den Steckplatz __XBEE1__. 
-Das OLED Display, der Temperatur- und Luftfeuchtesensor und das GPS Modul werden mit jeweils einem JST-JST Kabel an die I2C Ports angeschlossen. Der Feinstaubsensor mit dem JST-Feinstaubkabel an einen der beiden Serial/UART Ports.
+Das OLED Display und der Umweltsensor werden mit jeweils einem JST-JST Kabel an einen der 5 __I2C/Wire Ports__ angeschlossen.
 
-## Registrierung auf der openSenseMap
-
-Die Registrierung erfolgt auf der openSenseMap. Wähle dort als __Aufstellungsort__ **mobil** und lege einen ersten Standort fest (dieser wird nur für den Start benötigt). Wähle als Modell die senseBox:edu und füge die Messwerte für Temperatur, Luftfeuchtigkeit, Feinstaub (PM2.5) und Feinstaub (PM10) aus. 
-
- {% include image.html image=page.image2 %}
 
 ## Programmierung
 
-Die Programmierung des Mobilen Datenlogger wird in [Blockly](https://blockly.sensebox.de) durchgeführt. Im ersten Schritt werden die Messwerte ausgelesen und als Variable gespeichert. Die Messwerte werden auf dem Display angezeigt und anschließend im Abstand von 10 Sekunden an die openSenseMap übertragen.
+Die Programmierung des Mobilen Datenlogger wird in [Blockly](https://blockly.sensebox.de) durchgeführt. Im ersten Schritt werden die Messwerte ausgelesen und auf dem Display gespeichert gespeichert. Da insgesamt 7 verschiedenen Parameter auf dem Display angezeigt werden, wird eine Abfolge auf dem Display programmiert.
 
-### Schritt 1: Auslesen der Sensoren und Anlegen der Variablen
+### Schritt 1: Die erste Anzeige auf dem Display 
 
-Um die Messwerte der Sensoren nicht nur auf dem Display anzeigen zu lassen sondern auch in regelmäßigen Abständen an die openSenseMap zu versenden werden diese zu Begin der Endlosschleife ausgelesen und in einer Variablen gespeichert. Lege für jeden Messwert eine neue Variable an und geben ihr einen sinnvollen Namen. 
+Initialisiere das Display im Setup() und füge den Block __Zeige auf dem Display__ in die Endlosschleife. Mit den Block __Schreibe Text/Zahl__ kannst du die jeweilen Messwerte auf dem Display anzeigen lassen. Um zwei Messwerte auf dem Display gleichzeitg anzuzeigen musst du jeweils die Platzierung (Verschiebung auf der Y-Achse) auf dem Display anpassen. Als ersten wird ein Block __Text__ hinzufügt, um zu beschreiben um welchen Sensorwert es sich handelt. Der Sensorwert selber wird in Schriftgröße 2 dargstellt und über die Koordinaten in Y- und X-Richtung verschoben. 
+
+ {% include block.html image=page.image1 %}
+
+Zusätzlich zum Temperaturmesswert kann auf dem Display noch der Messwert für die Luftfeuchtigkeit hinzugefügt werden. Kopiere dazu die Blöcke und ändere die X- und Y-Koordinaten und wähle im Dropdown Menü des Sensorblocks __Luftfeuchtigkeit__ aus.
+
+ {% include block.html image=page.image2 %}
+
+### Schritt 2: Messwerte als Abfolge auf dem Display
 
 
-{% include image.html image=page.image0 %}
-
-### Schritt 2: Anzeigen der Messwerte auf dem Display
-
-Initialisiere das Display im Setup() und füge den Block __Zeige auf dem Display__ in die Endlosschleife. Mit den Block __Schreibe Text/Zahl__ kannst du die jeweilen Messwerte auf dem Display anzeigen lassen. Um mehrere Messwerte auf dem Display anzuzeigen musst du jeweils die Platzierung (Verschiebung auf der Y-Achse) auf dem Display anpassen.
-
-
- {% include image.html image=page.image1 %}
-
-Übertrage den Programmcode und überprüfe auf dem Display ob alle Messwerte korrekt angezeigt werden. 
-
+ 
 ### Schritt 3: Übertragen der Messwerte an die openSenseMap
 
 Um Messwerte an die openSenseMap zu übertragen muss eine Internetverbindung hergestellt werden. Da in diesem Projekt eine mobile Messstation gebaut wird ist es am einfachsten den Hotspot deines Handy zu verwenden. 
@@ -73,3 +62,11 @@ Damit die gemessenen Messwerte immer mit dem aktuellen Standort verknüpft werde
 
 Beachte, dass das GPS Modul nach dem ersten anschließen unter Umständen sehr lange benötigt, um ein erstes Standortsignal zu bekommen. Lege dazu die Box nach draußen und achte darauf, dass keine Gegenstände, wie Dächer oder Bäume den Blick in den Himmel versperren.
 
+## Registrierung auf der openSenseMap
+
+Die Registrierung erfolgt auf der openSenseMap. Wähle dort als __Aufstellungsort__ **mobil** und lege einen ersten Standort fest (dieser wird nur für den Start benötigt). Wähle als Modell die senseBox:edu und füge die Messwerte für Temperatur, Luftfeuchtigkeit, Feinstaub (PM2.5) und Feinstaub (PM10) aus. 
+
+ {% include image.html image=page.image2 %}
+
+
+ {% include image.html image=page.image5 %}
