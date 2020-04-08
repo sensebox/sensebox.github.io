@@ -14,6 +14,7 @@ image6: /images/projects/TTN-Mapper/blockly-activation-de.png
 image7: /images/projects/lora-osem-tago/device_overview_right_format.PNG
 image8: /images/projects/TTN-Mapper/blockly-gps-de.png
 image9: /images/projects/TTN-Mapper/ttn-mapper.png
+image10: /images/projects/TTN-Mapper/cayenne.png
 
 material:
     - senseBox MCU
@@ -60,13 +61,17 @@ Nun musst du in deiner neuen Application noch ein Device hinzufügen. Gehe dafü
 
 {% include image.html image=page.image3 %}
 
-Klicke dann auf "Register" und du erhälst folgende Übersicht mit der "Application ID" und der "Device ID", die du beide anschließend bei der Registrierung auf der openSenseMap brauchst.
+Klicke dann auf "Register" und du erhälst folgende Übersicht mit der "Application ID" und der "Device ID".
 
 {% include image.html image=page.image4 %}
 
 Da wir die Daten später an den TTN Mapper senden möchten, musst Du außerdem eine "Integration" hinzufügen. Diese findest du oben in deinem Menü. Klicke darauf und klicke dann gleich auf den Button mit der Aufschrift "Add Integration". Dort hast du dann die Möglichkeit, verschiedenste Integrations hinzuzufügen, um die Daten von TTN an andere Services weiterzuleiten. Wähle dort den "TTN Mapper" aus. Gib nun eine "Process ID" an, die du frei wählen kannst. Gib deine E-Mail Adresse an und gebe einen Experimente Namen an. Du könntest den Experimente Namen auch auslassen, bist dann aber nicht mehr in der Lage deine eigenen Messungen auf dem TTN Mapper zu identifizieren. Klicke dann auf "Add Integration".
 
 {% include image.html image=page.image5 %}
+
+Zuletzt musst du das Payload Format bei TTN auf Cayenne LPP unstellen. Dazu klickst du auf den Reiter Payload Format, wählst dann Cayenne LPP aus und klickst auf "save". Nun entschlüsselt TTN die Nachrichten selbstständig nach der [Cayenne LPP Spezifikation](https://developers.mydevices.com/cayenne/docs/lora/#lora-cayenne-low-power-payload).
+
+{% include image.html image=page.image10 %}
 
 ## Blockly 
 
