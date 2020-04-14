@@ -7,7 +7,10 @@ abstract: "Eine Messstation für die Innenraumluftqualität"
 image:  MobilerDatenlogger.png
 image1: /images/projects/iaq-station/temperatur_display.svg
 image2: /images/projects/iaq-station/temp_humi_display.svg
-image5: /images/projects/iaq-station/gesamt.svg
+image3: /images/projects/iaq-station/fall_01.svg
+image4: /images/projects/iaq-station/osem_bme680.png
+image5: /images/projects/iaq-station/osem_blockly.svg
+image6: /images/projects/iaq-station/gesamt.svg
 material:
     - senseBox MCU
     - OLED Display
@@ -23,20 +26,19 @@ difficult: Mittel
 <head><title>Innenraumluftqualitäts Messstation</title></head>
 
 # Mobiler Datenlogger für Feinstaubwerte
-In diesem Projekt wird mit der senseBox eine Messstation für die Luftqualität in Innenräumen gebaut. Mithilfe des Umweltsensors kann neben der Temperatur, Luftfeuchtigkeit, Luftdruck auch Messwerte für die Innenraumluftqualität gemessen werden. Hierbei wird ein Index berechnet (IAQ - Indoor Air Quality) und ein CO2-Äquivalenter Messwert ausgegeben. Die Messwerte werden nacheinander auf dem Display angezeigt und können optional auch über die openSenseMap online abgerufen werden. 
+In diesem Projekt wird mit der senseBox eine Messstation für die Luftqualität in Innenräumen gebaut. Mithilfe des Umweltsensors kann neben der Temperatur, Luftfeuchtigkeit, Luftdruck auch die Innenraumluftqualität gemessen werden. Hierbei wird ein Index berechnet (IAQ - Indoor Air Quality) und ein CO2-Äquivalenter Messwert ausgegeben. Die Messwerte werden nacheinander auf dem Display angezeigt und können optional auch über die openSenseMap online abgerufen werden. 
 
 ## Aufbau
-Stecke das WiFi-Bee auf den Steckplatz __XBEE1__. 
-Das OLED Display und der Umweltsensor werden mit jeweils einem JST-JST Kabel an einen der 5 __I2C/Wire Ports__ angeschlossen.
+Stecke das WiFi-Bee auf den Steckplatz __XBEE1__. Das OLED Display und der Umweltsensor werden mit jeweils einem JST-JST Kabel an einen der 5 __I2C/Wire Ports__ angeschlossen.
 
 
 ## Programmierung
 
-Die Programmierung des Mobilen Datenlogger wird in [Blockly](https://blockly.sensebox.de) durchgeführt. Im ersten Schritt werden die Messwerte ausgelesen und auf dem Display gespeichert gespeichert. Da insgesamt 7 verschiedenen Parameter auf dem Display angezeigt werden, wird eine Abfolge auf dem Display programmiert.
+Die Programmierung der Messstation in [Blockly](https://blockly.sensebox.de) durchgeführt. Im ersten Schritt werden die Messwerte ausgelesen und auf dem Display angezeigt. Da insgesamt 7 verschiedenen Parameter auf dem Display angezeigt werden, wird eine Abfolge auf dem Display programmiert. Optional können die Messwerte auch noch über das Internet an die openSenseMap übertragen werden.
 
 ### Schritt 1: Die erste Anzeige auf dem Display 
 
-Initialisiere das Display im Setup() und füge den Block __Zeige auf dem Display__ in die Endlosschleife. Mit den Block __Schreibe Text/Zahl__ kannst du die jeweilen Messwerte auf dem Display anzeigen lassen. Um zwei Messwerte auf dem Display gleichzeitg anzuzeigen musst du jeweils die Platzierung (Verschiebung auf der Y-Achse) auf dem Display anpassen. Als ersten wird ein Block __Text__ hinzufügt, um zu beschreiben um welchen Sensorwert es sich handelt. Der Sensorwert selber wird in Schriftgröße 2 dargstellt und über die Koordinaten in Y- und X-Richtung verschoben. 
+Initialisiere das Display im __Setup()__ und füge den Block __Zeige auf dem Display__ in die Endlosschleife. Mit den Block __Schreibe Text/Zahl__ kannst du die jeweilen Messwerte auf dem Display anzeigen lassen. Um zwei Messwerte auf dem Display gleichzeitg anzuzeigen musst du jeweils die Platzierung (Verschiebung auf der Y-Achse) auf dem Display anpassen. Als ersten wird ein Block __Text__ hinzufügt, um zu beschreiben um welchen Sensorwert es sich handelt. Der Sensorwert selber wird in Schriftgröße 2 dargstellt und über die Koordinaten in Y- und X-Richtung verschoben. 
 
  {% include block.html image=page.image1 %}
 
@@ -46,27 +48,47 @@ Zusätzlich zum Temperaturmesswert kann auf dem Display noch der Messwert für d
 
 ### Schritt 2: Messwerte als Abfolge auf dem Display
 
+Damit die anderen Messwerte auch auf dem Display angezeigt werden können, muss ein Abfolge erstellt werden. Am einfachsten lässt sich die Abfolge, mit verschiedenen Display Inhalten über die __Fallunterscheidung__ umsetzten. Hierbei wird je nach Wert ein bestimmten Variablen ein anderer Programmcode ausgeführt. Die Variable kann einfach nach einem bestimmten Zeitintervall hochgezählt werden, sodass alle Fälle nacheinander ausgeführt werden.
 
+Lege dazu im __Setup()__ eine neue Variable mit den Namen __status__ an und weise ihr den Wert __0__ zu. Anschließend füge die Fallunterscheidung hinzu. Die Fallunterscheidung findest du unter __Logik__. Als Variable fügst du dort status and gibst an was beim Fall __0__ ausgeführt werden kann. Über das Zahnrad kannst du weitere Fälle hinzufügen.
+
+ {% include block.html image=page.image3 %}
+
+ Im ersten Fall (status = 0) wird die Temperatur und Luftfeuchtigkeit angezeigt. Tipp: Der Block kann mit einem Rechtsklick --> Blöcke zusammenfalten kompakter dargstellt werden.
+Im zweiten Fall (status = 1) wird nun der Messwerte für den Luftdruck und den Indoor Airquality Index angezeigt. 
+Nun wird über den Block __Messintervall__ alle 10 Sekunden die Variable Status um 1 hochgezählt. Wenn die Variable 2 erreicht hat wird diese wieder auf 0 gesetzt, sodass wieder der erste Bildschirm angezeigt wird. 
+
+### Schritt 3: Weitere Messwerte hinzufügen
+
+Im nächsten Schritt werden weitere Fälle hinzugefügt und die Messwerte für VOC, C02 und dem Kalibrierungswert angezeigt.
+
+### Kalibrierungswert
+Um zuverlässige Messwerte zu liefern kalibriert sich der Sensor anhand der Umgebungsluft selbst. Der Status wird jeweils über den Kalibrierungswert angezeigt. Daher ist es sinnvoll diesen auch auf dem Display anzeigen zulassen, sodass man sehen kann ob die Kalibrierungs abgeschlossen ist und die Messwerte verwendet werden können. Wenn der Sensor nicht kalibriert ist oder sich gerade kalibriert werden Messwerte ausgegeben, die nicht verwendet werden sollten. Folgende verschiedene Werte für den Kalibrierungswert gibt es:
+- 0: Der Sensor ist gerade gestartet und befindet sich in der Warm Up Phase
+- 1: Der Sensor kann sich selbst 
+- 2: Der Sensor wird kalibriert
+- 3: Die Kalibrierung des Sensor ist abgeschlossen
+
+Mehr Informationen zur Funktionsweise des Sensor findest du auch [hier](https:/docs.sensebox.de)
  
-### Schritt 3: Übertragen der Messwerte an die openSenseMap
 
-Um Messwerte an die openSenseMap zu übertragen muss eine Internetverbindung hergestellt werden. Da in diesem Projekt eine mobile Messstation gebaut wird ist es am einfachsten den Hotspot deines Handy zu verwenden. 
-Damit die Messwerte nicht jede Sekunde an die openSenseMap übertragen werden, ziehe zuerst den Block Messintervall unter die Blöcke für das Display. (Tip: Mit einem Rechtsklick auf den Block __Zeige auf dem Display__ und der Option __Block zusammenfalten__ kannst du Platz sparen).
-In den offenen Blockabschnitt wird nun der Block zum Verbinden mit der openSenseMap gezogen. Wähle in diesem Block als __Typ__ **Mobil** aus und kopiere deine senseBox ID, die du nach der Registrierung von der openSenseMap erhalten hast.  
+## Optional: Übertragen der Messwerte an die openSenseMap
+
+Zuerst musst du deine Messstation auf [https://workshop.opensensemap.org](https://workshop.opensensemap.org) registrieren. In diesem Beispiel wird die Instanz für Workshops verwendet, du kannst dein Messgerät natürlich auch auf der openSenseMap installieren.
+
+{% include image.html image=page.image4 %}
+
+Klicke auf die entsprechenden Messwerte unter dem BME680, um diese deinem Messgerät hinzuzufügen.
+Nach dem Abschluss der Registrierung erhälst du eine Übersicht über die registrierten Phänomene und die zugehörigen ID's. Lasse die Seite geöffnet, da du die ID's in Blockly kopieren musst. 
+
+Um Messwerte an die openSenseMap zu übertragen muss eine Internetverbindung hergestellt werden. Dazu wird die senseBox einfach mit deinem Wlan verbunden, so erhälst du Zugriff auf deine Messwerte überall auf der Welt. Ziehe dazu den Block __Verbinde mit WLAN__ in das __Setup()__ und füge dort deinen Netzwerknamen und das Passwort ein.
+Für das Übertragen der Messwerte wird ein zusätzlicher Fall in der Fallunterscheidung angelegt, der ausgeführt wird, wenn die Variable __status__ den Wert 4 hat. 
+Ziehe zum übertragen der Messwerte den Block **Verbinde mit der openSenseMap** in den Blockabschnitt für den offenen Fall. Wähle bei diesem Block den __Typ__ **Stationär** und kopiere deine senseBox ID aus der übersicht. 
 
 Für jeden Messwert, den du nun senden möchtest ziehe einen Block __Sende Messwert an die openSenseMap__ in den offenen Blockabschnitt, trage die entsprechenden Sensor ID's ein und verbinde den Block mit dem entsprechenden Messwert.
+{% include block.html image=page.image5 %}
 
-Damit die gemessenen Messwerte immer mit dem aktuellen Standort verknüpft werden müssen 4 verschiedene Parameter vom GPS Modul abgefragt werden. Neben dem Längen und Breitengrad wird auch die Höhe über NN und ein Zeitstempel im RFC 3339 Format übertragen. 
+## Gesamter Code
+Den gesamten Code findest du [hier](). 
 
- {% include image.html image=page.image3 %}
-
-Beachte, dass das GPS Modul nach dem ersten anschließen unter Umständen sehr lange benötigt, um ein erstes Standortsignal zu bekommen. Lege dazu die Box nach draußen und achte darauf, dass keine Gegenstände, wie Dächer oder Bäume den Blick in den Himmel versperren.
-
-## Registrierung auf der openSenseMap
-
-Die Registrierung erfolgt auf der openSenseMap. Wähle dort als __Aufstellungsort__ **mobil** und lege einen ersten Standort fest (dieser wird nur für den Start benötigt). Wähle als Modell die senseBox:edu und füge die Messwerte für Temperatur, Luftfeuchtigkeit, Feinstaub (PM2.5) und Feinstaub (PM10) aus. 
-
- {% include image.html image=page.image2 %}
-
-
- {% include image.html image=page.image5 %}
+ {% include block.html image=page.image6 %}
