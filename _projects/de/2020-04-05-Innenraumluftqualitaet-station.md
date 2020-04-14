@@ -4,10 +4,13 @@ name: "IAQ-Station"
 date: 2020-03-09
 author: Mario
 abstract: "Eine Messstation für die Innenraumluftqualität"
-image:  MobilerDatenlogger.png
+image:  IAQ.png
 image1: /images/projects/iaq-station/temperatur_display.svg
 image2: /images/projects/iaq-station/temp_humi_display.svg
-image3: /images/projects/iaq-station/fall_01.svg
+imageFall00: /images/projects/iaq-station/fall_00.svg
+imageFall01: /images/projects/iaq-station/fall_01.svg
+imageFall02: /images/projects/iaq-station/fall_02.svg
+imageFall03: /images/projects/iaq-station/fall_03.svg
 image4: /images/projects/iaq-station/osem_bme680.png
 image5: /images/projects/iaq-station/osem_blockly.svg
 image6: /images/projects/iaq-station/gesamt.svg
@@ -25,7 +28,6 @@ difficult: Mittel
 ---
 <head><title>Innenraumluftqualitäts Messstation</title></head>
 
-# Mobiler Datenlogger für Feinstaubwerte
 In diesem Projekt wird mit der senseBox eine Messstation für die Luftqualität in Innenräumen gebaut. Mithilfe des Umweltsensors kann neben der Temperatur, Luftfeuchtigkeit, Luftdruck auch die Innenraumluftqualität gemessen werden. Hierbei wird ein Index berechnet (IAQ - Indoor Air Quality) und ein CO2-Äquivalenter Messwert ausgegeben. Die Messwerte werden nacheinander auf dem Display angezeigt und können optional auch über die openSenseMap online abgerufen werden. 
 
 ## Aufbau
@@ -52,15 +54,27 @@ Damit die anderen Messwerte auch auf dem Display angezeigt werden können, muss 
 
 Lege dazu im __Setup()__ eine neue Variable mit den Namen __status__ an und weise ihr den Wert __0__ zu. Anschließend füge die Fallunterscheidung hinzu. Die Fallunterscheidung findest du unter __Logik__. Als Variable fügst du dort status and gibst an was beim Fall __0__ ausgeführt werden kann. Über das Zahnrad kannst du weitere Fälle hinzufügen.
 
- {% include block.html image=page.image3 %}
+ {% include block.html image=page.imageFall00 %}
 
  Im ersten Fall (status = 0) wird die Temperatur und Luftfeuchtigkeit angezeigt. Tipp: Der Block kann mit einem Rechtsklick --> Blöcke zusammenfalten kompakter dargstellt werden.
-Im zweiten Fall (status = 1) wird nun der Messwerte für den Luftdruck und den Indoor Airquality Index angezeigt. 
+
+#### Fall 01 
+Im zweiten Fall (status = 1) wird nun der Messwerte für den Luftdruck und den Indoor Airquality Index angezeigt.
+  {% include block.html image=page.imageFall01 %}
 Nun wird über den Block __Messintervall__ alle 10 Sekunden die Variable Status um 1 hochgezählt. Wenn die Variable 2 erreicht hat wird diese wieder auf 0 gesetzt, sodass wieder der erste Bildschirm angezeigt wird. 
 
 ### Schritt 3: Weitere Messwerte hinzufügen
 
 Im nächsten Schritt werden weitere Fälle hinzugefügt und die Messwerte für VOC, C02 und dem Kalibrierungswert angezeigt.
+
+#### Fall 02
+
+  {% include block.html image=page.imageFall02 %}
+
+#### Fall 03
+
+  {% include block.html image=page.imageFall03 %}
+
 
 ### Kalibrierungswert
 Um zuverlässige Messwerte zu liefern kalibriert sich der Sensor anhand der Umgebungsluft selbst. Der Status wird jeweils über den Kalibrierungswert angezeigt. Daher ist es sinnvoll diesen auch auf dem Display anzeigen zulassen, sodass man sehen kann ob die Kalibrierungs abgeschlossen ist und die Messwerte verwendet werden können. Wenn der Sensor nicht kalibriert ist oder sich gerade kalibriert werden Messwerte ausgegeben, die nicht verwendet werden sollten. Folgende verschiedene Werte für den Kalibrierungswert gibt es:
@@ -89,6 +103,5 @@ Für jeden Messwert, den du nun senden möchtest ziehe einen Block __Sende Messw
 {% include block.html image=page.image5 %}
 
 ## Gesamter Code
-Den gesamten Code findest du [hier](). 
 
  {% include block.html image=page.image6 %}
