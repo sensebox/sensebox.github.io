@@ -56,12 +56,14 @@ Lege dazu im __Setup()__ eine neue Variable mit den Namen __status__ an und weis
 
  {% include block.html image=page.imageFall00 %}
 
+#### Fall 00
+
  Im ersten Fall (status = 0) wird die Temperatur und Luftfeuchtigkeit angezeigt. Tipp: Der Block kann mit einem Rechtsklick --> Blöcke zusammenfalten kompakter dargstellt werden.
 
 #### Fall 01 
 Im zweiten Fall (status = 1) wird nun der Messwerte für den Luftdruck und den Indoor Airquality Index angezeigt.
   {% include block.html image=page.imageFall01 %}
-Nun wird über den Block __Messintervall__ alle 10 Sekunden die Variable Status um 1 hochgezählt. Wenn die Variable 2 erreicht hat wird diese wieder auf 0 gesetzt, sodass wieder der erste Bildschirm angezeigt wird. 
+Nun wird über den Block __Messintervall__ alle 10 Sekunden die Variable Status um 1 hochgezählt. Wenn die Variable 2 erreicht hat wird diese wieder auf 0 gesetzt, sodass wieder der erste Bildschirm angezeigt wird. Je nach Anzahl der Fälle wird der Zähler hochgesetzt und bei insgesamt 4 Fällen erst bei 5 wieder auf 0 gesetzt. 
 
 ### Schritt 3: Weitere Messwerte hinzufügen
 
