@@ -31,7 +31,7 @@ tagarray: []
 #   style: compressed
 
 exclude: ["README.md", "how-to-add-blog-post.md", "how-to-create-new-page.md", "LICENSE", "run-in-docker-jekyll.sh"]
-
+include: ["_redirects"]
 collections:
   press:
   events:
