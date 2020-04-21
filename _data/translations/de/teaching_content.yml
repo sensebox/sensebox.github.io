@@ -12,14 +12,14 @@
   bgImage: /images/material/sheets_tutory.png
   link: https://www.tutory.de/user/sensebox
 
-- name: Sense your School
+- name: 'Unterrichtsreihe: Sense Your School'
   position: t3
   organisation: TüftelAkademie
   description: 
   bgImage: /images/material/sense-your-school.png
   link: https://tueftelakademie.de/fuer-lehrende/unterrichtsmaterialien/digital-literacy-lab/sense-your-school/
 
-- name: Umweltverschmutzung und Daten
+- name: 'Unterrichtsreihe: Umweltverschmutzung und Daten'
   position: t4
   organisation: TüftelAkademie
   description: 
