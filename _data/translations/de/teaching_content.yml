@@ -12,22 +12,29 @@
   bgImage: /images/material/sheets_tutory.png
   link: https://www.tutory.de/user/sensebox
 
-- name: :TüftelAkademie
+- name: Sense your School
   position: t3
   organisation: TüftelAkademie
   description: 
-  bgImage: /images/material/tueftelakademie.png
-  link: https://tueftelakademie.de/tutorials/sensebox/
+  bgImage: /images/material/sense-your-school.png
+  link: https://tueftelakademie.de/fuer-lehrende/unterrichtsmaterialien/digital-literacy-lab/sense-your-school/
+
+- name: Umweltverschmutzung und Daten
+  position: t4
+  organisation: TüftelAkademie
+  description: 
+  bgImage: /images/material/umweltverschmutzung-und-daten.png
+  link: https://tueftelakademie.de/fuer-lehrende/unterrichtsmaterialien/digital-literacy-lab/umwelt-und-daten/
 
 - name: :ETH Zürich
-  position: t4
+  position: t5
   organisation: ETH - Zürich
   description: Die ETH Zürich verwendet die senseBox in der Lehre in zwei verschiedenen Studiengängen und stellt uns und euch die Materialien aus der Lehre zu verfügung (Zurzeit nur auf Englisch)
   bgImage: /images/material/eth.jpg
   download: https://sensebox.de/docs/ETH_GeosensorsLab_tutorial.pdf
 
 - name: :Lehrhandreichung
-  position: t5
+  position: t6
   organisation: 
   description: 
   bgImage: /images/logo_bunt.png
