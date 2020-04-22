@@ -22,7 +22,9 @@ Der Code für den Umweltsensor, der auf einem Bosch BME680 basiert und in der [s
 
 {% include image.html image=page.image1 %}
 
-Alle Messwerte können gleichzeitig ausgelesen werden, da die Temperatur und die Luftfeuchtigkeit als korrigierte Messwerte zurückgegeben werden. Durch die Verwendung der Bosch Softwarebibliothek kalibriert sich der Sensor selbst und ein Kalibrierungswert (zwischen 0 und 3) kann ausgelesen werden. Dieser Wert ist sehr wichtig bei der Betrachtung der Messwerte und sollte immer mit ausgelesen werden. Nur wenn der Kalibrierungswert 3 ist der Sensor vollständig kalibriert und die Messwerte sollten verwendet werden. 
+Alle Messwerte können gleichzeitig ausgelesen werden, da die Temperatur und die Luftfeuchtigkeit als korrigierte Messwerte zurückgegeben werden. Durch die Verwendung der Bosch Softwarebibliothek kalibriert sich der Sensor selbst und ein Kalibrierungswert (zwischen 0 und 3) kann ausgelesen werden. Dieser Wert ist sehr wichtig bei der Betrachtung der Messwerte und sollte immer mit ausgelesen werden. Nur wenn der Kalibrierungswert 3 ist, ist der Sensor vollständig kalibriert und die Messwerte sollten verwendet werden. 
+
+Ein Beispielprojekt für die Verwendung des Umweltsensor findest du [hier](/projects/de/2020-04-05-Innenraumluftqualitaet-station).
 
 ## Der Kalibrierungswert
 
@@ -35,12 +37,14 @@ IAQ Accuracy = 3 heißt Sensor erfolgreich kalibriert.
 
 Sollte die rote LED neben dem Resetbutton schnell aufblinken ist der Sensor nicht richtig angeschlossen und kann nicht gefunden werden. 
 
-Der IAQ Index ist also nur aussagekräftig bei IAQ Accuracy = 3. Neben dem Wert für IAQ stellt uns BSEC noch CO2 und VOC äquivalente Werte bereit. Beim verwenden des Sensor sollte immer auch der Kalibrierungswert mit ausgelesen und angezeigt bzw. übertragen werden. **Wichtig** Der Kalibrierungsvorgang kann unter Umständen sehr lange dauern (12h und länger), wichtig ist, es das Messgerät während dieser Zeit nicht neuzustarten. Der Kalibrierungswert kann und wird nicht gespeichert und mit einem Neustart muss der Sensor auch neu kalibriert werden. Wird über den langen Zeitraum der Kalibrierungswert 1 angezeigt, kann es helfen die Umgebungsparameter durch stoßartiges Lüften zu verändern oder den Sensor kurz in der Hand zu halten. 
+Der IAQ Index ist also nur aussagekräftig bei IAQ Accuracy = 3. Neben dem Wert für IAQ stellt uns BSEC noch CO<sub>2</sub> und VOC äquivalente Werte bereit. Beim verwenden des Sensor sollte immer auch der Kalibrierungswert mit ausgelesen und angezeigt bzw. übertragen werden.
+
+>**Wichtig** Der Kalibrierungsvorgang kann unter Umständen sehr lange dauern (12h und länger), wichtig ist, es das Messgerät während dieser Zeit nicht neuzustarten. Der Kalibrierungswert kann und wird nicht gespeichert und mit einem Neustart muss der Sensor auch neu kalibriert werden. Wird über den langen Zeitraum der Kalibrierungswert 1 angezeigt, kann es helfen die Umgebungsparameter durch stoßartiges Lüften zu verändern oder den Sensor kurz in der Hand zu halten. 
 
 
 ## Screenshots der Blöcke erstellen
 
-Um eigene Projekte zu dokumentieren besteht nun die Möglichkeit die Blöcke aus der Arbeitsfläche direkt als Vektorgrafik (SVG) zu exportieren. Die Screenshots sind so unbegrenzt und ohne Qualitätsverlust vergrößerbar und benötigen deutlich weniger Speicherplatz. Um die Funktion zum Erstellen von Screenshots zu aktivieren, wird in der URL der Parameter `svg=true`hinzugefügt [Blockly mit aktivieren Button](https://blockly.sensebox.de/ardublockly/?board=sensebox-mcu&lang=de&svg=true). In der Menüleiste taucht dann ein Button zum erstellen der Screenshots auf. 
+Um eigene Projekte zu dokumentieren besteht nun die Möglichkeit die Blöcke aus der Arbeitsfläche direkt als Vektorgrafik (.SVG) zu exportieren. Die Screenshots sind so unbegrenzt und ohne Qualitätsverlust vergrößerbar und benötigen deutlich weniger Speicherplatz. Um die Funktion zum Erstellen von Screenshots zu aktivieren, wird in der URL der Parameter `svg=true`hinzugefügt [Blockly mit aktiviertem Screenshot-Button](https://blockly.sensebox.de/ardublockly/?board=sensebox-mcu&lang=de&svg=true). In der Menüleiste taucht dann ein Button zum Erstellen der Screenshots auf. 
 
 {% include image.html image=page.image2 %}
 
