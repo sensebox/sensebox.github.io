@@ -40,4 +40,10 @@
   bgImage: /images/logo_bunt.png
   download: /docs/lehrkraefte_senseBox_de.pdf
 
+- name: Mikrocontroller im MINT-Unterricht
+  position: t7
+  organisation: 
+  description: 
+  bgImage: /images/material/hopp_foundation.png
+  link: https://unterrichtsmaterialien.hopp-foundation.de/konzepte/mikrocontroller-im-mint-unterricht
 
