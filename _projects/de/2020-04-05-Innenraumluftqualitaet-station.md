@@ -23,7 +23,7 @@ material:
 ide: blockly
 version: ["mini"]   
 lang: de
-tags: ["Informatik"]
+tags: ["Informatik", "Chemie"]
 difficult: Mittel
 ---
 <head><title>Innenraumluftqualitäts Messstation</title></head>
@@ -36,7 +36,7 @@ Stecke das WiFi-Bee auf den Steckplatz __XBEE1__. Das OLED Display und der Umwel
 
 ## Programmierung
 
-Die Programmierung der Messstation in [Blockly](https://blockly.sensebox.de) durchgeführt. Im ersten Schritt werden die Messwerte ausgelesen und auf dem Display angezeigt. Da insgesamt 7 verschiedenen Parameter auf dem Display angezeigt werden, wird eine Abfolge auf dem Display programmiert. Optional können die Messwerte auch noch über das Internet an die openSenseMap übertragen werden.
+Die Programmierung der Messstation in [Blockly](https://blockly.sensebox.de) durchgeführt. Im ersten Schritt werden die Messwerte ausgelesen und auf dem Display angezeigt. Da insgesamt 7 verschiedene Parameter auf dem Display angezeigt werden, wird eine Abfolge auf dem Display programmiert. Optional können die Messwerte auch noch über das Internet an die openSenseMap übertragen werden [Übertragen auf die openSenseMap](#optional-übertragen-der-messwerte-an-die-opensensemap).
 
 ### Schritt 1: Die erste Anzeige auf dem Display 
 
@@ -58,7 +58,7 @@ Lege dazu im __Setup()__ eine neue Variable mit den Namen __status__ an und weis
 
 #### Fall 00
 
- Im ersten Fall (status = 0) wird die Temperatur und Luftfeuchtigkeit angezeigt. Tipp: Der Block kann mit einem Rechtsklick --> Blöcke zusammenfalten kompakter dargstellt werden.
+ Im ersten Fall (status = 0) wird die Temperatur und Luftfeuchtigkeit angezeigt. Tipp: Blöcke können mit einem Rechtsklick --> Blöcke zusammenfalten kompakter dargstellt werden.
 
 #### Fall 01 
 Im zweiten Fall (status = 1) wird nun der Messwerte für den Luftdruck und den Indoor Airquality Index angezeigt.
@@ -81,16 +81,18 @@ Im nächsten Schritt werden weitere Fälle hinzugefügt und die Messwerte für V
 ### Kalibrierungswert
 Um zuverlässige Messwerte zu liefern kalibriert sich der Sensor anhand der Umgebungsluft selbst. Der Status wird jeweils über den Kalibrierungswert angezeigt. Daher ist es sinnvoll diesen auch auf dem Display anzeigen zulassen, sodass man sehen kann ob die Kalibrierungs abgeschlossen ist und die Messwerte verwendet werden können. Wenn der Sensor nicht kalibriert ist oder sich gerade kalibriert werden Messwerte ausgegeben, die nicht verwendet werden sollten. Folgende verschiedene Werte für den Kalibrierungswert gibt es:
 - 0: Der Sensor ist gerade gestartet und befindet sich in der Warm Up Phase
-- 1: Der Sensor kann sich selbst 
+- 1: Heißt die bisheringen Messwerte zeigen zu wenig Unterschiede und können nicht zum Kalibrieren verwendet werden.
 - 2: Der Sensor wird kalibriert
 - 3: Die Kalibrierung des Sensor ist abgeschlossen
 
-Mehr Informationen zur Funktionsweise des Sensor findest du auch [hier](https:/docs.sensebox.de)
+Der Kalibrierungsvorgang kann unter Umständen lange dauern (>12h) und zeigt dann den Wert 1 an. Sollte nach dieser Zeit die Kalibrierung nicht starten oder abgeschlossen sein, kann es hilfreich sein, die Umgebungsparameter zu verändert z.B. durch stoßartiges Lüften im Raum oder den Sensor für eine gewissen Zeit in der Hand halten. 
+
+Mehr Informationen zur Funktionsweise des Sensor findest du auch [hier](https://docs.google.com/document/d/1RoSpponHep71qok9Q_on9GVQV-JnCTDov1xyAkGQvwk/edit?usp=sharing)
  
 
 ## Optional: Übertragen der Messwerte an die openSenseMap
 
-Zuerst musst du deine Messstation auf [https://workshop.opensensemap.org](https://workshop.opensensemap.org) registrieren. In diesem Beispiel wird die Instanz für Workshops verwendet, du kannst dein Messgerät natürlich auch auf der openSenseMap installieren.
+Zuerst musst du deine Messstation auf [https://workshop.opensensemap.org](https://workshop.opensensemap.org) registrieren. In diesem Beispiel wird die Instanz für Workshops verwendet, du kannst dein Messgerät natürlich auch auf der openSenseMap registrieren.
 
 {% include image.html image=page.image4 %}
 
@@ -101,7 +103,7 @@ Um Messwerte an die openSenseMap zu übertragen muss eine Internetverbindung her
 Für das Übertragen der Messwerte wird ein zusätzlicher Fall in der Fallunterscheidung angelegt, der ausgeführt wird, wenn die Variable __status__ den Wert 4 hat. 
 Ziehe zum übertragen der Messwerte den Block **Verbinde mit der openSenseMap** in den Blockabschnitt für den offenen Fall. Wähle bei diesem Block den __Typ__ **Stationär** und kopiere deine senseBox ID aus der übersicht. 
 
-Für jeden Messwert, den du nun senden möchtest ziehe einen Block __Sende Messwert an die openSenseMap__ in den offenen Blockabschnitt, trage die entsprechenden Sensor ID's ein und verbinde den Block mit dem entsprechenden Messwert.
+Für jeden Messwert, den du nun senden möchtest, ziehe einen Block __Sende Messwert an die openSenseMap__ in den offenen Blockabschnitt, trage die entsprechenden Sensor ID's ein und verbinde den Block mit dem entsprechenden Messwert.
 {% include block.html image=page.image5 %}
 
 ## Gesamter Code
