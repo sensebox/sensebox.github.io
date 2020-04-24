@@ -98,7 +98,7 @@ In den Logik-Block fügst du an das `mache` die Antwort deiner senseBox in HTML-
     <h3 class="panel-title">HTML (Hypertext Markup Language)</h3>
   </div>
   <div class="panel-body">
-        HTML ist keine Programmiersprache, wie man vielleicht denken könnte, sondern dient lediglich dazu Elemente auf einer Website zu kennzeichnen. Wenn du dir zum Beispiel die Website anschaust, auf der du dich gerade befindest, so kann man vereinfacht sagen, jedes Element, seien es Text, Bilder oder Suchfelder, haben einen oder mehrere Kennzeichner, so genannte Tags. Tags bestehen aus einem öffnenden und einem schließenden Tag.
+    HTML ist keine Programmiersprache, wie man vielleicht denken könnte, sondern dient lediglich dazu Elemente auf einer Website zu kennzeichnen. Wenn du dir zum Beispiel die Website anschaust, auf der du dich gerade befindest, so kann man vereinfacht sagen, jedes Element, seien es Text, Bilder oder Suchfelder, haben einen oder mehrere Kennzeichner, so genannte Tags. Tags bestehen aus einem öffnenden und einem schließenden Tag.
   </div>
 </div>
 
@@ -111,7 +111,7 @@ Beginnen wir mit dem unteren Teil des HTML-Blocks. So soll der `HTML-Body` des S
 <br>
 
 #### Grußnachricht
-Blockly übernimmt für dich die schließenden Tags des HTML. Daher gilt allgemein, alles was an einen Tag angefügt wird, wird von ihm umschlossen. Als Beispiel zur Verdeutlichung hab ich hier die Überschrift nochmal einzeln dargestellt. `div` ist ein einfacher undefinierter Tag um Elemente zu gruppieren (Abk. vom englischen Wort Division). `p` steht für Paragraph und ist die standardmäßige Textform in HTML. In diesen Tag schreiben wir nun unsere Grußformel oder was uns gerade so einfällt, in meinem Fall  `Besinnliche Weihnachtszeit!`. 
+Blockly übernimmt für dich die schließenden Tags des HTML. Daher gilt allgemein, alles was an einen Tag angefügt wird, wird von ihm umschlossen. Als Beispiel zur Verdeutlichung hab ich hier die Überschrift nochmal einzeln dargestellt. `div` ist ein einfacher undefinierter Tag um Elemente zu gruppieren (Abk. vom englischen Wort Division). `p` steht für Paragraph und ist die standardmäßige Textform in HTML. In diesen Tag schreiben wir nun unsere Grußformel oder was uns gerade so einfällt, in meinem Fall  `senseBox, wie ist das Wetter? `. 
 
 {% include image.html image=page.image11 %}
 
@@ -120,7 +120,7 @@ So würde es dann z.B. im Code ausschauen:
 <body>
   <div>
     <p>
-        Besinnliche Weihnachtszeit!
+        senseBox, wie ist das Wetter?
     </p>
     .
     .
@@ -144,8 +144,8 @@ Das letzte Puzzlestück im Body wird das `img`-Tag. Daran wird nichts gesteckt, 
 
 {% include image.html image=page.image13 %}
 
-#### Stil-Attribute für den Weihnachtslook
-Vielleicht ist dir aufgefallen, dass wir im HTML-Teil eine Stelle bisher übergangen haben. Denn mit dem `HTML-Head` haben wir uns noch gar nicht befasst. Das wäre auch völlig in Ordnung, denn auch ohne dort etwas einzufügen, würde unser Heimserver bereits super funktionieren. Jedoch steht Weihnachten vor der Tür und daher müssen wir unsere Webseite auch festlich schmücken. Dazu fügst du diesen link-Tag ein mit folgendem Inhalt:
+#### Stil-Attribute für den senseBox-Look
+Vielleicht ist dir aufgefallen, dass wir im HTML-Teil eine Stelle bisher übergangen haben. Denn mit dem `HTML-Head` haben wir uns noch gar nicht befasst. Das wäre auch völlig in Ordnung, denn auch ohne dort etwas einzufügen, würde unser Heimserver bereits super funktionieren. Jedoch ist es immer schön etwas fürs Auge zu haben. Dazu fügst du diesen link-Tag ein mit folgendem Inhalt:
 
 `<link rel='stylesheet' type='text/css' href='https://dl.dropbox.com/s/a8x5o6k4hajcowp/style.css'>`
 
@@ -163,8 +163,7 @@ Wenn du das alles hinzugefügt hast, sollte dein Sketch in etwa so ausschauen:
 <br>
 
 ## Heimserver nutzen
-Nun müsst ihr nur noch das Skript auf eure senseBox übertragen. Am einfachsten geht das natürlich in Blockly, indem ihr das Skript kompiliert und die entstandene BIN-Datei auf eure senseBox zieht.
-Sollte das alles funktioniert haben, könnt ihr den Server unter eurer notierten IP-Adresse plus der angefügten URL erreichen. also z.B. `192.168.178.1/heimserver.html`. Hier ein Bild, wie es dann aussieht:
+Nun müsst ihr nur noch das Skript auf eure senseBox übertragen. Am einfachsten geht das natürlich in Blockly, indem ihr das Skript kompiliert und die entstandene BIN-Datei auf eure senseBox zieht. Sollte das alles funktioniert haben, könnt ihr den Server unter eurer notierten IP-Adresse plus der angefügten URL erreichen. also z.B. `192.168.178.1/heimserver.html`. Hier ein Bild, wie es dann aussieht:
 
 {% include image.html image=page.image16 %}
 
