@@ -749,8 +749,9 @@ static void smartDelay(unsigned long ms)
   unsigned long start = millis();
   do 
   {
-    while (Serial1.available())
-      gps.encode(Serial1.read());
+    Wire.requestFrom(0x42,10);
+    while (Wire.available())
+      gps.encode(Wire.read());
   } while (millis() - start < ms);
 }
 /* Ab hier folgen die Funktionen für den LoRaWAN und den TTN Support.
