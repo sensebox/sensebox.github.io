@@ -8,9 +8,8 @@
 
 <div class="page-header">
   <a name="team"></a>
-  <h2 id="team">Team</h2>
+  <h2 id="team">Team Uni Münster</h2>
 </div>
-<h3 class="smallcaps" id="uni">Uni Münster</h3>
 {% assign teammembers = site.data.team.[page.lang].members-uni | sort: 'position' %}
 {% for teammember in teammembers %}
   <h3 style="clear:both">{{ teammember.name }}</h3>
@@ -26,7 +25,11 @@
       </div>
     </div>
   </div>
-  <h3 class="smallcaps" id="uni">Reedu</h3>
+  {% endfor %}
+  <div class="page-header">
+    <a name="team"></a>
+    <h2 id="team">Team Reedu</h2>
+  </div>
   {% assign teammembers = site.data.team.[page.lang].members-reedu | sort: 'position' %}
   {% for teammember in teammembers %}
     <h3 style="clear:both">{{ teammember.name }}</h3>
@@ -42,4 +45,5 @@
         </div>
       </div>
     </div>
+
 {% endfor %}
