@@ -1,0 +1,16 @@
+- name: Dr. Thomas Bartoschek
+  image: /images/team/Bartoschek_neu.jpg
+  position: 1
+  description: Thomas ist Wissenschaftlicher Mitarbeiter (Post-Doc) am Institut für Geoinformatik der Westfälischen Wilhelms-Universität Münster. Er ist Gründer und Leiter des Forschungs- und Schülerlabors GI@School und Leiter des senseBox Projektes. Er forscht in den Bereichen „Lernen mit Geotechnologien“, Human-Computer-Interaction und Citizen Science und entwickelt Produkte für Bildung und Kommunikation seiner Wissenschaft.
+
+- name: Prof. Dr. Angela Schwering
+  image: /images/team/Schwering.jpg
+  position: 2
+  description: Angela ist Professorin am Institut für Geoinformatik der Westfälischen Wilhelms-Universität Münster. In ihrer Forschung zur Raumkognition untersucht sie, wie Menschen durch kognitiv adäquate Informationssysteme am Besten beim Lösen raum-zeitlicher Probleme unterstützt werden können. Unter anderen interessiert sie sich dafür, wie Geotechnologien und Sensoren im Bildungssektor eingesetzt werden können, um die räumlichen Kompetenzen von Schülerinnen und Schülern zu schulen und die Begeisterung für Technologien zu fördern
+
+- name: M.Ed. Mario Pesch
+  image: /images/team/Pesch.jpg
+  position: 3
+  description: Mario ist Wissenschaftlicher Mitarbeiter und Promotionsstudent am Institut für Geoinformatik der Westfälischen Wilhelms-Universität Münster. Er ist Entwickler der auf Google Blockly basierenden Programmierumgebung Blockly für senseBox und forscht im Bereich der Learning Analytics.
+
+
