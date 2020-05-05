@@ -1,0 +1,26 @@
+
+- name: M.Sc. David Fehrenbach
+  image: /images/team/david-neu.jpg
+  position: 1
+  description: David ist operativer Geschäftsführer der Reedu GmbH & Co. KG.  Er kümmert sich um <b>Vertrieb, Management und Organisation</b>. In brenzligen Situationen bewahrt er stets einen kühlen Kopf und koordiniert das Team bei Projektarbeiten.
+
+- name: M.Sc. Felix Erdmann
+  image: /images/team/Erdmann.jpg
+  position: 2
+  description: Felix entwickelte seine Begeisterung für Bastelelektronik und Programmierung bereits als Schüler in einem der senseBox-Workshops mit Thomas und Jan. Nach seinem Geoinformatik-Studium ist er als <b>Softwareentwickler</b> bei Reedu mit eingestiegen und arbeitet weiterhin gerne mit Open-Source Technik.
+
+- name: M.Sc. Umut Tas
+  image: /images/team/Tas_Umut.png
+  position: 3
+  description: Umut war zusammen mit Jan einer der Entwickler des ersten senseBox Prototypen im Rahmen eines Studienprojekts in 2010. Nach seinem Studium arbeitete er als Softwareentwickler im Bereich Datenjournalismus. Heute kümmert er sich bei Reedu um Wartung und <b>Entwicklung der openSenseMap und Visualisierung von Umweltdaten</b>.
+
+
+- name: M.Sc. Jan Wirwahn
+  image: /images/team/Wirwahn.jpg
+  position: 4
+  description: Jan begleitet die Entwicklung der senseBox seit ihrer Geburt an der Uni Münster. Damals noch als Student und wissenschaftlicher Mitarbeiter. Heute ist er für die <b>Weiterentwicklung der Hardware und den Support für die Bausätze</b> zuständig.
+
+- name: M.Ed. Björn Guntermann
+  image: /images/team/bjoern.jpg
+  position: 5
+  description: Björn ist Head of Education bei Reedu und arbeitet an der <b>Konzeption und Durchführung von Workshops und Fortbildungen</b>. Schon seit Projektbeginn motiviert er Lehrer*innen und Schüler*innen für Umweltbildung und Informatik.

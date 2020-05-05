@@ -1,0 +1,18 @@
+- name: Dr. Thomas Bartoschek
+  image: /images/team/Bartoschek_neu.jpg
+  position: 1
+  description: Thomas is a post-doc at the Institute for Geoinformatics at the Westfälische Wilhelms-University of Münster. He is founder and head of the research and student laboratory GI@School and head of the senseBox project. He researches in the fields of /"Learning with Geotechnologies/", Human-Computer-Interaction and Citizen Science and develops products for education and communication of his science.
+
+
+- name: Prof. Dr. Angela Schwering
+  image: /images/team/Schwering.jpg
+  position: 2
+  description: Angela is professor at the Institute for Geoinformatics of the Westfälische Wilhelms-University of Münster. In her research on spatial cognition she investigates how cognitively adequate information systems can best support humans in solving spatio-temporal problems. Among other things, she is interested in how geotechnologies and sensors can be used in the educational sector to train the spatial competencies of students and to foster their enthusiasm for technology.
+
+
+- name: M.Ed. Mario Pesch
+  image: /images/team/Pesch.jpg
+  position: 3
+  description: Mario is a research associate and phd-student at the Institute for Geoinformatics at the Westfälische Wilhelms-Universität Münster. He is the developer of the Google Blockly based programming environment Blockly for senseBox and researches in the field of Learning Analytics.
+
+
