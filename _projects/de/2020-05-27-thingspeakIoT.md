@@ -44,7 +44,7 @@ Deinem Channel musst du nur einen Namen geben. Alle anderen Informationen sind o
 Auf der anschließend angezeigten Seite siehst du nun eine Übersicht über deinen Channel. Da noch keine Daten gesendet wurden, ist auch das Diagramm in Field 1 noch leer.
 
 Als letzten Schritt der Vorbereitung müsst du dir deine __Channel ID__ und deinen __API Key__ notieren. Diese findest du unter dem Reiter "*API Keys*". Für dieses Projekt benötigst du nur den "Write API Key".
-{% include block.html image=page.image4 %}
+{% include image.html image=page.image4 %}
 
 ## Vorbereitungen in der Arduino IDE
 Auch in der Arduino IDE müssen Vorkehrungen getroffen werden, um die Thingspeak Services zu nutzen. Um die Programmierung zu erleichern bietet Thingspeak eine eigene Arduino Bibliothek an.
