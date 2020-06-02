@@ -24,36 +24,36 @@ difficult: Mittel
 ---
 <head><title>Thingspeak IoT</title></head>
 
-In diesem Projekt wird mit der senseBox mit Hilfe von Thingspeak ausgelesen. [Thingspeak](https://thingspeak.com/) ist ein IoT-Platform, die es ermöglicht Daten online zu sammeln, Analysen und Visualisierungen durchzuführen und Aktionen festzulegen.
+In diesem Projekt werden die Daten senseBox mit Hilfe von Thingspeak visualisiert. [Thingspeak](https://thingspeak.com/) ist ein IoT-Platform, die es ermöglicht Daten online zu Sammeln, Analysen und Visualisierungen durchzuführen und Aktionen festzulegen.
 Für dieses Projekt musst du dir einen kostenlosen Thingspeak-Account anlegen.
 
->Die Programmierung des IoT-Gerätes erfolgt mit Hilfe der Arduino IDE. Falls du bisher nicht mit der Arduino IDE gearbeitet hast, findest du in unseren Docs eine [Einführung](https://docs.sensebox.de/category/arduino/). Dort ist erklärt, wie du die Software installierst und alle Vorkehrungen triffst um durchstarten zu können.
+>Die Programmierung des IoT-Gerätes erfolgt mit Hilfe der Arduino IDE. Falls du bisher nicht mit der Arduino IDE gearbeitet hast, findest du in unseren Docs eine [Einführung](https://docs.sensebox.de/category/arduino/). Dort ist erklärt, wie du die Software installierst und alle Vorkehrungen triffstn um durchstarten zu können.
 
 ## Aufbau
 Stecke das WiFi-Bee auf den Steckplatz __XBEE1__. Der Umweltsensor wird mit einem JST-JST Kabel an einen der 5 __I2C/Wire Ports__ angeschlossen.
 
-## Vorkehrungen auf Thingspeak.com
+## Vorbereitungen auf Thingspeak.com
 
 Um den Service von Thingspeak nutzen zu können, musst du dir zuerst einen kostenlosen Account auf [https://thingspeak.com](https://thingspeak.com) erstellen. 
 {% include image.html image=page.image1 %}
 Nach der erfolgreichen Registrierung landest du auf der Seite "*My Channels*". Als nächstes müsst ihr einen neuen Channel anlegen, in den die senseBox ihre Messdaten übertragen kann.
 {% include image.html image=page.image2 %}
-Jeder Channel enthält bis zu 8 "fields" für Messdaten, plus 3 "fields" für Standortdaten und ein "field" für Statusdaten. Daten, die in einem Channel gesammelt werden können dann mit Hilfe der Thingspeak Apps analysiert und visualisiert werden.
+Jeder Channel enthält bis zu 8 "fields" für Messdaten, plus 3 "fields" für Standortdaten und ein weiteres "field" für Statusdaten. Daten, die in einem Channel gesammelt werden, können dann mit Hilfe der Thingspeak Apps analysiert und visualisiert werden.
 {% include image.html image=page.image3 %}
 Deinem Channel musst du nur einen Namen geben. Alle anderen Informationen sind optional. Du kannst alle Channelinformationen auch nachträglich ändern. Mit einem Klick auf "*Save Channel*" schließt du die Channelerstellung ab.
 Auf der anschließend angezeigten Seite siehst du nun eine Übersicht über deinen Channel. Da noch keine Daten gesendet wurden, ist auch das Diagramm in Field 1 noch leer.
 
-Als letzten Schritt der Vorbereitung müsst du dir deinen __Channel ID__ und deinen __API Key__ notieren. Diese findest du unter dem Reiter "*API Keys*". Für dieses Projekt benötigst du nur den "Write API Key".
+Als letzten Schritt der Vorbereitung müsst du dir deine __Channel ID__ und deinen __API Key__ notieren. Diese findest du unter dem Reiter "*API Keys*". Für dieses Projekt benötigst du nur den "Write API Key".
 {% include block.html image=page.image4 %}
 
-## Vorkehrungen in der Arduino IDE
+## Vorbereitungen in der Arduino IDE
 Auch in der Arduino IDE müssen Vorkehrungen getroffen werden, um die Thingspeak Services zu nutzen. Um die Programmierung zu erleichern bietet Thingspeak eine eigene Arduino Bibliothek an.
 Um diese hinzuzufügen wähle in der Arduino IDE *Werkzeuge* --> *Bibliotheken verwalten* und suche dort nach "Thingspeak" und installieren die gleichnamige Bibliothek von "MathWorks".
 {% include image.html image=page.image5 %}
 
 ## Programmierung
-### Schritt 1: Senden einer Testvariable
-Im Ersten Schritt soll zum Testen der Verbindung nur eine Variable an Thingspeak gesendet werden, die bei jedem Sendevorgang um 1 erhöht wird.
+### Schritt 1: Senden einer einfachen Zahl
+Im Ersten Schritt soll zum Testen der Verbindung nur eine einfache Zahl an Thingspeak gesendet werden, die nach jedem Sendevorgang um 1 erhöht wird.
 
 Noch vor dem `void setup()` müssen die Bibliotheken hinzugefügt, Variablen definiert und das WiFi Bee initialisiert werden.
 
@@ -151,7 +151,7 @@ Wenn alles funktionert sollte deine Channelübersicht auf Thingspeak etwa so aus
 {% include image.html image=page.image6 %}
 
 ### Schritt 2: Senden eines Messwertes
-Nachdem das Senden einer Testvariable erfolgreich war, soll diese nun durch echte Sensorwerte ersetzt werden. In diesem Beispiel wird der senseBox Umweltsensor (BME680) verwendet. 
+Nachdem das Senden einer einfachen zahl erfolgreich war, soll diese nun durch echte Sensorwerte ersetzt werden. In diesem Beispiel wird der senseBox Umweltsensor (BME680) verwendet. 
 >Wenn du dich sicher in der Programmierung fühlst kannst du selbstverständlich auch jeden anderen Sensor verwenden.
 
 Auch hier müssen noch vor dem `void setup()` verschiedene Variablen deklariert
