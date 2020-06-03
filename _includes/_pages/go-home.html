@@ -1,78 +1,30 @@
 {% assign t = site.data.translations.[page.lang].go-home %}
 
-<h1 class="title">{{t.title}}</h1>
-<div class="ut-container">
-    <div class="ut-item">
-        <div class="ut-item-head">
-            <h1>{{t.first-steps}}</h1>
-            <p>{{t.first-steps-text}}</p>
-        </div>
-        <div class="ut-item-body">
-            <ol>
-                <li><a target="_blank"
-                        href={{ "https://sensebox.github.io/books-v2/home/" | append: page.lang | append: "/erste-schritte/software-installation.html" }}>{{t.software-installation}}</a>
-                </li>
-                <li><a target="_blank"
-                        href={{ "https://sensebox.github.io/books-v2/home/" | append: page.lang | append: "/erste-schritte/anschluss-und-verkabelung.html" }}>{{t.hardware-install}}</a>
-                </li>
-                <li><a target="_blank"
-                        href={{ "https://sensebox.github.io/books-v2/home/" | append: page.lang | append: "/erste-schritte/registrierung-auf-der-openSenseMap.html" }}>{{t.osem-reg}}</a>
-                </li>
-            </ol>
-        </div>
-    </div>
+<head>
+  </head>
+  
+  <body>
+  
+  <div class="container-fluid bg-1 text-center">
+    <h1>{{t.first-steps}}</h1>
+    <p>{{t.first-steps-text}}</p>
+    <a target="_blank" href="https://docs.sensebox.de/sensebox-home/home-schritt-1/" class="btn btn-primary btn-lg">Los gehts! »</a>
+  </div>
+  <hr/>
+  <div class="container-fluid bg-2 text-center">
+    <h1>{{t.components}}</h1>
+    <p>{{t.components-text}}</p>
+    <a target="_blank" href="https://docs.sensebox.de/category/hardware/" class="btn btn-primary btn-lg">Informationen »</a>
+  </div>
+  <hr/>
+  <div class="container-fluid bg-3 text-center">
+    <h1>{{t.help}}</h1>
+    <p>{{t.help-text}}</p>
 
-    <div class=" ut-item">
-        <div class="ut-item-head">
-            <h1>{{t.components}}</h1>
-            <p>{{t.components-text}}</p>
-        </div>
-        <div class="ut-item-body">
-            <ol>
-                <li><a target="_blank"
-                        href={{ "https://sensebox.github.io/books-v2/home/" | append: page.lang | append: "/komponenten/sensebox-mcu.html" }}>{{t.mcu}}</a>
-                </li>
-                <li><a target="_blank"
-                        href={{ "https://sensebox.github.io/books-v2/home/" | append: page.lang | append: "/komponenten/bees/" }}>{{t.bees}}</a>
-                </li>
-                <li><a target="_blank"
-                        href={{ "https://sensebox.github.io/books-v2/home/" | append: page.lang | append: "/komponenten/sensoren/" }}>{{t.sensors}}</a>
-                </li>
-                <li><a target="_blank"
-                        href={{ "https://sensebox.github.io/books-v2/home/" | append: page.lang | append: "/komponenten/zubehoer/" }}>{{t.zubehoer}}</a>
-                </li>
-            </ol>
-        </div>
-    </div>
-
-    <div class="ut-item">
-        <div class="ut-item-head">
-            <h1>{{t.help}}</h1>
-            <p>{{t.help-text}}</p>
-        </div>
-        <div class="ut-item-body">
-            <ul>
-                <li><a target="_blank" href="https://forum.sensebox.de/">{{t.forum}}</a></li>
-                <li><a href="mailto:support@sensebox.de">{{t.mail}}</a></li>
-                <li><a target="_blank"
-                        href={{ "https://sensebox.github.io/books-v2/home/" | append: page.lang | append: "/hilfe.html" }}>FAQ</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class=" ut-item">
-        <div class="ut-item-head">
-            <h1>{{t.links}}</h1>
-            <p>{{t.links-text}}</p>
-        </div>
-        <div class="ut-item-body">
-            <ul>
-                <li><a target="_blank" href="https://opensensemap.org/">openSenseMap</a></li>
-                <li><a target="_blank" href="https://blockly.sensebox.de/">Blockly für senseBox</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-</div>
+    <a target="_blank" href="https://forum.sensebox.de/" class="btn btn-primary btn-lg">Forum »</a>
+    <a target="_blank" href="mailto:support@sensebox.de" class="btn btn-primary btn-lg">Email »</a>
+    <a target="_blank" href="https://docs.sensebox.de/faq/" class="btn btn-primary btn-lg">FAQ »</a>
+     
+  </div>
+  
+  </body>
