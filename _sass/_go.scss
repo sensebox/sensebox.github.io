@@ -3,6 +3,11 @@ $home: #b3a900;
 $edu: #2eb6eb;
 $mini: #9135aa;
 
+.center
+{
+margin-left:auto;
+margin-right:auto;
+}
 
 .title {
     display: inline-block;
@@ -92,7 +97,7 @@ h3 {
         width: 100%;
         transition: transform 0.2s ease-out;
     }
-
+   
     .text-container {
         padding: 0.5em;
 
