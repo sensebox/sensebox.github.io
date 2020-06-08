@@ -3,6 +3,11 @@ $home: #b3a900;
 $edu: #2eb6eb;
 $mini: #9135aa;
 
+.center
+{
+margin-left:auto;
+margin-right:auto;
+}
 
 .title {
     display: inline-block;
@@ -21,6 +26,11 @@ h3 {
     color: #111;
     padding-bottom: 1.5em;
 }
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 
 .go-edu {
     color: $edu;
@@ -87,7 +97,7 @@ h3 {
         width: 100%;
         transition: transform 0.2s ease-out;
     }
-
+   
     .text-container {
         padding: 0.5em;
 

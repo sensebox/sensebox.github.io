@@ -1,26 +1,14 @@
 title: "go:home"
 
 first-steps: "First Steps"
-first-steps-text: "Everything about the installation and assembly of the senseBox"
-
-software-installation: "Software Installation"
-hardware-install: "Connection and wiring"
-osem-reg: "Registration on the openSenseMap"
+first-steps-text: "Everything about the assembly, the registration and the programming of the senseBox:home."
 
 components: "Components"
-components-text: "Here you can find detailed information about the different components of the senseBox"
+components-text: "Here you can find detailed information about the different components of the senseBox."
 
-mcu: "senseBox MCU"
-bees: "Bees"
-sensors: "Sensors"
-zubehoer: "Accessories"
 
 help: "Where can I find help?"
 help-text: "If you need help with your senseBox, you will find all the necessary information here:"
 
 forum: "Forum"
 mail: "E-mail"
-
-
-links: "Links"
-links-text: "Here you will find links around the senseBox project"
