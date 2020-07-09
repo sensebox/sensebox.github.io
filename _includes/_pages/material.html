@@ -5,11 +5,12 @@
 </div>
 
 
-<h2 class="smallcaps" id="Material">Books</h2>
 
-<p> {{ t.description_book }}</p>
+<h2 class="smallcaps" id="Material">Docs</h2>
+
+<p> {{ t.description_docs }}</p>
 <div class="container">
-  {% assign material = site.data.translations.[page.lang].material_content | sort: 'position' %}
+  {% assign material = site.data.translations.[page.lang].material_docs | sort: 'position' %}
 
   <!-- count Material -> if odd, there has to be a blank col in the end -->
   <div hidden>
@@ -140,6 +141,50 @@
 {% endfor %}
 
 
+</div>
+
+<h2 class="smallcaps" id="Material">Books</h2>
+
+<p> {{ t.description_book }}</p>
+<div class="container">
+  {% assign material = site.data.translations.[page.lang].material_content | sort: 'position' %}
+
+  <!-- count Material -> if odd, there has to be a blank col in the end -->
+  <div hidden>
+    {% for material in material %}
+    {% increment material_count %}
+    {% capture oddOrEvenMaterialCount %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% endfor %}
+  </div>
+  <div class="row">
+    {% for material in material %}
+    {% capture firstLastInRow %}{% cycle 'first', 'last' %}{% endcapture %}
+    <div class="col-lg-3 col-sm-6">
+      <div class="card" style="cursor: pointer;">
+        <canvas class="header-bg" width="250" id="header-blur"
+          style="background-image: url({{ material.bgImage }});"></canvas>
+        <div class="content">
+          <h4 style="clear:both">{{ material.name }}</h4>
+          <div id="desc_{{ material.position }}">
+            <a class="stretched-link" href="{{ material.link_mcu }}"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--{% if firstLastInRow == 'last' %}
+    </div>
+  {% endif %}-->
+
+    <!-- if this is the last element and the count is even, add blank col -->
+    {% if material.position == material and oddOrMaterialCount == 'odd' %}
+    <div class="col-md-6">
+    </div>
+  </div>
+  {% endif %}
+
+
+
+  {% endfor %}
 </div>
 
 {{ t.description_header }}

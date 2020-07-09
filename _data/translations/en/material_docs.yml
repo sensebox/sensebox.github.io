@@ -1,0 +1,8 @@
+- name: :Docs
+  image: 
+  position: m1
+  organisation: senseBox - Team
+  description: Instructions, experiments and information about senseBox:edu, senseBox:mini and senseBox:home.
+  link_mcu: https://en.docs.sensebox.de/
+  link_mcu_text: MCU 
+  bgImage: /images/material/docs-en.png
