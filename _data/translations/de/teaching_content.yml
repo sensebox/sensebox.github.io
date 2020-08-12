@@ -47,3 +47,10 @@
   bgImage: /images/material/hopp_foundation.png
   link: https://unterrichtsmaterialien.hopp-foundation.de/konzepte/mikrocontroller-im-mint-unterricht
 
+- name: Moderner Informatikunterricht mit LoRaWAN in der Schule
+  position: t8
+  organisation: 
+  description: 
+  bgImage: /images/material/Material-TTN.png
+  link: /docs/informatikunterricht_lorawan.pdf
+
