@@ -1,3 +1,4 @@
+---
 layout: project_page  
 date: 2020-15-08  
 author: Verena
@@ -19,10 +20,10 @@ ide: blockly
 version: ["edu"]    
 lang: de 
 tags: ["Informatik" "Mathematik"] 
-difficult: einfach
+difficult: leicht
 
 ---
-#Klickzähler {#head}
+# Klickzähler {#head}
 Das Ziel dieses Projektes ist es, mithilfe der senseBox die Anzahl von Personen oder Gegenstaänden in einem Raum oder Gebiet zu bestimmen. Bei statistischen Erhebungen musst du somit keine handschriftliche Strichliste mehr führen, sondern kannst die senseBox als Klickzähler verwenden. 
 
 ## Aufbau

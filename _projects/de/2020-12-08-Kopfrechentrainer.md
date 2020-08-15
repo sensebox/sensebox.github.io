@@ -1,4 +1,4 @@
-
+---
 layout: project_page  
 date: 2020-12-08  
 author: Verena
@@ -19,9 +19,10 @@ ide: blockly
 version: ["edu"]    
 lang: de 
 tags: ["Informatik" "Mathematik"] 
-difficult: einfach
+difficult: mittel
 
 ---
+# Kopfrechentrainer {#head}
 Ziel dieses Projektes ist es, mithilfe der senseBox ein Gerät zu bauen, mit dem du deine Fähigkeiten im Kopfrechnen trainieren kannst. Dir werden auf dem Display also beliebige Aufgaben (Addition, Subtraktion, Division & Multiplikation) vorgegeben und kurze Zeit später auch die passende Lösung dazu angezeigt. 
 
 
