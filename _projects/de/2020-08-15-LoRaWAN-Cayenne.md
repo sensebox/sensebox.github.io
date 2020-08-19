@@ -1,6 +1,6 @@
 ---
 layout: project_page  
-date: 2020-15-08  
+date: 2020-08-15  
 author: Verena
 name: "LoRaWAN und der Cayenne Payload"
 abstract: "Übertrage Daten per LoRa mit dem Cayenne Payload an die openSenseMap." 
@@ -25,7 +25,7 @@ material:
 ide: blockly
 version: ["edu"]    
 lang: de 
-tags: ["Informatik"] 
+tags: ["Informatik" "IoT"] 
 difficult: mittel
 
 ---
