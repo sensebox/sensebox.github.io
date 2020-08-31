@@ -59,7 +59,7 @@ Die Möglichkeit des Hinzufügens der openSenseMap als Integration wird dir in d
 
 {% include image.html image=page.image3 %}
 
-Da die erhobenen Daten auf der openSenseMap als Endpunkt angezeigt werden sollen, muss hier zunächst einmal eine neue senseBox registriert werden. Melde dich dazu auf opensensemap.org an und füge eine neue senseBox hinzu. Wähle dabei das Modell senseBox:home V2 mit der Verbindungsart LoRa aus klicke auf den passenden Sensor und das Umweltphänomen, dass du messen möchtest. Klicke anschließend auf „The Things Network“ und fülle die Felder aus. Verwende als Dekodierungs-Profil ‚Cayenne LPP (beta)‘ sowie die Application ID und die Device ID, die du zuvor benannt hast, denn nur so kann eine genaue Zuordnung zwischen der senseBox, der openSenseMap und The Things Network stattfinden. 
+Da die erhobenen Daten auf der openSenseMap als Endpunkt angezeigt werden sollen, muss hier zunächst einmal eine neue senseBox registriert werden. Melde dich dazu auf opensensemap.org an und füge eine neue senseBox hinzu. Wähle dabei das Modell senseBox:edu aus und klicke auf den passenden Sensor und das Umweltphänomen, dass du messen möchtest. Klicke anschließend auf „The Things Network“ und fülle die Felder aus. Verwende als Dekodierungs-Profil ‚Cayenne LPP (beta)‘ sowie die Application ID und die Device ID, die du zuvor benannt hast, denn nur so kann eine genaue Zuordnung zwischen der senseBox, der openSenseMap und The Things Network stattfinden. 
 Bestätige anschließend deine Eingaben und schon hast du die Registrierung der neuen senseBox auf der openSenseMap abgeschlossen.  
 
 {% include image.html image=page.image4 %}
