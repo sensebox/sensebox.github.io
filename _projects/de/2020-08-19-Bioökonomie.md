@@ -3,7 +3,7 @@ layout: project_page
 date: 2020-08-19  
 author: Verena
 name: "Digital Farming mit der seseBox"
-abstract: "Ein Projekt im Rahmen des Wissenschaftsjahres 2020 unter dem Motto 'Bioökonomie'.
+abstract: "Ein Projekt im Rahmen des Wissenschaftsjahres 2020 unter dem Motto 'Bioökonomie'."
 image: Titelbild_Bioökonomie.jpg
 image0: /images/projects/Bioökonomie/Bild0.png
 image1: /images/projects/Bioökonomie/Bild1.png
@@ -25,7 +25,7 @@ material:
 ide: blockly
 version: ["edu"]    
 lang: de 
-tags: ["Geographie" "Informatik"] 
+tags: ["Geographie", "Informatik"] 
 difficult: mittel
 
 ---

@@ -25,7 +25,7 @@ material:
 ide: blockly
 version: ["edu"]    
 lang: de 
-tags: ["Informatik" "IoT"] 
+tags: ["Informatik", "IoT"] 
 difficult: mittel
 
 ---
