@@ -4,7 +4,7 @@ date: 2020-08-15
 author: Verena
 name: "Klickzähler"
 abstract: "Verwende die senseBox als Klickzähler, um die Anzahl von Personen oder Gegenständen in einem Raum zu erfassen." 
-image: Titelbild_Klickzähler.jpg
+image: Titelbild_Klickzaehler.jpg
 image0: /images/projects/klickzähler/Bild0.png
 image1: /images/projects/klickzähler/Bild1.png
 image2: /images/projects/klickzähler/Bild2.png
