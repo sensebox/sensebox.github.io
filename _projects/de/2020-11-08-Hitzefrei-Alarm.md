@@ -22,7 +22,7 @@ ide: blockly
 version: ["edu"]    
 lang: de 
 tags: ["Informatik"] 
-difficult: einfach
+difficult: leicht
 
 ---
 
