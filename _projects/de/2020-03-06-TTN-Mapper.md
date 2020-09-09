@@ -26,7 +26,7 @@ version: ["edu", "mini"]
 addons: ["LoRa-Bee"]  
 lang: de
 tags: ["Geographie", "Informatik", "LoRa", "TTN", "Blockly"]
-difficult: medium
+difficult: mittel
 ---
 # senseBox TTN Mapper
 

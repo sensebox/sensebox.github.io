@@ -17,7 +17,7 @@ material:
 ide: blockly
 lang: de
 tags: ["IoT","Chatbot"]
-difficult: einfach
+difficult: leicht
 ---
 # Telegram Chatbot für die senseBox
 Ein einfacher Chatbot um die senseBox auszulesen ist ein cooles Feature. Man kann zum Beispiel von überall die aktuellen Werte der senseBox abrufen. In diesem Projekt lernt ihr wie man den Chatbot über Blockly programmiert um angeschlossene Aktoren zu steuern und Sensoren auszulesen.
