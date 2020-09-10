@@ -33,10 +33,12 @@
                               {% if menupage.id != 'materials' %}
                                 {% if menupage.id != '404' %}
                                   {% if menupage.id != 'codeweek' %}
-                                    <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
-                                      <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
-                                    </li>
-                                    <li>noooo</li>
+                                    {% if menupage.id != 'messestand' %}
+                                      <li class="navbar-item{% if page.url == menupage.url %} active{% endif %}">
+                                        <a href="{{ menupage.url | prepend: site.baseurl }}">{{ t.[menupage.id] }}</a>
+                                      </li>
+                                      <li>noooo</li>
+                                    {% endif %}
                                   {% endif %}
                                 {% endif %}
                               {% endif %}
