@@ -41,5 +41,12 @@ collections:
   awards_de:
   awards_en:
 
+tagline: senseBox | Dein Toolkit für digitale Bildung, Citizen Science und Umwelt­monitoring
+url: sensebox.de
+twitter:
+  username: sensebox_de
+  card: summary
+
 plugins:
   - jekyll-redirect-from
+  - jekyll-seo-tag
