@@ -30,7 +30,7 @@ version: ["edu", "mini"]
 addons: ["LoRa-Bee"]  
 lang: de
 tags: ["Geographie", "Informatik", "LoRa", "TTN"]
-difficult: schwierig
+difficult: schwer
 ---
 # LoRaWAN IoT-Sensorstation
 

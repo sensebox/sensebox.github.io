@@ -24,7 +24,7 @@ ide: blockly
 version: ["mini"]   
 lang: de
 tags: ["Informatik", "Chemie"]
-difficult: Mittel
+difficult: mittel
 ---
 <head><title>Innenraumluftqualitäts Messstation</title></head>
 

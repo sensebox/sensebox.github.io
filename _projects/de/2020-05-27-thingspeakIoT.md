@@ -20,7 +20,7 @@ ide: arduino
 version: ["mini"]   
 lang: de
 tags: ["Informatik","IoT"]
-difficult: Mittel
+difficult: mittel
 ---
 <head><title>Thingspeak IoT</title></head>
 
