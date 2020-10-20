@@ -7,6 +7,11 @@ twitter_username: sensebox_de
 github_username: sensebox
 facebook_username: sensebox.de
 
+tagline: senseBox | Dein Toolkit für digitale Bildung, Citizen Science und Umwelt­monitoring
+twitter:
+  username: sensebox_de
+  card: summary
+
 # Build settings
 markdown: kramdown
 
@@ -41,5 +46,8 @@ collections:
   awards_de:
   awards_en:
 
+
+
 plugins:
   - jekyll-redirect-from
+  - jekyll-seo-tag

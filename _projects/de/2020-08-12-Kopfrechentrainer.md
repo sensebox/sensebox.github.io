@@ -18,7 +18,7 @@ material:
 ide: blockly
 version: ["edu"]    
 lang: de 
-tags: ["Informatik" "Mathematik"] 
+tags: ["Informatik", "Mathematik"] 
 difficult: leicht
 
 ---
