@@ -20,7 +20,7 @@ tags: ["Informatik"]
 difficult: leicht
 ---
 # senseBox I2C-Multiplexer
-Bei der I2C Schnittstelle kann es vorkommen, dass zwei oder mehrere Geräte die gleiche Adresse nutzen. Auch wenn man zwei gleiche Sensoren nutzen möchte tritt dieses Problem auf. Hierbei hilft ein sogenannter Multiplexer. Angeschlossen wird er ebenfalls an den I2C Anschluss vom Controller. Danach sendet man an seine Adresse (0x77) einen Befehl mit einer Kanalnummer von 0-7 (entspricht der Nummerierung 1-8 auf dem Multiplex) mit der man kommunizieren möchte. Alle weiteren Befehle werden danach an den entsprechenden Kanal umgeleitet. 
+Bei der I2C Schnittstelle kann es vorkommen, dass zwei oder mehrere Geräte die gleiche Adresse nutzen. Auch wenn man zwei gleiche Sensoren nutzen möchte, tritt dieses Problem auf. Hierbei hilft ein sogenannter Multiplexer. Angeschlossen wird er ebenfalls an den I2C Anschluss vom Controller. Danach sendet man an seine Adresse (0x77) einen Befehl mit einer Kanalnummer von 0-7 (entspricht der Nummerierung 1-8 auf dem Multiplex), mit der man kommunizieren möchte. Alle weiteren Befehle werden danach an den entsprechenden Kanal umgeleitet. 
 Im Folgenden ein Beispiel für die Implementierung von drei [HDC1080 Sensoren aus der senseBox Baureihe](https://sensebox.kaufen/product/temperatur-luftfeuchte). 
 
 ## Aufbau
@@ -36,7 +36,7 @@ Zunächst wird der I2C-Multiplexer mit einem JST-JST Kabel an einen der I2C/Wire
 
 
 ## Programmierung
-Der senseBox I2C-Multiplexer basiert auf dem [TCA9548A von Texas Instruments](http://www.ti.com/product/TCA9548A), welcher bereits Bestandteil vieler Tutorials aus der Community geworden ist. Mit dem folgenden Beispielcode von [Retians Blog](https://arduino-projekte.webnode.at/meine-libraries/i2c-multiplexer-tca9548a/) könnt ihr den Multiplex testen und überprüfen an welche Kanälen etwas angeschlossen ist:
+Der senseBox I2C-Multiplexer basiert auf dem [TCA9548A von Texas Instruments](http://www.ti.com/product/TCA9548A), welcher bereits Bestandteil vieler Tutorials aus der Community geworden ist. Mit dem folgenden Beispielcode von [Retians Blog](https://arduino-projekte.webnode.at/meine-libraries/i2c-multiplexer-tca9548a/) könnt ihr den Multiplex testen und überprüfen, an welche Kanälen etwas angeschlossen ist:
 
 [https://arduino-projekte.webnode.at/_files/200002383-38c7539c19/TCA9548A_Scanner.ino.txt](https://arduino-projekte.webnode.at/_files/200002383-38c7539c19/TCA9548A_Scanner.ino.txt)
 
@@ -65,7 +65,7 @@ void setup() {
 }
 ```
 
-In der Endlosschleife werden mit Hilfe einer for-Schleife die Kanäle fortlaufend gewechselt. Für jeden Kanal wird der Multiplex über seine Adresse angesprochen. Dann übergeben wir lediglich die Nummer des Kanals an den alle Folgebefehle gesendet werden. Das geschieht so lang bis ein neuer Kanal kommuniziert wird. 
+In der Endlosschleife werden mit Hilfe einer for-Schleife die Kanäle fortlaufend gewechselt. Für jeden Kanal wird der Multiplex über seine Adresse angesprochen. Dann übergeben wir lediglich die Nummer des Kanals an den alle Folgebefehle gesendet werden. Das geschieht so lange bis ein neuer Kanal kommuniziert wird. 
 
 ```
 for (int i = 0; i < (sizeof(channels)/sizeof(channels[0])); i++){
