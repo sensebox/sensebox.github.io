@@ -1,3 +1,8 @@
+# IMPORTANT 
+This repository contains the old senseBox website. You can find the new one here: https://github.com/sensebox/sensebox-reboot
+The repository is archived
+
+
 # sensebox.github.io
 
 senseBox website
